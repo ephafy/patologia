@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>3 · Zápal – všeobecné zákonitosti</title>
+<script>/* PATOLA: stránka v náhľade (assets/js/peek.js) — skryť hlavičku skôr, než sa vykreslí */if(/[?&]embed=/.test(location.search))document.documentElement.classList.add("pk-embed")</script>
+<script>/* PATOLA: pri F5/Späť ukázať stránku až na obnovenej pozícii (peek.js odkryje; poistka 2 s) */(function(){try{var h=document.documentElement,n=performance.getEntriesByType("navigation")[0],t=n&&n.type,s=location.search;if(/[?&]y=[1-9]/.test(s)||(!/[?&]embed=/.test(s)&&(t==="reload"||t==="back_forward")&&parseInt(sessionStorage.getItem("pk-y:"+location.pathname),10)>0)){h.classList.add("pk-restoring");setTimeout(function(){h.classList.remove("pk-restoring")},2000)}}catch(e){}})()</script>
+<link rel="stylesheet" href="../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../assets/styles/site.css">
+<link rel="stylesheet" href="../assets/styles/glossary.css">
+<style>
+/* ══ Broadsheet — design-system tokens ══════════════════════════════════ */
+:root{
+  --color-bg:#f3f2f2;
+  --color-surface:#eae9e9;
+  --color-text:#201e1d;
+  --color-accent:#0088b0;
+  --color-accent-2:#d6006c;
+  --color-divider:color-mix(in srgb,#201e1d 16%,transparent);
+
+  --color-neutral-100:#f8f4f4; --color-neutral-200:#eae7e7; --color-neutral-300:#d7d3d3;
+  --color-neutral-400:#bab6b6; --color-neutral-500:#9b9797; --color-neutral-600:#7d7979;
+  --color-neutral-700:#605d5d; --color-neutral-800:#444141; --color-neutral-900:#2d2b2b;
+
+  --color-accent-100:#e9f8ff; --color-accent-200:#cbeeff; --color-accent-300:#99e0ff;
+  --color-accent-400:#62c5ee; --color-accent-500:#38a6cf; --color-accent-600:#1186ac;
+  --color-accent-700:#006786; --color-accent-800:#004961; --color-accent-900:#0a303e;
+
+  --color-accent-2-100:#fff1f4; --color-accent-2-200:#ffdee6; --color-accent-2-300:#ffc0d0;
+  --color-accent-2-400:#ff90b1; --color-accent-2-500:#ff458e; --color-accent-2-600:#d82071;
+  --color-accent-2-700:#aa0b56; --color-accent-2-800:#790e3d; --color-accent-2-900:#4b1528;
+
+  --color-process-yellow:#edbb00;
+
+  --font-heading:"Source Serif 4",system-ui,serif;
+  --font-heading-weight:600;
+  --font-body:"Source Serif 4",system-ui,serif;
+  --font-mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+
+  --space-1:5px; --space-2:10px; --space-3:15px; --space-4:20px; --space-6:30px; --space-8:40px;
+  --radius-sm:1px; --radius-md:2px; --radius-lg:4px;
+
+  --shadow-sm:0 1px 2px color-mix(in srgb,#2d2b2b 14%,transparent);
+  --shadow-md:0 3px 10px color-mix(in srgb,#2d2b2b 16%,transparent);
+  --shadow-lg:0 12px 32px color-mix(in srgb,#2d2b2b 22%,transparent);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:var(--color-text);font-family:var(--font-body);
+  font-size:15px;line-height:1.55;font-weight:400;padding:0}
+h1,h2,h3,h4,h5,h6{font-family:var(--font-heading);font-weight:var(--font-heading-weight);
+  line-height:1.12;letter-spacing:-0.015em;margin:0 0 var(--space-2)}
+p{margin:0 0 var(--space-3)}
+a{color:var(--color-accent);text-underline-offset:3px}
+img{display:block;max-width:100%}
+figure{margin:0}
+figcaption{font-size:11px;margin-top:var(--space-1);
+  color:color-mix(in srgb,var(--color-text) 55%,transparent)}
+.text-muted{color:color-mix(in srgb,var(--color-text) 55%,transparent)}
+:focus{outline:none}
+:focus-visible{outline:2px solid var(--color-accent);outline-offset:2px}
+::selection{background:color-mix(in srgb,var(--color-accent) 30%,transparent)}
+.hr{height:1px;border:0;margin:var(--space-4) 0;background:var(--color-divider)}
+
+/* — tables — */
+.table{width:100%;border-collapse:collapse;font-size:14px}
+.table th{text-align:left;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;
+  color:color-mix(in srgb,var(--color-text) 60%,transparent);
+  padding:var(--space-2);border-bottom:1px solid var(--color-divider)}
+.table td{padding:var(--space-2);
+  border-bottom:1px solid color-mix(in srgb,var(--color-text) 8%,transparent)}
+.table tbody tr:hover{background:color-mix(in srgb,var(--color-text) 4%,transparent)}
+
+/* — tags — */
+.tag{display:inline-flex;align-items:center;font-size:11px;letter-spacing:0.02em;
+  padding:3px 10px;border-radius:calc(var(--radius-md)*0.75)}
+.tag-accent{background:var(--color-accent-100);color:var(--color-accent-800)}
+.tag-accent-2{background:var(--color-accent-2-100);color:var(--color-accent-2-800)}
+.tag-neutral{background:var(--color-neutral-100);color:var(--color-neutral-800)}
+
+/* — the plate numeral: three process inks, no black plate — */
+.cmyk-num{--cmyk-num-ground:var(--color-bg);position:relative;width:fit-content;
+  line-height:0.9;font-feature-settings:"pnum" 1;
+  padding:0.12em;margin:-0.12em}
+.cmyk-num .paper{color:var(--color-bg);
+  text-shadow:0.036em 0.025em 0 var(--color-bg),-0.031em -0.023em 0 var(--color-bg)}
+.cmyk-num .plate{position:absolute;inset:0.12em;mix-blend-mode:multiply}
+.cmyk-num .plate-c{color:var(--color-accent)}
+.cmyk-num .plate-m{color:var(--color-accent-2);translate:0.036em 0.025em}
+.cmyk-num .plate-y{color:var(--color-process-yellow);translate:-0.031em -0.023em}
+
+/* ══ doc-page — the printed sheet ═══════════════════════════════════════ */
+.page{--color-bg:#fff;margin:0 auto;background:#fff;
+  padding:50px;box-shadow:none;border:0;
+  font-size:13.5px;line-height:1.42;text-wrap:pretty}
+.page p{margin:0 0 6px;orphans:3;widows:3}
+.page ul,.page ol{margin:0 0 6px;padding-left:15px}
+.page li{margin:0 0 2px;orphans:3;widows:3}
+.page table.table{font-size:12px;line-height:1.3}
+.page table.table th,.page table.table td{padding:3px 8px 3px 0;vertical-align:top}
+.keep{break-inside:avoid}
+.page sup{font-size:9px;line-height:0}
+
+.running-head{display:flex;justify-content:space-between;align-items:baseline;
+  font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-neutral-600);
+  padding-bottom:4px;border-bottom:1px solid var(--color-neutral-300);margin-bottom:14px}
+.running-foot{display:flex;justify-content:space-between;align-items:baseline;
+  font-size:10px;color:var(--color-neutral-600);
+  padding-top:4px;border-top:1px solid var(--color-neutral-300);margin-top:22px}
+
+/* — chapter opener — */
+.opener{display:flex;align-items:flex-start;gap:18px;margin-bottom:10px}
+.opener .num{font-family:var(--font-heading);font-size:64px;font-weight:600;
+  letter-spacing:-0.03em;--cmyk-num-ground:#fff}
+.eyebrow{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;
+  color:var(--color-accent-2);margin-bottom:4px}
+.opener h1{font-size:29px;line-height:1.05;font-weight:600;letter-spacing:-0.015em}
+.standfirst{margin:6px 0 0;font-size:13px;font-style:italic;
+  color:var(--color-neutral-700);max-width:46em}
+
+/* — contents block — */
+.contents{column-count:3;column-gap:22px;font-size:11.5px;line-height:1.35;padding:8px 0;
+  border-top:2px solid var(--color-text);border-bottom:1px solid var(--color-neutral-300);
+  margin-bottom:16px}
+.contents .label{column-span:all;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--color-neutral-600);margin-bottom:5px}
+.contents .row{display:flex;gap:6px;break-inside:avoid}
+.contents .row span:first-child{color:var(--color-accent);font-variant-numeric:tabular-nums}
+
+/* — numbered sections — */
+.sec-h{display:flex;gap:10px;font-size:16px;font-weight:600;margin:0 0 5px}
+.sec-h .n{color:var(--color-accent);font-variant-numeric:tabular-nums}
+.sec-body{padding-left:calc(2.6em + 10px);margin-bottom:14px}
+.sub-h{font-size:13.5px;font-weight:600;margin:12px 0 4px}
+.sub-h .n{color:var(--color-accent-700);font-variant-numeric:tabular-nums;margin-right:6px}
+.micro{font-size:11px;letter-spacing:0.1em;text-transform:uppercase;
+  color:var(--color-neutral-600);margin-bottom:4px}
+
+/* — callouts — */
+.flag{margin:10px 0;padding:8px 10px;background:var(--color-accent-2-100);
+  border-left:3px solid var(--color-accent-2)}
+.flag .label{font-size:10px;letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--color-accent-2-800);margin-bottom:3px}
+.flag .body{font-size:12px;line-height:1.38;color:var(--color-accent-2-900)}
+.flag .body p{margin:0 0 5px}.flag .body p:last-child{margin:0}
+
+.note{margin:10px 0;padding:8px 10px;background:var(--color-accent-100);
+  border-left:3px solid var(--color-accent)}
+.note .label{font-size:10px;letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--color-accent-800);margin-bottom:3px}
+.note .body{font-size:12px;line-height:1.38;color:var(--color-accent-900)}
+.note .body p{margin:0 0 5px}.note .body p:last-child{margin:0}
+
+.plain{margin:10px 0;padding:8px 10px;background:var(--color-neutral-100);
+  border-left:3px solid var(--color-neutral-400)}
+.plain .label{font-size:10px;letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--color-neutral-700);margin-bottom:3px}
+.plain .body{font-size:12px;line-height:1.38;color:var(--color-neutral-900)}
+.plain .body p{margin:0 0 5px}.plain .body p:last-child{margin:0}
+
+/* — REVÍZIA block (CLAUDE.md §1.3, značka [R]) ————————————————————————
+   Zámerne NIE .note/.flag/.plain: site.js tie tri triedy vyplaví do
+   bočného stĺpca ako poznámky na okraji, a revízia patrí do hlavného
+   toku textu — je to obsah, nie komentár. Preto vlastná trieda.        */
+.rev{margin:11px 0;padding:9px 12px;break-inside:avoid;
+  background:linear-gradient(180deg,#fffaf0,#fff);
+  border:1px solid color-mix(in srgb,var(--color-process-yellow) 55%,transparent);
+  border-left:4px solid var(--color-process-yellow)}
+.rev .label{display:inline-flex;align-items:center;gap:6px;
+  font-size:9.5px;letter-spacing:0.12em;text-transform:uppercase;
+  color:#7a5c00;margin-bottom:4px;font-weight:600}
+.rev .label .r{display:inline-flex;align-items:center;justify-content:center;
+  width:15px;height:15px;border-radius:50%;background:var(--color-process-yellow);
+  color:#3d2e00;font-size:9px;font-weight:700;letter-spacing:0}
+.rev .body{font-size:12px;line-height:1.4}
+.rev .body p{margin:0 0 5px}.rev .body p:last-child{margin:0}
+.rev table.table{margin:6px 0 5px}
+
+/* — mechanism diagram in the press's own monospace — */
+.diagram{font-family:var(--font-mono);font-size:10px;line-height:1.35;
+  background:var(--color-surface);border-left:2px solid var(--color-neutral-400);
+  padding:9px 11px;margin:9px 0;overflow-x:auto;white-space:pre;
+  color:var(--color-neutral-900);border-radius:var(--radius-sm)}
+
+/* — kaskáda v riadku a rozvetvenie (CLAUDE.md §2.5) — */
+.chain{font-size:12.5px;line-height:1.5;margin:8px 0;padding:7px 10px;
+  background:var(--color-accent-100);border-left:3px solid var(--color-accent-400)}
+.chain b{color:var(--color-accent-800)}
+.fork{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;
+  margin:9px 0;font-size:12px;line-height:1.38}
+.fork>div{padding:7px 9px;background:var(--color-neutral-100);
+  border-top:2px solid var(--color-neutral-400)}
+.fork>div b{display:block;margin-bottom:2px;color:var(--color-neutral-900)}
+
+/* — charts — */
+.chart{margin:12px 0;break-inside:avoid;max-width:700px}
+.chart svg{width:100%;height:auto;display:block;font-family:var(--font-body)}
+.chart figcaption{font-size:10.5px;line-height:1.35;margin-top:4px;color:var(--color-neutral-700)}
+.chart figcaption b{color:var(--color-text)}
+.chart .ax{stroke:var(--color-neutral-400);stroke-width:1}
+.chart .grid{stroke:var(--color-neutral-300);stroke-width:1;stroke-dasharray:2 3}
+.chart .ser{fill:none;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+.chart .s-c{stroke:var(--color-accent)}
+.chart .s-m{stroke:var(--color-accent-2)}
+.chart .s-k{stroke:var(--color-neutral-700)}
+.chart .f-c{fill:var(--color-accent);opacity:.13}
+.chart .f-m{fill:var(--color-accent-2);opacity:.13}
+.chart .band-c{fill:var(--color-accent-100)}
+.chart .band-m{fill:var(--color-accent-2-100)}
+.chart .tick{font-size:9.5px;fill:var(--color-neutral-600);font-variant-numeric:tabular-nums}
+.chart .lbl{font-size:10.5px;fill:var(--color-neutral-800)}
+.chart .lbl-c{font-size:10.5px;fill:var(--color-accent-700)}
+.chart .lbl-m{font-size:10.5px;fill:var(--color-accent-2-700)}
+.chart .cap{font-size:9.5px;fill:var(--color-neutral-600);letter-spacing:.08em;text-transform:uppercase}
+.chart .mark{stroke:var(--color-neutral-800);stroke-width:1;stroke-dasharray:3 3}
+.chart .bar-c{fill:var(--color-accent-500)}
+.chart .bar-m{fill:var(--color-accent-2-500)}
+
+/* — krížové odkazy (CLAUDE.md §3.1) ————————————————————————————————————
+   a.xref  = odkaz na kapitolu, ktorá už existuje. Ostáva skutočným
+             <a href>, takže funguje aj bez JS a bez shellu; keď pribudne
+             split.js, otvorí sa vedľa v druhom paneli.
+   .xref-soon = tá istá informácia pre kapitolu, ktorá ešte nie je
+             napísaná. Zámerne NIE <a>: mŕtvy odkaz je horší než žiadny.
+             Text nesie číslo aj názov, takže dáva zmysel aj v tlači.   */
+.xref{color:var(--color-accent-700);text-decoration:none;
+  border-bottom:1px solid color-mix(in srgb,var(--color-accent) 45%,transparent);
+  white-space:nowrap}
+.xref:hover{background:var(--color-accent-100);border-bottom-color:var(--color-accent)}
+.xref-soon{color:var(--color-neutral-600);
+  border-bottom:1px dotted var(--color-neutral-400);white-space:nowrap;cursor:help}
+
+.deps,.next{font-size:11.5px;line-height:1.5;margin:0 0 10px;padding:7px 10px;
+  background:var(--color-neutral-100);border-top:2px solid var(--color-neutral-400)}
+.deps b,.next b{font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--color-neutral-700);margin-right:6px}
+.next{border-top-color:var(--color-accent);background:var(--color-accent-100);margin:16px 0 0}
+.next b{color:var(--color-accent-800)}
+
+/* — two/three column content blocks — */
+.cols-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;
+  font-size:12.5px;line-height:1.35}
+.cols-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;
+  font-size:12.5px;line-height:1.35}
+.flow-2{column-count:2;column-gap:22px;font-size:12.5px;line-height:1.38}
+
+.lede{font-size:12.5px;color:var(--color-neutral-700)}
+b,strong{font-weight:600}
+.tnum{font-variant-numeric:tabular-nums}
+
+@media screen and (min-width:981px){
+  .sec-h,.sub-h,.micro,.hr,.diagram,.chart,.table,.running-foot,
+  .cols-2,.cols-3,.flow-2,.note,.flag,.plain,.rev,.fork,.chain{clear:both}
+  .sec-body::after{content:"";display:block;clear:both}
+}
+
+@media (max-width:820px){
+  body{padding:0}
+  .page{padding:20px 16px}
+  .contents{column-count:2}
+  .cols-3,.cols-2,.flow-2{grid-template-columns:1fr;column-count:1;display:block}
+  .cols-3>div,.cols-2>div{margin-bottom:12px}
+  .sec-body{padding-left:0}
+  .opener{gap:12px}
+  .opener .num{font-size:46px}
+  .table{display:block;overflow-x:auto}
+  .chart{overflow-x:auto}
+  .chart svg{max-width:none;min-width:100%}
+  .xref,.xref-soon{white-space:normal}
+}
+@media print{
+  body{background:#fff;padding:0}
+  .page{max-width:none;padding:0.7in}
+  .diagram{overflow:visible}
+  .cols-2,.cols-3{display:block}
+  .cols-2>div,.cols-3>div{margin-bottom:8px}
+  .flow-2{column-count:1}
+  .contents{column-count:1}
+  .xref{color:#000;border-bottom:0}
+  .xref-soon{color:#444;border-bottom:0}
+  .rev{background:#fff;border:1px solid #999;border-left:4px solid #999}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+/* — doplnky pre generované kapitoly (tools/build.js) — */
+.src p,.src li{font-size:11.5px;line-height:1.4}
+.src ul{padding-left:16px}
+.src .micro{font-size:10px}
+figure.keep>.diagram{margin:9px 0 3px}
+figure.keep>figcaption{font-size:10.5px;line-height:1.35;color:var(--color-neutral-700);margin:0 0 9px}
+figure.keep>figcaption b{color:var(--color-text)}
+.page code{font-family:var(--font-mono);font-size:.92em}
+.chart .bx{fill:var(--color-neutral-200)}
+.chart .bx-c{fill:var(--color-accent-200)}
+.chart .bx-m{fill:var(--color-accent-2-200)}
+.chart .bx-k{fill:var(--color-neutral-100);stroke:var(--color-neutral-400)}
+
+/* ══ PATOLA: farebné boxy = vrstvy z CLAUDE.md §1.1 ═══════════════════════
+   Vlastné triedy (.box), NIE .note/.flag/.plain — tie site.js vyplavuje do
+   okraja ako poznámky, kým boxy sú jadro textu.  --c = farba pásika,
+   --cl = tmavší odtieň pre štítok (kontrast na tónovanom pozadí).        */
+.box{--c:var(--color-neutral-500);--cl:var(--color-neutral-800);
+  margin:10px 0;padding:8px 10px;break-inside:avoid;
+  background:color-mix(in srgb,var(--c) 8%,#fff);border-left:3px solid var(--c)}
+.box .label{font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;
+  color:var(--cl);margin-bottom:3px}
+.box .body{font-size:12px;line-height:1.38}
+.box .body>*:last-child{margin-bottom:0}
+.box .body p{margin:0 0 5px}
+.box .body ul,.box .body ol{margin:0 0 5px}
+.box .body table.table{margin:5px 0}
+.k-mech{--c:var(--color-accent);--cl:var(--color-accent-800)}
+.k-morf{--c:var(--color-accent-2);--cl:var(--color-accent-2-800)}
+.k-detek{--c:var(--color-neutral-500);--cl:var(--color-neutral-800)}
+.k-klin{--c:var(--color-accent-800);--cl:var(--color-accent-900)}
+.k-pozor{--c:#d9601a;--cl:#8a3b08}
+.k-zap{--c:#1f8a8a;--cl:#0f5555}
+.k-fyz{--c:#3f8a55;--cl:#24582f}
+
+/* ══ obrázky (rovnaké pravidlá ako v ručne písaných kapitolách patofyzie) ═
+   --fw = najväčšia rozumná šírka zobrazenia; malý obrázok sa nerozmaže.   */
+.fig{margin:11px auto;break-inside:avoid;max-width:min(100%,var(--fw,100%))}
+.fig img{display:block;width:100%;height:auto;background:transparent;border:0;cursor:zoom-in}
+.fig figcaption{font-size:10.5px;line-height:1.35;margin-top:4px;color:var(--color-neutral-700)}
+.fig figcaption b{color:var(--color-text)}
+.fig figcaption .src-link{display:inline-flex;align-items:center;gap:3px;
+  color:var(--color-neutral-500);text-decoration:none}
+.fig figcaption .src-link:hover{color:var(--color-accent);text-decoration:underline}
+.fig figcaption .src-link svg{width:10px;height:10px;flex:none;
+  fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.fig-row{display:flex;flex-wrap:wrap;align-items:flex-start;gap:14px;margin:11px 0}
+.fig-row .fig{flex:var(--ar,1) 1 0;min-width:0;margin:0;max-width:none}
+@media screen and (min-width:981px){
+  .box,.fig,.fig-row{clear:both}
+  .fig-row .fig{clear:none}
+}
+@media (max-width:820px){
+  .fig-row{display:block}
+  .fig-row .fig{margin-bottom:12px;max-width:min(100%,var(--fw,100%))}
+}
+@media print{
+  .box{background:#fff;border:1px solid #999;border-left:4px solid var(--c)}
+  .fig figcaption .src-link{display:inline;color:#555}
+  .fig figcaption .src-link svg{display:none}
+  .fig figcaption .src-link[href]::after{content:" (" attr(href) ")";font-size:8px;word-break:break-all}
+  .fig-row{display:block;overflow:hidden}
+  .fig-row .fig{float:left;width:calc(50% - 8px);margin:0 0 10px}
+  .fig-row .fig+.fig{float:right}
+}
+
+/* ══ PATOLA: náhľad inej kapitoly (assets/js/peek.js) ═════════════════════
+   Panel prekryje stred a pravý stĺpec; hlavička a ľavý obsah ostávajú.
+   --pk-left / --pk-top dopočíta skript z polohy bočného panela a hlavičky.
+   Maximalizácia = --pk-m → 0 (prechod na left/top/right/bottom, 0,5 s).   */
+.pk-backdrop{position:fixed;z-index:44;left:var(--pk-left,0px);top:var(--pk-top,52px);right:0;bottom:0;
+  background:rgba(32,28,40,.30);-webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px);
+  opacity:0;transition:opacity .22s ease}
+.pk-backdrop.pk-in{opacity:1}
+.pk-backdrop.pk-max-on{opacity:0;transition:opacity .5s ease}
+.pk{--pk-m:16px;--pk-ease:cubic-bezier(.4,0,.2,1);
+  position:fixed;z-index:45;
+  left:calc(var(--pk-left,0px) + var(--pk-m));top:calc(var(--pk-top,52px) + var(--pk-m));
+  right:var(--pk-m);bottom:var(--pk-m);
+  display:flex;flex-direction:column;overflow:hidden;
+  background:#fff;border:1px solid var(--color-neutral-300);border-radius:12px;
+  box-shadow:0 22px 56px rgba(20,16,32,.30),0 2px 8px rgba(20,16,32,.12);
+  opacity:0;transform:translateY(12px) scale(.985);
+  transition:opacity .22s ease,transform .28s cubic-bezier(.2,.7,.2,1)}
+.pk.pk-in{opacity:1;transform:none}
+.pk.pk-max-on{--pk-m:0px;border-radius:0;border-color:transparent;box-shadow:0 0 0 rgba(0,0,0,0);
+  transition:left .5s var(--pk-ease),top .5s var(--pk-ease),right .5s var(--pk-ease),bottom .5s var(--pk-ease),
+    border-radius .5s var(--pk-ease),box-shadow .5s ease,border-color .5s ease}
+.pk-bar{flex:none;display:flex;align-items:center;gap:4px;height:44px;padding:0 8px 0 14px;overflow:hidden;
+  border-bottom:1px solid var(--color-neutral-200);background:var(--color-neutral-50,#faf9fb);
+  font-family:var(--site-font,system-ui,sans-serif);font-size:12.5px;color:var(--color-text);
+  transition:height .5s var(--pk-ease),opacity .3s ease,border-color .5s ease}
+.pk.pk-max-on .pk-bar{height:0;opacity:0;border-color:transparent}
+.pk-kind{flex:none;font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;
+  color:var(--color-accent-700);padding:3px 7px;border-radius:4px;
+  background:color-mix(in srgb,var(--color-accent) 10%,transparent);margin-right:6px}
+.pk-title{flex:1;min-width:0;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pk-btn{flex:none;display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;
+  border:0;border-radius:7px;background:transparent;color:var(--color-neutral-600);cursor:pointer;
+  transition:background .15s ease,color .15s ease}
+.pk-btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.pk-btn-max:hover{background:color-mix(in srgb,var(--color-accent) 12%,transparent);color:var(--color-accent-700)}
+.pk-btn-close:hover{background:color-mix(in srgb,var(--color-accent-2) 14%,transparent);color:var(--color-accent-2-700)}
+.pk-btn:focus-visible{outline:2px solid var(--color-accent);outline-offset:1px}
+.pk-btn:active{transform:scale(.94)}
+.pk-frame{flex:1;display:block;width:100%;min-height:0;border:0;background:#fff}
+.pk-load{position:relative;flex:none;height:0;overflow:visible;pointer-events:none}
+.pk-load i{position:absolute;left:0;top:0;height:3px;width:40%;opacity:0;
+  background:linear-gradient(90deg,var(--color-accent),var(--color-accent-2))}
+.pk-load.on i{opacity:1;animation:pk-slide 1.1s ease-in-out infinite}
+@keyframes pk-slide{0%{left:-40%}100%{left:100%}}
+@media (max-width:980px){.pk{--pk-m:8px}}
+
+/* kým je náhľad otvorený: stránka pod ním stojí, posuvník nahradí odsadenie */
+html.pk-lock{overflow:hidden}
+html.pk-lock body{padding-right:var(--pk-sbw,0px)}
+
+/* bočný obsah pri maximalizácii (skript presunie body a animuje posun) */
+.pk-nav-gap{height:18px;margin:6px 8px 0;border-bottom:1px dashed var(--color-neutral-300)}
+.site-header .crumb{transition:opacity .25s ease}
+.site-header .crumb.pk-fade{opacity:0}
+
+/* stránka vnútri náhľadu: len obsah, bez hlavičky a bočného panela */
+html.pk-restoring body{visibility:hidden}
+/* fork: na samostatnom riadku je len nadpis stĺpca; tučné slová v texte ostávajú vo vete */
+.fork>div>b:not(:first-child){display:inline;margin:0}
+.pk-embed .site-header,.pk-embed .site-sidebar,.pk-embed .reading-progress,
+.pk-embed .reading-pct,.pk-embed .skip-link{display:none!important}
+
+/* návrat tlačidlom Späť */
+.pk-back-in .site-main{animation:pk-back .35s cubic-bezier(.2,.7,.2,1)}
+.pk-back-in .site-sidebar nav{animation:pk-fadein .35s ease}
+@keyframes pk-back{from{opacity:0;transform:translateX(-32px)}to{opacity:1;transform:none}}
+@keyframes pk-fadein{from{opacity:0}to{opacity:1}}
+@media (prefers-reduced-motion:reduce){
+  .pk,.pk.pk-max-on,.pk-bar,.pk-backdrop{transition:none}
+  .pk-back-in .site-main,.pk-back-in .site-sidebar nav{animation:none}
+}
+@media print{.pk,.pk-backdrop{display:none!important}}
+
+/* ══ PATOLA: tlač ═════════════════════════════════════════════════════════
+   Strana A4 má ~700 px, takže sa v tlači zapínajú mobilné pravidlá
+   z chapter.css (@media max-width:820px): graf s posuvníkom, tabuľka ako blok.
+   Tu ich vraciame a riešime zlom strán.                                    */
+@page{size:A4;margin:14mm 15mm 16mm}
+@media print{
+  .page{padding:0!important}
+  .chart{overflow:visible!important;max-width:100%}
+  .chart svg{min-width:0!important;max-width:100%!important}
+  .table{display:table!important;overflow:visible!important;width:100%}
+  .diagram{white-space:pre-wrap}
+  /* fotografia nezaberie celú stranu – inak ostávajú polovičné prázdne strany */
+  .fig{max-width:100%!important}
+  .fig img{width:auto;max-width:100%;max-height:8.5cm;margin:0 auto}
+  .fig-row .fig img{max-height:6.5cm}
+  .chart svg{max-height:11cm}
+  /* nadpis nikdy sám na spodku strany */
+  .sec-h,.sub-h,h2,h3,.box .label{break-after:avoid;page-break-after:avoid}
+  /* dlhé boxy sa smú zlomiť (inak nechajú prázdnu pol stranu); tabuľky a riadky nie */
+  .box.keep{break-inside:auto}
+  tr,.fig,.chart,figure.keep{break-inside:avoid}
+  p,li{orphans:3;widows:3}
+  .reader-ctl,#pt-zoom{display:none!important}
+}
+
+/* lupa (assets/js/zoom.js) */
+#pt-zoom{position:fixed;inset:0;z-index:90;display:none;align-items:center;justify-content:center;
+  padding:24px;background:rgba(20,18,26,.82);-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);cursor:zoom-out}
+#pt-zoom.on{display:flex}
+#pt-zoom img{max-width:100%;max-height:100%;background:#fff;box-shadow:var(--shadow-lg)}
+
+/* okrajové poznámky (site.js): na pôvodnom mieste v texte ostane čiara vo farbe a hrúbke
+   ľavého okraja poznámky, ktorá vedie až k nej; poznámka na čiare sedí spodkom.
+   Dlhé odkazy sa musia zalamovať, inak presiahnu 204 px stĺpec a stránka dostane vodorovný posuv */
+.side-anchor{display:block;height:0;margin:10px 0;padding:0;position:relative;z-index:4;pointer-events:none}
+@media (max-width:980px){.side-anchor{display:none}}
+@media (min-width:981px){.box.side-note{margin:0}}
+@media print{.side-anchor{display:none}}
+@media screen and (min-width:981px){.side-note{transform:none!important;overflow-wrap:anywhere}}
+.xref{white-space:normal}
+
+/* ══ PATOLA: vlastné schémy (chapters/fig/*.svg) ═════════════════════════ */
+.chart .mk{fill:var(--color-neutral-700)}
+.chart .arw{fill:none;stroke:var(--color-neutral-700);stroke-width:1.5}
+.chart .arwd{fill:none;stroke:var(--color-neutral-600);stroke-width:1.3;stroke-dasharray:5 4}
+.chart .cell{fill:var(--color-accent-100);stroke:var(--color-accent-600);stroke-width:1.5}
+.chart .nuc{fill:var(--color-accent-400);stroke:var(--color-accent-800);stroke-width:1}
+.chart .cellm{fill:var(--color-accent-2-100);stroke:var(--color-accent-2-600);stroke-width:1.5}
+.chart .nucm{fill:var(--color-accent-2-500);stroke:var(--color-accent-2-800);stroke-width:1}
+.chart .dot{fill:var(--color-neutral-700)}
+.chart .dotm{fill:var(--color-accent-2-600)}
+.chart .lblb{font-size:11px;font-weight:600;fill:var(--color-neutral-900)}
+.chart .sub{font-size:9.5px;fill:var(--color-neutral-700)}
+.chart .zone-r{fill:var(--color-accent-2-100)}
+.chart .zone-i{fill:var(--color-accent-100)}
+.chart .s-d{stroke:var(--color-neutral-700);stroke-dasharray:6 4}
+.chart .s-t{stroke:var(--color-neutral-700);stroke-dasharray:2 4}
+.chart .fill-acc{fill:var(--color-accent-500)}
+.chart .fill-acc2{fill:var(--color-accent-2-500)}
+.chart .stk-acc{fill:none;stroke:var(--color-accent-600);stroke-width:2}
+.chart .stk-acc2{fill:none;stroke:var(--color-accent-2-600);stroke-width:2}
+.chart .stk-n{fill:none;stroke:var(--color-neutral-600);stroke-width:1.3}
+/* ══ Odborná kontrola a otázky na zopakovanie (CLAUDE.md §1.3, §2.2) ═══════
+   Rovnaké v PATOLE aj v patofyzii (tools/chapter-extra.css oboch projektov). */
+.reviewed{font-size:10.5px;line-height:1.4;margin:-4px 0 12px;padding:0 10px;color:var(--color-neutral-700)}
+.reviewed b{font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:600}
+.reviewed a{color:var(--color-accent-800)}
+ol.quiz{margin:8px 0 4px;padding-left:26px}
+ol.quiz li{margin:0 0 6px}
+ol.quiz li::marker{color:var(--color-accent-800);font-weight:600}
+/* vlastná šípka za číslom — natívny trojuholník <summary> by sa prekrýval s číslom otázky */
+ol.quiz summary{display:block;list-style:none;cursor:pointer;font-weight:600;line-height:1.45;padding-left:14px;position:relative}
+ol.quiz summary::-webkit-details-marker{display:none}
+ol.quiz summary::before{content:"▸";position:absolute;left:0;top:0;color:var(--color-accent);transition:transform .15s ease}
+ol.quiz details[open]>summary::before{transform:rotate(90deg)}
+ol.quiz summary:hover{color:var(--color-accent-800)}
+ol.quiz .ans{margin:4px 0 2px 14px;padding:6px 10px;font-size:12.5px;line-height:1.45;
+  background:var(--color-accent-100);border-left:3px solid var(--color-accent)}
+@media print{
+  ol.quiz summary::before{content:none}
+  ol.quiz summary{padding-left:0}
+  ol.quiz .ans{margin-left:0}
+  ol.quiz .ans{background:none;border-left:1px solid var(--color-neutral-400);font-size:10px}
+}
+
+/* stĺpce vedľa seba (blok ```cols) – vodorovné členenie rovnocenných vetiev */
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px 14px;margin:9px 0 11px}
+.cols.n4{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.cols>div{padding:7px 11px 5px;background:var(--color-neutral-100);border-top:2px solid var(--color-accent-400);break-inside:avoid}
+.cols>div>p{margin:0 0 4px}
+.cols>div>ul,.cols>div>ol{margin:0 0 3px}
+@media print{.cols>div{background:none;border:1px solid var(--color-neutral-400);border-top-width:2px}}
+
+/* otázky na zopakovanie: reflektor pojmov okolo kurzora by napovedal a klik na pojem by namiesto
+   odpovede otvoril vysvetlivku → pojmy tu svietia a dajú sa otvoriť len pri zapnutom prepínači „Pojmy“ */
+html:not(.pf-terms-always) ol.quiz .pf-term{pointer-events:none;cursor:inherit}
+html:not(.pf-terms-always) ol.quiz .pf-term.is-lit{background-color:transparent;box-shadow:0 0 0 1.5px transparent}
+/* text otázky sa pri rýchlom otváraní a zatváraní (dvojklik) nemá označovať */
+ol.quiz summary{-webkit-user-select:none;user-select:none}
+
+/* ══ PATOLA: mobil — o stupeň väčšie písmo (≈ +7 %) ══════════════════════
+   Veľkosti v chapter.css sú v px (sadzba na tlačenú stranu), takže sa na
+   úzkej obrazovke zväčšujú po jednej, každá o rovnaký krok. `screen`, lebo
+   strana A4 je užšia než 820 px a tlač by pravidlo chytila tiež.
+   Musí ostať na konci súboru — prebíja pravidlá vyššie.                    */
+@media screen and (max-width:820px){
+  .page{font-size:14.5px}
+  .sec-h{font-size:17px}
+  .sub-h{font-size:14.5px}
+  .standfirst{font-size:14px}
+  .chain,.cols-2,.cols-3,.flow-2,.lede,ol.quiz .ans{font-size:13.5px}
+  .page table.table,.box .body,.rev .body,.note .body,.flag .body,.plain .body,.fork{font-size:13px}
+  .contents,.deps,.next,.src p,.src li{font-size:12.5px}
+  .micro{font-size:12px}
+  .fig figcaption,.chart figcaption,figure.keep>figcaption,.reviewed{font-size:11.5px}
+  .box .label,.rev .label,.note .label,.flag .label,.plain .label,
+  .contents .label,.deps b,.next b,.eyebrow,.src .micro{font-size:10.5px}
+  /* vysvetlivky a popis v lupe (glossary.css je zdieľaný s patofyziou, preto tu) */
+  .pf-tip{font-size:14px}
+  .pf-tip h4{font-size:15.5px}
+  .pf-tip .kicker,.pf-tip-body .fork > div{font-size:13px}
+  .pf-tip-body .chain,.pf-tip-body .why,.pf-lb-cap{font-size:13.5px}
+  .pf-tip figcaption{font-size:12px}
+}
+</style>
+<link rel="stylesheet" href="../assets/styles/palette.css">
+<link rel="manifest" href="../manifest.json">
+<meta name="theme-color" content="#5f42a8">
+<link rel="icon" href="../assets/img/icon-32.png">
+<link rel="apple-touch-icon" href="../assets/img/icon-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="PATOLA">
+<script src="../assets/js/pwa.js" defer></script>
+</head>
+<body>
+<!-- Súbor je GENEROVANÝ z 03_zapal_vseobecne.md nástrojom tools/build.js — uprav .md, nie tento súbor. -->
+<a class="skip-link" href="#sec-3-1">Preskočiť na obsah</a>
+<header class="site-header">
+  <a class="brand" href="../index.html"><span class="mark" aria-hidden="true"></span>PATOLA</a>
+  <span class="crumb">Patologická anatómia — <b>Zápal – všeobecne</b></span>
+  <span class="spacer"></span>
+  <button class="site-toc-toggle" type="button" aria-label="Obsah kapitoly" aria-expanded="false">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+  </button>
+</header>
+
+<div class="reading-progress" role="progressbar" aria-label="Priebeh čítania kapitoly" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="bar"></div></div>
+<div class="reading-pct" aria-hidden="true">0 %</div>
+
+<div class="site-shell">
+  <aside class="site-sidebar">
+    <div class="toc-title">Obsah kapitoly</div>
+    <nav></nav>
+  </aside>
+
+  <div class="site-main">
+<main class="page">
+
+<div class="chapter-hero">
+<div class="running-head">
+  <span>3 · Zápal – všeobecné zákonitosti</span>
+  <span style="color:var(--color-accent-700)">Patologická anatómia</span>
+</div>
+
+<div class="opener">
+  <div class="cmyk-num num">
+    <span class="paper">3</span>
+    <span class="plate plate-c" aria-hidden="true">3</span>
+    <span class="plate plate-m" aria-hidden="true">3</span>
+    <span class="plate plate-y" aria-hidden="true">3</span>
+  </div>
+  <div style="padding-top:2px">
+    <div class="eyebrow">Zápaly</div>
+    <h1>Zápal – všeobecné zákonitosti</h1>
+    <p class="standfirst">Zápal nadväzuje na poškodenie a smrť bunky a končí opravou tkaniva – je to obrana, ktorá odstraňuje príčinu a pripravuje hojenie. Kapitola ho sleduje ako dej v čase: čo ho spustí, ktoré mediátory ho riadia, čo sa stane v cievach, čo robia leukocyty, ako sa zápal sám ukončí a čo z neho pocíti celé telo. Typy zápalu podľa toho, čo v ložisku prevláda, rozoberá kapitola 4.</p>
+  </div>
+</div>
+</div>
+
+<p class="deps"><b>Predpoklady:</b>
+  <a class="xref" href="00_uvod_metody.html#sec-0-2">→ 0.2 Etiológia a patogenéza</a> ·
+  <a class="xref" href="01_atrofia_nekroza_apoptoza.html#sec-1-4">→ 1.4 Apoptóza</a> ·
+  <a class="xref" href="01_atrofia_nekroza_apoptoza.html#sec-1-5">→ 1.5 Nekróza – základné pojmy a priebeh</a>
+</p>
+<p class="reviewed"><b>Odborná kontrola:</b> zatiaľ neprebehla — fakty sú overené len podľa zdrojov uvedených na konci kapitoly · <a href="https://github.com/chieffp123-boop/patologia/issues/new?title=Kap.%203%3A%20" target="_blank" rel="noopener noreferrer">Nahlásiť chybu</a></p>
+
+<div class="contents keep">
+  <div class="label">V tejto kapitole</div>
+  <div class="row"><span>3.1</span><span>Zápal – definícia, spúšťače a Celsove znaky</span></div>
+  <div class="row"><span>3.2</span><span>Mediátory zápalu</span></div>
+  <div class="row"><span>3.3</span><span>Cievna fáza – exsudácia</span></div>
+  <div class="row"><span>3.4</span><span>Bunková fáza – leukocyty v ložisku</span></div>
+  <div class="row"><span>3.5</span><span>Priebeh v čase a ukončenie zápalu</span></div>
+  <div class="row"><span>3.6</span><span>Celková odpoveď organizmu</span></div>
+  <div class="row"><span>3.7</span><span>Súhrn a rýchle rozlíšenie</span></div>
+  <div class="row"><span>3.8</span><span>Otázky na zopakovanie</span></div>
+  <div class="row"><span>3.9</span><span>Zdroje</span></div>
+</div>
+
+<!-- ══ 3.1 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-3-1"><span class="n">3.1</span><span>Zápal – definícia, spúšťače a Celsove znaky</span></h2>
+<div class="sec-body">
+  <p><b>Zápal</b> (lat. <i>inflammatio</i>) je odpoveď živého, prekrveného tkaniva na poškodenie: cievy v ložisku sa rozšíria a stanú sa priepustnými, z krvi vystúpi tekutina a biele krvinky, odstránia príčinu a miesto sa potom opraví. Účastníci (endotel, leukocyty, makrofágy, fibroblasty) sú mezenchýmového pôvodu a väčšinou prichádzajú krvou – preto <b>cievno-mezenchýmová reakcia</b>. Priebeh je <b>stereotypný</b>: každý orgán odpovedá tými istými krokmi, líši sa len to, ktorý prevládne. Kroky potrebujú živé cievy a bunky, a tak mŕtve tkanivo zápalom neodpovie – na tom stojí odlíšenie nekrózy od posmrtnej autolýzy (<a class="xref" href="01_atrofia_nekroza_apoptoza.html#sec-1-5">→ 1.5 Nekróza – základné pojmy a priebeh</a>).</p>
+
+  <p>Proteázy a radikály neutrofilov nerozlišujú baktériu od vlastnej bunky, takže zápal vždy trochu poškodí aj tkanivo, ktoré bráni. Chorobou sa stane, keď škoda prevýši úžitok – pri sepse (<a class="xref" href="#sub-3-6-2">→ 3.6.2 SIRS a sepsa – keď sa obrana obráti proti telu</a>), pri nekončiacom hojení (chronická hepatitída → cirhóza) alebo keď sa reakcia nemala spustiť vôbec (autoimunita, alergia).</p>
+
+  <p>Zápal sa spustí, keď bunky tkaniva (makrofágy, dendritické bunky, mastocyty) zachytia signál nebezpečenstva. Ich receptory (Toll-like receptory, <b>inflamazóm</b> v cytoplazme) rozoznávajú molekuly mikróbov (<b>PAMP</b>, napr. lipopolysacharid) a vlastné molekuly, ktoré sa objavia na nesprávnom mieste pri rozpade buniek (<b>DAMP</b>, napr. ATP, DNA, kryštály kyseliny močovej). Podľa toho, čo poplach spustí, sa príčiny delia takto:</p>
+
+  <table class="table keep" id="tab-3-1" style="margin:6px 0">
+    <thead><tr><th>Čo spustí poplach</th><th>Príčiny</th><th>Čo sa deje najprv</th><th>Príklad</th></tr></thead>
+    <tbody>
+      <tr><td><b>PAMP mikróbov</b></td><td>baktérie, vírusy, huby, parazity</td><td>mikróba treba zadržať a zničiť; hojenie prichádza až potom</td><td>lobárna pneumónia</td></tr>
+      <tr><td><b>DAMP z mŕtvych buniek</b></td><td>ischémia, trauma, teplo, chlad, žiarenie, žieraviny, kryštály</td><td>najprv vznikne nekróza (<a class="xref" href="01_atrofia_nekroza_apoptoza.html#sub-1-5-1">→ 1.5.1 Mechanizmus – ako sa bunka rozpadne</a>), zápal ju potom odpratá</td><td>infarkt myokardu, popálenina; dna – kryštály urátu aktivujú inflamazóm → IL-1β</td></tr>
+      <tr><td><b>chybne nasmerovaná imunita</b></td><td>autoimunita, alergia, rejekcia štepu; zriedka vrodená porucha regulácie zápalu (<b>autoinflamatórne</b> choroby, napr. familiárna stredomorská horúčka)</td><td>často bez predchádzajúcej nekrózy</td><td>Hashimotova tyreoiditída, alergická rinitída</td></tr>
+    </tbody>
+  </table>
+
+  <p>Zápal bez účasti mikróbov (druhý a tretí riadok) sa nazýva <b>aseptický (sterilný)</b>.</p>
+
+  <p>Mikroskopicky má zápal štyri deje, ktoré na seba nadväzujú:</p>
+
+  <p class="chain"><b>alterácia</b> → <b>exsudácia</b> → <b>infiltrácia</b> → <b>proliferácia</b></p>
+
+  <ul>
+    <li><b>1. Alterácia</b> – tkanivo sa poškodí a jeho bunky uvoľnia mediátory (histamín, cytokíny), ktoré spustia ďalšie kroky.</li>
+    <li><b>2. Exsudácia</b> – mediátory rozšíria cievy a zvýšia ich priepustnosť → do tkaniva unikne tekutina s bielkovinami (exsudát).</li>
+    <li><b>3. Infiltrácia</b> – do exsudátu vycestujú z ciev leukocyty a odstraňujú príčinu.</li>
+    <li><b>4. Proliferácia</b> – v ložisku sa delia makrofágy, endotel a fibroblasty → regenerácia, alebo pri väčšej strate tkaniva jazva.</li>
+  </ul>
+
+  <p>Podľa toho, ktorý z týchto dejov v tkanive prevládne, sa zápal delí na alteratívny, exsudatívny a proliferatívny; typy a ich pomenovanie rozoberá <a class="xref" href="04_typy_zapalu.html#sec-4-1">→ 4.1 Ako sa zápal delí a pomenúva</a>. Táto kapitola sleduje to, čo majú všetky zápaly spoločné, v poradí, v akom to prebieha (Obr. 3.1): signály, ktoré zápal riadia, cievna a bunková fáza, ukončenie a odpoveď celého tela.</p>
+
+  <figure class="chart keep" id="fig-zapal-mapa">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 222" role="img" aria-labelledby="tfigzapalmapa">
+<title id="tfigzapalmapa">Mapa kapitoly: zápal ako dej v čase – spúšťač, mediátory, cievna fáza, bunková fáza a ukončenie; z ložiska sa mediátory dostanú do krvi a vyvolajú celkovú odpoveď; zápal skončí rezolúciou, jazvou alebo prejde do chronického</title>
+<defs><marker id="mfigzapalmapa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker></defs>
+
+<path class="arwd" d="M8,16 L708,16" marker-end="url(#mfigzapalmapa)"/>
+<text class="sub" x="360" y="11" text-anchor="middle">čas: sekundy → minúty → hodiny → dni → týždne</text>
+
+<rect class="bx-c" x="4" y="28" width="128" height="78" rx="3" stroke="var(--color-accent-600)"/>
+<text class="lblb" x="68" y="46" text-anchor="middle">spúšťač · 3.1</text>
+<text class="sub" x="68" y="64" text-anchor="middle">PAMP mikróbov,</text>
+<text class="sub" x="68" y="77" text-anchor="middle">DAMP mŕtvych buniek</text>
+<text class="sub" x="68" y="90" text-anchor="middle">→ TLR, inflamazóm</text>
+
+<rect class="bx-k" x="148" y="28" width="128" height="78" rx="3"/>
+<text class="lblb" x="212" y="46" text-anchor="middle">mediátory · 3.2</text>
+<text class="sub" x="212" y="64" text-anchor="middle">z buniek: histamín,</text>
+<text class="sub" x="212" y="77" text-anchor="middle">prostaglandíny, cytokíny</text>
+<text class="sub" x="212" y="90" text-anchor="middle">z plazmy: komplement,</text>
+<text class="sub" x="212" y="102" text-anchor="middle">kiníny</text>
+
+<rect class="bx-k" x="292" y="28" width="128" height="78" rx="3"/>
+<text class="lblb" x="356" y="46" text-anchor="middle">cievna fáza · 3.3</text>
+<text class="sub" x="356" y="64" text-anchor="middle">rozšírené arterioly,</text>
+<text class="sub" x="356" y="77" text-anchor="middle">netesné venuly</text>
+<text class="sub" x="356" y="90" text-anchor="middle">→ exsudát</text>
+
+<rect class="bx-k" x="436" y="28" width="128" height="78" rx="3"/>
+<text class="lblb" x="500" y="46" text-anchor="middle">bunková fáza · 3.4</text>
+<text class="sub" x="500" y="64" text-anchor="middle">leukocytová kaskáda,</text>
+<text class="sub" x="500" y="77" text-anchor="middle">fagocytóza</text>
+<text class="sub" x="500" y="90" text-anchor="middle">→ infiltrát</text>
+
+<rect class="bx-m" x="580" y="28" width="132" height="78" rx="3" stroke="var(--color-accent-2-600)" stroke-width="1.5"/>
+<text class="lblb" x="646" y="46" text-anchor="middle">ukončenie · 3.5</text>
+<text class="sub" x="646" y="64" text-anchor="middle">lipoxíny, rezolvíny,</text>
+<text class="sub" x="646" y="77" text-anchor="middle">apoptóza neutrofilov,</text>
+<text class="sub" x="646" y="90" text-anchor="middle">eferocytóza</text>
+
+<path class="arw" d="M133,67 L146,67" marker-end="url(#mfigzapalmapa)"/>
+<path class="arw" d="M277,67 L290,67" marker-end="url(#mfigzapalmapa)"/>
+<path class="arw" d="M421,67 L434,67" marker-end="url(#mfigzapalmapa)"/>
+<path class="arw" d="M565,67 L578,67" marker-end="url(#mfigzapalmapa)"/>
+
+<path class="stk-n" d="M592,106 L592,200"/>
+<path class="arw" d="M592,134 L608,134" marker-end="url(#mfigzapalmapa)"/>
+<path class="arw" d="M592,166 L608,166" marker-end="url(#mfigzapalmapa)"/>
+<path class="arw" d="M592,198 L608,198" marker-end="url(#mfigzapalmapa)"/>
+<rect class="bx-k" x="610" y="121" width="102" height="26" rx="3"/>
+<text class="sub" x="661" y="138" text-anchor="middle">rezolúcia (bez jazvy)</text>
+<rect class="bx-k" x="610" y="153" width="102" height="26" rx="3"/>
+<text class="sub" x="661" y="170" text-anchor="middle">jazva · kap. 5</text>
+<rect class="bx-k" x="610" y="185" width="102" height="26" rx="3"/>
+<text class="sub" x="661" y="202" text-anchor="middle">chronický · kap. 5, 6</text>
+<text class="sub" x="584" y="138" text-anchor="end">podnet zmizol, kostra tkaniva celá</text>
+<text class="sub" x="584" y="170" text-anchor="end">kostra zničená alebo bunky sa nedelia</text>
+<text class="sub" x="584" y="202" text-anchor="end">podnet stále pôsobí</text>
+
+<path class="arwd" d="M212,106 L212,134" marker-end="url(#mfigzapalmapa)"/>
+<rect class="bx-k" x="148" y="136" width="240" height="72" rx="3"/>
+<text class="lblb" x="268" y="154" text-anchor="middle">celková odpoveď · 3.6</text>
+<text class="sub" x="268" y="171" text-anchor="middle">TNF-α, IL-1, IL-6 v krvi → horúčka,</text>
+<text class="sub" x="268" y="184" text-anchor="middle">CRP, leukocytóza; v nadbytku</text>
+<text class="sub" x="268" y="197" text-anchor="middle">SIRS, sepsa, septický šok</text>
+<text class="sub" x="220" y="124" text-anchor="start">mediátory v krvi</text>
+</svg>
+    <figcaption><b>Obr. 3.1 — Mapa kapitoly: zápal ako dej v čase.</b> Čísla v rámčekoch sú sekcie, v ktorých je krok vysvetlený.</figcaption>
+  </figure>
+
+  <p>Päť znakov viditeľných bez mikroskopu (štyri opísal rímsky encyklopedista Celsus, piaty Virchow) vyplýva z cievnych dejov (<a class="xref" href="#sec-3-3">→ 3.3 Cievna fáza – exsudácia</a>) a z účinku mediátorov (<a class="xref" href="#sec-3-2">→ 3.2 Mediátory zápalu</a>):</p>
+
+  <div class="box k-morf keep">
+    <div class="label">Čo uvidíš</div>
+    <div class="body">
+      <ul>
+    <li><b>Rubor</b> (začervenanie) – rozšírenými arteriolami preteká viac okysličenej krvi (jasnočervený oxyhemoglobín); pri žilovom mestnaní prevládne deoxyhemoglobín a tkanivo je modrofialové.</li>
+    <li><b>Calor</b> (teplo) – koža je bežne chladnejšia než vnútro tela. Rozšírené cievy privedú viac krvi zvnútra, preto je zapálené miesto teplejšie než koža okolo.</li>
+    <li><b>Tumor</b> (opuch) – tekutina s bielkovinami unikla z ciev do interstícia. Slovo tu znamená len zväčšenie objemu, nie nádor.</li>
+    <li><b>Dolor</b> (bolesť) – bradykinín a prostaglandín E₂ zcitlivia nociceptory (preto bolesť tlmia lieky blokujúce cyklooxygenázu), napätý opuch pridá tlak. Parenchým pľúc ani pečene nociceptory nemá; bolí až nástenná pleura alebo puzdro orgánu.</li>
+    <li><b>Functio laesa</b> (porucha funkcie) – spravidla útlm; výnimočne prechodný vzostup: pri subakútnej (de Quervainovej) tyreoiditíde sa z rozpadnutých folikulov vyplaví zásoba hormónov → niekoľko týždňov hypertyreóza.</li>
+  </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 3.2 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-3-2"><span class="n">3.2</span><span>Mediátory zápalu</span></h2>
+<div class="sec-body">
+  <p>Každý krok zápalu spúšťa chemický signál – <b>mediátor</b>. Mediátory pôsobia hlavne tam, kde vznikli, a rýchlo sa rozkladajú, takže zápal ostáva pri ložisku a po odstránení podnetu slabne. Ten istý dej zvyčajne spúšťa viac mediátorov naraz, preto liek proti jednému z nich zápal stlmí, ale nezastaví. Podľa toho, <b>odkiaľ pochádzajú</b>, sú dve skupiny: mediátory z buniek, ktoré vylučujú bunky v ložisku, a mediátory z plazmy, ktoré v krvi kolujú ako neaktívne bielkoviny a zapne ich až kaskáda. Pri každom sa oplatí vedieť, ktorý krok zápalu riadi – z toho vyplýva, čo urobí liek, ktorý ho blokuje.</p>
+
+  <h3 class="sub-h" id="sub-3-2-1"><span class="n">3.2.1</span>Mediátory z buniek</h3>
+  <p>Bunkové mediátory sa líšia tým, či ich bunka má vopred uložené v granulách – vtedy pôsobia okamžite –, alebo ich po podnete musí najprv vyrobiť.</p>
+
+  <table class="table keep" id="tab-3-2" style="margin:6px 0">
+    <thead><tr><th>Mediátor</th><th>Kto ho tvorí</th><th>Čo spôsobí</th><th>Čo to dokazuje</th></tr></thead>
+    <tbody>
+      <tr><td><b><b>Histamín</b></b></td><td>mastocyty, bazofily, doštičky – hotový v granulách</td><td>rozšíri arterioly, otvorí medzery vo venulách, stiahne hladký sval mimo ciev, dráždi nervové zakončenia</td><td>antihistaminiká tlmia žihľavku a alergickú nádchu</td></tr>
+      <tr><td><b><b>Prostaglandíny</b> (PGE₂, PGI₂, PGD₂)</b></td><td>väčšina buniek, z kyseliny arachidónovej</td><td>rozšírenie ciev, bolesť, horúčka</td><td>lieky blokujúce cyklooxygenázu tlmia bolesť aj horúčku</td></tr>
+      <tr><td><b><b>Tromboxán A₂</b></b></td><td>doštičky</td><td>zhlukovanie doštičiek</td><td>aspirín v prevencii trombózy</td></tr>
+      <tr><td><b><b>Leukotriény</b></b></td><td>leukocyty, mastocyty, z kyseliny arachidónovej</td><td>LTB₄ privoláva neutrofily; LTC₄, LTD₄, LTE₄ zužujú priedušky a zvyšujú priepustnosť ciev</td><td>montelukast a zileutón pri astme</td></tr>
+      <tr><td><b><b>Faktor aktivujúci doštičky</b> (PAF)</b></td><td>fosfolipid membrán leukocytov, doštičiek a endotelu</td><td>zhlukovanie doštičiek, ↑ priepustnosť ciev, aktivácia leukocytov</td><td>—</td></tr>
+      <tr><td><b><b>Cytokíny</b> TNF-α, IL-1, IL-6 a <b>chemokíny</b> (napr. IL-8)</b></td><td>makrofágy, mastocyty, endotel</td><td>aktivujú endotel, privolávajú leukocyty, vyvolajú celkovú odpoveď (<a class="xref" href="#sub-3-6-1">→ 3.6.1 Horúčka, reaktanty akútnej fázy, leukogram</a>)</td><td>protilátky proti TNF-α, blokáda IL-1 a receptora IL-6 pri reumatoidnej artritíde</td></tr>
+      <tr><td><b><b>Oxid dusnatý</b></b></td><td>endotel, makrofágy</td><td>uvoľní hladký sval ciev</td><td>—</td></tr>
+      <tr><td><b><b>Kyslíkové radikály a enzýmy granúl</b></b></td><td>neutrofily, makrofágy</td><td>zabíjajú mikróby, no poškodia aj tkanivo (<a class="xref" href="#sub-3-4-3">→ 3.4.3 Fagocytóza a zabíjanie</a>)</td><td>—</td></tr>
+    </tbody>
+  </table>
+
+  <p>Prostaglandíny a leukotriény majú spoločný začiatok – kyselinu arachidónovú, ktorú z fosfolipidov bunkovej membrány odštiepi <b>fosfolipáza A₂</b>. Ďalší osud určí enzým, ktorý ju spracuje:</p>
+
+  <div class="fork">
+    <div><b>Cyklooxygenáza (COX-1 je v bunkách stále, COX-2 zapne až zápal)</b>→ prostaglandíny (rozšírenie ciev, bolesť, horúčka) a tromboxán A₂ (zhlukovanie doštičiek) · ⊣ nesteroidné antiflogistiká; aspirín ju blokuje nezvratne</div>
+    <div><b>5-lipoxygenáza</b>→ LTB₄ (chemotaxia neutrofilov) a LTC₄–LTE₄ (zúženie priedušiek, ↑ priepustnosť) · ⊣ zileutón; montelukast blokuje ich receptor</div>
+    <div><b>Lipoxygenázy v neskorej fáze</b>→ <b>lipoxíny</b>, ktoré zápal tlmia a pripravujú jeho ukončenie (<a class="xref" href="#sub-3-5-2">→ 3.5.2 Ukončenie zápalu – aktívny dej</a>)</div>
+  </div>
+
+  <div class="box k-klin keep">
+    <div class="label">Lieky ako dôkaz kaskády</div>
+    <div class="body">
+      <ul>
+    <li><b>Glukokortikoidy</b> cez bielkovinu anexín tlmia fosfolipázu A₂ – zasahujú nad rozvetvením, preto potláčajú prostaglandíny aj leukotriény a sú silnejšie než nesteroidné antiflogistiká.</li>
+    <li><b>Aspirín</b> blokuje cyklooxygenázu nezvratne. Doštička nemá jadro a nový enzým si nevyrobí, takže tromboxán jej chýba, kým ju nenahradí nová – na tom stojí malá dávka aspirínu po infarkte myokardu.</li>
+  </ul>
+    </div>
+  </div>
+
+  <h3 class="sub-h" id="sub-3-2-2"><span class="n">3.2.2</span>Mediátory z plazmy – štyri prepojené kaskády</h3>
+  <p>Plazmatické mediátory sú bielkoviny, ktoré kolujú v krvi neaktívne a zapínajú sa kaskádovito: každý aktivovaný člen štiepi ďalší, takže malý podnet sa rýchlo znásobí. Ide o štyri sústavy – komplement, kinínový (kontaktný) systém, zrážanie krvi a fibrinolýzu – a žiadna nepracuje sama.</p>
+
+  <p><b>Komplement</b> sa aktivuje troma cestami, ktoré sa líšia tým, čo ich spustí, a zbiehajú sa pri štiepení zložky C3:</p>
+
+  <p class="chain">klasická cesta (C1q: protilátka na antigéne, imunokomplex) · lektínová (lektín viažuci manózu: cukry na povrchu mikróba) · alternatívna (C3 sa samovoľne štiepi a na povrchu mikróba sa dej zosilní) → <b>C3 a C5 konvertáza</b> → C3a, C5a + C3b + C5b–9</p>
+
+  <div class="fork">
+    <div><b>C3a, C5a (anafylatoxíny)</b>vyprázdnia granuly mastocytov → histamín → ↑ priepustnosť; C5a je najsilnejší chemoatraktant pre neutrofily</div>
+    <div><b>C3b (opsonín)</b>obalí mikróba, imunokomplex alebo odumretú bunku → fagocyt ich rozozná a pohltí</div>
+    <div><b>C5b–9 (komplex atakujúci membránu, MAC)</b>vytvorí pór v membráne → baktéria praskne</div>
+  </div>
+
+  <p>Vlastné bunky pred komplementom chránia regulačné bielkoviny (inhibítor C1, faktor H, CD55, CD59).</p>
+
+  <div class="box k-klin aside keep">
+    <div class="label">Klinika</div>
+    <div class="body">
+      <p>Človek, ktorému vrodene chýba niektorá z koncových zložiek C5–C9, nevytvorí MAC a má 7 000- až 10 000-násobne vyššie riziko meningokokovej infekcie – ukazuje to, aká dôležitá je proti neisériám práve lýza komplementom.</p>
+    </div>
+  </div>
+
+  <p><b>Kinínový systém</b> sa spúšťa pri kontakte plazmy s poškodeným tkanivom:</p>
+
+  <p class="chain">faktor XII → XIIa → prekalikreín → <b>kalikreín</b> → z kininogénu odštiepi <b>bradykinín</b> → receptor B₂ na endoteli → rozšírenie ciev, ↑ priepustnosť, bolesť</p>
+
+  <p>Aktivovaný faktor XII zároveň spúšťa <b>zrážanie</b>: trombín mení fibrinogén v exsudáte na fibrín (<a class="xref" href="04_typy_zapalu.html#sec-4-6">→ 4.6 Fibrinózny zápal</a>) a spolu s faktormi IX a X vie štiepiť aj komplement. <b>Fibrinolýza</b> (plazmín) fibrín rozpúšťa. Podnet, ktorý zapne jednu sústavu, tak zapne aj ostatné. Kalikreín, faktor XIIa aj prvú zložku komplementu brzdí tá istá bielkovina – <b>inhibítor C1</b> (C1-INH).</p>
+
+  <div class="box k-klin keep">
+    <div class="label">Hereditárny angioedém (HAE)</div>
+    <div class="body">
+      <p>Pri vrodenom nedostatku (≈ 85 % pacientov) alebo nefunkčnosti (≈ 15 %) inhibítora C1 kalikreín nič nebrzdí → nadbytok bradykinínu → záchvaty opuchu kože, steny čreva (kŕčovité bolesti brucha) a hrtana, ktoré trvajú až 5 dní. Opuch hrtana aspoň raz zažije asi polovica pacientov a môže zadusiť. Dedí sa autozómovo dominantne (gén <i>SERPING1</i>), prevalencia je ≈ 1 : 10 000 až 1 : 50 000. Ten istý mechanizmus má opuch po <b>inhibítoroch ACE</b>: enzým konvertujúci angiotenzín rozkladá aj bradykinín, a keď je zablokovaný, bradykinín sa hromadí.</p>
+    </div>
+  </div>
+
+  <p>Opuch z histamínu a opuch z bradykinínu vyzerajú podobne, no liečia sa úplne inak:</p>
+
+  <table class="table keep" id="tab-3-3" style="margin:6px 0">
+    <thead><tr><th></th><th>Histamínový angioedém</th><th>Bradykinínový angioedém</th></tr></thead>
+    <tbody>
+      <tr><td><b>Mechanizmus</b></td><td>mastocyty uvoľnia histamín (alergia)</td><td>nadbytok bradykinínu (↓ inhibítor C1, inhibítory ACE)</td></tr>
+      <tr><td><b>Žihľavka, svrbenie</b></td><td>áno</td><td><b>nie</b></td></tr>
+      <tr><td><b>Trvanie</b></td><td>hodiny</td><td>dni</td></tr>
+      <tr><td><b>Antihistaminiká, glukokortikoidy, adrenalín</b></td><td>účinkujú</td><td><b>neúčinkujú</b></td></tr>
+      <tr><td><b>Čo pomôže</b></td><td>vyššie uvedené</td><td>koncentrát inhibítora C1, ikatibant (blokuje receptor B₂), inhibítory kalikreínu</td></tr>
+    </tbody>
+  </table>
+
+  <div class="box k-detek aside keep">
+    <div class="label">Detekcia</div>
+    <div class="body">
+      <p>Pri podozrení na HAE sa meria <b>C4</b> a množstvo aj funkcia inhibítora C1. C4 je znížený, lebo nebrzdená prvá zložka komplementu ho stále štiepi.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 3.3 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-3-3"><span class="n">3.3</span><span>Cievna fáza – exsudácia</span></h2>
+<div class="sec-body">
+  <p>Zdravá kapilára prepúšťa vodu a ióny, ale bielkoviny plazmy zadrží – a tie svojím onkotickým tlakom držia vodu v cieve. Zápal túto rovnováhu rozbije dvakrát naraz: zvýši tlak v kapilárach a zväčší otvory v ich stene.</p>
+
+  <div class="box k-mech keep">
+    <div class="label">Mechanizmus</div>
+    <div class="body">
+      <ul>
+    <li><b>1. Rozšírenie arteriol.</b> Histamín z mastocytov, oxid dusnatý a prostaglandíny z endotelu uvoľnia hladký sval arteriol → do kapilár vteká viac krvi pod vyšším tlakom → <b>aktívna hyperémia</b> (rubor, calor) a viac prefiltrovanej tekutiny.</li>
+    <li><b>2. Netesné venuly.</b> Tekutina uniká hlavne v postkapilárnych venulách. Histamín a bradykinín tam stiahnu endotelové bunky a medzi nimi sa otvoria medzery – rýchlo a nakrátko (15–30 min). Cytokíny TNF a IL-1 spustia pomalšiu, no dlhšie trvajúcu prestavbu spojov medzi bunkami. Bielkoviny môžu prestupovať aj naprieč endotelovou bunkou vo vezikulách (<b>transcytóza</b>). Keď endotel priamo zničí toxín, teplo alebo enzýmy neutrofilov, uniká všetko vrátane erytrocytov.</li>
+    <li><b>3. Zahustenie a spomalenie krvi.</b> Voda odchádza z ciev, erytrocyty sa zhlukujú a krv v rozšírenom riečisku spomalí až takmer zastane (<b>stáza</b>). Leukocyty sa tak dostanú k stene – začína infiltrácia (<a class="xref" href="#sub-3-4-1">→ 3.4.1 Leukocytová kaskáda – ako leukocyt opustí cievu</a>). Kde je navyše endotel ťažko poškodený, môže sa v stáze vytvoriť trombus a ložisko odumrie ischémiou (<a class="xref" href="01_atrofia_nekroza_apoptoza.html#sec-1-6">→ 1.6 Druhy nekrózy</a>).</li>
+  </ul>
+    </div>
+  </div>
+
+  <p>Uniknuté bielkoviny zvýšia onkotický tlak interstícia a pritiahnu ďalšiu vodu – opuch rastie, kým lymfa nestíha odvádzať. Tekutina, ktorá prešla poškodenou stenou, je <b>exsudát</b>; pri <b>transsudáte</b> je stena celá a tekutinu vytlačí len zmenený tlak (↑ hydrostatický pri srdcovom zlyhaní, ↓ onkotický pri hypoalbuminémii), takže prejde voda a ióny, ale nie veľké bielkoviny:</p>
+
+  <table class="table keep" id="tab-3-4" style="margin:6px 0">
+    <thead><tr><th></th><th>Transsudát</th><th>Exsudát</th></tr></thead>
+    <tbody>
+      <tr><td><b>Príčina</b></td><td>↑ hydrostatický / ↓ onkotický tlak</td><td>↑ priepustnosť poškodenej steny (zápal)</td></tr>
+      <tr><td><b>Bielkoviny</b></td><td>&lt; 30 g/l</td><td>&gt; 30 g/l (aj fibrinogén → zráža sa)</td></tr>
+      <tr><td><b>Relatívna hustota</b></td><td>&lt; 1,012</td><td>&gt; 1,020</td></tr>
+      <tr><td><b>Bunky</b></td><td>málo</td><td>veľa (leukocyty)</td></tr>
+      <tr><td><b>Vzhľad</b></td><td>vodojasný</td><td>zakalený, môže sa zrážať</td></tr>
+      <tr><td><b>Príklad</b></td><td>hydrotorax pri srdcovom zlyhaní, ascites pri cirhóze</td><td>pleuritída, peritonitída</td></tr>
+    </tbody>
+  </table>
+
+  <div class="box k-detek aside keep">
+    <div class="label">Detekcia</div>
+    <div class="body">
+      <p>O povahe výpotku rozhodne jeho punkcia: v odobratej tekutine sa zmerajú bielkoviny a spočítajú bunky. Zo sedimentu toho istého výpotku sa robí aj cytológia (<a class="xref" href="00_uvod_metody.html#sec-0-3">→ 0.3 Z čoho patológ pracuje: biopsia, cytológia, pitva</a>).</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 3.4 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-3-4"><span class="n">3.4</span><span>Bunková fáza – leukocyty v ložisku</span></h2>
+<div class="sec-body">
+  <p>Exsudát privedie do ložiska bielkoviny plazmy, bunková fáza leukocyty. Má tri kroky, ktoré idú za sebou: leukocyt sa musí dostať z cievy, podľa druhu podnetu prevládne iný typ bunky a tá potom ničí, čo v ložisku našla.</p>
+
+  <h3 class="sub-h" id="sub-3-4-1"><span class="n">3.4.1</span>Leukocytová kaskáda – ako leukocyt opustí cievu</h3>
+  <p><b>Infiltrát</b> (celulizáciu) tvoria hlavne leukocyty z krvi, menej bunky, ktoré v tkanive sídlili už predtým. Leukocyt sa musí zastaviť práve pri ložisku a nikde inde – zaistí to séria väzieb, z ktorých každú spúšťa iný signál:</p>
+
+  <div class="box k-mech keep">
+    <div class="label">MECHANIZMUS – LEUKOCYTOVÁ KASKÁDA</div>
+    <div class="body">
+      <ul>
+    <li><b>1. Marginácia</b> – v rýchlom toku sa krvinky držia v strede cievy. Keď krv exsudáciou zhustne a spomalí, leukocyty sa vysunú k okraju a dostanú sa do kontaktu s endotelom.</li>
+    <li><b>2. Rolling (pavimentácia)</b> – TNF, IL-1 a histamín prinútia endotel vystaviť na povrchu <b>selektíny</b>. Ich väzba na cukorné ligandy leukocytu je slabá a krátka: bunka sa zachytí, prúd ju odtrhne, zachytí sa znova – a tak sa kotúľa po stene.</li>
+    <li><b>3. Pevné prichytenie (adhézia)</b> – chemokíny naviazané na endoteli prepnú <b>integríny</b> leukocytu do stavu vysokej afinity; tie sa pevne naviažu na ICAM-1 endotelu a bunka zastane.</li>
+    <li><b>4. Prestup stenou (diapedéza, transmigrácia)</b> – leukocyt sa pretiahne medzerou medzi endotelovými bunkami, najmä vo venulách, a vlastnými enzýmami (kolagenázou) si naruší bazálnu membránu.</li>
+    <li><b>5. Chemotaxia</b> – mimo cievy leukocyt postupuje proti koncentračnému spádu chemoatraktantov: bakteriálnych peptidov, zložky komplementu C5a, leukotriénu B₄ a chemokínu IL-8.</li>
+  </ul>
+    </div>
+  </div>
+
+  <figure class="chart keep" id="fig-leukocytova-kaskada">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 262" role="img" aria-labelledby="tfigleukkaskada">
+<title id="tfigleukkaskada">Leukocytová kaskáda: leukocyt sa v spomalenej krvi vysunie k stene venuly, kotúľa sa po selektínoch, pevne sa prichytí integrínmi, pretiahne sa medzi endotelovými bunkami a v tkanive putuje za chemoatraktantmi k baktériám</title>
+<defs><marker id="mfigleukkaskada" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker></defs>
+
+<!-- lúmen venuly -->
+<rect class="zone-r" x="0" y="34" width="720" height="92"/>
+<text class="sub" x="8" y="48">lúmen postkapilárnej venuly – krv spomalená exsudáciou</text>
+<path class="arwd" d="M8,62 L60,62" marker-end="url(#mfigleukkaskada)"/>
+
+<!-- endotel -->
+<rect class="cell" x="0" y="126" width="118" height="12" rx="5"/>
+<rect class="cell" x="122" y="126" width="118" height="12" rx="5"/>
+<rect class="cell" x="244" y="126" width="118" height="12" rx="5"/>
+<rect class="cell" x="366" y="126" width="74" height="12" rx="5"/>
+<rect class="cell" x="476" y="126" width="118" height="12" rx="5"/>
+<rect class="cell" x="598" y="126" width="122" height="12" rx="5"/>
+<text class="sub" x="712" y="122" text-anchor="end">endotel</text>
+
+<!-- tkanivo -->
+<rect class="zone-i" x="0" y="140" width="720" height="100"/>
+<text class="sub" x="8" y="234">tkanivo (interstícium)</text>
+
+<!-- 1 marginácia -->
+<circle class="cellm" cx="70" cy="84" r="14"/><circle class="nucm" cx="70" cy="84" r="6"/>
+<path class="arw" d="M70,100 L70,112" marker-end="url(#mfigleukkaskada)"/>
+<text class="lblb" x="70" y="16" text-anchor="middle">1. marginácia</text>
+<text class="sub" x="70" y="28" text-anchor="middle">k okraju prúdu</text>
+
+<!-- 2 rolling -->
+<circle class="cellm" cx="190" cy="111" r="14"/><circle class="nucm" cx="190" cy="111" r="6"/>
+<path class="arw" d="M176,90 Q190,78 204,90" marker-end="url(#mfigleukkaskada)"/>
+<text class="lblb" x="190" y="16" text-anchor="middle">2. rolling</text>
+<text class="sub" x="190" y="28" text-anchor="middle">selektíny – slabá väzba</text>
+
+<!-- 3 adhézia -->
+<ellipse class="cellm" cx="310" cy="115" rx="19" ry="10"/><ellipse class="nucm" cx="310" cy="115" rx="8" ry="4"/>
+<text class="lblb" x="310" y="16" text-anchor="middle">3. adhézia</text>
+<text class="sub" x="310" y="28" text-anchor="middle">integríny – ICAM-1</text>
+
+<!-- 4 diapedéza -->
+<ellipse class="cellm" cx="458" cy="132" rx="10" ry="20"/><ellipse class="nucm" cx="458" cy="132" rx="4" ry="8"/>
+<text class="lblb" x="458" y="16" text-anchor="middle">4. diapedéza</text>
+<text class="sub" x="458" y="28" text-anchor="middle">cez medzeru v endoteli</text>
+
+<!-- 5 chemotaxia -->
+<circle class="cellm" cx="548" cy="180" r="14"/><circle class="nucm" cx="548" cy="180" r="6"/>
+<path class="arw" d="M566,184 L640,198" marker-end="url(#mfigleukkaskada)"/>
+<circle class="dot" cx="656" cy="196" r="3"/><circle class="dot" cx="668" cy="204" r="3"/><circle class="dot" cx="660" cy="212" r="3"/><circle class="dot" cx="676" cy="194" r="3"/><circle class="dot" cx="680" cy="210" r="3"/>
+<text class="sub" x="668" y="228" text-anchor="middle">baktérie</text>
+<text class="lblb" x="624" y="16" text-anchor="middle">5. chemotaxia</text>
+<text class="sub" x="624" y="28" text-anchor="middle">za C5a, IL-8, LTB₄</text>
+
+<!-- signály pod endotelom -->
+<text class="sub" x="190" y="158" text-anchor="middle">TNF, IL-1, histamín →</text>
+<text class="sub" x="190" y="170" text-anchor="middle">endotel vystaví selektíny</text>
+<text class="sub" x="330" y="158" text-anchor="middle">chemokíny na endoteli →</text>
+<text class="sub" x="330" y="170" text-anchor="middle">integríny do vysokej afinity</text>
+<text class="sub" x="436" y="196" text-anchor="middle">kolagenáza naruší</text>
+<text class="sub" x="436" y="208" text-anchor="middle">bazálnu membránu</text>
+
+<text class="lbl-m" x="250" y="200" text-anchor="middle">LAD: chýba integrín alebo ligand selektínov</text>
+<text class="sub" x="250" y="213" text-anchor="middle">→ leukocyt ostane v krvi, v tkanive nie je hnis</text>
+<text class="sub" x="360" y="256" text-anchor="middle">Každý krok spúšťa iný signál – preto sa leukocyt zastaví len pri ložisku.</text>
+</svg>
+    <figcaption><b>Obr. 3.2 — Leukocytová kaskáda.</b> Päť krokov cesty leukocytu z krvi k baktériám a signál, ktorý každý krok spúšťa.</figcaption>
+  </figure>
+
+  <div class="box k-klin keep">
+    <div class="label">Dôkaz, že kaskáda je nevyhnutná:</div>
+    <div class="body">
+      <ul>
+    <li><b>Deficit adhézie leukocytov (LAD)</b> – vrodene chýba integrín alebo ligand selektínov → neutrofily sa nedostanú z ciev: v krvi ich je veľa, v tkanive nie. Deti majú opakované bakteriálne infekcie <b>bez hnisu</b> a oneskorené odpadnutie pupočníka.</li>
+    <li><b>Opačne – glukokortikoidy</b> adhéziu oslabia → neutrofily ostanú v krvi → <b>neutrofília</b> v krvnom obraze bez infekcie.</li>
+  </ul>
+    </div>
+  </div>
+
+  <h3 class="sub-h" id="sub-3-4-2"><span class="n">3.4.2</span>Ktoré bunky prídu a kedy</h3>
+  <p>Ktorý typ leukocytu sa do infiltrátu zapojí, závisí predovšetkým od <b>rýchlosti jeho aktivácie</b> a od druhu podnetu:</p>
+
+  <div class="box k-morf keep">
+    <div class="label">Čo uvidíš</div>
+    <div class="body">
+      <ul>
+    <li><b>Neutrofily</b> – čakajú hotové v krvi a v kostnej dreni, preto sú v ložisku prvé a prevládajú prvých 6–24 h (potom ich za 24–48 h vystriedajú monocyty a makrofágy). Baktérie pohltia a strávia vo fagolyzozóme alebo vylejú obsah granúl von. Žijú len hodiny až dni; z ich rozpadu a z tkaniva, ktoré natrávili, vzniká <b>hnis</b>.</li>
+    <li><b>Makrofágy</b> – dozrievajú z monocytov v tkanive. Pohltia aj veľké častice a mŕtve neutrofily a predložia antigén T lymfocytom. Podľa signálov z okolia pracujú ako ničitelia (M1, pod vplyvom IFN-γ) alebo ako opravári (M2 – pod vplyvom IL-4 a IL-13 tlmia zápal a tvoria rastové faktory pre hojenie).</li>
+    <li><b>Lymfocyty a plazmocyty</b> – klon zameraný na konkrétny antigén sa musí najprv vybrať a namnožiť, čo trvá dni; prevládajú pri vírusových infekciách, autoimunite, rejekcii a v chronickom zápale.</li>
+    <li><b>Eozinofily</b> – privolávajú ich pomocné T lymfocyty typu Th2 pri alergii a parazitárnych infekciách; obsah ich granúl je toxický pre helminty.</li>
+  </ul>
+    </div>
+  </div>
+
+  <h3 class="sub-h" id="sub-3-4-3"><span class="n">3.4.3</span>Fagocytóza a zabíjanie</h3>
+  <p><b>Fagocytóza</b> je pohltenie častice väčšej než ≈ 0,5 µm – baktérie, huby, zvyšku odumretej bunky. Dobre ju zvládajú len „profesionálne“ fagocyty: neutrofily, monocyty a makrofágy a dendritické bunky. Má štyri kroky a pri každom sa dá ukázať, čo sa stane, keď zlyhá:</p>
+
+  <div class="box k-mech keep">
+    <div class="label">MECHANIZMUS – OD ROZPOZNANIA PO ZABITIE</div>
+    <div class="body">
+      <ul>
+    <li><b>1. Rozpoznanie.</b> Fagocyt spozná cieľ buď priamo – receptormi pre molekuly mikróbov (manózový receptor, dektín-1, „scavenger“ receptory) –, alebo cez <b>opsoníny</b>, ktoré cieľ obalili: protilátku IgG zachytí Fcγ receptor, zložku komplementu C3b a jej štiepny produkt receptor pre komplement (<a class="xref" href="#sub-3-2-2">→ 3.2.2 Mediátory z plazmy – štyri prepojené kaskády</a>). Preto je obrana proti baktériám slabá pri nedostatku protilátok aj pri poruche komplementu.</li>
+    <li><b>2. Pohltenie.</b> Výbežky membrány obtečú cieľ a uzavrú ho do vakuoly – <b>fagozómu</b>.</li>
+    <li><b>3. Dozretie.</b> Fagozóm splynie s lyzozómami na <b>fagolyzozóm</b>; jeho obsah sa okyslí na pH ≤ 4,5.</li>
+    <li><b>4. Zabitie.</b> Fagocyt má dve zbrane. <i>Kyslíkovú:</i> enzým <b>NADPH-oxidáza</b> v membráne fagozómu prenesie elektróny na kyslík → superoxid → peroxid vodíka; <b>myeloperoxidáza</b> z granúl z neho vyrobí kyselinu chlórnu. Bunka pri tom naraz spotrebuje veľa kyslíka – <b>respiračné vzplanutie</b>. <i>Bezkyslíkovú:</i> lyzozým, proteázy a ďalšie enzýmy granúl a kyslé pH.</li>
+  </ul>
+    </div>
+  </div>
+
+  <p class="chain">NADPH-oxidáza: O₂ → superoxid → peroxid vodíka → (myeloperoxidáza) → <b>kyselina chlórna</b> → mŕtvy mikrób</p>
+
+  <div class="box k-klin keep">
+    <div class="label">Klinika</div>
+    <div class="body">
+      <p><b>Chronická granulomatózna choroba (CGD)</b> – vrodene nefunguje NADPH-oxidáza (≈ 1 : 200 000; asi dve tretiny prípadov sú viazané na chromozóm X, zvyšok sa dedí autozómovo recesívne). Fagocyt mikróba pohltí, ale nezabije. Pacienti majú opakované abscesy a pneumónie, najmä z mikróbov tvoriacich katalázu (<i>Staphylococcus aureus</i>, <i>Aspergillus</i>, <i>Burkholderia cepacia</i>, <i>Serratia</i>, <i>Nocardia</i>). Zápal je pritom nadmerný a okolo nezničeného materiálu sa tvoria granulómy (<a class="xref" href="06_granulomatozne_zapaly.html#sec-6-1">→ 6.1 Granulóm – keď makrofág nevie stráviť, čo pohltil</a>) – odtiaľ názov choroby.</p>
+    </div>
+  </div>
+
+  <div class="box k-detek aside keep">
+    <div class="label">Detekcia</div>
+    <div class="body">
+      <p>CGD sa potvrdí testom respiračného vzplanutia: po stimulácii zdravé neutrofily oxidujú farbivo dihydrorodamín a v prietokovom cytometri zasvietia (najcitlivejší test); starší test s nitrotetrazóliovou modrou ukáže to isté pod mikroskopom.</p>
+    </div>
+  </div>
+
+  <p>Keď neutrofil mikróba pohltiť nedokáže, má ešte jednu možnosť: rozvoľní vlastný chromatín (enzým PAD4 upraví históny) a vyvrhne ho von ako sieť posiatu elastázou a myeloperoxidázou – <b>neutrofilovú extracelulárnu pascu</b> (NET). Pri lytickej forme, ktorá trvá 2–4 h, neutrofil zahynie. Sieť zachytí baktérie aj huby; rozkladá ju DNáza.</p>
+
+  <div class="box k-pozor keep">
+    <div class="label">Pozor</div>
+    <div class="body">
+      <p>Zbrane fagocytu nie sú cielené. Enzýmy a radikály, ktoré uniknú z fagozómu alebo z rozpadnutého neutrofilu, rozpúšťajú aj vlastné tkanivo – tak vzniká hnis (<a class="xref" href="04_typy_zapalu.html#sec-4-5">→ 4.5 Hnisavý zápal</a>). Siete NET sú zasa lešením pre zrazeninu (<b>imunotrombóza</b>) a podieľajú sa na poškodení orgánov pri sepse (<a class="xref" href="#sub-3-6-2">→ 3.6.2 SIRS a sepsa – keď sa obrana obráti proti telu</a>) a na autoimunitných chorobách, napr. systémovom lupuse.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 3.5 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-3-5"><span class="n">3.5</span><span>Priebeh v čase a ukončenie zápalu</span></h2>
+<div class="sec-body">
+  <p>Zápal nie je stav, ale dej s vlastným časovým priebehom. V čase sa mení, ktoré bunky v ložisku vedú; ak podnet zmizne, zápal sa sám aktívne vypne; a či po ňom tkanivo ostane ako predtým, rozhodne hranica reverzibility.</p>
+
+  <h3 class="sub-h" id="sub-3-5-1"><span class="n">3.5.1</span>Akútny, subakútny a chronický zápal</h3>
+  <p>Prvé hodiny a dni zápalu majú pevný sled, lebo každý krok čaká na predchádzajúci:</p>
+
+  <table class="table keep" id="tab-3-5" style="margin:6px 0">
+    <thead><tr><th>Čas od podnetu</th><th>Čo sa deje</th><th>Čo to riadi</th></tr></thead>
+    <tbody>
+      <tr><td><b>sekundy až minúty</b></td><td>rozšírenie arteriol, začervenanie</td><td>histamín, oxid dusnatý</td></tr>
+      <tr><td><b>do 15–30 min</b></td><td>netesné venuly, opuch</td><td>histamín, bradykinín</td></tr>
+      <tr><td><b>6–24 h</b></td><td>prevládajú neutrofily</td><td>selektíny, integríny, C5a, IL-8, LTB₄</td></tr>
+      <tr><td><b>24–48 h</b></td><td>neutrofily striedajú monocyty a makrofágy</td><td>chemokíny</td></tr>
+      <tr><td><b>dni</b></td><td>lymfocyty a plazmocyty; od 2.–3. dňa proliferácia</td><td>cielená imunita, rastové faktory makrofágov</td></tr>
+    </tbody>
+  </table>
+
+  <p>Hranice medzi obdobiami sú dohodnuté, no zodpovedajú tomu, <b>ktoré bunky stihnú prísť</b>. Neutrofily čakajú hotové v krvi a v kostnej dreni. Lymfocyt zacielený na konkrétny antigén sa musí najprv v uzline vybrať, namnožiť a dozrieť, čo trvá dni až týždne.</p>
+
+  <table class="table keep" id="tab-3-6" style="margin:6px 0">
+    <thead><tr><th></th><th>Akútny</th><th>Subakútny</th><th>Chronický</th></tr></thead>
+    <tbody>
+      <tr><td><b>Dĺžka (dohodnutá hranica)</b></td><td>od minút do ≈ 3 týždňov; ak sa rozvinie za minúty až hodiny, je <b>fulminantný</b></td><td>≈ 3–6 týždňov</td><td>&gt; 6 týždňov, často roky</td></tr>
+      <tr><td><b>Kto vedie</b></td><td>vrodená imunita: neutrofily, makrofágy (pri alergii eozinofily)</td><td>neutrofily ustupujú, pribúdajú makrofágy</td><td>získaná imunita: lymfocyty, plazmocyty, makrofágy</td></tr>
+      <tr><td><b>Čo robia cievy</b></td><td>rozšírené a priepustné → exsudát, opuch</td><td>exsudácia slabne</td><td>rastú nové kapiláry (granulačné tkanivo)</td></tr>
+      <tr><td><b>Čo ostáva v tkanive</b></td><td>edém, fibrín, pri hnisaní nekróza</td><td>fibrín sa začína organizovať</td><td>deštrukcia a jazvenie (fibróza) súčasne</td></tr>
+      <tr><td><b>Čo vidí pacient a laboratórium</b></td><td>výrazné Celsove znaky, horúčka, neutrofília (baktérie) alebo lymfocytóza (vírusy)</td><td>miestne znaky slabnú</td><td>miestne znaky nenápadné; anémia, ↑ imunoglobulíny, chudnutie</td></tr>
+    </tbody>
+  </table>
+
+  <p>Zápal prejde do chronického vždy z toho istého dôvodu – podnet, ktorý ho spustil, stále pôsobí: agens sa nedá odstrániť (<i>M. tuberculosis</i>, <a class="xref" href="06_granulomatozne_zapaly.html#sec-6-5">→ 6.5 Tuberkulóza – granulóm s kazeifikáciou</a>; steh), cieľom je vlastné tkanivo (autoimunita) alebo sa poškodenie opakuje skôr, než sa zahojí (<a class="xref" href="05_hojenie.html#sec-5-9">→ 5.9 Chronický zápal – keď poškodenie a oprava bežia naraz</a>).</p>
+
+  <div class="box k-pozor aside keep">
+    <div class="label">Pozor</div>
+    <div class="body">
+      <p>Lymfocyty v infiltráte ešte neznamenajú chronický zápal: proti vírusom a pri akútnej rejekcii sú hlavnými bunkami od začiatku, len prídu o niekoľko dní neskôr. O chronicite spoľahlivejšie svedčia <b>plazmocyty</b> a nové väzivo (<a class="xref" href="04_typy_zapalu.html#sec-4-4">→ 4.4 Lymfocytárny (nehnisavý) zápal</a>).</p>
+    </div>
+  </div>
+
+  <h3 class="sub-h" id="sub-3-5-2"><span class="n">3.5.2</span>Ukončenie zápalu – aktívny dej</h3>
+  <p>Zápal nevyhasne len preto, že mediátory vyprchajú. Keď podnet zmizne, telo ho vypína rovnako riadene, ako ho spustilo – štyrmi krokmi:</p>
+
+  <div class="box k-mech keep">
+    <div class="label">MECHANIZMUS – AKO SA ZÁPAL VYPNE</div>
+    <div class="body">
+      <ul>
+    <li><b>1. Prepnú sa mediátory.</b> Prostaglandíny (PGE₂, PGD₂) zapnú v neutrofiloch ďalšiu lipoxygenázu → z kyseliny arachidónovej už nevzniká LTB₄, ktorý neutrofily privoláva, ale <b>lipoxíny</b>, ktoré ich prílev zastavia. Z omega-3 mastných kyselín vznikajú <b>rezolvíny, protektíny a marezíny</b>. Spolu sa nazývajú špecializované mediátory ukončenia zápalu.</li>
+    <li><b>2. Neutrofily zaniknú apoptózou.</b> Membrána ostane celá a enzýmy z bunky neuniknú; na povrch sa preklopí fosfatidylserín ako značka „zjedz ma“ (<a class="xref" href="01_atrofia_nekroza_apoptoza.html#sec-1-4">→ 1.4 Apoptóza</a>).</li>
+    <li><b>3. Makrofágy ich pohltia – eferocytóza.</b> Pohltenie apoptotických buniek prepne makrofág z ničiteľa (M1) na opravára (M2): začne tvoriť IL-10 a TGF-β, ktoré zápal tlmia a spúšťajú hojenie (<a class="xref" href="05_hojenie.html#sec-5-3">→ 5.3 Granulačné tkanivo – motor reparácie</a>).</li>
+    <li><b>4. Ložisko sa vyprázdni.</b> Chemokíny sa rozštiepia, tekutinu a zvyšky odvedie lymfa.</li>
+  </ul>
+    </div>
+  </div>
+
+  <p>Rýchlosť ukončenia sa dá merať: je to čas od vrcholu počtu neutrofilov v ložisku po jeho pokles na polovicu. Lipoxíny a rezolvíny ho skracujú.</p>
+
+  <div class="rev keep">
+    <div class="label"><span class="r">R</span>Revízia — ukončenie zápalu nie je pasívne</div>
+    <div class="body">
+      <p><b>Kedysi</b> sa predpokladalo, že zápal ustane sám, keď sa mediátory zriedia a rozložia. <b>Dnes</b> je známe, že ukončenie (rezolúcia) je vlastný program s vlastnými mediátormi, bunkami a receptormi (Serhan a Levy, 2018). Zmenilo to pohľad na chronický zápal: nemusí ísť len o to, že podnet trvá, ale aj o to, že zlyhalo vypnutie – uvažuje sa o tom pri ateroskleróze, fibróze orgánov a autoimunitných chorobách.</p>
+    </div>
+  </div>
+
+  <div class="box k-klin aside keep">
+    <div class="label">Klinika</div>
+    <div class="body">
+      <p>Dva staré lieky zasahujú aj tu: <b>aspirín</b> pozmení cyklooxygenázu-2 tak, že pomáha tvoriť dlhšie účinné formy lipoxínov a rezolvínov; <b>glukokortikoidy</b> zvyšujú anexín A1, ktorý ukončenie podporuje.</p>
+    </div>
+  </div>
+
+  <h3 class="sub-h" id="sub-3-5-3"><span class="n">3.5.3</span>Hranica reverzibility: kedy sa zápal zahojí bez jazvy</h3>
+  <p>Či sa po ukončení zápalu tkanivo vráti do pôvodného stavu, závisí od dvoch podmienok:</p>
+
+  <ul>
+    <li>O výsledku nerozhoduje, koľko buniek zahynulo, ale či prežila <b>kostra tkaniva</b> – bazálna membrána a retikulínová (väzivová) sieť:
+    <ul>
+      <li>kostra celá + bunky schopné delenia (epitel, hepatocyt) → nové bunky ju znova vystelú → <b>regenerácia ad integrum</b> (serózny zápal, krupózny zápal),</li>
+      <li>kostra zničená (absces, hlboká pablana, nekróza) alebo bunky, ktoré sa nedelia (kardiomyocyt, neurón) → defekt vyplní granulačné tkanivo → <b>jazva</b> (<a class="xref" href="05_hojenie.html#sec-5-2">→ 5.2 Kto sa vie obnoviť: bunkový cyklus a kostra tkaniva</a>).</li>
+    </ul></li>
+    <li>Druhou podmienkou je <b>odstránenie exsudátu</b>: fibrín a hnis, ktoré sa nestihnú rozpustiť a odplaviť lymfou, sa organizujú (<a class="xref" href="04_typy_zapalu.html#sec-4-6">→ 4.6 Fibrinózny zápal</a>).</li>
+  </ul>
+</div>
+
+<!-- ══ 3.6 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-3-6"><span class="n">3.6</span><span>Celková odpoveď organizmu</span></h2>
+<div class="sec-body">
+  <p>Mediátory z ložiska sa krvou a lymfou dostanú do celého tela. V primeranom množstve obrane pomáhajú – horúčkou, bielkovinami akútnej fázy a novými leukocytmi; v nadmernom obrátia obranu proti telu.</p>
+
+  <h3 class="sub-h" id="sub-3-6-1"><span class="n">3.6.1</span>Horúčka, reaktanty akútnej fázy, leukogram</h3>
+  <p>Celkovú odpoveď nesú tri cytokíny makrofágov – <b>TNF-α, IL-1 a IL-6</b> – a každý cieľový orgán na ne odpovie inak:</p>
+
+  <div class="fork">
+    <div><b>Hypotalamus</b>TNF-α a IL-1 (endogénne pyrogény) a bakteriálny lipopolysacharid (exogénny) → cyklooxygenáza v endoteli mozgových ciev → <b>PGE₂</b> → posun nastavenej teploty nahor → triaška a vazokonstrikcia v koži → <b>horúčka</b> (38–42 °C; subfebrília 37–38 °C); tachykardia ≈ o 10/min na každý 1 °C</div>
+    <div><b>Pečeň</b>IL-6 → hepatocyty tvoria <b>reaktanty akútnej fázy</b>: CRP a sérový amyloid A (opsonizujú mikróby, aktivujú komplement), fibrinogén, hepcidín</div>
+    <div><b>Kostná dreň</b>IL-1, TNF-α a faktory stimulujúce kolónie → vyplavenie neutrofilov → <b>leukocytóza</b>, pri prudkej aktivácii aj nezrelé tyče (<b>posun doľava</b>)</div>
+  </div>
+
+  <div class="box k-detek keep">
+    <div class="label">Detekcia</div>
+    <div class="body">
+      <ul>
+    <li><b>Krvný obraz</b> prezradí, ktorú zložku obrany kostná dreň dopĺňa. Normálne je 4–9 × 10⁹/l leukocytov, z toho neutrofily 1,5–6,5, lymfocyty 0,8–4,0 a eozinofily do 0,5 × 10⁹/l. Baktérie a rozpad tkaniva spotrebúvajú neutrofily (<b>neutrofília</b>), vírusy lymfocyty (<b>lymfocytóza</b>), parazity a alergia eozinofily (<b>eozinofília</b>), dlhotrvajúci zápal monocyty (<b>monocytóza</b>).</li>
+    <li><b>CRP</b> stúpa výraznejšie pri bakteriálnej než pri vírusovej infekcii, no hodnoty sa prekrývajú. <b>Prokalcitonín</b> (prekurzor kalcitonínu, pri bakteriálnej infekcii ho tvoria aj tkanivá mimo štítnej žľazy) je pre baktérie špecifickejší; podľa neho sa rozhoduje o antibiotikách pri sepse.</li>
+    <li><b>Sedimentácia</b> sa zrýchli: fibrinogén a imunoglobulíny oslabia záporný náboj erytrocytov, tie sa zlepia do stĺpčekov a klesajú rýchlejšie.</li>
+  </ul>
+    </div>
+  </div>
+
+  <div class="box k-klin keep">
+    <div class="label">Klinika</div>
+    <div class="body">
+      <ul>
+    <li><b>Hepcidín</b> rozloží ferroportín – jediný kanál, ktorým železo opúšťa bunky. Železo ostane uzamknuté v enterocytoch a makrofágoch, kde ho baktérie nezískajú, no nedostane sa ani ku krvotvorbe → <b>anémia chronických chorôb</b> s plnými zásobami.</li>
+    <li><b>Sérový amyloid A</b> sa pri zápale trvajúcom roky (reumatoidná artritída, bronchiektázie) môže neúplne rozložiť a uložiť ako <b>AA amyloid</b> v obličkách (<a class="xref" href="02_dystrofie.html#sub-2-4-5">→ 2.4.5 Amyloidóza</a>).</li>
+  </ul>
+    </div>
+  </div>
+
+  <h3 class="sub-h" id="sub-3-6-2"><span class="n">3.6.2</span>SIRS a sepsa – keď sa obrana obráti proti telu</h3>
+  <p><b>Syndróm systémovej zápalovej odpovede</b> (<i>systemic inflammatory response syndrome</i>, <b>SIRS</b>) je stav, keď zápal prestane byť miestnym dejom: cytokíny z ložiska sa vyplavia do krvi v takom množstve (<b>cytokínová búrka</b>), že zasiahnu cievy a orgány celého tela. Pojem pochádza z konsenzu z roku 1992. Infekcia nie je podmienkou – rovnako pôsobí každé veľké ložisko, z ktorého sa uvoľní dosť PAMP alebo DAMP (<a class="xref" href="#sec-3-1">→ 3.1 Zápal – definícia, spúšťače a Celsove znaky</a>): rozsiahla popálenina, polytrauma, akútna pankreatitída, veľká operácia.</p>
+
+  <p class="chain">veľké ložisko (PAMP, DAMP) → makrofágy → TNF-α, IL-1, IL-6 v krvi → endotel v celom tele: ↑ priepustnosť (únik tekutiny) a tkanivový faktor (zrážanie v mikrocirkulácii) + aktivované neutrofily → hypoperfúzia orgánov → <b>MODS</b> (syndróm multiorgánovej dysfunkcie)</p>
+
+  <p>Proti tomu telo stavia tlmivé signály (IL-10, rozpustné receptory cytokínov) – <b>CARS</b> (<i>compensatory anti-inflammatory response syndrome</i>). Keď protiváha prevládne, pacient, ktorý prežil prvú fázu, je imunosuprimovaný a ohrozujú ho druhotné infekcie.</p>
+
+  <div class="box k-detek keep">
+    <div class="label">Detekcia</div>
+    <div class="body">
+      <p><b>Kritériá SIRS – aspoň 2 zo 4:</b> teplota &gt; 38 °C alebo &lt; 36 °C · pulz &gt; 90/min · dychová frekvencia &gt; 20/min alebo PaCO₂ &lt; 32 mm Hg (4,3 kPa) · leukocyty &gt; 12 alebo &lt; 4 × 10⁹/l, prípadne &gt; 10 % nezrelých tyčiek. Merajú len dôsledky cytokínov z <a class="xref" href="#sub-3-6-1">→ 3.6.1 Horúčka, reaktanty akútnej fázy, leukogram</a>, preto sú citlivé, no málo špecifické: spĺňa ich takmer každý pacient na JIS.</p>
+    </div>
+  </div>
+
+  <p><b>Sepsa</b> je systémová odpoveď na infekciu, ktorá už poškodzuje orgány. Deje, ktoré miestne pomáhajú, začnú celkovo škodiť a navzájom sa poháňajú (circulus vitiosus ⟳, Obr. 3.3):</p>
+
+  <figure class="chart keep" id="fig-kruh-sepsa">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 274" role="img" aria-labelledby="tmfigkruhsepsa">
+<title id="tmfigkruhsepsa">Bludný kruh sepsy: cytokíny rozšíria a uvoľnia cievy v celom tele, klesne tlak, orgány sú zle prekrvené a upchaté mikrotrombami, rozpadnuté bunky uvoľnia DAMP a tie vyplavia ďalšie cytokíny</title>
+<defs><marker id="mfigkruhsepsa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker></defs>
+<rect class="bx-c" x="55" y="0" width="120" height="26" rx="3" stroke="var(--color-accent-600)"/>
+<text class="lblb" x="115" y="17" text-anchor="middle">infekcia</text>
+<path class="arw" d="M115,26 L115,42" marker-end="url(#mfigkruhsepsa)"/>
+<rect class="bx-k" x="20" y="44" width="190" height="50" rx="3"/>
+<text class="lblb" x="115" y="73" text-anchor="middle">TNF-α, IL-1, IL-6</text>
+<rect class="bx-k" x="255" y="44" width="190" height="50" rx="3"/>
+<text class="lblb" x="350" y="66" text-anchor="middle">celková vazodilatácia,</text>
+<text class="lblb" x="350" y="80" text-anchor="middle">↑ priepustnosť ciev</text>
+<rect class="bx-m" x="490" y="44" width="190" height="50" rx="3" stroke="var(--color-accent-2-600)" stroke-width="1.5"/>
+<text class="lblb" x="585" y="73" text-anchor="middle">↓ tlak, únik tekutiny</text>
+<rect class="bx-k" x="490" y="194" width="190" height="50" rx="3"/>
+<text class="lblb" x="585" y="216" text-anchor="middle">hypoperfúzia orgánov,</text>
+<text class="lblb" x="585" y="230" text-anchor="middle">mikrotromby (DIC)</text>
+<rect class="bx-k" x="20" y="194" width="190" height="50" rx="3"/>
+<text class="lblb" x="115" y="216" text-anchor="middle">nekróza a rozpad</text>
+<text class="lblb" x="115" y="230" text-anchor="middle">buniek</text>
+<path class="arw" d="M212,69 L253,69" marker-end="url(#mfigkruhsepsa)"/>
+<path class="arw" d="M447,69 L488,69" marker-end="url(#mfigkruhsepsa)"/>
+<path class="arw" d="M585,96 L585,192" marker-end="url(#mfigkruhsepsa)"/>
+<path class="arw" d="M488,219 L212,219" marker-end="url(#mfigkruhsepsa)"/>
+<path class="arw" d="M115,192 L115,96" marker-end="url(#mfigkruhsepsa)" style="stroke-width:2.2"/>
+<text class="sub" x="577" y="148" text-anchor="end">↓ prietok orgánmi</text>
+<text class="sub" x="123" y="148" text-anchor="start">DAMP → ďalšie cytokíny</text>
+<text class="sub" x="350" y="213" text-anchor="middle">bunky bez O₂ odumierajú</text>
+<text x="350" y="152" text-anchor="middle" style="font-size:26px;fill:var(--color-accent-2-600)">⟳</text>
+<text class="cap" x="350" y="168" text-anchor="middle">circulus vitiosus</text>
+<text class="lbl-m" x="585" y="38" text-anchor="middle">bod zvratu: septický šok</text>
+</svg>
+    <figcaption><b>Obr. 3.3 — Bludný kruh sepsy.</b></figcaption>
+  </figure>
+
+  <p>Aktivovaný endotel sa zmení z protizrážanlivého na prozrážanlivý → <b>diseminovaná intravaskulárna koagulácia</b> (DIC) spotrebuje doštičky a faktory a upchá mikrocirkuláciu; rozpad hypoperfúziou poškodených buniek uzatvára kruh. <b>Bod zvratu = septický šok:</b> cievy sú také rozšírené a priepustné, že doplnená tekutina nezvýši žilový návrat ani <b>stredný arteriálny tlak</b> (MAP) – uniká do tkanív ako edém. Zlyhávajúce orgány samy udržiavajú hypoperfúziu (MODS). <b>Kde prerušiť:</b> zdroj infekcie (antibiotiká v prvej hodine, drenáž) a perfúzia (tekutiny, <b>vazopresory</b> – lieky zužujúce cievy).</p>
+
+  <div class="rev keep">
+    <div class="label"><span class="r">R</span>Revízia — sepsa sa už nedefinuje cez SIRS</div>
+    <div class="body">
+      <p>Staršie delenie radilo sepsu do rebríčka <i>SIRS</i> → <i>sepsa</i> = SIRS + infekcia → <i>ťažká sepsa</i> → <i>septický šok</i>. Kritériá SIRS nerozlišujú bežnú odpoveď na infekciu od ohrozenia života, preto ich konsenzus <b>Sepsis-3</b> (Singer a spol., 2016) opustil: <b>sepsa</b> je <b>život ohrozujúca orgánová dysfunkcia spôsobená neregulovanou odpoveďou hostiteľa na infekciu</b> (vzostup skóre <b>SOFA</b>, bodovania funkcie šiestich orgánov, o ≥ 2 body) a pojem „ťažká sepsa“ zanikol. <b>Septický šok</b> = sepsa, pri ktorej treba vazopresory na udržanie stredného tlaku ≥ 65 mm Hg a <b>laktát</b> (znak nedostatku O₂) je &gt; 2 mmol/l napriek doplneniu tekutín. Preberajú ich aj odporúčania liečby (Evans a spol., 2021).</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 3.7 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-3-7"><span class="n">3.7</span><span>Súhrn a rýchle rozlíšenie</span></h2>
+<div class="sec-body">
+  <p>Súhrn sleduje mapu z Obr. 3.1 – kroky zápalu v čase, a pri každom chorobu, ktorá ukazuje, čo sa stane, keď krok zlyhá alebo sa vymkne:</p>
+
+  <table class="table keep" id="tab-3-7" style="margin:6px 0">
+    <thead><tr><th>Krok</th><th>Kto a čo</th><th>Hlavné mediátory</th><th>Čo vidno a čo sa meria</th><th>Keď zlyhá alebo sa vymkne</th></tr></thead>
+    <tbody>
+      <tr><td><b><b>Spúšťač</b></b></td><td>makrofágy, mastocyty; receptory pre PAMP a DAMP</td><td>—</td><td>—</td><td>autoinflamatórne choroby, dna</td></tr>
+      <tr><td><b><b>Mediátory</b></b></td><td>z buniek (uložené, novo tvorené), z plazmy (štyri kaskády)</td><td>histamín, prostaglandíny, leukotriény, cytokíny; komplement, bradykinín</td><td>Celsove znaky</td><td>hereditárny angioedém; chýbajúce C5–C9 → meningokok</td></tr>
+      <tr><td><b><b>Cievna fáza</b></b></td><td>arterioly, postkapilárne venuly</td><td>histamín, bradykinín, oxid dusnatý</td><td>opuch; exsudát &gt; 30 g/l bielkovín</td><td>opuch v úzkej dýchacej ceste</td></tr>
+      <tr><td><b><b>Bunková fáza</b></b></td><td>neutrofily → makrofágy → lymfocyty</td><td>selektíny, integríny, C5a, IL-8, LTB₄</td><td>infiltrát; neutrofília, lymfocytóza</td><td>LAD (bez hnisu), CGD (pohltí, nezabije)</td></tr>
+      <tr><td><b><b>Ukončenie</b></b></td><td>apoptóza neutrofilov, eferocytóza, makrofágy M2</td><td>lipoxíny, rezolvíny, IL-10, TGF-β</td><td>ústup znakov</td><td>chronický zápal, fibróza</td></tr>
+      <tr><td><b><b>Celková odpoveď</b></b></td><td>hypotalamus, pečeň, kostná dreň</td><td>TNF-α, IL-1, IL-6</td><td>horúčka, CRP, leukocytóza</td><td>SIRS, sepsa, septický šok</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ══ 3.8 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-3-8"><span class="n">3.8</span><span>Otázky na zopakovanie</span></h2>
+<div class="sec-body">
+  <ol class="quiz">
+    <li><details><summary>Prečo exsudát obsahuje veľa bielkovín a transsudát nie?</summary><div class="ans">Pri exsudáte je stena ciev poškodená zápalom (kontrakcia endotelu, transcytóza, priesak z poškodených ciev) a prepustí aj veľké bielkoviny vrátane fibrinogénu. Pri transsudáte je stena celá, tekutinu vytlačí len zmenený hydrostatický alebo onkotický tlak a prejde iba voda a ióny. <a class="xref" href="#sec-3-3">→ 3.3 Cievna fáza – exsudácia</a></div></details></li>
+    <li><details><summary>Prečo glukokortikoidy tlmia zápal silnejšie než nesteroidné antiflogistiká?</summary><div class="ans">Glukokortikoidy tlmia fosfolipázu A₂, teda uvoľnenie kyseliny arachidónovej – zasahujú nad rozvetvením a ubudnú prostaglandíny aj leukotriény. Nesteroidné antiflogistiká blokujú len cyklooxygenázu; leukotriény vznikajú ďalej. <a class="xref" href="#sub-3-2-1">→ 3.2.1 Mediátory z buniek</a></div></details></li>
+    <li><details><summary>Prípad: 19-ročná žena má od detstva záchvaty opuchu pier a rúk a kŕčovité bolesti brucha, bez žihľavky; antihistaminiká ani kortikoidy nepomáhajú, otec mal to isté. Čo za tým je a čo ukáže laboratórium?</summary><div class="ans">Hereditárny angioedém: chýba alebo nefunguje inhibítor C1, kalikreín nie je brzdený a vzniká nadbytok <b>bradykinínu</b>, ktorý otvára cievy cez receptor B₂ – histamín v tom nehrá úlohu, preto antihistaminiká nepôsobia. V krvi je nízky C4 a nízka hladina alebo funkcia inhibítora C1. Nebezpečný je opuch hrtana. <a class="xref" href="#sub-3-2-2">→ 3.2.2 Mediátory z plazmy – štyri prepojené kaskády</a></div></details></li>
+    <li><details><summary>Dieťa má opakované bakteriálne infekcie bez hnisu a neskoro mu odpadol pupočník. Čo sa pokazilo?</summary><div class="ans">Deficit adhézie leukocytov (<b>LAD</b>): chýba integrín alebo ligand selektínov, neutrofily sa nezachytia na endoteli a nevyjdú z ciev – v krvi ich je veľa, v tkanive nie, preto nevzniká hnis. <a class="xref" href="#sub-3-4-1">→ 3.4.1 Leukocytová kaskáda – ako leukocyt opustí cievu</a></div></details></li>
+    <li><details><summary>Čím sa líši porucha pri chronickej granulomatóznej chorobe od deficitu adhézie leukocytov?</summary><div class="ans">Pri LAD sa neutrofil do tkaniva vôbec nedostane (chýba hnis). Pri CGD sa tam dostane a mikróba pohltí, ale nezabije ho, lebo nefunguje NADPH-oxidáza a chýba respiračné vzplanutie – vznikajú abscesy a granulómy okolo nezničeného materiálu. <a class="xref" href="#sub-3-4-3">→ 3.4.3 Fagocytóza a zabíjanie</a></div></details></li>
+    <li><details><summary>Prečo pri bakteriálnom zápale prevládajú neutrofily, kým pri vírusovom lymfocyty?</summary><div class="ans">Rozhoduje <b>rýchlosť aktivácie</b>: neutrofily sú k dispozícii hneď a prevládajú prvých 6–24 h; lymfocytové klony sa musia najprv „vyškoliť“ proti konkrétnemu antigénu, čo trvá dni až týždne. <a class="xref" href="#sub-3-4-2">→ 3.4.2 Ktoré bunky prídu a kedy</a></div></details></li>
+    <li><details><summary>Prečo je pre ukončenie zápalu dôležité, že neutrofily zanikajú apoptózou, a nie nekrózou?</summary><div class="ans">Pri apoptóze ostane membrána celá, enzýmy neuniknú a fosfatidylserín na povrchu privolá makrofágy; pohltenie apoptotických buniek ich prepne na tvorbu IL-10 a TGF-β. Pri nekróze by sa obsah vylial, uvoľnil DAMP a zápal by sa znova rozdúchal. <a class="xref" href="#sub-3-5-2">→ 3.5.2 Ukončenie zápalu – aktívny dej</a> · <a class="xref" href="01_atrofia_nekroza_apoptoza.html#sub-1-4-2">→ 1.4.2 Nekróza vs. apoptóza – kompletné porovnanie</a></div></details></li>
+    <li><details><summary>Čo rozhoduje, či sa zápal zahojí bez jazvy?</summary><div class="ans">Či prežila <b>kostra tkaniva</b> (bazálna membrána, retikulínová sieť) a či sa bunky vedia deliť, a či sa exsudát (fibrín, hnis) stihne odstrániť. Inak defekt vyplní granulačné tkanivo a vznikne jazva. <a class="xref" href="#sub-3-5-3">→ 3.5.3 Hranica reverzibility: kedy sa zápal zahojí bez jazvy</a></div></details></li>
+    <li><details><summary>Prečo sa pri zápale trvajúcom mesiace objaví anémia, hoci železa má telo dosť?</summary><div class="ans">IL-6 zvýši v pečeni tvorbu <b>hepcidínu</b>, ktorý zablokuje vstrebávanie železa v čreve a jeho uvoľňovanie z makrofágov – železo je v zásobách, ale krvotvorba ho nedostane (anémia chronických chorôb). <a class="xref" href="#sub-3-6-1">→ 3.6.1 Horúčka, reaktanty akútnej fázy, leukogram</a></div></details></li>
+    <li><details><summary>Prečo sa sepsa dnes nedefinuje cez kritériá SIRS a čo je bod zvratu v septickom šoku?</summary><div class="ans">Kritériá SIRS spĺňa aj veľa pacientov bez ohrozenia života; podstatou sepsy je <b>orgánová dysfunkcia</b> z neregulovanej odpovede na infekciu (Sepsis-3). Bod zvratu nastane, keď vazodilatácia nereaguje na tekutiny a hypoperfúzia s DIC udržiava ďalší rozpad buniek a vyplavovanie mediátorov. <a class="xref" href="#sub-3-6-2">→ 3.6.2 SIRS a sepsa – keď sa obrana obráti proti telu</a></div></details></li>
+  </ol>
+</div>
+
+<!-- ══ 3.9 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-3-9"><span class="n">3.9</span><span>Zdroje</span></h2>
+<div class="sec-body src">
+  <div class="micro" style="margin-top:8px">Učebnice (kontrola faktov)</div>
+
+  <ul>
+    <li>Zámečník J. a kol.: <i>Patologie</i>, 2. vyd., Praha: LD Prager Publishing, 2024 (kap. 4 Zánět). ISBN 978-80-11-04919-5.</li>
+  </ul>
+
+  <div class="micro" style="margin-top:8px">Klasifikácie, konsenzy a prehľady</div>
+
+  <ul>
+    <li>Singer M., Deutschman C. S., Seymour C. W. et al.: The Third International Consensus Definitions for Sepsis and Septic Shock (Sepsis-3). <i>JAMA</i> 2016;315(8):801–810. <a href="https://doi.org/10.1001/jama.2016.0287" target="_blank" rel="noopener noreferrer">doi:10.1001/jama.2016.0287</a></li>
+    <li>Evans L., Rhodes A., Alhazzani W. et al.: Surviving sepsis campaign: international guidelines for management of sepsis and septic shock 2021. <i>Intensive Care Med</i> 2021;47(11):1181–1247. <a href="https://doi.org/10.1007/s00134-021-06506-y" target="_blank" rel="noopener noreferrer">doi:10.1007/s00134-021-06506-y</a></li>
+    <li>Maurer M., Magerl M., Betschel S. et al.: The international WAO/EAACI guideline for the management of hereditary angioedema – the 2021 revision and update. <i>Allergy</i> 2022;77(7):1961–1990. <a href="https://doi.org/10.1111/all.15214" target="_blank" rel="noopener noreferrer">doi:10.1111/all.15214</a></li>
+    <li>Martinez-Saguer I., Pragst I., Worrall B., Bork K.: Treatment of hereditary angioedema with plasma-derived C1 inhibitor: a review. <i>Clin Transl Allergy</i> 2025;15(12):e70126. <a href="https://doi.org/10.1002/clt2.70126" target="_blank" rel="noopener noreferrer">doi:10.1002/clt2.70126</a></li>
+    <li>Wang B., Wu L., Chen J. et al.: Metabolism pathways of arachidonic acids: mechanisms and potential therapeutic targets. <i>Signal Transduct Target Ther</i> 2021;6:94. <a href="https://doi.org/10.1038/s41392-020-00443-w" target="_blank" rel="noopener noreferrer">doi:10.1038/s41392-020-00443-w</a></li>
+    <li>Jayaraman A., Walachowski S., Bosmann M.: The complement system: a key player in the host response to infections. <i>Eur J Immunol</i> 2024;54(11):e2350814. <a href="https://doi.org/10.1002/eji.202350814" target="_blank" rel="noopener noreferrer">doi:10.1002/eji.202350814</a></li>
+    <li>Uribe-Querol E., Rosales C.: Phagocytosis: our current understanding of a universal biological process. <i>Front Immunol</i> 2020;11:1066. <a href="https://doi.org/10.3389/fimmu.2020.01066" target="_blank" rel="noopener noreferrer">doi:10.3389/fimmu.2020.01066</a></li>
+    <li>Segal B. H., Veys P., Malech H., Cowan M. J.: Chronic granulomatous disease: lessons from a rare disorder. <i>Biol Blood Marrow Transplant</i> 2011;17(1 Suppl):S123–S131. <a href="https://doi.org/10.1016/j.bbmt.2010.09.008" target="_blank" rel="noopener noreferrer">doi:10.1016/j.bbmt.2010.09.008</a></li>
+    <li>Islam M. M., Takeyama N.: Role of neutrophil extracellular traps in health and disease pathophysiology: recent insights and advances. <i>Int J Mol Sci</i> 2023;24(21):15805. <a href="https://doi.org/10.3390/ijms242115805" target="_blank" rel="noopener noreferrer">doi:10.3390/ijms242115805</a></li>
+    <li>Serhan C. N., Levy B. D.: Resolvins in inflammation: emergence of the pro-resolving superfamily of mediators. <i>J Clin Invest</i> 2018;128(7):2657–2669. <a href="https://doi.org/10.1172/JCI97943" target="_blank" rel="noopener noreferrer">doi:10.1172/JCI97943</a></li>
+    <li>Soliman A. M. et al.: Molecular dynamics of inflammation resolution: therapeutic implications. <i>Front Cell Dev Biol</i> 2025. <a href="https://doi.org/10.3389/fcell.2025.1600149" target="_blank" rel="noopener noreferrer">doi:10.3389/fcell.2025.1600149</a></li>
+    <li>StatPearls (NCBI Bookshelf): <a href="https://www.ncbi.nlm.nih.gov/books/NBK534820/" target="_blank" rel="noopener noreferrer">Pathology, Inflammation</a></li>
+    <li>Balk R. A.: Systemic inflammatory response syndrome (SIRS): where did it come from and is it still relevant today? <i>Virulence</i> 2014;5(1):20–26. <a href="https://doi.org/10.4161/viru.27135" target="_blank" rel="noopener noreferrer">doi:10.4161/viru.27135</a></li>
+    <li>Sikora J. P., Karawani J., Sobczak J.: Neutrophils and the Systemic Inflammatory Response Syndrome (SIRS). <i>Int J Mol Sci</i> 2023;24(17):13469. <a href="https://doi.org/10.3390/ijms241713469" target="_blank" rel="noopener noreferrer">doi:10.3390/ijms241713469</a></li>
+  </ul>
+
+  <div class="micro" style="margin-top:8px">Obrázky</div>
+
+  <p>Autor, licencia a odkaz na zdroj sú pri každom obrázku; súhrn je v registri <code>ZDROJE-OBRAZKOV.md</code>.</p>
+</div>
+
+<p class="next"><b>Pokračuje v:</b>
+  <a class="xref" href="04_typy_zapalu.html">→ 4 Typy zápalu – alteratívny a exsudatívny zápal</a>
+</p>
+
+<div class="running-foot">
+  <span>PATOLA — poznámky z patológie · Kapitola 3</span>
+  <span class="tnum">§ 3.1–3.9</span>
+</div>
+
+</main>
+  </div>
+  <div class="site-spacer" aria-hidden="true"></div>
+</div>
+
+<script src="../assets/js/site.js" defer></script>
+<script src="../assets/js/peek.js" defer></script>
+<script>
+/* PATOLA: tlač kapitoly otvorenej v ráme hlavnej stránky (index.html).
+   Rodič pošle "pf:print"; Ctrl/Cmd+P vo vnútri rámu tlačí rám, nie obsah knihy. */
+(function(){
+  var imgs = function(){ return Array.prototype.slice.call(document.querySelectorAll('img[loading="lazy"]')); };
+  // lenivé obrázky sa po načítaní stránky dotiahnu na pozadí, aby v tlači neboli prázdne
+  window.addEventListener("load", function(){ setTimeout(function(){ imgs().forEach(function(i){ i.loading = "eager"; }); }, 800); });
+  // v tlači sú odpovede na otázky vidieť (zatvorený <details> by sa vytlačil bez nich)
+  var shut = [];
+  // predvolený názov súboru pri tlači = kapitola („Kapitola 3 – Zápal …“); title sa po tlači vráti
+  // (po maximalizovanom náhľade je v document.title už iná kapitola, preto sa číta až teraz)
+  var keep = null;
+  function printTitle(){ return document.title.replace(/^(\d+) · /, "Kapitola $1 – "); }
+  function titleOn(){ if (keep === null) { keep = document.title; document.title = printTitle(); } }
+  function titleOff(){ if (keep !== null) { document.title = keep; keep = null; } }
+  window.addEventListener("beforeprint", function(){ titleOn(); shut = Array.prototype.filter.call(document.querySelectorAll("ol.quiz details"), function(d){ return !d.open; }); shut.forEach(function(d){ d.open = true; }); });
+  window.addEventListener("afterprint", function(){ titleOff(); shut.forEach(function(d){ d.open = false; }); shut = []; });
+  if (window.top === window.self) return;
+  // v ráme berie prehliadač názov súboru z hlavnej stránky → pošli jej názov kapitoly
+  window.addEventListener("afterprint", function(){ try { window.parent.postMessage({ pf: "title", title: null }, "*"); } catch (e) {} });
+  function printMe(){
+    var all = Array.prototype.slice.call(document.images);
+    all.forEach(function(i){ i.loading = "eager"; });
+    try { window.parent.postMessage({ pf: "title", title: printTitle() }, "*"); } catch (e) {}
+    var t0 = Date.now();
+    (function wait(){
+      if (Date.now() - t0 > 150 && (all.every(function(i){ return i.complete; }) || Date.now() - t0 > 4000)) { try { window.focus(); window.print(); } catch (e) {} }
+      else setTimeout(wait, 100);
+    })();
+  }
+  window.addEventListener("message", function(e){ if (e.data === "pf:print") printMe(); });
+  document.addEventListener("keydown", function(e){
+    if ((e.ctrlKey || e.metaKey) && !e.altKey && (e.key === "p" || e.key === "P")) { e.preventDefault(); printMe(); }
+  });
+})();
+</script>
+<script src="../assets/glossary/01-adaptacia-a-bunkova-smrt.js" defer></script>
+<script src="../assets/glossary/02-nekroza-a-gangrena.js" defer></script>
+<script src="../assets/glossary/03-dystrofie-a-amyloid.js" defer></script>
+<script src="../assets/glossary/04-zapal-a-exsudat.js" defer></script>
+<script src="../assets/glossary/05-mechanizmy-a-skratky.js" defer></script>
+<script src="../assets/js/glossary.js" defer></script>
+</body>
+</html>

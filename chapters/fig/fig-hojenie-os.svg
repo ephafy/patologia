@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 344" role="img" aria-labelledby="t41">
+<title id="t41">Časová os hojenia chirurgickej rany: kedy nastupuje ktorá bunka a zložka matrix a ako rastie pevnosť jazvy</title>
+<defs><marker id="a41" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker></defs>
+
+<!-- časová os (nelineárna) -->
+<path class="arw" d="M170,40 L708,40" marker-end="url(#a41)"/>
+<g class="sub" text-anchor="middle">
+<text x="175" y="30">0</text><text x="235" y="30">24 h</text><text x="300" y="30">48 h</text><text x="365" y="30">3. deň</text>
+<text x="430" y="30">5. deň</text><text x="495" y="30">7. deň</text><text x="565" y="30">2 týž.</text><text x="635" y="30">2 mes.</text><text x="695" y="30">1 rok</text>
+</g>
+<g class="s-t" stroke-width="1"><path d="M175,40 V286"/><path d="M365,40 V286"/><path d="M565,40 V286"/><path d="M635,40 V286"/></g>
+
+<!-- fázy v pozadí -->
+<rect class="f-m" x="175" y="46" width="190" height="240"/>
+<rect class="f-c" x="365" y="46" width="200" height="240"/>
+<text class="lbl-m" x="270" y="60" text-anchor="middle">zápal a upratovanie</text>
+<text class="lbl-c" x="465" y="60" text-anchor="middle">novotvorba tkaniva</text>
+<text class="lbl" x="636" y="60" text-anchor="middle">prestavba jazvy</text>
+
+<!-- riadky -->
+<text class="lblb" x="160" y="84" text-anchor="end">zrazenina, strup</text>
+<path class="s-k" stroke-width="6" d="M175,80 L365,80"/>
+<text class="sub" x="373" y="84">fibrín = lepidlo a lešenie</text>
+
+<text class="lblb" x="160" y="110" text-anchor="end">neutrofily</text>
+<path class="s-m" stroke-width="6" d="M185,106 L340,106"/>
+<text class="sub" x="348" y="110">vrchol 1. deň</text>
+
+<text class="lblb" x="160" y="136" text-anchor="end">epitel prekryje ranu</text>
+<path class="s-c" stroke-width="6" d="M175,132 L300,132"/>
+<text class="sub" x="308" y="136">24–48 h, spod strupu</text>
+
+<text class="lblb" x="160" y="162" text-anchor="end">makrofágy</text>
+<path class="s-c" stroke-width="6" d="M260,158 L565,158"/>
+<text class="sub" x="573" y="162">prevládajú od 3. dňa</text>
+
+<text class="lblb" x="160" y="188" text-anchor="end">kapiláry + fibroblasty</text>
+<path class="s-m" stroke-width="6" d="M365,184 L600,184"/>
+<text class="sub" x="373" y="176">granulačné tkanivo, vrchol ≈ 5. deň</text>
+
+<text class="lblb" x="160" y="214" text-anchor="end">kolagén III → I</text>
+<path class="s-k" stroke-width="6" d="M430,210 L700,210"/>
+<text class="sub" x="438" y="202">najviac tvorby 5.–7. deň, potom výmena za typ I</text>
+
+<text class="lblb" x="160" y="240" text-anchor="end">myofibroblasty</text>
+<path class="s-m" stroke-width="6" d="M495,236 L640,236"/>
+<text class="sub" x="648" y="240">kontrakcia</text>
+
+<text class="lblb" x="160" y="270" text-anchor="end">pevnosť jazvy</text>
+<text class="sub" x="565" y="270" text-anchor="middle">≈ 20 %</text>
+<text class="sub" x="695" y="270" text-anchor="middle">≤ 75–80 %</text>
+<path class="arwd" d="M430,266 L540,266" marker-end="url(#a41)"/>
+<path class="arwd" d="M590,266 L668,266" marker-end="url(#a41)"/>
+
+<text class="sub" x="170" y="310">Os nie je lineárna. Rana per secundam prechádza rovnakými krokmi,</text>
+<text class="sub" x="170" y="324">len každá fáza trvá dlhšie a granulačného tkaniva je oveľa viac.</text>
+</svg>

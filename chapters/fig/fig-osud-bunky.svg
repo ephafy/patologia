@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 250" role="img" aria-labelledby="t11">
+<title id="t11">Osud bunky na jednej škále: čím silnejšia a dlhšia noxa, tým ďalej doprava – od adaptácie cez reverzibilné poškodenie po smrť bunky</title>
+<defs><marker id="a11" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker></defs>
+
+<!-- os -->
+<path class="arw" d="M20,150 L682,150" marker-end="url(#a11)"/>
+<text class="lbl" x="682" y="170" text-anchor="end">sila × trvanie noxy →</text>
+
+<!-- zóny -->
+<rect class="bx-c" x="20" y="60" width="210" height="84" rx="2"/>
+<text class="lblb" x="125" y="80" text-anchor="middle">ADAPTÁCIA</text>
+<text class="sub" x="125" y="98" text-anchor="middle">nový stabilný stav</text>
+<text class="sub" x="125" y="113" text-anchor="middle">atrofia · hypertrofia</text>
+<text class="sub" x="125" y="127" text-anchor="middle">hyperplázia · metaplázia</text>
+
+<rect class="bx-k" x="236" y="60" width="210" height="84" rx="2"/>
+<text class="lblb" x="341" y="80" text-anchor="middle">REVERZIBILNÉ POŠKODENIE</text>
+<text class="sub" x="341" y="98" text-anchor="middle">↓ ATP, funkcia ↓, bunka žije</text>
+<text class="sub" x="341" y="113" text-anchor="middle">dystrofie: kalné zdurenie,</text>
+<text class="sub" x="341" y="127" text-anchor="middle">hydropická zmena, steatóza</text>
+
+<rect class="bx-m" x="470" y="60" width="210" height="84" rx="2"/>
+<text class="lblb" x="575" y="80" text-anchor="middle">SMRŤ BUNKY</text>
+<text class="sub" x="575" y="98" text-anchor="middle">nevratná strata ATP a membrán</text>
+<text class="sub" x="575" y="113" text-anchor="middle">nekróza (so zápalom)</text>
+<text class="sub" x="575" y="127" text-anchor="middle">apoptóza (bez zápalu)</text>
+
+<!-- bod nezvratnosti -->
+<path class="s-d" stroke-width="1.8" d="M458,40 L458,200"/>
+<text class="lbl-m" x="458" y="34" text-anchor="middle">bod nezvratnosti</text>
+
+<!-- návrat -->
+<path class="arwd" d="M341,190 C341,222 125,222 125,158" marker-end="url(#a11)"/>
+<text class="sub" x="233" y="236" text-anchor="middle">noxa odstránená → návrat k norme</text>
+
+<!-- prechod adaptácia → poškodenie -->
+<text class="sub" x="233" y="54" text-anchor="middle">adaptácia nestačí →</text>
+<text class="sub" x="575" y="190" text-anchor="middle">cesta späť už nevedie</text>
+</svg>

@@ -1,0 +1,29 @@
+# Chránené diela — NIKDY sa nezverejňujú (CLAUDE.md §4.2): prednášky, skriptá, učebnice
+zdroje/
+*.pdf
+*.pptx
+*.ppt
+*.docx
+*.doc
+*.zip
+*.xlsx
+
+# Pôvodné výstupy so starými obrázkami — nezverejňovať (CLAUDE.md §8)
+archiv/
+
+# lokálne nastavenia a systémové súbory
+.claude/
+# lokálne nástroje autora (Ctrl+R → opravy.docx) — nikdy na web
+admin/
+node_modules/
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Interné pracovné dokumenty — obsahujú poznámky o podkladoch osnovy; nezverejňujú sa
+CLAUDE.md
+PLAN_OBSAHU.md
+NÁVOD.md
+# Pracovné podklady ku kapitolám (osnova z prednášky, fakty s URL) – CLAUDE.md §4.0; nezverejňujú sa
+pracovne/
+__pycache__/

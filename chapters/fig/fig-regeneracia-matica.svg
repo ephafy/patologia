@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" role="img" aria-labelledby="t42">
+<title id="t42">Dve otázky rozhodnú o výsledku hojenia: vedia sa bunky deliť a prežila kostra tkaniva? Štyri kombinácie a ich výsledok</title>
+
+<!-- hlavičky stĺpcov -->
+<text class="lblb" x="330" y="22" text-anchor="middle">kostra tkaniva PREŽILA</text>
+<text class="sub" x="330" y="37" text-anchor="middle">bazálna membrána, retikulínová sieť</text>
+<text class="lblb" x="570" y="22" text-anchor="middle">kostra ZNIČENÁ</text>
+<text class="sub" x="570" y="37" text-anchor="middle">nekróza, absces, vred, infarkt</text>
+
+<!-- hlavičky riadkov -->
+<text class="lblb" x="100" y="100" text-anchor="middle">bunky SA DELIA</text>
+<text class="sub" x="100" y="116" text-anchor="middle">labilné a stabilné</text>
+<text class="sub" x="100" y="130" text-anchor="middle">(epitel, hepatocyt,</text>
+<text class="sub" x="100" y="144" text-anchor="middle">endotel, fibroblast)</text>
+<text class="lblb" x="100" y="226" text-anchor="middle">bunky SA NEDELIA</text>
+<text class="sub" x="100" y="242" text-anchor="middle">permanentné</text>
+<text class="sub" x="100" y="256" text-anchor="middle">(neurón, kardiomyocyt)</text>
+
+<!-- bunky matice -->
+<rect class="bx-c" x="212" y="50" width="236" height="120" rx="2"/>
+<text class="lblb" x="330" y="72" text-anchor="middle">REGENERÁCIA ad integrum</text>
+<text class="sub" x="330" y="92" text-anchor="middle">nové bunky vystelú pôvodnú kostru</text>
+<text class="sub" x="330" y="106" text-anchor="middle">a nájdu staré spojenia</text>
+<text class="sub" x="330" y="130" text-anchor="middle">erózia sliznice · pľuzgier</text>
+<text class="sub" x="330" y="144" text-anchor="middle">akútna hepatitída · krupózna pneumónia</text>
+
+<rect class="bx-m" x="452" y="50" width="236" height="120" rx="2"/>
+<text class="lblb" x="570" y="72" text-anchor="middle">JAZVA + neusporiadané bunky</text>
+<text class="sub" x="570" y="92" text-anchor="middle">bunky sa množia, ale nemajú</text>
+<text class="sub" x="570" y="106" text-anchor="middle">kam sa zaradiť; medzeru vyplní väzivo</text>
+<text class="sub" x="570" y="130" text-anchor="middle">vred · zhojený absces</text>
+<text class="sub" x="570" y="144" text-anchor="middle">cirhóza (uzly hepatocytov vo väzive)</text>
+
+<rect class="bx-k" x="212" y="176" width="236" height="120" rx="2"/>
+<text class="lblb" x="330" y="198" text-anchor="middle">OBNOVA VÝBEŽKU, nie bunky</text>
+<text class="sub" x="330" y="218" text-anchor="middle">telo neurónu prežije → axón dorastie</text>
+<text class="sub" x="330" y="232" text-anchor="middle">po pásoch Schwannových buniek</text>
+<text class="sub" x="330" y="256" text-anchor="middle">poranený nerv (≈ 1 mm za deň)</text>
+<text class="sub" x="330" y="270" text-anchor="middle">sval: satelitné bunky pod bazálnou laminou</text>
+
+<rect class="bx-m" x="452" y="176" width="236" height="120" rx="2"/>
+<text class="lblb" x="570" y="198" text-anchor="middle">JAZVA</text>
+<text class="sub" x="570" y="218" text-anchor="middle">stratené bunky sa nenahradia;</text>
+<text class="sub" x="570" y="232" text-anchor="middle">v mozgu namiesto väziva glióza</text>
+<text class="sub" x="570" y="256" text-anchor="middle">infarkt myokardu</text>
+<text class="sub" x="570" y="270" text-anchor="middle">infarkt mozgu → pseudocysta</text>
+</svg>
