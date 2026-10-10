@@ -1,0 +1,1960 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>8 · Miestne poruchy krvného obehu</title>
+<script>/* PATOLA: stránka v náhľade (assets/js/peek.js) — skryť hlavičku skôr, než sa vykreslí */if(/[?&]embed=/.test(location.search))document.documentElement.classList.add("pk-embed")</script>
+<script>/* PATOLA: pri F5/Späť ukázať stránku až na obnovenej pozícii (peek.js odkryje; poistka 2 s) */(function(){try{var h=document.documentElement,n=performance.getEntriesByType("navigation")[0],t=n&&n.type,s=location.search;if(/[?&]y=[1-9]/.test(s)||(!/[?&]embed=/.test(s)&&(t==="reload"||t==="back_forward")&&parseInt(sessionStorage.getItem("pk-y:"+location.pathname),10)>0)){h.classList.add("pk-restoring");setTimeout(function(){h.classList.remove("pk-restoring")},2000)}}catch(e){}})()</script>
+<link rel="stylesheet" href="../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../assets/styles/site.css">
+<link rel="stylesheet" href="../assets/styles/glossary.css">
+<style>
+/* ══ Broadsheet — design-system tokens ══════════════════════════════════ */
+:root{
+  --color-bg:#f3f2f2;
+  --color-surface:#eae9e9;
+  --color-text:#201e1d;
+  --color-accent:#0088b0;
+  --color-accent-2:#d6006c;
+  --color-divider:color-mix(in srgb,#201e1d 16%,transparent);
+
+  --color-neutral-100:#f8f4f4; --color-neutral-200:#eae7e7; --color-neutral-300:#d7d3d3;
+  --color-neutral-400:#bab6b6; --color-neutral-500:#9b9797; --color-neutral-600:#7d7979;
+  --color-neutral-700:#605d5d; --color-neutral-800:#444141; --color-neutral-900:#2d2b2b;
+
+  --color-accent-100:#e9f8ff; --color-accent-200:#cbeeff; --color-accent-300:#99e0ff;
+  --color-accent-400:#62c5ee; --color-accent-500:#38a6cf; --color-accent-600:#1186ac;
+  --color-accent-700:#006786; --color-accent-800:#004961; --color-accent-900:#0a303e;
+
+  --color-accent-2-100:#fff1f4; --color-accent-2-200:#ffdee6; --color-accent-2-300:#ffc0d0;
+  --color-accent-2-400:#ff90b1; --color-accent-2-500:#ff458e; --color-accent-2-600:#d82071;
+  --color-accent-2-700:#aa0b56; --color-accent-2-800:#790e3d; --color-accent-2-900:#4b1528;
+
+  --color-process-yellow:#edbb00;
+
+  --font-heading:"Source Serif 4",system-ui,serif;
+  --font-heading-weight:600;
+  --font-body:"Source Serif 4",system-ui,serif;
+  --font-mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+
+  --space-1:5px; --space-2:10px; --space-3:15px; --space-4:20px; --space-6:30px; --space-8:40px;
+  --radius-sm:1px; --radius-md:2px; --radius-lg:4px;
+
+  --shadow-sm:0 1px 2px color-mix(in srgb,#2d2b2b 14%,transparent);
+  --shadow-md:0 3px 10px color-mix(in srgb,#2d2b2b 16%,transparent);
+  --shadow-lg:0 12px 32px color-mix(in srgb,#2d2b2b 22%,transparent);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:var(--color-text);font-family:var(--font-body);
+  font-size:calc(15px*var(--z,1));line-height:1.55;font-weight:400;padding:0}
+h1,h2,h3,h4,h5,h6{font-family:var(--font-heading);font-weight:var(--font-heading-weight);
+  line-height:1.12;letter-spacing:-0.015em;margin:0 0 var(--space-2)}
+p{margin:0 0 var(--space-3)}
+a{color:var(--color-accent);text-underline-offset:3px}
+img{display:block;max-width:100%}
+figure{margin:0}
+figcaption{font-size:calc(11px*var(--z,1));margin-top:var(--space-1);
+  color:color-mix(in srgb,var(--color-text) 55%,transparent)}
+.text-muted{color:color-mix(in srgb,var(--color-text) 55%,transparent)}
+:focus{outline:none}
+:focus-visible{outline:2px solid var(--color-accent);outline-offset:2px}
+::selection{background:color-mix(in srgb,var(--color-accent) 30%,transparent)}
+.hr{height:1px;border:0;margin:var(--space-4) 0;background:var(--color-divider)}
+
+/* — tables — */
+.table{width:100%;border-collapse:collapse;font-size:calc(14px*var(--z,1))}
+.table th{text-align:left;font-size:calc(11px*var(--z,1));letter-spacing:0.08em;text-transform:uppercase;
+  color:color-mix(in srgb,var(--color-text) 60%,transparent);
+  padding:var(--space-2);border-bottom:1px solid var(--color-divider)}
+.table td{padding:var(--space-2);
+  border-bottom:1px solid color-mix(in srgb,var(--color-text) 8%,transparent)}
+.table tbody tr:hover{background:color-mix(in srgb,var(--color-text) 4%,transparent)}
+
+/* — tags — */
+.tag{display:inline-flex;align-items:center;font-size:calc(11px*var(--z,1));letter-spacing:0.02em;
+  padding:3px 10px;border-radius:calc(var(--radius-md)*0.75)}
+.tag-accent{background:var(--color-accent-100);color:var(--color-accent-800)}
+.tag-accent-2{background:var(--color-accent-2-100);color:var(--color-accent-2-800)}
+.tag-neutral{background:var(--color-neutral-100);color:var(--color-neutral-800)}
+
+/* — the plate numeral: three process inks, no black plate — */
+.cmyk-num{--cmyk-num-ground:var(--color-bg);position:relative;width:fit-content;
+  line-height:0.9;font-feature-settings:"pnum" 1;
+  padding:0.12em;margin:-0.12em}
+.cmyk-num .paper{color:var(--color-bg);
+  text-shadow:0.036em 0.025em 0 var(--color-bg),-0.031em -0.023em 0 var(--color-bg)}
+.cmyk-num .plate{position:absolute;inset:0.12em;mix-blend-mode:multiply}
+.cmyk-num .plate-c{color:var(--color-accent)}
+.cmyk-num .plate-m{color:var(--color-accent-2);translate:0.036em 0.025em}
+.cmyk-num .plate-y{color:var(--color-process-yellow);translate:-0.031em -0.023em}
+
+/* ══ doc-page — the printed sheet ═══════════════════════════════════════ */
+.page{--color-bg:#fff;margin:0 auto;background:#fff;
+  padding:50px;box-shadow:none;border:0;
+  font-size:calc(13.5px*var(--z,1));line-height:1.42;text-wrap:pretty}
+.page p{margin:0 0 6px;orphans:3;widows:3}
+.page ul,.page ol{margin:0 0 6px;padding-left:15px}
+.page li{margin:0 0 2px;orphans:3;widows:3}
+.page table.table{font-size:calc(12px*var(--z,1));line-height:1.3}
+.page table.table th,.page table.table td{padding:3px 8px 3px 0;vertical-align:top}
+.keep{break-inside:avoid}
+.page sup{font-size:calc(9px*var(--z,1));line-height:0}
+
+.running-head{display:flex;justify-content:space-between;align-items:baseline;
+  font-size:calc(10px*var(--z,1));letter-spacing:0.1em;text-transform:uppercase;color:var(--color-neutral-600);
+  padding-bottom:4px;border-bottom:1px solid var(--color-neutral-300);margin-bottom:14px}
+.running-foot{display:flex;justify-content:space-between;align-items:baseline;
+  font-size:calc(10px*var(--z,1));color:var(--color-neutral-600);
+  padding-top:4px;border-top:1px solid var(--color-neutral-300);margin-top:22px}
+
+/* — chapter opener — */
+.opener{display:flex;align-items:flex-start;gap:18px;margin-bottom:10px}
+.opener .num{font-family:var(--font-heading);font-size:calc(64px*var(--z,1));font-weight:600;
+  letter-spacing:-0.03em;--cmyk-num-ground:#fff}
+.eyebrow{font-size:calc(10px*var(--z,1));letter-spacing:0.14em;text-transform:uppercase;
+  color:var(--color-accent-2);margin-bottom:4px}
+.opener h1{font-size:calc(29px*var(--z,1));line-height:1.05;font-weight:600;letter-spacing:-0.015em}
+.standfirst{margin:6px 0 0;font-size:calc(13px*var(--z,1));font-style:italic;
+  color:var(--color-neutral-700);max-width:46em}
+
+/* — contents block — */
+.contents{column-count:3;column-gap:22px;font-size:calc(11.5px*var(--z,1));line-height:1.35;padding:8px 0;
+  border-top:2px solid var(--color-text);border-bottom:1px solid var(--color-neutral-300);
+  margin-bottom:16px}
+.contents .label{column-span:all;font-size:calc(10px*var(--z,1));letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--color-neutral-600);margin-bottom:5px}
+.contents .row{display:flex;gap:6px;break-inside:avoid}
+.contents .row span:first-child{color:var(--color-accent);font-variant-numeric:tabular-nums}
+
+/* — numbered sections — */
+.sec-h{display:flex;gap:10px;font-size:calc(16px*var(--z,1));font-weight:600;margin:0 0 5px}
+.sec-h .n{color:var(--color-accent);font-variant-numeric:tabular-nums}
+.sec-body{padding-left:calc(2.6em + 10px);margin-bottom:14px}
+.sub-h{font-size:calc(13.5px*var(--z,1));font-weight:600;margin:12px 0 4px}
+.sub-h .n{color:var(--color-accent-700);font-variant-numeric:tabular-nums;margin-right:6px}
+.micro{font-size:calc(11px*var(--z,1));letter-spacing:0.1em;text-transform:uppercase;
+  color:var(--color-neutral-600);margin-bottom:4px}
+
+/* — callouts — */
+.flag{margin:10px 0;padding:8px 10px;background:var(--color-accent-2-100);
+  border-left:3px solid var(--color-accent-2)}
+.flag .label{font-size:calc(10px*var(--z,1));letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--color-accent-2-800);margin-bottom:3px}
+.flag .body{font-size:calc(12px*var(--z,1));line-height:1.38;color:var(--color-accent-2-900)}
+.flag .body p{margin:0 0 5px}.flag .body p:last-child{margin:0}
+
+.note{margin:10px 0;padding:8px 10px;background:var(--color-accent-100);
+  border-left:3px solid var(--color-accent)}
+.note .label{font-size:calc(10px*var(--z,1));letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--color-accent-800);margin-bottom:3px}
+.note .body{font-size:calc(12px*var(--z,1));line-height:1.38;color:var(--color-accent-900)}
+.note .body p{margin:0 0 5px}.note .body p:last-child{margin:0}
+
+.plain{margin:10px 0;padding:8px 10px;background:var(--color-neutral-100);
+  border-left:3px solid var(--color-neutral-400)}
+.plain .label{font-size:calc(10px*var(--z,1));letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--color-neutral-700);margin-bottom:3px}
+.plain .body{font-size:calc(12px*var(--z,1));line-height:1.38;color:var(--color-neutral-900)}
+.plain .body p{margin:0 0 5px}.plain .body p:last-child{margin:0}
+
+/* — REVÍZIA block (CLAUDE.md §1.3, značka [R]) ————————————————————————
+   Zámerne NIE .note/.flag/.plain: site.js tie tri triedy vyplaví do
+   bočného stĺpca ako poznámky na okraji, a revízia patrí do hlavného
+   toku textu — je to obsah, nie komentár. Preto vlastná trieda.        */
+.rev{margin:11px 0;padding:9px 12px;break-inside:avoid;
+  background:linear-gradient(180deg,#fffaf0,#fff);
+  border:1px solid color-mix(in srgb,var(--color-process-yellow) 55%,transparent);
+  border-left:4px solid var(--color-process-yellow)}
+.rev .label{display:inline-flex;align-items:center;gap:6px;
+  font-size:calc(9.5px*var(--z,1));letter-spacing:0.12em;text-transform:uppercase;
+  color:#7a5c00;margin-bottom:4px;font-weight:600}
+.rev .label .r{display:inline-flex;align-items:center;justify-content:center;
+  width:15px;height:15px;border-radius:50%;background:var(--color-process-yellow);
+  color:#3d2e00;font-size:calc(9px*var(--z,1));font-weight:700;letter-spacing:0}
+.rev .body{font-size:calc(12px*var(--z,1));line-height:1.4}
+.rev .body p{margin:0 0 5px}.rev .body p:last-child{margin:0}
+.rev table.table{margin:6px 0 5px}
+
+/* — mechanism diagram in the press's own monospace — */
+.diagram{font-family:var(--font-mono);font-size:calc(10px*var(--z,1));line-height:1.35;
+  background:var(--color-surface);border-left:2px solid var(--color-neutral-400);
+  padding:9px 11px;margin:9px 0;overflow-x:auto;white-space:pre;
+  color:var(--color-neutral-900);border-radius:var(--radius-sm)}
+
+/* — kaskáda v riadku a rozvetvenie (CLAUDE.md §2.5) — */
+.chain{font-size:calc(12.5px*var(--z,1));line-height:1.5;margin:8px 0;padding:7px 10px;
+  background:var(--color-accent-100);border-left:3px solid var(--color-accent-400)}
+.chain b{color:var(--color-accent-800)}
+.fork{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;
+  margin:9px 0;font-size:calc(12px*var(--z,1));line-height:1.38}
+.fork>div{padding:7px 9px;background:var(--color-neutral-100);
+  border-top:2px solid var(--color-neutral-400)}
+.fork>div b{display:block;margin-bottom:2px;color:var(--color-neutral-900)}
+
+/* — charts — */
+.chart{margin:12px 0;break-inside:avoid;max-width:700px}
+.chart svg{width:100%;height:auto;display:block;font-family:var(--font-body)}
+.chart figcaption{font-size:calc(10.5px*var(--z,1));line-height:1.35;margin-top:4px;color:var(--color-neutral-700)}
+.chart figcaption b{color:var(--color-text)}
+.chart .ax{stroke:var(--color-neutral-400);stroke-width:1}
+.chart .grid{stroke:var(--color-neutral-300);stroke-width:1;stroke-dasharray:2 3}
+.chart .ser{fill:none;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+.chart .s-c{stroke:var(--color-accent)}
+.chart .s-m{stroke:var(--color-accent-2)}
+.chart .s-k{stroke:var(--color-neutral-700)}
+.chart .f-c{fill:var(--color-accent);opacity:.13}
+.chart .f-m{fill:var(--color-accent-2);opacity:.13}
+.chart .band-c{fill:var(--color-accent-100)}
+.chart .band-m{fill:var(--color-accent-2-100)}
+.chart .tick{font-size:9.5px;fill:var(--color-neutral-600);font-variant-numeric:tabular-nums}
+.chart .lbl{font-size:10.5px;fill:var(--color-neutral-800)}
+.chart .lbl-c{font-size:10.5px;fill:var(--color-accent-700)}
+.chart .lbl-m{font-size:10.5px;fill:var(--color-accent-2-700)}
+.chart .cap{font-size:9.5px;fill:var(--color-neutral-600);letter-spacing:.08em;text-transform:uppercase}
+.chart .mark{stroke:var(--color-neutral-800);stroke-width:1;stroke-dasharray:3 3}
+.chart .bar-c{fill:var(--color-accent-500)}
+.chart .bar-m{fill:var(--color-accent-2-500)}
+
+/* — krížové odkazy (CLAUDE.md §3.1) ————————————————————————————————————
+   a.xref  = odkaz na kapitolu, ktorá už existuje. Ostáva skutočným
+             <a href>, takže funguje aj bez JS a bez shellu; keď pribudne
+             split.js, otvorí sa vedľa v druhom paneli.
+   .xref-soon = tá istá informácia pre kapitolu, ktorá ešte nie je
+             napísaná. Zámerne NIE <a>: mŕtvy odkaz je horší než žiadny.
+             Text nesie číslo aj názov, takže dáva zmysel aj v tlači.   */
+.xref{color:var(--color-accent-700);text-decoration:none;
+  border-bottom:1px solid color-mix(in srgb,var(--color-accent) 45%,transparent);
+  white-space:nowrap}
+.xref:hover{background:var(--color-accent-100);border-bottom-color:var(--color-accent)}
+.xref-soon{color:var(--color-neutral-600);
+  border-bottom:1px dotted var(--color-neutral-400);white-space:nowrap;cursor:help}
+
+.deps,.next{font-size:calc(11.5px*var(--z,1));line-height:1.5;margin:0 0 10px;padding:7px 10px;
+  background:var(--color-neutral-100);border-top:2px solid var(--color-neutral-400)}
+.deps b,.next b{font-size:calc(10px*var(--z,1));letter-spacing:.1em;text-transform:uppercase;
+  color:var(--color-neutral-700);margin-right:6px}
+.next{border-top-color:var(--color-accent);background:var(--color-accent-100);margin:16px 0 0}
+.next b{color:var(--color-accent-800)}
+
+/* — two/three column content blocks — */
+.cols-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;
+  font-size:calc(12.5px*var(--z,1));line-height:1.35}
+.cols-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;
+  font-size:calc(12.5px*var(--z,1));line-height:1.35}
+.flow-2{column-count:2;column-gap:22px;font-size:calc(12.5px*var(--z,1));line-height:1.38}
+
+.lede{font-size:calc(12.5px*var(--z,1));color:var(--color-neutral-700)}
+b,strong{font-weight:600}
+.tnum{font-variant-numeric:tabular-nums}
+
+@media screen and (min-width:981px){
+  .sec-h,.sub-h,.micro,.hr,.diagram,.chart,.table,.running-foot,
+  .cols-2,.cols-3,.flow-2,.note,.flag,.plain,.rev,.fork,.chain{clear:both}
+  .sec-body::after{content:"";display:block;clear:both}
+}
+
+@media (max-width:820px){
+  body{padding:0}
+  .page{padding:20px 16px}
+  .contents{column-count:2}
+  .cols-3,.cols-2,.flow-2{grid-template-columns:1fr;column-count:1;display:block}
+  .cols-3>div,.cols-2>div{margin-bottom:12px}
+  .sec-body{padding-left:0}
+  .opener{gap:12px}
+  .opener .num{font-size:calc(46px*var(--z,1))}
+  .table{display:block;overflow-x:auto}
+  .chart{overflow-x:auto}
+  .chart svg{max-width:none;min-width:100%}
+  .xref,.xref-soon{white-space:normal}
+}
+@media print{
+  body{background:#fff;padding:0}
+  .page{max-width:none;padding:0.7in}
+  .diagram{overflow:visible}
+  .cols-2,.cols-3{display:block}
+  .cols-2>div,.cols-3>div{margin-bottom:8px}
+  .flow-2{column-count:1}
+  .contents{column-count:1}
+  .xref{color:#000;border-bottom:0}
+  .xref-soon{color:#444;border-bottom:0}
+  .rev{background:#fff;border:1px solid #999;border-left:4px solid #999}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+/* — doplnky pre generované kapitoly (tools/build.js) — */
+.src p,.src li{font-size:calc(11.5px*var(--z,1));line-height:1.4}
+.src ul{padding-left:16px}
+.src .micro{font-size:calc(10px*var(--z,1))}
+figure.keep>.diagram{margin:9px 0 3px}
+figure.keep>figcaption{font-size:calc(10.5px*var(--z,1));line-height:1.35;color:var(--color-neutral-700);margin:0 0 9px}
+figure.keep>figcaption b{color:var(--color-text)}
+.page code{font-family:var(--font-mono);font-size:.92em}
+.chart .bx{fill:var(--color-neutral-200)}
+.chart .bx-c{fill:var(--color-accent-200)}
+.chart .bx-m{fill:var(--color-accent-2-200)}
+.chart .bx-k{fill:var(--color-neutral-100);stroke:var(--color-neutral-400)}
+
+/* ══ PATOLA: farebné boxy = vrstvy z CLAUDE.md §1.1 ═══════════════════════
+   Vlastné triedy (.box), NIE .note/.flag/.plain — tie site.js vyplavuje do
+   okraja ako poznámky, kým boxy sú jadro textu.  --c = farba pásika,
+   --cl = tmavší odtieň pre štítok (kontrast na tónovanom pozadí).        */
+.box{--c:var(--color-neutral-500);--cl:var(--color-neutral-800);
+  margin:10px 0;padding:8px 10px;break-inside:avoid;
+  background:color-mix(in srgb,var(--c) 8%,#fff);border-left:3px solid var(--c)}
+.box .label{font-size:calc(10px*var(--z,1));letter-spacing:.12em;text-transform:uppercase;font-weight:600;
+  color:var(--cl);margin-bottom:3px}
+.box .body{font-size:calc(12px*var(--z,1));line-height:1.38}
+.box .body>*:last-child{margin-bottom:0}
+.box .body p{margin:0 0 5px}
+.box .body ul,.box .body ol{margin:0 0 5px}
+.box .body table.table{margin:5px 0}
+.k-mech{--c:var(--color-accent);--cl:var(--color-accent-800)}
+.k-morf{--c:var(--color-accent-2);--cl:var(--color-accent-2-800)}
+.k-detek{--c:var(--color-neutral-500);--cl:var(--color-neutral-800)}
+.k-klin{--c:var(--color-accent-800);--cl:var(--color-accent-900)}
+.k-pozor{--c:#d9601a;--cl:#8a3b08}
+.k-zap{--c:#1f8a8a;--cl:#0f5555}
+.k-fyz{--c:#3f8a55;--cl:#24582f}
+
+/* ══ PATOLA: okraj stránky (CLAUDE.md §5.3) ═══════════════════════════════
+   Jadro (hlavná myšlienka sekcie) a Skratky nie sú vrstva výkladu → bez farebnej
+   plochy a bez ľavého pásika. Šírka pásika 0 zároveň znamená, že site.js k nim
+   nekreslí čiaru cez text (čiara má hrúbku ľavého okraja poznámky).           */
+.k-jadro{--cl:var(--color-neutral-900);background:none;border-left:0;
+  border-top:2px solid var(--color-neutral-900);padding:5px 0 1px}
+.k-jadro .body{line-height:1.42}
+/* „Môžeš počuť“ – pojem alebo údaj z osnovy, ktorý sa nepodarilo doložiť: bez farebnej plochy, prerušovaný pásik */
+.k-pocut{--c:var(--color-neutral-500);--cl:var(--color-neutral-700);background:none;border-left:2px dashed var(--color-neutral-500)}
+.box.k-pocut .body{color:var(--color-neutral-800)}
+.k-skr{background:var(--color-neutral-100);border-left:0;padding:4px 8px;margin:3px 0 9px}
+.box.k-skr .body{font-size:calc(10.5px*var(--z,1));line-height:1.4;color:var(--color-neutral-700)}
+.k-skr .sk b{font-weight:600;color:var(--color-text)}
+.k-skr .sk+.sk::before{content:"· "}
+@media screen and (min-width:981px){
+  /* na okraji jedna skratka na riadok; v texte (mobil, tlač) idú za sebou */
+  .k-skr.side-note .sk{display:block;margin:0 0 2px}
+  .k-skr.side-note .sk+.sk::before{content:none}
+}
+/* mobil: skratky rastú s ostatným písmom (blok na konci súboru ich pre vyššiu špecifickosť nezachytí) */
+@media screen and (max-width:820px){.box.k-skr .body{font-size:calc(11.5px*var(--z,1))}}
+
+/* ══ obrázky (rovnaké pravidlá ako v ručne písaných kapitolách patofyzie) ═
+   --fw = najväčšia rozumná šírka zobrazenia; malý obrázok sa nerozmaže.   */
+.fig{margin:11px auto;break-inside:avoid;max-width:min(100%,var(--fw,100%))}
+.fig img{display:block;width:100%;height:auto;background:transparent;border:0;cursor:zoom-in}
+.fig figcaption{font-size:calc(10.5px*var(--z,1));line-height:1.35;margin-top:4px;color:var(--color-neutral-700)}
+.fig figcaption b{color:var(--color-text)}
+.fig figcaption .src-link{display:inline-flex;align-items:center;gap:3px;
+  color:var(--color-neutral-500);text-decoration:none}
+.fig figcaption .src-link:hover{color:var(--color-accent);text-decoration:underline}
+.fig figcaption .src-link svg{width:10px;height:10px;flex:none;
+  fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.fig-row{display:flex;flex-wrap:wrap;align-items:flex-start;gap:14px;margin:11px 0}
+.fig-row .fig{flex:var(--ar,1) 1 0;min-width:0;margin:0;max-width:none}
+@media screen and (min-width:981px){
+  .box,.fig,.fig-row{clear:both}
+  .fig-row .fig{clear:none}
+}
+@media (max-width:820px){
+  .fig-row{display:block}
+  .fig-row .fig{margin-bottom:12px;max-width:min(100%,var(--fw,100%))}
+}
+@media print{
+  .box{background:#fff;border:1px solid #999;border-left:4px solid var(--c)}
+  .box.k-jadro{border:0;border-top:1.5px solid #000}
+  .box.k-skr{border:0}
+  .fig figcaption .src-link{display:inline;color:#555}
+  .fig figcaption .src-link svg{display:none}
+  .fig figcaption .src-link[href]::after{content:" (" attr(href) ")";font-size:calc(8px*var(--z,1));word-break:break-all}
+  .fig-row{display:block;overflow:hidden}
+  .fig-row .fig{float:left;width:calc(50% - 8px);margin:0 0 10px}
+  .fig-row .fig+.fig{float:right}
+}
+
+/* ══ PATOLA: náhľad inej kapitoly (assets/js/peek.js) ═════════════════════
+   Panel prekryje stred a pravý stĺpec; hlavička a ľavý obsah ostávajú.
+   --pk-left / --pk-top dopočíta skript z polohy bočného panela a hlavičky.
+   Maximalizácia = --pk-m → 0 (prechod na left/top/right/bottom, 0,5 s).   */
+.pk-backdrop{position:fixed;z-index:44;left:var(--pk-left,0px);top:var(--pk-top,52px);right:0;bottom:0;
+  background:rgba(32,28,40,.30);-webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px);
+  opacity:0;transition:opacity .22s ease}
+.pk-backdrop.pk-in{opacity:1}
+.pk-backdrop.pk-max-on{opacity:0;transition:opacity .5s ease}
+.pk{--pk-m:16px;--pk-ease:cubic-bezier(.4,0,.2,1);
+  position:fixed;z-index:45;
+  left:calc(var(--pk-left,0px) + var(--pk-m));top:calc(var(--pk-top,52px) + var(--pk-m));
+  right:var(--pk-m);bottom:var(--pk-m);
+  display:flex;flex-direction:column;overflow:hidden;
+  background:#fff;border:1px solid var(--color-neutral-300);border-radius:12px;
+  box-shadow:0 22px 56px rgba(20,16,32,.30),0 2px 8px rgba(20,16,32,.12);
+  opacity:0;transform:translateY(12px) scale(.985);
+  transition:opacity .22s ease,transform .28s cubic-bezier(.2,.7,.2,1)}
+.pk.pk-in{opacity:1;transform:none}
+.pk.pk-max-on{--pk-m:0px;border-radius:0;border-color:transparent;box-shadow:0 0 0 rgba(0,0,0,0);
+  transition:left .5s var(--pk-ease),top .5s var(--pk-ease),right .5s var(--pk-ease),bottom .5s var(--pk-ease),
+    border-radius .5s var(--pk-ease),box-shadow .5s ease,border-color .5s ease}
+.pk-bar{flex:none;display:flex;align-items:center;gap:4px;height:44px;padding:0 8px 0 14px;overflow:hidden;
+  border-bottom:1px solid var(--color-neutral-200);background:var(--color-neutral-50,#faf9fb);
+  font-family:var(--site-font,system-ui,sans-serif);font-size:calc(12.5px*var(--z,1));color:var(--color-text);
+  transition:height .5s var(--pk-ease),opacity .3s ease,border-color .5s ease}
+.pk.pk-max-on .pk-bar{height:0;opacity:0;border-color:transparent}
+.pk-kind{flex:none;font-size:calc(10px*var(--z,1));letter-spacing:.12em;text-transform:uppercase;font-weight:600;
+  color:var(--color-accent-700);padding:3px 7px;border-radius:4px;
+  background:color-mix(in srgb,var(--color-accent) 10%,transparent);margin-right:6px}
+.pk-title{flex:1;min-width:0;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pk-btn{flex:none;display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;
+  border:0;border-radius:7px;background:transparent;color:var(--color-neutral-600);cursor:pointer;
+  transition:background .15s ease,color .15s ease}
+.pk-btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.pk-btn-max:hover{background:color-mix(in srgb,var(--color-accent) 12%,transparent);color:var(--color-accent-700)}
+.pk-btn-close:hover{background:color-mix(in srgb,var(--color-accent-2) 14%,transparent);color:var(--color-accent-2-700)}
+.pk-btn:focus-visible{outline:2px solid var(--color-accent);outline-offset:1px}
+.pk-btn:active{transform:scale(.94)}
+.pk-frame{flex:1;display:block;width:100%;min-height:0;border:0;background:#fff}
+.pk-load{position:relative;flex:none;height:0;overflow:visible;pointer-events:none}
+.pk-load i{position:absolute;left:0;top:0;height:3px;width:40%;opacity:0;
+  background:linear-gradient(90deg,var(--color-accent),var(--color-accent-2))}
+.pk-load.on i{opacity:1;animation:pk-slide 1.1s ease-in-out infinite}
+@keyframes pk-slide{0%{left:-40%}100%{left:100%}}
+@media (max-width:980px){.pk{--pk-m:8px}}
+
+/* kým je náhľad otvorený: stránka pod ním stojí, posuvník nahradí odsadenie */
+html.pk-lock{overflow:hidden}
+html.pk-lock body{padding-right:var(--pk-sbw,0px)}
+
+/* bočný obsah pri maximalizácii (skript presunie body a animuje posun) */
+.pk-nav-gap{height:18px;margin:6px 8px 0;border-bottom:1px dashed var(--color-neutral-300)}
+.site-header .crumb{transition:opacity .25s ease}
+.site-header .crumb.pk-fade{opacity:0}
+
+/* stránka vnútri náhľadu: len obsah, bez hlavičky a bočného panela */
+html.pk-restoring body{visibility:hidden}
+/* fork: na samostatnom riadku je len nadpis stĺpca; tučné slová v texte ostávajú vo vete */
+.fork>div>b:not(:first-child){display:inline;margin:0}
+.pk-embed .site-header,.pk-embed .site-sidebar,.pk-embed .reading-progress,
+.pk-embed .reading-pct,.pk-embed .skip-link{display:none!important}
+
+/* návrat tlačidlom Späť */
+.pk-back-in .site-main{animation:pk-back .35s cubic-bezier(.2,.7,.2,1)}
+.pk-back-in .site-sidebar nav{animation:pk-fadein .35s ease}
+@keyframes pk-back{from{opacity:0;transform:translateX(-32px)}to{opacity:1;transform:none}}
+@keyframes pk-fadein{from{opacity:0}to{opacity:1}}
+@media (prefers-reduced-motion:reduce){
+  .pk,.pk.pk-max-on,.pk-bar,.pk-backdrop{transition:none}
+  .pk-back-in .site-main,.pk-back-in .site-sidebar nav{animation:none}
+}
+@media print{.pk,.pk-backdrop{display:none!important}}
+
+/* ══ PATOLA: tlač ═════════════════════════════════════════════════════════
+   Strana A4 má ~700 px, takže sa v tlači zapínajú mobilné pravidlá
+   z chapter.css (@media max-width:820px): graf s posuvníkom, tabuľka ako blok.
+   Tu ich vraciame a riešime zlom strán.                                    */
+@page{size:A4;margin:14mm 15mm 16mm}
+@media print{
+  .page{padding:0!important}
+  .chart{overflow:visible!important;max-width:100%}
+  .chart svg{min-width:0!important;max-width:100%!important}
+  .table{display:table!important;overflow:visible!important;width:100%}
+  .diagram{white-space:pre-wrap}
+  /* fotografia nezaberie celú stranu – inak ostávajú polovičné prázdne strany */
+  .fig{max-width:100%!important}
+  .fig img{width:auto;max-width:100%;max-height:6.5cm;margin:0 auto}
+  .fig-row .fig img{max-height:5.2cm}
+  .chart svg{max-height:9.5cm}
+  /* úspornejšia tlač (4. 10. 2026): obsah kapitoly v dvoch stĺpcoch, zdroje drobnejším písmom v dvoch stĺpcoch */
+  .contents{column-count:2;column-gap:24px}
+  .sec-body.src{font-size:calc(9.5px*var(--z,1));line-height:1.35}
+  .sec-body.src ul{column-count:2;column-gap:22px;margin-top:3px}
+  .sec-body.src li{break-inside:avoid;margin-bottom:2px}
+  /* nadpis nikdy sám na spodku strany */
+  .sec-h,.sub-h,h2,h3,.box .label{break-after:avoid;page-break-after:avoid}
+  /* dlhé boxy sa smú zlomiť (inak nechajú prázdnu pol stranu); tabuľky a riadky nie */
+  .box.keep{break-inside:auto}
+  tr,.fig,.chart,figure.keep{break-inside:avoid}
+  p,li{orphans:3;widows:3}
+  .reader-ctl,#pt-zoom{display:none!important}
+}
+
+/* lupa (assets/js/zoom.js) */
+#pt-zoom{position:fixed;inset:0;z-index:90;display:none;align-items:center;justify-content:center;
+  padding:24px;background:rgba(20,18,26,.82);-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);cursor:zoom-out}
+#pt-zoom.on{display:flex}
+#pt-zoom img{max-width:100%;max-height:100%;background:#fff;box-shadow:var(--shadow-lg)}
+
+/* okrajové poznámky (site.js): na pôvodnom mieste v texte ostane čiara vo farbe a hrúbke
+   ľavého okraja poznámky, ktorá vedie až k nej; poznámka na čiare sedí spodkom.
+   Dlhé odkazy sa musia zalamovať, inak presiahnu úzky stĺpec (204–254 px, --side-w v site.css) a stránka dostane vodorovný posuv */
+.side-anchor{display:block;height:0;margin:10px 0;padding:0;position:relative;z-index:4;pointer-events:none}
+/* zalomenie čiary k poznámke, ktorú iná odtlačila nižšie (zvislý + vodorovný úsek, site.js) */
+.side-anchor i{display:none;position:absolute;background-color:inherit}
+@media (max-width:980px){.side-anchor{display:none}}
+@media (min-width:981px){.box.side-note{margin:0}}
+@media print{.side-anchor{display:none}}
+@media screen and (min-width:981px){.side-note{transform:none!important;overflow-wrap:anywhere}}
+.xref{white-space:normal}
+
+/* ══ PATOLA: vlastné schémy (chapters/fig/*.svg) ═════════════════════════ */
+.chart .mk{fill:var(--color-neutral-700)}
+.chart .arw{fill:none;stroke:var(--color-neutral-700);stroke-width:1.5}
+.chart .arwd{fill:none;stroke:var(--color-neutral-600);stroke-width:1.3;stroke-dasharray:5 4}
+.chart .cell{fill:var(--color-accent-100);stroke:var(--color-accent-600);stroke-width:1.5}
+.chart .nuc{fill:var(--color-accent-400);stroke:var(--color-accent-800);stroke-width:1}
+.chart .cellm{fill:var(--color-accent-2-100);stroke:var(--color-accent-2-600);stroke-width:1.5}
+.chart .nucm{fill:var(--color-accent-2-500);stroke:var(--color-accent-2-800);stroke-width:1}
+.chart .dot{fill:var(--color-neutral-700)}
+.chart .dotm{fill:var(--color-accent-2-600)}
+.chart .lblb{font-size:11px;font-weight:600;fill:var(--color-neutral-900)}
+.chart .sub{font-size:9.5px;fill:var(--color-neutral-700)}
+.chart .zone-r{fill:var(--color-accent-2-100)}
+.chart .zone-i{fill:var(--color-accent-100)}
+.chart .s-d{stroke:var(--color-neutral-700);stroke-dasharray:6 4}
+.chart .s-t{stroke:var(--color-neutral-700);stroke-dasharray:2 4}
+.chart .fill-acc{fill:var(--color-accent-500)}
+.chart .fill-acc2{fill:var(--color-accent-2-500)}
+.chart .stk-acc{fill:none;stroke:var(--color-accent-600);stroke-width:2}
+.chart .stk-acc2{fill:none;stroke:var(--color-accent-2-600);stroke-width:2}
+.chart .stk-n{fill:none;stroke:var(--color-neutral-600);stroke-width:1.3}
+/* ══ Odborná kontrola a otázky na zopakovanie (CLAUDE.md §1.3, §2.2) ═══════
+   Rovnaké v PATOLE aj v patofyzii (tools/chapter-extra.css oboch projektov). */
+.reviewed{font-size:calc(10.5px*var(--z,1));line-height:1.4;margin:-4px 0 12px;padding:0 10px;color:var(--color-neutral-700)}
+.reviewed b{font-size:calc(9.5px*var(--z,1));letter-spacing:.1em;text-transform:uppercase;font-weight:600}
+.reviewed a{color:var(--color-accent-800)}
+ol.quiz{margin:8px 0 4px;padding-left:26px}
+ol.quiz li{margin:0 0 6px}
+ol.quiz li::marker{color:var(--color-accent-800);font-weight:600}
+/* vlastná šípka za číslom — natívny trojuholník <summary> by sa prekrýval s číslom otázky */
+ol.quiz summary{display:block;list-style:none;cursor:pointer;font-weight:600;line-height:1.45;padding-left:14px;position:relative}
+ol.quiz summary::-webkit-details-marker{display:none}
+ol.quiz summary::before{content:"▸";position:absolute;left:0;top:0;color:var(--color-accent);transition:transform .15s ease}
+ol.quiz details[open]>summary::before{transform:rotate(90deg)}
+ol.quiz summary:hover{color:var(--color-accent-800)}
+ol.quiz .ans{margin:4px 0 2px 14px;padding:6px 10px;font-size:calc(12.5px*var(--z,1));line-height:1.45;
+  background:var(--color-accent-100);border-left:3px solid var(--color-accent)}
+@media print{
+  ol.quiz summary::before{content:none}
+  ol.quiz summary{padding-left:0}
+  ol.quiz .ans{margin-left:0}
+  ol.quiz .ans{background:none;border-left:1px solid var(--color-neutral-400);font-size:calc(10px*var(--z,1))}
+}
+
+/* stĺpce vedľa seba (blok ```cols) – vodorovné členenie rovnocenných vetiev */
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px 14px;margin:9px 0 11px}
+.cols.n4{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.cols>div{padding:7px 11px 5px;background:var(--color-neutral-100);border-top:2px solid var(--color-accent-400);break-inside:avoid}
+.cols>div>p{margin:0 0 4px}
+.cols>div>ul,.cols>div>ol{margin:0 0 3px}
+@media print{.cols>div{background:none;border:1px solid var(--color-neutral-400);border-top-width:2px}}
+
+/* otázky na zopakovanie: reflektor pojmov okolo kurzora by napovedal a klik na pojem by namiesto
+   odpovede otvoril vysvetlivku → pojmy tu svietia a dajú sa otvoriť len pri zapnutom prepínači „Pojmy“ */
+html:not(.pf-terms-always) ol.quiz .pf-term{pointer-events:none;cursor:inherit}
+html:not(.pf-terms-always) ol.quiz .pf-term.is-lit{background-color:transparent;box-shadow:0 0 0 1.5px transparent}
+/* text otázky sa pri rýchlom otváraní a zatváraní (dvojklik) nemá označovať */
+ol.quiz summary{-webkit-user-select:none;user-select:none}
+
+/* ══ PATOLA: mobil — o stupeň väčšie písmo (≈ +7 %) ══════════════════════
+   Veľkosti v chapter.css sú v px (sadzba na tlačenú stranu), takže sa na
+   úzkej obrazovke zväčšujú po jednej, každá o rovnaký krok. `screen`, lebo
+   strana A4 je užšia než 820 px a tlač by pravidlo chytila tiež.
+   Musí ostať na konci súboru — prebíja pravidlá vyššie.
+   Od 8. 10. 2026 sa každá veľkosť ešte násobí mierkou --z (site.css): nová veľkosť = calc(Npx*var(--z,1)).                    */
+@media screen and (max-width:820px){
+  .page{font-size:calc(14.5px*var(--z,1))}
+  .sec-h{font-size:calc(17px*var(--z,1))}
+  .sub-h{font-size:calc(14.5px*var(--z,1))}
+  .standfirst{font-size:calc(14px*var(--z,1))}
+  .chain,.cols-2,.cols-3,.flow-2,.lede,ol.quiz .ans{font-size:calc(13.5px*var(--z,1))}
+  .page table.table,.box .body,.rev .body,.note .body,.flag .body,.plain .body,.fork{font-size:calc(13px*var(--z,1))}
+  .contents,.deps,.next,.src p,.src li{font-size:calc(12.5px*var(--z,1))}
+  .micro{font-size:calc(12px*var(--z,1))}
+  .fig figcaption,.chart figcaption,figure.keep>figcaption,.reviewed{font-size:calc(11.5px*var(--z,1))}
+  .box .label,.rev .label,.note .label,.flag .label,.plain .label,
+  .contents .label,.deps b,.next b,.eyebrow,.src .micro{font-size:calc(10.5px*var(--z,1))}
+  /* vysvetlivky a popis v lupe (glossary.css je zdieľaný s patofyziou, preto tu) */
+  .pf-tip{font-size:calc(14px*var(--z,1))}
+  .pf-tip h4{font-size:calc(15.5px*var(--z,1))}
+  .pf-tip .kicker,.pf-tip-body .fork > div{font-size:calc(13px*var(--z,1))}
+  .pf-tip-body .chain,.pf-tip-body .why,.pf-lb-cap{font-size:calc(13.5px*var(--z,1))}
+  .pf-tip figcaption{font-size:calc(12px*var(--z,1))}
+}
+
+/* „V tejto kapitole“: riadky sú odkazy na sekcie; vzhľad sa nemení, podčiarknutie až pri prejdení myšou */
+.contents a.row,.contents a.row:visited{color:inherit;text-decoration:none;border:0;background:none}
+.contents a.row:hover span:last-child,.contents a.row:focus-visible span:last-child{text-decoration:underline}
+
+/* okraj stránky (.page) sa odvíja od šírky okna: na užšom okne menej prázdneho miesta, na širokom viac
+   (chapter.css má pevných 50 px; mobil ≤ 820 px a tlač majú vlastné pravidlá) */
+@media screen and (min-width:821px){
+  .page{--pg-x:clamp(20px,3.6vw,84px);padding:clamp(22px,3.4vw,72px) var(--pg-x)}
+  /* hlavička kapitoly presahuje text do strán o 40 px (site.css) – najviac však o okraj stránky, inak na
+     tablete (821–980 px, kde vedľa stránky nie je stĺpec na poznámky) vytŕča z okna a stránka sa posúva do strán */
+  .chapter-hero{margin-left:calc(-1*min(40px,var(--pg-x)));margin-right:calc(-1*min(40px,var(--pg-x)))}
+}
+
+/* farebné stĺpce tabuľky (hlavička v .md končí {zel} | {fial} | {ruz} | {tyrk}) – keď sú stĺpce
+   rovnocenné kategórie, ktoré si má čitateľ zapamätať ako trojicu */
+.c-zel{--tc:#3f8a55}.c-fial{--tc:var(--color-accent)}.c-ruz{--tc:var(--color-accent-2)}.c-tyrk{--tc:#1f8a8a}
+.page table.table th[class^="c-"]{color:var(--tc);font-weight:700;border-top:3px solid var(--tc);
+  background:color-mix(in srgb,var(--tc) 13%,#fff);padding:4px 8px}
+.page table.table td[class^="c-"]{background:color-mix(in srgb,var(--tc) 5%,#fff);padding-left:8px}
+@media print{.page table.table th[class^="c-"],.page table.table td[class^="c-"]{background:none}}
+
+/* vlastné schémy (SVG) idú predvolene na celú šírku textu (chapter.css ich drží na 700 px) */
+figure.chart{max-width:100%}
+</style>
+<link rel="stylesheet" href="../assets/styles/palette.css">
+<link rel="manifest" href="../manifest.json">
+<meta name="theme-color" content="#5f42a8">
+<link rel="icon" href="../assets/img/icon-32.png">
+<link rel="apple-touch-icon" href="../assets/img/icon-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="PATOLA">
+<script src="../assets/js/pwa.js" defer></script>
+</head>
+<body>
+<!-- Súbor je GENEROVANÝ z 08_miestne_poruchy_obehu.md nástrojom tools/build.js — uprav .md, nie tento súbor. -->
+<a class="skip-link" href="#sec-8-1">Preskočiť na obsah</a>
+<header class="site-header">
+  <a class="brand" href="../index.html"><span class="mark" aria-hidden="true"></span>PATOLA</a>
+  <span class="crumb">Patologická anatómia — <b>Miestne poruchy obehu</b></span>
+  <span class="spacer"></span>
+  <button class="site-toc-toggle" type="button" aria-label="Obsah kapitoly" aria-expanded="false">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+  </button>
+</header>
+
+<div class="reading-progress" role="progressbar" aria-label="Priebeh čítania kapitoly" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="bar"></div></div>
+<div class="reading-pct" aria-hidden="true">0 %</div>
+
+<div class="site-shell">
+  <aside class="site-sidebar">
+    <div class="toc-title">Obsah kapitoly</div>
+    <nav></nav>
+  </aside>
+
+  <div class="site-main">
+<main class="page">
+
+<div class="chapter-hero">
+<div class="running-head">
+  <span>8 · Miestne poruchy krvného obehu</span>
+  <span style="color:var(--color-accent-700)">Patologická anatómia</span>
+</div>
+
+<div class="opener">
+  <div class="cmyk-num num">
+    <span class="paper">8</span>
+    <span class="plate plate-c" aria-hidden="true">8</span>
+    <span class="plate plate-m" aria-hidden="true">8</span>
+    <span class="plate plate-y" aria-hidden="true">8</span>
+  </div>
+  <div style="padding-top:2px">
+    <div class="eyebrow">Poruchy obehu</div>
+    <h1>Miestne poruchy krvného obehu</h1>
+    <p class="standfirst">Poruchy obehu sú šiesta zo siedmich reakcií tkaniva a do osi ostatných vstupujú ako príčina – ischémia vedie k nekróze, tá k zápalu a jazve. Kapitola sleduje tri spôsoby, ktorými sa obeh v povodí jednej cievy pokazí – krvi príde primálo (trombóza, embólia a ďalšie uzávery → ischémia → infarkt), ostane jej v riečisku priveľa (hyperémia), alebo cievu opustí (krvácanie a krvácavé stavy) – a ukazuje, že za trombózou aj krvácaním stojí tá istá rovnováha hemostázy.</p>
+  </div>
+</div>
+</div>
+
+<p class="deps"><b>Predpoklady:</b>
+  <a class="xref" href="01_atrofia_nekroza_apoptoza.html#sub-1-5-3">→ 1.5.3 Bod nezvratnosti a reperfúzia</a> ·
+  <a class="xref" href="03_zapal_vseobecne.html#sec-3-3">→ 3.3 Cievna fáza – exsudácia</a> ·
+  <a class="xref" href="05_hojenie.html#sec-5-7">→ 5.7 Organizácia: čo telo samo nevstrebe</a>
+</p>
+<p class="reviewed"><b>Odborná kontrola:</b> zatiaľ neprebehla — fakty sú overené len podľa zdrojov uvedených na konci kapitoly · <a href="https://github.com/ephafy/patologia/issues/new?title=Kap.%208%3A%20" target="_blank" rel="noopener noreferrer">Nahlásiť chybu</a></p>
+
+<div class="contents keep">
+  <div class="label">V tejto kapitole</div>
+  <a class="row" href="#sec-8-1"><span>8.1</span><span>Miestny obeh a tri spôsoby, ako zlyhá</span></a>
+  <a class="row" href="#sec-8-2"><span>8.2</span><span>Hemostáza – zátka len tam, kde je cieva porušená</span></a>
+  <a class="row" href="#sec-8-3"><span>8.3</span><span>Trombóza – zrazenina na nesprávnom mieste</span></a>
+  <a class="row" href="#sec-8-4"><span>8.4</span><span>Embólia – čo krv zanesie ďalej</span></a>
+  <a class="row" href="#sec-8-5"><span>8.5</span><span>Ďalšie príčiny: prekážka v stene, zvonka, v krvi a v sieti</span></a>
+  <a class="row" href="#sec-8-6"><span>8.6</span><span>Ischémia a infarkt</span></a>
+  <a class="row" href="#sec-8-7"><span>8.7</span><span>Hyperémia – priveľa krvi v riečisku</span></a>
+  <a class="row" href="#sec-8-8"><span>8.8</span><span>Krvácanie – krv mimo cievy</span></a>
+  <a class="row" href="#sec-8-9"><span>8.9</span><span>Krvácavé stavy – keď hemostáza nestačí</span></a>
+  <a class="row" href="#sec-8-10"><span>8.10</span><span>Súhrn a rýchle rozlíšenie</span></a>
+  <a class="row" href="#sec-8-11"><span>8.11</span><span>Otázky na zopakovanie</span></a>
+  <a class="row" href="#sec-8-12"><span>8.12</span><span>Zdroje</span></a>
+</div>
+
+<!-- ══ 8.1 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-8-1"><span class="n">8.1</span><span>Miestny obeh a tri spôsoby, ako zlyhá</span></h2>
+<div class="sec-body">
+  <p>Tkanivo žije z krvi, ktorá doň pritečie tepnou, pomaly prejde kapilárami a odtečie žilou. <b>Miestna porucha obehu</b> postihuje len povodie jednej cievy – na rozdiel od <b>celkovej poruchy</b>, pri ktorej zlyháva srdce alebo celé riečisko (<a class="xref" href="09_celkove_poruchy_obehu.html#sec-9-1">→ 9.1 Obeh ako pumpa, potrubie a náplň</a>). Na mape reakcií tkaniva sú poruchy obehu samostatnou reakciou, ktorá spúšťa ostatné: nedostatok krvi vedie k atrofii alebo nekróze, nekróza k zápalu a ten k jazve.</p>
+
+  <div class="box k-jadro aside keep">
+    <div class="label">Jadro</div>
+    <div class="body">
+      <p>Miestna porucha obehu = v povodí jednej cievy je krvi <b>primálo</b> (uzáver → ischémia → infarkt), <b>priveľa</b> (hyperémia), alebo je <b>mimo cievy</b> (krvácanie). Trombóza a krvácanie sú dve strany jednej rovnováhy – hemostázy.</p>
+    </div>
+  </div>
+
+  <p>Podľa toho, <b>čo sa stalo s krvou v povodí cievy</b>, má kapitola tri vetvy (Obr. 8.1):</p>
+
+  <ul>
+    <li><b>krvi je primálo</b> – tepna je uzavretá alebo zúžená: trombom (<a class="xref" href="#sec-8-3">→ 8.3</a>), embolom (<a class="xref" href="#sec-8-4">→ 8.4</a>) alebo inou prekážkou (<a class="xref" href="#sec-8-5">→ 8.5</a>); následkom je ischémia a infarkt (<a class="xref" href="#sec-8-6">→ 8.6</a>),</li>
+    <li><b>krvi je priveľa</b> – priteká jej viac, alebo zle odteká: hyperémia (<a class="xref" href="#sec-8-7">→ 8.7</a>),</li>
+    <li><b>krv je mimo cievy</b> – stena praskla, je nahlodaná alebo prepúšťa: krvácanie (<a class="xref" href="#sec-8-8">→ 8.8</a>); ak sa krv navyše nevie zraziť, ide o krvácavý stav (<a class="xref" href="#sec-8-9">→ 8.9</a>).</li>
+  </ul>
+
+  <p>Všetky tri vetvy spája <b>hemostáza</b> – súbor dejov, ktoré udržiavajú krv v cieve tekutú a pri poranení ju v tom mieste zrazia. Preto ňou kapitola začína (<a class="xref" href="#sec-8-2">→ 8.2</a>).</p>
+
+  <figure class="chart keep" id="fig-obeh-mapa">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 318" role="img" aria-labelledby="tfigobehmapa">
+<title id="tfigobehmapa">Mapa kapitoly: v povodí jednej cievy je krvi primálo (trombóza, embólia alebo iná prekážka vedú k ischémii a infarktu), priveľa (aktívna hyperémia alebo venostáza, ktorá môže vyústiť do opuchu a hemoragickej infarzácie), alebo je krv mimo cievy (krvácanie, krvácavé stavy); všetky vetvy spája rovnováha hemostázy</title>
+<defs><marker id="mfigobehmapa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker></defs>
+
+<rect class="bx-c" x="216" y="4" width="288" height="30" rx="3" stroke="var(--color-accent-600)"/>
+<text class="lblb" x="360" y="24" text-anchor="middle">povodie jednej cievy: čo sa stalo s krvou?</text>
+
+<path class="arw" d="M270,34 L150,56" marker-end="url(#mfigobehmapa)"/>
+<path class="arw" d="M400,34 L400,56" marker-end="url(#mfigobehmapa)"/>
+<path class="arw" d="M470,34 L610,56" marker-end="url(#mfigobehmapa)"/>
+
+<!-- primálo -->
+<rect class="bx-k" x="8" y="58" width="290" height="40" rx="3"/>
+<text class="lblb" x="153" y="75" text-anchor="middle">je jej PRIMÁLO</text>
+<text class="sub" x="153" y="90" text-anchor="middle">tepna je uzavretá alebo zúžená</text>
+
+<rect class="bx-c" x="8" y="112" width="90" height="52" rx="3"/>
+<text class="lblb" x="53" y="131" text-anchor="middle">TROMBÓZA</text>
+<text class="sub" x="53" y="146" text-anchor="middle">zrazenina</text>
+<text class="sub" x="53" y="158" text-anchor="middle">na mieste · 8.3</text>
+
+<rect class="bx-c" x="108" y="112" width="90" height="52" rx="3"/>
+<text class="lblb" x="153" y="131" text-anchor="middle">EMBÓLIA</text>
+<text class="sub" x="153" y="146" text-anchor="middle">materiál zanesený</text>
+<text class="sub" x="153" y="158" text-anchor="middle">prúdom · 8.4</text>
+
+<rect class="bx-c" x="208" y="112" width="90" height="52" rx="3"/>
+<text class="lblb" x="253" y="131" text-anchor="middle">INÁ PREKÁŽKA</text>
+<text class="sub" x="253" y="146" text-anchor="middle">stena, tlak zvonka,</text>
+<text class="sub" x="253" y="158" text-anchor="middle">krv, sieť · 8.5</text>
+
+<path class="arw" d="M53,98 L53,110" marker-end="url(#mfigobehmapa)"/>
+<path class="arw" d="M153,98 L153,110" marker-end="url(#mfigobehmapa)"/>
+<path class="arw" d="M253,98 L253,110" marker-end="url(#mfigobehmapa)"/>
+<path class="arw" d="M53,164 L120,186" marker-end="url(#mfigobehmapa)"/>
+<path class="arw" d="M153,164 L153,186" marker-end="url(#mfigobehmapa)"/>
+<path class="arw" d="M253,164 L186,186" marker-end="url(#mfigobehmapa)"/>
+
+<rect class="bx-m" x="58" y="188" width="190" height="52" rx="3" stroke="var(--color-accent-2-600)" stroke-width="1.5"/>
+<text class="lblb" x="153" y="207" text-anchor="middle">ISCHÉMIA → INFARKT · 8.6</text>
+<text class="sub" x="153" y="222" text-anchor="middle">rozhoduje náhradný prívod, rýchlosť,</text>
+<text class="sub" x="153" y="234" text-anchor="middle">citlivosť tkaniva a stav obehu</text>
+
+<!-- priveľa -->
+<rect class="bx-k" x="314" y="58" width="172" height="40" rx="3"/>
+<text class="lblb" x="400" y="75" text-anchor="middle">je jej PRIVEĽA · 8.7</text>
+<text class="sub" x="400" y="90" text-anchor="middle">hyperémia</text>
+
+<rect class="bx-c" x="314" y="112" width="80" height="52" rx="3"/>
+<text class="lblb" x="354" y="131" text-anchor="middle">AKTÍVNA</text>
+<text class="sub" x="354" y="146" text-anchor="middle">viac priteká</text>
+<text class="sub" x="354" y="158" text-anchor="middle">červené, teplé</text>
+
+<rect class="bx-c" x="404" y="112" width="82" height="52" rx="3"/>
+<text class="lblb" x="445" y="131" text-anchor="middle">VENOSTÁZA</text>
+<text class="sub" x="445" y="146" text-anchor="middle">neodteká</text>
+<text class="sub" x="445" y="158" text-anchor="middle">modré, opuch</text>
+
+<path class="arw" d="M354,98 L354,110" marker-end="url(#mfigobehmapa)"/>
+<path class="arw" d="M445,98 L445,110" marker-end="url(#mfigobehmapa)"/>
+<path class="arw" d="M445,164 L445,186" marker-end="url(#mfigobehmapa)"/>
+
+<rect class="bx-m" x="330" y="188" width="156" height="52" rx="3" stroke="var(--color-accent-2-600)" stroke-width="1.5"/>
+<text class="lblb" x="408" y="207" text-anchor="middle">HEMORAGICKÁ</text>
+<text class="lblb" x="408" y="221" text-anchor="middle">INFARZÁCIA</text>
+<text class="sub" x="408" y="234" text-anchor="middle">úplný uzáver žily ⟳</text>
+
+<!-- mimo cievy -->
+<rect class="bx-k" x="502" y="58" width="210" height="40" rx="3"/>
+<text class="lblb" x="607" y="75" text-anchor="middle">je MIMO CIEVY</text>
+<text class="sub" x="607" y="90" text-anchor="middle">stena praskla, je nahlodaná, prepúšťa</text>
+
+<rect class="bx-c" x="502" y="112" width="210" height="52" rx="3"/>
+<text class="lblb" x="607" y="131" text-anchor="middle">KRVÁCANIE · 8.8</text>
+<text class="sub" x="607" y="146" text-anchor="middle">do kože, tkaniva, dutín, navonok</text>
+<text class="sub" x="607" y="158" text-anchor="middle">množstvo × rýchlosť × miesto</text>
+
+<path class="arw" d="M607,98 L607,110" marker-end="url(#mfigobehmapa)"/>
+<path class="arw" d="M607,164 L607,186" marker-end="url(#mfigobehmapa)"/>
+
+<rect class="bx-m" x="502" y="188" width="210" height="52" rx="3" stroke="var(--color-accent-2-600)" stroke-width="1.5"/>
+<text class="lblb" x="607" y="207" text-anchor="middle">KRVÁCAVÉ STAVY · 8.9</text>
+<text class="sub" x="607" y="222" text-anchor="middle">chýbajú doštičky, koagulačné faktory</text>
+<text class="sub" x="607" y="234" text-anchor="middle">alebo pevnosť steny</text>
+
+<!-- hemostáza -->
+<rect class="bx-k" x="8" y="262" width="704" height="48" rx="3"/>
+<text class="lblb" x="360" y="281" text-anchor="middle">HEMOSTÁZA · 8.2 – spoločná rovnováha</text>
+<text class="sub" x="360" y="298" text-anchor="middle">zráža sa priveľa → trombóza    ·    zráža sa primálo → krvácanie    ·    oboje naraz → DIC (8.9.5)</text>
+<path class="arwd" d="M153,240 L153,260"/>
+<path class="arwd" d="M607,240 L607,260"/>
+</svg>
+    <figcaption><b>Obr. 8.1 — Mapa kapitoly.</b> Tri spôsoby, ktorými sa obeh v povodí jednej cievy pokazí, a hemostáza, ktorá ich spája.</figcaption>
+  </figure>
+</div>
+
+<!-- ══ 8.2 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-8-2"><span class="n">8.2</span><span>Hemostáza – zátka len tam, kde je cieva porušená</span></h2>
+<div class="sec-body">
+  <p>Hemostáza musí splniť dve protichodné úlohy: v neporušenej cieve krv nesmie zraziť, v porušenej ju musí zraziť rýchlo a len na mieste poranenia. Sekcia opisuje tri zložky, ktoré to zabezpečujú – <b>stenu cievy, doštičky a koagulačné faktory</b> – a brzdy, ktoré zrazeninu ohraničia. Každá porucha v ďalších sekciách je vychýlenie tejto rovnováhy jedným alebo druhým smerom.</p>
+
+  <div class="box k-jadro aside keep">
+    <div class="label">Jadro</div>
+    <div class="body">
+      <p>Poranenie → <b>doštičky</b> prilepia na odkrytý kolagén (cez vWF) a zhluknú sa → <b>tkanivový faktor</b> spustí tvorbu trombínu → <b>fibrín</b> zátku spevní → brzdy (antitrombín, proteín C, plazmín) ju ohraničia. Priveľa = trombóza, primálo = krvácanie.</p>
+    </div>
+  </div>
+
+  <div class="box k-fyz keep">
+    <div class="label">Normálne</div>
+    <div class="body">
+      <p><b>Neporušený endotel je protizrážanlivý povrch</b>: kryje kolagén pod sebou, nenesie tkanivový faktor a tvorí látky, ktoré tlmia doštičky aj koaguláciu. Krv sa preto za normálnych okolností zráža len tam, kde endotel chýba alebo je poškodený.</p>
+    </div>
+  </div>
+
+  <p class="chain">poranenie cievy → cieva sa reflexne stiahne, a tým spomalí únik krvi → odkrytý kolagén viaže <b>von Willebrandov faktor (vWF)</b> → naň sa receptorom GP Ib prichytia doštičky (<b>adhézia</b>) → doštičky sa aktivujú a vysypú granuly (ADP, serotonín) a tvoria tromboxán A₂ → ďalšie doštičky sa cez receptor GP IIb/IIIa a fibrinogén spoja navzájom (<b>agregácia</b>) → <b>doštičková zátka</b> (primárna hemostáza) → na jej povrchu vzniká trombín, ktorý mení fibrinogén na <b>fibrín</b> (sekundárna hemostáza) → pevná zrazenina</p>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>vWF</b> von Willebrandov faktor – bielkovina, ktorou sa doštičky chytajú o kolagén; chráni faktor VIII</span> <span class="sk"><b>ADP</b> adenozíndifosfát – tu látka z granúl doštičiek, ktorá aktivuje ďalšie doštičky</span></div>
+  </div>
+
+  <div class="box k-mech keep">
+    <div class="label">Mechanizmus – ako vzniká trombín</div>
+    <div class="body">
+      <ul>
+    <li><b>Iniciácia.</b> Bunky pod endotelom nesú <b>tkanivový faktor (TF)</b>. Po poranení sa naň naviaže faktor VIIa a komplex aktivuje faktor X; vznikne prvé malé množstvo trombínu.</li>
+    <li><b>Amplifikácia.</b> Tento trombín aktivuje doštičky a pomocné faktory V a VIII (faktor VIII dovtedy koluje naviazaný na vWF, ktorý ho chráni pred rozkladom).</li>
+    <li><b>Propagácia.</b> Na povrchu aktivovaných doštičiek sa skladajú enzýmové komplexy (IXa s VIIIa, Xa s Va), ktoré vyrobia trombínu rádovo viac. Trombín štiepi fibrinogén na fibrín a ten sa sieťuje do pevnej siete.</li>
+    <li><b>Vitamín K</b> je potrebný na tvorbu funkčných faktorov II (protrombín), VII, IX a X v pečeni – preto jeho nedostatok alebo blokáda (warfarín) koaguláciu spomalí (<a class="xref" href="#sub-8-9-3">→ 8.9.3</a>).</li>
+  </ul>
+    </div>
+  </div>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>TF</b> tkanivový faktor (<i>tissue factor</i>) – spúšťač koagulácie na bunkách pod endotelom</span></div>
+  </div>
+
+  <p>Zátka by rástla ďalej, keby ju nič nezastavilo. Ohraničujú ju tri brzdy a jeden upratovací systém:</p>
+
+  <table class="table keep" id="tab-8-1" style="margin:6px 0">
+    <thead><tr><th>Brzda</th><th>Čo robí</th><th>Čo sa stane, keď chýba</th></tr></thead>
+    <tbody>
+      <tr><td><b><b>antitrombín</b></b></td><td>viaže a vypína trombín a faktor Xa; heparín jeho účinok mnohonásobne zrýchľuje</td><td>sklon k trombóze</td></tr>
+      <tr><td><b><b>proteín C a proteín S</b></b></td><td>trombín naviazaný na zdravý endotel aktivuje proteín C; ten s proteínom S rozloží faktory Va a VIIIa</td><td>sklon k trombóze; rovnako, keď je faktor V voči proteínu C odolný (Leidenská mutácia)</td></tr>
+      <tr><td><b><b>inhibítor dráhy tkanivového faktora (TFPI)</b></b></td><td>vypína komplex TF–VIIa</td><td>—</td></tr>
+      <tr><td><b><b>fibrinolýza</b></b></td><td>plazmín štiepi fibrín na rozpustné úlomky; z fibrínu spevneného sieťovaním vznikajú <b>D-diméry</b></td><td>zrazenina pretrváva; pri nadmernej fibrinolýze naopak krvácanie</td></tr>
+    </tbody>
+  </table>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>TFPI</b> inhibítor dráhy tkanivového faktora (<i>tissue factor pathway inhibitor</i>)</span></div>
+  </div>
+
+  <div class="rev keep">
+    <div class="label"><span class="r">R</span>Revízia — z „kaskády“ bunkový model koagulácie</div>
+    <div class="body">
+      <p><b>Kedysi</b> sa zrážanie krvi vykladalo ako kaskáda s dvoma rovnocennými paralelnými cestami – vnútornou a vonkajšou –, ktoré sa stretnú pri faktore X. <b>Dnes</b> sa dej opisuje ako tri prekrývajúce sa fázy na povrchu buniek (iniciácia na bunke s tkanivovým faktorom, amplifikácia, propagácia na doštičke): vysvetľuje to, prečo pacient bez faktora VIII alebo IX krváca, hoci „vonkajšiu“ cestu má neporušenú – bez nich doštička nevyrobí dosť trombínu. Staré delenie ostáva užitočné v laboratóriu, lebo dva základné testy merajú práve tieto dve časti.</p>
+    </div>
+  </div>
+
+  <div class="box k-detek keep">
+    <div class="label">Štyri základné testy hemostázy</div>
+    <div class="body">
+      <ul>
+    <li><b>počet doštičiek</b> (norma 150–400 × 10⁹/l),</li>
+    <li><b>protrombínový čas (PT, INR)</b> – cesta tkanivového faktora: faktor VII a spoločná časť (X, V, protrombín, fibrinogén); predĺži ho nedostatok vitamínu K, warfarín, choroba pečene,</li>
+    <li><b>aktivovaný parciálny tromboplastínový čas (aPTT)</b> – faktory VIII, IX, XI, XII a spoločná časť; predĺži ho hemofília a heparín,</li>
+    <li><b>fibrinogén a D-diméry</b> – spotreba fibrinogénu a rozpad fibrínu; D-diméry stúpajú pri každej väčšej trombóze aj pri DIC.</li>
+  </ul>
+    </div>
+  </div>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>PT, INR</b> protrombínový čas; INR je jeho prepočet na medzinárodne porovnateľný pomer</span> <span class="sk"><b>aPTT</b> aktivovaný parciálny tromboplastínový čas</span> <span class="sk"><b>DIC</b> diseminovaná intravaskulárna koagulácia</span></div>
+  </div>
+
+  <div class="box k-pocut aside keep">
+    <div class="label">Môžeš počuť</div>
+    <div class="body">
+      <p><b>Endotelín.</b> Stiahnutie poranenej cievy sa okrem nervového reflexu pripisuje aj endotelínu, ktorý uvoľní poškodený endotel. V zdrojoch, z ktorých kapitola čerpá, sa to nepodarilo doložiť.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 8.3 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-8-3"><span class="n">8.3</span><span>Trombóza – zrazenina na nesprávnom mieste</span></h2>
+<div class="sec-body">
+  <p><b>Trombóza</b> je zrážanie krvi za života vnútri cievy alebo srdcovej dutiny; výsledná zrazenina je <b>trombus</b>. Je to tá istá hemostáza ako pri poranení, len spustená tam, kde cieva nie je otvorená – a preto namiesto ochrany pred krvácaním zužuje alebo uzatvára priesvit. Sekcia postupne odpovedá na štyri otázky: prečo trombus vzniká, ako vyzerá, kde vzniká a čo sa s ním stane.</p>
+
+  <div class="box k-jadro aside keep">
+    <div class="label">Jadro</div>
+    <div class="body">
+      <p><b>Trombus</b> vzniká, keď sa zíde poškodený endotel, porušené prúdenie a zvýšená zrážanlivosť. V tepne (rýchly prúd) je biely a spôsobí <b>infarkt</b>; v žile (stáza) červený a hrozí <b>embóliou do pľúc</b>. Osud: rozpustenie, organizácia, alebo odtrhnutie.</p>
+    </div>
+  </div>
+
+  <h3 class="sub-h" id="sub-8-3-1"><span class="n">8.3.1</span>Prečo trombus vzniká: tri podmienky</h3>
+  <p>Príčiny trombózy sa dajú zoradiť podľa toho, <b>ktorú z troch zložiek hemostázy vychýlia</b> – stenu, prúd alebo samotnú krv. Táto trojica sa nazýva <b>Virchowova trias</b>; spravidla pôsobia aspoň dve podmienky naraz.</p>
+
+  <div class="box k-mech keep">
+    <div class="label">Mechanizmus – Virchowova trias</div>
+    <div class="body">
+      <ul>
+    <li><b>Poškodený alebo aktivovaný endotel.</b> Odkrytý kolagén a tkanivový faktor spustia adhéziu doštičiek aj koaguláciu. Endotel nemusí chýbať fyzicky: pri zápale sa „prepne“ – začne niesť tkanivový faktor a tlmiť fibrinolýzu. Typicky nad prasknutým aterosklerotickým plátom, na zapálenej cieve alebo chlopni, v cieve poranenej úrazom alebo prerastenej nádorom, nad infarktom v srdci.</li>
+    <li><b>Porucha prúdenia.</b> V zdravej cieve tečú krvinky stredom a pri stene je vrstva plazmy. <b>Turbulencia</b> (zúženie, aneuryzma, chlopňová chyba) privedie doštičky k stene a poškodzuje endotel; <b>stáza</b> (nehybnosť, zlyhanie srdca, varixy, rozšírená predsieň pri fibrilácii) nestačí odplaviť aktivované faktory a priviesť ich inhibítory. Turbulencia vedie k trombom v tepnách a srdci, stáza v žilách.</li>
+    <li><b>Zvýšená zrážanlivosť (trombofília).</b> V krvi je viac prozrážanlivých činiteľov alebo menej bŕzd – vrodene alebo získane (tabuľka nižšie). Patrí sem aj zahustená krv pri dehydratácii a zmnožení krviniek.</li>
+  </ul>
+    </div>
+  </div>
+
+  <p>Trombofilné stavy sa delia podľa toho, či chybu nesie gén, alebo vznikla počas života:</p>
+
+  <table class="table keep" id="tab-8-2" style="margin:6px 0">
+    <thead><tr><th></th><th>Vrodené</th><th>Získané</th></tr></thead>
+    <tbody>
+      <tr><td><b><b>Podstata</b></b></td><td>chýba brzda koagulácie alebo je faktor voči nej odolný</td><td>viac tkanivového faktora, stáza, hormóny, protilátky</td></tr>
+      <tr><td><b><b>Príklady</b></b></td><td><b>Leidenská mutácia faktora V</b> – faktor Va odoláva aktivovanému proteínu C; <b>mutácia génu pre protrombín</b>; nedostatok <b>antitrombínu</b>, <b>proteínu C</b> alebo <b>proteínu S</b></td><td>dlhá nehybnosť (imobilizácia), operácia a úraz (najmä orgánov bohatých na tkanivový faktor – pľúca, pankreas, prostata, placenta), tehotenstvo a liečba estrogénmi, zhubné nádory, obezita, fajčenie, vysoký vek, zlyhávanie srdca, sepsa, nefrotický syndróm, antifosfolipidový syndróm, heparínom indukovaná trombocytopénia</td></tr>
+      <tr><td><b><b>Ako sa prejaví</b></b></td><td>žilová trombóza v mladom veku, opakovane, v rodine, na nezvyčajnom mieste</td><td>trombóza v súvislosti s vyvolávajúcou situáciou</td></tr>
+    </tbody>
+  </table>
+
+  <p>Leidenská mutácia je najčastejšia vrodená trombofília – nesie ju asi 1–5 % ľudí európskeho pôvodu. Jedna zmenená alela zvyšuje celoživotné riziko žilovej trombózy približne 7-násobne, dve asi 20-násobne; či sa trombóza naozaj objaví, závisí aj od toho, či sa pridá ďalší vrodený alebo získaný činiteľ. Dve získané trombofílie sú zradné, lebo vyzerajú ako opak toho, čím sú – upozorňuje na ne okraj.</p>
+
+  <div class="box k-pozor aside keep">
+    <div class="label">Pozor</div>
+    <div class="body">
+      <p><b>Heparínom indukovaná trombocytopénia (HIT):</b> doštičiek ubúda, a pacient napriek tomu <b>trombotizuje</b>. Protilátky IgG proti komplexu heparínu s doštičkovým faktorom 4 sa viažu na doštičky a aktivujú ich → žilové aj tepnové trombózy (u 30–50 % chorých) a zároveň spotreba doštičiek. Typicky 5–14 dní od začiatku liečby heparínom.</p>
+    </div>
+  </div>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>HIT</b> heparínom indukovaná trombocytopénia</span> <span class="sk"><b>IgG</b> imunoglobulín G; IgG4 je jeho štvrtá podtrieda</span></div>
+  </div>
+
+  <div class="box k-klin aside keep">
+    <div class="label">Klinika</div>
+    <div class="body">
+      <p><b>Žilová trombóza u mladého človeka bez zjavnej príčiny</b> alebo opakovaná v rodine je dôvod hľadať vrodenú trombofíliu (test rezistencie na aktivovaný proteín C, DNA analýza). U staršieho pacienta je naopak nevysvetlená alebo sťahovavá trombóza dôvodom pátrať po <b>nádore</b> – adenokarcinómy uvoľňujú do krvi tkanivový faktor (paraneoplastická trombóza).</p>
+    </div>
+  </div>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>DNA</b> deoxyribonukleová kyselina</span></div>
+  </div>
+
+  <div class="rev keep">
+    <div class="label"><span class="r">R</span>Revízia — „Virchowova“ trias</div>
+    <div class="body">
+      <p><b>Kedysi</b> (a v ústnom podaní dodnes) sa uvádzalo, že tri podmienky trombózy sformuloval nemecký patológ Rudolf Virchow v 19. storočí. <b>Dnes</b> historické rozbory ukazujú, že trias v tejto podobe v jeho práci nie je – začala sa mu pripisovať až asi o sto rokov neskôr, keď sa úloha všetkých troch činiteľov potvrdila pokusmi. Virchow však zaviedol pojmy <i>trombóza</i> a <i>embólia</i> a dokázal, že zrazenina v pľúcnici pochádza zo žíl; názov preto ostáva.</p>
+    </div>
+  </div>
+
+  <h3 class="sub-h" id="sub-8-3-2"><span class="n">8.3.2</span>Ako trombus vyzerá</h3>
+  <p>Vzhľad trombu závisí od toho, <b>ako rýchlo tiekla krv v mieste jeho vzniku</b> – prúd totiž určuje, či sa do fibrínovej siete zachytia hlavne doštičky, alebo aj erytrocyty.</p>
+
+  <div class="box k-morf keep">
+    <div class="label">Čo uvidíš – tri druhy trombu podľa stavby</div>
+    <div class="body">
+      <ul>
+    <li><b>Biely (doštičkový, „fluxný“) trombus</b> – vzniká v rýchlom prúde tepien a v srdci: prúd odplaví erytrocyty a na stene ostanú doštičky s fibrínom. MA sivobiely, suchý, drobivý, pevne prirastený.</li>
+    <li><b>Červený („stagnačný“) trombus</b> – vzniká v stojacej krvi žíl: fibrínová sieť zachytí všetky krvinky v pomere, v akom sú v krvi, preto prevládajú erytrocyty. MA tmavočervený, vypĺňa žilu ako odliatok, k stene prirastá len „hlavou“.</li>
+    <li><b>Zmiešaný (vrstevnatý) trombus</b> – v aneuryzmách a srdcových dutinách, kde sa rýchlosť prúdu mení: striedajú sa bledé vrstvy doštičiek s fibrínom a tmavé vrstvy erytrocytov. MI je vrstvenie viditeľné ako pruhovanie – <b>Zahnove línie</b> (Obr. 8.2); voľným okom ako rebrovaný („korálovitý“) povrch.</li>
+    <li><b>Hyalínny (fibrínový) mikrotrombus</b> – v kapilárach a arteriolách, viditeľný len v mikroskope ako homogénna ružová zátka z fibrínu a doštičiek; je znakom DIC a trombotických mikroangiopatií (<a class="xref" href="#sub-8-9-5">→ 8.9.5</a>).</li>
+  </ul>
+    </div>
+  </div>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>MA</b> makroskopický nález – voľným okom</span> <span class="sk"><b>MI</b> mikroskopický nález – svetelný mikroskop</span></div>
+  </div>
+
+  <p>Podľa vzťahu k priesvitu je trombus <b>nástenný</b> (parietálny – sedí na stene, krv okolo neho tečie) alebo <b>obturujúci</b> (priesvit uzatvára). Vrstvenie má aj praktický význam: dokazuje, že zrazenina vznikala postupne v prúdiacej krvi, teda za života.</p>
+
+  <figure class="fig keep" id="fig-8-2" style="--fw:720px">
+    <img src="../assets/images/thrombus-lines-of-zahn.jpg" width="1280" height="960" alt="Vrstvenie trombu (H&amp;E). Bledé pruhy tvoria doštičky s fibrínom, sýtočervené erytrocyty – zrazenina rástla po vrstvách v prúdiacej krvi, teda za života." loading="lazy">
+    <figcaption><b>Obr. 8.2 — Vrstvenie trombu (H&amp;E).</b> Bledé pruhy tvoria doštičky s fibrínom, sýtočervené erytrocyty – zrazenina rástla po vrstvách v prúdiacej krvi, teda za života. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Pulmonary_thromboembolus,_recent_(3626658803).jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Yale Rosen · Wikimedia Commons · CC BY-SA 2.0</a></figcaption>
+  </figure>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>HE, H&amp;E</b> hematoxylín–eozín, základné farbenie</span></div>
+  </div>
+
+  <p>Pri pitve treba trombus odlíšiť od zrazeniny, ktorá vznikla až po smrti (<a class="xref" href="01_atrofia_nekroza_apoptoza.html#sub-1-10-1">→ 1.10.1 Posmrtné (kadaverózne) zmeny</a>):</p>
+
+  <table class="table keep" id="tab-8-3" style="margin:6px 0">
+    <thead><tr><th></th><th>Trombus (za života)</th><th>Posmrtná zrazenina</th></tr></thead>
+    <tbody>
+      <tr><td><b><b>Prečo vzniká</b></b></td><td>aktivácia doštičiek a koagulácie na stene cievy</td><td>zrážanie stojacej krvi po zastavení obehu</td></tr>
+      <tr><td><b><b>Vzťah k stene</b></b></td><td>prirastený, pri vyberaní sa trhá</td><td>voľný, dá sa vytiahnuť vcelku ako odliatok cievy</td></tr>
+      <tr><td><b><b>Konzistencia</b></b></td><td>tuhší, suchý, <b>krehký – láme sa</b></td><td>mäkký, vlhký, <b>pružný</b></td></tr>
+      <tr><td><b><b>Povrch a rez</b></b></td><td>matný, často pruhovaný (vrstvenie)</td><td>hladký, lesklý, rovnorodý</td></tr>
+      <tr><td><b><b>Stena cievy pod ním</b></b></td><td>poškodený endotel, neskôr vrastajúce granulačné tkanivo</td><td>nezmenená</td></tr>
+    </tbody>
+  </table>
+
+  <h3 class="sub-h" id="sub-8-3-3"><span class="n">8.3.3</span>Kde trombus vzniká a čo z toho plynie</h3>
+  <p>To isté dianie má rôzne následky podľa toho, <b>v ktorej časti riečiska</b> prebehne: v tepne ohrozuje tkanivo za uzáverom, v žile pľúca, v srdci celý veľký obeh.</p>
+
+  <table class="table keep" id="tab-8-4" style="margin:6px 0">
+    <thead><tr><th>Miesto</th><th>Hlavná podmienka</th><th>Druh trombu</th><th>Čo hrozí</th></tr></thead>
+    <tbody>
+      <tr><td><b><b>tepna</b></b></td><td>poškodený endotel – prasknutý aterosklerotický plát, zápal steny, aneuryzma</td><td>biely, často uzatvárajúci</td><td>ischémia až <b>infarkt</b> za uzáverom (srdce, mozog, končatina, črevo)</td></tr>
+      <tr><td><b><b>hlboké žily dolných končatín</b></b></td><td>stáza + trombofília</td><td>červený, dlhý, slabo prirastený</td><td>odtrhnutie → <b>embólia do pľúc</b>; neskôr poškodené chlopne žily a trvalý opuch</td></tr>
+      <tr><td><b><b>povrchové žily</b></b></td><td>varixy, kanyla, zápal steny</td><td>červený, pevne prirastený v zapálenej stene</td><td>bolestivý tuhý pruh; emboluje zriedkavejšie</td></tr>
+      <tr><td><b><b>srdce</b></b></td><td>nehybná stena nad infarktom, rozšírená predsieň pri fibrilácii, poškodená chlopňa</td><td>nástenný, zmiešaný</td><td><b>embólia do veľkého obehu</b> – mozog, obličky, slezina, končatiny, črevo</td></tr>
+      <tr><td><b><b>kapiláry a arterioly</b></b></td><td>celková aktivácia koagulácie alebo doštičiek</td><td>hyalínne mikrotromby</td><td>drobné ischemické ložiská v mnohých orgánoch naraz</td></tr>
+    </tbody>
+  </table>
+
+  <figure class="fig keep" id="fig-8-3" style="--fw:720px">
+    <img src="../assets/images/dvt-leg.jpg" width="1280" height="2046" alt="Hlboká žilová trombóza pravej dolnej končatiny. Končatina je opuchnutá a začervenaná, lebo krv z nej nemá kadiaľ odtiecť." loading="lazy">
+    <figcaption><b>Obr. 8.3 — Hlboká žilová trombóza pravej dolnej končatiny.</b> Končatina je opuchnutá a začervenaná, lebo krv z nej nemá kadiaľ odtiecť. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Deep_vein_thrombosis_of_the_right_leg.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>James Heilman, MD · Wikimedia Commons · CC BY-SA 3.0</a></figcaption>
+  </figure>
+
+  <div class="rev keep">
+    <div class="label"><span class="r">R</span>Revízia — „tromboflebitída“ a „flebotrombóza“</div>
+    <div class="body">
+      <p><b>Kedysi</b> sa trombóza povrchových žíl nazývala <i>tromboflebitída</i> (zápal so zrazeninou, vraj neškodný) a trombóza hlbokých žíl <i>flebotrombóza</i> (zrazenina bez zápalu, nebezpečná). <b>Dnes</b> sa hovorí o <b>povrchovej</b> a <b>hlbokej žilovej trombóze</b>: v oboch prípadoch je prvotná zrazenina a zápal steny je reakciou na ňu. Ani povrchová trombóza nie je vždy nevinná – v súboroch pacientov s ňou mala asi štvrtina súčasne trombózu hlbokých žíl a necelých 5 % pľúcnu embóliu.</p>
+    </div>
+  </div>
+
+  <div class="box k-klin aside keep">
+    <div class="label">Klinika</div>
+    <div class="body">
+      <p><b>Hlboká žilová trombóza:</b> jednostranný opuch, bolesť a teplejšia, modrasto-červená končatina – žila je upchatá, hydrostatický tlak pred prekážkou vytláča tekutinu do tkaniva. Až polovica akútnych trombóz však nemá typické príznaky a prvým prejavom je až dýchavica pri embólii. Potvrdí ju ultrazvuk (žila sa nedá stlačiť); D-diméry sú veľmi citlivé, ale málo špecifické – normálna hodnota pri nízkej pravdepodobnosti hovorí proti trombóze, zvýšená ju nedokazuje.</p>
+    </div>
+  </div>
+
+  <h3 class="sub-h" id="sub-8-3-4"><span class="n">8.3.4</span>Osud trombu v čase</h3>
+  <p>Trombus nie je stály útvar – od prvej chvíle oň súperí koagulácia, ktorá ho zväčšuje, s fibrinolýzou a makrofágmi, ktoré ho rozkladajú. Čo prevládne, závisí od veľkosti trombu, od toho, ako pevne drží, a od času:</p>
+
+  <table class="table keep" id="tab-8-5" style="margin:6px 0">
+    <thead><tr><th>Čas</th><th>Dej</th><th>Výsledok</th></tr></thead>
+    <tbody>
+      <tr><td><b>minúty až hodiny</b></td><td><b>narastanie (propagácia)</b> – trombus spomaľuje prúd, stáza zráža ďalšiu krv; rastie po prúde aj proti nemu</td><td>dlhší trombus, uzáver priesvitu, v žile voľný chvost</td></tr>
+      <tr><td><b>hodiny až dni</b></td><td><b>rozpustenie (trombolýza)</b> – plazmín štiepi čerstvý fibrín</td><td>malý nástenný trombus zmizne bez stopy</td></tr>
+      <tr><td><b>kedykoľvek, najmä prvé dni</b></td><td><b>odtrhnutie</b> – trombus alebo jeho časť odnesie prúd</td><td><b>embólia</b> (<a class="xref" href="#sec-8-4">→ 8.4</a>)</td></tr>
+      <tr><td><b>od niekoľkých dní</b></td><td><b>organizácia</b> – zo steny vrastá granulačné tkanivo, makrofágy trombus rozkladajú, fibroblasty ho nahrádzajú väzivom</td><td>trombus pevne zrastie so stenou; väzivová platnička alebo uzáver</td></tr>
+      <tr><td><b>týždne</b></td><td><b>rekanalizácia</b> – novotvorené kapiláry v trombe sa spoja a rozšíria na kanály</td><td>čiastočné obnovenie prietoku, v priesvite väzivové priehradky</td></tr>
+      <tr><td><b>zriedkavo</b></td><td><b>puriformné zmäknutie</b> – enzýmy leukocytov skvapalnia stred veľkého trombu (najmä v srdci)</td><td>kašovitá hmota pripomínajúca hnis, ktorá však hnisom nie je; ľahko emboluje</td></tr>
+    </tbody>
+  </table>
+
+  <p>Organizácia a rekanalizácia prebiehajú rovnako ako pri každom materiáli, ktorý telo nevie vstrebať – makrofágy z okraja, za nimi granulačné tkanivo (<a class="xref" href="05_hojenie.html#sec-5-7">→ 5.7 Organizácia: čo telo samo nevstrebe</a>). Stupeň organizácie je zároveň „hodinami“ trombu: čerstvý trombus je len z krviniek a fibrínu, starší prerastajú bunky zo steny; histologicky sa rozlišujú tri stupne, z ktorých najstarší zodpovedá trombu staršiemu než asi dva mesiace. Patológ tak vie pri smrteľnej embólii povedať, ako dlho zrazenina v žile bola.</p>
+
+  <div class="box k-zap aside keep">
+    <div class="label">Zapamätaj</div>
+    <div class="body">
+      <p><b>Hranica reverzibility trombózy</b> je začiatok organizácie: kým je trombus len z fibrínu a krviniek, dá sa rozpustiť (vlastnou fibrinolýzou alebo liekom). Keď doň vrastie granulačné tkanivo, už sa nerozpustí – môže sa len rekanalizovať.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 8.4 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-8-4"><span class="n">8.4</span><span>Embólia – čo krv zanesie ďalej</span></h2>
+<div class="sec-body">
+  <p><b>Embólia</b> je zavlečenie materiálu, ktorý sa v krvi nerozpúšťa – tuhého, tekutého alebo plynného –, prúdom krvi do miesta, kde je cieva užšia ako on; unášaný materiál je <b>embolus</b> (vmetok). Sekcia najprv ukazuje, kam embolus podľa miesta vzniku doputuje, potom na pľúcnej trombembólii ako prototype vysvetľuje následky a ostatné druhy embolov opisuje len tým, čím sa od nej líšia.</p>
+
+  <div class="box k-jadro aside keep">
+    <div class="label">Jadro</div>
+    <div class="body">
+      <p><b>Embolus</b> letí s prúdom, kým sa nezaklinuje: zo žíl do <b>pľúc</b>, zo srdca a tepien do <b>orgánov veľkého obehu</b>. Najčastejší je odtrhnutý trombus. Následok určuje veľkosť embolu a to, či má povodie náhradný prívod.</p>
+    </div>
+  </div>
+
+  <h3 class="sub-h" id="sub-8-4-1"><span class="n">8.4.1</span>Kam embolus doputuje</h3>
+  <p>Cestu embolu určuje <b>miesto, kde do krvi vstúpil</b>, lebo ďalej už len sleduje prúd a zastaví sa v prvom riečisku, ktoré sa zužuje (Obr. 8.4). Podľa toho sú štyri cesty:</p>
+
+  <ul>
+    <li><b>Žilová (do pľúc).</b> Embolus zo žíl veľkého obehu prejde pravým srdcom a uviazne vo vetvách pľúcnice. Zdrojom sú takmer vždy hlboké žily dolných končatín.</li>
+    <li><b>Tepnová (do orgánov).</b> Embolus z ľavého srdca alebo z aorty uviazne v tepnách veľkého obehu – najčastejšie v mozgu, ďalej v dolných končatinách, čreve, obličkách a slezine. Zdrojom je trombus v ľavej predsieni (pri fibrilácii predsiení) alebo v komore (nad infarktom), vegetácia na chlopni pri endokarditíde, alebo ateróm aorty.</li>
+    <li><b>Paradoxná (zo žily do tepny).</b> Žilový embolus obíde pľúca otvorom v srdcovej priehradke a skončí vo veľkom obehu. Treba na to dve veci: otvor – priechodné foramen ovale má asi štvrtina ľudí – a vyšší tlak v pravej predsieni než v ľavej, trvalo (pľúcna hypertenzia) alebo aspoň na chvíľu (kašeľ, tlačenie na stolicu).</li>
+    <li><b>Retrográdna (proti prúdu).</b> Zriedkavá: materiál sa v žile pohne proti smeru toku. Opísané je to najmä pri vzduchu, ktorý je ľahší než krv – u sediaceho pacienta môže zo žíl hrudníka a krku vystúpiť do žíl mozgu.</li>
+  </ul>
+
+  <figure class="chart keep" id="fig-embolia-cesty">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" role="img" aria-labelledby="tfigemboliacesty">
+<title id="tfigemboliacesty">Cesty embolov: zo žíl veľkého obehu cez pravé srdce do pľúcnice (žilová cesta), z ľavého srdca a aorty do tepien orgánov (tepnová cesta), zo žíl čreva vrátnicou do pečene, a paradoxne zo žily otvorom v srdcovej priehradke do tepien, keď je tlak vpravo vyšší</title>
+<defs><marker id="mfigemboliacesty" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker></defs>
+
+<text class="cap" x="160" y="14" text-anchor="middle">ŽILOVÁ CESTA – končí v pľúcach</text>
+<text class="cap" x="560" y="14" text-anchor="middle">TEPNOVÁ CESTA – končí v orgánoch</text>
+
+<!-- zdroje v žilách -->
+<rect class="bx-k" x="8" y="24" width="304" height="78" rx="3"/>
+<text class="lblb" x="160" y="42" text-anchor="middle">odkiaľ: žily veľkého obehu</text>
+<text class="sub" x="160" y="58" text-anchor="middle">trombus z hlbokých žíl dolných končatín (najčastejšie)</text>
+<text class="sub" x="160" y="72" text-anchor="middle">tuk a dreň zo zlomenej kosti · vzduch otvorenou žilou</text>
+<text class="sub" x="160" y="86" text-anchor="middle">plodová voda · nádor vrastený do žily</text>
+
+<path class="arw" d="M160,102 L160,124" marker-end="url(#mfigemboliacesty)"/>
+
+<rect class="bx-c" x="60" y="126" width="200" height="40" rx="3"/>
+<text class="lblb" x="160" y="143" text-anchor="middle">PRAVÉ SRDCE</text>
+<text class="sub" x="160" y="158" text-anchor="middle">embolus ním len prejde</text>
+
+<path class="arw" d="M160,166 L160,188" marker-end="url(#mfigemboliacesty)"/>
+
+<rect class="bx-m" x="8" y="190" width="304" height="62" rx="3" stroke="var(--color-accent-2-600)" stroke-width="1.5"/>
+<text class="lblb" x="160" y="208" text-anchor="middle">PĽÚCNICA A JEJ VETVY</text>
+<text class="sub" x="160" y="224" text-anchor="middle">veľký embolus → zlyhanie pravej komory</text>
+<text class="sub" x="160" y="238" text-anchor="middle">malý → nič, alebo červený infarkt pľúc</text>
+
+<!-- zdroje v ľavom srdci -->
+<rect class="bx-k" x="408" y="24" width="304" height="78" rx="3"/>
+<text class="lblb" x="560" y="42" text-anchor="middle">odkiaľ: ľavé srdce a aorta</text>
+<text class="sub" x="560" y="58" text-anchor="middle">trombus v predsieni pri fibrilácii, nad infarktom komory</text>
+<text class="sub" x="560" y="72" text-anchor="middle">vegetácia na chlopni (aj infikovaná)</text>
+<text class="sub" x="560" y="86" text-anchor="middle">trombus a cholesterolové kryštály z aterómu aorty</text>
+
+<path class="arw" d="M560,102 L560,124" marker-end="url(#mfigemboliacesty)"/>
+
+<rect class="bx-c" x="460" y="126" width="200" height="40" rx="3"/>
+<text class="lblb" x="560" y="143" text-anchor="middle">TEPNY VEĽKÉHO OBEHU</text>
+<text class="sub" x="560" y="158" text-anchor="middle">embolus uviazne tam, kde sa zúžia</text>
+
+<path class="arw" d="M560,166 L560,188" marker-end="url(#mfigemboliacesty)"/>
+
+<rect class="bx-m" x="408" y="190" width="304" height="62" rx="3" stroke="var(--color-accent-2-600)" stroke-width="1.5"/>
+<text class="lblb" x="560" y="208" text-anchor="middle">MOZOG · ČREVO · OBLIČKA · SLEZINA · KONČATINA</text>
+<text class="sub" x="560" y="224" text-anchor="middle">koncová tepna → infarkt</text>
+<text class="sub" x="560" y="238" text-anchor="middle">infikovaný embolus → zhnisaný infarkt, absces</text>
+
+<!-- paradoxná -->
+<path class="arwd" d="M262,146 L458,146" marker-end="url(#mfigemboliacesty)"/>
+<text class="lbl-m" x="360" y="126" text-anchor="middle">PARADOXNÁ</text>
+<text class="sub" x="360" y="139" text-anchor="middle">otvor v priehradke</text>
+<text class="sub" x="360" y="161" text-anchor="middle">+ vyšší tlak vpravo</text>
+
+<!-- portálna -->
+<rect class="bx-k" x="8" y="266" width="704" height="28" rx="3"/>
+<text class="sub" x="360" y="284" text-anchor="middle">osobitná žilová cesta: žily žalúdka a čreva → vrátnica → PEČEŇ (preto metastázy nádorov tráviacej rúry najprv v pečeni)</text>
+</svg>
+    <figcaption><b>Obr. 8.4 — Cesty embolov.</b> Embolus sleduje prúd krvi a zastaví sa v prvom riečisku, ktoré sa zužuje; paradoxná embólia obchádza pľúca otvorom v srdcovej priehradke.</figcaption>
+  </figure>
+
+  <h3 class="sub-h" id="sub-8-4-2"><span class="n">8.4.2</span>Pľúcna trombembólia – prototyp</h3>
+  <p>Pľúcna embólia odtrhnutým trombom je najčastejšia a najzávažnejšia embólia (ročne postihne približne 40–115 ľudí zo 100 000), a preto na nej vidno všetky zákonitosti. Zrazenina pochádza asi v 90–95 % z hlbokých žíl dolných končatín; pri smrteľných embóliách sa východisko nájde približne v troch štvrtinách prípadov v žilách predkolenia, v pätine v stehnových a zvyšok v bedrových žilách.</p>
+
+  <p class="chain">trombus v hlbokej žile sa odtrhne → dolná dutá žila → pravé srdce → zaklinuje sa vo vetve pľúcnice → za uzáverom sa pľúca vetrajú, ale neprekrvujú → krv sa neokysličí (<b>hypoxémia</b>) a pravá komora musí tlačiť proti náhle zvýšenému odporu → pri veľkom embole <b>pravá komora zlyhá</b> → ľavá komora nemá čo prečerpať → <b>obštrukčný šok, náhla smrť</b></p>
+
+  <p>Následok závisí hlavne od toho, <b>akú časť pľúcneho riečiska embolus naraz vyradí</b>:</p>
+
+  <table class="table keep" id="tab-8-6" style="margin:6px 0">
+    <thead><tr><th>Rozsah</th><th>Čo sa stane</th><th>Morfológia</th></tr></thead>
+    <tbody>
+      <tr><td><b><b>masívna embólia</b> – kmeň pľúcnice, jej rozvetvenie („jazdecký“ embolus) alebo veľká časť vetiev naraz (uvádza sa viac než asi 60 % riečiska)</b></td><td>akútne zlyhanie pravej komory, šok, smrť v priebehu minút</td><td>stočená zrazenina – odliatok žily – v kmeni pľúcnice; rozšírená pravá komora; pľúca <b>bez infarktu</b>, lebo naň nebol čas</td></tr>
+      <tr><td><b><b>stredná embólia</b> – lobárna alebo segmentová vetva</b></td><td>dýchavica, bolesť na hrudníku; infarkt len niekedy</td><td>embolus vo vetve; prípadne klinovitý červený infarkt pod pohrudnicou</td></tr>
+      <tr><td><b><b>drobná embólia</b> – malé vetvy</b></td><td>väčšinou (asi 60–80 %) bez príznakov</td><td>embolus sa rozpustí alebo zorganizuje; v cieve ostanú tenké väzivové mostíky</td></tr>
+      <tr><td><b><b>opakovaná (sukcesívna) drobná embólia</b></b></td><td>postupné zmenšovanie riečiska → pľúcna hypertenzia</td><td>organizované emboly v mnohých vetvách; <b>hypertrofia pravej komory</b> (<a class="xref" href="06_progresivne_zmeny.html#sec-6-2">→ 6.2 Hypertrofia – tie isté bunky, viac hmoty</a>)</td></tr>
+    </tbody>
+  </table>
+
+  <figure class="fig keep" id="fig-8-5" style="--fw:720px">
+    <img src="../assets/images/pulmonary-embolus-gross.jpg" width="1280" height="1925" alt="Pľúcna embólia pri pitve. V otvorenej vetve pľúcnice pri hile pľúc leží tmavočervená drobivá zrazenina – odtrhnutý trombus." loading="lazy">
+    <figcaption><b>Obr. 8.5 — Pľúcna embólia pri pitve.</b> V otvorenej vetve pľúcnice pri hile pľúc leží tmavočervená drobivá zrazenina – odtrhnutý trombus. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:AC08-7_Pulmonary_embolus.JPG" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Dr. Rocke Robertson · Wikimedia Commons · CC BY-SA 4.0</a></figcaption>
+  </figure>
+
+  <p><b>Prečo embólia väčšinou nespôsobí infarkt pľúc.</b> Pľúca majú dvojité zásobenie: popri pľúcnici ich vyživujú bronchiálne tepny z aorty. Keď sa vetva pľúcnice upchá, tkanivo ďalej žije z bronchiálneho obehu. Infarkt vznikne až vtedy, keď je slabý aj ten – typicky pri zlyhávaní ľavého srdca, keď je v pľúcach venostáza. Na CT sa infarkt nájde približne pri tretine embólií, ktoré pacient prežije, a pri pitve zomretých častejšie. Pretože bronchiálne tepny do odumretého ložiska ďalej privádzajú krv, je infarkt pľúc <b>červený</b> (<a class="xref" href="#sub-8-6-2">→ 8.6.2</a>).</p>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>CT</b> počítačová tomografia</span></div>
+  </div>
+
+  <div class="box k-klin aside keep">
+    <div class="label">Klinika</div>
+    <div class="body">
+      <p><b>Od pacienta k nálezu:</b> náhla dýchavica, bolesť pri nádychu, zrýchlený pulz, niekedy vykašliavanie krvi (krv z hemoragického infarktu) – a v anamnéze operácia, sadra, dlhý let alebo nádor. Diagnózu potvrdí CT angiografia pľúcnice (výpadok náplne). <b>Čo píše patológ:</b> embolus (nie posmrtná zrazenina – je krehký, vrstvený, stočený, kalibrom nesedí k pľúcnici), jeho vek, zdroj v žilách končatín a pľúcnu embóliu ako <b>bezprostrednú príčinu smrti</b>; základnou chorobou je to, čo trombózu vyvolalo.</p>
+    </div>
+  </div>
+
+  <h3 class="sub-h" id="sub-8-4-3"><span class="n">8.4.3</span>Ostatné emboly: čím sa líšia</h3>
+  <p>Iný materiál než trombus sa do krvi dostane len vtedy, keď sa <b>otvorí cieva a zároveň je čo nasať alebo vtlačiť</b> – z tela (tuk, plodová voda, obsah aterómu, nádor) alebo zvonka (vzduch, cudzí materiál vpravený do žily). Od trombembólie sa tieto embólie líšia tým, že okrem mechanického upchatia škodia aj chemicky alebo zápalom:</p>
+
+  <table class="table keep" id="tab-8-7" style="margin:6px 0">
+    <thead><tr><th>Embolus</th><th>Odkiaľ a kedy</th><th>Kde uviazne a čím škodí</th><th>Dôkaz</th></tr></thead>
+    <tbody>
+      <tr><td><b><b>tuk a kostná dreň</b></b></td><td>zlomeniny dlhých kostí a panvy, rozsiahle pomliaždenie podkožného tuku, resuscitácia – tuk je vtlačený do roztrhnutých žíl drene</td><td>kapiláry pľúc; drobné kvapôčky prejdú ďalej do mozgu a kože. Tuk sám je v pľúcach častý a nemý; <b>syndróm tukovej embólie</b> vzniká po 1–3 dňoch, keď lipázy uvoľnia z tuku mastné kyseliny a tie poškodia endotel (dýchavica, porucha vedomia, petechie)</td><td>okrúhle prázdne priestory v cievach (tuk sa pri spracovaní vyplaví); farbenie tuku na zmrazenom reze (<a class="xref" href="00_uvod_metody.html#sec-0-6">→ 0.6 Farbenia a histochémia</a>)</td></tr>
+      <tr><td><b><b>vzduch</b></b></td><td>otvorená veľká žila na krku alebo hrudníku, operácie, cievne katétre, pôrod – v žilách blízko srdca je podtlak, ktorý vzduch nasaje</td><td>pravá komora: spenená krv je stlačiteľná a komora ju neprečerpá. Nebezpečné sú rádovo stovky mililitrov rýchlo nasatého vzduchu (uvádza sa od 100 ml; 300–500 ml rýchlosťou 100 ml/min je smrteľných)</td><td>pri pitve sa pravé srdce otvára pod vodou – unikajú bubliny</td></tr>
+      <tr><td><b><b>dusík – dekompresná choroba</b></b></td><td>potápač dýcha stlačený vzduch, v krvi a tkanivách sa rozpustí viac dusíka; pri rýchlom výstupe sa dusík uvoľní ako bubliny</td><td>drobné cievy a tkanivá: bolesti kĺbov a svalov, kožná vyrážka, poškodenie miechy a mozgu, dýchavica</td><td>anamnéza; liečbou je pretlaková komora, ktorá bubliny znova rozpustí</td></tr>
+      <tr><td><b><b>plodová voda</b></b></td><td>pôrod alebo krátko po ňom – trhlinou v plodových obaloch a žilách maternice</td><td>pľúcne cievy matky; prudká reakcia na zložky plodovej vody → zlyhanie dýchania a obehu, <b>DIC</b></td><td>v pľúcnych cievach matky dlaždicové bunky kože plodu, chĺpky (lanugo), tuk z mazu</td></tr>
+      <tr><td><b><b>cholesterolové kryštály (ateroembólia)</b></b></td><td>prasknutý ateróm aorty, často po katetrizácii alebo operácii ciev</td><td>arterioly obličiek, kože nôh, čreva; kryštály vyvolajú zápal steny a uzáver → zhoršenie obličiek, modré prsty</td><td>ihlicovité <b>štrbiny</b> v priesvite arterioly (kryštály sa pri spracovaní rozpustia)</td></tr>
+      <tr><td><b><b>nádorové bunky a úlomky</b></b></td><td>nádor vrastajúci do žíl (karcinóm obličky, pečene)</td><td>pľúcnica alebo jej vetvy; bunky, ktoré prežijú, založia <b>metastázu</b></td><td>nádorové bunky v priesvite ciev</td></tr>
+      <tr><td><b><b>septický embolus</b></b></td><td>infikovaný trombus – zapálená žila, vegetácia na chlopni pri endokarditíde</td><td>infarkt, ktorý <b>zhnisá</b>, a metastatický absces</td><td>baktérie alebo huby v embole</td></tr>
+    </tbody>
+  </table>
+
+  <div class="fig-row">
+  <figure class="fig keep" id="fig-8-6" style="--ar:1.43;--fw:720px">
+    <img src="../assets/images/fat-embolism-lung.jpg" width="1280" height="894" alt="Tuková embólia (H&amp;E). V pľúcnej tepne okrúhle prázdne priestory po vyplavenom tuku a úlomok kostnej drene." loading="lazy">
+    <figcaption><b>Obr. 8.6 — Tuková embólia (H&amp;E).</b> V pľúcnej tepne okrúhle prázdne priestory po vyplavenom tuku a úlomok kostnej drene. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Histopathology_of_a_pulmonary_artery_with_fat_embolism_and_a_bone_marrow_fragment.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Mikael Häggström, M.D. · Wikimedia Commons · CC0</a></figcaption>
+  </figure>
+  <figure class="fig keep" id="fig-8-7" style="--ar:1.55;--fw:720px">
+    <img src="../assets/images/amniotic-fluid-embolism.jpg" width="1280" height="825" alt="Embólia plodovou vodou (H&amp;E). V pľúcnej arteriole matky ležia dlaždicové šupiny z kože plodu." loading="lazy">
+    <figcaption><b>Obr. 8.7 — Embólia plodovou vodou (H&amp;E).</b> V pľúcnej arteriole matky ležia dlaždicové šupiny z kože plodu. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Amniotic_fluid_embolism_(7471758766).jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Yale Rosen · Wikimedia Commons · CC BY-SA 2.0</a></figcaption>
+  </figure>
+  </div>
+
+  <figure class="fig keep" id="fig-8-8" style="--fw:720px">
+    <img src="../assets/images/cholesterol-embolus.jpg" width="1280" height="853" alt="Cholesterolový embolus v tepne obličky (H&amp;E). Ihlicovité štrbiny ostali po kryštáloch cholesterolu, ktoré sa pri spracovaní rozpustili." loading="lazy">
+    <figcaption><b>Obr. 8.8 — Cholesterolový embolus v tepne obličky (H&amp;E).</b> Ihlicovité štrbiny ostali po kryštáloch cholesterolu, ktoré sa pri spracovaní rozpustili. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Cholesterol_embolus_-_intermed_mag.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Nephron · Wikimedia Commons · CC BY-SA 3.0</a></figcaption>
+  </figure>
+
+  <div class="rev keep">
+    <div class="label"><span class="r">R</span>Revízia — dve opravy pri embóliách</div>
+    <div class="body">
+      <p><b>Kedysi</b> sa embólia plodovou vodou pokladala za takmer vždy smrteľnú (uvádzala sa smrtnosť okolo 80 %) a vysvetľovala sa mechanickým upchatím pľúc. <b>Dnes</b> sa pri včasnej intenzívnej liečbe uvádza smrtnosť 11–44 % (výskyt 2–8 na 100 000 pôrodov) a za podstatu sa považuje prudká zápalová a koagulačná reakcia matky na zložky plodovej vody. <b>Kedysi</b> „kesónová choroba“ (podľa pretlakových komôr pri stavbe mostov), <b>dnes</b> dekompresná choroba.</p>
+    </div>
+  </div>
+
+  <div class="box k-klin aside keep">
+    <div class="label">Klinika</div>
+    <div class="body">
+      <p><b>Syndróm tukovej embólie</b> sa prejaví s odstupom: pacient so zlomeninou stehnovej kosti je deň-dva v poriadku a potom sa objaví dýchavica, zmätenosť a drobné petechie na hrudníku a v spojovkách. Odstup zodpovedá času, ktorý treba na chemické poškodenie endotelu. Preto sa zlomeniny dlhých kostí stabilizujú čo najskôr, najlepšie do 24 hodín.</p>
+    </div>
+  </div>
+
+  <h3 class="sub-h" id="sub-8-4-4"><span class="n">8.4.4</span>Metastáza – embolus, ktorý na novom mieste pokračuje</h3>
+  <p><b>Metastáza</b> je zavlečenie chorobného deja na vzdialené miesto, kde pokračuje ďalej – od obyčajnej embólie sa líši tým, že zanesený materiál je živý (nádorové bunky, mikróby). Podľa <b>cesty, ktorou sa šíri</b>, je trojaká:</p>
+
+  <ul>
+    <li><b>hematogénna</b> – krvou, podľa tých istých pravidiel ako embólia: z povodia vrátnice do pečene, zo žíl veľkého obehu do pľúc, z pľúc a ľavého srdca kamkoľvek. Patria sem nádorové mikroemboly aj septické emboly, z ktorých vznikajú metastatické abscesy (<a class="xref" href="04_typy_zapalu.html#sub-4-5-4">→ 4.5.4 Hnis sa šíri – komplikácie hnisavého zápalu</a>),</li>
+    <li><b>lymfogénna</b> – lymfatickými cievami do spádových uzlín,</li>
+    <li><b>porogénna (implantačná)</b> – po povrchu a priesvitom dutín a dutých orgánov: rozsev po pobrušnici a pohrudnici, močovými cestami, prieduškami, alebo priamym dotykom dvoch protiľahlých povrchov.</li>
+  </ul>
+
+  <p>Podrobne sa metastázovanie nádorov preberá pri nádoroch; tu stačí, že hematogénna metastáza je embólia s pokračovaním.</p>
+</div>
+
+<!-- ══ 8.5 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-8-5"><span class="n">8.5</span><span>Ďalšie príčiny: prekážka v stene, zvonka, v krvi a v sieti</span></h2>
+<div class="sec-body">
+  <p>Trombus a embolus sú prekážky <b>v priesvite</b> cievy. Prietok však môže znížiť aj dej, ktorý v priesvite nesedí – a podľa toho, <b>kde vzhľadom na cievu prekážka leží</b>, sa dajú usporiadať všetky ostatné príčiny miestnej poruchy obehu.</p>
+
+  <div class="box k-jadro aside keep">
+    <div class="label">Jadro</div>
+    <div class="body">
+      <p>Prietok zníži prekážka <b>v priesvite</b> (trombus, embolus), <b>v stene</b> (ateróm, spazmus, zápal), <b>zvonka</b> (stlačenie), <b>v krvi</b> (hustá krv), alebo <b>v sieti</b> (krv odtečie ľahšou cestou – steal). Často sa končia rovnako: trombózou.</p>
+    </div>
+  </div>
+
+  <table class="table keep" id="tab-8-8" style="margin:6px 0">
+    <thead><tr><th>Kde je prekážka</th><th>Dej</th><th>Mechanizmus</th><th>Príklady a následok</th></tr></thead>
+    <tbody>
+      <tr><td><b><b>v stene</b></b></td><td><b>ateroskleróza</b></td><td>plát zužuje priesvit pomaly; keď praskne alebo sa zvredovatie, nasadne naň trombus a uzáver je náhly</td><td>najčastejšia príčina ischémie vôbec: srdce, mozog, dolné končatiny; komplikácie – trombóza, krvácanie do plátu, embolizácia obsahu, aneuryzma a jej prasknutie</td></tr>
+      <tr><td><b></b></td><td><b>spazmus</b></td><td>hladký sval tepny sa stiahne – porušený endotel tvorí menej uvoľňujúceho oxidu dusnatého a sval reaguje prehnane na sťahujúce podnety</td><td>vazospastická (Prinzmetalova) angína pectoris a infarkt aj pri vencovitých tepnách bez zúženia; <b>Raynaudov fenomén</b> – po chlade alebo strese prsty zblednú alebo zmodrejú a po uvoľnení spazmu sčervenejú (reaktívna hyperémia). Na reze sa spazmus dokázať nedá</td></tr>
+      <tr><td><b></b></td><td><b>zápal steny</b></td><td>vaskulitída poškodí endotel a stenu zhrubne; zápal môže prejsť aj z okolia</td><td>uzáver trombom; na žile je zápal (flebitída) a trombóza vždy spolu (<a class="xref" href="#sub-8-3-3">→ 8.3.3</a>); vaskulitídy s granulómami <a class="xref" href="07_granulomatozne_zapaly.html#sec-7-9">→ 7.9 Granulóm na poškodenej cieve a väzive</a></td></tr>
+      <tr><td><b><b>zvonka</b></b></td><td><b>stlačenie (kompresia)</b></td><td>tlak okolia prevýši tlak v cieve – skôr v žile, ktorá má nízky tlak a tenkú stenu</td><td>nádor, opuch a zápal v nepoddajnom priestore, zaškrtenie čreva v prietrži, pretočenie orgánu, podviazanie pri operácii, nadpočetné krčné rebro; často nasleduje trombóza</td></tr>
+      <tr><td><b><b>v krvi</b></b></td><td><b>hyperviskozita</b></td><td>hustá krv tečie ťažko najmä kapilárami – je v nej priveľa bielkoviny alebo krviniek</td><td>Waldenströmova makroglobulinémia (najčastejšie), plazmocytový myelóm, polycytémia (polyglobúlia, pletora – zmnoženie krviniek), leukémie, ťažká dehydratácia; kosáčikovitá anémia (tuhé erytrocyty); stáza v drobných cievach a tromby</td></tr>
+      <tr><td><b><b>v sieti</b></b></td><td><b>steal syndróm</b> („kradnutie“ krvi)</td><td>krv tečie cestou najmenšieho odporu – ak sa vedľa povodia otvorí riečisko s nízkym odporom, odvedie krv aj z neho</td><td>artériovenózna spojka alebo malformácia: krv uniká priamo do žily a tkanivo v okolí trpí ischémiou; zúženie podkľúčnej tepny pred odstupom stavcovej tepny: krv tečie stavcovou tepnou spätne do ruky a chýba mozgu</td></tr>
+    </tbody>
+  </table>
+
+  <div class="box k-klin aside keep">
+    <div class="label">Klinika</div>
+    <div class="body">
+      <p>Pomalé zužovanie tepny aterosklerózou pacient dlho necíti, lebo tkanivo v pokoji vystačí s menším prietokom; bolesť príde pri záťaži, keď potreba kyslíka stúpne a zúžená tepna viac krvi nepustí – <b>angína pectoris</b> v srdci, <b>klaudikácie</b> v lýtku. Po odpočinku bolesť ustúpi: ischémia bola vratná a nekróza nevznikla.</p>
+    </div>
+  </div>
+
+  <div class="box k-pocut aside keep">
+    <div class="label">Môžeš počuť</div>
+    <div class="body">
+      <p><b>Infarkt zo spazmu u mladých.</b> Infarkt myokardu zo spazmu vencovitej tepny sa uvádza najmä u mladých ľudí. Že spazmus môže spôsobiť infarkt aj pri nezúžených tepnách, doložené je; vekové určenie nie.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 8.6 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-8-6"><span class="n">8.6</span><span>Ischémia a infarkt</span></h2>
+<div class="sec-body">
+  <p><b>Ischémia</b> je obmedzenie až zastavenie prítoku tepnovej krvi do tkaniva; tkanivu chýba kyslík a živiny a neodplavujú sa z neho splodiny. Či sa skončí len prechodnou bolesťou, pomalou atrofiou, alebo odumretím tkaniva – <b>infarktom</b> –, nerozhoduje len uzáver sám, ale aj to, na aké tkanivo a aké riečisko natrafí. Sekcia preto najprv vysvetľuje tieto podmienky, potom morfológiu infarktu, jeho vývoj v čase a napokon infarkt bez uzáveru tepny.</p>
+
+  <div class="box k-jadro aside keep">
+    <div class="label">Jadro</div>
+    <div class="body">
+      <p><b>Infarkt</b> = ischemická nekróza. O výsledku uzáveru rozhoduje terén: <b>náhradný prívod, rýchlosť uzáveru, citlivosť tkaniva, stav obehu</b>. Hustý orgán s koncovou tepnou → <b>biely</b> infarkt; dvojitý prívod, žilový uzáver alebo reperfúzia → <b>červený</b>.</p>
+    </div>
+  </div>
+
+  <h3 class="sub-h" id="sub-8-6-1"><span class="n">8.6.1</span>Čo rozhodne, či ischémia skončí infarktom</h3>
+  <p>Rovnaký uzáver má v rôznych orgánoch rôzny následok. Vysvetľujú to štyri premenné – tie isté, ktorými sa v celej knihe opisuje terén orgánu:</p>
+
+  <table class="table keep" id="tab-8-9" style="margin:6px 0">
+    <thead><tr><th>Premenná</th><th>Priaznivý stav</th><th>Nepriaznivý stav</th></tr></thead>
+    <tbody>
+      <tr><td><b><b>stavba riečiska</b></b></td><td><b>dvojité zásobenie</b> (pľúca: pľúcnica + bronchiálne tepny; pečeň: pečeňová tepna + vrátnica) alebo bohaté spojky – anastomózy (črevo, ruka)</td><td><b>koncové tepny</b> bez spojok – oblička, slezina, sietnica; prakticky aj srdce a mozog</td></tr>
+      <tr><td><b><b>rýchlosť uzáveru</b></b></td><td>pomalé zužovanie – existujúce drobné spojky sa stihnú rozšíriť na <b>kolaterály</b> a tkanivo zníži nároky (atrofia)</td><td>náhly uzáver embolom alebo trombom na prasknutom pláte</td></tr>
+      <tr><td><b><b>citlivosť tkaniva na nedostatok kyslíka</b></b></td><td>málo náročné tkanivá – väzivo, chrupka, kostrový sval v pokoji</td><td>neuróny (znesú len minúty), kardiomyocyty, bunky proximálnych tubulov obličky</td></tr>
+      <tr><td><b><b>stav krvi a celého obehu</b></b></td><td>normálny tlak a okysličenie</td><td>nízky tlak (šok), anémia, hypoxémia, zlyhávajúce srdce – ten istý uzáver spôsobí väčší infarkt</td></tr>
+    </tbody>
+  </table>
+
+  <p>Kým sú bunky poškodené vratne, obnovenie prietoku ich zachráni. <b>Hranica reverzibility</b> je bod, za ktorým mitochondrie už nevyrobia ATP ani po návrate kyslíka a membrány sa rozpadnú; v myokarde sa prvé bunky za ňu dostanú po približne 20 minútach úplnej ischémie (<a class="xref" href="01_atrofia_nekroza_apoptoza.html#sub-1-5-3">→ 1.5.3 Bod nezvratnosti a reperfúzia</a>). Slabšia alebo krátka ischémia nekrózu nespôsobí – prejaví sa bolesťou pri záťaži, pri dlhom trvaní atrofiou a stukovatením buniek (<a class="xref" href="01_atrofia_nekroza_apoptoza.html#sub-1-2-1">→ 1.2.1 Príčiny atrofie</a>).</p>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>ATP</b> adenozíntrifosfát – „energetická mena“ bunky</span></div>
+  </div>
+
+  <div class="box k-zap aside keep">
+    <div class="label">Zapamätaj</div>
+    <div class="body">
+      <p>Tá istá embólia do pľúcnice u zdravého človeka infarkt nespôsobí, u pacienta so zlyhávajúcim ľavým srdcom áno – rozdiel robí štvrtá premenná (stav obehu), ktorá oslabí druhý prívod.</p>
+    </div>
+  </div>
+
+  <h3 class="sub-h" id="sub-8-6-2"><span class="n">8.6.2</span>Infarkt: biely a červený</h3>
+  <p><b>Infarkt</b> je ložisko ischemickej nekrózy, ktoré vzniklo uzáverom prívodnej tepny, zriedkavejšie zablokovaním žilového odtoku (<a class="xref" href="#sec-8-7">→ 8.7</a>). Jeho farba závisí od jedinej veci: <b>či sa do odumretého tkaniva ešte dostane krv</b>.</p>
+
+  <div class="box k-morf keep">
+    <div class="label">Čo uvidíš – infarkt parenchýmového orgánu</div>
+    <div class="body">
+      <ul>
+    <li><b>MA:</b> ložisko pri povrchu orgánu, na reze <b>klinovité</b> – hrot mieri k uzavretej tepne, báza k puzdru, lebo tepny sa vetvia vejárovito od hilu k povrchu (v srdci a mozgu je tvar nepravidelný, lebo sa tam povodia prekrývajú). Mierne vyvýšené a tuhšie než okolie – odumreté bunky napučali. Biely infarkt je bledožltý a suchý, s úzkym červeným lemom (prekrvenie a krvácanie na hranici so živým tkanivom); červený infarkt je tmavočervený, lebo je presiaknutý krvou. Ostro ohraničený.</li>
+    <li><b>MI:</b> <b>koagulačná nekróza</b> – obrysy buniek a stavba tkaniva ostávajú, jadrá miznú, cytoplazma je sýtoružová, lebo denaturované bielkoviny viažu viac eozínu (<a class="xref" href="01_atrofia_nekroza_apoptoza.html#sub-1-6-1">→ 1.6.1 Koagulačná nekróza</a>). Na okraji lem neutrofilov, neskôr makrofágy a granulačné tkanivo. V mozgu sa tkanivo namiesto toho skvapalní (<a class="xref" href="01_atrofia_nekroza_apoptoza.html#sub-1-6-2">→ 1.6.2 Kolikvačná nekróza</a>).</li>
+  </ul>
+    </div>
+  </div>
+
+  <table class="table keep" id="tab-8-10" style="margin:6px 0">
+    <thead><tr><th></th><th>Biely (anemický) infarkt</th><th>Červený (hemoragický) infarkt</th></tr></thead>
+    <tbody>
+      <tr><td><b><b>Podmienka</b></b></td><td>uzavretá <b>koncová tepna</b> v <b>hustom</b> orgáne – do ložiska sa nemá odkiaľ a kam dostať krv</td><td>do mŕtveho tkaniva ďalej priteká krv, ktorú odumreté kapiláry neudržia</td></tr>
+      <tr><td><b><b>Kedy</b></b></td><td>uzáver tepny bez náhradného prívodu</td><td><b>dvojité zásobenie</b> alebo spojky; <b>riedke</b> tkanivo; <b>uzáver žily</b>; <b>obnovený prietok</b> (rozpad embolu, liečebné otvorenie tepny)</td></tr>
+      <tr><td><b><b>Orgány</b></b></td><td>srdce, oblička, slezina</td><td>pľúca, črevo; mozog po reperfúzii; orgán so zaškrtenou stopkou</td></tr>
+      <tr><td><b><b>Vzhľad</b></b></td><td>bledožltý, suchý, červený lem</td><td>tmavočervený, vlhký, bez zreteľného lemu</td></tr>
+      <tr><td><b><b>Po zhojení</b></b></td><td>belavá vtiahnutá jazva</td><td>jazva hrdzavá od hemosiderínu</td></tr>
+    </tbody>
+  </table>
+
+  <div class="fig-row">
+  <figure class="fig keep" id="fig-8-9" style="--ar:0.60;--fw:720px">
+    <img src="../assets/images/renal-infarct-gross.jpg" width="1280" height="2145" alt="Biele infarkty obličky (múzejný preparát). Bledé, ostro ohraničené ložiská v kôre siahajú až pod puzdro; tmavší lem je hranica so živým tkanivom." loading="lazy">
+    <figcaption><b>Obr. 8.9 — Biele infarkty obličky (múzejný preparát).</b> Bledé, ostro ohraničené ložiská v kôre siahajú až pod puzdro; tmavší lem je hranica so živým tkanivom. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Rein_Infarctus_55-o.apatho-1486a-rein.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Denis Desaulniers a Bernard Têtu · Wikimedia Commons · CC BY-SA 4.0</a></figcaption>
+  </figure>
+  <figure class="fig keep" id="fig-8-10" style="--ar:1.33;--fw:720px">
+    <img src="../assets/images/renal-infarct-histology.jpg" width="1280" height="962" alt="Okraj infarktu obličky (H&amp;E). Vľavo hore živé tkanivo; v infarkte ostali obrysy kanálikov a klbiek, ale jadrá zmizli – koagulačná nekróza." loading="lazy">
+    <figcaption><b>Obr. 8.10 — Okraj infarktu obličky (H&amp;E).</b> Vľavo hore živé tkanivo; v infarkte ostali obrysy kanálikov a klbiek, ale jadrá zmizli – koagulačná nekróza. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Renal_cortical_infarction_showing_coagulative_necrosis_4X.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Department of Pathology, Calicut Medical College · Wikimedia Commons · CC BY-SA 4.0</a></figcaption>
+  </figure>
+  </div>
+
+  <p>Slezina sa v niektorých starších prameňoch uvádza medzi orgánmi s červeným infarktom; po uzávere jej tepny embolom je však infarkt typicky bledý klin, ktorý sa len niekedy druhotne prekrváca. Na končatine sa nekróza z uzáveru tepny prejaví ako gangréna (<a class="xref" href="01_atrofia_nekroza_apoptoza.html#sec-1-8">→ 1.8 Gangréna</a>).</p>
+
+  <p>Červený infarkt pľúc (Obr. 1.16 v kap. 1) a ďalšie podmienky presiaknutia nekrózy krvou rozoberá <a class="xref" href="01_atrofia_nekroza_apoptoza.html#sub-1-6-6">→ 1.6.6 Hemoragická nekróza</a>.</p>
+
+  <h3 class="sub-h" id="sub-8-6-3"><span class="n">8.6.3</span>Infarkt v čase</h3>
+  <p>Infarkt sa nedá vidieť hneď – medzi smrťou buniek a zmenou, ktorú zachytí oko alebo mikroskop, je odstup. Časová os je rovnaká v každom orgáne, líši sa len rýchlosťou; údaje v tabuľke platia pre infarkt myokardu, kde sú najlepšie preskúmané.</p>
+
+  <table class="table keep" id="tab-8-11" style="margin:6px 0">
+    <thead><tr><th>Čas od uzáveru</th><th>Voľným okom</th><th>V mikroskope</th><th>Čo sa deje</th></tr></thead>
+    <tbody>
+      <tr><td><b><b>prvé hodiny</b> (do ≈ 12 h)</b></td><td>nič</td><td>spočiatku nič; postupne opuch, zvlnené svalové vlákna, sýtejšie ružová cytoplazma</td><td>bunky sú mŕtve, ale ich bielkoviny ešte nestihli zdenaturovať a jadrá sa rozpadnúť</td></tr>
+      <tr><td><b><b>≈ 12 h – 2 dni</b></b></td><td>ložisko začína blednúť (alebo tmavnúť pri červenom infarkte)</td><td>koagulačná nekróza bez jadier; z okraja vstupujú <b>neutrofily</b> – prichádzajú v priebehu hodín, najviac ich je po 1–2 dňoch</td><td>zápal odpovedá na obsah rozpadnutých buniek (<a class="xref" href="03_zapal_vseobecne.html#sub-3-4-2">→ 3.4.2</a>)</td></tr>
+      <tr><td><b><b>prvý týždeň</b></b></td><td>žltosivé, mäkké ložisko s prekrveným lemom</td><td>rozpad neutrofilov a mŕtvych buniek, prichádzajú makrofágy</td><td>upratovanie; stena srdca je v tomto čase <b>najslabšia</b> – môže prasknúť</td></tr>
+      <tr><td><b><b>od ≈ 1. týždňa</b> (najviac 2.–3. týždeň)</b></td><td>rôsolovitý červený lem, ktorý postupuje do stredu</td><td><b>granulačné tkanivo</b> – nové kapiláry, fibroblasty, riedky kolagén, siderofágy</td><td>organizácia nekrózy (<a class="xref" href="05_hojenie.html#sec-5-3">→ 5.3 Granulačné tkanivo – motor reparácie</a>)</td></tr>
+      <tr><td><b><b>týždne až mesiace</b></b></td><td>belavá tuhá <b>jazva</b>, povrch orgánu nad ňou vtiahnutý</td><td>hustý kolagén, málo buniek a ciev</td><td>jazva pumpovať ani filtrovať nevie; v mozgu ostáva namiesto nej dutina – pseudocysta</td></tr>
+    </tbody>
+  </table>
+
+  <p>Ak nekróza siaha po seróznu blanu, vyzráža sa na nej nad ložiskom fibrín: nad infarktom srdca vzniká ohraničená <b>fibrinózna perikarditída</b>, nad infarktom pľúc pleuritída (<a class="xref" href="04_typy_zapalu.html#sub-4-6-1">→ 4.6.1 Na seróznych blanách</a>). Ak embolus niesol baktérie, infarkt zhnisá a zmení sa na absces.</p>
+
+  <figure class="fig keep" id="fig-8-11" style="--fw:720px">
+    <img src="../assets/images/splenic-infarcts-healed.jpg" width="1280" height="866" alt="Zhojené infarkty sleziny. Bledé vtiahnuté jazvy na povrchu ostali po starých bielych infarktoch." loading="lazy">
+    <figcaption><b>Obr. 8.11 — Zhojené infarkty sleziny.</b> Bledé vtiahnuté jazvy na povrchu ostali po starých bielych infarktoch. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Healed_splenic_infarcts.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Narraburra · Wikimedia Commons · CC0</a></figcaption>
+  </figure>
+
+  <div class="box k-klin aside keep">
+    <div class="label">Klinika</div>
+    <div class="body">
+      <p><b>Vitálna reakcia datuje infarkt.</b> Neutrofily, makrofágy a granulačné tkanivo vznikajú len v živom organizme, a to v známom slede – patológ podľa nich povie, či infarkt vznikol hodiny, dni alebo týždne pred smrťou. Človek, ktorý zomrie na arytmiu v prvej hodine infarktu, nemusí mať v srdci viditeľné <b>nič</b>; diagnózu vtedy nesie nález v tepne (čerstvý trombus na prasknutom pláte).</p>
+    </div>
+  </div>
+
+  <h3 class="sub-h" id="sub-8-6-4"><span class="n">8.6.4</span>Infarkt bez uzáveru tepny</h3>
+  <p>Nekróza z nedostatku krvi nemusí mať za sebou upchatú tepnu – stačí, že <b>prietok klesne pod potrebu</b>. Deje sa to dvoma spôsobmi:</p>
+
+  <ul>
+    <li><b>Zúžená tepna a zvýšené nároky.</b> Tepna zúžená aterosklerózou stačí v pokoji; pri horúčke, tachykardii alebo anémii potreba stúpne a časť svaloviny odumrie, hoci nový uzáver nevznikol.</li>
+    <li><b>Pokles tlaku v celom obehu.</b> Pri šoku dostávajú najmenej krvi miesta najďalej od zdroja – <b>rozvodia</b> (<i>watershed</i>), hraničné pásma medzi povodiami dvoch tepien. Infarkty z nízkeho tlaku preto ležia v mozgu na hraniciach povodí mozgových tepien a v hrubom čreve na rozhraní povodí mezenterických tepien – najmä v slezinovom ohybe. V čreve sa k nízkemu tlaku pridáva stiahnutie mezenterických tepien, ktorým telo presúva krv k srdcu a mozgu – <b>neokluzívna mezenterická ischémia</b>.</li>
+  </ul>
+
+  <div class="box k-klin aside keep">
+    <div class="label">Klinika</div>
+    <div class="body">
+      <p><b>Akútna ischémia čreva</b> má štyri príčiny, ktoré sa líšia pacientom: embólia do hornej mezenterickej tepny (asi polovica – pacient s fibriláciou predsiení), trombóza tepny na aterosklerotickom pláte (15–25 %), neokluzívna ischémia pri šoku a zlyhaní srdca (asi 20 %) a trombóza mezenterickej žily (5–15 % – trombofília, nádor). Črevo je pri všetkých tmavočervené, lebo má bohaté spojky a riedku stenu – infarkt čreva je <b>hemoragický</b>.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 8.7 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-8-7"><span class="n">8.7</span><span>Hyperémia – priveľa krvi v riečisku</span></h2>
+<div class="sec-body">
+  <p><b>Hyperémia</b> (prekrvenie) je zväčšený objem krvi v cievach tkaniva. Vzniká dvoma opačnými cestami – krvi <b>viac priteká</b>, alebo <b>horšie odteká</b> – a tie sa líšia farbou, teplotou aj významom. Prvá je užitočná odpoveď, druhá porucha, ktorá môže vyústiť do opuchu aj do nekrózy.</p>
+
+  <div class="box k-jadro aside keep">
+    <div class="label">Jadro</div>
+    <div class="body">
+      <p><b>Aktívna hyperémia</b>: rozšírené arterioly → viac okysličenej krvi → červené, teplé (práca, zápal). <b>Pasívna (venostáza)</b>: viazne odtok → odkysličená krv stojí → modročervené, studené, opuchnuté. Krajnosť venostázy = <b>hemoragická infarzácia</b>.</p>
+    </div>
+  </div>
+
+  <table class="table keep" id="tab-8-12" style="margin:6px 0">
+    <thead><tr><th></th><th>Aktívna (arteriálna) hyperémia</th><th>Pasívna (venózna) hyperémia – venostáza, kongescia</th></tr></thead>
+    <tbody>
+      <tr><td><b><b>Mechanizmus</b></b></td><td>arterioly sa rozšíria a otvoria sa kapiláry, ktoré boli v pokoji zavreté</td><td>krv nemá kam odtiecť – žila je upchatá alebo stlačená, alebo zlyháva srdce</td></tr>
+      <tr><td><b><b>Príčiny</b></b></td><td>pracujúci sval, trávenie, odvod tepla kožou, začervenanie; <b>zápal</b></td><td>miestne: trombóza, stlačenie alebo pretočenie žily; celkovo: zlyhanie srdca</td></tr>
+      <tr><td><b><b>Krv v tkanive</b></b></td><td>okysličená, tečie rýchlo</td><td>odkysličená, stojí</td></tr>
+      <tr><td><b><b>Vzhľad</b></b></td><td>jasnočervené, teplé</td><td>modročervené (cyanóza), chladnejšie, zväčšené a ťažšie</td></tr>
+      <tr><td><b><b>Následok</b></b></td><td>žiadny – po skončení podnetu zmizne</td><td>opuch; pri dlhom trvaní hypoxia, atrofia buniek, drobné krvácania a fibróza</td></tr>
+    </tbody>
+  </table>
+
+  <p>Zvláštne miesto má hyperémia pri zápale: drobné cievy sú rozšírené účinkom mediátorov, krv v nich po úvodnom zrýchlení tečie pomaly až stojí a stena prepúšťa bielkoviny aj bunky. Od čistej aktívnej hyperémie sa teda líši spomaleným tokom a zvýšenou priepustnosťou; výsledkom je exsudát (<a class="xref" href="03_zapal_vseobecne.html#sec-3-3">→ 3.3 Cievna fáza – exsudácia</a>).</p>
+
+  <div class="box k-mech keep">
+    <div class="label">Mechanizmus – čo spraví venostáza s tkanivom</div>
+    <div class="body">
+      <ul>
+    <li><b>Opuch.</b> Krv, ktorá nemôže odtiecť, zvyšuje hydrostatický tlak v kapilárach; ten vytláča cez neporušenú stenu vodu so soľami – <b>transsudát</b>, chudobný na bielkoviny. Pri zápale je to naopak: stena je priepustná a uniká <b>exsudát</b> bohatý na bielkoviny (<a class="xref" href="03_zapal_vseobecne.html#sec-3-3">→ 3.3 Cievna fáza – exsudácia</a>). Sily, ktoré tekutinu v kapiláre držia, a druhy edému rozoberá <a class="xref" href="09_celkove_poruchy_obehu.html#sec-9-5">→ 9.5 Edém – tekutina mimo ciev a buniek</a>.</li>
+    <li><b>Hypoxia.</b> Stojaca krv odovzdá kyslík a nová nepriteká → bunky atrofujú a tukovatejú.</li>
+    <li><b>Drobné krvácania.</b> Preplnené kapiláry prepúšťajú erytrocyty; makrofágy ich pohltia a železo uložia ako hemosiderín (<b>siderofágy</b>) – tkanivo hnedne a po mesiacoch tuhne väzivom. Najlepšie to vidno v pľúcach a pečeni pri zlyhávajúcom srdci (<a class="xref" href="09_celkove_poruchy_obehu.html#sec-9-4">→ 9.4 Zlyhanie srdca: krv sa hromadí pred komorou, ktorá nestačí</a>).</li>
+  </ul>
+    </div>
+  </div>
+
+  <p>Keď je žilový odtok zablokovaný <b>úplne a náhle</b>, venostáza sa nezastaví pri opuchu – dej sa začne poháňať sám (⟳):</p>
+
+  <p class="chain">náhly úplný uzáver žíl (zaškrtenie, pretočenie stopky, trombóza) → tepna ďalej vháňa krv, ktorá nemá kam odtiecť → tlak v kapilárach prudko stúpa → opuch a krvácanie do tkaniva → napätie tkaniva stláča ďalšie žily a napokon aj tepny ⟳ → prítok ustane → <b>nekróza presiaknutá krvou – hemoragická infarzácia</b></p>
+
+  <p><b>Bod zvratu</b> nastane, keď tlak v tkanive prevýši tlak v prívodnej tepne: dovtedy sa dá orgán zachrániť uvoľnením žily (napravenie prietrže, rozkrútenie stopky), potom už nie. Typickým miestom je črevo zaškrtené v prietrži alebo pretočené okolo závesu, a orgány na stopke – semenník a vaječník, kde pretočenie najprv zastaví žilový odtok. Tkanivo je tmavočervené až čierne, opuchnuté a krehké (Obr. 8.12).</p>
+
+  <figure class="fig keep" id="fig-8-12" style="--fw:720px">
+    <img src="../assets/images/bowel-hemorrhagic-infarct.jpg" width="1280" height="1709" alt="Hemoragická infarzácia tenkého čreva zaškrteného v slabinovej prietrži. Postihnutá kľučka je tmavočervená až čierna – je presiaknutá krvou, ktorá nemohla odtiecť." loading="lazy">
+    <figcaption><b>Obr. 8.12 — Hemoragická infarzácia tenkého čreva zaškrteného v slabinovej prietrži.</b> Postihnutá kľučka je tmavočervená až čierna – je presiaknutá krvou, ktorá nemohla odtiecť. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Haem_infarction,_small_bowel.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Narraburra · Wikimedia Commons · CC0</a></figcaption>
+  </figure>
+
+  <div class="box k-pozor aside keep">
+    <div class="label">Pozor</div>
+    <div class="body">
+      <p><b>Hemoragický infarkt ≠ hemoragická infarzácia.</b> Infarkt je nekróza z uzáveru <b>tepny</b>, do ktorej krv presiakla druhotne. Infarzácia je nekróza z uzáveru <b>žily</b> – krv je v tkanive od začiatku a nekróza prichádza až po nej. Na reze vyzerajú podobne; rozhodne nález na cievach.</p>
+    </div>
+  </div>
+
+  <div class="box k-pocut aside keep">
+    <div class="label">Môžeš počuť</div>
+    <div class="body">
+      <p><b>Peristatická hyperémia.</b> Tretí druh prekrvenia popri arteriálnom a venóznom: pri zápale a pri šoku drobné cievy ochabnú, krv v nich stojí a stena prepúšťa tekutinu, bielkoviny aj bunky. Dej sám je opísaný v texte; názov sa v dnešných učebniciach nepoužíva a jeho vymedzenie sa nepodarilo doložiť.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 8.8 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-8-8"><span class="n">8.8</span><span>Krvácanie – krv mimo cievy</span></h2>
+<div class="sec-body">
+  <p><b>Krvácanie</b> (hemorágia) je únik krvi z ciev alebo zo srdca – navonok, do telovej dutiny alebo do tkaniva. Sekcia odpovedá na tri otázky: ako krv cievu opustí, ako sa krvácanie nazýva podľa toho, kde krv skončí, a čo spôsobí.</p>
+
+  <div class="box k-jadro aside keep">
+    <div class="label">Jadro</div>
+    <div class="body">
+      <p>Krv opustí cievu <b>roztrhnutím</b>, <b>nahlodaním</b> alebo <b>presakovaním</b> cez neporušenú stenu. Závažnosť určuje <b>množstvo × rýchlosť × miesto</b>: liter do brucha sa dá prežiť, pár mililitrov do mozgového kmeňa nie.</p>
+    </div>
+  </div>
+
+  <h3 class="sub-h" id="sub-8-8-1"><span class="n">8.8.1</span>Ako krv cievu opustí</h3>
+  <p>Mechanizmy krvácania sa delia podľa toho, <b>čo sa stalo so stenou cievy</b>:</p>
+
+  <table class="table keep" id="tab-8-13" style="margin:6px 0">
+    <thead><tr><th>Mechanizmus</th><th>Čo sa deje so stenou</th><th>Príklady</th></tr></thead>
+    <tbody>
+      <tr><td><b><b>roztrhnutie</b> (<i>per rhexin</i>)</b></td><td>stena sa náhle pretrhne – zvonka silou, alebo zvnútra tlakom na oslabenom mieste</td><td>úraz, prasknutá aneuryzma, prasknutý varix, ruptúra steny srdca po infarkte</td></tr>
+      <tr><td><b><b>nahlodanie</b> (<i>per diabrosin</i>)</b></td><td>stenu postupne rozruší dej z okolia</td><td>peptický vred, tuberkulózna kaverna, hnisavý zápal, nádor</td></tr>
+      <tr><td><b><b>presakovanie</b> (<i>per diapedesin</i>)</b></td><td>stena je celá, erytrocyty prestupujú medzi bunkami endotelu drobných ciev</td><td>venostáza, hypoxia a toxické poškodenie kapilár, nedostatok doštičiek, chyby steny (<a class="xref" href="#sec-8-9">→ 8.9</a>)</td></tr>
+    </tbody>
+  </table>
+
+  <p>Podľa <b>druhu cievy</b> je krvácanie tepnové (jasnočervená krv strieka v rytme pulzu), žilové (tmavá krv plynule vyteká) alebo kapilárne (krv presakuje z celej plochy).</p>
+
+  <div class="rev keep">
+    <div class="label"><span class="r">R</span>Revízia — krvácanie „per diapedesin“</div>
+    <div class="body">
+      <p><b>Kedysi</b> sa presakovanie krviniek cez neporušenú stenu uvádzalo ako tretí druh krvácania pod latinským názvom <i>haemorrhagia per diapedesin</i>. <b>Dnes</b> sa častejšie hovorí o <b>extravazácii</b> erytrocytov – podstata je rovnaká, len sa zdôrazňuje, že nejde o trhlinu, ale o priepustnosť drobných ciev. Na skúške sa používajú oba názvy.</p>
+    </div>
+  </div>
+
+  <h3 class="sub-h" id="sub-8-8-2"><span class="n">8.8.2</span>Názvoslovie: kde krv skončí</h3>
+  <p>Krvácanie má desiatky názvov, ale všetky odpovedajú na jednu otázku – <b>kam krv vytiekla</b>. Podľa toho sa dajú usporiadať do štyroch skupín:</p>
+
+  <table class="table keep" id="tab-8-14" style="margin:6px 0">
+    <thead><tr><th>Kam</th><th>Názov</th><th>Čo znamená</th></tr></thead>
+    <tbody>
+      <tr><td><b><b>do kože a slizníc</b></b></td><td><b>petechie</b></td><td>bodkovité výrony menšie než 2 mm – z kapilár; po zatlačení neblednú, lebo krv je mimo ciev</td></tr>
+      <tr><td><b></b></td><td><b>purpura</b></td><td>početné petechie; aj samostatný názov pre škvrny väčšie než 2 mm</td></tr>
+      <tr><td><b></b></td><td><b>ekchymóza</b></td><td>väčší plošný výron („modrina“)</td></tr>
+      <tr><td><b></b></td><td><b>sufúzia</b></td><td>rozsiahly, splývajúci plošný výron</td></tr>
+      <tr><td><b><b>do tkaniva</b></b></td><td><b>hematóm</b></td><td>ohraničené nahromadenie krvi, ktoré tlačí na okolie</td></tr>
+      <tr><td><b></b></td><td><b>apoplexia</b></td><td>prudké krvácanie, ktoré tkanivo roztriešti – najmä v mozgu</td></tr>
+      <tr><td><b><b>do dutín</b></b></td><td><b>hemotorax, hemoperikard, hemoperitoneum</b> (hemaskos)</td><td>krv v pohrudnicovej, osrdcovníkovej, brušnej dutine</td></tr>
+      <tr><td><b></b></td><td><b>hemartros</b></td><td>krv v kĺbe</td></tr>
+      <tr><td><b></b></td><td><b>hemocefalus</b></td><td>krv v mozgových komorách</td></tr>
+    </tbody>
+  </table>
+
+  <p>Štvrtú skupinu tvorí krvácanie <b>navonok telesnými otvormi</b>. Tu názov nehovorí len odkiaľ krv vyteká – podľa jej vzhľadu sa dá odhadnúť, ako vysoko leží zdroj a aké je krvácanie prudké:</p>
+
+  <ul>
+    <li><b>Tráviaca rúra.</b> O farbe rozhoduje, či krv prešla žalúdkom: kyselina mení hemoglobín na hnedočierny hematín. Zvratky pri <b>hemateméze</b> preto často pripomínajú kávovú usadeninu a stolica pri <b>meléne</b> je čierna a dechtovitá – zdroj je v pažeráku, žalúdku alebo dvanástniku. Jasnočervená krv v stolici znamená zdroj nízko v čreve alebo veľmi prudké krvácanie. Samotný výron do priesvitu sa označuje podľa orgánu – <b>gastrorágia</b>, <b>enterorágia</b>.</li>
+    <li><b>Dýchacie cesty.</b> Rozlišuje sa množstvo. Pri <b>hemoptýze</b> sú v spúte len pásiky alebo prímes krvi (zápal priedušiek, nádor, infarkt pľúc); <b>hemoptoe</b> je vykašľanie čistej krvi vo väčšom množstve, keď chorobný dej nahlodal väčšiu cievu (kaverna, nádor). <b>Epistaxa</b> je krvácanie zo sliznice nosa.</li>
+    <li><b>Močové a pohlavné cesty.</b> <b>Hematúria</b> je krv v moči – viditeľná okom alebo len v mikroskope. Pri maternici rozhoduje vzťah k cyklu: <b>hypermenorea</b> je menštruácia nadmerne silná, <b>menorágia</b> silná a predĺžená, <b>metrorágia</b> krvácanie mimo menštruácie, ktoré má inú príčinu než cyklus (polyp, hyperplázia, nádor). Gynekológia dnes tieto staršie názvy nahrádza opisnými – <i>silné menštruačné krvácanie</i> a <i>krvácanie medzi menštruáciami</i>.</li>
+  </ul>
+
+  <p>V staršom patologickom názvosloví sa ekchymózami nazývajú aj drobné výrony pod seróznymi blanami a na slizniciach; hranice medzi kožnými názvami nie sú ostré a rôzne pramene ich kladú inde.</p>
+
+  <h3 class="sub-h" id="sub-8-8-3"><span class="n">8.8.3</span>Čo krvácanie spôsobí a ako sa výron mení</h3>
+  <p>Následok krvácania určujú tri veci – <b>koľko krvi, ako rýchlo a kam</b> –, a platia nezávisle od seba:</p>
+
+  <ul>
+    <li><b>Množstvo a rýchlosť.</b> Náhlu stratu do asi 15 % objemu krvi (≈ 750 ml u dospelého) telo vyrovná takmer bez príznakov; pri väčšej strate sa zrýchľuje pulz a pri strate nad 30 % klesá tlak – rozvíja sa hemoragický šok (<a class="xref" href="09_celkove_poruchy_obehu.html#sub-9-6-2">→ 9.6.2 Šok: štyri príčiny</a>). Rovnaké množstvo stratené pomaly telo doplní; opakované malé straty (vred, hemoroidy, silná menštruácia) vyčerpajú zásoby železa → <b>anémia z nedostatku železa</b>.</li>
+    <li><b>Miesto.</b> V uzavretom priestore zabíja tlak, nie strata: krv v osrdcovníku stlačí srdce (<b>tamponáda</b>), krvácanie v lebke stlačí mozog. Krv v kĺbe ho po opakovaní zničí.</li>
+    <li><b>Čas.</b> Krv mimo cievy je cudzí materiál a telo ju odstraňuje – a na výrone to vidno ako zmenu farby:</li>
+  </ul>
+
+  <table class="table keep" id="tab-8-15" style="margin:6px 0">
+    <thead><tr><th>Fáza</th><th>Farba</th><th>Prečo</th></tr></thead>
+    <tbody>
+      <tr><td><b>čerstvý výron</b></td><td>červená až modrofialová</td><td>hemoglobín v erytrocytoch, ktorý stráca kyslík</td></tr>
+      <tr><td><b>rozklad (dni)</b></td><td>zelenkastá</td><td>makrofágy pohltia erytrocyty a hem menia na <b>biliverdín</b></td></tr>
+      <tr><td><b></b></td><td>žltá</td><td>biliverdín sa mení na <b>bilirubín</b>; časť vykryštalizuje na okraji výronu ako hematoidín</td></tr>
+      <tr><td><b>staré krvácanie (týždne až trvalo)</b></td><td>hrdzavohnedá</td><td>železo z hemu ostáva v makrofágoch ako <b>hemosiderín</b></td></tr>
+    </tbody>
+  </table>
+
+  <p>Malý výron sa takto vstrebe bez stopy. Veľký sa organizuje ako každý nevstrebateľný materiál – zmení sa na hrdzavú jazvu alebo, ak sa stred rozloží skôr, na dutinu s väzivovou stenou (<a class="xref" href="05_hojenie.html#sec-5-7">→ 5.7 Organizácia: čo telo samo nevstrebe</a>).</p>
+
+  <figure class="fig keep" id="fig-8-13" style="--fw:720px">
+    <img src="../assets/images/cerebral-hemorrhage.jpg" width="732" height="780" alt="Masívne vnútrolebkové krvácanie. Krv vypĺňa priestory na spodine mozgu; v uzavretej lebke zabíja tlak, nie strata krvi." loading="lazy">
+    <figcaption><b>Obr. 8.13 — Masívne vnútrolebkové krvácanie.</b> Krv vypĺňa priestory na spodine mozgu; v uzavretej lebke zabíja tlak, nie strata krvi. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Hemorr%C3%A0gia_cerebral.1444.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Amadalvarez · Wikimedia Commons · CC BY-SA 4.0</a></figcaption>
+  </figure>
+
+  <div class="box k-detek aside keep">
+    <div class="label">Detekcia</div>
+    <div class="body">
+      <p><b>Hemosiderín dokazuje staršie krvácanie.</b> Perlsova reakcia farbí jeho železo namodro (<a class="xref" href="00_uvod_metody.html#sec-0-6">→ 0.6 Farbenia a histochémia</a>); siderofágy v tkanive znamenajú, že krvácanie je staré aspoň niekoľko dní.</p>
+    </div>
+  </div>
+
+  <div class="box k-klin aside keep">
+    <div class="label">Klinika</div>
+    <div class="body">
+      <p><b>Od nálezu k rozhodnutiu:</b> meléna a postupne klesajúci hemoglobín u staršieho pacienta znamenajú chronickú stratu krvi do tráviacej rúry – a kým sa nedokáže iný zdroj, treba hľadať nádor hrubého čreva alebo žalúdka. Anémia z nedostatku železa u muža alebo u ženy po menopauze nie je diagnóza, ale dôvod na endoskopiu.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 8.9 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-8-9"><span class="n">8.9</span><span>Krvácavé stavy – keď hemostáza nestačí</span></h2>
+<div class="sec-body">
+  <p><b>Krvácavý stav</b> (hemoragická diatéza) je sklon ku krvácaniu, ktoré je samovoľné alebo neprimerané poraneniu, lebo zlyháva niektorá zo zložiek hemostázy. Keďže zložky sú tri (<a class="xref" href="#sec-8-2">→ 8.2</a>), sú aj príčiny tri – <b>doštičky, koagulačné faktory a stena cievy</b> – a každá krváca inak. Osobitné miesto má DIC, pri ktorej zlyhajú všetky naraz.</p>
+
+  <div class="box k-jadro aside keep">
+    <div class="label">Jadro</div>
+    <div class="body">
+      <p>Tri príčiny, tri obrazy: <b>doštičky</b> → petechie a krvácanie zo slizníc hneď; <b>koagulačné faktory</b> → hlboké hematómy a krv v kĺboch s odstupom; <b>stena cievy</b> → purpura pri normálnych testoch. <b>DIC</b> = trombóza v mikrocirkulácii, ktorá spotrebuje doštičky aj faktory.</p>
+    </div>
+  </div>
+
+  <h3 class="sub-h" id="sub-8-9-1"><span class="n">8.9.1</span>Tri príčiny a ich obraz</h3>
+  <p>Podľa toho, <b>ktorá zložka hemostázy chýba</b>, vyzerá krvácanie inak – a práve podľa obrazu sa dá odhadnúť príčina skôr, než prídu výsledky:</p>
+
+  <table class="table keep" id="tab-8-16" style="margin:6px 0">
+    <thead><tr><th></th><th>Porucha doštičiek</th><th>Porucha koagulačných faktorov</th><th>Porucha steny cievy</th></tr></thead>
+    <tbody>
+      <tr><td><b><b>Čo chýba</b></b></td><td>prvotná zátka</td><td>fibrín, ktorý zátku spevní</td><td>opora drobných ciev</td></tr>
+      <tr><td><b><b>Kde krváca</b></b></td><td>koža a sliznice: <b>petechie</b>, purpura, krvácanie z nosa a ďasien, silná menštruácia</td><td>hlboko: <b>kĺby (hemartros)</b>, svaly, vnútorné orgány; petechie chýbajú</td><td>koža a sliznice: purpura, často hmatná</td></tr>
+      <tr><td><b><b>Kedy po poranení</b></b></td><td>hneď, z drobných ranek dlho</td><td>s odstupom hodín a opakovane – zátka vznikne, ale bez fibrínu sa rozpadne</td><td>—</td></tr>
+      <tr><td><b><b>Testy</b></b></td><td>↓ počet doštičiek alebo porucha ich funkcie; PT a aPTT v norme</td><td>predĺžený PT alebo aPTT; doštičky v norme</td><td>doštičky, PT aj aPTT v norme</td></tr>
+      <tr><td><b><b>Príklady</b></b></td><td>imunitná trombocytopénia, útlm kostnej drene, kyselina acetylsalicylová</td><td>hemofília, choroba pečene, nedostatok vitamínu K, warfarín</td><td>skorbut, IgA vaskulitída, starecká purpura</td></tr>
+    </tbody>
+  </table>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>IgA</b> imunoglobulín A</span></div>
+  </div>
+
+  <figure class="fig keep" id="fig-8-14" style="--fw:720px">
+    <img src="../assets/images/petechiae-leg.jpg" width="1280" height="960" alt="Petechie na predkolení pri imunitnej trombocytopénii. Bodkovité výrony z kapilár – typický obraz nedostatku doštičiek." loading="lazy">
+    <figcaption><b>Obr. 8.14 — Petechie na predkolení pri imunitnej trombocytopénii.</b> Bodkovité výrony z kapilár – typický obraz nedostatku doštičiek. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Petechia_lower_leg.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>James Heilman, MD · Wikimedia Commons · CC BY-SA 4.0</a></figcaption>
+  </figure>
+
+  <h3 class="sub-h" id="sub-8-9-2"><span class="n">8.9.2</span>Doštičky: málo alebo nefunkčné</h3>
+  <p><b>Trombocytopénia</b> je počet doštičiek pod 150 × 10⁹/l (norma 150–400 × 10⁹/l). Príznaky však prichádzajú až pri oveľa nižších hodnotách: neprimerané krvácanie po úraze pri 30–50 × 10⁹/l, samovoľné krvácanie pod 30 × 10⁹/l; pri veľmi nízkom počte hrozí krvácanie do mozgu. Príčiny sa delia podľa toho, <b>na ktorom mieste cesty doštičky</b> – od vzniku v dreni cez zásobu v slezine po zánik v obehu – nastala chyba:</p>
+
+  <table class="table keep" id="tab-8-17" style="margin:6px 0">
+    <thead><tr><th>Kde je chyba</th><th>Mechanizmus</th><th>Príklady</th></tr></thead>
+    <tbody>
+      <tr><td><b><b>tvorba</b> v kostnej dreni</b></td><td>megakaryocytov je málo alebo netvoria doštičky</td><td>leukémia a metastázy v dreni, aplázia drene, chemoterapia a ožiarenie, myelodysplastický syndróm, vírusy</td></tr>
+      <tr><td><b><b>zadržanie</b> v slezine</b></td><td>zdravá slezina drží asi tretinu doštičiek, zväčšená až 80 %</td><td>splenomegália (hypersplenizmus), veľké hemangiómy</td></tr>
+      <tr><td><b><b>rozpad</b> protilátkami</b></td><td>protilátkou označené doštičky pohltia makrofágy sleziny a pečene</td><td><b>imunitná trombocytopénia (ITP)</b>; lieky; vírusové infekcie; pri lupuse a lymfoproliferatívnych chorobách</td></tr>
+      <tr><td><b><b>spotreba</b> v zrazeninách</b></td><td>doštičky sa minú v mikrotromboch</td><td>DIC; trombotické mikroangiopatie; opakované rozsiahle trombózy; heparínom indukovaná trombocytopénia (<a class="xref" href="#sub-8-3-1">→ 8.3.1</a>)</td></tr>
+      <tr><td><b><b>zriedenie</b></b></td><td>náhrada veľkej straty krvi prípravkami bez doštičiek</td><td>masívne transfúzie</td></tr>
+    </tbody>
+  </table>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>ITP</b> imunitná trombocytopénia (kedysi idiopatická trombocytopenická purpura)</span></div>
+  </div>
+
+  <p>Základné rozlíšenie robí kostná dreň: pri zvýšenom rozpade alebo spotrebe sú megakaryocyty <b>zmnožené</b> (dreň sa snaží stratu dohnať), pri poruche tvorby ich je <b>málo</b>.</p>
+
+  <div class="rev keep">
+    <div class="label"><span class="r">R</span>Revízia — ITP už nie je „idiopatická purpura“</div>
+    <div class="body">
+      <p><b>Kedysi</b>: <i>idiopatická trombocytopenická purpura</i> – choroba neznámej príčiny, pomenovaná podľa kožného prejavu. <b>Dnes</b>: <b>imunitná trombocytopénia</b> (skratka ITP ostala). Príčina známa je – autoprotilátky proti doštičkám a megakaryocytom – a purpuru veľa chorých vôbec nemá; diagnóza sa opiera o počet doštičiek pod 100 × 10⁹/l pri inak normálnom krvnom obraze. Delí sa na primárnu (bez inej choroby; u detí často náhle po viróze a sama odznie) a sekundárnu (pri lupuse, chronickej lymfocytovej leukémii, HIV); u dospelých prebieha skôr chronicky.</p>
+    </div>
+  </div>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>HIV</b> vírus ľudskej imunitnej nedostatočnosti</span></div>
+  </div>
+
+  <p><b>Trombotické mikroangiopatie</b> spájajú trombocytopéniu s hemolytickou anémiou: v drobných cievach vznikajú doštičkové mikrotromby, o ktoré sa trieštia erytrocyty – v krvnom nátere sú ich úlomky (<b>schistocyty</b>). Pri <b>trombotickej trombocytopenickej purpure (TTP)</b> chýba enzým ADAMTS13 (aktivita pod 10 %), ktorý má strihať veľké multiméry vWF; neprestrihnuté multiméry lepia doštičky na endotel, najmä v mozgu a obličkách. Pri <b>hemolyticko-uremickom syndróme</b> poškodzuje endotel obličiek bakteriálny toxín po hnačkovom ochorení, typicky u malých detí. Od DIC ich odlíši to, že koagulačné faktory sa nespotrebúvajú – PT a aPTT sú v norme.</p>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>TTP</b> trombotická trombocytopenická purpura</span> <span class="sk"><b>ADAMTS13</b> enzým, ktorý strihá veľké multiméry von Willebrandovho faktora</span></div>
+  </div>
+
+  <p><b>Trombocytopatia</b> je porucha funkcie pri normálnom počte doštičiek; krváca rovnako ako trombocytopénia. Získané sú časté: <b>kyselina acetylsalicylová</b> a ďalšie nesteroidné antiflogistiká blokujú cyklooxygenázu, takže doštička nevytvorí tromboxán A₂ a nezhlukuje sa; podobne pôsobia ďalšie antiagreganciá vrátane monoklonových protilátok proti doštičkovým receptorom, podávané práve na tento účel; funkciu doštičiek tlmí aj urémia. Vrodené sú zriedkavé – chýba receptor pre adhéziu (Bernardov-Soulierov syndróm) alebo pre agregáciu (Glanzmannova trombasténia).</p>
+
+  <h3 class="sub-h" id="sub-8-9-3"><span class="n">8.9.3</span>Koagulačné faktory: chýbajú alebo sa netvoria</h3>
+  <p><b>Koagulopatia</b> je krvácavý stav z nedostatku alebo nefunkčnosti koagulačných faktorov. Podľa pôvodu je získaná – tá je oveľa častejšia a týka sa zvyčajne viacerých faktorov naraz – alebo vrodená, pri ktorej chýba jeden faktor.</p>
+
+  <p><b>Získané koagulopatie</b> majú spoločného menovateľa v pečeni a vitamíne K:</p>
+
+  <ul>
+    <li><b>choroba pečene</b> (cirhóza, akútne zlyhanie) – pečeň tvorí takmer všetky faktory, takže ich ubúda naraz; zároveň sa horšie odbúrava plazmín,</li>
+    <li><b>nedostatok vitamínu K</b> – bez neho sú faktory II, VII, IX a X nefunkčné. Vitamín K je rozpustný v tukoch a časť ho tvoria črevné baktérie, preto chýba pri poruche vstrebávania tukov (malabsorpcia) a po dlhej liečbe antibiotikami, ktoré črevnú flóru potlačia,</li>
+    <li><b>liečba antagonistami vitamínu K</b> (warfarín a ďalšie kumaríny) – rovnaký účinok, len zámerný,</li>
+    <li><b>protilátky proti faktorom</b> – najčastejšie proti faktoru VIII,</li>
+    <li><b>spotreba</b> faktorov v zrazeninách (konzumpčná koagulopatia) – DIC (<a class="xref" href="#sub-8-9-5">→ 8.9.5</a>).</li>
+  </ul>
+
+  <p><b>Vrodené koagulopatie</b> predstavujú tri choroby:</p>
+
+  <table class="table keep" id="tab-8-18" style="margin:6px 0">
+    <thead><tr><th></th><th>Hemofília A</th><th>Hemofília B</th><th>Von Willebrandova choroba</th></tr></thead>
+    <tbody>
+      <tr><td><b><b>Čo chýba</b></b></td><td>faktor VIII</td><td>faktor IX</td><td>vWF – jeho množstvo alebo funkcia</td></tr>
+      <tr><td><b><b>Dedičnosť</b></b></td><td>viazaná na chromozóm X – chorí sú muži, ženy prenášajú; asi tretina sú nové mutácie</td><td>rovnaká</td><td>väčšinou autozómovo dominantná – obe pohlavia</td></tr>
+      <tr><td><b><b>Výskyt</b></b></td><td>asi 25 na 100 000 narodených chlapcov</td><td>asi 5 na 100 000 narodených chlapcov</td><td>najčastejšia vrodená krvácavá choroba: laboratórne asi 1 % ľudí, klinicky významná asi u 1 z 8 000</td></tr>
+      <tr><td><b><b>Mechanizmus</b></b></td><td>na doštičke nevznikne komplex IXa–VIIIa → málo trombínu → zátka bez fibrínu</td><td>rovnaký</td><td>doštičky sa neprichytia ku kolagénu <b>a</b> nechránený faktor VIII sa rýchlo rozkladá</td></tr>
+      <tr><td><b><b>Obraz</b></b></td><td>krvácanie do kĺbov (koleno, lakeť) a svalov, po zákrokoch; ťažkosť zodpovedá zvyškovej aktivite faktora</td><td>nerozoznateľný od A</td><td>ľahké slizničné krvácanie, po vytrhnutí zuba, silná menštruácia; pri úplnom chýbaní vWF obraz ako hemofília</td></tr>
+      <tr><td><b><b>Testy</b></b></td><td>predĺžený aPTT, normálny PT a doštičky</td><td>rovnako</td><td>podľa typu; aPTT môže byť predĺžený pre nízky faktor VIII</td></tr>
+    </tbody>
+  </table>
+
+  <div class="box k-klin aside keep">
+    <div class="label">Klinika</div>
+    <div class="body">
+      <p><b>Hemofilická artropatia.</b> Krv v kĺbe dráždi výstelku: makrofágy sa plnia hemosiderínom, synovia zhrubne a prekrví sa, a preto pri najmenšej záťaži krváca znova ⟳. Opakované krvácania napokon zničia chrupku a kĺb stuhne (ankylóza). Bod zvratu je vznik zhrubnutej, ľahko krvácajúcej synovie – preto sa chýbajúci faktor podáva preventívne, nie až pri krvácaní.</p>
+    </div>
+  </div>
+
+  <div class="box k-pocut aside keep">
+    <div class="label">Môžeš počuť</div>
+    <div class="body">
+      <p><b>Von Willebrandov-Jürgensov syndróm.</b> Starší eponym von Willebrandovej choroby. V zdrojoch, z ktorých kapitola čerpá, sa to nepodarilo doložiť.</p>
+    </div>
+  </div>
+
+  <h3 class="sub-h" id="sub-8-9-4"><span class="n">8.9.4</span>Stena cievy: krvácanie pri normálnych testoch</h3>
+  <p><b>Vaskulopatické krvácanie</b> vzniká, keď drobné cievy alebo väzivo, ktoré ich podopiera, nevydržia bežný tlak. Doštičky aj koagulácia sú v poriadku, krvácanie je povrchové (petechie, purpura) a zriedka ohrozuje život. Príčiny sa delia podľa toho, <b>čo stenu oslabilo</b>:</p>
+
+  <table class="table keep" id="tab-8-19" style="margin:6px 0">
+    <thead><tr><th>Čo je so stenou</th><th>Choroba</th><th>Mechanizmus</th><th>Obraz</th></tr></thead>
+    <tbody>
+      <tr><td><b><b>chybný kolagén</b></b></td><td><b>skorbut</b> (nedostatok vitamínu C; u dojčiat Möllerova-Barlowova choroba)</td><td>vitamín C je kofaktor hydroxylácie prokolagénu; bez neho je kolagén nepevný (<a class="xref" href="05_hojenie.html#sec-5-5">→ 5.5 Čo hojenie brzdí</a>)</td><td>krvácanie z ďasien, okolo vlasových folikulov, pod okosticu; zlé hojenie rán</td></tr>
+      <tr><td><b></b></td><td><b>starecká (senilná) purpura</b></td><td>vekom a slnkom stenčené väzivo okolo ciev kože</td><td>tmavé škvrny na predlaktiach a chrbte rúk po nepatrnom náraze</td></tr>
+      <tr><td><b></b></td><td>nadbytok glukokortikoidov, vrodené chyby kolagénu</td><td>útlm tvorby kolagénu, resp. chybná stavba</td><td>ľahko vznikajúce modriny</td></tr>
+      <tr><td><b><b>imunitný zápal</b></b></td><td><b>IgA vaskulitída</b></td><td>imunokomplexy s IgA sa ukladajú pod endotel drobných ciev a v obličkových klbkách (precitlivenosť III. typu) → komplement → neutrofily rozrušia stenu</td><td>hmatná purpura na predkoleniach a zadku, bolesti brucha a kĺbov, zápal obličiek; najmä deti (vrchol 4–6 rokov) po infekcii horných dýchacích ciest</td></tr>
+      <tr><td><b><b>infekcia a toxíny</b></b></td><td>meningokoková sepsa, infekčná endokarditída</td><td>priame poškodenie endotelu, často spolu s DIC</td><td>petechie až splývajúce výrony</td></tr>
+      <tr><td><b><b>usadeniny v stene</b></b></td><td>amyloidóza</td><td>amyloid nahradí pružné zložky steny (<a class="xref" href="02_dystrofie.html#sub-2-4-5">→ 2.4.5 Amyloidóza</a>)</td><td>purpura po miernom tlaku, typicky okolo očí</td></tr>
+      <tr><td><b><b>vrodene chybná stavba ciev</b></b></td><td><b>hereditárna hemoragická teleangiektázia</b> (Renduova-Oslerova-Weberova choroba)</td><td>autozómovo dominantné mutácie génov dráhy TGF-β (<i>ENG</i>, <i>ACVRL1</i> a ďalšie) → rozšírené tenkostenné cievky a artériovenózne spojky bez kapilár</td><td>drobné červené škvrnky na perách, jazyku a v nose; opakované krvácanie z nosa a tráviacej rúry → anémia; spojky v pľúcach, pečeni a mozgu</td></tr>
+    </tbody>
+  </table>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>TGF-β</b> transformujúci rastový faktor β</span></div>
+  </div>
+
+  <div class="fig-row">
+  <figure class="fig keep" id="fig-8-15" style="--ar:0.75;--fw:720px">
+    <img src="../assets/images/iga-vasculitis-purpura.jpg" width="1080" height="1433" alt="IgA vaskulitída. Purpura na nohách – výrony z drobných ciev, ktorých stenu poškodili imunokomplexy." loading="lazy">
+    <figcaption><b>Obr. 8.15 — IgA vaskulitída.</b> Purpura na nohách – výrony z drobných ciev, ktorých stenu poškodili imunokomplexy. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:HSP_Vasculitis.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Profrofrof · Wikimedia Commons · CC0</a></figcaption>
+  </figure>
+  <figure class="fig keep" id="fig-8-16" style="--ar:1.51;--fw:720px">
+    <img src="../assets/images/hht-lips.jpg" width="1280" height="847" alt="Hereditárna hemoragická teleangiektázia. Drobné červené rozšírené cievky (teleangiektázie) na perách." loading="lazy">
+    <figcaption><b>Obr. 8.16 — Hereditárna hemoragická teleangiektázia.</b> Drobné červené rozšírené cievky (teleangiektázie) na perách. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Hereditary_hemorrhagic_telangiectasia.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Narraburra · Wikimedia Commons · CC0</a></figcaption>
+  </figure>
+  </div>
+
+  <div class="rev keep">
+    <div class="label"><span class="r">R</span>Revízia — Henochova-Schönleinova purpura je IgA vaskulitída</div>
+    <div class="body">
+      <p><b>Kedysi</b> niesla choroba mená dvoch lekárov, ktorí ju opísali (aj „alergická“ či „reumatická“ purpura). <b>Dnes</b> ju názvoslovie vaskulitíd volá podľa podstaty – <b>IgA vaskulitída</b>: vaskulitída malých ciev s depozitmi IgA. Zmena pripomína, čo má patológ v biopsii kože alebo obličky hľadať: IgA v stene ciev a v mezangiu. Obličky sú postihnuté u 20–80 % detí a rozhodujú o prognóze.</p>
+    </div>
+  </div>
+
+  <h3 class="sub-h" id="sub-8-9-5"><span class="n">8.9.5</span>DIC – trombóza a krvácanie naraz</h3>
+  <p><b>Diseminovaná intravaskulárna koagulácia</b> (DIC; aj „koagulopatia“) nie je samostatná choroba, ale spoločné vyústenie ťažkých stavov, ktoré spustia zrážanie krvi v celom obehu naraz. Je to hemostáza, ktorá stratila hranice: zátky vznikajú všade – a tam, kde ich treba, už nie je z čoho.</p>
+
+  <p class="chain">ťažký základný stav → do krvi sa dostane <b>tkanivový faktor</b> alebo je endotel poškodený v celom riečisku → trombín vzniká všade naraz, brzdy (antitrombín, proteín C) sa vyčerpajú a fibrinolýza je spočiatku utlmená → <b>fibrínové mikrotromby</b> v kapilárach a arteriolách → ischémia orgánov → doštičky, fibrinogén a faktory sa <b>spotrebujú</b> → krv sa prestane zrážať → <b>krvácanie z vpichov, rán a slizníc</b></p>
+
+  <p>Spúšťače sa líšia tým, <b>odkiaľ sa tkanivový faktor v krvi vezme</b>; zoradené sú od najčastejšieho:</p>
+
+  <ul>
+    <li><b>z vlastných monocytov a endotelu</b> – <b>sepsa</b>: bakteriálne toxíny a cytokíny nútia monocyty a endotel vystaviť tkanivový faktor a zároveň tlmia brzdy koagulácie (<a class="xref" href="03_zapal_vseobecne.html#sub-3-6-2">→ 3.6.2 SIRS a sepsa – keď sa obrana obráti proti telu</a>),</li>
+    <li><b>z rozdrveného alebo spáleného tkaniva</b> – rozsiahle úrazy, popáleniny, veľké operácie (najmä na orgánoch, ktoré sú ním bohaté),</li>
+    <li><b>z placenty a plodovej vody</b> – predčasné odlúčenie placenty, embólia plodovou vodou a iné pôrodnícke komplikácie,</li>
+    <li><b>z nádorových buniek</b> – akútna promyelocytová leukémia, niektoré adenokarcinómy,</li>
+    <li><b>z rozpadnutých krviniek a priamo poškodeného endotelu</b> – hemolýza po nezlučiteľnej transfúzii, hadie jedy.</li>
+  </ul>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>SIRS</b> syndróm systémovej zápalovej odpovede</span></div>
+  </div>
+
+  <p><b>Šok</b> akejkoľvek príčiny každý z týchto spúšťačov zosilní: krv tečie pomaly, endotel trpí hypoxiou a pečeň horšie odstraňuje aktivované faktory.</p>
+
+  <p>Dej sa udržiava sám (Obr. 8.17): mikrotromby spôsobujú ischémiu, ischemické bunky a poškodený endotel uvoľňujú ďalší tkanivový faktor a ten živí ďalšie zrážanie ⟳. <b>Bod zvratu</b> je vyčerpanie bŕzd a zásob – od tej chvíle pacient zároveň trombotizuje aj krváca a orgány zlyhávajú jeden po druhom.</p>
+
+  <figure class="chart keep" id="fig-kruh-dic">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 316" role="img" aria-labelledby="tfigkruhdic">
+<title id="tfigkruhdic">Bludný kruh DIC: tkanivový faktor v krvi a poškodený endotel spustia tvorbu trombínu v celom obehu, vznikajú fibrínové mikrotromby, ischémia orgánov poškodí bunky a endotel, ktoré uvoľnia ďalší tkanivový faktor; mikrotromby zároveň spotrebujú doštičky, fibrinogén a faktory, takže pacient krváca; bod zvratu je vyčerpanie bŕzd a zásob</title>
+<defs><marker id="mfigkruhdic" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker></defs>
+<rect class="bx-c" x="20" y="0" width="190" height="26" rx="3" stroke="var(--color-accent-600)"/>
+<text class="lblb" x="115" y="17" text-anchor="middle">sepsa, pôrod, úraz, nádor, šok</text>
+<path class="arw" d="M115,26 L115,42" marker-end="url(#mfigkruhdic)"/>
+<rect class="bx-k" x="20" y="44" width="190" height="50" rx="3"/>
+<text class="lblb" x="115" y="66" text-anchor="middle">tkanivový faktor v krvi,</text>
+<text class="lblb" x="115" y="80" text-anchor="middle">poškodený endotel</text>
+<rect class="bx-k" x="490" y="44" width="190" height="50" rx="3"/>
+<text class="lblb" x="585" y="66" text-anchor="middle">trombín vzniká</text>
+<text class="lblb" x="585" y="80" text-anchor="middle">v celom obehu naraz</text>
+<rect class="bx-k" x="490" y="194" width="190" height="50" rx="3"/>
+<text class="lblb" x="585" y="216" text-anchor="middle">fibrínové mikrotromby</text>
+<text class="lblb" x="585" y="230" text-anchor="middle">v kapilárach a arteriolách</text>
+<rect class="bx-k" x="20" y="194" width="190" height="50" rx="3"/>
+<text class="lblb" x="115" y="216" text-anchor="middle">ischémia orgánov,</text>
+<text class="lblb" x="115" y="230" text-anchor="middle">odumierajúce bunky</text>
+<path class="arw" d="M212,69 L488,69" marker-end="url(#mfigkruhdic)"/>
+<path class="arw" d="M585,96 L585,192" marker-end="url(#mfigkruhdic)"/>
+<path class="arw" d="M488,219 L212,219" marker-end="url(#mfigkruhdic)"/>
+<path class="arw" d="M115,192 L115,96" marker-end="url(#mfigkruhdic)" style="stroke-width:2.2"/>
+<text class="sub" x="350" y="63" text-anchor="middle">antitrombín a proteín C sa vyčerpajú</text>
+<text class="sub" x="577" y="141" text-anchor="end">trombín mení</text>
+<text class="sub" x="577" y="154" text-anchor="end">fibrinogén na fibrín</text>
+<text class="sub" x="350" y="213" text-anchor="middle">upchatá mikrocirkulácia</text>
+<text class="sub" x="123" y="141" text-anchor="start">uvoľnia ďalší</text>
+<text class="sub" x="123" y="154" text-anchor="start">tkanivový faktor</text>
+<text x="350" y="140" text-anchor="middle" style="font-size:26px;fill:var(--color-accent-2-600)">⟳</text>
+<text class="cap" x="350" y="156" text-anchor="middle">circulus vitiosus</text>
+<path class="arw" d="M585,244 L585,266" marker-end="url(#mfigkruhdic)"/>
+<rect class="bx-m" x="400" y="268" width="290" height="44" rx="3" stroke="var(--color-accent-2-600)" stroke-width="1.5"/>
+<text class="lblb" x="545" y="286" text-anchor="middle">spotreba doštičiek, fibrinogénu a faktorov</text>
+<text class="lblb" x="545" y="302" text-anchor="middle">→ KRVÁCANIE</text>
+<text class="lbl-m" x="115" y="270" text-anchor="middle">bod zvratu: brzdy a zásoby sú vyčerpané</text>
+<text class="sub" x="115" y="286" text-anchor="middle">(trombóza a krvácanie naraz,</text>
+<text class="sub" x="115" y="299" text-anchor="middle">orgány zlyhávajú)</text>
+</svg>
+    <figcaption><b>Obr. 8.17 — Bludný kruh DIC.</b> Mikrotromby spôsobujú ischémiu, tá uvoľňuje ďalší tkanivový faktor; zároveň sa spotrebujú doštičky a faktory, takže pacient krváca.</figcaption>
+  </figure>
+
+  <div class="box k-morf keep">
+    <div class="label">Čo uvidíš – DIC</div>
+    <div class="body">
+      <ul>
+    <li><b>MA:</b> petechie a splývajúce výrony v koži, na slizniciach a seróznych blanách; krvácanie do nadobličiek, pľúc, tráviacej rúry; drobné infarkty v obličkách, mozgu, srdci; pri najťažších formách nekrózy končekov prstov.</li>
+    <li><b>MI:</b> <b>hyalínne (fibrínové) mikrotromby</b> – homogénne ružové zátky v kapilárach klbiek obličiek, v pľúcnych kapilárach, v mozgu a nadobličkách; okolo nich drobné nekrózy a krvácania. Pri pitve ich býva prekvapivo málo alebo chýbajú – fibrinolýza ich stihla rozpustiť, takže ich neprítomnosť DIC nevylučuje.</li>
+  </ul>
+    </div>
+  </div>
+
+  <div class="fig-row">
+  <figure class="fig keep" id="fig-8-18" style="--ar:1.50;--fw:720px">
+    <img src="../assets/images/fibrin-thrombi-glomerulus.jpg" width="1280" height="853" alt="Fibrínové mikrotromby v klbku obličky (H&amp;E, trombotická mikroangiopatia). Rovnaké homogénne ružové zátky v kapilárach sú mikroskopickým podkladom DIC." loading="lazy">
+    <figcaption><b>Obr. 8.18 — Fibrínové mikrotromby v klbku obličky (H&amp;E, trombotická mikroangiopatia).</b> Rovnaké homogénne ružové zátky v kapilárach sú mikroskopickým podkladom DIC. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Acute_thrombotic_microangiopathy_-_high_mag.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Nephron · Wikimedia Commons · CC BY-SA 3.0</a></figcaption>
+  </figure>
+  <figure class="fig keep" id="fig-8-19" style="--ar:1.33;--fw:720px">
+    <img src="../assets/images/dic-schistocytes.jpg" width="800" height="600" alt="Krvný náter pri DIC. Úlomky erytrocytov (schistocyty) vznikajú, keď sa krvinky trieštia o fibrínové vlákna v drobných cievach; doštičiek je málo." loading="lazy">
+    <figcaption><b>Obr. 8.19 — Krvný náter pri DIC.</b> Úlomky erytrocytov (schistocyty) vznikajú, keď sa krvinky trieštia o fibrínové vlákna v drobných cievach; doštičiek je málo. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:DIC_With_Microangiopathic_Hemolytic_Anemia.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Ed Uthman · Wikimedia Commons · CC BY 2.0</a></figcaption>
+  </figure>
+  </div>
+
+  <div class="box k-detek keep">
+    <div class="label">Detekcia</div>
+    <div class="body">
+      <p><b>Laboratórny obraz DIC:</b> ↓ doštičky, predĺžený PT (aj aPTT), ↓ fibrinogén, výrazne ↑ D-diméry a v nátere úlomky erytrocytov. Skóre Medzinárodnej spoločnosti pre trombózu a hemostázu (ISTH) boduje práve tieto štyri ukazovatele – počet doštičiek, produkty rozpadu fibrínu, PT a fibrinogén; <b>≥ 5 bodov</b> u pacienta s vyvolávajúcou chorobou znamená zjavnú DIC. Smerodajný je vývoj: hodnoty sa zhoršujú z hodiny na hodinu.</p>
+    </div>
+  </div>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>ISTH</b> Medzinárodná spoločnosť pre trombózu a hemostázu</span></div>
+  </div>
+
+  <div class="box k-klin aside keep">
+    <div class="label">Klinika</div>
+    <div class="body">
+      <p><b>DIC je vždy druhotná</b> – lieči sa odstránením príčiny (antibiotiká a odstránenie ložiska pri sepse, pôrod a vybratie placenty), doštičky a plazma sa len dopĺňajú. Napriek liečbe zomiera približne 35–45 % chorých. <b>Patológ</b> do záveru píše základnú chorobu, ktorá DIC vyvolala, a DIC ako mechanizmus zlyhania orgánov; meningokoková sepsa s krvácaním do oboch nadobličiek je jej učebnicový obraz.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 8.10 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-8-10"><span class="n">8.10</span><span>Súhrn a rýchle rozlíšenie</span></h2>
+<div class="sec-body">
+  <table class="table keep" id="tab-8-20" style="margin:6px 0">
+    <thead><tr><th>Vetva</th><th>Čo sa deje</th><th>Čo nájdeš</th><th>Čo rozhoduje</th></tr></thead>
+    <tbody>
+      <tr><td><b><b>trombóza</b></b></td><td>zrazenina za života: poškodený endotel + porucha prúdenia + zvýšená zrážanlivosť</td><td>tepna: biely, prirastený; žila: červený, odliatok; vrstvenie; drží na stene a láme sa</td><td>miesto: tepna → infarkt, žila → embólia; čas: po začatí organizácie sa už nerozpustí</td></tr>
+      <tr><td><b><b>embólia</b></b></td><td>materiál unášaný prúdom sa zaklinuje</td><td>zo žíl v pľúcnici, zo srdca v tepnách orgánov; tuk, vzduch, plodová voda, kryštály, nádor, baktérie</td><td>veľkosť embolu a náhradný prívod povodia</td></tr>
+      <tr><td><b><b>iné prekážky</b></b></td><td>v stene (ateróm, spazmus, zápal), zvonka (stlačenie), v krvi (hustá krv), v sieti (steal)</td><td>podľa príčiny; spazmus stopu nezanechá</td><td>rýchlosť: pomalé zúženie stihnú nahradiť kolaterály</td></tr>
+      <tr><td><b><b>ischémia → infarkt</b></b></td><td>prietok pod potrebou → nekróza</td><td>klinovité ložisko: biele v srdci, obličke, slezine; červené v pľúcach a čreve; neutrofily → granulačné tkanivo → jazva</td><td>stavba riečiska, rýchlosť, citlivosť tkaniva, stav obehu</td></tr>
+      <tr><td><b><b>aktívna hyperémia</b></b></td><td>viac krvi priteká</td><td>červené, teplé</td><td>neškodná</td></tr>
+      <tr><td><b><b>venostáza</b></b></td><td>krv neodteká</td><td>modročervené, opuchnuté; siderofágy, fibróza</td><td>pri úplnom uzávere žily ⟳ → hemoragická infarzácia</td></tr>
+      <tr><td><b><b>krvácanie</b></b></td><td>roztrhnutie, nahlodanie, presakovanie</td><td>podľa miesta: petechie až hematóm, krv v dutine, navonok</td><td>množstvo × rýchlosť × miesto</td></tr>
+      <tr><td><b><b>krvácavý stav</b></b></td><td>chýbajú doštičky, faktory alebo pevnosť steny</td><td>petechie (doštičky, stena) × kĺby a svaly (faktory)</td><td>počet doštičiek, PT, aPTT</td></tr>
+      <tr><td><b><b>DIC</b> ⟳</b></td><td>koagulácia v celom obehu → spotreba → krvácanie</td><td>mikrotromby + krvácania; ↓ doštičky, ↓ fibrinogén, ↑ D-diméry</td><td>odstránenie príčiny skôr, než sa vyčerpajú brzdy</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ══ 8.11 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-8-11"><span class="n">8.11</span><span>Otázky na zopakovanie</span></h2>
+<div class="sec-body">
+  <ol class="quiz">
+    <li><details><summary>Prečo je trombus v tepne biely a v žile červený?</summary><div class="ans">V tepne tečie krv rýchlo: prúd erytrocyty odplaví a na poškodenom endoteli ostanú prilepené doštičky s fibrínom. V žile krv stojí, fibrínová sieť zachytí všetky krvinky v pomere, v akom sú v krvi, takže prevládnu erytrocyty. <a class="xref" href="#sub-8-3-2">→ 8.3.2 Ako trombus vyzerá</a></div></details></li>
+    <li><details><summary>Pri pitve nájdeš v pľúcnici zrazeninu. Podľa čoho rozhodneš, či je to embolus, alebo posmrtná zrazenina, a prečo na tom záleží?</summary><div class="ans">Embolus je suchý, krehký, vrstvený, stočený a kalibrom zodpovedá žile, v ktorej vznikol; posmrtná zrazenina je vlhká, pružná, lesklá a dá sa vytiahnuť ako odliatok pľúcnice. Embolus je príčina smrti, posmrtná zrazenina nie je nález. <a class="xref" href="#sub-8-3-2">→ 8.3.2 Ako trombus vyzerá</a></div></details></li>
+    <li><details><summary>Prečo masívna embólia do pľúcnice zabije, ale infarkt pľúc pri nej nenájdeš?</summary><div class="ans">Náhle vyradenie veľkej časti riečiska zvýši odpor, pravá komora zlyhá a ľavá nemá čo prečerpať – smrť nastane v minútach. Nekróza potrebuje hodiny, aby sa stala viditeľnou, a pľúca navyše živia bronchiálne tepny. <a class="xref" href="#sub-8-4-2">→ 8.4.2 Pľúcna trombembólia – prototyp</a></div></details></li>
+    <li><details><summary>Pacient s fibriláciou predsiení má náhlu bolesť brucha; druhý, tri dni po zlomenine stehnovej kosti, dýchavicu, zmätenosť a petechie. Čo embolizovalo a kam?</summary><div class="ans">U prvého trombus z ľavej predsiene tepnovou cestou do mezenterickej tepny → hemoragický infarkt čreva. U druhého tuk z kostnej drene žilovou cestou do pľúc a drobné kvapôčky ďalej do mozgu a kože; odstup zodpovedá chemickému poškodeniu endotelu mastnými kyselinami. <a class="xref" href="#sub-8-4-3">→ 8.4.3 Ostatné emboly: čím sa líšia</a></div></details></li>
+    <li><details><summary>Prečo je infarkt obličky biely a infarkt pľúc červený?</summary><div class="ans">Oblička je hustý orgán s koncovými tepnami – do ložiska sa krv nemá odkiaľ dostať. Pľúca majú druhý prívod z bronchiálnych tepien a riedku stavbu, takže krv ďalej priteká do odumretých kapilár, ktoré ju neudržia. <a class="xref" href="#sub-8-6-2">→ 8.6.2 Infarkt: biely a červený</a></div></details></li>
+    <li><details><summary>Pacient zomrel hodinu po začiatku bolesti na hrudníku. Čo nájdeš v myokarde a čo potvrdí diagnózu?</summary><div class="ans">V myokarde nič alebo takmer nič – bielkoviny mŕtvych buniek nestihli zdenaturovať a neutrofily ešte neprišli (koagulačná nekróza je viditeľná až po hodinách). Diagnózu nesie čerstvý trombus na prasknutom pláte vencovitej tepny. <a class="xref" href="#sub-8-6-3">→ 8.6.3 Infarkt v čase</a></div></details></li>
+    <li><details><summary>Čím sa líši opuch nohy pri hlbokej žilovej trombóze od opuchu pri flegmóne – a čo je v tkanive?</summary><div class="ans">Pri trombóze stúpne hydrostatický tlak pred prekážkou a cez neporušenú stenu sa pretlačí transsudát chudobný na bielkoviny. Pri flegmóne mediátory zápalu zvýšia priepustnosť steny a uniká exsudát s bielkovinami a neutrofilmi. <a class="xref" href="03_zapal_vseobecne.html#sec-3-3">→ 3.3 Cievna fáza – exsudácia</a></div></details></li>
+    <li><details><summary>Prečo sa črevo zaškrtené v prietrži stane nekrotickým, hoci tepna spočiatku ostáva priechodná?</summary><div class="ans">Tenkostenné žily sa stlačia skôr než tepna; krv priteká, neodteká, tlak v kapilárach a opuch rastú a napokon stlačia aj tepnu ⟳. Bod zvratu je chvíľa, keď tlak v tkanive prevýši tlak v tepne – potom vzniká hemoragická infarzácia. <a class="xref" href="#sec-8-7">→ 8.7 Hyperémia – priveľa krvi v riečisku</a></div></details></li>
+    <li><details><summary>Chlapec má po páde opuchnuté koleno plné krvi, bez petechií; dievča má petechie na predkoleniach a krváca z nosa. Ktorá zložka hemostázy chýba komu a ktorý test to ukáže?</summary><div class="ans">Chlapcovi koagulačný faktor (hemofília): zátka vznikne, ale bez fibrínu sa rozpadne, preto krváca hlboko a s odstupom – predĺžený aPTT. Dievčaťu doštičky (napr. imunitná trombocytopénia): chýba prvotná zátka v drobných cievach – nízky počet doštičiek, PT a aPTT v norme. <a class="xref" href="#sub-8-9-1">→ 8.9.1 Tri príčiny a ich obraz</a></div></details></li>
+    <li><details><summary>Prečo pacientka s DIC po odlúčení placenty zároveň trombotizuje aj krváca?</summary><div class="ans">Tkanivový faktor z placenty spustí tvorbu trombínu v celom obehu; mikrotromby upchávajú kapiláry a pritom spotrebujú doštičky, fibrinogén a faktory, takže krv sa na mieste poranenia už nezrazí. Ischémia uvoľňuje ďalší tkanivový faktor ⟳. <a class="xref" href="#sub-8-9-5">→ 8.9.5 DIC – trombóza a krvácanie naraz</a></div></details></li>
+  </ol>
+</div>
+
+<!-- ══ 8.12 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-8-12"><span class="n">8.12</span><span>Zdroje</span></h2>
+<div class="sec-body src">
+  <div class="micro" style="margin-top:8px">Učebnice (kontrola faktov)</div>
+
+  <ul>
+    <li>Zámečník J. a kol.: <i>Patologie</i>, 2. vyd., Praha: LD Prager Publishing, 2024 (kap. 2 Hemodynamické příčiny lidských chorob; kap. 24 Krvácivé choroby; kap. 3 – hematogénne pigmenty). ISBN 978-80-11-04919-5.</li>
+  </ul>
+
+  <div class="micro" style="margin-top:8px">Klasifikácie, konsenzy a prehľady</div>
+
+  <ul>
+    <li>Gando S., Levi M., Toh C. H.: Disseminated intravascular coagulation. <i>J Intensive Care</i> 2025;13:32. <a href="https://doi.org/10.1186/s40560-025-00794-y" target="_blank" rel="noopener noreferrer">doi:10.1186/s40560-025-00794-y</a></li>
+    <li>Papageorgiou C., Jourdi G., Adjambri E. et al.: Disseminated Intravascular Coagulation: An Update on Pathogenesis, Diagnosis, and Therapeutic Strategies. <i>Clin Appl Thromb Hemost</i> 2018;24(9 Suppl):8S–28S. <a href="https://doi.org/10.1177/1076029618806424" target="_blank" rel="noopener noreferrer">doi:10.1177/1076029618806424</a></li>
+    <li>Bala M., Catena F., Kashuk J. et al.: Acute mesenteric ischemia: updated guidelines of the World Society of Emergency Surgery. <i>World J Emerg Surg</i> 2022;17:54. <a href="https://doi.org/10.1186/s13017-022-00443-x" target="_blank" rel="noopener noreferrer">doi:10.1186/s13017-022-00443-x</a></li>
+    <li>Michaud K., Basso C., d'Amati G. et al.: Diagnosis of myocardial infarction at autopsy: AECVP reappraisal in the light of the current clinical classification. <i>Virchows Arch</i> 2020;476:179–194. <a href="https://doi.org/10.1007/s00428-019-02662-1" target="_blank" rel="noopener noreferrer">doi:10.1007/s00428-019-02662-1</a></li>
+    <li>Cuker A., Arepally G. M., Chong B. H. et al.: American Society of Hematology 2018 guidelines for management of venous thromboembolism: heparin-induced thrombocytopenia. <i>Blood Adv</i> 2018;2(22):3360–3392. <a href="https://doi.org/10.1182/bloodadvances.2018024489" target="_blank" rel="noopener noreferrer">doi:10.1182/bloodadvances.2018024489</a> (abstrakt)</li>
+    <li>Capuano I., Riccio E., Buonanno P., Tufano A., Pisani A.: Heparin-induced thrombocytopenia: a challenging diagnosis in haemodialysis – state of art and review of the literature. <i>Clin Kidney J</i> 2026;19:sfag062. <a href="https://doi.org/10.1093/ckj/sfag062" target="_blank" rel="noopener noreferrer">doi:10.1093/ckj/sfag062</a></li>
+    <li>Hoffman M., Monroe D. M.: A cell-based model of hemostasis. <i>Thromb Haemost</i> 2001;85(6):958–965. <a href="https://doi.org/10.1055/s-0037-1615947" target="_blank" rel="noopener noreferrer">doi:10.1055/s-0037-1615947</a> (abstrakt)</li>
+    <li>Versteeg H. H., Heemskerk J. W. M., Levi M., Reitsma P. H.: New fundamentals in hemostasis. <i>Physiol Rev</i> 2013;93(1):327–358. <a href="https://doi.org/10.1152/physrev.00016.2011" target="_blank" rel="noopener noreferrer">doi:10.1152/physrev.00016.2011</a> (abstrakt)</li>
+    <li>Bagot C. N., Arya R.: Virchow and his triad: a question of attribution. <i>Br J Haematol</i> 2008;143(2):180–190. <a href="https://doi.org/10.1111/j.1365-2141.2008.07323.x" target="_blank" rel="noopener noreferrer">doi:10.1111/j.1365-2141.2008.07323.x</a> (abstrakt)</li>
+    <li>Kujovich J. L.: Factor V Leiden thrombophilia. <i>Genet Med</i> 2011;13(1):1–16. <a href="https://doi.org/10.1097/GIM.0b013e3181faa0f2" target="_blank" rel="noopener noreferrer">doi:10.1097/GIM.0b013e3181faa0f2</a> (abstrakt)</li>
+    <li>Di Nisio M., Camporese G., Di Micco P. et al.: Treatment of Superficial Vein Thrombosis: Recent Advances, Unmet Needs and Future Directions. <i>Healthcare (Basel)</i> 2024;12(15):1517. <a href="https://doi.org/10.3390/healthcare12151517" target="_blank" rel="noopener noreferrer">doi:10.3390/healthcare12151517</a></li>
+    <li>Fineschi V., Turillazzi E., Neri M., Pomara C., Riezzo I.: Histological age determination of venous thrombosis: a neglected forensic task in fatal pulmonary thrombo-embolism. <i>Forensic Sci Int</i> 2009;186(1–3):22–28. <a href="https://doi.org/10.1016/j.forsciint.2009.01.006" target="_blank" rel="noopener noreferrer">doi:10.1016/j.forsciint.2009.01.006</a> (abstrakt)</li>
+    <li>Peracaula M., Sebastian L., Francisco I. et al.: Decoding Pulmonary Embolism: Pathophysiology, Diagnosis, and Treatment. <i>Biomedicines</i> 2024;12(9):1936. <a href="https://doi.org/10.3390/biomedicines12091936" target="_blank" rel="noopener noreferrer">doi:10.3390/biomedicines12091936</a></li>
+    <li>Gagno G., Padoan L., D'Errico S. et al.: Pulmonary Embolism Presenting with Pulmonary Infarction: Update and Practical Review of Literature Data. <i>J Clin Med</i> 2022;11(16):4916. <a href="https://doi.org/10.3390/jcm11164916" target="_blank" rel="noopener noreferrer">doi:10.3390/jcm11164916</a></li>
+    <li>Russo G. B., Purisch S. E., Countouris M. E. et al.: Stroke Prevention in Pregnancy and Postpartum in Patients With Patent Foramen Ovale. <i>JACC Adv</i> 2025;4:102098. <a href="https://doi.org/10.1016/j.jacadv.2025.102098" target="_blank" rel="noopener noreferrer">doi:10.1016/j.jacadv.2025.102098</a></li>
+    <li>Miyake T., Okada H., Okada H., Kanda N.: Advances and uncertainties in fat embolism syndrome: a review. <i>Trauma Surg Acute Care Open</i> 2026;11:e001913. <a href="https://doi.org/10.1136/tsaco-2025-001913" target="_blank" rel="noopener noreferrer">doi:10.1136/tsaco-2025-001913</a></li>
+    <li>Yesilaras M., Atilla O. D., Aksay E., Kilic T. Y.: Retrograde cerebral air embolism. <i>Am J Emerg Med</i> 2014;32(12):1562.e1–2. <a href="https://doi.org/10.1016/j.ajem.2014.05.043" target="_blank" rel="noopener noreferrer">doi:10.1016/j.ajem.2014.05.043</a> (abstrakt)</li>
+    <li>Jin Z., Zhu Q., Zheng J. et al.: Circulating Bubbles in Decompression Sickness: Pathophysiology and Experimental Models. <i>Biomolecules</i> 2026;16(9):1339. <a href="https://doi.org/10.3390/biom16091339" target="_blank" rel="noopener noreferrer">doi:10.3390/biom16091339</a></li>
+    <li>Timraz J. H., Ahmed R. A., Metwali N. Y. et al.: Risk factors and predisposing conditions for amniotic fluid embolism: a comprehensive review. <i>J Med Life</i> 2025;18(4):277–284. <a href="https://doi.org/10.25122/jml-2024-0406" target="_blank" rel="noopener noreferrer">doi:10.25122/jml-2024-0406</a></li>
+    <li>Ozkok A.: Cholesterol-embolization syndrome: current perspectives. <i>Vasc Health Risk Manag</i> 2019;15:209–220. <a href="https://doi.org/10.2147/VHRM.S175150" target="_blank" rel="noopener noreferrer">doi:10.2147/VHRM.S175150</a></li>
+    <li>Bloehdorn J., Cragg M. S., Bommer M.: Current standards and novel concepts in thrombotic thrombocytopenic purpura. <i>Front Med (Lausanne)</i> 2026;13:1806030. <a href="https://doi.org/10.3389/fmed.2026.1806030" target="_blank" rel="noopener noreferrer">doi:10.3389/fmed.2026.1806030</a></li>
+    <li>Iorio A., Stonebraker J. S., Chambost H. et al.: Establishing the Prevalence and Prevalence at Birth of Hemophilia in Males: A Meta-analytic Approach Using National Registries. <i>Ann Intern Med</i> 2019;171(8):540–546. <a href="https://doi.org/10.7326/M19-1208" target="_blank" rel="noopener noreferrer">doi:10.7326/M19-1208</a> (abstrakt)</li>
+    <li>Abou-Ismail M. Y., Kouides P. A., James P. D., Connell N. T.: von Willebrand disease: an illustrated review. <i>Res Pract Thromb Haemost</i> 2026;10:106838. <a href="https://doi.org/10.1016/j.rpth.2026.106838" target="_blank" rel="noopener noreferrer">doi:10.1016/j.rpth.2026.106838</a></li>
+    <li>Xiu C., Zhang J., Ju B., Ma T., Lv J.: Immune mechanism of IgA vasculitis with nephritis: a narrative review. <i>Front Immunol</i> 2026;17:1754289. <a href="https://doi.org/10.3389/fimmu.2026.1754289" target="_blank" rel="noopener noreferrer">doi:10.3389/fimmu.2026.1754289</a></li>
+    <li>Ficany A., Del Alamo M., Bernabeu C., Shovlin C. L., Rossi E.: Epistaxis Prevention, Treatment, and Future Perspectives for Hereditary Hemorrhagic Telangiectasia. <i>J Clin Med</i> 2025;14(21):7724. <a href="https://doi.org/10.3390/jcm14217724" target="_blank" rel="noopener noreferrer">doi:10.3390/jcm14217724</a></li>
+    <li>Di Nora A., Finocchiaro M. C., Pizzo F. et al.: Scurvy, a not obsolete disorder: Clinical report in eight young children and literature review. <i>Open Med (Wars)</i> 2025;20:20241086. <a href="https://doi.org/10.1515/med-2024-1086" target="_blank" rel="noopener noreferrer">doi:10.1515/med-2024-1086</a></li>
+    <li>StatPearls (NCBI Bookshelf; kapitoly čítané cez Europe PMC, stav 10. 10. 2026): <a href="https://www.ncbi.nlm.nih.gov/books/NBK545263/" target="_blank" rel="noopener noreferrer">Physiology, Hemostasis</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK557800/" target="_blank" rel="noopener noreferrer">Histology, Platelets</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK544269/" target="_blank" rel="noopener noreferrer">Prothrombin Time</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK507772/" target="_blank" rel="noopener noreferrer">Partial Thromboplastin Time</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK538247/" target="_blank" rel="noopener noreferrer">Heparin</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK538430/" target="_blank" rel="noopener noreferrer">Thrombosis</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK534802/" target="_blank" rel="noopener noreferrer">Factor V Leiden Mutation</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK430980/" target="_blank" rel="noopener noreferrer">Antiphospholipid Syndrome</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK470444/" target="_blank" rel="noopener noreferrer">Nephrotic Syndrome</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK482330/" target="_blank" rel="noopener noreferrer">Heparin-Induced Thrombocytopenia</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK507708/" target="_blank" rel="noopener noreferrer">Deep Venous Thrombosis</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK560551/" target="_blank" rel="noopener noreferrer">Acute Pulmonary Embolism</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK470196/" target="_blank" rel="noopener noreferrer">Paradoxical Embolism</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK499885/" target="_blank" rel="noopener noreferrer">Fat Embolism and Fat Embolism Syndrome</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK559107/" target="_blank" rel="noopener noreferrer">Amniotic Fluid Embolism</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK549827/" target="_blank" rel="noopener noreferrer">Septic Embolism</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK537264/" target="_blank" rel="noopener noreferrer">Decompression Sickness</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK470181/" target="_blank" rel="noopener noreferrer">Coronary Artery Vasospasm and Prinzmetal Angina</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK499833/" target="_blank" rel="noopener noreferrer">Raynaud Disease</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK554599/" target="_blank" rel="noopener noreferrer">Subclavian Steal Syndrome</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK559213/" target="_blank" rel="noopener noreferrer">Arteriovenous Fistula</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK518963/" target="_blank" rel="noopener noreferrer">Hyperviscosity Syndrome</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK554527/" target="_blank" rel="noopener noreferrer">Bowel Ischemia</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK430902/" target="_blank" rel="noopener noreferrer">Splenic Infarcts</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK448199/" target="_blank" rel="noopener noreferrer">Testicular Torsion</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK560675/" target="_blank" rel="noopener noreferrer">Ovarian Torsion</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK482331/" target="_blank" rel="noopener noreferrer">Petechiae</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK470382/" target="_blank" rel="noopener noreferrer">Hemorrhagic Shock</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK470300/" target="_blank" rel="noopener noreferrer">Upper Gastrointestinal Bleeding</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK532913/" target="_blank" rel="noopener noreferrer">Abnormal Uterine Bleeding</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK542208/" target="_blank" rel="noopener noreferrer">Thrombocytopenia</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK562282/" target="_blank" rel="noopener noreferrer">Immune Thrombocytopenia</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK536983/" target="_blank" rel="noopener noreferrer">Vitamin K Deficiency in Neonates and Adults</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK470265/" target="_blank" rel="noopener noreferrer">Hemophilia A</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK525999/" target="_blank" rel="noopener noreferrer">Hemarthrosis</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK459222/" target="_blank" rel="noopener noreferrer">Von Willebrand Disease</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK493187/" target="_blank" rel="noopener noreferrer">Vitamin C Deficiency</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK448130/" target="_blank" rel="noopener noreferrer">Actinic Purpura</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK537252/" target="_blank" rel="noopener noreferrer">IgA Vasculitis (Henoch-Schönlein Purpura)</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK470285/" target="_blank" rel="noopener noreferrer">Amyloidosis</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK578186/" target="_blank" rel="noopener noreferrer">Hereditary Hemorrhagic Telangiectasia (HHT)</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK441834/" target="_blank" rel="noopener noreferrer">Disseminated Intravascular Coagulation</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK551510/" target="_blank" rel="noopener noreferrer">Waterhouse-Friderichsen Syndrome</a></li>
+  </ul>
+
+  <div class="micro" style="margin-top:8px">Obrázky</div>
+
+  <p>Autor, licencia a odkaz na zdroj sú pri každom obrázku; súhrn je v registri <code>ZDROJE-OBRAZKOV.md</code>. Obr. 8.1, 8.4 a 8.17 sú vlastné schémy (CC BY-SA 4.0).</p>
+</div>
+
+<p class="next"><b>Pokračuje v:</b>
+  <a class="xref" href="09_celkove_poruchy_obehu.html">→ 9 Celkové poruchy krvného obehu</a>
+</p>
+
+<div class="running-foot">
+  <span>PATOLA — poznámky z patológie · Kapitola 8</span>
+  <span class="tnum">§ 8.1–8.12</span>
+</div>
+
+</main>
+  </div>
+  <div class="site-spacer" aria-hidden="true"></div>
+</div>
+
+<script src="../assets/js/site.js" defer></script>
+<script src="../assets/js/peek.js" defer></script>
+<script>
+/* PATOLA: tlač kapitoly otvorenej v ráme hlavnej stránky (index.html).
+   Rodič pošle "pf:print"; Ctrl/Cmd+P vo vnútri rámu tlačí rám, nie obsah knihy. */
+(function(){
+  var imgs = function(){ return Array.prototype.slice.call(document.querySelectorAll('img[loading="lazy"]')); };
+  // lenivé obrázky sa po načítaní stránky dotiahnu na pozadí, aby v tlači neboli prázdne
+  window.addEventListener("load", function(){ setTimeout(function(){ imgs().forEach(function(i){ i.loading = "eager"; }); }, 800); });
+  // v tlači sú odpovede na otázky vidieť (zatvorený <details> by sa vytlačil bez nich)
+  var shut = [];
+  // predvolený názov súboru pri tlači = kapitola („Kapitola 3 – Zápal …“); title sa po tlači vráti
+  // (po maximalizovanom náhľade je v document.title už iná kapitola, preto sa číta až teraz)
+  var keep = null;
+  function printTitle(){ return document.title.replace(/^(\d+) · /, "Kapitola $1 – "); }
+  function titleOn(){ if (keep === null) { keep = document.title; document.title = printTitle(); } }
+  function titleOff(){ if (keep !== null) { document.title = keep; keep = null; } }
+  window.addEventListener("beforeprint", function(){ titleOn(); shut = Array.prototype.filter.call(document.querySelectorAll("ol.quiz details"), function(d){ return !d.open; }); shut.forEach(function(d){ d.open = true; }); });
+  window.addEventListener("afterprint", function(){ titleOff(); shut.forEach(function(d){ d.open = false; }); shut = []; });
+  if (window.top === window.self) return;
+  // v ráme berie prehliadač názov súboru z hlavnej stránky → pošli jej názov kapitoly
+  window.addEventListener("afterprint", function(){ try { window.parent.postMessage({ pf: "title", title: null }, "*"); } catch (e) {} });
+  function printMe(){
+    var all = Array.prototype.slice.call(document.images);
+    all.forEach(function(i){ i.loading = "eager"; });
+    try { window.parent.postMessage({ pf: "title", title: printTitle() }, "*"); } catch (e) {}
+    var t0 = Date.now();
+    (function wait(){
+      if (Date.now() - t0 > 150 && (all.every(function(i){ return i.complete; }) || Date.now() - t0 > 4000)) { try { window.focus(); window.print(); } catch (e) {} }
+      else setTimeout(wait, 100);
+    })();
+  }
+  window.addEventListener("message", function(e){ if (e.data === "pf:print") printMe(); });
+  document.addEventListener("keydown", function(e){
+    if ((e.ctrlKey || e.metaKey) && !e.altKey && (e.key === "p" || e.key === "P")) { e.preventDefault(); printMe(); }
+  });
+})();
+</script>
+<script src="../assets/glossary/01-adaptacia-a-bunkova-smrt.js" defer></script>
+<script src="../assets/glossary/02-nekroza-a-gangrena.js" defer></script>
+<script src="../assets/glossary/03-dystrofie-a-amyloid.js" defer></script>
+<script src="../assets/glossary/04-zapal-a-exsudat.js" defer></script>
+<script src="../assets/glossary/05-mechanizmy-a-skratky.js" defer></script>
+<script src="../assets/glossary/06-obeh-a-hemostaza.js" defer></script>
+<script src="../assets/glossary/07-celkovy-obeh.js" defer></script>
+<script src="../assets/js/glossary.js" defer></script>
+</body>
+</html>

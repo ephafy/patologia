@@ -1,0 +1,1514 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>9 · Celkové poruchy krvného obehu</title>
+<script>/* PATOLA: stránka v náhľade (assets/js/peek.js) — skryť hlavičku skôr, než sa vykreslí */if(/[?&]embed=/.test(location.search))document.documentElement.classList.add("pk-embed")</script>
+<script>/* PATOLA: pri F5/Späť ukázať stránku až na obnovenej pozícii (peek.js odkryje; poistka 2 s) */(function(){try{var h=document.documentElement,n=performance.getEntriesByType("navigation")[0],t=n&&n.type,s=location.search;if(/[?&]y=[1-9]/.test(s)||(!/[?&]embed=/.test(s)&&(t==="reload"||t==="back_forward")&&parseInt(sessionStorage.getItem("pk-y:"+location.pathname),10)>0)){h.classList.add("pk-restoring");setTimeout(function(){h.classList.remove("pk-restoring")},2000)}}catch(e){}})()</script>
+<link rel="stylesheet" href="../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../assets/styles/site.css">
+<link rel="stylesheet" href="../assets/styles/glossary.css">
+<style>
+/* ══ Broadsheet — design-system tokens ══════════════════════════════════ */
+:root{
+  --color-bg:#f3f2f2;
+  --color-surface:#eae9e9;
+  --color-text:#201e1d;
+  --color-accent:#0088b0;
+  --color-accent-2:#d6006c;
+  --color-divider:color-mix(in srgb,#201e1d 16%,transparent);
+
+  --color-neutral-100:#f8f4f4; --color-neutral-200:#eae7e7; --color-neutral-300:#d7d3d3;
+  --color-neutral-400:#bab6b6; --color-neutral-500:#9b9797; --color-neutral-600:#7d7979;
+  --color-neutral-700:#605d5d; --color-neutral-800:#444141; --color-neutral-900:#2d2b2b;
+
+  --color-accent-100:#e9f8ff; --color-accent-200:#cbeeff; --color-accent-300:#99e0ff;
+  --color-accent-400:#62c5ee; --color-accent-500:#38a6cf; --color-accent-600:#1186ac;
+  --color-accent-700:#006786; --color-accent-800:#004961; --color-accent-900:#0a303e;
+
+  --color-accent-2-100:#fff1f4; --color-accent-2-200:#ffdee6; --color-accent-2-300:#ffc0d0;
+  --color-accent-2-400:#ff90b1; --color-accent-2-500:#ff458e; --color-accent-2-600:#d82071;
+  --color-accent-2-700:#aa0b56; --color-accent-2-800:#790e3d; --color-accent-2-900:#4b1528;
+
+  --color-process-yellow:#edbb00;
+
+  --font-heading:"Source Serif 4",system-ui,serif;
+  --font-heading-weight:600;
+  --font-body:"Source Serif 4",system-ui,serif;
+  --font-mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+
+  --space-1:5px; --space-2:10px; --space-3:15px; --space-4:20px; --space-6:30px; --space-8:40px;
+  --radius-sm:1px; --radius-md:2px; --radius-lg:4px;
+
+  --shadow-sm:0 1px 2px color-mix(in srgb,#2d2b2b 14%,transparent);
+  --shadow-md:0 3px 10px color-mix(in srgb,#2d2b2b 16%,transparent);
+  --shadow-lg:0 12px 32px color-mix(in srgb,#2d2b2b 22%,transparent);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:var(--color-text);font-family:var(--font-body);
+  font-size:calc(15px*var(--z,1));line-height:1.55;font-weight:400;padding:0}
+h1,h2,h3,h4,h5,h6{font-family:var(--font-heading);font-weight:var(--font-heading-weight);
+  line-height:1.12;letter-spacing:-0.015em;margin:0 0 var(--space-2)}
+p{margin:0 0 var(--space-3)}
+a{color:var(--color-accent);text-underline-offset:3px}
+img{display:block;max-width:100%}
+figure{margin:0}
+figcaption{font-size:calc(11px*var(--z,1));margin-top:var(--space-1);
+  color:color-mix(in srgb,var(--color-text) 55%,transparent)}
+.text-muted{color:color-mix(in srgb,var(--color-text) 55%,transparent)}
+:focus{outline:none}
+:focus-visible{outline:2px solid var(--color-accent);outline-offset:2px}
+::selection{background:color-mix(in srgb,var(--color-accent) 30%,transparent)}
+.hr{height:1px;border:0;margin:var(--space-4) 0;background:var(--color-divider)}
+
+/* — tables — */
+.table{width:100%;border-collapse:collapse;font-size:calc(14px*var(--z,1))}
+.table th{text-align:left;font-size:calc(11px*var(--z,1));letter-spacing:0.08em;text-transform:uppercase;
+  color:color-mix(in srgb,var(--color-text) 60%,transparent);
+  padding:var(--space-2);border-bottom:1px solid var(--color-divider)}
+.table td{padding:var(--space-2);
+  border-bottom:1px solid color-mix(in srgb,var(--color-text) 8%,transparent)}
+.table tbody tr:hover{background:color-mix(in srgb,var(--color-text) 4%,transparent)}
+
+/* — tags — */
+.tag{display:inline-flex;align-items:center;font-size:calc(11px*var(--z,1));letter-spacing:0.02em;
+  padding:3px 10px;border-radius:calc(var(--radius-md)*0.75)}
+.tag-accent{background:var(--color-accent-100);color:var(--color-accent-800)}
+.tag-accent-2{background:var(--color-accent-2-100);color:var(--color-accent-2-800)}
+.tag-neutral{background:var(--color-neutral-100);color:var(--color-neutral-800)}
+
+/* — the plate numeral: three process inks, no black plate — */
+.cmyk-num{--cmyk-num-ground:var(--color-bg);position:relative;width:fit-content;
+  line-height:0.9;font-feature-settings:"pnum" 1;
+  padding:0.12em;margin:-0.12em}
+.cmyk-num .paper{color:var(--color-bg);
+  text-shadow:0.036em 0.025em 0 var(--color-bg),-0.031em -0.023em 0 var(--color-bg)}
+.cmyk-num .plate{position:absolute;inset:0.12em;mix-blend-mode:multiply}
+.cmyk-num .plate-c{color:var(--color-accent)}
+.cmyk-num .plate-m{color:var(--color-accent-2);translate:0.036em 0.025em}
+.cmyk-num .plate-y{color:var(--color-process-yellow);translate:-0.031em -0.023em}
+
+/* ══ doc-page — the printed sheet ═══════════════════════════════════════ */
+.page{--color-bg:#fff;margin:0 auto;background:#fff;
+  padding:50px;box-shadow:none;border:0;
+  font-size:calc(13.5px*var(--z,1));line-height:1.42;text-wrap:pretty}
+.page p{margin:0 0 6px;orphans:3;widows:3}
+.page ul,.page ol{margin:0 0 6px;padding-left:15px}
+.page li{margin:0 0 2px;orphans:3;widows:3}
+.page table.table{font-size:calc(12px*var(--z,1));line-height:1.3}
+.page table.table th,.page table.table td{padding:3px 8px 3px 0;vertical-align:top}
+.keep{break-inside:avoid}
+.page sup{font-size:calc(9px*var(--z,1));line-height:0}
+
+.running-head{display:flex;justify-content:space-between;align-items:baseline;
+  font-size:calc(10px*var(--z,1));letter-spacing:0.1em;text-transform:uppercase;color:var(--color-neutral-600);
+  padding-bottom:4px;border-bottom:1px solid var(--color-neutral-300);margin-bottom:14px}
+.running-foot{display:flex;justify-content:space-between;align-items:baseline;
+  font-size:calc(10px*var(--z,1));color:var(--color-neutral-600);
+  padding-top:4px;border-top:1px solid var(--color-neutral-300);margin-top:22px}
+
+/* — chapter opener — */
+.opener{display:flex;align-items:flex-start;gap:18px;margin-bottom:10px}
+.opener .num{font-family:var(--font-heading);font-size:calc(64px*var(--z,1));font-weight:600;
+  letter-spacing:-0.03em;--cmyk-num-ground:#fff}
+.eyebrow{font-size:calc(10px*var(--z,1));letter-spacing:0.14em;text-transform:uppercase;
+  color:var(--color-accent-2);margin-bottom:4px}
+.opener h1{font-size:calc(29px*var(--z,1));line-height:1.05;font-weight:600;letter-spacing:-0.015em}
+.standfirst{margin:6px 0 0;font-size:calc(13px*var(--z,1));font-style:italic;
+  color:var(--color-neutral-700);max-width:46em}
+
+/* — contents block — */
+.contents{column-count:3;column-gap:22px;font-size:calc(11.5px*var(--z,1));line-height:1.35;padding:8px 0;
+  border-top:2px solid var(--color-text);border-bottom:1px solid var(--color-neutral-300);
+  margin-bottom:16px}
+.contents .label{column-span:all;font-size:calc(10px*var(--z,1));letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--color-neutral-600);margin-bottom:5px}
+.contents .row{display:flex;gap:6px;break-inside:avoid}
+.contents .row span:first-child{color:var(--color-accent);font-variant-numeric:tabular-nums}
+
+/* — numbered sections — */
+.sec-h{display:flex;gap:10px;font-size:calc(16px*var(--z,1));font-weight:600;margin:0 0 5px}
+.sec-h .n{color:var(--color-accent);font-variant-numeric:tabular-nums}
+.sec-body{padding-left:calc(2.6em + 10px);margin-bottom:14px}
+.sub-h{font-size:calc(13.5px*var(--z,1));font-weight:600;margin:12px 0 4px}
+.sub-h .n{color:var(--color-accent-700);font-variant-numeric:tabular-nums;margin-right:6px}
+.micro{font-size:calc(11px*var(--z,1));letter-spacing:0.1em;text-transform:uppercase;
+  color:var(--color-neutral-600);margin-bottom:4px}
+
+/* — callouts — */
+.flag{margin:10px 0;padding:8px 10px;background:var(--color-accent-2-100);
+  border-left:3px solid var(--color-accent-2)}
+.flag .label{font-size:calc(10px*var(--z,1));letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--color-accent-2-800);margin-bottom:3px}
+.flag .body{font-size:calc(12px*var(--z,1));line-height:1.38;color:var(--color-accent-2-900)}
+.flag .body p{margin:0 0 5px}.flag .body p:last-child{margin:0}
+
+.note{margin:10px 0;padding:8px 10px;background:var(--color-accent-100);
+  border-left:3px solid var(--color-accent)}
+.note .label{font-size:calc(10px*var(--z,1));letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--color-accent-800);margin-bottom:3px}
+.note .body{font-size:calc(12px*var(--z,1));line-height:1.38;color:var(--color-accent-900)}
+.note .body p{margin:0 0 5px}.note .body p:last-child{margin:0}
+
+.plain{margin:10px 0;padding:8px 10px;background:var(--color-neutral-100);
+  border-left:3px solid var(--color-neutral-400)}
+.plain .label{font-size:calc(10px*var(--z,1));letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--color-neutral-700);margin-bottom:3px}
+.plain .body{font-size:calc(12px*var(--z,1));line-height:1.38;color:var(--color-neutral-900)}
+.plain .body p{margin:0 0 5px}.plain .body p:last-child{margin:0}
+
+/* — REVÍZIA block (CLAUDE.md §1.3, značka [R]) ————————————————————————
+   Zámerne NIE .note/.flag/.plain: site.js tie tri triedy vyplaví do
+   bočného stĺpca ako poznámky na okraji, a revízia patrí do hlavného
+   toku textu — je to obsah, nie komentár. Preto vlastná trieda.        */
+.rev{margin:11px 0;padding:9px 12px;break-inside:avoid;
+  background:linear-gradient(180deg,#fffaf0,#fff);
+  border:1px solid color-mix(in srgb,var(--color-process-yellow) 55%,transparent);
+  border-left:4px solid var(--color-process-yellow)}
+.rev .label{display:inline-flex;align-items:center;gap:6px;
+  font-size:calc(9.5px*var(--z,1));letter-spacing:0.12em;text-transform:uppercase;
+  color:#7a5c00;margin-bottom:4px;font-weight:600}
+.rev .label .r{display:inline-flex;align-items:center;justify-content:center;
+  width:15px;height:15px;border-radius:50%;background:var(--color-process-yellow);
+  color:#3d2e00;font-size:calc(9px*var(--z,1));font-weight:700;letter-spacing:0}
+.rev .body{font-size:calc(12px*var(--z,1));line-height:1.4}
+.rev .body p{margin:0 0 5px}.rev .body p:last-child{margin:0}
+.rev table.table{margin:6px 0 5px}
+
+/* — mechanism diagram in the press's own monospace — */
+.diagram{font-family:var(--font-mono);font-size:calc(10px*var(--z,1));line-height:1.35;
+  background:var(--color-surface);border-left:2px solid var(--color-neutral-400);
+  padding:9px 11px;margin:9px 0;overflow-x:auto;white-space:pre;
+  color:var(--color-neutral-900);border-radius:var(--radius-sm)}
+
+/* — kaskáda v riadku a rozvetvenie (CLAUDE.md §2.5) — */
+.chain{font-size:calc(12.5px*var(--z,1));line-height:1.5;margin:8px 0;padding:7px 10px;
+  background:var(--color-accent-100);border-left:3px solid var(--color-accent-400)}
+.chain b{color:var(--color-accent-800)}
+.fork{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;
+  margin:9px 0;font-size:calc(12px*var(--z,1));line-height:1.38}
+.fork>div{padding:7px 9px;background:var(--color-neutral-100);
+  border-top:2px solid var(--color-neutral-400)}
+.fork>div b{display:block;margin-bottom:2px;color:var(--color-neutral-900)}
+
+/* — charts — */
+.chart{margin:12px 0;break-inside:avoid;max-width:700px}
+.chart svg{width:100%;height:auto;display:block;font-family:var(--font-body)}
+.chart figcaption{font-size:calc(10.5px*var(--z,1));line-height:1.35;margin-top:4px;color:var(--color-neutral-700)}
+.chart figcaption b{color:var(--color-text)}
+.chart .ax{stroke:var(--color-neutral-400);stroke-width:1}
+.chart .grid{stroke:var(--color-neutral-300);stroke-width:1;stroke-dasharray:2 3}
+.chart .ser{fill:none;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+.chart .s-c{stroke:var(--color-accent)}
+.chart .s-m{stroke:var(--color-accent-2)}
+.chart .s-k{stroke:var(--color-neutral-700)}
+.chart .f-c{fill:var(--color-accent);opacity:.13}
+.chart .f-m{fill:var(--color-accent-2);opacity:.13}
+.chart .band-c{fill:var(--color-accent-100)}
+.chart .band-m{fill:var(--color-accent-2-100)}
+.chart .tick{font-size:9.5px;fill:var(--color-neutral-600);font-variant-numeric:tabular-nums}
+.chart .lbl{font-size:10.5px;fill:var(--color-neutral-800)}
+.chart .lbl-c{font-size:10.5px;fill:var(--color-accent-700)}
+.chart .lbl-m{font-size:10.5px;fill:var(--color-accent-2-700)}
+.chart .cap{font-size:9.5px;fill:var(--color-neutral-600);letter-spacing:.08em;text-transform:uppercase}
+.chart .mark{stroke:var(--color-neutral-800);stroke-width:1;stroke-dasharray:3 3}
+.chart .bar-c{fill:var(--color-accent-500)}
+.chart .bar-m{fill:var(--color-accent-2-500)}
+
+/* — krížové odkazy (CLAUDE.md §3.1) ————————————————————————————————————
+   a.xref  = odkaz na kapitolu, ktorá už existuje. Ostáva skutočným
+             <a href>, takže funguje aj bez JS a bez shellu; keď pribudne
+             split.js, otvorí sa vedľa v druhom paneli.
+   .xref-soon = tá istá informácia pre kapitolu, ktorá ešte nie je
+             napísaná. Zámerne NIE <a>: mŕtvy odkaz je horší než žiadny.
+             Text nesie číslo aj názov, takže dáva zmysel aj v tlači.   */
+.xref{color:var(--color-accent-700);text-decoration:none;
+  border-bottom:1px solid color-mix(in srgb,var(--color-accent) 45%,transparent);
+  white-space:nowrap}
+.xref:hover{background:var(--color-accent-100);border-bottom-color:var(--color-accent)}
+.xref-soon{color:var(--color-neutral-600);
+  border-bottom:1px dotted var(--color-neutral-400);white-space:nowrap;cursor:help}
+
+.deps,.next{font-size:calc(11.5px*var(--z,1));line-height:1.5;margin:0 0 10px;padding:7px 10px;
+  background:var(--color-neutral-100);border-top:2px solid var(--color-neutral-400)}
+.deps b,.next b{font-size:calc(10px*var(--z,1));letter-spacing:.1em;text-transform:uppercase;
+  color:var(--color-neutral-700);margin-right:6px}
+.next{border-top-color:var(--color-accent);background:var(--color-accent-100);margin:16px 0 0}
+.next b{color:var(--color-accent-800)}
+
+/* — two/three column content blocks — */
+.cols-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;
+  font-size:calc(12.5px*var(--z,1));line-height:1.35}
+.cols-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;
+  font-size:calc(12.5px*var(--z,1));line-height:1.35}
+.flow-2{column-count:2;column-gap:22px;font-size:calc(12.5px*var(--z,1));line-height:1.38}
+
+.lede{font-size:calc(12.5px*var(--z,1));color:var(--color-neutral-700)}
+b,strong{font-weight:600}
+.tnum{font-variant-numeric:tabular-nums}
+
+@media screen and (min-width:981px){
+  .sec-h,.sub-h,.micro,.hr,.diagram,.chart,.table,.running-foot,
+  .cols-2,.cols-3,.flow-2,.note,.flag,.plain,.rev,.fork,.chain{clear:both}
+  .sec-body::after{content:"";display:block;clear:both}
+}
+
+@media (max-width:820px){
+  body{padding:0}
+  .page{padding:20px 16px}
+  .contents{column-count:2}
+  .cols-3,.cols-2,.flow-2{grid-template-columns:1fr;column-count:1;display:block}
+  .cols-3>div,.cols-2>div{margin-bottom:12px}
+  .sec-body{padding-left:0}
+  .opener{gap:12px}
+  .opener .num{font-size:calc(46px*var(--z,1))}
+  .table{display:block;overflow-x:auto}
+  .chart{overflow-x:auto}
+  .chart svg{max-width:none;min-width:100%}
+  .xref,.xref-soon{white-space:normal}
+}
+@media print{
+  body{background:#fff;padding:0}
+  .page{max-width:none;padding:0.7in}
+  .diagram{overflow:visible}
+  .cols-2,.cols-3{display:block}
+  .cols-2>div,.cols-3>div{margin-bottom:8px}
+  .flow-2{column-count:1}
+  .contents{column-count:1}
+  .xref{color:#000;border-bottom:0}
+  .xref-soon{color:#444;border-bottom:0}
+  .rev{background:#fff;border:1px solid #999;border-left:4px solid #999}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+/* — doplnky pre generované kapitoly (tools/build.js) — */
+.src p,.src li{font-size:calc(11.5px*var(--z,1));line-height:1.4}
+.src ul{padding-left:16px}
+.src .micro{font-size:calc(10px*var(--z,1))}
+figure.keep>.diagram{margin:9px 0 3px}
+figure.keep>figcaption{font-size:calc(10.5px*var(--z,1));line-height:1.35;color:var(--color-neutral-700);margin:0 0 9px}
+figure.keep>figcaption b{color:var(--color-text)}
+.page code{font-family:var(--font-mono);font-size:.92em}
+.chart .bx{fill:var(--color-neutral-200)}
+.chart .bx-c{fill:var(--color-accent-200)}
+.chart .bx-m{fill:var(--color-accent-2-200)}
+.chart .bx-k{fill:var(--color-neutral-100);stroke:var(--color-neutral-400)}
+
+/* ══ PATOLA: farebné boxy = vrstvy z CLAUDE.md §1.1 ═══════════════════════
+   Vlastné triedy (.box), NIE .note/.flag/.plain — tie site.js vyplavuje do
+   okraja ako poznámky, kým boxy sú jadro textu.  --c = farba pásika,
+   --cl = tmavší odtieň pre štítok (kontrast na tónovanom pozadí).        */
+.box{--c:var(--color-neutral-500);--cl:var(--color-neutral-800);
+  margin:10px 0;padding:8px 10px;break-inside:avoid;
+  background:color-mix(in srgb,var(--c) 8%,#fff);border-left:3px solid var(--c)}
+.box .label{font-size:calc(10px*var(--z,1));letter-spacing:.12em;text-transform:uppercase;font-weight:600;
+  color:var(--cl);margin-bottom:3px}
+.box .body{font-size:calc(12px*var(--z,1));line-height:1.38}
+.box .body>*:last-child{margin-bottom:0}
+.box .body p{margin:0 0 5px}
+.box .body ul,.box .body ol{margin:0 0 5px}
+.box .body table.table{margin:5px 0}
+.k-mech{--c:var(--color-accent);--cl:var(--color-accent-800)}
+.k-morf{--c:var(--color-accent-2);--cl:var(--color-accent-2-800)}
+.k-detek{--c:var(--color-neutral-500);--cl:var(--color-neutral-800)}
+.k-klin{--c:var(--color-accent-800);--cl:var(--color-accent-900)}
+.k-pozor{--c:#d9601a;--cl:#8a3b08}
+.k-zap{--c:#1f8a8a;--cl:#0f5555}
+.k-fyz{--c:#3f8a55;--cl:#24582f}
+
+/* ══ PATOLA: okraj stránky (CLAUDE.md §5.3) ═══════════════════════════════
+   Jadro (hlavná myšlienka sekcie) a Skratky nie sú vrstva výkladu → bez farebnej
+   plochy a bez ľavého pásika. Šírka pásika 0 zároveň znamená, že site.js k nim
+   nekreslí čiaru cez text (čiara má hrúbku ľavého okraja poznámky).           */
+.k-jadro{--cl:var(--color-neutral-900);background:none;border-left:0;
+  border-top:2px solid var(--color-neutral-900);padding:5px 0 1px}
+.k-jadro .body{line-height:1.42}
+/* „Môžeš počuť“ – pojem alebo údaj z osnovy, ktorý sa nepodarilo doložiť: bez farebnej plochy, prerušovaný pásik */
+.k-pocut{--c:var(--color-neutral-500);--cl:var(--color-neutral-700);background:none;border-left:2px dashed var(--color-neutral-500)}
+.box.k-pocut .body{color:var(--color-neutral-800)}
+.k-skr{background:var(--color-neutral-100);border-left:0;padding:4px 8px;margin:3px 0 9px}
+.box.k-skr .body{font-size:calc(10.5px*var(--z,1));line-height:1.4;color:var(--color-neutral-700)}
+.k-skr .sk b{font-weight:600;color:var(--color-text)}
+.k-skr .sk+.sk::before{content:"· "}
+@media screen and (min-width:981px){
+  /* na okraji jedna skratka na riadok; v texte (mobil, tlač) idú za sebou */
+  .k-skr.side-note .sk{display:block;margin:0 0 2px}
+  .k-skr.side-note .sk+.sk::before{content:none}
+}
+/* mobil: skratky rastú s ostatným písmom (blok na konci súboru ich pre vyššiu špecifickosť nezachytí) */
+@media screen and (max-width:820px){.box.k-skr .body{font-size:calc(11.5px*var(--z,1))}}
+
+/* ══ obrázky (rovnaké pravidlá ako v ručne písaných kapitolách patofyzie) ═
+   --fw = najväčšia rozumná šírka zobrazenia; malý obrázok sa nerozmaže.   */
+.fig{margin:11px auto;break-inside:avoid;max-width:min(100%,var(--fw,100%))}
+.fig img{display:block;width:100%;height:auto;background:transparent;border:0;cursor:zoom-in}
+.fig figcaption{font-size:calc(10.5px*var(--z,1));line-height:1.35;margin-top:4px;color:var(--color-neutral-700)}
+.fig figcaption b{color:var(--color-text)}
+.fig figcaption .src-link{display:inline-flex;align-items:center;gap:3px;
+  color:var(--color-neutral-500);text-decoration:none}
+.fig figcaption .src-link:hover{color:var(--color-accent);text-decoration:underline}
+.fig figcaption .src-link svg{width:10px;height:10px;flex:none;
+  fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.fig-row{display:flex;flex-wrap:wrap;align-items:flex-start;gap:14px;margin:11px 0}
+.fig-row .fig{flex:var(--ar,1) 1 0;min-width:0;margin:0;max-width:none}
+@media screen and (min-width:981px){
+  .box,.fig,.fig-row{clear:both}
+  .fig-row .fig{clear:none}
+}
+@media (max-width:820px){
+  .fig-row{display:block}
+  .fig-row .fig{margin-bottom:12px;max-width:min(100%,var(--fw,100%))}
+}
+@media print{
+  .box{background:#fff;border:1px solid #999;border-left:4px solid var(--c)}
+  .box.k-jadro{border:0;border-top:1.5px solid #000}
+  .box.k-skr{border:0}
+  .fig figcaption .src-link{display:inline;color:#555}
+  .fig figcaption .src-link svg{display:none}
+  .fig figcaption .src-link[href]::after{content:" (" attr(href) ")";font-size:calc(8px*var(--z,1));word-break:break-all}
+  .fig-row{display:block;overflow:hidden}
+  .fig-row .fig{float:left;width:calc(50% - 8px);margin:0 0 10px}
+  .fig-row .fig+.fig{float:right}
+}
+
+/* ══ PATOLA: náhľad inej kapitoly (assets/js/peek.js) ═════════════════════
+   Panel prekryje stred a pravý stĺpec; hlavička a ľavý obsah ostávajú.
+   --pk-left / --pk-top dopočíta skript z polohy bočného panela a hlavičky.
+   Maximalizácia = --pk-m → 0 (prechod na left/top/right/bottom, 0,5 s).   */
+.pk-backdrop{position:fixed;z-index:44;left:var(--pk-left,0px);top:var(--pk-top,52px);right:0;bottom:0;
+  background:rgba(32,28,40,.30);-webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px);
+  opacity:0;transition:opacity .22s ease}
+.pk-backdrop.pk-in{opacity:1}
+.pk-backdrop.pk-max-on{opacity:0;transition:opacity .5s ease}
+.pk{--pk-m:16px;--pk-ease:cubic-bezier(.4,0,.2,1);
+  position:fixed;z-index:45;
+  left:calc(var(--pk-left,0px) + var(--pk-m));top:calc(var(--pk-top,52px) + var(--pk-m));
+  right:var(--pk-m);bottom:var(--pk-m);
+  display:flex;flex-direction:column;overflow:hidden;
+  background:#fff;border:1px solid var(--color-neutral-300);border-radius:12px;
+  box-shadow:0 22px 56px rgba(20,16,32,.30),0 2px 8px rgba(20,16,32,.12);
+  opacity:0;transform:translateY(12px) scale(.985);
+  transition:opacity .22s ease,transform .28s cubic-bezier(.2,.7,.2,1)}
+.pk.pk-in{opacity:1;transform:none}
+.pk.pk-max-on{--pk-m:0px;border-radius:0;border-color:transparent;box-shadow:0 0 0 rgba(0,0,0,0);
+  transition:left .5s var(--pk-ease),top .5s var(--pk-ease),right .5s var(--pk-ease),bottom .5s var(--pk-ease),
+    border-radius .5s var(--pk-ease),box-shadow .5s ease,border-color .5s ease}
+.pk-bar{flex:none;display:flex;align-items:center;gap:4px;height:44px;padding:0 8px 0 14px;overflow:hidden;
+  border-bottom:1px solid var(--color-neutral-200);background:var(--color-neutral-50,#faf9fb);
+  font-family:var(--site-font,system-ui,sans-serif);font-size:calc(12.5px*var(--z,1));color:var(--color-text);
+  transition:height .5s var(--pk-ease),opacity .3s ease,border-color .5s ease}
+.pk.pk-max-on .pk-bar{height:0;opacity:0;border-color:transparent}
+.pk-kind{flex:none;font-size:calc(10px*var(--z,1));letter-spacing:.12em;text-transform:uppercase;font-weight:600;
+  color:var(--color-accent-700);padding:3px 7px;border-radius:4px;
+  background:color-mix(in srgb,var(--color-accent) 10%,transparent);margin-right:6px}
+.pk-title{flex:1;min-width:0;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pk-btn{flex:none;display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;
+  border:0;border-radius:7px;background:transparent;color:var(--color-neutral-600);cursor:pointer;
+  transition:background .15s ease,color .15s ease}
+.pk-btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.pk-btn-max:hover{background:color-mix(in srgb,var(--color-accent) 12%,transparent);color:var(--color-accent-700)}
+.pk-btn-close:hover{background:color-mix(in srgb,var(--color-accent-2) 14%,transparent);color:var(--color-accent-2-700)}
+.pk-btn:focus-visible{outline:2px solid var(--color-accent);outline-offset:1px}
+.pk-btn:active{transform:scale(.94)}
+.pk-frame{flex:1;display:block;width:100%;min-height:0;border:0;background:#fff}
+.pk-load{position:relative;flex:none;height:0;overflow:visible;pointer-events:none}
+.pk-load i{position:absolute;left:0;top:0;height:3px;width:40%;opacity:0;
+  background:linear-gradient(90deg,var(--color-accent),var(--color-accent-2))}
+.pk-load.on i{opacity:1;animation:pk-slide 1.1s ease-in-out infinite}
+@keyframes pk-slide{0%{left:-40%}100%{left:100%}}
+@media (max-width:980px){.pk{--pk-m:8px}}
+
+/* kým je náhľad otvorený: stránka pod ním stojí, posuvník nahradí odsadenie */
+html.pk-lock{overflow:hidden}
+html.pk-lock body{padding-right:var(--pk-sbw,0px)}
+
+/* bočný obsah pri maximalizácii (skript presunie body a animuje posun) */
+.pk-nav-gap{height:18px;margin:6px 8px 0;border-bottom:1px dashed var(--color-neutral-300)}
+.site-header .crumb{transition:opacity .25s ease}
+.site-header .crumb.pk-fade{opacity:0}
+
+/* stránka vnútri náhľadu: len obsah, bez hlavičky a bočného panela */
+html.pk-restoring body{visibility:hidden}
+/* fork: na samostatnom riadku je len nadpis stĺpca; tučné slová v texte ostávajú vo vete */
+.fork>div>b:not(:first-child){display:inline;margin:0}
+.pk-embed .site-header,.pk-embed .site-sidebar,.pk-embed .reading-progress,
+.pk-embed .reading-pct,.pk-embed .skip-link{display:none!important}
+
+/* návrat tlačidlom Späť */
+.pk-back-in .site-main{animation:pk-back .35s cubic-bezier(.2,.7,.2,1)}
+.pk-back-in .site-sidebar nav{animation:pk-fadein .35s ease}
+@keyframes pk-back{from{opacity:0;transform:translateX(-32px)}to{opacity:1;transform:none}}
+@keyframes pk-fadein{from{opacity:0}to{opacity:1}}
+@media (prefers-reduced-motion:reduce){
+  .pk,.pk.pk-max-on,.pk-bar,.pk-backdrop{transition:none}
+  .pk-back-in .site-main,.pk-back-in .site-sidebar nav{animation:none}
+}
+@media print{.pk,.pk-backdrop{display:none!important}}
+
+/* ══ PATOLA: tlač ═════════════════════════════════════════════════════════
+   Strana A4 má ~700 px, takže sa v tlači zapínajú mobilné pravidlá
+   z chapter.css (@media max-width:820px): graf s posuvníkom, tabuľka ako blok.
+   Tu ich vraciame a riešime zlom strán.                                    */
+@page{size:A4;margin:14mm 15mm 16mm}
+@media print{
+  .page{padding:0!important}
+  .chart{overflow:visible!important;max-width:100%}
+  .chart svg{min-width:0!important;max-width:100%!important}
+  .table{display:table!important;overflow:visible!important;width:100%}
+  .diagram{white-space:pre-wrap}
+  /* fotografia nezaberie celú stranu – inak ostávajú polovičné prázdne strany */
+  .fig{max-width:100%!important}
+  .fig img{width:auto;max-width:100%;max-height:6.5cm;margin:0 auto}
+  .fig-row .fig img{max-height:5.2cm}
+  .chart svg{max-height:9.5cm}
+  /* úspornejšia tlač (4. 10. 2026): obsah kapitoly v dvoch stĺpcoch, zdroje drobnejším písmom v dvoch stĺpcoch */
+  .contents{column-count:2;column-gap:24px}
+  .sec-body.src{font-size:calc(9.5px*var(--z,1));line-height:1.35}
+  .sec-body.src ul{column-count:2;column-gap:22px;margin-top:3px}
+  .sec-body.src li{break-inside:avoid;margin-bottom:2px}
+  /* nadpis nikdy sám na spodku strany */
+  .sec-h,.sub-h,h2,h3,.box .label{break-after:avoid;page-break-after:avoid}
+  /* dlhé boxy sa smú zlomiť (inak nechajú prázdnu pol stranu); tabuľky a riadky nie */
+  .box.keep{break-inside:auto}
+  tr,.fig,.chart,figure.keep{break-inside:avoid}
+  p,li{orphans:3;widows:3}
+  .reader-ctl,#pt-zoom{display:none!important}
+}
+
+/* lupa (assets/js/zoom.js) */
+#pt-zoom{position:fixed;inset:0;z-index:90;display:none;align-items:center;justify-content:center;
+  padding:24px;background:rgba(20,18,26,.82);-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);cursor:zoom-out}
+#pt-zoom.on{display:flex}
+#pt-zoom img{max-width:100%;max-height:100%;background:#fff;box-shadow:var(--shadow-lg)}
+
+/* okrajové poznámky (site.js): na pôvodnom mieste v texte ostane čiara vo farbe a hrúbke
+   ľavého okraja poznámky, ktorá vedie až k nej; poznámka na čiare sedí spodkom.
+   Dlhé odkazy sa musia zalamovať, inak presiahnu úzky stĺpec (204–254 px, --side-w v site.css) a stránka dostane vodorovný posuv */
+.side-anchor{display:block;height:0;margin:10px 0;padding:0;position:relative;z-index:4;pointer-events:none}
+/* zalomenie čiary k poznámke, ktorú iná odtlačila nižšie (zvislý + vodorovný úsek, site.js) */
+.side-anchor i{display:none;position:absolute;background-color:inherit}
+@media (max-width:980px){.side-anchor{display:none}}
+@media (min-width:981px){.box.side-note{margin:0}}
+@media print{.side-anchor{display:none}}
+@media screen and (min-width:981px){.side-note{transform:none!important;overflow-wrap:anywhere}}
+.xref{white-space:normal}
+
+/* ══ PATOLA: vlastné schémy (chapters/fig/*.svg) ═════════════════════════ */
+.chart .mk{fill:var(--color-neutral-700)}
+.chart .arw{fill:none;stroke:var(--color-neutral-700);stroke-width:1.5}
+.chart .arwd{fill:none;stroke:var(--color-neutral-600);stroke-width:1.3;stroke-dasharray:5 4}
+.chart .cell{fill:var(--color-accent-100);stroke:var(--color-accent-600);stroke-width:1.5}
+.chart .nuc{fill:var(--color-accent-400);stroke:var(--color-accent-800);stroke-width:1}
+.chart .cellm{fill:var(--color-accent-2-100);stroke:var(--color-accent-2-600);stroke-width:1.5}
+.chart .nucm{fill:var(--color-accent-2-500);stroke:var(--color-accent-2-800);stroke-width:1}
+.chart .dot{fill:var(--color-neutral-700)}
+.chart .dotm{fill:var(--color-accent-2-600)}
+.chart .lblb{font-size:11px;font-weight:600;fill:var(--color-neutral-900)}
+.chart .sub{font-size:9.5px;fill:var(--color-neutral-700)}
+.chart .zone-r{fill:var(--color-accent-2-100)}
+.chart .zone-i{fill:var(--color-accent-100)}
+.chart .s-d{stroke:var(--color-neutral-700);stroke-dasharray:6 4}
+.chart .s-t{stroke:var(--color-neutral-700);stroke-dasharray:2 4}
+.chart .fill-acc{fill:var(--color-accent-500)}
+.chart .fill-acc2{fill:var(--color-accent-2-500)}
+.chart .stk-acc{fill:none;stroke:var(--color-accent-600);stroke-width:2}
+.chart .stk-acc2{fill:none;stroke:var(--color-accent-2-600);stroke-width:2}
+.chart .stk-n{fill:none;stroke:var(--color-neutral-600);stroke-width:1.3}
+/* ══ Odborná kontrola a otázky na zopakovanie (CLAUDE.md §1.3, §2.2) ═══════
+   Rovnaké v PATOLE aj v patofyzii (tools/chapter-extra.css oboch projektov). */
+.reviewed{font-size:calc(10.5px*var(--z,1));line-height:1.4;margin:-4px 0 12px;padding:0 10px;color:var(--color-neutral-700)}
+.reviewed b{font-size:calc(9.5px*var(--z,1));letter-spacing:.1em;text-transform:uppercase;font-weight:600}
+.reviewed a{color:var(--color-accent-800)}
+ol.quiz{margin:8px 0 4px;padding-left:26px}
+ol.quiz li{margin:0 0 6px}
+ol.quiz li::marker{color:var(--color-accent-800);font-weight:600}
+/* vlastná šípka za číslom — natívny trojuholník <summary> by sa prekrýval s číslom otázky */
+ol.quiz summary{display:block;list-style:none;cursor:pointer;font-weight:600;line-height:1.45;padding-left:14px;position:relative}
+ol.quiz summary::-webkit-details-marker{display:none}
+ol.quiz summary::before{content:"▸";position:absolute;left:0;top:0;color:var(--color-accent);transition:transform .15s ease}
+ol.quiz details[open]>summary::before{transform:rotate(90deg)}
+ol.quiz summary:hover{color:var(--color-accent-800)}
+ol.quiz .ans{margin:4px 0 2px 14px;padding:6px 10px;font-size:calc(12.5px*var(--z,1));line-height:1.45;
+  background:var(--color-accent-100);border-left:3px solid var(--color-accent)}
+@media print{
+  ol.quiz summary::before{content:none}
+  ol.quiz summary{padding-left:0}
+  ol.quiz .ans{margin-left:0}
+  ol.quiz .ans{background:none;border-left:1px solid var(--color-neutral-400);font-size:calc(10px*var(--z,1))}
+}
+
+/* stĺpce vedľa seba (blok ```cols) – vodorovné členenie rovnocenných vetiev */
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px 14px;margin:9px 0 11px}
+.cols.n4{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.cols>div{padding:7px 11px 5px;background:var(--color-neutral-100);border-top:2px solid var(--color-accent-400);break-inside:avoid}
+.cols>div>p{margin:0 0 4px}
+.cols>div>ul,.cols>div>ol{margin:0 0 3px}
+@media print{.cols>div{background:none;border:1px solid var(--color-neutral-400);border-top-width:2px}}
+
+/* otázky na zopakovanie: reflektor pojmov okolo kurzora by napovedal a klik na pojem by namiesto
+   odpovede otvoril vysvetlivku → pojmy tu svietia a dajú sa otvoriť len pri zapnutom prepínači „Pojmy“ */
+html:not(.pf-terms-always) ol.quiz .pf-term{pointer-events:none;cursor:inherit}
+html:not(.pf-terms-always) ol.quiz .pf-term.is-lit{background-color:transparent;box-shadow:0 0 0 1.5px transparent}
+/* text otázky sa pri rýchlom otváraní a zatváraní (dvojklik) nemá označovať */
+ol.quiz summary{-webkit-user-select:none;user-select:none}
+
+/* ══ PATOLA: mobil — o stupeň väčšie písmo (≈ +7 %) ══════════════════════
+   Veľkosti v chapter.css sú v px (sadzba na tlačenú stranu), takže sa na
+   úzkej obrazovke zväčšujú po jednej, každá o rovnaký krok. `screen`, lebo
+   strana A4 je užšia než 820 px a tlač by pravidlo chytila tiež.
+   Musí ostať na konci súboru — prebíja pravidlá vyššie.
+   Od 8. 10. 2026 sa každá veľkosť ešte násobí mierkou --z (site.css): nová veľkosť = calc(Npx*var(--z,1)).                    */
+@media screen and (max-width:820px){
+  .page{font-size:calc(14.5px*var(--z,1))}
+  .sec-h{font-size:calc(17px*var(--z,1))}
+  .sub-h{font-size:calc(14.5px*var(--z,1))}
+  .standfirst{font-size:calc(14px*var(--z,1))}
+  .chain,.cols-2,.cols-3,.flow-2,.lede,ol.quiz .ans{font-size:calc(13.5px*var(--z,1))}
+  .page table.table,.box .body,.rev .body,.note .body,.flag .body,.plain .body,.fork{font-size:calc(13px*var(--z,1))}
+  .contents,.deps,.next,.src p,.src li{font-size:calc(12.5px*var(--z,1))}
+  .micro{font-size:calc(12px*var(--z,1))}
+  .fig figcaption,.chart figcaption,figure.keep>figcaption,.reviewed{font-size:calc(11.5px*var(--z,1))}
+  .box .label,.rev .label,.note .label,.flag .label,.plain .label,
+  .contents .label,.deps b,.next b,.eyebrow,.src .micro{font-size:calc(10.5px*var(--z,1))}
+  /* vysvetlivky a popis v lupe (glossary.css je zdieľaný s patofyziou, preto tu) */
+  .pf-tip{font-size:calc(14px*var(--z,1))}
+  .pf-tip h4{font-size:calc(15.5px*var(--z,1))}
+  .pf-tip .kicker,.pf-tip-body .fork > div{font-size:calc(13px*var(--z,1))}
+  .pf-tip-body .chain,.pf-tip-body .why,.pf-lb-cap{font-size:calc(13.5px*var(--z,1))}
+  .pf-tip figcaption{font-size:calc(12px*var(--z,1))}
+}
+
+/* „V tejto kapitole“: riadky sú odkazy na sekcie; vzhľad sa nemení, podčiarknutie až pri prejdení myšou */
+.contents a.row,.contents a.row:visited{color:inherit;text-decoration:none;border:0;background:none}
+.contents a.row:hover span:last-child,.contents a.row:focus-visible span:last-child{text-decoration:underline}
+
+/* okraj stránky (.page) sa odvíja od šírky okna: na užšom okne menej prázdneho miesta, na širokom viac
+   (chapter.css má pevných 50 px; mobil ≤ 820 px a tlač majú vlastné pravidlá) */
+@media screen and (min-width:821px){
+  .page{--pg-x:clamp(20px,3.6vw,84px);padding:clamp(22px,3.4vw,72px) var(--pg-x)}
+  /* hlavička kapitoly presahuje text do strán o 40 px (site.css) – najviac však o okraj stránky, inak na
+     tablete (821–980 px, kde vedľa stránky nie je stĺpec na poznámky) vytŕča z okna a stránka sa posúva do strán */
+  .chapter-hero{margin-left:calc(-1*min(40px,var(--pg-x)));margin-right:calc(-1*min(40px,var(--pg-x)))}
+}
+
+/* farebné stĺpce tabuľky (hlavička v .md končí {zel} | {fial} | {ruz} | {tyrk}) – keď sú stĺpce
+   rovnocenné kategórie, ktoré si má čitateľ zapamätať ako trojicu */
+.c-zel{--tc:#3f8a55}.c-fial{--tc:var(--color-accent)}.c-ruz{--tc:var(--color-accent-2)}.c-tyrk{--tc:#1f8a8a}
+.page table.table th[class^="c-"]{color:var(--tc);font-weight:700;border-top:3px solid var(--tc);
+  background:color-mix(in srgb,var(--tc) 13%,#fff);padding:4px 8px}
+.page table.table td[class^="c-"]{background:color-mix(in srgb,var(--tc) 5%,#fff);padding-left:8px}
+@media print{.page table.table th[class^="c-"],.page table.table td[class^="c-"]{background:none}}
+
+/* vlastné schémy (SVG) idú predvolene na celú šírku textu (chapter.css ich drží na 700 px) */
+figure.chart{max-width:100%}
+</style>
+<link rel="stylesheet" href="../assets/styles/palette.css">
+<link rel="manifest" href="../manifest.json">
+<meta name="theme-color" content="#5f42a8">
+<link rel="icon" href="../assets/img/icon-32.png">
+<link rel="apple-touch-icon" href="../assets/img/icon-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="PATOLA">
+<script src="../assets/js/pwa.js" defer></script>
+</head>
+<body>
+<!-- Súbor je GENEROVANÝ z 09_celkove_poruchy_obehu.md nástrojom tools/build.js — uprav .md, nie tento súbor. -->
+<a class="skip-link" href="#sec-9-1">Preskočiť na obsah</a>
+<header class="site-header">
+  <a class="brand" href="../index.html"><span class="mark" aria-hidden="true"></span>PATOLA</a>
+  <span class="crumb">Patologická anatómia — <b>Celkové poruchy obehu</b></span>
+  <span class="spacer"></span>
+  <button class="site-toc-toggle" type="button" aria-label="Obsah kapitoly" aria-expanded="false">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+  </button>
+</header>
+
+<div class="reading-progress" role="progressbar" aria-label="Priebeh čítania kapitoly" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="bar"></div></div>
+<div class="reading-pct" aria-hidden="true">0 %</div>
+
+<div class="site-shell">
+  <aside class="site-sidebar">
+    <div class="toc-title">Obsah kapitoly</div>
+    <nav></nav>
+  </aside>
+
+  <div class="site-main">
+<main class="page">
+
+<div class="chapter-hero">
+<div class="running-head">
+  <span>9 · Celkové poruchy krvného obehu</span>
+  <span style="color:var(--color-accent-700)">Patologická anatómia</span>
+</div>
+
+<div class="opener">
+  <div class="cmyk-num num">
+    <span class="paper">9</span>
+    <span class="plate plate-c" aria-hidden="true">9</span>
+    <span class="plate plate-m" aria-hidden="true">9</span>
+    <span class="plate plate-y" aria-hidden="true">9</span>
+  </div>
+  <div style="padding-top:2px">
+    <div class="eyebrow">Poruchy obehu</div>
+    <h1>Celkové poruchy krvného obehu</h1>
+    <p class="standfirst">Kým miestna porucha postihne povodie jednej cievy, celková zasiahne obeh ako celok – a s ním všetky orgány naraz. Kapitola vychádza z troch zložiek obehu (pumpa, potrubie, náplň), ukazuje, čo každú z nich rozvráti, a potom sleduje dva obrazy, ktorými sa to prejaví – pomalé zlyhávanie srdca s venostázou, edémom a induráciou orgánov a náhle zlyhanie obehu, kolaps a šok.</p>
+  </div>
+</div>
+</div>
+
+<p class="deps"><b>Predpoklady:</b>
+  <a class="xref" href="06_progresivne_zmeny.html#sec-6-2">→ 6.2 Hypertrofia – tie isté bunky, viac hmoty</a> ·
+  <a class="xref" href="08_miestne_poruchy_obehu.html#sec-8-7">→ 8.7 Hyperémia – priveľa krvi v riečisku</a> ·
+  <a class="xref" href="03_zapal_vseobecne.html#sub-3-6-2">→ 3.6.2 SIRS a sepsa – keď sa obrana obráti proti telu</a>
+</p>
+<p class="reviewed"><b>Odborná kontrola:</b> zatiaľ neprebehla — fakty sú overené len podľa zdrojov uvedených na konci kapitoly · <a href="https://github.com/ephafy/patologia/issues/new?title=Kap.%209%3A%20" target="_blank" rel="noopener noreferrer">Nahlásiť chybu</a></p>
+
+<div class="contents keep">
+  <div class="label">V tejto kapitole</div>
+  <a class="row" href="#sec-9-1"><span>9.1</span><span>Obeh ako pumpa, potrubie a náplň</span></a>
+  <a class="row" href="#sec-9-2"><span>9.2</span><span>Čo obeh rozvráti: príčiny podľa zložky</span></a>
+  <a class="row" href="#sec-9-3"><span>9.3</span><span>Srdce pod záťažou: dilatácia a hypertrofia</span></a>
+  <a class="row" href="#sec-9-4"><span>9.4</span><span>Zlyhanie srdca: krv sa hromadí pred komorou, ktorá nestačí</span></a>
+  <a class="row" href="#sec-9-5"><span>9.5</span><span>Edém – tekutina mimo ciev a buniek</span></a>
+  <a class="row" href="#sec-9-6"><span>9.6</span><span>Kolaps a šok – keď obeh zlyhá náhle</span></a>
+  <a class="row" href="#sec-9-7"><span>9.7</span><span>Súhrn a rýchle rozlíšenie</span></a>
+  <a class="row" href="#sec-9-8"><span>9.8</span><span>Otázky na zopakovanie</span></a>
+  <a class="row" href="#sec-9-9"><span>9.9</span><span>Zdroje</span></a>
+</div>
+
+<!-- ══ 9.1 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-9-1"><span class="n">9.1</span><span>Obeh ako pumpa, potrubie a náplň</span></h2>
+<div class="sec-body">
+  <p>Krvný obeh tvoria tri zložky, ktoré musia sedieť k sebe: <b>srdce</b> ako pumpa, <b>cievy</b> ako potrubie s nastaviteľným priesvitom a <b>krv</b> ako náplň. <b>Celková porucha obehu</b> vzniká, keď jedna z nich zlyhá natoľko, že to pocíti celé telo – na rozdiel od miestnej poruchy, ktorá sa týka povodia jednej cievy (<a class="xref" href="08_miestne_poruchy_obehu.html#sec-8-1">→ 8.1 Miestny obeh a tri spôsoby, ako zlyhá</a>). Na mape reakcií tkaniva patrí medzi poruchy obehu; v orgánoch po sebe necháva to, čo už poznáme – venostázu, atrofiu, nekrózu a fibrózu.</p>
+
+  <div class="box k-jadro aside keep">
+    <div class="label">Jadro</div>
+    <div class="body">
+      <p>Obeh = <b>pumpa + potrubie + náplň</b>. Zlyhá pomaly → krv sa hromadí pred zlyhávajúcou komorou (<b>venostáza, edém, indurácia</b>). Zlyhá náhle → tlak padne a orgány ostanú bez krvi (<b>kolaps, šok</b>).</p>
+    </div>
+  </div>
+
+  <p>Kapitola má dve časti (Obr. 9.1). Prvá sa pýta, <b>čo obeh rozvráti</b> – podľa toho, ktorá zložka zlyhala (<a class="xref" href="#sec-9-2">→ 9.2</a>). Druhá sleduje, <b>ako sa to prejaví</b>, a delí sa podľa rýchlosti:</p>
+
+  <ul>
+    <li><b>pomaly</b> – srdce sa najprv prispôsobí (<a class="xref" href="#sec-9-3">→ 9.3</a>), potom zlyháva a krv sa hromadí v pľúcach alebo vo veľkom obehu (<a class="xref" href="#sec-9-4">→ 9.4</a>); spoločným menovateľom je edém (<a class="xref" href="#sec-9-5">→ 9.5</a>),</li>
+    <li><b>náhle</b> – tlak klesne skôr, než sa telo stihne prispôsobiť: kolaps a šok (<a class="xref" href="#sec-9-6">→ 9.6</a>).</li>
+  </ul>
+
+  <figure class="chart keep" id="fig-obeh-celkovy-mapa">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" role="img" aria-labelledby="tfigobehcelkovymapa">
+<title id="tfigobehcelkovymapa">Mapa kapitoly: obeh tvoria pumpa (srdce), potrubie (cievy) a náplň (krv); keď niektorá zložka zlyháva pomaly, srdce sa prispôsobí a potom zlyháva s venostázou, edémom a induráciou orgánov; keď zlyhá náhle, vzniká kolaps alebo šok</title>
+<defs><marker id="mfigobehcelkovymapa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker></defs>
+
+<text class="cap" x="360" y="12" text-anchor="middle">ČO OBEH ROZVRÁTI · 9.2</text>
+
+<rect class="bx-c" x="8" y="20" width="226" height="66" rx="3"/>
+<text class="lblb" x="121" y="38" text-anchor="middle">PUMPA – srdce</text>
+<text class="sub" x="121" y="54" text-anchor="middle">sval, chlopne, perikard, rytmus,</text>
+<text class="sub" x="121" y="67" text-anchor="middle">vrodené chyby</text>
+<text class="sub" x="121" y="80" text-anchor="middle">9.2.1</text>
+
+<rect class="bx-c" x="247" y="20" width="226" height="66" rx="3"/>
+<text class="lblb" x="360" y="38" text-anchor="middle">POTRUBIE – cievy a tlak</text>
+<text class="sub" x="360" y="54" text-anchor="middle">pľúcna hypertenzia → pravá komora</text>
+<text class="sub" x="360" y="67" text-anchor="middle">systémová hypertenzia → ľavá komora</text>
+<text class="sub" x="360" y="80" text-anchor="middle">9.2.2 · 9.2.3</text>
+
+<rect class="bx-c" x="486" y="20" width="226" height="66" rx="3"/>
+<text class="lblb" x="599" y="38" text-anchor="middle">NÁPLŇ – krv</text>
+<text class="sub" x="599" y="54" text-anchor="middle">objem: pletora, strata krvi a vody</text>
+<text class="sub" x="599" y="67" text-anchor="middle">zloženie: anémia, bielkoviny</text>
+<text class="sub" x="599" y="80" text-anchor="middle">9.2.4</text>
+
+<path class="arw" d="M121,86 L200,116" marker-end="url(#mfigobehcelkovymapa)"/>
+<path class="arw" d="M330,86 L250,116" marker-end="url(#mfigobehcelkovymapa)"/>
+<path class="arw" d="M390,86 L470,116" marker-end="url(#mfigobehcelkovymapa)"/>
+<path class="arw" d="M599,86 L520,116" marker-end="url(#mfigobehcelkovymapa)"/>
+
+<rect class="bx-k" x="60" y="118" width="290" height="34" rx="3"/>
+<text class="lblb" x="205" y="139" text-anchor="middle">zlyháva POMALY – telo sa stihne prispôsobiť</text>
+<rect class="bx-k" x="370" y="118" width="290" height="34" rx="3"/>
+<text class="lblb" x="515" y="139" text-anchor="middle">zlyhá NÁHLE – tlak padne</text>
+
+<path class="arw" d="M205,152 L205,170" marker-end="url(#mfigobehcelkovymapa)"/>
+<path class="arw" d="M515,152 L515,170" marker-end="url(#mfigobehcelkovymapa)"/>
+
+<rect class="bx-c" x="60" y="172" width="290" height="40" rx="3"/>
+<text class="lblb" x="205" y="189" text-anchor="middle">srdce pod záťažou · 9.3</text>
+<text class="sub" x="205" y="204" text-anchor="middle">dilatácia · koncentrická a excentrická hypertrofia</text>
+
+<rect class="bx-c" x="370" y="172" width="290" height="40" rx="3"/>
+<text class="lblb" x="515" y="189" text-anchor="middle">KOLAPS · 9.6.1</text>
+<text class="sub" x="515" y="204" text-anchor="middle">sekundy až minúty, upraví sa sám, bez následkov</text>
+
+<path class="arw" d="M205,212 L205,230" marker-end="url(#mfigobehcelkovymapa)"/>
+<path class="arwd" d="M515,212 L515,230" marker-end="url(#mfigobehcelkovymapa)"/>
+<text class="sub" x="523" y="225" text-anchor="start">ak sa obeh nevráti</text>
+
+<rect class="bx-m" x="8" y="232" width="342" height="62" rx="3" stroke="var(--color-accent-2-600)" stroke-width="1.5"/>
+<text class="lblb" x="179" y="250" text-anchor="middle">ZLYHANIE SRDCA · 9.4</text>
+<text class="sub" x="179" y="266" text-anchor="middle">ľavé → krv stojí v pľúcach · pravé → vo veľkom obehu</text>
+<text class="sub" x="179" y="282" text-anchor="middle">venostáza → EDÉM (9.5) → cyanóza a indurácia orgánov</text>
+
+<rect class="bx-m" x="370" y="232" width="342" height="62" rx="3" stroke="var(--color-accent-2-600)" stroke-width="1.5"/>
+<text class="lblb" x="541" y="250" text-anchor="middle">ŠOK ⟳ · 9.6.2 – 9.6.4</text>
+<text class="sub" x="541" y="266" text-anchor="middle">málo krvi · slabá pumpa · prekážka · široké cievy</text>
+<text class="sub" x="541" y="282" text-anchor="middle">hypoperfúzia → ischémia orgánov → multiorgánové zlyhanie</text>
+</svg>
+    <figcaption><b>Obr. 9.1 — Mapa kapitoly.</b> Tri zložky obehu, ktoré môžu zlyhať, a dva obrazy podľa rýchlosti – pomalé zlyhávanie srdca a náhly kolaps alebo šok.</figcaption>
+  </figure>
+</div>
+
+<!-- ══ 9.2 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-9-2"><span class="n">9.2</span><span>Čo obeh rozvráti: príčiny podľa zložky</span></h2>
+<div class="sec-body">
+  <p>Príčiny celkových porúch obehu sa dajú usporiadať podľa toho, <b>ktorá z troch zložiek obehu je chorá</b> – srdce, cievy (prejaví sa to tlakom v malom alebo veľkom obehu), alebo krv. Jednotlivé choroby srdca a ciev patria do špeciálnej patológie; tu ide o to, akým mechanizmom obeh zaťažia.</p>
+
+  <div class="box k-jadro aside keep">
+    <div class="label">Jadro</div>
+    <div class="body">
+      <p><b>Srdce</b> zlyhá, lebo slabne sval, kladie odpor chlopňa, bráni mu perikard, alebo sa rozpadne rytmus. <b>Cievy</b> ho preťažia tlakom (pľúcna hypertenzia → pravá komora; systémová → ľavá). <b>Krv</b> objemom alebo zložením.</p>
+    </div>
+  </div>
+
+  <h3 class="sub-h" id="sub-9-2-1"><span class="n">9.2.1</span>Choroby srdca</h3>
+  <p>Srdce ako pumpa môže zlyhať piatimi spôsobmi – podľa toho, <b>ktorá jeho časť nefunguje</b>:</p>
+
+  <table class="table keep" id="tab-9-1" style="margin:6px 0">
+    <thead><tr><th>Čo je choré</th><th>Mechanizmus</th><th>Príklady</th></tr></thead>
+    <tbody>
+      <tr><td><b><b>sval (myokard)</b></b></td><td>menej sťahujúcej sa svaloviny alebo slabší sťah</td><td>ischemická choroba srdca z aterosklerózy vencovitých tepien a jej najťažšia podoba, infarkt (najčastejšie); myokarditída (napr. reumatická, <a class="xref" href="07_granulomatozne_zapaly.html#sec-7-9">→ 7.9 Granulóm na poškodenej cieve a väzive</a>), kardiomyopatie, ukladanie amyloidu (<a class="xref" href="02_dystrofie.html#sub-2-4-5">→ 2.4.5 Amyloidóza</a>)</td></tr>
+      <tr><td><b><b>chlopne a endokard</b></b></td><td>zúžená chlopňa kladie odpor (tlakové preťaženie), nedomykavá vracia krv (objemové preťaženie)</td><td>endokarditída, chlopňové chyby; tromby v dutinách (<a class="xref" href="08_miestne_poruchy_obehu.html#sub-8-3-3">→ 8.3.3</a>)</td></tr>
+      <tr><td><b><b>perikard</b></b></td><td>srdce sa nemôže plniť</td><td>výpotok a krv v osrdcovníku až <b>tamponáda</b>, zrasty po zápale (<a class="xref" href="04_typy_zapalu.html#sub-4-6-1">→ 4.6.1 Na seróznych blanách</a>)</td></tr>
+      <tr><td><b><b>rytmus</b></b></td><td>sťahy sú príliš rýchle, pomalé alebo neusporiadané, takže sa komora nestihne naplniť alebo vyprázdniť</td><td>poruchy iónov v krvi (draslík, vápnik), ložisko nekrózy alebo zápalu ako zdroj chybných vzruchov, poškodený prevodový systém</td></tr>
+      <tr><td><b><b>stavba (vrodené chyby)</b></b></td><td>krv tečie nesprávnou cestou alebo cez zúženie</td><td>pozri nižšie</td></tr>
+    </tbody>
+  </table>
+
+  <p><b>Vrodené srdcové chyby</b> sa delia podľa toho, <b>či a ktorým smerom sa krv medzi malým a veľkým obehom mieša</b>:</p>
+
+  <ul>
+    <li><b>bez skratu</b> – prekážka v ceste: zúženie pľúcnice, zúženie alebo koarktácia aorty → tlakové preťaženie komory pred prekážkou,</li>
+    <li><b>ľavo-pravý skrat</b> – defekt predsieňovej alebo komorovej priehradky, otvorená tepnová spojka (<i>ductus arteriosus</i>): okysličená krv sa vracia do pľúc → objemové preťaženie a neskôr pľúcna hypertenzia; dieťa spočiatku nie je cyanotické,</li>
+    <li><b>pravo-ľavý skrat</b> – odkysličená krv obchádza pľúca → <b>cyanóza</b> od narodenia. Najčastejšou cyanotickou chybou je <b>Fallotova tetralógia</b> (pľúcami tečie málo krvi), druhou <b>transpozícia veľkých tepien</b>.</li>
+  </ul>
+
+  <div class="box k-pocut aside keep">
+    <div class="label">Môžeš počuť</div>
+    <div class="body">
+      <p><b>Podiely vrodených srdcových chýb.</b> Bez skratu asi 25 %, s ľavo-pravým skratom 55 %, s pravo-ľavým 20 %. Delenie je doložené, čísla nie.</p>
+    </div>
+  </div>
+
+  <h3 class="sub-h" id="sub-9-2-2"><span class="n">9.2.2</span>Tlak v malom obehu – pľúcna hypertenzia</h3>
+  <p>Pľúcne riečisko je nízkotlakové a pravá komora tenkostenná; keď odpor v pľúcach stúpne, pravá komora naň nie je stavaná. <b>Pľúcna hypertenzia</b> je stredný tlak v pľúcnici nad 20 mmHg v pokoji, meraný pri katetrizácii pravého srdca.</p>
+
+  <div class="box k-mech keep">
+    <div class="label">Mechanizmus – štyri cesty k vysokému tlaku v pľúcnici</div>
+    <div class="body">
+      <ul>
+    <li><b>Krv sa hromadí za pľúcami</b> – zlyháva ľavé srdce alebo je chorá mitrálna chlopňa; tlak sa prenáša spätne cez pľúcne žily.</li>
+    <li><b>Cievy sa sťahujú pre nedostatok kyslíka</b> – pri chorobách pľúc (chronická bronchitída a obštrukčná choroba pľúc, intersticiálne procesy) a pri spánkovom apnoe; hypoxia v alveole sťahuje priľahlú tepničku, a ak je hypoxický celý orgán, stúpne odpor v celom riečisku.</li>
+    <li><b>Riečisko sa zmenší alebo upchá</b> – ciev je jednoducho menej, takže tá istá krv musí pretiecť užším prierezom. Stáva sa to po opakovanej (sukcesívnej) embólii, keď sa emboly zorganizujú (<a class="xref" href="08_miestne_poruchy_obehu.html#sub-8-4-2">→ 8.4.2 Pľúcna trombembólia – prototyp</a>), a keď kapiláry zaniknú v jazve: pri fibróze pľúc, pri vaskulitídach a pri kolagenózach.</li>
+    <li><b>Ochorie stena malých pľúcnych tepien</b> – zhrubne a zúži priesvit bez toho, aby bola chorá ľavá komora alebo pľúcne tkanivo. Táto forma sa nazýva artériová; keď sa nenájde ani vrodená, ani získaná príčina, hovorí sa o idiopatickej (v starších textoch „primárna pľúcna hypertenzia“).</li>
+  </ul>
+    </div>
+  </div>
+
+  <p>Následkom je preťaženie pravej komory – <b>cor pulmonale</b>: zmena pravej komory, ktorej príčina je v pľúcach alebo ich cievach, nie v srdci. Akútne (najčastejšie masívna embólia) sa pravá komora rozšíri a zlyhá; chronicky hypertrofuje (<a class="xref" href="#sec-9-3">→ 9.3</a>).</p>
+
+  <div class="rev keep">
+    <div class="label"><span class="r">R</span>Revízia — pľúcna hypertenzia sa začína nižšie</div>
+    <div class="body">
+      <p><b>Kedysi</b> sa pľúcna hypertenzia definovala stredným tlakom v pľúcnici od 25 mmHg v pokoji (a nad 30 mmHg pri záťaži). <b>Dnes</b> je hranicou viac než <b>20 mmHg v pokoji</b> – hodnota nad hornou hranicou normy; pre formy vznikajúce pred kapilárami sa žiada aj zvýšený cievny odpor. Záťažové kritérium v pôvodnej podobe zaniklo.</p>
+    </div>
+  </div>
+
+  <h3 class="sub-h" id="sub-9-2-3"><span class="n">9.2.3</span>Tlak vo veľkom obehu – hypertenzia a hypotenzia</h3>
+  <p>Vo veľkom obehu nesie záťaž ľavá komora. <b>Systémová hypertenzia</b> – opakovane nameraný tlak 140/90 mmHg a viac – je najčastejšou príčinou jej chronického preťaženia; delí sa podľa toho, či sa nájde príčina:</p>
+
+  <ul>
+    <li><b>esenciálna (primárna)</b> – príčina sa nenájde; ide o súhru dedičnosti, telesnej stavby, stravy a stresu a často je súčasťou metabolického syndrómu (obezita, cukrovka, poruchy tukov, zvýšená kyselina močová),</li>
+    <li><b>sekundárna</b> – príčina je známa:</li>
+  </ul>
+
+  <table class="table keep" id="tab-9-2" style="margin:6px 0">
+    <thead><tr><th>Skupina</th><th>Príčina</th><th>Mechanizmus</th></tr></thead>
+    <tbody>
+      <tr><td><b><b>obličková</b> (najčastejšia)</b></td><td>choroby obličkového parenchýmu (renoparenchymatózna); zúženie obličkovej tepny (renovaskulárna)</td><td>oblička zadržiava soľ a vodu; nedokrvená oblička uvoľňuje renín</td></tr>
+      <tr><td><b><b>endokrinná</b></b></td><td>primárny hyperaldosteronizmus (Connov syndróm), feochromocytóm, Cushingov syndróm, adrenogenitálny syndróm, akromegália</td><td>nadbytok hormónu, ktorý zadržiava soľ alebo sťahuje cievy; pri feochromocytóme záchvatovito</td></tr>
+      <tr><td><b><b>tehotenská</b></b></td><td>preeklampsia, eklampsia</td><td>—</td></tr>
+    </tbody>
+  </table>
+
+  <p>Dlhodobo zvýšený tlak poškodzuje aj samotné cievy: stena drobných tepničiek hrubne a sklovatie – hyalínna arterioloskleróza (<a class="xref" href="02_dystrofie.html#sub-2-4-2">→ 2.4.2 Hyalínne dystrofie</a>).</p>
+
+  <p><b>Akútne</b> tlak stúpne pri feochromocytóme a pri <b>hypertenznej kríze</b> – vykoľajení dlhodobej hypertenzie, pri ktorom sú náhle ohrozené mozog, srdce a obličky. Chronicky nízky tlak je chorobou sám osebe len zriedka; <b>akútna hypotenzia</b> je kolaps alebo šok (<a class="xref" href="#sec-9-6">→ 9.6</a>).</p>
+
+  <div class="rev keep">
+    <div class="label"><span class="r">R</span>Revízia — sekundárna hypertenzia nie je taká vzácna</div>
+    <div class="body">
+      <p><b>Kedysi</b> sa uvádzalo, že viac než 90 % hypertonikov má esenciálnu hypertenziu a sekundárna tvorí 5–10 %. <b>Dnes</b> štúdie, ktoré príčinu hľadajú systematicky, nachádzajú sekundárnu hypertenziu podstatne častejšie – len primárny hyperaldosteronizmus má 5–10 % všetkých hypertonikov. Prakticky: hypertenzia u mladého človeka, náhle zhoršená alebo neodpovedajúca na liečbu je dôvod príčinu hľadať.</p>
+    </div>
+  </div>
+
+  <div class="box k-pocut aside keep">
+    <div class="label">Môžeš počuť</div>
+    <div class="body">
+      <p><b>Zmeny ciev pri celkových poruchách obehu.</b> Pri akútnom zlyhaní srdca a pri náhlom vzostupe tlaku sa cievy rozširujú; pri dlhodobej hypertenzii hypertrofuje hladký sval steny; pri chronickom zlyhávaní zhrubne intima a média a cievy sa neskôr rozšíria. Doložené je len zhrubnutie steny tepničiek pri hypertenzii (v texte).</p>
+    </div>
+  </div>
+
+  <h3 class="sub-h" id="sub-9-2-4"><span class="n">9.2.4</span>Krv: objem a zloženie</h3>
+  <p>Tretia zložka obehu ho rozvráti dvoma spôsobmi – <b>zmení sa jej množstvo</b>, alebo <b>to, čo v nej je</b>:</p>
+
+  <table class="table keep" id="tab-9-3" style="margin:6px 0">
+    <thead><tr><th>Zmena</th><th>Čo znamená</th><th>Čím obeh zaťaží</th></tr></thead>
+    <tbody>
+      <tr><td><b><b>pletora</b></b></td><td>zmnoženie krvi</td><td>objemové preťaženie srdca</td></tr>
+      <tr><td><b><b>polyglobúlia</b></b></td><td>zmnoženie erytrocytov</td><td>hustá krv tečie ťažko (<a class="xref" href="08_miestne_poruchy_obehu.html#sec-8-5">→ 8.5</a>)</td></tr>
+      <tr><td><b><b>anémia</b></b></td><td>málo hemoglobínu – z nedostatočnej tvorby, zvýšeného rozpadu alebo strát</td><td>srdce musí prečerpať viac krvi, aby dodalo rovnako kyslíka – zlyhanie pri vysokom výdaji</td></tr>
+      <tr><td><b><b>hydrémia</b></b></td><td>zmnoženie tekutej zložky – nadmerný príjem, infúzie</td><td>objemové preťaženie, edémy</td></tr>
+      <tr><td><b><b>dehydratácia</b></b></td><td>úbytok vody – zahustená krv</td><td>menší návrat k srdcu, pri veľkej strate šok</td></tr>
+      <tr><td><b><b>hyperproteinémia</b></b></td><td>nadbytok bielkovín (myelóm)</td><td>hustá krv, poškodenie obličiek</td></tr>
+      <tr><td><b><b>hypoproteinémia</b></b></td><td>málo albumínu – straty alebo znížená tvorba</td><td>klesá onkotický tlak → edémy (<a class="xref" href="#sec-9-5">→ 9.5</a>)</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ══ 9.3 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-9-3"><span class="n">9.3</span><span>Srdce pod záťažou: dilatácia a hypertrofia</span></h2>
+<div class="sec-body">
+  <p>Skôr než srdce zlyhá, mení tvar – a spôsob zmeny prezrádza, <b>ako rýchlo záťaž prišla a aká je</b>. Sekcia pripomína adaptáciu srdca z kapitoly o progresívnych zmenách a dopĺňa, čo sa nájde pri pitve.</p>
+
+  <div class="box k-jadro aside keep">
+    <div class="label">Jadro</div>
+    <div class="body">
+      <p>Náhla záťaž → <b>dilatácia</b> (na hypertrofiu nie je čas). Trvalá tlaková → <b>koncentrická hypertrofia</b>; trvalá objemová → <b>excentrická</b>. Váha a hrúbka steny povedia, ktorá komora niesla záťaž: ľavá = veľký obeh, pravá = pľúca.</p>
+    </div>
+  </div>
+
+  <div class="box k-fyz keep">
+    <div class="label">Normálne</div>
+    <div class="body">
+      <p><b>Normálne srdce dospelého</b> váži 300–360 g u mužov a 250–320 g u žien; stena ľavej komory má 13–15 mm, pravej 3–5 mm. Čím viac krvi do komory pritečie a natiahne jej vlákna, tým silnejšie sa stiahne (Frankov-Starlingov zákon) – ale len po určitú hranicu.</p>
+    </div>
+  </div>
+
+  <table class="table keep" id="tab-9-4" style="margin:6px 0">
+    <thead><tr><th></th><th>Dilatácia</th><th>Koncentrická hypertrofia</th><th>Excentrická hypertrofia</th></tr></thead>
+    <tbody>
+      <tr><td><b><b>Kedy</b></b></td><td>náhle preťaženie – rozsiahly infarkt, masívna embólia do pľúc, akútna myokarditída</td><td>chronické <b>tlakové</b> preťaženie – hypertenzia, zúžená chlopňa</td><td>chronické <b>objemové</b> preťaženie – nedomykavá chlopňa, skrat, anémia; alebo vyčerpaná koncentrická hypertrofia</td></tr>
+      <tr><td><b><b>Čo sa deje</b></b></td><td>vlákna sa natiahnu, stena stenčí</td><td>sarkoméry pribúdajú vedľa seba → stena hrubne, dutina sa nezväčší</td><td>sarkoméry pribúdajú za sebou → dutina sa rozširuje, stena je primerane hrubá</td></tr>
+      <tr><td><b><b>Pri pitve</b></b></td><td>ochabnuté, guľovité srdce s tenkou stenou; viac vpravo, kde je stena tenšia</td><td>ťažké srdce s hrubou tuhou stenou a úzkou dutinou</td><td>ťažké a veľké srdce so širokou dutinou</td></tr>
+    </tbody>
+  </table>
+
+  <p>Ktorá komora je zmenená, ukazuje na príčinu: hypertrofia <b>ľavej</b> komory znamená záťaž vo veľkom obehu (hypertenzné srdce – <i>cor hypertonicum</i>), hypertrofia <b>pravej</b> záťaž v pľúcach (<i>cor pulmonale</i>), hypertrofia oboch buď dve príčiny, alebo záťaž prenesenú z ľavej strany cez pľúca na pravú. Hmotnosť nad 400 g u muža a 350 g u ženy je už hraničná; veľmi ťažké srdce so zhrubnutými oboma komorami sa tradične nazýva bovinné (<i>cor bovinum</i>). Mechanizmus hypertrofie, jej hranicu a bludný kruh, ktorým prechádza do zlyhania, rozoberá <a class="xref" href="06_progresivne_zmeny.html#sec-6-2">→ 6.2 Hypertrofia – tie isté bunky, viac hmoty</a>.</p>
+
+  <figure class="fig keep" id="fig-9-2" style="--fw:720px">
+    <img src="../assets/images/cor-pulmonale-gross.jpg" width="1280" height="1197" alt="Cor pulmonale. Stena pravej komory je zhrubnutá – dôkaz dlhodobo zvýšeného odporu v pľúcnom riečisku." loading="lazy">
+    <figcaption><b>Obr. 9.2 — Cor pulmonale.</b> Stena pravej komory je zhrubnutá – dôkaz dlhodobo zvýšeného odporu v pľúcnom riečisku. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Heart_-_cor_pulmonale-_right_ventricular_hypertrophy_(4351163511).jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Yale Rosen · Wikimedia Commons · CC BY-SA 2.0</a></figcaption>
+  </figure>
+
+  <div class="box k-detek aside keep">
+    <div class="label">Detekcia</div>
+    <div class="body">
+      <p><b>Pri pitve sa srdce váži a meria</b> – hmotnosť a hrúbka steny komôr sú objektívny doklad dlhodobého preťaženia. V mikroskope má hypertrofovaný kardiomyocyt hrubšie vlákno a veľké hranaté („krabicové“) jadro.</p>
+    </div>
+  </div>
+
+  <div class="box k-pocut aside keep">
+    <div class="label">Môžeš počuť</div>
+    <div class="body">
+      <p><b>Bovinné srdce.</b> Ako hranica sa uvádza hmotnosť nad 600 g. Názov je bežný, číslo sa nepodarilo doložiť.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 9.4 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-9-4"><span class="n">9.4</span><span>Zlyhanie srdca: krv sa hromadí pred komorou, ktorá nestačí</span></h2>
+<div class="sec-body">
+  <p><b>Zlyhanie srdca</b> je stav, keď srdce nedokáže prečerpať toľko krvi, koľko tkanivá potrebujú, alebo to dokáže len za cenu zvýšeného plniaceho tlaku. Má dva dôsledky, ktoré idú spolu: <b>dopredu</b> sa do tepien dostáva málo krvi, <b>dozadu</b> sa krv hromadí v žilách pred komorou, ktorá nestíha. Morfológiu určuje najmä to druhé – a líši sa podľa toho, ktorá komora zlyháva.</p>
+
+  <div class="box k-jadro aside keep">
+    <div class="label">Jadro</div>
+    <div class="body">
+      <p>Zlyhá <b>ľavá</b> komora → krv stojí v <b>pľúcach</b> (edém, dýchavica, siderofágy). Zlyhá <b>pravá</b> → krv stojí vo <b>veľkom obehu</b> (pečeň, slezina, opuchy, výpotky). Dlhá venostáza = hypoxia → atrofia → fibróza (<b>indurácia</b>). Ľavé zlyhanie časom strhne aj pravé.</p>
+    </div>
+  </div>
+
+  <p>Zlyhanie srdca sa triedi podľa štyroch na sebe nezávislých hľadísk:</p>
+
+  <table class="table keep" id="tab-9-5" style="margin:6px 0">
+    <thead><tr><th>Hľadisko</th><th>Delenie</th></tr></thead>
+    <tbody>
+      <tr><td><b><b>strana</b></b></td><td>ľavostranné · pravostranné · obojstranné</td></tr>
+      <tr><td><b><b>čas</b></b></td><td>akútne (hodiny až dni – dilatácia, edém pľúc, šok) · chronické (týždne až roky – hypertrofia, venostáza, indurácia)</td></tr>
+      <tr><td><b><b>výdaj</b></b></td><td>so zníženým výdajom (slabá pumpa – väčšina prípadov) · so zvýšeným výdajom (pumpa je zdravá, ale požiadavky priveľké: anémia, artériovenózne skraty, nadbytok tekutín)</td></tr>
+      <tr><td><b><b>stav</b></b></td><td>kompenzované (bez ťažkostí v pokoji) · dekompenzované</td></tr>
+    </tbody>
+  </table>
+
+  <div class="rev keep">
+    <div class="label"><span class="r">R</span>Revízia — zlyhanie srdca sa dnes triedi podľa ejekčnej frakcie</div>
+    <div class="body">
+      <p><b>Kedysi</b> sa rozlišovalo „systolické“ a „diastolické“ zlyhanie. <b>Dnes</b> sa používa ejekčná frakcia ľavej komory – podiel krvi, ktorý komora pri sťahu vypudí: zlyhanie so <b>zníženou</b> (≤ 40 %), <b>mierne zníženou</b> (41–49 %) a <b>zachovanou</b> ejekčnou frakciou (≥ 50 %). Pri zachovanej frakcii komora vypudzuje normálny podiel, ale je tuhá a zle sa plní – typicky hypertrofovaná komora hypertonika. Morfologický obraz venostázy je pri všetkých rovnaký.</p>
+    </div>
+  </div>
+
+  <h3 class="sub-h" id="sub-9-4-1"><span class="n">9.4.1</span>Kompenzácia a bod, v ktorom sa obráti proti srdcu</h3>
+  <p>Pokles výdaja telo vyrovnáva tými istými mechanizmami, ktorými odpovedá na stratu krvi – a práve to je problém, lebo krvi je dosť, slabá je pumpa.</p>
+
+  <p class="chain">↓ srdcový výdaj → baroreceptory a nedokrvená oblička → <b>sympatikus</b> (rýchlejší pulz, silnejší sťah, stiahnuté cievy) + <b>renín → angiotenzín → aldosterón</b> (oblička zadrží soľ a vodu) → viac krvi sa vracia k srdcu → komora sa viac naplní a podľa Frankovho-Starlingovho zákona vypudí viac → výdaj sa načas upraví</p>
+
+  <p>Zadržaná tekutina a stiahnuté cievy však zvyšujú záťaž srdca, ktoré je už poškodené: komora sa rozširuje, napätie jej steny rastie, sval spotrebuje viac kyslíka a slabne ďalej ⟳. <b>Bod zvratu</b> nastane, keď ďalšie plnenie už silu sťahu nezvýši – komora je za vrcholom Frankovej-Starlingovej krivky a každý mililiter zadržanej tekutiny sa prejaví len ako vyšší tlak v žilách, teda ako venostáza a edém. Z kompenzovaného zlyhania sa stáva dekompenzované; preto sa lieči práve tlmením sympatika a aldosterónu a odvodnením.</p>
+
+  <h3 class="sub-h" id="sub-9-4-2"><span class="n">9.4.2</span>Ľavostranné zlyhanie: krv stojí v pľúcach</h3>
+  <p>Ľavá komora zlyháva najčastejšie pre ischemickú chorobu srdca a hypertenziu, ďalej pre chyby aortálnej a mitrálnej chlopne. Krv, ktorú neprečerpá, sa hromadí v ľavej predsieni, pľúcnych žilách a kapilárach.</p>
+
+  <p class="chain">ľavá komora neprečerpá → ↑ tlak v ľavej predsieni a pľúcnych žilách → ↑ hydrostatický tlak v pľúcnych kapilárach → tekutina sa pretlačí do interstícia a keď lymfa nestíha, do alveol → <b>edém pľúc</b> → plyny sa cez tekutinu vymieňajú horšie → dýchavica, hypoxémia</p>
+
+  <div class="box k-morf keep">
+    <div class="label">Čo uvidíš – pľúca pri zlyhávaní ľavej komory</div>
+    <div class="body">
+      <ul>
+    <li><b>MA akútne (edém pľúc):</b> obe pľúca symetricky zväčšené a ťažké (jedna váži aj okolo 800 g), cestovité; z reznej plochy vyteká množstvo spenenej tekutiny – pena vzniká zmiešaním tekutiny so vzduchom. V pohrudnicových dutinách často číry výpotok (hydrotorax).</li>
+    <li><b>MA chronicky:</b> pľúca sú tuhšie a <b>hrdzavohnedé</b> – hrdzavá indurácia. Modré nie sú, lebo sú stále vo styku so vzduchom.</li>
+    <li><b>MI:</b> alveolové priehradky rozšírené, kapiláry v nich preplnené krvou; v alveolách ružová edémová tekutina a erytrocyty z prasknutých kapilár. Pri dlhom trvaní makrofágy plné hemosiderínu – <b>siderofágy</b> („bunky srdcového zlyhania“) – a zhrubnuté, väzivom spevnené priehradky.</li>
+  </ul>
+    </div>
+  </div>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>MA</b> makroskopický nález – voľným okom</span> <span class="sk"><b>MI</b> mikroskopický nález – svetelný mikroskop</span></div>
+  </div>
+
+  <figure class="fig keep" id="fig-9-3" style="--fw:720px">
+    <img src="../assets/images/lung-congestion-siderophages.jpg" width="969" height="1094" alt="Venostáza pľúc (H&amp;E). Kapiláry v alveolových priehradkách sú preplnené erytrocytmi; v alveole leží siderofág s hnedým pigmentom (šípka)." loading="lazy">
+    <figcaption><b>Obr. 9.3 — Venostáza pľúc (H&amp;E).</b> Kapiláry v alveolových priehradkách sú preplnené erytrocytmi; v alveole leží siderofág s hnedým pigmentom (šípka). <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Histopathology_of_pulmonary_congestion_and_siderophages.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Mikael Häggström, M.D. · Wikimedia Commons · CC0</a></figcaption>
+  </figure>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>HE, H&amp;E</b> hematoxylín–eozín, základné farbenie</span></div>
+  </div>
+
+  <div class="box k-detek aside keep">
+    <div class="label">Detekcia</div>
+    <div class="body">
+      <p><b>Perlsova reakcia</b> farbí hemosiderín v siderofágoch namodro (<a class="xref" href="00_uvod_metody.html#sec-0-6">→ 0.6 Farbenia a histochémia</a>) – odlíši ich od makrofágov s vdýchnutým uhlíkom, ktoré sú čierne a železo neobsahujú.</p>
+    </div>
+  </div>
+
+  <div class="box k-klin aside keep">
+    <div class="label">Klinika</div>
+    <div class="body">
+      <p><b>Od nálezu k pacientovi.</b> Tekutina v pľúcach = <b>dýchavica</b> – najprv pri námahe, potom v ľahu, keď sa krv z nôh presunie do hrudníka (<b>ortopnoe</b>; pacient spí na viacerých vankúšoch), a záchvatovito v noci (paroxyzmálna nočná dýchavica, starším názvom srdcová astma). Pri edéme pľúc pacient vykašliava spenené, niekedy ružové spútum; pri dlhej venostáze je spútum hrdzavé od siderofágov. Dopredu: únava, slabosť, zhoršená činnosť mozgu a obličiek.</p>
+    </div>
+  </div>
+
+  <h3 class="sub-h" id="sub-9-4-3"><span class="n">9.4.3</span>Pravostranné zlyhanie: krv stojí vo veľkom obehu</h3>
+  <p>Pravá komora zlyháva najčastejšie preto, že zlyhala ľavá a tlak sa preniesol cez pľúca; samostatne zlyháva pri chorobách pľúc a ich ciev (cor pulmonale) a pri niektorých chlopňových a vrodených chybách. Krv sa hromadí v dutých žilách a vo všetkom, čo do nich ústi – následky sa preto delia podľa orgánu:</p>
+
+  <table class="table keep" id="tab-9-6" style="margin:6px 0">
+    <thead><tr><th>Orgán</th><th>Čo uvidíš</th><th>Prečo</th></tr></thead>
+    <tbody>
+      <tr><td><b><b>pečeň</b></b></td><td>zväčšená, ťažká (okolo 2 000 g a viac), s tupým okrajom; na reze <b>muškátová kresba</b> – tmavočervené bodky a sieť striedané žltkastými políčkami</td><td>krv z pečene odteká centrálnymi žilami do dolnej dutej žily; pri venostáze sa preplnia sínusoidy v strede lalôčika, kde je krv aj tak najchudobnejšia na kyslík – hepatocyty tam atrofujú a odumierajú (tmavé), na obvode lalôčika prežívajú, ale tukovatejú (žlté; <a class="xref" href="02_dystrofie.html#sub-2-3-1">→ 2.3.1 Steatóza (stukovatenie)</a>)</td></tr>
+      <tr><td><b><b>slezina</b></b></td><td>zväčšená (500–600 g; norma 150–200 g), tuhá, tmavomodročervená – <b>cyanotická indurácia</b></td><td>preplnené sínusy, neskôr zmnožené väzivo</td></tr>
+      <tr><td><b><b>obličky</b></b></td><td>zväčšené, tuhé, tmavofialové; bielkovina v moči</td><td>venostáza a znížený prietok</td></tr>
+      <tr><td><b><b>tráviaca rúra</b></b></td><td>prekrvená opuchnutá sliznica</td><td>pacient nemá chuť do jedla, nadúva ho</td></tr>
+      <tr><td><b><b>podkožie a dutiny</b></b></td><td>opuchy, výpotky (ascites, hydrotorax, hydroperikard) až anasarka</td><td><a class="xref" href="#sec-9-5">→ 9.5</a></td></tr>
+      <tr><td><b><b>mozog</b></b></td><td>ťažší, opuchnutý, prekrvený</td><td>venostáza a hypoxia</td></tr>
+    </tbody>
+  </table>
+
+  <p>Pečeň ukazuje aj <b>vývoj v čase</b>:</p>
+
+  <table class="table keep" id="tab-9-7" style="margin:6px 0">
+    <thead><tr><th>Trvanie</th><th>Voľným okom</th><th>V mikroskope</th></tr></thead>
+    <tbody>
+      <tr><td><b>akútna venostáza (hodiny až dni)</b></td><td>zväčšená, tmavočervená, z rezu vyteká krv</td><td>rozšírené sínusoidy v strede lalôčikov plné erytrocytov</td></tr>
+      <tr><td><b>chronická venostáza (týždne až mesiace)</b></td><td><b>muškátová pečeň</b></td><td>atrofia až nekróza hepatocytov okolo centrálnej žily, steatóza na obvode, siderofágy</td></tr>
+      <tr><td><b>roky</b></td><td>menšia, tuhá, jemne zrnitá – <b>kardiálna fibróza</b> („srdcová cirhóza“)</td><td>väzivo okolo centrálnych žíl, ktoré sa postupne spája medzi lalôčikmi</td></tr>
+    </tbody>
+  </table>
+
+  <div class="fig-row">
+  <figure class="fig keep" id="fig-9-4" style="--ar:1.50;--fw:720px">
+    <img src="../assets/images/nutmeg-liver-gross.jpg" width="1280" height="853" alt="Muškátová pečeň pri chronickom zlyhávaní pravej komory. Tmavočervené stredy lalôčikov sa striedajú so svetlejšími okrajmi – kresba pripomína rez muškátovým orieškom." loading="lazy">
+    <figcaption><b>Obr. 9.4 — Muškátová pečeň pri chronickom zlyhávaní pravej komory.</b> Tmavočervené stredy lalôčikov sa striedajú so svetlejšími okrajmi – kresba pripomína rez muškátovým orieškom. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Liver._chronic_passive_congestion.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Narraburra · Wikimedia Commons · CC0</a></figcaption>
+  </figure>
+  <figure class="fig keep" id="fig-9-5" style="--ar:1.60;--fw:720px">
+    <img src="../assets/images/congestive-hepatopathy-trichrome.jpg" width="1280" height="800" alt="Dlhotrvajúca venostáza pečene (trichróm). Okolo centrálnych žíl sú rozšírené sínusoidy a pribúda modro sfarbené väzivo – začiatok kardiálnej fibrózy." loading="lazy">
+    <figcaption><b>Obr. 9.5 — Dlhotrvajúca venostáza pečene (trichróm).</b> Okolo centrálnych žíl sú rozšírené sínusoidy a pribúda modro sfarbené väzivo – začiatok kardiálnej fibrózy. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Congestive_hepatopathy_intermed_mag.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Nephron · Wikimedia Commons · CC BY-SA 3.0</a></figcaption>
+  </figure>
+  </div>
+
+  <div class="box k-klin aside keep">
+    <div class="label">Klinika</div>
+    <div class="body">
+      <p><b>Od pacienta k nálezu.</b> Preplnené krčné žily, zväčšená bolestivá pečeň, opuchy členkov, ktoré sa večer zhoršujú, pribúdanie na váhe (zadržaná voda), ascites. Spoločné pre zlyhanie oboch komôr je nočné močenie (<b>nyktúria</b> – v ľahu sa tekutina z opuchov vracia do obehu a obličky ju vylúčia) a znaky aktivovaného sympatika – rýchly pulz, studená spotená koža. <b>Patológ</b> pri pitve rozlišuje, čo je základná choroba (napr. hypertenzia s hypertrofiou ľavej komory), čo jej následok (venostáza pľúc, pečene) a čo bezprostredná príčina smrti (edém pľúc, arytmia, embólia).</p>
+    </div>
+  </div>
+
+  <h3 class="sub-h" id="sub-9-4-4"><span class="n">9.4.4</span>Čo má venostáza spoločné: cyanóza a indurácia</h3>
+  <p>Bez ohľadu na orgán sa dlhá venostáza prejaví dvoma znakmi – <b>farbou</b> a <b>konzistenciou</b> –, ktoré majú spoločnú príčinu: krv stojí a odovzdá viac kyslíka než obvykle.</p>
+
+  <ul>
+    <li><b>Cyanóza</b> je modrasté sfarbenie kože a slizníc, viditeľné, keď je v krvi kapilár aspoň 50 g/l hemoglobínu bez kyslíka. Pri zlyhaní srdca je najprv na okrajových častiach tela – končeky prstov, pery, ušné lalôčiky –, kde krv tečie najpomalšie. Dlhotrvajúca cyanóza prestavia koncové články prstov na <b>paličkovité</b>.</li>
+    <li><b>Indurácia</b> je stvrdnutie orgánu drobnou fibrózou: hypoxia poškodzuje bunky, makrofágy upratujú výrony a miesto zaniknutého tkaniva nahrádza väzivo (<a class="xref" href="05_hojenie.html#sec-5-9">→ 5.9 Chronický zápal – keď poškodenie a oprava bežia naraz</a>). V slezine, obličkách a pečeni je indurácia <b>cyanotická</b>; v pľúcach <b>hrdzavá</b>, lebo tam krv ostáva okysličená a farbu dáva hemosiderín.</li>
+  </ul>
+
+  <div class="box k-pozor aside keep">
+    <div class="label">Pozor</div>
+    <div class="body">
+      <p><b>Anemický pacient cyanotický nebude</b>, ani keď je ťažko hypoxický – nemá dosť hemoglobínu, aby ho 50 g/l bolo bez kyslíka. Naopak pri polyglobúlii sa cyanóza objaví ľahko. Cyanóza teda meria množstvo odkysličeného hemoglobínu, nie hĺbku hypoxie.</p>
+    </div>
+  </div>
+
+  <h3 class="sub-h" id="sub-9-4-5"><span class="n">9.4.5</span>Od ľavej komory k obom: postup zlyhania</h3>
+  <p>Obeh je jeden okruh, takže zlyhanie jednej polovice srdca skôr či neskôr zaťaží druhú. Najčastejší sled vychádza z ľavej komory:</p>
+
+  <p class="chain">záťaž ľavej komory (hypertenzia, chlopňa, ischémia) → <b>hypertrofia ľavej komory</b> → vyčerpanie: komora sa rozširuje a zlyháva → krv stojí v pľúcach → trvalo zvýšený tlak v pľúcnych cievach, ktorých stena hrubne (<b>pľúcna hypertenzia</b>) → <b>hypertrofia pravej komory</b> → zlyhanie pravej komory → <b>obojstranné zlyhanie</b> s rozšírením oboch komôr</p>
+
+  <p>Hranica reverzibility leží na začiatku tohto reťazca: hypertrofia sama je v princípe vratná, ak záťaž zmizne (vyliečená hypertenzia, vymenená chlopňa); po zániku kardiomyocytov a ich náhrade väzivom už nie.</p>
+</div>
+
+<!-- ══ 9.5 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-9-5"><span class="n">9.5</span><span>Edém – tekutina mimo ciev a buniek</span></h2>
+<div class="sec-body">
+  <p><b>Edém</b> (opuch) je nahromadenie tekutiny v medzibunkovom priestore tkaniva; to isté v telovej dutine je výpotok. Voda tvorí 50–70 % hmotnosti tela: dve tretiny sú v bunkách, zvyšok mimo nich – a z neho len malá časť v plazme (asi 5 % všetkej vody). Edém je teda presun tekutiny z plazmy do interstícia, a keďže obe oddeľuje len stena kapiláry, všetky jeho druhy sa dajú odvodiť z toho, <b>ktorá zo síl na tejto stene sa zmenila</b>.</p>
+
+  <div class="box k-jadro aside keep">
+    <div class="label">Jadro</div>
+    <div class="body">
+      <p>Tekutinu z kapiláry <b>vytláča hydrostatický tlak</b>, v cieve ju <b>drží albumín</b>, prebytok <b>odvádza lymfa</b>, stena má byť <b>tesná</b>. Edém = porucha jednej z týchto štyroch vecí; zosilňuje ho oblička zadržiavaním soli a vody.</p>
+    </div>
+  </div>
+
+  <div class="box k-mech keep">
+    <div class="label">Mechanizmus – štyri príčiny edému</div>
+    <div class="body">
+      <ul>
+    <li><b>↑ hydrostatický tlak v kapilárach</b> – krv neodteká: miestne pri uzávere žily (<a class="xref" href="08_miestne_poruchy_obehu.html#sec-8-7">→ 8.7 Hyperémia – priveľa krvi v riečisku</a>), celkovo pri zlyhávaní srdca. Tekutina je chudobná na bielkoviny – <b>transsudát</b>.</li>
+    <li><b>↓ onkotický tlak plazmy</b> – chýba albumín, ktorý vodu v cieve drží: stráca sa močom (nefrotický syndróm), alebo sa netvorí (cirhóza pečene). Tiež transsudát.</li>
+    <li><b>Viazne lymfa</b> – tekutina, ktorá sa z kapilár prefiltruje, sa nemá kadiaľ vrátiť: <b>lymfedém</b>. V tkanive ostáva aj bielkovina, ktorú lymfa odvádza.</li>
+    <li><b>Netesná stena</b> – pri zápale mediátory otvoria štrbiny medzi bunkami endotelu a unikajú aj bielkoviny: <b>exsudát</b> (<a class="xref" href="03_zapal_vseobecne.html#sec-3-3">→ 3.3 Cievna fáza – exsudácia</a>).</li>
+    <li><b>Zosilňovač: zadržiavanie soli a vody.</b> Pri zlyhaní srdca aj pri hypoproteinémii je oblička horšie prekrvená → renín, angiotenzín, aldosterón → zadržaná soľ a voda → ešte viac tekutiny, ktorá sa pretlačí do tkanív. Samostatne pri chorobách obličiek, ktoré soľ nevylučujú.</li>
+  </ul>
+    </div>
+  </div>
+
+  <figure class="chart keep" id="fig-edem-sily">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 308" role="img" aria-labelledby="tfigedemsily">
+<title id="tfigedemsily">Štyri sily na stene kapiláry a štyri druhy edému: hydrostatický tlak vytláča tekutinu von (zvýšený pri venostáze – kardiálny edém), onkotický tlak albumínu ju drží v cieve (znížený pri hypoproteinémii), lymfa odvádza prefiltrovanú tekutinu (upchatá – lymfedém), stena má byť tesná (priepustná pri zápale – exsudát); oblička zadržiavaním soli a vody edém zosilňuje</title>
+<defs><marker id="mfigedemsily" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker></defs>
+
+<!-- kapilára -->
+<rect class="zone-r" x="150" y="112" width="420" height="52" rx="26"/>
+<rect class="stk-acc2" x="150" y="112" width="420" height="52" rx="26"/>
+<text class="lblb" x="360" y="134" text-anchor="middle">KAPILÁRA</text>
+<text class="sub" x="360" y="150" text-anchor="middle">krv: voda, soli, albumín</text>
+<text class="cap" x="360" y="194" text-anchor="middle">INTERSTÍCIUM</text>
+
+<!-- 1 hydrostatický tlak -->
+<path class="arw" d="M215,112 L215,84" marker-end="url(#mfigedemsily)" style="stroke-width:2.2"/>
+<rect class="bx-c" x="8" y="6" width="330" height="74" rx="3"/>
+<text class="lblb" x="173" y="24" text-anchor="middle">1 · HYDROSTATICKÝ TLAK vytláča tekutinu von</text>
+<text class="sub" x="173" y="40" text-anchor="middle">stúpne, keď krv neodteká: uzáver žily, zlyhanie srdca</text>
+<text class="lblb" x="173" y="58" text-anchor="middle">→ venostatický (kardiálny) edém</text>
+<text class="sub" x="173" y="72" text-anchor="middle">transsudát · podľa gravitácie</text>
+
+<!-- 2 onkotický tlak -->
+<path class="arw" d="M505,84 L505,112" marker-end="url(#mfigedemsily)" style="stroke-width:2.2"/>
+<rect class="bx-c" x="382" y="6" width="330" height="74" rx="3"/>
+<text class="lblb" x="547" y="24" text-anchor="middle">2 · ONKOTICKÝ TLAK (albumín) drží vodu v cieve</text>
+<text class="sub" x="547" y="40" text-anchor="middle">klesne, keď albumín chýba: nefrotický syndróm, cirhóza</text>
+<text class="lblb" x="547" y="58" text-anchor="middle">→ hypoproteinemický edém</text>
+<text class="sub" x="547" y="72" text-anchor="middle">transsudát · najprv okolo očí</text>
+
+<!-- 3 lymfa -->
+<path class="arw" d="M505,164 L505,208" marker-end="url(#mfigedemsily)" style="stroke-width:2.2"/>
+<rect class="bx-c" x="382" y="210" width="330" height="74" rx="3"/>
+<text class="lblb" x="547" y="228" text-anchor="middle">3 · LYMFA odvádza, čo sa prefiltrovalo</text>
+<text class="sub" x="547" y="244" text-anchor="middle">viazne: odstránené uzliny, nádor, jazvy, filarióza</text>
+<text class="lblb" x="547" y="262" text-anchor="middle">→ lymfedém</text>
+<text class="sub" x="547" y="276" text-anchor="middle">bohatý na bielkoviny · časom tuhý (fibróza)</text>
+
+<!-- 4 stena -->
+<path class="arwd" d="M215,164 L215,208" marker-end="url(#mfigedemsily)"/>
+<rect class="bx-c" x="8" y="210" width="330" height="74" rx="3"/>
+<text class="lblb" x="173" y="228" text-anchor="middle">4 · STENA má byť tesná</text>
+<text class="sub" x="173" y="244" text-anchor="middle">mediátory zápalu otvoria štrbiny v endoteli</text>
+<text class="lblb" x="173" y="262" text-anchor="middle">→ zápalový edém</text>
+<text class="sub" x="173" y="276" text-anchor="middle">exsudát s bielkovinami · teplý, červený</text>
+
+<!-- zosilňovač -->
+<text class="lbl-m" x="360" y="302" text-anchor="middle">zosilňovač: nedokrvená oblička → aldosterón → zadržaná soľ a voda</text>
+</svg>
+    <figcaption><b>Obr. 9.6 — Štyri sily na stene kapiláry a štyri druhy edému.</b> Každý edém je porucha jednej z nich; oblička ho zadržiavaním soli a vody zosilňuje.</figcaption>
+  </figure>
+
+  <div class="rev keep">
+    <div class="label"><span class="r">R</span>Revízia — kapilára tekutinu späť nevstrebáva</div>
+    <div class="body">
+      <p><b>Kedysi</b> sa učilo, že tekutina sa na tepnovom konci kapiláry filtruje von a na žilovom konci ju onkotický tlak nasáva späť. <b>Dnes</b> (revidovaný Starlingov princíp) sa za polopriepustnú bariéru považuje vrstva glykokalyxu na vnútornom povrchu endotelu: vo väčšine tkanív kapilára po celej dĺžke mierne filtruje, spätné vstrebávanie je len prechodné a prefiltrovaná tekutina sa do krvi vracia <b>lymfou</b>. Onkotický tlak filtráciu brzdí, ale neobracia. Vysvetľuje to, prečo podanie bielkovín do žily opuch neodstráni a prečo je lymfa pre rovnováhu tekutín nevyhnutná.</p>
+    </div>
+  </div>
+
+  <p>Druhy edému sa na pacientovi dajú rozoznať podľa toho, kde sa objavia a ako sa správajú:</p>
+
+  <table class="table keep" id="tab-9-8" style="margin:6px 0">
+    <thead><tr><th></th><th>Kardiálny (venostatický)</th><th>Hypoproteinemický</th><th>Lymfedém</th><th>Zápalový</th></tr></thead>
+    <tbody>
+      <tr><td><b><b>Príčina</b></b></td><td>↑ hydrostatický tlak + zadržiavanie soli</td><td>↓ albumín</td><td>upchaté alebo odstránené lymfatické cesty</td><td>↑ priepustnosť steny</td></tr>
+      <tr><td><b><b>Tekutina</b></b></td><td>transsudát</td><td>transsudát</td><td>bohatá na bielkoviny</td><td>exsudát</td></tr>
+      <tr><td><b><b>Kde</b></b></td><td>podľa gravitácie: členky u chodiaceho, kríže u ležiaceho; výpotky v dutinách</td><td>všade, najskôr v riedkom väzive – <b>okolo očí</b></td><td>jedna končatina alebo jej časť</td><td>v mieste zápalu</td></tr>
+      <tr><td><b><b>Správanie</b></b></td><td>po zatlačení ostane jamka</td><td>po zatlačení ostane jamka</td><td>spočiatku mäkký, neskôr <b>tuhý</b> – bielkoviny dráždia väzivo k fibróze (<b>elefantiáza</b>)</td><td>teplý, červený, bolestivý</td></tr>
+      <tr><td><b><b>Typicky</b></b></td><td>zlyhanie pravej komory</td><td>nefrotický syndróm, cirhóza</td><td>po odstránení pazuchových uzlín, pri nádore v uzlinách; v trópoch filarióza</td><td><a class="xref" href="04_typy_zapalu.html#sec-4-3">→ 4.3 Serózny zápal</a></td></tr>
+    </tbody>
+  </table>
+
+  <p>Rozsiahly edém celého podkožia sa nazýva <b>anasarka</b>; transsudát v dutinách <b>hydrotorax</b> (pohrudnica), <b>hydroperikard</b> (osrdcovník) a <b>ascites</b> (brušná dutina). Jamka po zatlačení sa objaví až neskoro – interstícium pojme niekoľko litrov tekutiny bez viditeľného opuchu, takže prvým znakom zadržiavania tekutín je vzostup hmotnosti.</p>
+
+  <div class="fig-row">
+  <figure class="fig keep" id="fig-9-7" style="--ar:0.75;--fw:720px">
+    <img src="../assets/images/pitting-edema.jpg" width="1280" height="1707" alt="Edém predkolenia s jamkou po zatlačení. Tekutina v interstíciu sa dá prstom odtlačiť – znak transsudátu." loading="lazy">
+    <figcaption><b>Obr. 9.7 — Edém predkolenia s jamkou po zatlačení.</b> Tekutina v interstíciu sa dá prstom odtlačiť – znak transsudátu. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Pitting_Edema2008.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>James Heilman, MD · Wikimedia Commons · CC BY-SA 3.0</a></figcaption>
+  </figure>
+  <figure class="fig keep" id="fig-9-8" style="--ar:0.75;--fw:720px">
+    <img src="../assets/images/lymphedema-leg.jpg" width="1280" height="1707" alt="Lymfedém dolnej končatiny. Dlhotrvajúci opuch z viaznucej lymfy; tkanivo časom tuhne väzivom." loading="lazy">
+    <figcaption><b>Obr. 9.8 — Lymfedém dolnej končatiny.</b> Dlhotrvajúci opuch z viaznucej lymfy; tkanivo časom tuhne väzivom. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Lymphedema.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Bobjgalindo · Wikimedia Commons · CC BY-SA 4.0</a></figcaption>
+  </figure>
+  </div>
+
+  <div class="box k-klin aside keep">
+    <div class="label">Klinika</div>
+    <div class="body">
+      <p><b>Čo edém spôsobí, závisí od miesta.</b> V podkoží je skôr signálom choroby srdca, obličiek alebo pečene a zhoršuje hojenie rán; v pľúcach bráni výmene plynov a v mozgu, ktorý je v pevnej lebke, zvyšuje vnútrolebkový tlak – tam ohrozuje život. Opuch jednej nohy je trombóza alebo lymfedém, kým sa nedokáže opak; opuch oboch má príčinu celkovú.</p>
+    </div>
+  </div>
+
+  <p>Opakom edému je <b>dehydratácia</b> – úbytok vody z tela (malý príjem, hnačky a vracanie, potenie, popáleniny, straty močom pri cukrovke). Krv sa zahustí a horšie tečie, tkanivá strácajú napätie: koža ostáva po stlačení v riase, oči sú vpadnuté, črty tváre zaostrené a serózne blany pri pitve lepkavé.</p>
+</div>
+
+<!-- ══ 9.6 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-9-6"><span class="n">9.6</span><span>Kolaps a šok – keď obeh zlyhá náhle</span></h2>
+<div class="sec-body">
+  <p>Náhly pokles tlaku má dve podoby, ktoré vyzerajú na začiatku podobne, ale končia opačne. <b>Kolaps</b> je krátky výpadok regulácie, po ktorom sa obeh sám upraví a v orgánoch neostane nič. <b>Šok</b> je zlyhanie obehu, ktoré trvá, poškodzuje orgány a bez zásahu sa prehlbuje. Rozdiel je v jedinom: či sa obeh vráti skôr, než bunky začnú z nedostatku kyslíka odumierať.</p>
+
+  <div class="box k-jadro aside keep">
+    <div class="label">Jadro</div>
+    <div class="body">
+      <p><b>Šok</b> = prietok tkanivami nestačí bunkám na kyslík. Štyri príčiny: <b>málo krvi</b>, <b>slabá pumpa</b>, <b>prekážka</b>, <b>príliš široké cievy</b>. Najprv kompenzácia (centralizácia obehu), potom acidóza cievy otvorí a kruh sa uzavrie ⟳ → zlyhanie orgánov.</p>
+    </div>
+  </div>
+
+  <h3 class="sub-h" id="sub-9-6-1"><span class="n">9.6.1</span>Kolaps: mozog na chvíľu bez krvi</h3>
+  <p><b>Kolaps</b> (synkopa) je prechodná strata vedomia a svalového napätia zo zníženého prietoku krvi mozgom, ktorá sa sama upraví – pacient padne, tým sa mozog dostane na úroveň srdca a prietok sa obnoví. Vzniká dvoma cestami, ktoré sa líšia tým, <b>či zlyhalo stiahnutie ciev, alebo ho reflex sám zrušil</b>:</p>
+
+  <ul>
+    <li><b>ortostatický</b> – po postavení alebo pri dlhom nehybnom státí ostane krv v žilách dolných končatín (nepracuje svalová pumpa a cievy sa nestiahnu dosť rýchlo) → menší návrat k srdcu → menší výdaj → mozog,</li>
+    <li><b>vazovagálny</b> – bolesť, strach, pohľad na krv alebo podráždenie zakončení blúdivého nervu spustia reflex, ktorý naraz spomalí srdce a rozšíri cievy.</li>
+  </ul>
+
+  <p>Od šoku ho odlišuje trvanie (sekundy až minúty) a to, že po ňom neostáva funkčné ani morfologické poškodenie.</p>
+
+  <div class="box k-pocut aside keep">
+    <div class="label">Môžeš počuť</div>
+    <div class="body">
+      <p><b>Odkiaľ sa dá vyvolať vazovagálny reflex.</b> Úderom na nadbrušie (plexus solaris), poranením semenníkov, podráždením zvukovodu. Mechanizmus reflexu je doložený, tieto miesta nie.</p>
+    </div>
+  </div>
+
+  <h3 class="sub-h" id="sub-9-6-2"><span class="n">9.6.2</span>Šok: štyri príčiny</h3>
+  <p><b>Šok</b> je stav, pri ktorom prietok krvi tkanivami klesne natoľko, že bunky trpia nedostatkom kyslíka. Príčiny sa delia podľa toho, <b>ktorá zložka obehu zlyhala</b> – tie isté tri ako na začiatku kapitoly, pričom pumpa môže zlyhať sama alebo pre prekážku:</p>
+
+  <table class="table keep" id="tab-9-9" style="margin:6px 0">
+    <thead><tr><th>Typ</th><th>Čo zlyhalo</th><th>Príčiny</th><th>Čím sa prezradí</th></tr></thead>
+    <tbody>
+      <tr><td><b><b>hypovolemický</b></b></td><td>náplň – málo krvi alebo plazmy</td><td>krvácanie; popáleniny (strata plazmy); hnačky, vracanie, ťažká dehydratácia</td><td>studená, bledá, lepkavá koža, rýchly slabý pulz, prázdne žily</td></tr>
+      <tr><td><b><b>kardiogénny</b></b></td><td>pumpa – sval alebo rytmus</td><td>najčastejšie rozsiahly infarkt myokardu; ruptúra steny alebo chlopne, ťažká arytmia, myokarditída</td><td>rovnaká koža, ale <b>preplnené</b> krčné žily a edém pľúc</td></tr>
+      <tr><td><b><b>obštrukčný</b></b></td><td>pumpa je zdravá, ale krv cez ňu neprejde</td><td>masívna embólia do pľúc, tamponáda srdca, pretlakový pneumotorax</td><td>preplnené krčné žily; náhly začiatok</td></tr>
+      <tr><td><b><b>distribučný</b></b></td><td>potrubie – cievy sa rozšírili a krv ich nevyplní</td><td><b>septický</b> (najčastejší), <b>anafylaktický</b>, <b>neurogénny</b></td><td>na začiatku <b>teplá, červená</b> koža</td></tr>
+    </tbody>
+  </table>
+
+  <p>Tri podoby distribučného šoku majú rovnaký výsledok – riečisko je zrazu väčšie než objem krvi („vykrvácanie do vlastných ciev“) –, ale inú príčinu rozšírenia (zriedkavejšie ho vyvolá aj nedostatočnosť nadobličiek alebo predávkovanie liekmi, ktoré cievy rozširujú):</p>
+
+  <ul>
+    <li><b>septický</b> – mediátory zápalu pri infekcii rozšíria cievy a zvýšia ich priepustnosť v celom tele naraz; pridáva sa útlm srdca a DIC (<a class="xref" href="03_zapal_vseobecne.html#sub-3-6-2">→ 3.6.2 SIRS a sepsa – keď sa obrana obráti proti telu</a>, <a class="xref" href="08_miestne_poruchy_obehu.html#sub-8-9-5">→ 8.9.5 DIC – trombóza a krvácanie naraz</a>),</li>
+    <li><b>anafylaktický</b> – alergén u senzibilizovaného človeka cez IgE vysype žírne bunky; histamín rozšíri cievy a otvorí ich stenu v priebehu minút,</li>
+    <li><b>neurogénny</b> – poranenie miechy (najmä krčnej a hornej hrudnej) preruší sympatikové dráhy k cievam; cievy ochabnú a srdce, ktoré ostalo len pod vplyvom blúdivého nervu, sa spomalí (bradykardia) – šok s <b>pomalým</b> pulzom.</li>
+  </ul>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>DIC</b> diseminovaná intravaskulárna koagulácia</span> <span class="sk"><b>SIRS</b> syndróm systémovej zápalovej odpovede</span> <span class="sk"><b>IgE</b> imunoglobulín E – protilátka alergických reakcií</span></div>
+  </div>
+
+  <div class="rev keep">
+    <div class="label"><span class="r">R</span>Revízia — obštrukčný šok je samostatný typ</div>
+    <div class="body">
+      <p><b>Kedysi</b> sa rozlišovali tri typy šoku a embólia do pľúc či tamponáda sa radili ku kardiogénnemu. <b>Dnes</b> sa uvádzajú štyri: obštrukčný šok je vyčlenený, lebo srdcový sval je pri ňom zdravý a liečba je iná – treba odstrániť prekážku (rozpustiť embolus, vypustiť osrdcovník), nie podporovať sval.</p>
+    </div>
+  </div>
+
+  <div class="box k-pocut aside keep">
+    <div class="label">Môžeš počuť</div>
+    <div class="body">
+      <p><b>Vazogénny šok.</b> Štvrtá podoba distribučného šoku popri septickom, anafylaktickom a neurogénnom – rozšírenie ciev po liekoch. Že lieky rozširujúce cievy môžu šok vyvolať, doložené je; samostatný názov nie.</p>
+    </div>
+  </div>
+
+  <h3 class="sub-h" id="sub-9-6-3"><span class="n">9.6.3</span>Od kompenzácie k bludnému kruhu</h3>
+  <p>Šok prebieha v troch štádiách, ktoré na seba nadväzujú; hranice medzi nimi určuje to, <b>či kompenzácia ešte stačí</b> a či je poškodenie buniek vratné.</p>
+
+  <table class="table keep" id="tab-9-10" style="margin:6px 0">
+    <thead><tr><th>Štádium</th><th>Čo sa deje</th><th>Čo vidno</th><th>Vratnosť</th></tr></thead>
+    <tbody>
+      <tr><td><b><b>kompenzované</b></b></td><td>sympatikus a katecholamíny zrýchlia srdce a stiahnu cievy kože, svalov, čriev a obličiek; renín–angiotenzín–aldosterón a antidiuretický hormón zadržia soľ a vodu; tekutina sa z tkanív presúva do ciev</td><td>tlak ešte drží; rýchly pulz, bledá studená koža, málo moču</td><td>úplná</td></tr>
+      <tr><td><b><b>progresívne</b></b></td><td>tkanivá bez kyslíka prechádzajú na anaeróbnu glykolýzu → laktát → acidóza; kyslé prostredie a mediátory otvoria drobné tepničky, kompenzácia padá</td><td>tlak klesá, vedomie sa kalí, moč ustáva; laktát v krvi stúpa</td><td>ešte možná</td></tr>
+      <tr><td><b><b>ireverzibilné</b></b></td><td>bunky odumierajú; rozšírené venuly zadržia krv, poškodený endotel spúšťa zrážanie, cez nedokrvenú črevnú stenu prechádzajú baktérie</td><td>zlyhanie obličiek, pľúc, srdca, pečene – multiorgánové zlyhanie</td><td>nie</td></tr>
+    </tbody>
+  </table>
+
+  <p>Zmysel prvého štádia je <b>centralizácia obehu</b>: cievy mozgu a srdca sa na povel sympatika sťahujú oveľa menej než ostatné, takže zmenšený výdaj sa presmeruje k dvom orgánom, ktoré neznesú ani minúty bez kyslíka. Cenou je ischémia všetkého ostatného – a tá po čase kompenzáciu zničí (Obr. 9.9):</p>
+
+  <p class="chain">↓ tlak → stiahnutie periférnych ciev → tkanivá bez kyslíka → laktát, acidóza, rozpad buniek → mediátory a kyslé prostredie <b>rozšíria</b> tepničky a zvýšia priepustnosť kapilár → krv stojí v mikrocirkulácii a tekutina uniká do tkanív → ešte menší návrat k srdcu → ↓ výdaj; nedokrvený myokard slabne ⟳ → ↓ tlak</p>
+
+  <p><b>Bod zvratu</b> je chvíľa, keď tlak klesne pod hodnotu, pri ktorej si mozog a srdce ešte vedia prietok udržať samy: od nej slabne aj sval, ktorý má obeh zachrániť, a doplnenie tekutín už tlak nezdvihne.</p>
+
+  <figure class="chart keep" id="fig-kruh-sok">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 316" role="img" aria-labelledby="tfigkruhsok">
+<title id="tfigkruhsok">Bludný kruh šoku: pokles tlaku vyvolá stiahnutie periférnych ciev, tkanivá bez kyslíka tvoria laktát a acidóza cievy znova rozšíri a zvýši ich priepustnosť, krv stojí v mikrocirkulácii a tekutina uniká do tkanív, k srdcu sa vracia menej krvi a výdaj ďalej klesá; bod zvratu nastáva, keď tlak nestačí ani na prekrvenie srdca a mozgu</title>
+<defs><marker id="mfigkruhsok" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker></defs>
+<rect class="bx-c" x="20" y="0" width="190" height="26" rx="3" stroke="var(--color-accent-600)"/>
+<text class="lblb" x="115" y="17" text-anchor="middle">príčina šoku · 9.6.2</text>
+<path class="arw" d="M115,26 L115,42" marker-end="url(#mfigkruhsok)"/>
+<rect class="bx-k" x="20" y="44" width="190" height="50" rx="3"/>
+<text class="lblb" x="115" y="66" text-anchor="middle">↓ srdcový výdaj,</text>
+<text class="lblb" x="115" y="80" text-anchor="middle">↓ tlak</text>
+<rect class="bx-k" x="490" y="44" width="190" height="50" rx="3"/>
+<text class="lblb" x="585" y="66" text-anchor="middle">periférne cievy sa stiahnu</text>
+<text class="lblb" x="585" y="80" text-anchor="middle">(centralizácia obehu)</text>
+<rect class="bx-k" x="490" y="194" width="190" height="50" rx="3"/>
+<text class="lblb" x="585" y="216" text-anchor="middle">tkanivá bez kyslíka:</text>
+<text class="lblb" x="585" y="230" text-anchor="middle">laktát, acidóza</text>
+<rect class="bx-k" x="20" y="194" width="190" height="50" rx="3"/>
+<text class="lblb" x="115" y="216" text-anchor="middle">cievy sa rozšíria a prepúšťajú,</text>
+<text class="lblb" x="115" y="230" text-anchor="middle">krv stojí v mikrocirkulácii</text>
+<path class="arw" d="M212,69 L488,69" marker-end="url(#mfigkruhsok)"/>
+<path class="arw" d="M585,96 L585,192" marker-end="url(#mfigkruhsok)"/>
+<path class="arw" d="M488,219 L212,219" marker-end="url(#mfigkruhsok)"/>
+<path class="arw" d="M115,192 L115,96" marker-end="url(#mfigkruhsok)" style="stroke-width:2.2"/>
+<text class="sub" x="350" y="63" text-anchor="middle">sympatikus, katecholamíny</text>
+<text class="sub" x="577" y="141" text-anchor="end">koža, svaly, črevo,</text>
+<text class="sub" x="577" y="154" text-anchor="end">obličky bez prietoku</text>
+<text class="sub" x="350" y="213" text-anchor="middle">kyslé prostredie a mediátory</text>
+<text class="sub" x="123" y="141" text-anchor="start">menší návrat k srdcu,</text>
+<text class="sub" x="123" y="154" text-anchor="start">slabne aj myokard</text>
+<text x="350" y="140" text-anchor="middle" style="font-size:26px;fill:var(--color-accent-2-600)">⟳</text>
+<text class="cap" x="350" y="156" text-anchor="middle">circulus vitiosus</text>
+<path class="arw" d="M585,244 L585,266" marker-end="url(#mfigkruhsok)"/>
+<rect class="bx-m" x="400" y="268" width="290" height="44" rx="3" stroke="var(--color-accent-2-600)" stroke-width="1.5"/>
+<text class="lblb" x="545" y="286" text-anchor="middle">nekróza buniek: obličky, pečeň, črevo, pľúca</text>
+<text class="lblb" x="545" y="302" text-anchor="middle">→ MULTIORGÁNOVÉ ZLYHANIE</text>
+<text class="lbl-m" x="115" y="270" text-anchor="middle">bod zvratu: tlak nestačí srdcu a mozgu</text>
+<text class="sub" x="115" y="286" text-anchor="middle">(tekutiny už tlak nezdvihnú –</text>
+<text class="sub" x="115" y="299" text-anchor="middle">ireverzibilné štádium)</text>
+</svg>
+    <figcaption><b>Obr. 9.9 — Bludný kruh šoku.</b> Stiahnutie periférnych ciev zachraňuje tlak, ale tkanivá bez kyslíka cievy znova otvoria a obeh sa rúca ďalej.</figcaption>
+  </figure>
+
+  <div class="box k-klin aside keep">
+    <div class="label">Klinika</div>
+    <div class="body">
+      <p><b>Šok sa má rozpoznať v prvom štádiu</b>, keď je tlak ešte normálny: rýchly pulz, studená spotená koža, nepokoj a klesajúce močenie u pacienta po úraze alebo s krvácaním znamenajú, že kompenzácia už beží naplno. Stúpajúci laktát je laboratórny dôkaz, že tkanivá prešli na anaeróbny metabolizmus. Pri septickom šoku tento obraz na začiatku chýba – koža je teplá a červená –, o to ľahšie sa prehliadne.</p>
+    </div>
+  </div>
+
+  <div class="box k-pocut aside keep">
+    <div class="label">Môžeš počuť</div>
+    <div class="body">
+      <p><b>Hranica autoregulácie.</b> Mozog, srdce a nadobličky si majú udržať dostatočné prekrvenie až do stredného tlaku asi 50–60 mmHg; pod ním autoregulácia zlyháva. Princíp je v texte, číslo sa nepodarilo doložiť.</p>
+    </div>
+  </div>
+
+  <h3 class="sub-h" id="sub-9-6-4"><span class="n">9.6.4</span>Čo šok zanechá v orgánoch</h3>
+  <p>Morfológia šoku je morfológia <b>ischémie mnohých orgánov naraz</b>, ku ktorej sa pri sepse a úrazoch pridáva poškodenie endotelu. Jednotlivé nálezy nie sú pre šok špecifické – diagnózu robí ich kombinácia u pacienta, ktorý šok prežil aspoň niekoľko hodín. Orgány sú zoradené podľa toho, ako rozhodujú o prežití:</p>
+
+  <table class="table keep" id="tab-9-11" style="margin:6px 0">
+    <thead><tr><th>Orgán</th><th>Čo uvidíš</th><th>Prečo</th></tr></thead>
+    <tbody>
+      <tr><td><b><b>obličky</b> – „šoková oblička“</b></td><td>MI <b>akútna tubulárna nekróza</b>: odumreté a odlúpené bunky najmä proximálnych tubulov, zrnité valce v priesvitoch, opuch interstícia; klbká ušetrené</td><td>tubuly majú vysokú spotrebu kyslíka a pri centralizácii obehu stratia prietok ako prvé; najčastejšia príčina akútneho zlyhania obličiek v nemocnici</td></tr>
+      <tr><td><b><b>pľúca</b> – „šoková pľúca“</b></td><td>ťažké, tuhé, prekrvené; MI <b>difúzne alveolárne poškodenie</b>: edém, krvácanie, mikrotromby a <b>hyalínne membrány</b> – ružové blany z bielkovín a zvyškov buniek vystieľajúce alveoly</td><td>poškodený endotel a výstelka alveol prepustia bielkoviny; typické pre septický šok a úrazy, pri kardiogénnom a hypovolemickom zriedkavé – pľúca sú na hypoxiu odolné. Klinicky syndróm akútnej dychovej tiesne (ARDS)</td></tr>
+      <tr><td><b><b>mozog</b></b></td><td>opuch; pri dlhšom šoku nekrózy neurónov, najskôr v rozvodiach (<a class="xref" href="08_miestne_poruchy_obehu.html#sub-8-6-4">→ 8.6.4 Infarkt bez uzáveru tepny</a>)</td><td>neuróny znesú ischémiu len minúty; chránené sú najdlhšie, ale poškodenie je nevratné</td></tr>
+      <tr><td><b><b>srdce</b></b></td><td>drobné ložiská nekrózy kardiomyocytov, najmä pod endokardom</td><td>vnútorná vrstva steny je najďalej od vencovitých tepien</td></tr>
+      <tr><td><b><b>pečeň</b></b></td><td>nekrózy hepatocytov <b>v stredoch lalôčikov</b>, steatóza</td><td>stred lalôčika dostáva krv ako posledný</td></tr>
+      <tr><td><b><b>tráviaca rúra</b></b></td><td><b>stresové erózie a vredy</b> žalúdka a dvanástnika, krvácanie do sliznice; v čreve až hemoragické nekrózy</td><td>ischemická sliznica stratí ochranu pred kyselinou; poškodenou stenou prestupujú baktérie do krvi</td></tr>
+      <tr><td><b><b>nadobličky</b></b></td><td>kôra chudobná na tuky (vyčerpané zásoby hormónov); pri sepse krvácania až úplné prekrvácanie oboch nadobličiek</td><td>stresová odpoveď; pri meningokokovej sepse DIC</td></tr>
+      <tr><td><b><b>pankreas</b></b></td><td>ložiskové nekrózy</td><td>ischémia</td></tr>
+    </tbody>
+  </table>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>ARDS</b> syndróm akútnej dychovej tiesne (<i>acute respiratory distress syndrome</i>)</span></div>
+  </div>
+
+  <div class="fig-row">
+  <figure class="fig keep" id="fig-9-10" style="--ar:1.33;--fw:720px">
+    <img src="../assets/images/dad-hyaline-membranes.jpg" width="1280" height="960" alt="Šoková pľúca – difúzne alveolárne poškodenie (H&amp;E). Alveoly vystieľajú ružové hyalínne membrány; priehradky sú opuchnuté." loading="lazy">
+    <figcaption><b>Obr. 9.10 — Šoková pľúca – difúzne alveolárne poškodenie (H&amp;E).</b> Alveoly vystieľajú ružové hyalínne membrány; priehradky sú opuchnuté. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Diffuse_alveolar_damage_(DAD)_(4564039878).jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Yale Rosen · Wikimedia Commons · CC BY-SA 2.0</a></figcaption>
+  </figure>
+  <figure class="fig keep" id="fig-9-11" style="--ar:1.34;--fw:720px">
+    <img src="../assets/images/shock-liver.jpg" width="1280" height="957" alt="Pečeň po šoku (H&amp;E). Hepatocyty v stredoch lalôčikov odumreli (bledšie pásy), okolo portálnych polí prežili." loading="lazy">
+    <figcaption><b>Obr. 9.11 — Pečeň po šoku (H&amp;E).</b> Hepatocyty v stredoch lalôčikov odumreli (bledšie pásy), okolo portálnych polí prežili. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Histopathology_of_shock_liver.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Mikael Häggström, M.D. · Wikimedia Commons · CC0</a></figcaption>
+  </figure>
+  </div>
+
+  <figure class="fig keep" id="fig-9-12" style="--fw:641px">
+    <img src="../assets/images/adrenal-hemorrhage-wfs.jpg" width="641" height="476" alt="Krvácanie do oboch nadobličiek pri sepse. Nadobličky sú premenené na tmavočervené, krvou presiaknuté útvary." loading="lazy">
+    <figcaption><b>Obr. 9.12 — Krvácanie do oboch nadobličiek pri sepse.</b> Nadobličky sú premenené na tmavočervené, krvou presiaknuté útvary. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Waterhouse-Friderichsen._IMG_2912.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Amadalvarez · Wikimedia Commons · CC BY-SA 4.0</a></figcaption>
+  </figure>
+
+  <div class="box k-zap aside keep">
+    <div class="label">Zapamätaj</div>
+    <div class="body">
+      <p><b>Hranica reverzibility šoku je bunková, nie orgánová.</b> Tubuly obličky, hepatocyty a sliznica čreva po prežitom šoku zregenerujú, lebo ich bunky sa delia a kostra tkaniva ostala (<a class="xref" href="05_hojenie.html#sec-5-2">→ 5.2 Kto sa vie obnoviť: bunkový cyklus a kostra tkaniva</a>); neuróny a kardiomyocyty nie. Preto pacient po šoku môže mať týždeň dialýzu a odísť so zdravými obličkami – a zároveň s trvalým poškodením mozgu.</p>
+    </div>
+  </div>
+
+  <div class="box k-klin aside keep">
+    <div class="label">Klinika</div>
+    <div class="body">
+      <p><b>Čo píše patológ.</b> Šok je mechanizmus smrti, nie základná choroba: záver pitvy uvádza, čo šok vyvolalo (krvácajúci vred, infarkt, zápal pobrušnice), a orgánové nálezy ako jeho dôkaz. Chýbanie nálezov šok nevylučuje – pri smrti v priebehu minút až hodín sa morfologické zmeny nestihnú vyvinúť.</p>
+    </div>
+  </div>
+
+  <div class="box k-pocut aside keep">
+    <div class="label">Môžeš počuť</div>
+    <div class="body">
+      <p><b>Šoková oblička voľným okom.</b> Bledá kôra a tmavočervený okraj drene. Mikroskopický obraz je doložený (v tabuľke), tento makroskopický opis nie.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 9.7 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-9-7"><span class="n">9.7</span><span>Súhrn a rýchle rozlíšenie</span></h2>
+<div class="sec-body">
+  <table class="table keep" id="tab-9-12" style="margin:6px 0">
+    <thead><tr><th>Obraz</th><th>Čo zlyhalo</th><th>Čo nájdeš</th><th>Čo rozhoduje</th></tr></thead>
+    <tbody>
+      <tr><td><b><b>hypertrofia ľavej komory</b></b></td><td>veľký obeh kladie odpor (hypertenzia, aortálna chlopňa)</td><td>ťažké srdce, hrubá stena ľavej komory</td><td>či záťaž zmizne skôr, než kardiomyocyty zaniknú</td></tr>
+      <tr><td><b><b>cor pulmonale</b></b></td><td>odpor v pľúcach (choroby pľúc, embólie)</td><td>akútne rozšírená, chronicky hypertrofovaná pravá komora</td><td>—</td></tr>
+      <tr><td><b><b>zlyhanie ľavej komory</b></b></td><td>krv stojí v pľúcach</td><td>edém pľúc; chronicky hrdzavá indurácia, siderofágy</td><td>dýchavica; časom strhne pravú komoru</td></tr>
+      <tr><td><b><b>zlyhanie pravej komory</b></b></td><td>krv stojí vo veľkom obehu</td><td>muškátová pečeň → kardiálna fibróza, cyanotická indurácia sleziny a obličiek, opuchy, výpotky</td><td>—</td></tr>
+      <tr><td><b><b>edém</b></b></td><td>↑ hydrostatický tlak, ↓ albumín, lymfa, stena</td><td>transsudát (jamka, podľa gravitácie alebo okolo očí), tuhý lymfedém, zápalový exsudát</td><td>miesto: pľúca a mozog ohrozujú život</td></tr>
+      <tr><td><b><b>kolaps</b></b></td><td>krátky výpadok regulácie</td><td>nič</td><td>upraví sa sám</td></tr>
+      <tr><td><b><b>šok</b> ⟳</b></td><td>málo krvi, slabá pumpa, prekážka, široké cievy</td><td>tubulárna nekróza, hyalínne membrány v pľúcach, nekrózy v stredoch pečeňových lalôčikov, stresové vredy</td><td>zásah pred ireverzibilným štádiom; regenerujú tubuly a pečeň, nie mozog a srdce</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ══ 9.8 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-9-8"><span class="n">9.8</span><span>Otázky na zopakovanie</span></h2>
+<div class="sec-body">
+  <ol class="quiz">
+    <li><details><summary>Prečo sú pľúca pri chronickom zlyhávaní ľavej komory hrdzavé, a slezina pri zlyhávaní pravej modrá?</summary><div class="ans">V oboch stojí krv a kapiláry prepúšťajú erytrocyty. V pľúcach je tkanivo stále v styku so vzduchom, takže cyanóza nevznikne a farbu určuje hemosiderín v siderofágoch; v slezine krv odovzdá kyslík a ostáva tmavá – cyanotická indurácia. <a class="xref" href="#sub-9-4-4">→ 9.4.4 Čo má venostáza spoločné: cyanóza a indurácia</a></div></details></li>
+    <li><details><summary>Prečo má muškátová pečeň tmavé stredy lalôčikov a žlté okraje?</summary><div class="ans">Krv odteká z lalôčika centrálnou žilou; pri venostáze sa preplnia sínusoidy okolo nej, kde je krv aj normálne najchudobnejšia na kyslík – hepatocyty tam atrofujú a odumierajú (tmavočervené). Na obvode prežívajú, ale z hypoxie tukovatejú (žlté). <a class="xref" href="#sub-9-4-3">→ 9.4.3 Pravostranné zlyhanie: krv stojí vo veľkom obehu</a></div></details></li>
+    <li><details><summary>Pacient s dlhoročnou hypertenziou má pri pitve srdce 520 g so stenou ľavej komory 20 mm a zhrubnutú aj pravú komoru. Zoraď deje, ktoré k tomu viedli.</summary><div class="ans">Tlaková záťaž → koncentrická hypertrofia ľavej komory → vyčerpanie a zlyhávanie → venostáza v pľúcach → pľúcna hypertenzia → hypertrofia pravej komory. Normálna hmotnosť je 300–360 g a stena ľavej komory 13–15 mm. <a class="xref" href="#sub-9-4-5">→ 9.4.5 Od ľavej komory k obom: postup zlyhania</a></div></details></li>
+    <li><details><summary>Prečo zadržiavanie soli a vody, ktoré má pri zlyhaní srdca pomôcť, pacientovi napokon škodí?</summary><div class="ans">Mechanizmus je stavaný na stratu krvi: viac tekutiny zvýši plnenie komory a tým výdaj. Zlyhávajúca komora je však za vrcholom Frankovej-Starlingovej krivky – ďalšie plnenie sťah nezosilní, len zvýši tlak v žilách → venostáza a edém ⟳. <a class="xref" href="#sub-9-4-1">→ 9.4.1 Kompenzácia a bod, v ktorom sa obráti proti srdcu</a></div></details></li>
+    <li><details><summary>Dvaja pacienti majú opuchy: jeden členkov, ktoré sa večer zhoršujú, druhý viečok hneď ráno. Čo je príčinou u ktorého?</summary><div class="ans">Opuch podľa gravitácie je z vysokého hydrostatického tlaku v žilách – zlyhávanie pravej komory. Opuch v riedkom väzive okolo očí bez závislosti od polohy je z nízkeho albumínu – nefrotický syndróm alebo choroba pečene. Oboje je transsudát. <a class="xref" href="#sec-9-5">→ 9.5 Edém – tekutina mimo ciev a buniek</a></div></details></li>
+    <li><details><summary>Prečo je lymfedém po rokoch tuhý a nezostáva v ňom jamka, kým kardiálny edém ostáva mäkký?</summary><div class="ans">Lymfa odvádza z tkaniva aj bielkoviny. Keď viazne, bielkoviny ostávajú v interstíciu a dráždia fibroblasty k tvorbe väziva – tkanivo fibrotizuje (elefantiáza). Transsudát pri zlyhaní srdca bielkoviny neobsahuje. <a class="xref" href="#sec-9-5">→ 9.5 Edém – tekutina mimo ciev a buniek</a></div></details></li>
+    <li><details><summary>Čím sa pri lôžku odlíši septický šok od hypovolemického v prvých hodinách – a prečo?</summary><div class="ans">Pri hypovolemickom sympatikus stiahne cievy kože: je bledá, studená a lepkavá. Pri septickom mediátory zápalu cievy rozšíria, takže koža je teplá a červená, hoci tlak je rovnako nízky – krv nevyplní rozšírené riečisko. <a class="xref" href="#sub-9-6-2">→ 9.6.2 Šok: štyri príčiny</a></div></details></li>
+    <li><details><summary>Mladý muž po autonehode s poranením krčnej miechy má nízky tlak a pulz 48/min. O aký šok ide a prečo nie je pulz rýchly?</summary><div class="ans">Neurogénny: prerušené sympatikové dráhy → cievy ochabnú (distribučný šok) a srdce ostane len pod vplyvom blúdivého nervu, preto sa spomalí. Pri krvácaní by bol pulz rýchly. <a class="xref" href="#sub-9-6-2">→ 9.6.2 Šok: štyri príčiny</a></div></details></li>
+    <li><details><summary>Prečo sa šok v určitom bode začne prehlbovať sám, aj keď príčina už nepôsobí?</summary><div class="ans">Stiahnuté periférne cievy nechajú tkanivá bez kyslíka → laktát a acidóza cievy znova otvoria a zvýšia ich priepustnosť → krv stojí v mikrocirkulácii a tekutina uniká → menší návrat a výdaj, slabne aj nedokrvený myokard ⟳. <a class="xref" href="#sub-9-6-3">→ 9.6.3 Od kompenzácie k bludnému kruhu</a></div></details></li>
+    <li><details><summary>Pacient prežil septický šok. Obličky sa mu po dvoch týždňoch dialýzy upravili, ale ostal s poruchou pamäti. Vysvetli rozdiel pomocou toho, čo vieš o regenerácii.</summary><div class="ans">Bunky tubulov sú stabilné – po nekróze sa delia a pri zachovanej bazálnej membráne výstelku obnovia. Neuróny sú permanentné bunky, nedelia sa; odumreté sa nenahradia. <a class="xref" href="05_hojenie.html#sec-5-2">→ 5.2 Kto sa vie obnoviť: bunkový cyklus a kostra tkaniva</a></div></details></li>
+  </ol>
+</div>
+
+<!-- ══ 9.9 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-9-9"><span class="n">9.9</span><span>Zdroje</span></h2>
+<div class="sec-body src">
+  <div class="micro" style="margin-top:8px">Učebnice (kontrola faktov)</div>
+
+  <ul>
+    <li>Zámečník J. a kol.: <i>Patologie</i>, 2. vyd., Praha: LD Prager Publishing, 2024 (kap. 2 Hemodynamické příčiny lidských chorob – edém, dehydratace, celkové poruchy oběhu, šok). ISBN 978-80-11-04919-5.</li>
+  </ul>
+
+  <div class="micro" style="margin-top:8px">Klasifikácie, konsenzy a prehľady</div>
+
+  <ul>
+    <li>Levick J. R., Michel C. C.: Microvascular fluid exchange and the revised Starling principle. <i>Cardiovasc Res</i> 2010;87(2):198–210. <a href="https://doi.org/10.1093/cvr/cvq062" target="_blank" rel="noopener noreferrer">doi:10.1093/cvr/cvq062</a> (abstrakt)</li>
+    <li>Woodcock T. E., Woodcock T. M.: Revised Starling equation and the glycocalyx model of transvascular fluid exchange: an improved paradigm for prescribing intravenous fluid therapy. <i>Br J Anaesth</i> 2012;108(3):384–394. <a href="https://doi.org/10.1093/bja/aer515" target="_blank" rel="noopener noreferrer">doi:10.1093/bja/aer515</a> (abstrakt)</li>
+    <li>StatPearls (NCBI Bookshelf; kapitoly čítané cez Europe PMC, stav 10. 10. 2026): <a href="https://www.ncbi.nlm.nih.gov/books/NBK430873/" target="_blank" rel="noopener noreferrer">Heart Failure (Congestive Heart Failure)</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK537098/" target="_blank" rel="noopener noreferrer">Left Ventricular Failure</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK459381/" target="_blank" rel="noopener noreferrer">Right Heart Failure</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK513337/" target="_blank" rel="noopener noreferrer">High-Output Cardiac Failure</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK557534/" target="_blank" rel="noopener noreferrer">Left Ventricular Hypertrophy</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK470295/" target="_blank" rel="noopener noreferrer">Physiology, Frank Starling Law</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK482463/" target="_blank" rel="noopener noreferrer">Pulmonary Hypertension</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK430739/" target="_blank" rel="noopener noreferrer">Cor Pulmonale</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK539859/" target="_blank" rel="noopener noreferrer">Essential Hypertension</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK544305/" target="_blank" rel="noopener noreferrer">Secondary Hypertension</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK500001/" target="_blank" rel="noopener noreferrer">Cyanotic Heart Disease</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK559167/" target="_blank" rel="noopener noreferrer">Cyanosis</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK557611/" target="_blank" rel="noopener noreferrer">Pulmonary Edema</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK431053/" target="_blank" rel="noopener noreferrer">Cardiac Cirrhosis</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK482235/" target="_blank" rel="noopener noreferrer">Anatomy, Abdomen and Pelvis, Spleen</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK518987/" target="_blank" rel="noopener noreferrer">Nocturia</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK537065/" target="_blank" rel="noopener noreferrer">Physiology, Edema</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK554452/" target="_blank" rel="noopener noreferrer">Peripheral Edema</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK519013/" target="_blank" rel="noopener noreferrer">Anasarca</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK537239/" target="_blank" rel="noopener noreferrer">Lymphedema</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK555956/" target="_blank" rel="noopener noreferrer">Adult Dehydration</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK442006/" target="_blank" rel="noopener noreferrer">Syncope</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK470277/" target="_blank" rel="noopener noreferrer">Vasovagal Episode</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK448192/" target="_blank" rel="noopener noreferrer">Orthostatic Hypotension</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK531492/" target="_blank" rel="noopener noreferrer">Shock</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK513297/" target="_blank" rel="noopener noreferrer">Hypovolemia and Hypovolemic Shock</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK482255/" target="_blank" rel="noopener noreferrer">Cardiogenic Shock</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK470316/" target="_blank" rel="noopener noreferrer">Distributive Shock</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK459361/" target="_blank" rel="noopener noreferrer">Neurogenic Shock</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK482124/" target="_blank" rel="noopener noreferrer">Anaphylaxis</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK436002/" target="_blank" rel="noopener noreferrer">Acute Respiratory Distress Syndrome</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK507815/" target="_blank" rel="noopener noreferrer">Acute Renal Tubular Necrosis</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK499926/" target="_blank" rel="noopener noreferrer">Stress-Induced Gastritis</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK551510/" target="_blank" rel="noopener noreferrer">Waterhouse-Friderichsen Syndrome</a></li>
+  </ul>
+
+  <div class="micro" style="margin-top:8px">Obrázky</div>
+
+  <p>Autor, licencia a odkaz na zdroj sú pri každom obrázku; súhrn je v registri <code>ZDROJE-OBRAZKOV.md</code>. Obr. 9.1, 9.6 a 9.9 sú vlastné schémy (CC BY-SA 4.0).</p>
+</div>
+
+<p class="next"><b>Pokračuje v:</b>
+  <span class="xref-soon" title="Kapitola sa pripravuje">→ 10 Nádory I — názvoslovie, histogenéza, onkogenéza</span>
+</p>
+
+<div class="running-foot">
+  <span>PATOLA — poznámky z patológie · Kapitola 9</span>
+  <span class="tnum">§ 9.1–9.9</span>
+</div>
+
+</main>
+  </div>
+  <div class="site-spacer" aria-hidden="true"></div>
+</div>
+
+<script src="../assets/js/site.js" defer></script>
+<script src="../assets/js/peek.js" defer></script>
+<script>
+/* PATOLA: tlač kapitoly otvorenej v ráme hlavnej stránky (index.html).
+   Rodič pošle "pf:print"; Ctrl/Cmd+P vo vnútri rámu tlačí rám, nie obsah knihy. */
+(function(){
+  var imgs = function(){ return Array.prototype.slice.call(document.querySelectorAll('img[loading="lazy"]')); };
+  // lenivé obrázky sa po načítaní stránky dotiahnu na pozadí, aby v tlači neboli prázdne
+  window.addEventListener("load", function(){ setTimeout(function(){ imgs().forEach(function(i){ i.loading = "eager"; }); }, 800); });
+  // v tlači sú odpovede na otázky vidieť (zatvorený <details> by sa vytlačil bez nich)
+  var shut = [];
+  // predvolený názov súboru pri tlači = kapitola („Kapitola 3 – Zápal …“); title sa po tlači vráti
+  // (po maximalizovanom náhľade je v document.title už iná kapitola, preto sa číta až teraz)
+  var keep = null;
+  function printTitle(){ return document.title.replace(/^(\d+) · /, "Kapitola $1 – "); }
+  function titleOn(){ if (keep === null) { keep = document.title; document.title = printTitle(); } }
+  function titleOff(){ if (keep !== null) { document.title = keep; keep = null; } }
+  window.addEventListener("beforeprint", function(){ titleOn(); shut = Array.prototype.filter.call(document.querySelectorAll("ol.quiz details"), function(d){ return !d.open; }); shut.forEach(function(d){ d.open = true; }); });
+  window.addEventListener("afterprint", function(){ titleOff(); shut.forEach(function(d){ d.open = false; }); shut = []; });
+  if (window.top === window.self) return;
+  // v ráme berie prehliadač názov súboru z hlavnej stránky → pošli jej názov kapitoly
+  window.addEventListener("afterprint", function(){ try { window.parent.postMessage({ pf: "title", title: null }, "*"); } catch (e) {} });
+  function printMe(){
+    var all = Array.prototype.slice.call(document.images);
+    all.forEach(function(i){ i.loading = "eager"; });
+    try { window.parent.postMessage({ pf: "title", title: printTitle() }, "*"); } catch (e) {}
+    var t0 = Date.now();
+    (function wait(){
+      if (Date.now() - t0 > 150 && (all.every(function(i){ return i.complete; }) || Date.now() - t0 > 4000)) { try { window.focus(); window.print(); } catch (e) {} }
+      else setTimeout(wait, 100);
+    })();
+  }
+  window.addEventListener("message", function(e){ if (e.data === "pf:print") printMe(); });
+  document.addEventListener("keydown", function(e){
+    if ((e.ctrlKey || e.metaKey) && !e.altKey && (e.key === "p" || e.key === "P")) { e.preventDefault(); printMe(); }
+  });
+})();
+</script>
+<script src="../assets/glossary/01-adaptacia-a-bunkova-smrt.js" defer></script>
+<script src="../assets/glossary/02-nekroza-a-gangrena.js" defer></script>
+<script src="../assets/glossary/03-dystrofie-a-amyloid.js" defer></script>
+<script src="../assets/glossary/04-zapal-a-exsudat.js" defer></script>
+<script src="../assets/glossary/05-mechanizmy-a-skratky.js" defer></script>
+<script src="../assets/glossary/06-obeh-a-hemostaza.js" defer></script>
+<script src="../assets/glossary/07-celkovy-obeh.js" defer></script>
+<script src="../assets/js/glossary.js" defer></script>
+</body>
+</html>

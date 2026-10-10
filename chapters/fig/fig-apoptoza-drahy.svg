@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 372" role="img" aria-labelledby="t15">
+<title id="t15">Dráhy apoptózy: vnútorná a vonkajšia dráha sa stretávajú pri exekučných kaspázach</title>
+<defs><marker id="a15" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker></defs>
+
+<rect class="bx-c" x="30" y="8" width="300" height="46" rx="3" stroke="var(--color-accent-500)"/>
+<text class="lblb" x="180" y="27" text-anchor="middle">Vnútorná (mitochondriová) dráha</text>
+<text class="sub" x="180" y="43" text-anchor="middle">poškodenie DNA, chybné bielkoviny, ↓ rastové faktory</text>
+<rect class="bx-m" x="370" y="8" width="300" height="46" rx="3" stroke="var(--color-accent-2-500)"/>
+<text class="lblb" x="520" y="27" text-anchor="middle">Vonkajšia (receptorová) dráha</text>
+<text class="sub" x="520" y="43" text-anchor="middle">FasL, TNF → receptor smrti (Fas, TNFR1)</text>
+
+<path class="arw" d="M180,56 L180,78" marker-end="url(#a15)"/>
+<path class="arw" d="M520,56 L520,78" marker-end="url(#a15)"/>
+
+<rect class="bx-c" x="30" y="80" width="300" height="58" rx="3" stroke="var(--color-accent-500)"/>
+<text class="lblb" x="180" y="99" text-anchor="middle">BAX/BAK → únik cytochrómu c</text>
+<text class="sub" x="180" y="114" text-anchor="middle">apoptozóm (s Apaf-1) → kaspáza 9</text>
+<text class="sub" x="180" y="129" text-anchor="middle">BCL-2 ⊣ únik · p53 → proteíny „len-BH3“</text>
+<rect class="bx-m" x="370" y="80" width="300" height="58" rx="3" stroke="var(--color-accent-2-500)"/>
+<text class="lblb" x="520" y="106" text-anchor="middle">kaspáza 8</text>
+<text class="sub" x="520" y="122" text-anchor="middle">aktivovaná priamo pri receptore</text>
+
+<path class="arw" d="M200,140 L320,172" marker-end="url(#a15)"/>
+<path class="arw" d="M500,140 L380,172" marker-end="url(#a15)"/>
+
+<rect class="bx-k" x="200" y="174" width="300" height="44" rx="3"/>
+<text class="lblb" x="350" y="192" text-anchor="middle">Exekučné kaspázy 3 a 7</text>
+<text class="sub" x="350" y="208" text-anchor="middle">štiepia cytoskelet, jadrovú laminu a inhibítor CAD</text>
+
+<path class="arw" d="M350,220 L350,240" marker-end="url(#a15)"/>
+<rect class="bx-k" x="200" y="242" width="300" height="44" rx="3"/>
+<text class="lblb" x="350" y="260" text-anchor="middle">CAD strihá DNA medzi nukleozómami</text>
+<text class="sub" x="350" y="276" text-anchor="middle">kondenzácia jadra, zmrštenie bunky, výbežky (blebs)</text>
+
+<path class="arw" d="M350,288 L350,308" marker-end="url(#a15)"/>
+<rect class="bx-c" x="200" y="310" width="300" height="44" rx="3" stroke="var(--color-accent-500)"/>
+<text class="lblb" x="350" y="328" text-anchor="middle">Apoptotické telieska → fagocytóza</text>
+<text class="sub" x="350" y="344" text-anchor="middle">fosfatidylserín navonok · membrána celá · bez zápalu</text>
+</svg>

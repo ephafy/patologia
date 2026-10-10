@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" role="img" aria-labelledby="tfigemboliacesty">
+<title id="tfigemboliacesty">Cesty embolov: zo žíl veľkého obehu cez pravé srdce do pľúcnice (žilová cesta), z ľavého srdca a aorty do tepien orgánov (tepnová cesta), zo žíl čreva vrátnicou do pečene, a paradoxne zo žily otvorom v srdcovej priehradke do tepien, keď je tlak vpravo vyšší</title>
+<defs><marker id="mfigemboliacesty" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker></defs>
+
+<text class="cap" x="160" y="14" text-anchor="middle">ŽILOVÁ CESTA – končí v pľúcach</text>
+<text class="cap" x="560" y="14" text-anchor="middle">TEPNOVÁ CESTA – končí v orgánoch</text>
+
+<!-- zdroje v žilách -->
+<rect class="bx-k" x="8" y="24" width="304" height="78" rx="3"/>
+<text class="lblb" x="160" y="42" text-anchor="middle">odkiaľ: žily veľkého obehu</text>
+<text class="sub" x="160" y="58" text-anchor="middle">trombus z hlbokých žíl dolných končatín (najčastejšie)</text>
+<text class="sub" x="160" y="72" text-anchor="middle">tuk a dreň zo zlomenej kosti · vzduch otvorenou žilou</text>
+<text class="sub" x="160" y="86" text-anchor="middle">plodová voda · nádor vrastený do žily</text>
+
+<path class="arw" d="M160,102 L160,124" marker-end="url(#mfigemboliacesty)"/>
+
+<rect class="bx-c" x="60" y="126" width="200" height="40" rx="3"/>
+<text class="lblb" x="160" y="143" text-anchor="middle">PRAVÉ SRDCE</text>
+<text class="sub" x="160" y="158" text-anchor="middle">embolus ním len prejde</text>
+
+<path class="arw" d="M160,166 L160,188" marker-end="url(#mfigemboliacesty)"/>
+
+<rect class="bx-m" x="8" y="190" width="304" height="62" rx="3" stroke="var(--color-accent-2-600)" stroke-width="1.5"/>
+<text class="lblb" x="160" y="208" text-anchor="middle">PĽÚCNICA A JEJ VETVY</text>
+<text class="sub" x="160" y="224" text-anchor="middle">veľký embolus → zlyhanie pravej komory</text>
+<text class="sub" x="160" y="238" text-anchor="middle">malý → nič, alebo červený infarkt pľúc</text>
+
+<!-- zdroje v ľavom srdci -->
+<rect class="bx-k" x="408" y="24" width="304" height="78" rx="3"/>
+<text class="lblb" x="560" y="42" text-anchor="middle">odkiaľ: ľavé srdce a aorta</text>
+<text class="sub" x="560" y="58" text-anchor="middle">trombus v predsieni pri fibrilácii, nad infarktom komory</text>
+<text class="sub" x="560" y="72" text-anchor="middle">vegetácia na chlopni (aj infikovaná)</text>
+<text class="sub" x="560" y="86" text-anchor="middle">trombus a cholesterolové kryštály z aterómu aorty</text>
+
+<path class="arw" d="M560,102 L560,124" marker-end="url(#mfigemboliacesty)"/>
+
+<rect class="bx-c" x="460" y="126" width="200" height="40" rx="3"/>
+<text class="lblb" x="560" y="143" text-anchor="middle">TEPNY VEĽKÉHO OBEHU</text>
+<text class="sub" x="560" y="158" text-anchor="middle">embolus uviazne tam, kde sa zúžia</text>
+
+<path class="arw" d="M560,166 L560,188" marker-end="url(#mfigemboliacesty)"/>
+
+<rect class="bx-m" x="408" y="190" width="304" height="62" rx="3" stroke="var(--color-accent-2-600)" stroke-width="1.5"/>
+<text class="lblb" x="560" y="208" text-anchor="middle">MOZOG · ČREVO · OBLIČKA · SLEZINA · KONČATINA</text>
+<text class="sub" x="560" y="224" text-anchor="middle">koncová tepna → infarkt</text>
+<text class="sub" x="560" y="238" text-anchor="middle">infikovaný embolus → zhnisaný infarkt, absces</text>
+
+<!-- paradoxná -->
+<path class="arwd" d="M262,146 L458,146" marker-end="url(#mfigemboliacesty)"/>
+<text class="lbl-m" x="360" y="126" text-anchor="middle">PARADOXNÁ</text>
+<text class="sub" x="360" y="139" text-anchor="middle">otvor v priehradke</text>
+<text class="sub" x="360" y="161" text-anchor="middle">+ vyšší tlak vpravo</text>
+
+<!-- portálna -->
+<rect class="bx-k" x="8" y="266" width="704" height="28" rx="3"/>
+<text class="sub" x="360" y="284" text-anchor="middle">osobitná žilová cesta: žily žalúdka a čreva → vrátnica → PEČEŇ (preto metastázy nádorov tráviacej rúry najprv v pečeni)</text>
+</svg>

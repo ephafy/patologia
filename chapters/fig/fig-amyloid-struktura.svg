@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 230" role="img" aria-labelledby="t218">
+<title id="t218">Amyloid od molekuly po depozit: zle zložená bielkovina, β-skladaný list, fibrila 8–12 nm a amorfná hmota v stene cievy; Konžská červeň sa viaže pozdĺž β-listu</title>
+<defs><marker id="a218" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker></defs>
+
+<!-- škála veľkosti -->
+<path class="s-t" stroke-width="1" d="M30,24 L680,24"/>
+<g class="sub" text-anchor="middle"><text x="95" y="18">jedna molekula</text><text x="265" y="18">úsek fibrily</text><text x="440" y="18">fibrily ≈ 8–12 nm</text><text x="610" y="18">vidno svetelným mikroskopom</text></g>
+
+<!-- 1 molekula -->
+<path class="s-c" fill="none" stroke-width="2" d="M60,100 C70,60 110,60 110,90 C110,120 75,125 80,95 C85,70 130,80 125,110"/>
+<text class="lblb" x="95" y="160" text-anchor="middle">bielkovina</text>
+<text class="sub" x="95" y="175" text-anchor="middle">stratí natívny tvar</text>
+<path class="arw" d="M150,95 L190,95" marker-end="url(#a218)"/>
+
+<!-- 2 β-list -->
+<g class="s-c" stroke-width="2.4" fill="none"><path d="M205,70 L325,70"/><path d="M205,90 L325,90"/><path d="M205,110 L325,110"/><path d="M205,130 L325,130"/></g>
+<g class="s-t" stroke-width="1"><path d="M235,70 V130"/><path d="M265,70 V130"/><path d="M295,70 V130"/></g>
+<g fill="var(--color-accent-2)"><rect x="247" y="74" width="4" height="12"/><rect x="277" y="94" width="4" height="12"/><rect x="247" y="114" width="4" height="12"/></g>
+<text class="lblb" x="265" y="160" text-anchor="middle">β-skladaný list</text>
+<text class="sub" x="265" y="175" text-anchor="middle">reťazce spojené H-väzbami</text>
+<text class="sub" x="265" y="189" text-anchor="middle">ružové: Konžská červeň</text>
+<path class="arw" d="M340,95 L380,95" marker-end="url(#a218)"/>
+
+<!-- 3 fibrily -->
+<g class="s-k" stroke-width="1.6"><path d="M395,70 L490,125"/><path d="M400,120 L485,65"/><path d="M405,95 L495,95"/><path d="M420,60 L445,135"/></g>
+<text class="lblb" x="440" y="160" text-anchor="middle">nevetvené fibrily</text>
+<text class="sub" x="440" y="175" text-anchor="middle">tak ich ukáže elektrónový mikroskop</text>
+<text class="sub" x="440" y="189" text-anchor="middle">odolné voči proteázam</text>
+<path class="arw" d="M510,95 L550,95" marker-end="url(#a218)"/>
+
+<!-- 4 depozit v stene cievy -->
+<circle cx="610" cy="95" r="45" fill="var(--color-accent-2-200)" stroke="var(--color-accent-2-500)" stroke-width="10"/>
+<circle cx="610" cy="95" r="22" fill="#fff" stroke="var(--color-neutral-400)"/>
+<text class="lblb" x="610" y="160" text-anchor="middle">depozit v stene cievy</text>
+<text class="sub" x="610" y="175" text-anchor="middle">amorfná ružová hmota (HE)</text>
+<text class="sub" x="610" y="189" text-anchor="middle">zúži lúmen, zhorší difúziu</text>
+
+<text class="sub" x="350" y="220" text-anchor="middle">Farbivo sa ukladá pravidelne pozdĺž β-listov – preto amyloid v polarizovanom svetle mení farbu (dvojlom).</text>
+</svg>

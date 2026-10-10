@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>4 · Typy zápalu – alteratívny a exsudatívny zápal</title>
+<script>/* PATOLA: stránka v náhľade (assets/js/peek.js) — skryť hlavičku skôr, než sa vykreslí */if(/[?&]embed=/.test(location.search))document.documentElement.classList.add("pk-embed")</script>
+<script>/* PATOLA: pri F5/Späť ukázať stránku až na obnovenej pozícii (peek.js odkryje; poistka 2 s) */(function(){try{var h=document.documentElement,n=performance.getEntriesByType("navigation")[0],t=n&&n.type,s=location.search;if(/[?&]y=[1-9]/.test(s)||(!/[?&]embed=/.test(s)&&(t==="reload"||t==="back_forward")&&parseInt(sessionStorage.getItem("pk-y:"+location.pathname),10)>0)){h.classList.add("pk-restoring");setTimeout(function(){h.classList.remove("pk-restoring")},2000)}}catch(e){}})()</script>
+<link rel="stylesheet" href="../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../assets/styles/site.css">
+<link rel="stylesheet" href="../assets/styles/glossary.css">
+<style>
+/* ══ Broadsheet — design-system tokens ══════════════════════════════════ */
+:root{
+  --color-bg:#f3f2f2;
+  --color-surface:#eae9e9;
+  --color-text:#201e1d;
+  --color-accent:#0088b0;
+  --color-accent-2:#d6006c;
+  --color-divider:color-mix(in srgb,#201e1d 16%,transparent);
+
+  --color-neutral-100:#f8f4f4; --color-neutral-200:#eae7e7; --color-neutral-300:#d7d3d3;
+  --color-neutral-400:#bab6b6; --color-neutral-500:#9b9797; --color-neutral-600:#7d7979;
+  --color-neutral-700:#605d5d; --color-neutral-800:#444141; --color-neutral-900:#2d2b2b;
+
+  --color-accent-100:#e9f8ff; --color-accent-200:#cbeeff; --color-accent-300:#99e0ff;
+  --color-accent-400:#62c5ee; --color-accent-500:#38a6cf; --color-accent-600:#1186ac;
+  --color-accent-700:#006786; --color-accent-800:#004961; --color-accent-900:#0a303e;
+
+  --color-accent-2-100:#fff1f4; --color-accent-2-200:#ffdee6; --color-accent-2-300:#ffc0d0;
+  --color-accent-2-400:#ff90b1; --color-accent-2-500:#ff458e; --color-accent-2-600:#d82071;
+  --color-accent-2-700:#aa0b56; --color-accent-2-800:#790e3d; --color-accent-2-900:#4b1528;
+
+  --color-process-yellow:#edbb00;
+
+  --font-heading:"Source Serif 4",system-ui,serif;
+  --font-heading-weight:600;
+  --font-body:"Source Serif 4",system-ui,serif;
+  --font-mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+
+  --space-1:5px; --space-2:10px; --space-3:15px; --space-4:20px; --space-6:30px; --space-8:40px;
+  --radius-sm:1px; --radius-md:2px; --radius-lg:4px;
+
+  --shadow-sm:0 1px 2px color-mix(in srgb,#2d2b2b 14%,transparent);
+  --shadow-md:0 3px 10px color-mix(in srgb,#2d2b2b 16%,transparent);
+  --shadow-lg:0 12px 32px color-mix(in srgb,#2d2b2b 22%,transparent);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:var(--color-text);font-family:var(--font-body);
+  font-size:calc(15px*var(--z,1));line-height:1.55;font-weight:400;padding:0}
+h1,h2,h3,h4,h5,h6{font-family:var(--font-heading);font-weight:var(--font-heading-weight);
+  line-height:1.12;letter-spacing:-0.015em;margin:0 0 var(--space-2)}
+p{margin:0 0 var(--space-3)}
+a{color:var(--color-accent);text-underline-offset:3px}
+img{display:block;max-width:100%}
+figure{margin:0}
+figcaption{font-size:calc(11px*var(--z,1));margin-top:var(--space-1);
+  color:color-mix(in srgb,var(--color-text) 55%,transparent)}
+.text-muted{color:color-mix(in srgb,var(--color-text) 55%,transparent)}
+:focus{outline:none}
+:focus-visible{outline:2px solid var(--color-accent);outline-offset:2px}
+::selection{background:color-mix(in srgb,var(--color-accent) 30%,transparent)}
+.hr{height:1px;border:0;margin:var(--space-4) 0;background:var(--color-divider)}
+
+/* — tables — */
+.table{width:100%;border-collapse:collapse;font-size:calc(14px*var(--z,1))}
+.table th{text-align:left;font-size:calc(11px*var(--z,1));letter-spacing:0.08em;text-transform:uppercase;
+  color:color-mix(in srgb,var(--color-text) 60%,transparent);
+  padding:var(--space-2);border-bottom:1px solid var(--color-divider)}
+.table td{padding:var(--space-2);
+  border-bottom:1px solid color-mix(in srgb,var(--color-text) 8%,transparent)}
+.table tbody tr:hover{background:color-mix(in srgb,var(--color-text) 4%,transparent)}
+
+/* — tags — */
+.tag{display:inline-flex;align-items:center;font-size:calc(11px*var(--z,1));letter-spacing:0.02em;
+  padding:3px 10px;border-radius:calc(var(--radius-md)*0.75)}
+.tag-accent{background:var(--color-accent-100);color:var(--color-accent-800)}
+.tag-accent-2{background:var(--color-accent-2-100);color:var(--color-accent-2-800)}
+.tag-neutral{background:var(--color-neutral-100);color:var(--color-neutral-800)}
+
+/* — the plate numeral: three process inks, no black plate — */
+.cmyk-num{--cmyk-num-ground:var(--color-bg);position:relative;width:fit-content;
+  line-height:0.9;font-feature-settings:"pnum" 1;
+  padding:0.12em;margin:-0.12em}
+.cmyk-num .paper{color:var(--color-bg);
+  text-shadow:0.036em 0.025em 0 var(--color-bg),-0.031em -0.023em 0 var(--color-bg)}
+.cmyk-num .plate{position:absolute;inset:0.12em;mix-blend-mode:multiply}
+.cmyk-num .plate-c{color:var(--color-accent)}
+.cmyk-num .plate-m{color:var(--color-accent-2);translate:0.036em 0.025em}
+.cmyk-num .plate-y{color:var(--color-process-yellow);translate:-0.031em -0.023em}
+
+/* ══ doc-page — the printed sheet ═══════════════════════════════════════ */
+.page{--color-bg:#fff;margin:0 auto;background:#fff;
+  padding:50px;box-shadow:none;border:0;
+  font-size:calc(13.5px*var(--z,1));line-height:1.42;text-wrap:pretty}
+.page p{margin:0 0 6px;orphans:3;widows:3}
+.page ul,.page ol{margin:0 0 6px;padding-left:15px}
+.page li{margin:0 0 2px;orphans:3;widows:3}
+.page table.table{font-size:calc(12px*var(--z,1));line-height:1.3}
+.page table.table th,.page table.table td{padding:3px 8px 3px 0;vertical-align:top}
+.keep{break-inside:avoid}
+.page sup{font-size:calc(9px*var(--z,1));line-height:0}
+
+.running-head{display:flex;justify-content:space-between;align-items:baseline;
+  font-size:calc(10px*var(--z,1));letter-spacing:0.1em;text-transform:uppercase;color:var(--color-neutral-600);
+  padding-bottom:4px;border-bottom:1px solid var(--color-neutral-300);margin-bottom:14px}
+.running-foot{display:flex;justify-content:space-between;align-items:baseline;
+  font-size:calc(10px*var(--z,1));color:var(--color-neutral-600);
+  padding-top:4px;border-top:1px solid var(--color-neutral-300);margin-top:22px}
+
+/* — chapter opener — */
+.opener{display:flex;align-items:flex-start;gap:18px;margin-bottom:10px}
+.opener .num{font-family:var(--font-heading);font-size:calc(64px*var(--z,1));font-weight:600;
+  letter-spacing:-0.03em;--cmyk-num-ground:#fff}
+.eyebrow{font-size:calc(10px*var(--z,1));letter-spacing:0.14em;text-transform:uppercase;
+  color:var(--color-accent-2);margin-bottom:4px}
+.opener h1{font-size:calc(29px*var(--z,1));line-height:1.05;font-weight:600;letter-spacing:-0.015em}
+.standfirst{margin:6px 0 0;font-size:calc(13px*var(--z,1));font-style:italic;
+  color:var(--color-neutral-700);max-width:46em}
+
+/* — contents block — */
+.contents{column-count:3;column-gap:22px;font-size:calc(11.5px*var(--z,1));line-height:1.35;padding:8px 0;
+  border-top:2px solid var(--color-text);border-bottom:1px solid var(--color-neutral-300);
+  margin-bottom:16px}
+.contents .label{column-span:all;font-size:calc(10px*var(--z,1));letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--color-neutral-600);margin-bottom:5px}
+.contents .row{display:flex;gap:6px;break-inside:avoid}
+.contents .row span:first-child{color:var(--color-accent);font-variant-numeric:tabular-nums}
+
+/* — numbered sections — */
+.sec-h{display:flex;gap:10px;font-size:calc(16px*var(--z,1));font-weight:600;margin:0 0 5px}
+.sec-h .n{color:var(--color-accent);font-variant-numeric:tabular-nums}
+.sec-body{padding-left:calc(2.6em + 10px);margin-bottom:14px}
+.sub-h{font-size:calc(13.5px*var(--z,1));font-weight:600;margin:12px 0 4px}
+.sub-h .n{color:var(--color-accent-700);font-variant-numeric:tabular-nums;margin-right:6px}
+.micro{font-size:calc(11px*var(--z,1));letter-spacing:0.1em;text-transform:uppercase;
+  color:var(--color-neutral-600);margin-bottom:4px}
+
+/* — callouts — */
+.flag{margin:10px 0;padding:8px 10px;background:var(--color-accent-2-100);
+  border-left:3px solid var(--color-accent-2)}
+.flag .label{font-size:calc(10px*var(--z,1));letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--color-accent-2-800);margin-bottom:3px}
+.flag .body{font-size:calc(12px*var(--z,1));line-height:1.38;color:var(--color-accent-2-900)}
+.flag .body p{margin:0 0 5px}.flag .body p:last-child{margin:0}
+
+.note{margin:10px 0;padding:8px 10px;background:var(--color-accent-100);
+  border-left:3px solid var(--color-accent)}
+.note .label{font-size:calc(10px*var(--z,1));letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--color-accent-800);margin-bottom:3px}
+.note .body{font-size:calc(12px*var(--z,1));line-height:1.38;color:var(--color-accent-900)}
+.note .body p{margin:0 0 5px}.note .body p:last-child{margin:0}
+
+.plain{margin:10px 0;padding:8px 10px;background:var(--color-neutral-100);
+  border-left:3px solid var(--color-neutral-400)}
+.plain .label{font-size:calc(10px*var(--z,1));letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--color-neutral-700);margin-bottom:3px}
+.plain .body{font-size:calc(12px*var(--z,1));line-height:1.38;color:var(--color-neutral-900)}
+.plain .body p{margin:0 0 5px}.plain .body p:last-child{margin:0}
+
+/* — REVÍZIA block (CLAUDE.md §1.3, značka [R]) ————————————————————————
+   Zámerne NIE .note/.flag/.plain: site.js tie tri triedy vyplaví do
+   bočného stĺpca ako poznámky na okraji, a revízia patrí do hlavného
+   toku textu — je to obsah, nie komentár. Preto vlastná trieda.        */
+.rev{margin:11px 0;padding:9px 12px;break-inside:avoid;
+  background:linear-gradient(180deg,#fffaf0,#fff);
+  border:1px solid color-mix(in srgb,var(--color-process-yellow) 55%,transparent);
+  border-left:4px solid var(--color-process-yellow)}
+.rev .label{display:inline-flex;align-items:center;gap:6px;
+  font-size:calc(9.5px*var(--z,1));letter-spacing:0.12em;text-transform:uppercase;
+  color:#7a5c00;margin-bottom:4px;font-weight:600}
+.rev .label .r{display:inline-flex;align-items:center;justify-content:center;
+  width:15px;height:15px;border-radius:50%;background:var(--color-process-yellow);
+  color:#3d2e00;font-size:calc(9px*var(--z,1));font-weight:700;letter-spacing:0}
+.rev .body{font-size:calc(12px*var(--z,1));line-height:1.4}
+.rev .body p{margin:0 0 5px}.rev .body p:last-child{margin:0}
+.rev table.table{margin:6px 0 5px}
+
+/* — mechanism diagram in the press's own monospace — */
+.diagram{font-family:var(--font-mono);font-size:calc(10px*var(--z,1));line-height:1.35;
+  background:var(--color-surface);border-left:2px solid var(--color-neutral-400);
+  padding:9px 11px;margin:9px 0;overflow-x:auto;white-space:pre;
+  color:var(--color-neutral-900);border-radius:var(--radius-sm)}
+
+/* — kaskáda v riadku a rozvetvenie (CLAUDE.md §2.5) — */
+.chain{font-size:calc(12.5px*var(--z,1));line-height:1.5;margin:8px 0;padding:7px 10px;
+  background:var(--color-accent-100);border-left:3px solid var(--color-accent-400)}
+.chain b{color:var(--color-accent-800)}
+.fork{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;
+  margin:9px 0;font-size:calc(12px*var(--z,1));line-height:1.38}
+.fork>div{padding:7px 9px;background:var(--color-neutral-100);
+  border-top:2px solid var(--color-neutral-400)}
+.fork>div b{display:block;margin-bottom:2px;color:var(--color-neutral-900)}
+
+/* — charts — */
+.chart{margin:12px 0;break-inside:avoid;max-width:700px}
+.chart svg{width:100%;height:auto;display:block;font-family:var(--font-body)}
+.chart figcaption{font-size:calc(10.5px*var(--z,1));line-height:1.35;margin-top:4px;color:var(--color-neutral-700)}
+.chart figcaption b{color:var(--color-text)}
+.chart .ax{stroke:var(--color-neutral-400);stroke-width:1}
+.chart .grid{stroke:var(--color-neutral-300);stroke-width:1;stroke-dasharray:2 3}
+.chart .ser{fill:none;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+.chart .s-c{stroke:var(--color-accent)}
+.chart .s-m{stroke:var(--color-accent-2)}
+.chart .s-k{stroke:var(--color-neutral-700)}
+.chart .f-c{fill:var(--color-accent);opacity:.13}
+.chart .f-m{fill:var(--color-accent-2);opacity:.13}
+.chart .band-c{fill:var(--color-accent-100)}
+.chart .band-m{fill:var(--color-accent-2-100)}
+.chart .tick{font-size:9.5px;fill:var(--color-neutral-600);font-variant-numeric:tabular-nums}
+.chart .lbl{font-size:10.5px;fill:var(--color-neutral-800)}
+.chart .lbl-c{font-size:10.5px;fill:var(--color-accent-700)}
+.chart .lbl-m{font-size:10.5px;fill:var(--color-accent-2-700)}
+.chart .cap{font-size:9.5px;fill:var(--color-neutral-600);letter-spacing:.08em;text-transform:uppercase}
+.chart .mark{stroke:var(--color-neutral-800);stroke-width:1;stroke-dasharray:3 3}
+.chart .bar-c{fill:var(--color-accent-500)}
+.chart .bar-m{fill:var(--color-accent-2-500)}
+
+/* — krížové odkazy (CLAUDE.md §3.1) ————————————————————————————————————
+   a.xref  = odkaz na kapitolu, ktorá už existuje. Ostáva skutočným
+             <a href>, takže funguje aj bez JS a bez shellu; keď pribudne
+             split.js, otvorí sa vedľa v druhom paneli.
+   .xref-soon = tá istá informácia pre kapitolu, ktorá ešte nie je
+             napísaná. Zámerne NIE <a>: mŕtvy odkaz je horší než žiadny.
+             Text nesie číslo aj názov, takže dáva zmysel aj v tlači.   */
+.xref{color:var(--color-accent-700);text-decoration:none;
+  border-bottom:1px solid color-mix(in srgb,var(--color-accent) 45%,transparent);
+  white-space:nowrap}
+.xref:hover{background:var(--color-accent-100);border-bottom-color:var(--color-accent)}
+.xref-soon{color:var(--color-neutral-600);
+  border-bottom:1px dotted var(--color-neutral-400);white-space:nowrap;cursor:help}
+
+.deps,.next{font-size:calc(11.5px*var(--z,1));line-height:1.5;margin:0 0 10px;padding:7px 10px;
+  background:var(--color-neutral-100);border-top:2px solid var(--color-neutral-400)}
+.deps b,.next b{font-size:calc(10px*var(--z,1));letter-spacing:.1em;text-transform:uppercase;
+  color:var(--color-neutral-700);margin-right:6px}
+.next{border-top-color:var(--color-accent);background:var(--color-accent-100);margin:16px 0 0}
+.next b{color:var(--color-accent-800)}
+
+/* — two/three column content blocks — */
+.cols-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;
+  font-size:calc(12.5px*var(--z,1));line-height:1.35}
+.cols-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;
+  font-size:calc(12.5px*var(--z,1));line-height:1.35}
+.flow-2{column-count:2;column-gap:22px;font-size:calc(12.5px*var(--z,1));line-height:1.38}
+
+.lede{font-size:calc(12.5px*var(--z,1));color:var(--color-neutral-700)}
+b,strong{font-weight:600}
+.tnum{font-variant-numeric:tabular-nums}
+
+@media screen and (min-width:981px){
+  .sec-h,.sub-h,.micro,.hr,.diagram,.chart,.table,.running-foot,
+  .cols-2,.cols-3,.flow-2,.note,.flag,.plain,.rev,.fork,.chain{clear:both}
+  .sec-body::after{content:"";display:block;clear:both}
+}
+
+@media (max-width:820px){
+  body{padding:0}
+  .page{padding:20px 16px}
+  .contents{column-count:2}
+  .cols-3,.cols-2,.flow-2{grid-template-columns:1fr;column-count:1;display:block}
+  .cols-3>div,.cols-2>div{margin-bottom:12px}
+  .sec-body{padding-left:0}
+  .opener{gap:12px}
+  .opener .num{font-size:calc(46px*var(--z,1))}
+  .table{display:block;overflow-x:auto}
+  .chart{overflow-x:auto}
+  .chart svg{max-width:none;min-width:100%}
+  .xref,.xref-soon{white-space:normal}
+}
+@media print{
+  body{background:#fff;padding:0}
+  .page{max-width:none;padding:0.7in}
+  .diagram{overflow:visible}
+  .cols-2,.cols-3{display:block}
+  .cols-2>div,.cols-3>div{margin-bottom:8px}
+  .flow-2{column-count:1}
+  .contents{column-count:1}
+  .xref{color:#000;border-bottom:0}
+  .xref-soon{color:#444;border-bottom:0}
+  .rev{background:#fff;border:1px solid #999;border-left:4px solid #999}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+/* — doplnky pre generované kapitoly (tools/build.js) — */
+.src p,.src li{font-size:calc(11.5px*var(--z,1));line-height:1.4}
+.src ul{padding-left:16px}
+.src .micro{font-size:calc(10px*var(--z,1))}
+figure.keep>.diagram{margin:9px 0 3px}
+figure.keep>figcaption{font-size:calc(10.5px*var(--z,1));line-height:1.35;color:var(--color-neutral-700);margin:0 0 9px}
+figure.keep>figcaption b{color:var(--color-text)}
+.page code{font-family:var(--font-mono);font-size:.92em}
+.chart .bx{fill:var(--color-neutral-200)}
+.chart .bx-c{fill:var(--color-accent-200)}
+.chart .bx-m{fill:var(--color-accent-2-200)}
+.chart .bx-k{fill:var(--color-neutral-100);stroke:var(--color-neutral-400)}
+
+/* ══ PATOLA: farebné boxy = vrstvy z CLAUDE.md §1.1 ═══════════════════════
+   Vlastné triedy (.box), NIE .note/.flag/.plain — tie site.js vyplavuje do
+   okraja ako poznámky, kým boxy sú jadro textu.  --c = farba pásika,
+   --cl = tmavší odtieň pre štítok (kontrast na tónovanom pozadí).        */
+.box{--c:var(--color-neutral-500);--cl:var(--color-neutral-800);
+  margin:10px 0;padding:8px 10px;break-inside:avoid;
+  background:color-mix(in srgb,var(--c) 8%,#fff);border-left:3px solid var(--c)}
+.box .label{font-size:calc(10px*var(--z,1));letter-spacing:.12em;text-transform:uppercase;font-weight:600;
+  color:var(--cl);margin-bottom:3px}
+.box .body{font-size:calc(12px*var(--z,1));line-height:1.38}
+.box .body>*:last-child{margin-bottom:0}
+.box .body p{margin:0 0 5px}
+.box .body ul,.box .body ol{margin:0 0 5px}
+.box .body table.table{margin:5px 0}
+.k-mech{--c:var(--color-accent);--cl:var(--color-accent-800)}
+.k-morf{--c:var(--color-accent-2);--cl:var(--color-accent-2-800)}
+.k-detek{--c:var(--color-neutral-500);--cl:var(--color-neutral-800)}
+.k-klin{--c:var(--color-accent-800);--cl:var(--color-accent-900)}
+.k-pozor{--c:#d9601a;--cl:#8a3b08}
+.k-zap{--c:#1f8a8a;--cl:#0f5555}
+.k-fyz{--c:#3f8a55;--cl:#24582f}
+
+/* ══ PATOLA: okraj stránky (CLAUDE.md §5.3) ═══════════════════════════════
+   Jadro (hlavná myšlienka sekcie) a Skratky nie sú vrstva výkladu → bez farebnej
+   plochy a bez ľavého pásika. Šírka pásika 0 zároveň znamená, že site.js k nim
+   nekreslí čiaru cez text (čiara má hrúbku ľavého okraja poznámky).           */
+.k-jadro{--cl:var(--color-neutral-900);background:none;border-left:0;
+  border-top:2px solid var(--color-neutral-900);padding:5px 0 1px}
+.k-jadro .body{line-height:1.42}
+/* „Môžeš počuť“ – pojem alebo údaj z osnovy, ktorý sa nepodarilo doložiť: bez farebnej plochy, prerušovaný pásik */
+.k-pocut{--c:var(--color-neutral-500);--cl:var(--color-neutral-700);background:none;border-left:2px dashed var(--color-neutral-500)}
+.box.k-pocut .body{color:var(--color-neutral-800)}
+.k-skr{background:var(--color-neutral-100);border-left:0;padding:4px 8px;margin:3px 0 9px}
+.box.k-skr .body{font-size:calc(10.5px*var(--z,1));line-height:1.4;color:var(--color-neutral-700)}
+.k-skr .sk b{font-weight:600;color:var(--color-text)}
+.k-skr .sk+.sk::before{content:"· "}
+@media screen and (min-width:981px){
+  /* na okraji jedna skratka na riadok; v texte (mobil, tlač) idú za sebou */
+  .k-skr.side-note .sk{display:block;margin:0 0 2px}
+  .k-skr.side-note .sk+.sk::before{content:none}
+}
+/* mobil: skratky rastú s ostatným písmom (blok na konci súboru ich pre vyššiu špecifickosť nezachytí) */
+@media screen and (max-width:820px){.box.k-skr .body{font-size:calc(11.5px*var(--z,1))}}
+
+/* ══ obrázky (rovnaké pravidlá ako v ručne písaných kapitolách patofyzie) ═
+   --fw = najväčšia rozumná šírka zobrazenia; malý obrázok sa nerozmaže.   */
+.fig{margin:11px auto;break-inside:avoid;max-width:min(100%,var(--fw,100%))}
+.fig img{display:block;width:100%;height:auto;background:transparent;border:0;cursor:zoom-in}
+.fig figcaption{font-size:calc(10.5px*var(--z,1));line-height:1.35;margin-top:4px;color:var(--color-neutral-700)}
+.fig figcaption b{color:var(--color-text)}
+.fig figcaption .src-link{display:inline-flex;align-items:center;gap:3px;
+  color:var(--color-neutral-500);text-decoration:none}
+.fig figcaption .src-link:hover{color:var(--color-accent);text-decoration:underline}
+.fig figcaption .src-link svg{width:10px;height:10px;flex:none;
+  fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.fig-row{display:flex;flex-wrap:wrap;align-items:flex-start;gap:14px;margin:11px 0}
+.fig-row .fig{flex:var(--ar,1) 1 0;min-width:0;margin:0;max-width:none}
+@media screen and (min-width:981px){
+  .box,.fig,.fig-row{clear:both}
+  .fig-row .fig{clear:none}
+}
+@media (max-width:820px){
+  .fig-row{display:block}
+  .fig-row .fig{margin-bottom:12px;max-width:min(100%,var(--fw,100%))}
+}
+@media print{
+  .box{background:#fff;border:1px solid #999;border-left:4px solid var(--c)}
+  .box.k-jadro{border:0;border-top:1.5px solid #000}
+  .box.k-skr{border:0}
+  .fig figcaption .src-link{display:inline;color:#555}
+  .fig figcaption .src-link svg{display:none}
+  .fig figcaption .src-link[href]::after{content:" (" attr(href) ")";font-size:calc(8px*var(--z,1));word-break:break-all}
+  .fig-row{display:block;overflow:hidden}
+  .fig-row .fig{float:left;width:calc(50% - 8px);margin:0 0 10px}
+  .fig-row .fig+.fig{float:right}
+}
+
+/* ══ PATOLA: náhľad inej kapitoly (assets/js/peek.js) ═════════════════════
+   Panel prekryje stred a pravý stĺpec; hlavička a ľavý obsah ostávajú.
+   --pk-left / --pk-top dopočíta skript z polohy bočného panela a hlavičky.
+   Maximalizácia = --pk-m → 0 (prechod na left/top/right/bottom, 0,5 s).   */
+.pk-backdrop{position:fixed;z-index:44;left:var(--pk-left,0px);top:var(--pk-top,52px);right:0;bottom:0;
+  background:rgba(32,28,40,.30);-webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px);
+  opacity:0;transition:opacity .22s ease}
+.pk-backdrop.pk-in{opacity:1}
+.pk-backdrop.pk-max-on{opacity:0;transition:opacity .5s ease}
+.pk{--pk-m:16px;--pk-ease:cubic-bezier(.4,0,.2,1);
+  position:fixed;z-index:45;
+  left:calc(var(--pk-left,0px) + var(--pk-m));top:calc(var(--pk-top,52px) + var(--pk-m));
+  right:var(--pk-m);bottom:var(--pk-m);
+  display:flex;flex-direction:column;overflow:hidden;
+  background:#fff;border:1px solid var(--color-neutral-300);border-radius:12px;
+  box-shadow:0 22px 56px rgba(20,16,32,.30),0 2px 8px rgba(20,16,32,.12);
+  opacity:0;transform:translateY(12px) scale(.985);
+  transition:opacity .22s ease,transform .28s cubic-bezier(.2,.7,.2,1)}
+.pk.pk-in{opacity:1;transform:none}
+.pk.pk-max-on{--pk-m:0px;border-radius:0;border-color:transparent;box-shadow:0 0 0 rgba(0,0,0,0);
+  transition:left .5s var(--pk-ease),top .5s var(--pk-ease),right .5s var(--pk-ease),bottom .5s var(--pk-ease),
+    border-radius .5s var(--pk-ease),box-shadow .5s ease,border-color .5s ease}
+.pk-bar{flex:none;display:flex;align-items:center;gap:4px;height:44px;padding:0 8px 0 14px;overflow:hidden;
+  border-bottom:1px solid var(--color-neutral-200);background:var(--color-neutral-50,#faf9fb);
+  font-family:var(--site-font,system-ui,sans-serif);font-size:calc(12.5px*var(--z,1));color:var(--color-text);
+  transition:height .5s var(--pk-ease),opacity .3s ease,border-color .5s ease}
+.pk.pk-max-on .pk-bar{height:0;opacity:0;border-color:transparent}
+.pk-kind{flex:none;font-size:calc(10px*var(--z,1));letter-spacing:.12em;text-transform:uppercase;font-weight:600;
+  color:var(--color-accent-700);padding:3px 7px;border-radius:4px;
+  background:color-mix(in srgb,var(--color-accent) 10%,transparent);margin-right:6px}
+.pk-title{flex:1;min-width:0;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pk-btn{flex:none;display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;
+  border:0;border-radius:7px;background:transparent;color:var(--color-neutral-600);cursor:pointer;
+  transition:background .15s ease,color .15s ease}
+.pk-btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.pk-btn-max:hover{background:color-mix(in srgb,var(--color-accent) 12%,transparent);color:var(--color-accent-700)}
+.pk-btn-close:hover{background:color-mix(in srgb,var(--color-accent-2) 14%,transparent);color:var(--color-accent-2-700)}
+.pk-btn:focus-visible{outline:2px solid var(--color-accent);outline-offset:1px}
+.pk-btn:active{transform:scale(.94)}
+.pk-frame{flex:1;display:block;width:100%;min-height:0;border:0;background:#fff}
+.pk-load{position:relative;flex:none;height:0;overflow:visible;pointer-events:none}
+.pk-load i{position:absolute;left:0;top:0;height:3px;width:40%;opacity:0;
+  background:linear-gradient(90deg,var(--color-accent),var(--color-accent-2))}
+.pk-load.on i{opacity:1;animation:pk-slide 1.1s ease-in-out infinite}
+@keyframes pk-slide{0%{left:-40%}100%{left:100%}}
+@media (max-width:980px){.pk{--pk-m:8px}}
+
+/* kým je náhľad otvorený: stránka pod ním stojí, posuvník nahradí odsadenie */
+html.pk-lock{overflow:hidden}
+html.pk-lock body{padding-right:var(--pk-sbw,0px)}
+
+/* bočný obsah pri maximalizácii (skript presunie body a animuje posun) */
+.pk-nav-gap{height:18px;margin:6px 8px 0;border-bottom:1px dashed var(--color-neutral-300)}
+.site-header .crumb{transition:opacity .25s ease}
+.site-header .crumb.pk-fade{opacity:0}
+
+/* stránka vnútri náhľadu: len obsah, bez hlavičky a bočného panela */
+html.pk-restoring body{visibility:hidden}
+/* fork: na samostatnom riadku je len nadpis stĺpca; tučné slová v texte ostávajú vo vete */
+.fork>div>b:not(:first-child){display:inline;margin:0}
+.pk-embed .site-header,.pk-embed .site-sidebar,.pk-embed .reading-progress,
+.pk-embed .reading-pct,.pk-embed .skip-link{display:none!important}
+
+/* návrat tlačidlom Späť */
+.pk-back-in .site-main{animation:pk-back .35s cubic-bezier(.2,.7,.2,1)}
+.pk-back-in .site-sidebar nav{animation:pk-fadein .35s ease}
+@keyframes pk-back{from{opacity:0;transform:translateX(-32px)}to{opacity:1;transform:none}}
+@keyframes pk-fadein{from{opacity:0}to{opacity:1}}
+@media (prefers-reduced-motion:reduce){
+  .pk,.pk.pk-max-on,.pk-bar,.pk-backdrop{transition:none}
+  .pk-back-in .site-main,.pk-back-in .site-sidebar nav{animation:none}
+}
+@media print{.pk,.pk-backdrop{display:none!important}}
+
+/* ══ PATOLA: tlač ═════════════════════════════════════════════════════════
+   Strana A4 má ~700 px, takže sa v tlači zapínajú mobilné pravidlá
+   z chapter.css (@media max-width:820px): graf s posuvníkom, tabuľka ako blok.
+   Tu ich vraciame a riešime zlom strán.                                    */
+@page{size:A4;margin:14mm 15mm 16mm}
+@media print{
+  .page{padding:0!important}
+  .chart{overflow:visible!important;max-width:100%}
+  .chart svg{min-width:0!important;max-width:100%!important}
+  .table{display:table!important;overflow:visible!important;width:100%}
+  .diagram{white-space:pre-wrap}
+  /* fotografia nezaberie celú stranu – inak ostávajú polovičné prázdne strany */
+  .fig{max-width:100%!important}
+  .fig img{width:auto;max-width:100%;max-height:6.5cm;margin:0 auto}
+  .fig-row .fig img{max-height:5.2cm}
+  .chart svg{max-height:9.5cm}
+  /* úspornejšia tlač (4. 10. 2026): obsah kapitoly v dvoch stĺpcoch, zdroje drobnejším písmom v dvoch stĺpcoch */
+  .contents{column-count:2;column-gap:24px}
+  .sec-body.src{font-size:calc(9.5px*var(--z,1));line-height:1.35}
+  .sec-body.src ul{column-count:2;column-gap:22px;margin-top:3px}
+  .sec-body.src li{break-inside:avoid;margin-bottom:2px}
+  /* nadpis nikdy sám na spodku strany */
+  .sec-h,.sub-h,h2,h3,.box .label{break-after:avoid;page-break-after:avoid}
+  /* dlhé boxy sa smú zlomiť (inak nechajú prázdnu pol stranu); tabuľky a riadky nie */
+  .box.keep{break-inside:auto}
+  tr,.fig,.chart,figure.keep{break-inside:avoid}
+  p,li{orphans:3;widows:3}
+  .reader-ctl,#pt-zoom{display:none!important}
+}
+
+/* lupa (assets/js/zoom.js) */
+#pt-zoom{position:fixed;inset:0;z-index:90;display:none;align-items:center;justify-content:center;
+  padding:24px;background:rgba(20,18,26,.82);-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);cursor:zoom-out}
+#pt-zoom.on{display:flex}
+#pt-zoom img{max-width:100%;max-height:100%;background:#fff;box-shadow:var(--shadow-lg)}
+
+/* okrajové poznámky (site.js): na pôvodnom mieste v texte ostane čiara vo farbe a hrúbke
+   ľavého okraja poznámky, ktorá vedie až k nej; poznámka na čiare sedí spodkom.
+   Dlhé odkazy sa musia zalamovať, inak presiahnu úzky stĺpec (204–254 px, --side-w v site.css) a stránka dostane vodorovný posuv */
+.side-anchor{display:block;height:0;margin:10px 0;padding:0;position:relative;z-index:4;pointer-events:none}
+/* zalomenie čiary k poznámke, ktorú iná odtlačila nižšie (zvislý + vodorovný úsek, site.js) */
+.side-anchor i{display:none;position:absolute;background-color:inherit}
+@media (max-width:980px){.side-anchor{display:none}}
+@media (min-width:981px){.box.side-note{margin:0}}
+@media print{.side-anchor{display:none}}
+@media screen and (min-width:981px){.side-note{transform:none!important;overflow-wrap:anywhere}}
+.xref{white-space:normal}
+
+/* ══ PATOLA: vlastné schémy (chapters/fig/*.svg) ═════════════════════════ */
+.chart .mk{fill:var(--color-neutral-700)}
+.chart .arw{fill:none;stroke:var(--color-neutral-700);stroke-width:1.5}
+.chart .arwd{fill:none;stroke:var(--color-neutral-600);stroke-width:1.3;stroke-dasharray:5 4}
+.chart .cell{fill:var(--color-accent-100);stroke:var(--color-accent-600);stroke-width:1.5}
+.chart .nuc{fill:var(--color-accent-400);stroke:var(--color-accent-800);stroke-width:1}
+.chart .cellm{fill:var(--color-accent-2-100);stroke:var(--color-accent-2-600);stroke-width:1.5}
+.chart .nucm{fill:var(--color-accent-2-500);stroke:var(--color-accent-2-800);stroke-width:1}
+.chart .dot{fill:var(--color-neutral-700)}
+.chart .dotm{fill:var(--color-accent-2-600)}
+.chart .lblb{font-size:11px;font-weight:600;fill:var(--color-neutral-900)}
+.chart .sub{font-size:9.5px;fill:var(--color-neutral-700)}
+.chart .zone-r{fill:var(--color-accent-2-100)}
+.chart .zone-i{fill:var(--color-accent-100)}
+.chart .s-d{stroke:var(--color-neutral-700);stroke-dasharray:6 4}
+.chart .s-t{stroke:var(--color-neutral-700);stroke-dasharray:2 4}
+.chart .fill-acc{fill:var(--color-accent-500)}
+.chart .fill-acc2{fill:var(--color-accent-2-500)}
+.chart .stk-acc{fill:none;stroke:var(--color-accent-600);stroke-width:2}
+.chart .stk-acc2{fill:none;stroke:var(--color-accent-2-600);stroke-width:2}
+.chart .stk-n{fill:none;stroke:var(--color-neutral-600);stroke-width:1.3}
+/* ══ Odborná kontrola a otázky na zopakovanie (CLAUDE.md §1.3, §2.2) ═══════
+   Rovnaké v PATOLE aj v patofyzii (tools/chapter-extra.css oboch projektov). */
+.reviewed{font-size:calc(10.5px*var(--z,1));line-height:1.4;margin:-4px 0 12px;padding:0 10px;color:var(--color-neutral-700)}
+.reviewed b{font-size:calc(9.5px*var(--z,1));letter-spacing:.1em;text-transform:uppercase;font-weight:600}
+.reviewed a{color:var(--color-accent-800)}
+ol.quiz{margin:8px 0 4px;padding-left:26px}
+ol.quiz li{margin:0 0 6px}
+ol.quiz li::marker{color:var(--color-accent-800);font-weight:600}
+/* vlastná šípka za číslom — natívny trojuholník <summary> by sa prekrýval s číslom otázky */
+ol.quiz summary{display:block;list-style:none;cursor:pointer;font-weight:600;line-height:1.45;padding-left:14px;position:relative}
+ol.quiz summary::-webkit-details-marker{display:none}
+ol.quiz summary::before{content:"▸";position:absolute;left:0;top:0;color:var(--color-accent);transition:transform .15s ease}
+ol.quiz details[open]>summary::before{transform:rotate(90deg)}
+ol.quiz summary:hover{color:var(--color-accent-800)}
+ol.quiz .ans{margin:4px 0 2px 14px;padding:6px 10px;font-size:calc(12.5px*var(--z,1));line-height:1.45;
+  background:var(--color-accent-100);border-left:3px solid var(--color-accent)}
+@media print{
+  ol.quiz summary::before{content:none}
+  ol.quiz summary{padding-left:0}
+  ol.quiz .ans{margin-left:0}
+  ol.quiz .ans{background:none;border-left:1px solid var(--color-neutral-400);font-size:calc(10px*var(--z,1))}
+}
+
+/* stĺpce vedľa seba (blok ```cols) – vodorovné členenie rovnocenných vetiev */
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px 14px;margin:9px 0 11px}
+.cols.n4{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.cols>div{padding:7px 11px 5px;background:var(--color-neutral-100);border-top:2px solid var(--color-accent-400);break-inside:avoid}
+.cols>div>p{margin:0 0 4px}
+.cols>div>ul,.cols>div>ol{margin:0 0 3px}
+@media print{.cols>div{background:none;border:1px solid var(--color-neutral-400);border-top-width:2px}}
+
+/* otázky na zopakovanie: reflektor pojmov okolo kurzora by napovedal a klik na pojem by namiesto
+   odpovede otvoril vysvetlivku → pojmy tu svietia a dajú sa otvoriť len pri zapnutom prepínači „Pojmy“ */
+html:not(.pf-terms-always) ol.quiz .pf-term{pointer-events:none;cursor:inherit}
+html:not(.pf-terms-always) ol.quiz .pf-term.is-lit{background-color:transparent;box-shadow:0 0 0 1.5px transparent}
+/* text otázky sa pri rýchlom otváraní a zatváraní (dvojklik) nemá označovať */
+ol.quiz summary{-webkit-user-select:none;user-select:none}
+
+/* ══ PATOLA: mobil — o stupeň väčšie písmo (≈ +7 %) ══════════════════════
+   Veľkosti v chapter.css sú v px (sadzba na tlačenú stranu), takže sa na
+   úzkej obrazovke zväčšujú po jednej, každá o rovnaký krok. `screen`, lebo
+   strana A4 je užšia než 820 px a tlač by pravidlo chytila tiež.
+   Musí ostať na konci súboru — prebíja pravidlá vyššie.
+   Od 8. 10. 2026 sa každá veľkosť ešte násobí mierkou --z (site.css): nová veľkosť = calc(Npx*var(--z,1)).                    */
+@media screen and (max-width:820px){
+  .page{font-size:calc(14.5px*var(--z,1))}
+  .sec-h{font-size:calc(17px*var(--z,1))}
+  .sub-h{font-size:calc(14.5px*var(--z,1))}
+  .standfirst{font-size:calc(14px*var(--z,1))}
+  .chain,.cols-2,.cols-3,.flow-2,.lede,ol.quiz .ans{font-size:calc(13.5px*var(--z,1))}
+  .page table.table,.box .body,.rev .body,.note .body,.flag .body,.plain .body,.fork{font-size:calc(13px*var(--z,1))}
+  .contents,.deps,.next,.src p,.src li{font-size:calc(12.5px*var(--z,1))}
+  .micro{font-size:calc(12px*var(--z,1))}
+  .fig figcaption,.chart figcaption,figure.keep>figcaption,.reviewed{font-size:calc(11.5px*var(--z,1))}
+  .box .label,.rev .label,.note .label,.flag .label,.plain .label,
+  .contents .label,.deps b,.next b,.eyebrow,.src .micro{font-size:calc(10.5px*var(--z,1))}
+  /* vysvetlivky a popis v lupe (glossary.css je zdieľaný s patofyziou, preto tu) */
+  .pf-tip{font-size:calc(14px*var(--z,1))}
+  .pf-tip h4{font-size:calc(15.5px*var(--z,1))}
+  .pf-tip .kicker,.pf-tip-body .fork > div{font-size:calc(13px*var(--z,1))}
+  .pf-tip-body .chain,.pf-tip-body .why,.pf-lb-cap{font-size:calc(13.5px*var(--z,1))}
+  .pf-tip figcaption{font-size:calc(12px*var(--z,1))}
+}
+
+/* „V tejto kapitole“: riadky sú odkazy na sekcie; vzhľad sa nemení, podčiarknutie až pri prejdení myšou */
+.contents a.row,.contents a.row:visited{color:inherit;text-decoration:none;border:0;background:none}
+.contents a.row:hover span:last-child,.contents a.row:focus-visible span:last-child{text-decoration:underline}
+
+/* okraj stránky (.page) sa odvíja od šírky okna: na užšom okne menej prázdneho miesta, na širokom viac
+   (chapter.css má pevných 50 px; mobil ≤ 820 px a tlač majú vlastné pravidlá) */
+@media screen and (min-width:821px){
+  .page{--pg-x:clamp(20px,3.6vw,84px);padding:clamp(22px,3.4vw,72px) var(--pg-x)}
+  /* hlavička kapitoly presahuje text do strán o 40 px (site.css) – najviac však o okraj stránky, inak na
+     tablete (821–980 px, kde vedľa stránky nie je stĺpec na poznámky) vytŕča z okna a stránka sa posúva do strán */
+  .chapter-hero{margin-left:calc(-1*min(40px,var(--pg-x)));margin-right:calc(-1*min(40px,var(--pg-x)))}
+}
+
+/* farebné stĺpce tabuľky (hlavička v .md končí {zel} | {fial} | {ruz} | {tyrk}) – keď sú stĺpce
+   rovnocenné kategórie, ktoré si má čitateľ zapamätať ako trojicu */
+.c-zel{--tc:#3f8a55}.c-fial{--tc:var(--color-accent)}.c-ruz{--tc:var(--color-accent-2)}.c-tyrk{--tc:#1f8a8a}
+.page table.table th[class^="c-"]{color:var(--tc);font-weight:700;border-top:3px solid var(--tc);
+  background:color-mix(in srgb,var(--tc) 13%,#fff);padding:4px 8px}
+.page table.table td[class^="c-"]{background:color-mix(in srgb,var(--tc) 5%,#fff);padding-left:8px}
+@media print{.page table.table th[class^="c-"],.page table.table td[class^="c-"]{background:none}}
+
+/* vlastné schémy (SVG) idú predvolene na celú šírku textu (chapter.css ich drží na 700 px) */
+figure.chart{max-width:100%}
+</style>
+<link rel="stylesheet" href="../assets/styles/palette.css">
+<link rel="manifest" href="../manifest.json">
+<meta name="theme-color" content="#5f42a8">
+<link rel="icon" href="../assets/img/icon-32.png">
+<link rel="apple-touch-icon" href="../assets/img/icon-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="PATOLA">
+<script src="../assets/js/pwa.js" defer></script>
+</head>
+<body>
+<!-- Súbor je GENEROVANÝ z 04_typy_zapalu.md nástrojom tools/build.js — uprav .md, nie tento súbor. -->
+<a class="skip-link" href="#sec-4-1">Preskočiť na obsah</a>
+<header class="site-header">
+  <a class="brand" href="../index.html"><span class="mark" aria-hidden="true"></span>PATOLA</a>
+  <span class="crumb">Patologická anatómia — <b>Typy zápalu</b></span>
+  <span class="spacer"></span>
+  <button class="site-toc-toggle" type="button" aria-label="Obsah kapitoly" aria-expanded="false">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+  </button>
+</header>
+
+<div class="reading-progress" role="progressbar" aria-label="Priebeh čítania kapitoly" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="bar"></div></div>
+<div class="reading-pct" aria-hidden="true">0 %</div>
+
+<div class="site-shell">
+  <aside class="site-sidebar">
+    <div class="toc-title">Obsah kapitoly</div>
+    <nav></nav>
+  </aside>
+
+  <div class="site-main">
+<main class="page">
+
+<div class="chapter-hero">
+<div class="running-head">
+  <span>4 · Typy zápalu – alteratívny a exsudatívny zápal</span>
+  <span style="color:var(--color-accent-700)">Patologická anatómia</span>
+</div>
+
+<div class="opener">
+  <div class="cmyk-num num">
+    <span class="paper">4</span>
+    <span class="plate plate-c" aria-hidden="true">4</span>
+    <span class="plate plate-m" aria-hidden="true">4</span>
+    <span class="plate plate-y" aria-hidden="true">4</span>
+  </div>
+  <div style="padding-top:2px">
+    <div class="eyebrow">Zápaly</div>
+    <h1>Typy zápalu – alteratívny a exsudatívny zápal</h1>
+    <p class="standfirst">Všetky zápaly prechádzajú tými istými krokmi, no v každom prevládne iný – zánik buniek, tekutina a bunky z ciev, alebo nové bunky v ložisku. Kapitola rozoberá alteratívny zápal a podoby exsudatívneho podľa toho, čo prešlo stenou cievy a ktoré bunky prišli (serózny, lymfocytárny, hnisavý, fibrinózny, hemoragický), a gangrenózny zápal; proliferatívny zápal má vlastné kapitoly 5 a 6.</p>
+  </div>
+</div>
+</div>
+
+<p class="deps"><b>Predpoklady:</b>
+  <a class="xref" href="03_zapal_vseobecne.html#sec-3-3">→ 3.3 Cievna fáza – exsudácia</a> ·
+  <a class="xref" href="03_zapal_vseobecne.html#sec-3-4">→ 3.4 Bunková fáza – leukocyty v ložisku</a> ·
+  <a class="xref" href="03_zapal_vseobecne.html#sub-3-5-3">→ 3.5.3 Hranica reverzibility: kedy sa zápal zahojí bez jazvy</a> ·
+  <a class="xref" href="01_atrofia_nekroza_apoptoza.html#sec-1-6">→ 1.6 Druhy nekrózy</a>
+</p>
+<p class="reviewed"><b>Odborná kontrola:</b> zatiaľ neprebehla — fakty sú overené len podľa zdrojov uvedených na konci kapitoly · <a href="https://github.com/ephafy/patologia/issues/new?title=Kap.%204%3A%20" target="_blank" rel="noopener noreferrer">Nahlásiť chybu</a></p>
+
+<div class="contents keep">
+  <div class="label">V tejto kapitole</div>
+  <a class="row" href="#sec-4-1"><span>4.1</span><span>Ako sa zápal delí a pomenúva</span></a>
+  <a class="row" href="#sec-4-2"><span>4.2</span><span>Alteratívny zápal</span></a>
+  <a class="row" href="#sec-4-3"><span>4.3</span><span>Serózny zápal</span></a>
+  <a class="row" href="#sec-4-4"><span>4.4</span><span>Lymfocytárny (nehnisavý) zápal</span></a>
+  <a class="row" href="#sec-4-5"><span>4.5</span><span>Hnisavý (purulentný) zápal</span></a>
+  <a class="row" href="#sec-4-6"><span>4.6</span><span>Fibrinózny zápal</span></a>
+  <a class="row" href="#sec-4-7"><span>4.7</span><span>Hemoragický zápal</span></a>
+  <a class="row" href="#sec-4-8"><span>4.8</span><span>Gangrenózny (hnilobný, putrídny) zápal</span></a>
+  <a class="row" href="#sec-4-9"><span>4.9</span><span>Súhrn a rýchle rozlíšenie</span></a>
+  <a class="row" href="#sec-4-10"><span>4.10</span><span>Otázky na zopakovanie</span></a>
+  <a class="row" href="#sec-4-11"><span>4.11</span><span>Zdroje</span></a>
+</div>
+
+<!-- ══ 4.1 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-4-1"><span class="n">4.1</span><span>Ako sa zápal delí a pomenúva</span></h2>
+<div class="sec-body">
+  <p>Zápal má štyri deje – alteráciu, exsudáciu, infiltráciu a proliferáciu (<a class="xref" href="03_zapal_vseobecne.html#sec-3-1">→ 3.1 Zápal – definícia, spúšťače a Celsove znaky</a>). Prebehnú pri každom zápale, no patológ na reze vidí hlavne ten, ktorý prevládol. Delenie zápalov preto stojí na jedinej otázke – <b>čo v ložisku prevláda</b> – a pri exsudatívnom zápale ju spresňujú ďalšie tri.</p>
+
+  <div class="box k-jadro aside keep">
+    <div class="label">Jadro</div>
+    <div class="body">
+      <p>Zápal sa delí podľa toho, <b>čo v ložisku prevláda</b>: zánik buniek (alteratívny), tekutina a bunky z ciev (exsudatívny), bunky deliace sa v ložisku (proliferatívny).</p>
+    </div>
+  </div>
+
+  <h3 class="sub-h" id="sub-4-1-1"><span class="n">4.1.1</span>Tri typy podľa toho, čo prevláda</h3>
+  <p>Podľa prevládajúceho deja sú tri typy zápalu:</p>
+
+  <table class="table keep" id="tab-4-1" style="margin:6px 0">
+    <thead><tr><th>Typ</th><th>Čo prevláda</th><th>Podoby</th><th>Kde</th></tr></thead>
+    <tbody>
+      <tr><td><b><b>Alteratívny</b></b></td><td>zánik buniek parenchýmu</td><td>nekrózy, riedky infiltrát</td><td><a class="xref" href="#sec-4-2">→ 4.2 Alteratívny zápal</a></td></tr>
+      <tr><td><b><b>Exsudatívny</b></b></td><td>tekutina a leukocyty z ciev</td><td>serózny, lymfocytárny, hnisavý, fibrinózny, hemoragický; gangrenózny</td><td><a class="xref" href="#sec-4-3">→ 4.3 Serózny zápal</a> až <a class="xref" href="#sec-4-8">→ 4.8 Gangrenózny (hnilobný, putrídny) zápal</a></td></tr>
+      <tr><td><b><b>Proliferatívny</b></b></td><td>bunky deliace sa v ložisku</td><td>nešpecifický (granulačné tkanivo, fibróza), granulomatózny</td><td>kapitoly 5 a 6</td></tr>
+    </tbody>
+  </table>
+
+  <figure class="chart keep" id="fig-typy-zapalu">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" role="img" aria-labelledby="tfigtypyzapalu">
+<title id="tfigtypyzapalu">Mapa typov zápalu: podľa toho, čo v ložisku prevláda, je zápal alteratívny, exsudatívny alebo proliferatívny; exsudatívny sa ďalej určí podľa toho, čo prešlo stenou cievy, ktoré bunky prišli a či sa pridali hnilobné baktérie</title>
+<defs><marker id="mfigtypyzapalu" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker></defs>
+
+<rect class="bx-c" x="240" y="4" width="240" height="28" rx="3" stroke="var(--color-accent-600)"/>
+<text class="lblb" x="360" y="22" text-anchor="middle">Čo v ložisku prevláda?</text>
+<path class="arw" d="M300,32 L90,58" marker-end="url(#mfigtypyzapalu)"/>
+<path class="arw" d="M360,32 L360,58" marker-end="url(#mfigtypyzapalu)"/>
+<path class="arw" d="M420,32 L630,58" marker-end="url(#mfigtypyzapalu)"/>
+
+<rect class="bx-k" x="4" y="60" width="172" height="44" rx="3"/>
+<text class="lblb" x="90" y="78" text-anchor="middle">zánik buniek</text>
+<text class="sub" x="90" y="94" text-anchor="middle">alteratívny · 4.2</text>
+<text class="sub" x="90" y="124" text-anchor="middle">toxín alebo vírus zabije</text>
+<text class="sub" x="90" y="137" text-anchor="middle">bunky skôr, než príde obrana</text>
+
+<rect class="bx-m" x="190" y="60" width="340" height="44" rx="3" stroke="var(--color-accent-2-600)" stroke-width="1.5"/>
+<text class="lblb" x="360" y="78" text-anchor="middle">tekutina a bunky z ciev (exsudát)</text>
+<text class="sub" x="360" y="94" text-anchor="middle">exsudatívny · 4.3–4.8</text>
+
+<rect class="bx-k" x="544" y="60" width="172" height="44" rx="3"/>
+<text class="lblb" x="630" y="78" text-anchor="middle">nové bunky v ložisku</text>
+<text class="sub" x="630" y="94" text-anchor="middle">proliferatívny · kap. 5, 7</text>
+<text class="sub" x="630" y="124" text-anchor="middle">podnet trvá → granulačné</text>
+<text class="sub" x="630" y="137" text-anchor="middle">tkanivo, fibróza, granulóm</text>
+
+<path class="arw" d="M244,104 L244,118" marker-end="url(#mfigtypyzapalu)"/>
+<path class="arw" d="M360,104 L360,118" marker-end="url(#mfigtypyzapalu)"/>
+<path class="arw" d="M476,104 L476,118" marker-end="url(#mfigtypyzapalu)"/>
+<rect class="bx-c" x="190" y="120" width="108" height="26" rx="3" stroke="var(--color-accent-600)"/>
+<text class="lblb" x="244" y="137" text-anchor="middle">čo prešlo stenou?</text>
+<rect class="bx-c" x="306" y="120" width="108" height="26" rx="3" stroke="var(--color-accent-600)"/>
+<text class="lblb" x="360" y="137" text-anchor="middle">kto prišiel?</text>
+<rect class="bx-c" x="422" y="120" width="108" height="26" rx="3" stroke="var(--color-accent-600)"/>
+<text class="lblb" x="476" y="137" text-anchor="middle">čo sa pridalo?</text>
+
+<rect class="bx-k" x="190" y="158" width="108" height="32" rx="3"/>
+<text class="sub" x="244" y="171" text-anchor="middle">voda, albumín</text>
+<text class="sub" x="244" y="184" text-anchor="middle">→ serózny · 4.3</text>
+<rect class="bx-k" x="190" y="196" width="108" height="32" rx="3"/>
+<text class="sub" x="244" y="209" text-anchor="middle">+ fibrinogén</text>
+<text class="sub" x="244" y="222" text-anchor="middle">→ fibrinózny · 4.6</text>
+<rect class="bx-k" x="190" y="234" width="108" height="32" rx="3"/>
+<text class="sub" x="244" y="247" text-anchor="middle">+ erytrocyty</text>
+<text class="sub" x="244" y="260" text-anchor="middle">→ hemoragický · 4.7</text>
+<path class="arwd" d="M182,160 L182,264" marker-end="url(#mfigtypyzapalu)"/>
+<text class="sub" x="176" y="200" text-anchor="end">čím ťažšie</text>
+<text class="sub" x="176" y="213" text-anchor="end">poškodená</text>
+<text class="sub" x="176" y="226" text-anchor="end">cieva</text>
+
+<rect class="bx-k" x="306" y="158" width="108" height="32" rx="3"/>
+<text class="sub" x="360" y="171" text-anchor="middle">lymfocyty</text>
+<text class="sub" x="360" y="184" text-anchor="middle">→ lymfocytárny · 4.4</text>
+<rect class="bx-k" x="306" y="196" width="108" height="32" rx="3"/>
+<text class="sub" x="360" y="209" text-anchor="middle">neutrofily</text>
+<text class="sub" x="360" y="222" text-anchor="middle">→ hnisavý · 4.5</text>
+
+<rect class="bx-k" x="422" y="158" width="108" height="32" rx="3"/>
+<text class="sub" x="476" y="171" text-anchor="middle">hnilobné baktérie</text>
+<text class="sub" x="476" y="184" text-anchor="middle">→ gangrenózny · 4.8</text>
+
+<text class="sub" x="360" y="290" text-anchor="middle">Osi sa kombinujú: napr. fibrinózno-hnisavá peritonitída, serofibrinózna pleuritída.</text>
+</svg>
+    <figcaption><b>Obr. 4.1 — Mapa typov zápalu.</b> Čísla sú sekcie tejto kapitoly.</figcaption>
+  </figure>
+
+  <p>V <b>proliferatívnom (produktívnom)</b> zápale prevládajú bunky, ktoré sa <b>delia priamo v ložisku</b> – makrofágy, endotel nových kapilár a fibroblasty. Proliferácia sa rozbieha pri každom zápale okolo 2.–3. dňa, keď ustúpia neutrofily; prevládne pri hojení a v chronickom zápale, ktorého príčina stále pôsobí (<a class="xref" href="03_zapal_vseobecne.html#sub-3-5-1">→ 3.5.1 Akútny, subakútny a chronický zápal</a>). Neutrofily sa v ložisku nedelia, len prichádzajú krvou – preto ani masívny hnisavý infiltrát nie je proliferatívny.</p>
+
+  <p class="chain">pretrvávajúci podnet → makrofágy (TGF-β, PDGF, VEGF) → pučiace kapiláry a fibroblasty = <b>granulačné tkanivo</b> → kolagén → <b>jazva, fibróza orgánu</b></p>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>TGF-β</b> transformujúci rastový faktor β</span> <span class="sk"><b>PDGF</b> rastový faktor z krvných doštičiek</span> <span class="sk"><b>VEGF</b> rastový faktor cievneho endotelu</span></div>
+  </div>
+
+  <p>Podobu proliferatívneho zápalu určí, či makrofág podnet dokáže stráviť:</p>
+
+  <ul>
+    <li><b>nešpecifický</b> – dokáže, alebo sa podnet opakuje → granulačné tkanivo a fibróza bez osobitného útvaru (<a class="xref" href="05_hojenie.html#sec-5-3">→ 5.3 Granulačné tkanivo – motor reparácie</a>, <a class="xref" href="05_hojenie.html#sec-5-9">→ 5.9 Chronický zápal – keď poškodenie a oprava bežia naraz</a>),</li>
+    <li><b>granulomatózny</b> – nedokáže → makrofágy sa zmenia na epiteloidné bunky a zoskupia do uzlíka, <b>granulómu</b> (<a class="xref" href="07_granulomatozne_zapaly.html#sec-7-1">→ 7.1 Granulóm – keď makrofág nevie stráviť, čo pohltil</a>).</li>
+  </ul>
+
+  <h3 class="sub-h" id="sub-4-1-2"><span class="n">4.1.2</span>Exsudatívne zápaly – tri otázky</h3>
+  <p>Exsudácia má zmysel: tekutina škodlivinu zriedi a prinesie k nej protilátky, komplement a bunky. Cievy sa stanú priepustnými účinkom mediátorov, alebo priamym poškodením endotelu toxínom či popáleninou (<a class="xref" href="03_zapal_vseobecne.html#sec-3-3">→ 3.3 Cievna fáza – exsudácia</a>); leukocyty sa v spomalenom prúde krvi presunú k stene (marginácia), prichytia sa na endotel a prestúpia cez ňu do tkaniva (<a class="xref" href="03_zapal_vseobecne.html#sub-3-4-1">→ 3.4.1 Leukocytová kaskáda – ako leukocyt opustí cievu</a>). To, čo z ciev vystúpilo, je <b>exsudát</b> (tekutina) a <b>infiltrát</b> (bunky). Typ exsudatívneho zápalu určujú odpovede na tri otázky:</p>
+
+  <p><b>1. Čo prešlo stenou ciev?</b> Závisí od toho, ako ťažko je cieva poškodená (<a class="xref" href="03_zapal_vseobecne.html#sec-3-3">→ 3.3 Cievna fáza – exsudácia</a>):</p>
+
+  <ul>
+    <li>slabý podnet → otvoria sa len drobné medzery medzi endotelovými bunkami → voda a albumín → <b>serózny</b>,</li>
+    <li>ťažšie poškodenie → prejde aj <b>fibrinogén</b> (≈ 340 kDa, asi päťkrát väčší než albumín) a v tkanive sa zrazí → <b>fibrinózny</b>,</li>
+    <li>stena sa rozpadne → unikajú aj erytrocyty → <b>hemoragický</b>.</li>
+  </ul>
+
+  <p><b>2. Ktoré bunky prišli?</b> Závisí od signálu (<a class="xref" href="03_zapal_vseobecne.html#sub-3-4-2">→ 3.4.2 Ktoré bunky prídu a kedy</a>):</p>
+
+  <ul>
+    <li>baktérie a mŕtve tkanivo privolajú neutrofily → <b>hnisavý</b>,</li>
+    <li>vírusy a vlastné či cudzie antigény privolajú lymfocyty → <b>lymfocytárny</b>.</li>
+  </ul>
+
+  <p><b>3. Kde leží?</b></p>
+
+  <ul>
+    <li><b>povrchový</b> – na plochách, odkiaľ exsudát odtečie (koža, sliznice, serózne blany, mozgové pleny, synovia); odplaví sa alebo vykašle,</li>
+    <li><b>hlboký (intersticiálny)</b> – vo väzivovej stróme orgánu; exsudát ostáva, tlačí na cievy a bunky a musia ho odstrániť fagocyty.</li>
+  </ul>
+
+  <p><b>Gangrenózny (hnilobný)</b> zápal stojí mimo týchto osí – vzniká, keď do už odumretého tkaniva vniknú hnilobné baktérie. Odpovede sa môžu kombinovať, exsudát je často zmiešaný: seromucinózny (na sliznici s hlienom), hlienovohnisavý, serofibrinózny, fibrinózno-hnisavý alebo serohemoragický.</p>
+
+  <h3 class="sub-h" id="sub-4-1-3"><span class="n">4.1.3</span>Ako sa zápal pomenúva</h3>
+  <p>Názov zápalu nesie tri údaje, ktoré zodpovedajú trom otázkam lekára – kde, ako dlho a čo prevláda:</p>
+
+  <div class="box k-zap aside keep">
+    <div class="label">Zapamätaj</div>
+    <div class="body">
+      <p><b>Ako sa skladá názov zápalu</b>, napr. <b>chronická hnisavá cholecystitída</b>: <i>kde?</i> – koncovka <i>-itída</i> (žlčník); <i>ako dlho?</i> – akútny či chronický (<a class="xref" href="03_zapal_vseobecne.html#sub-3-5-1">→ 3.5.1 Akútny, subakútny a chronický zápal</a>); <i>čo prevláda?</i> – typ z tabuľky.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 4.2 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-4-2"><span class="n">4.2</span><span>Alteratívny zápal</span></h2>
+<div class="sec-body">
+  <p>Každý zápal začína poškodením tkaniva, ktoré mikroskop zachytí ako <b>alteráciu</b> – regresívnu zmenu buniek od vratnej dystrofie (<a class="xref" href="02_dystrofie.html#sec-2-2">→ 2.2 Dystrofie – hlavná myšlienka</a>) až po nekrózu. Obyčajne ju prekryje exsudát a infiltrát, ktoré prídu hneď po nej. Ak však poškodenie parenchýmu prevládne nad cievnou a bunkovou odpoveďou – mŕtvych buniek je veľa a zápalových málo –, ide o <b>alteratívny (parenchýmový) zápal</b>.</p>
+
+  <div class="box k-jadro aside keep">
+    <div class="label">Jadro</div>
+    <div class="body">
+      <p><b>Alteratívny</b>: toxín alebo vírus zabije bunky skôr, než sa rozvinie cievna a bunková odpoveď → nekrózy, riedky infiltrát. Nebezpečný tam, kde sa bunky nenahradia.</p>
+    </div>
+  </div>
+
+  <div class="box k-mech keep">
+    <div class="label">Prečo niekedy prevládne alterácia</div>
+    <div class="body">
+      <p>Rozhoduje, <b>či agens ničí bunky priamo a rýchlo</b>, skôr než sa stihne rozvinúť cievna a bunková odpoveď:</p>
+      <ul>
+    <li><b>Toxín, ktorý zasiahne bunku na diaľku.</b> Toxín <i>Corynebacterium diphtheriae</i> sa z hltana dostane krvou do kardiomyocytov a zablokuje <b>elongačný faktor 2</b> – bielkovinu, ktorá po pripojení každej aminokyseliny posunie ribozóm po mRNA o jeden kodón ďalej. Ribozóm bez nej ostane stáť → <b>zastaví sa proteosyntéza</b> → bunky tukovo degenerujú a ložiskovo odumierajú. Baktéria v srdci nie je, takže nepriťahuje neutrofily – <b>difterická myokarditída</b> má nekrózy a riedky infiltrát.</li>
+    <li><b>Vírus, ktorý bunku zabije zvnútra (cytopatický účinok).</b> Vírus obsadí proteosyntézu bunky a pri množení ju rozruší; bunky zanikajú nekrózou alebo apoptózou skôr, než dozrie špecifická imunita. Poliovírus takto zabíja motoneuróny predných rohov miechy (<b>poliomyelitída</b>); podobne zanikajú neuróny pri <b>vírusových encefalitídach</b> a hepatocyty pri <b>vírusových hepatitídach</b> (tam škodia aj cytotoxické T lymfocyty).</li>
+  </ul>
+    </div>
+  </div>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>mRNA</b> mediátorová RNA – prepis génu, podľa ktorého ribozóm skladá bielkovinu</span></div>
+  </div>
+
+  <div class="box k-morf keep">
+    <div class="label">Čo uvidíš</div>
+    <div class="body">
+      <ul>
+    <li><b>MA:</b> orgán často len opuchnutý a bledší; pri masívnej nekróze pečene zmenšená, mäkká, žltá až červená pečeň.</li>
+    <li><b>MI:</b> dystrofické a nekrotické bunky parenchýmu (eozinofilná cytoplazma, pyknóza) a len <b>riedky</b> infiltrát. V pečeni pri akútnej vírusovej hepatitíde <b>rozvrátená stavba lalôčika</b>, balónovito napuchnuté hepatocyty a <b>acidofilné (Councilmanove) telieska</b> – apoptotické hepatocyty (<a class="xref" href="01_atrofia_nekroza_apoptoza.html#sub-1-4-1">→ 1.4.1 Kedy sa s apoptózou stretneš</a>); v mozgu neuróny obkolesené mikrogliou, ktorá ich pohlcuje (<b>neuronofágia</b>).</li>
+  </ul>
+    </div>
+  </div>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>MA</b> makroskopický nález – voľným okom</span> <span class="sk"><b>MI</b> mikroskopický nález – svetelný mikroskop</span></div>
+  </div>
+
+  <figure class="fig keep" id="fig-4-2" style="--fw:635px">
+    <img src="../assets/images/acute-hepatitis-histology.jpg" width="635" height="474" alt="Akútna hepatitída (H&amp;E). Rozvrátená stavba lalôčika, riedky lymfocytárny infiltrát, cholestáza a acidofilné (Councilmanovo) teliesko – zmrštený eozinofilný apoptotický hepatocyt (šípka)." loading="lazy">
+    <figcaption><b>Obr. 4.2 — Akútna hepatitída (H&amp;E).</b> Rozvrátená stavba lalôčika, riedky lymfocytárny infiltrát, cholestáza a acidofilné (Councilmanovo) teliesko – zmrštený eozinofilný apoptotický hepatocyt (šípka). <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Histopathology_of_acute_hepatitis.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Alexander Boyd, Owen Cain, Abhishek Chauhan, Gwilym James Webb (Frontline Gastroenterology 2020) · Wikimedia Commons · CC BY 4.0</a></figcaption>
+  </figure>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>HE, H&amp;E</b> hematoxylín–eozín, základné farbenie</span></div>
+  </div>
+
+  <div class="box k-detek aside keep">
+    <div class="label">Detekcia</div>
+    <div class="body">
+      <p>Rozsah alterácie sa dá často zmerať skôr v krvi než na reze: enzýmy, ktoré uniknú z poškodených buniek – <b>ALT a AST</b> pri hepatitíde (pri akútnej vírusovej hepatitíde často &gt; 10× nad hornú hranicu normy), <b>troponín</b> pri myokarditíde (<a class="xref" href="01_atrofia_nekroza_apoptoza.html#sub-1-5-2">→ 1.5.2 Histologické znaky nekrotickej bunky</a>). Pôvodcu potvrdí sérológia, PCR alebo imunohistochémia.</p>
+    </div>
+  </div>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>ALT, AST</b> alanín- a aspartátaminotransferáza – enzýmy hepatocytov</span> <span class="sk"><b>PCR</b> polymerázová reťazová reakcia</span></div>
+  </div>
+
+  <div class="box k-klin aside keep">
+    <div class="label">Klinika</div>
+    <div class="body">
+      <p>Alteratívne zápaly sú nebezpečné tam, kde sa strata buniek nedá nahradiť:</p>
+      <ul>
+    <li><b>difterická myokarditída</b> → poruchy rytmu a zlyhanie srdca, obvykle v 2. týždni choroby,</li>
+    <li><b>poliomyelitída</b> → trvalé ochrnutie,</li>
+    <li><b>pečeň</b> naopak regeneruje – zahojí sa <i>ad integrum</i>, ak prežila retikulínová kostra lalôčikov (<a class="xref" href="03_zapal_vseobecne.html#sub-3-5-3">→ 3.5.3 Hranica reverzibility: kedy sa zápal zahojí bez jazvy</a>).</li>
+  </ul>
+      <p>Najúčinnejšou „liečbou“ je očkovanie – ruší príčinu skôr, než zničí bunky.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 4.3 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-4-3"><span class="n">4.3</span><span>Serózny zápal</span></h2>
+<div class="sec-body">
+  <p><b>Serózny exsudát</b> je riedka, takmer číra tekutina s malým množstvom bielkovín a buniek. Vzniká pri podnetoch, ktoré cievy len rozšíria a otvoria v ich stene drobné medzery – teplo, trenie, začínajúca vírusová infekcia, alergická reakcia. Často je len prvou fázou iného zápalu. Od nezápalového edému (transsudátu) sa na pohľad nelíši, odlíši ho až vyšší obsah bielkovín (<a class="xref" href="03_zapal_vseobecne.html#sec-3-3">→ 3.3 Cievna fáza – exsudácia</a>).</p>
+
+  <div class="box k-jadro aside keep">
+    <div class="label">Jadro</div>
+    <div class="body">
+      <p><b>Serózny</b>: slabý podnet → len drobné medzery v stene ciev → riedka tekutina. Kostra tkaniva ostáva celá → hojí sa bez jazvy; nebezpečný v úzkej dýchacej ceste.</p>
+    </div>
+  </div>
+
+  <p>Čo z neho vznikne, určuje priestor, v ktorom sa tekutina nahromadí:</p>
+
+  <table class="table keep" id="tab-4-2" style="margin:6px 0">
+    <thead><tr><th>Kde sa tekutina hromadí</th><th>Čo vznikne</th><th>Príklad</th><th>Čo z toho plynie</th></tr></thead>
+    <tbody>
+      <tr><td><b>medzi keratinocytmi epidermis</b></td><td>pľuzgier – <b>vezikula</b> (&lt; 1 cm) alebo <b>bula</b></td><td>otlak z trenia, herpes simplex (opar)</td><td>bazálna membrána ostala celá → epitel ju prerastie a koža sa zahojí bez jazvy</td></tr>
+      <tr><td><b>na sliznici, ktorá tvorí hlien</b></td><td><b>katar</b> – tekutina zmiešaná s hlienom vyteká</td><td>vírusová nádcha, alergická rinitída</td><td>epitel sa obnoví z bazálnych buniek za niekoľko dní</td></tr>
+      <tr><td><b>v telovej dutine (pleura, perikard, peritoneum, mozgové pleny)</b></td><td>výpotok; blana stráca lesk</td><td>serózna pleuritída v susedstve pneumónie</td><td>tekutinu odvedie lymfa; ak sa pridá fibrín, hrozia zrasty</td></tr>
+      <tr><td><b>v interstíciu (dermis, podslizničné väzivo)</b></td><td>opuch bez voľnej tekutiny</td><td>žihľavka (pupeň), angioedém</td><td>nebezpečné tam, kde opuch zúži dýchaciu cestu</td></tr>
+    </tbody>
+  </table>
+
+  <figure class="fig keep" id="fig-4-3" style="--fw:720px">
+    <img src="../assets/images/serous-blister.jpg" width="1280" height="1707" alt="Serózny zápal kože. Pľuzgier (vezikula) po popálenine: číra tekutina pod epidermou." loading="lazy">
+    <figcaption><b>Obr. 4.3 — Serózny zápal kože.</b> Pľuzgier (vezikula) po popálenine: číra tekutina pod epidermou. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Acute_serous_inflammation.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Hanabishi · Wikimedia Commons · CC BY-SA 3.0</a></figcaption>
+  </figure>
+
+  <div class="box k-mech keep">
+    <div class="label">ČO BÝVA ĎALEJ</div>
+    <div class="body">
+      <p>Ak podnet zmizne, lymfa tekutinu odvedie za niekoľko dní. Ak sa na oslabený epitel uchytia baktérie, privolajú neutrofily a exsudát zhustne na hnisavý (z vírusovej nádchy bakteriálna sinusitída). Ak dráždenie trvá mesiace, sliznica sa prestavuje – buď stráca žľazy a tenčie (chronický <b>atrofický</b> katar), alebo zhrubne a vytvorí zápalové polypy (chronický <b>hyperplastický</b> katar; typicky nos a prinosové dutiny pri alergii). Dlhé dráždenie môže epitel aj prestavať na odolnejší typ – metaplázia, v ktorej neskôr môže vzniknúť dysplázia (<a class="xref" href="06_progresivne_zmeny.html#sec-6-4">→ 6.4 Metaplázia – iný typ buniek na tom istom mieste</a>).</p>
+    </div>
+  </div>
+
+  <div class="box k-klin aside keep">
+    <div class="label">Klinika</div>
+    <div class="body">
+      <p>Aj najmiernejší zápal môže ohroziť život v úzkej rúre: odpor prúdenia rastie so štvrtou mocninou polomeru (Poiseuille), takže opuch, ktorý polomer dýchacej cesty zmenší na polovicu, zvýši odpor 16-násobne. Preto je <b>angioedém</b> hrtana či podhlasivkový opuch pri vírusovej laryngotracheitíde (krupe) u malého dieťaťa akútny stav. Či za angioedémom stojí histamín alebo bradykinín, rozhoduje o liečbe (<a class="xref" href="03_zapal_vseobecne.html#sub-3-2-2">→ 3.2.2 Mediátory z plazmy – štyri prepojené kaskády</a>).</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 4.4 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-4-4"><span class="n">4.4</span><span>Lymfocytárny (nehnisavý) zápal</span></h2>
+<div class="sec-body">
+  <p>Pri <b>lymfocytárnom zápale</b> tvoria infiltrát namiesto neutrofilov <b>lymfocyty, plazmocyty a makrofágy</b>; exsudát je riedky ako pri seróznom zápale. Lymfocyty prichádzajú tam, kde treba nájsť nepriateľa ukrytého <b>vo vnútri vlastných buniek</b> – vírus v napadnutej bunke, vlastný antigén pri autoimunite, cudzí antigén na transplantovanom orgáne. Cielený klon T lymfocytov sa musí najprv namnožiť, a preto sa infiltrát rozvinie až po niekoľkých dňoch.</p>
+
+  <div class="box k-jadro aside keep">
+    <div class="label">Jadro</div>
+    <div class="body">
+      <p><b>Lymfocytárny</b>: lymfocyty hľadajú nepriateľa vo vnútri buniek (vírus, vlastný alebo cudzí antigén) → infiltrát až po dňoch. Pri dlhom trvaní parenchým nahradí väzivo.</p>
+    </div>
+  </div>
+
+  <p>Kde ho nájdeš, určuje cieľ lymfocytov:</p>
+
+  <ul>
+    <li><b>Proti vírusu</b> – cytotoxické T lymfocyty zabijú bunky, ktoré na povrchu nesú vírusové peptidy. Sliznice dýchacích ciest pri vírusových infekciách, lymfocytárna myokarditída (enterovírusy, napr. coxsackie B), vírusová hepatitída, intersticiálna pneumónia (po opakovaní či dlhom trvaní až pľúcna fibróza), vírusová meningitída, epidemická parotitída (mumps) v slinných žľazách.</li>
+    <li><b>Proti vlastnému tkanivu</b> – Hashimotova tyreoiditída (lymfocyty s germinálnymi centrami postupne nahrádzajú folikuly), celiakia (lymfocyty medzi bunkami epitelu tenkého čreva), autoimunitná gastritída, autoimunitná sialoadenitída (Sjögrenov syndróm). Na koži chronické dermatitídy, napr. lichen planus: pás lymfocytov tesne pod epidermou ničí jej bazálne bunky.</li>
+    <li><b>Proti cudziemu tkanivu</b> – odvrhnutie obličkového štepu (lymfocyty v interstíciu a v stene tubulov), alebo naopak reakcia štepu proti hostiteľovi (GvHD, <i>graft-versus-host disease</i>), keď lymfocyty darcu zo štepu kostnej drene napadnú kožu, črevo a pečeň príjemcu.</li>
+  </ul>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>GvHD</b> reakcia štepu proti hostiteľovi (<i>graft-versus-host disease</i>)</span></div>
+  </div>
+
+  <p>Lymfocytárny zápal v parenchýme ničí práve bunky, ktoré orgán potrebuje, a pri dlhom trvaní ich nahradí väzivo: hepatitída → cirhóza, myokarditída → dilatačná kardiomyopatia, Hashimotova tyreoiditída → hypotyreóza.</p>
+
+  <figure class="fig keep" id="fig-4-4" style="--fw:720px">
+    <img src="../assets/images/lymphocytic-myocarditis.jpg" width="1280" height="957" alt="Lymfocytárna myokarditída (H&amp;E). Lymfocytárny infiltrát medzi kardiomyocytmi s nekrózou myocytov." loading="lazy">
+    <figcaption><b>Obr. 4.4 — Lymfocytárna myokarditída (H&amp;E).</b> Lymfocytárny infiltrát medzi kardiomyocytmi s nekrózou myocytov. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Histopathology_of_myocarditis_with_myocyte_necrosis.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Mikael Häggström, M.D. · Wikimedia Commons · CC0</a></figcaption>
+  </figure>
+
+  <p>Na mozgových plenách sa rozdiel medzi lymfocytárnym a hnisavým zápalom dá odčítať z <b>mozgovomiechového moku</b> skôr, než je známy pôvodca – a od toho závisí, či pacient dostane antibiotiká do hodiny:</p>
+
+  <table class="table keep" id="tab-4-3" style="margin:6px 0">
+    <thead><tr><th>Likvor</th><th>Norma</th><th>Bakteriálna (hnisavá) meningitída</th><th>Vírusová (lymfocytárna) meningitída</th></tr></thead>
+    <tbody>
+      <tr><td><b>Vzhľad</b></td><td>číry</td><td>zakalený</td><td>číry</td></tr>
+      <tr><td><b>Počet buniek</b></td><td>&lt; 5/µl</td><td>≥ 1 000/µl</td><td>&lt; 1 000/µl</td></tr>
+      <tr><td><b>Prevládajú</b></td><td>—</td><td>neutrofily</td><td>lymfocyty</td></tr>
+      <tr><td><b>Glukóza (pomer likvor : krv)</b></td><td>≈ 0,6</td><td>≤ 0,4 – baktérie a neutrofily ju spotrebujú</td><td>normálny</td></tr>
+      <tr><td><b>Bielkoviny</b></td><td>do 0,45 g/l</td><td>výrazne ↑ (priepustné cievy plien)</td><td>mierne ↑</td></tr>
+      <tr><td><b>Laktát</b></td><td>nízky</td><td>≥ 3,8 mmol/l</td><td>nízky</td></tr>
+    </tbody>
+  </table>
+
+  <div class="box k-pozor aside keep">
+    <div class="label">Pozor</div>
+    <div class="body">
+      <ul>
+    <li>V prvých 6–48 h vírusovej meningitídy môžu v likvore prevládať neutrofily; naopak niektoré baktérie (<i>Listeria</i>) a tuberkulózna meningitída dávajú lymfocytárny obraz – pri tuberkulóznej s veľmi nízkou glukózou a vysokými bielkovinami.</li>
+    <li>Na sliznicu poškodenú vírusom sa ľahko uchytia baktérie – chrípku preto často komplikuje bakteriálna pneumónia a lymfocytárny zápal sa zmení na hnisavý.</li>
+  </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 4.5 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-4-5"><span class="n">4.5</span><span>Hnisavý (purulentný) zápal</span></h2>
+<div class="sec-body">
+  <p><b>Hnis</b> (lat. <i>pus</i>) je hustá žltá až zelenkastá tekutina z živých aj rozpadnutých neutrofilov, baktérií a natráveného tkaniva (žltú farbu dávajú lipidy membrán neutrofilov, zelenkastú myeloperoxidáza). Vyvolávajú ho <b>pyogénne</b> baktérie – stafylokoky, streptokoky, pneumokok, gonokok, gramnegatívne tyčinky.</p>
+
+  <p>Neutrofily ničia baktérie tými istými proteázami a radikálmi, ktorými rozpúšťajú aj okolité tkanivo (<a class="xref" href="03_zapal_vseobecne.html#sub-3-4-3">→ 3.4.3 Fagocytóza a zabíjanie</a>, <a class="xref" href="01_atrofia_nekroza_apoptoza.html#sub-1-6-2">→ 1.6.2 Kolikvačná nekróza</a>). Výsledok určuje hlavne to, <b>kam sa hnis dostane</b>: či odtečie, ostane v uzavretej dutine, ostane v tkanive, alebo sa šíri ďalej.</p>
+
+  <div class="box k-jadro aside keep">
+    <div class="label">Jadro</div>
+    <div class="body">
+      <p><b>Hnis</b> = neutrofily + baktérie + natrávené tkanivo. Výsledok určí, <b>kam sa hnis dostane</b>: odtečie, ostane v dutine (empyém) alebo v tkanive (absces, flegmóna), alebo sa šíri.</p>
+    </div>
+  </div>
+
+  <h3 class="sub-h" id="sub-4-5-1"><span class="n">4.5.1</span>Hnis odteká – povrchový hnisavý zápal</h3>
+  <p>Na povrchu, z ktorého má hnis voľnú cestu von, zápal tkanivo pod sebou spravidla nezničí. Na sliznici sa hnis mieša s hlienom a vyteká (hnisavý katar) – bakteriálna sinusitída, hnisavá bronchitída, kvapavková uretritída. Na koži vzniká <b>pustula</b>, hnis v epidermis nad neporušenou bazálnou membránou, ktorá sa zahojí bez jazvy (impetigo); hnis v ústí vlasového folikulu je <b>folikulitída</b>.</p>
+
+  <h3 class="sub-h" id="sub-4-5-2"><span class="n">4.5.2</span>Hnis v uzavretej dutine – empyém</h3>
+  <p>Keď je dutina uzavretá, hnis nemá kam odtiecť a hromadí sa v priestore, ktorý už existoval – v pleurálnej dutine, v žlčníku s kameňom zaklineným v krčku, v apendixe, vo vajíčkovode (<i>pyosalpinx</i>). Takáto zbierka sa nazýva <b>empyém</b>; ohraničuje ju stena dutiny, nie novovytvorené puzdro. Na serózne blany sa hnisanie takmer vždy prenesie z orgánu, ktorý pokrývajú (pneumónia → empyém pleury, perforovaný apendix → hnisavá peritonitída), a pri hojení po ňom ostávajú zrasty. Hnis v brušnej dutine ohraničený len zrastmi a kľučkami čreva je <b>pseudoabsces</b> – nemá vlastnú stenu.</p>
+
+  <figure class="fig keep" id="fig-4-5" style="--fw:358px">
+    <img src="../assets/images/purulent-pericarditis.jpg" width="358" height="464" alt="Purulentná (hnisavá) perikarditída. Preparát srdca s povlakom exsudátu na epikarde." loading="lazy">
+    <figcaption><b>Obr. 4.5 — Purulentná (hnisavá) perikarditída.</b> Preparát srdca s povlakom exsudátu na epikarde. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Purulent_pericarditis.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>علاء · Wikimedia Commons · CC BY-SA 3.0</a></figcaption>
+  </figure>
+
+  <p>Ako hnisavý zápal v uzavretom priestore postupuje v čase, ukazuje <b>akútna apendicitída</b>. Apendix je slepý výbežok s úzkym ústím; keď sa ústie upchá, hlien a baktérie sa hromadia a tlak v lúmene rastie. Štádiá idú za sebou tak, ako tlak postupne vyraďuje cievy steny:</p>
+
+  <table class="table keep" id="tab-4-4" style="margin:6px 0">
+    <thead><tr><th>Štádium</th><th>Čo sa deje</th><th>Čo nájde patológ</th></tr></thead>
+    <tbody>
+      <tr><td><b><b>Obštrukcia</b></b></td><td>lúmen upchá zdurené lymfatické tkanivo (deti), skala zo stolice (fekalit), zriedka nádor alebo parazit</td><td>rozšírený lúmen</td></tr>
+      <tr><td><b><b>Včasná (katarálna)</b></b></td><td>tlak v lúmene prevýši tlak v kapilárach → žilové mestnanie → ischémia sliznice → baktérie do nej prenikajú</td><td>neutrofily a drobné defekty v sliznici; apendix prekrvený, opuchnutý</td></tr>
+      <tr><td><b><b>Flegmonózna (hnisavá)</b></b></td><td>baktérie a neutrofily sa šíria celou stenou</td><td>neutrofily vo svalovine steny – <b>histologické kritérium akútnej apendicitídy</b>; seróza matná, s fibrínom (periapendicitída)</td></tr>
+      <tr><td><b><b>Gangrenózna</b></b></td><td>ischémia a trombóza ciev steny → nekróza v celej hrúbke, do nej hnilobné baktérie (<a class="xref" href="#sec-4-8">→ 4.8 Gangrenózny (hnilobný, putrídny) zápal</a>)</td><td>špinavozelená až čierna, krehká stena</td></tr>
+      <tr><td><b><b>Perforácia</b></b></td><td>odumretá stena praskne</td><td>absces pri apendixe ohraničený zrastmi, alebo difúzna hnisavá peritonitída</td></tr>
+    </tbody>
+  </table>
+
+  <div class="box k-klin aside keep">
+    <div class="label">Klinika</div>
+    <div class="body">
+      <ul>
+    <li>Celoživotné riziko apendicitídy je ≈ 8–9 % (Európa, USA), najviac medzi 10. a 30. rokom. K perforácii dôjde v 16–40 % prípadov, častejšie u malých detí a po päťdesiatke. Úmrtnosť stúpa so štádiom: &lt; 0,1 % bez gangrény, 0,6 % pri gangréne, ≈ 5 % po perforácii – preto je štádium to, čo chirurga zaujíma najviac.</li>
+    <li>Diagnózu podporí ultrazvuk (prvá voľba) alebo CT s nízkou dávkou a klinické skóre.</li>
+    <li><b>Patológ</b> v správe potvrdí diagnózu (neutrofily vo svalovine), určí štádium a hľadá náhodný nález: v ≈ 1–2 % odstránených apendixov je nádor, najčastejšie neuroendokrinný.</li>
+  </ul>
+    </div>
+  </div>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>CT</b> počítačová tomografia</span></div>
+  </div>
+
+  <div class="box k-pozor aside keep">
+    <div class="label">Pozor</div>
+    <div class="body">
+      <p>Upchatie lúmenu je logické vysvetlenie, no nenájde sa vždy – fekalit býva len v časti apendixov (v rôznych súboroch 4–37 %). Apendicitída teda môže začať aj bez dokázateľnej prekážky.</p>
+    </div>
+  </div>
+
+  <div class="rev keep">
+    <div class="label"><span class="r">R</span>Revízia — nie každá apendicitída musí hneď na operáciu</div>
+    <div class="body">
+      <p><b>Kedysi</b> platilo, že akútna apendicitída sa vždy operuje, lebo inak nevyhnutne perforuje. <b>Dnes</b> odporúčania (WSES 2020) rozlišujú nekomplikovanú apendicitídu (bez gangrény, perforácie a abscesu) a komplikovanú. Pri nekomplikovanej pripúšťajú u vybraných pacientov liečbu antibiotikami bez operácie; komplikovaná patrí chirurgovi. Hranica medzi nimi je presne hranica medzi flegmonóznym a gangrenóznym štádiom z tabuľky.</p>
+    </div>
+  </div>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>WSES</b> Svetová spoločnosť urgentnej chirurgie (<i>World Society of Emergency Surgery</i>)</span></div>
+  </div>
+
+  <h3 class="sub-h" id="sub-4-5-3"><span class="n">4.5.3</span>Hnis v tkanive – flegmóna a absces</h3>
+  <p>V interstíciu hnis odtiecť nemôže. Baktéria sa sem dostane z povrchu (cez ranu, vred alebo vlasový folikul – infekcia folikulu sa rozšíri do okolitej dermis ako <b>furunkul</b>, splynutím viacerých vznikne <b>karbunkul</b>), krvou z iného ložiska alebo lymfou. Ďalší osud určuje, <b>aké enzýmy baktéria vylučuje</b> – či fibrín, prvú bariéru, ktorú telo okolo ložiska postaví, rozkladá, alebo naopak zráža:</p>
+
+  <div class="box k-mech keep">
+    <div class="label">MECHANIZMUS – FLEGMÓNA vs. ABSCES</div>
+    <div class="body">
+      <ul>
+    <li><b>Flegmóna</b> – baktéria (typicky <i>Streptococcus pyogenes</i>) rozkladá, čo jej stojí v ceste: <b>streptokinázou</b> (fibrinolyzínom) aktivuje plazminogén na plazmín, ktorý rozpustí fibrín, a <b>hyaluronidázou</b> rozštiepi hyaluronan medzibunkovej hmoty. Hnisavý infiltrát sa preto šíri pozdĺž väzivových priestorov bez hranice – flegmóna ruky po poranení, v najťažšej forme nekrotizujúca fasciitída.</li>
+    <li><b>Absces</b> – baktéria (typicky <i>Staphylococcus aureus</i>) vylučuje <b>koagulázu</b>, ktorá spustí zrážanie fibrinogénu na fibrín. Okolo ložiska vznikne fibrínová sieť, ktorá drží baktérie aj neutrofily na jednom mieste. V strede sa tkanivo rozpustí a vznikne dutina plná hnisu.</li>
+  </ul>
+    </div>
+  </div>
+
+  <p>Akútny absces ohraničuje len fibrín a odumreté tkanivo, preto má nepravidelný, cípatý obrys. Ak pretrváva, fibrín na jeho okraji prerastie granulačné tkanivo (<a class="xref" href="05_hojenie.html#sec-5-3">→ 5.3 Granulačné tkanivo – motor reparácie</a>) a vytvorí puzdro – <b>pyogénnu membránu</b>; makrofágy v nej pohlcujú rozpadnuté neutrofily a menia sa na penové bunky, preto má na reze žltkastý lem. Absces sa tým zaguľatí a ostro ohraničí (<b>chronický absces</b>). Nové kapiláry membrány stále presakujú, takže chronický absces sa môže zväčšovať a po neúplnom vypustení sa vracia.</p>
+
+  <p>Absces sám nevyhasne, lebo sa v ňom obrana a poškodenie navzájom poháňajú (circulus vitiosus ⟳, Obr. 4.6):</p>
+
+  <figure class="chart keep" id="fig-kruh-absces">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 290" role="img" aria-labelledby="tmfigkruhabsces">
+<title id="tmfigkruhabsces">Bludný kruh abscesu: neutrofily ničia baktérie proteázami a radikálmi, tie rozpúšťajú aj okolité tkanivo, rozpad tkaniva a neutrofilov uvoľní chemoatraktanty a tie privolajú ďalšie neutrofily; kruh preruší až odstránenie hnisu</title>
+<defs><marker id="mfigkruhabsces" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker></defs>
+<rect class="bx-c" x="55" y="0" width="120" height="26" rx="3" stroke="var(--color-accent-600)"/>
+<text class="lblb" x="115" y="17" text-anchor="middle">pyogénne baktérie</text>
+<path class="arw" d="M115,26 L115,42" marker-end="url(#mfigkruhabsces)"/>
+<rect class="bx-k" x="20" y="44" width="190" height="50" rx="3"/>
+<text class="lblb" x="115" y="66" text-anchor="middle">neutrofily prichádzajú</text>
+<text class="lblb" x="115" y="80" text-anchor="middle">do ložiska</text>
+<rect class="bx-k" x="490" y="44" width="190" height="50" rx="3"/>
+<text class="lblb" x="585" y="66" text-anchor="middle">proteázy a kyslíkové</text>
+<text class="lblb" x="585" y="80" text-anchor="middle">radikály mimo fagozómu</text>
+<rect class="bx-k" x="490" y="194" width="190" height="50" rx="3"/>
+<text class="lblb" x="585" y="216" text-anchor="middle">kolikvačná nekróza</text>
+<text class="lblb" x="585" y="230" text-anchor="middle">okolia</text>
+<rect class="bx-m" x="20" y="194" width="190" height="50" rx="3" stroke="var(--color-accent-2-600)" stroke-width="1.5"/>
+<text class="lblb" x="115" y="216" text-anchor="middle">rozpad tkaniva a neutrofilov:</text>
+<text class="lblb" x="115" y="230" text-anchor="middle">C5a, IL-8, peptidy baktérií</text>
+<path class="arw" d="M212,69 L488,69" marker-end="url(#mfigkruhabsces)"/>
+<path class="arw" d="M585,96 L585,192" marker-end="url(#mfigkruhabsces)"/>
+<path class="arw" d="M488,219 L212,219" marker-end="url(#mfigkruhabsces)"/>
+<path class="arw" d="M115,192 L115,96" marker-end="url(#mfigkruhabsces)" style="stroke-width:2.2"/>
+<text class="sub" x="350" y="63" text-anchor="middle">ničia baktérie aj vlastné tkanivo</text>
+<text class="sub" x="577" y="148" text-anchor="end">dutina bez ciev – antibiotiká</text>
+<text class="sub" x="577" y="161" text-anchor="end">sa dostanú len slabo</text>
+<text class="sub" x="350" y="213" text-anchor="middle">hnis = neutrofily + detritus + baktérie</text>
+<text class="sub" x="123" y="148" text-anchor="start">chemotaxia → ďalšie</text>
+<text class="sub" x="123" y="161" text-anchor="start">neutrofily</text>
+<text x="350" y="146" text-anchor="middle" style="font-size:26px;fill:var(--color-accent-2-600)">⟳</text>
+<text class="cap" x="350" y="162" text-anchor="middle">circulus vitiosus</text>
+<text class="lbl-m" x="115" y="262" text-anchor="middle">bod zvratu: odstránenie hnisu</text>
+<text class="sub" x="115" y="278" text-anchor="middle">(drenáž, samovoľná perforácia)</text>
+</svg>
+    <figcaption><b>Obr. 4.6 — Bludný kruh abscesu.</b></figcaption>
+  </figure>
+
+  <p>Neutrofily ničia baktérie aj vlastné tkanivo a ich rozpad privoláva ďalšie neutrofily. Dutina bez ciev je navyše pre bunky imunity aj antibiotiká ťažko dostupná. <b>Bod zvratu = odstránenie hnisu</b> (drenáž alebo samovoľná perforácia): odíde zdroj chemoatraktantov, tlak klesne a dutinu môže vyplniť granulačné tkanivo.</p>
+
+  <p>Abscesy bývajú aj mnohopočetné, keď sa hnisavý zápal šíri vetvením ciest alebo krvou: pri <b>abscedujúcej bronchopneumónii</b> sa ložiská zápalu okolo priedušiek rozpadajú na drobné dutiny, v pečeni vznikajú abscesy pozdĺž žlčových ciest pri hnisavej cholangitíde. V stene dutého orgánu sa flegmóna spája s vredmi sliznice – ulceroflegmonózna apendicitída (<a class="xref" href="#sub-4-5-2">→ 4.5.2 Hnis v uzavretej dutine – empyém</a>).</p>
+
+  <div class="box k-klin aside keep">
+    <div class="label">Klinika</div>
+    <div class="body">
+      <p>Odtiaľ pravidlo <i>„ubi pus, ibi evacua“</i> („kde je hnis, tam ho vypusť“): do dutiny bez ciev sa antibiotiká dostanú len v nízkej koncentrácii a v kyslom prostredí hnisu niektoré (aminoglykozidy) účinkujú slabo. Na USG či CT je absces dutina so sýtiacim sa lemom – prekrvenou pyogénnou membránou.</p>
+    </div>
+  </div>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>USG</b> ultrasonografia</span></div>
+  </div>
+
+  <figure class="fig keep" id="fig-4-7" style="--fw:720px">
+    <img src="../assets/images/lung-abscess-gross.jpg" width="1280" height="900" alt="Pľúcny absces (makroskopický preparát). Dutina s nekrotickým hnisavým obsahom v pľúcnom parenchýme." loading="lazy">
+    <figcaption><b>Obr. 4.7 — Pľúcny absces (makroskopický preparát).</b> Dutina s nekrotickým hnisavým obsahom v pľúcnom parenchýme. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Lung_abscess_(7468374496).jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Yale Rosen · Wikimedia Commons · CC BY-SA 2.0</a></figcaption>
+  </figure>
+
+  <div class="box k-pocut aside keep">
+    <div class="label">Môžeš počuť</div>
+    <div class="body">
+      <p><b>Chronický absces.</b> Na vyliečenie vraj treba odstrániť aj pyogénnu membránu, inak sa absces vráti (recidíva). Doložené je len to, že membrána ďalej tvorí hnis a že ho treba vypustiť.</p>
+    </div>
+  </div>
+
+  <h3 class="sub-h" id="sub-4-5-4"><span class="n">4.5.4</span>Hnis sa šíri – komplikácie hnisavého zápalu</h3>
+  <p>Hnisavý zápal sa z ložiska šíri tromi cestami:</p>
+
+  <ul>
+    <li><b>Priamo tkanivom</b> – hnis postupuje tam, kde je odpor najmenší. Na povrch tela alebo do dutého orgánu vytvorí <b>píšťalu (fistulu)</b> (pri osteomyelitíde na kožu), do telovej dutiny empyém alebo difúznu peritonitídu.</li>
+    <li><b>Lymfou</b> – <b>lymfangitída</b> (na koži červené pruhy k uzlinám) a <b>lymfadenitída</b>.</li>
+    <li><b>Žilami</b> – na endoteli zapálenej žily (<b>flebitída</b>) vznikne trombus prestúpený baktériami (<b>hnisavá tromboflebitída</b>); jeho úlomky odnesené krvou (<b>pyémia</b>) vytvoria v orgánoch <b>septické infarkty a metastatické abscesy</b> – napr. abscesy pľúc pri tromboflebitíde jugulárnej žily po angíne (Lemierrov syndróm); cesty embolov: <a class="xref" href="08_miestne_poruchy_obehu.html#sub-8-4-1">→ 8.4.1 Kam embolus doputuje</a>.</li>
+  </ul>
+
+  <figure class="fig keep" id="fig-4-8" style="--fw:720px">
+    <img src="../assets/images/fibrinopurulent-peritonitis.jpg" width="1280" height="853" alt="Fibrinózno-hnisavá peritonitída po perforácii tenkého čreva (H&amp;E)." loading="lazy">
+    <figcaption><b>Obr. 4.8 — Fibrinózno-hnisavá peritonitída po perforácii tenkého čreva (H&amp;E).</b> <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Acute_fibrinopurulent_peritonitis,_high_mag.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>CoRus13 · Wikimedia Commons · CC BY-SA 4.0</a></figcaption>
+  </figure>
+</div>
+
+<!-- ══ 4.6 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-4-6"><span class="n">4.6</span><span>Fibrinózny zápal</span></h2>
+<div class="sec-body">
+  <p>Veľká molekula fibrinogénu unikne len z ťažko poškodenej cievy – toxínom, imunokomplexmi, nekrózou okolia. V tkanive ho trombín premení na <b>fibrín</b>: čerstvý tvorí jemnú sieť vlákien, starší splýva do homogénnych eozinofilných hmôt; voľným okom je to sivobiely, matný, lepkavý povlak. Fibrín zlepí poškodenie a slúži ako lešenie pre vrastajúce kapiláry a fibroblasty – ak sa však nerozpustí, práve z neho sa stane jazva. Ako fibrinózny zápal vyzerá a čím hrozí, závisí od miesta, kde sa fibrín vyzráža: na seróznej blane, na sliznici, alebo v interstíciu.</p>
+
+  <div class="box k-jadro aside keep">
+    <div class="label">Jadro</div>
+    <div class="body">
+      <p><b>Fibrín</b> unikne len z ťažko poškodenej cievy. Zlepí poškodenie, no nerozpustený sa mení na väzivo: zrasty na blanách, jazva pod hlbokou pablanou.</p>
+    </div>
+  </div>
+
+  <h3 class="sub-h" id="sub-4-6-1"><span class="n">4.6.1</span>Na seróznych blanách</h3>
+  <p>Fibrín hladké serózne blany zdrsní a zlepí. Podľa množstva tekutiny je exsudát <b>suchý</b> alebo <b>vlhký (serofibrinózny)</b>. Fibrinózna perikarditída sprevádza napríklad urémiu, reumatickú horúčku alebo transmurálny infarkt myokardu (nad odumretou stenou), fibrinózna pleuritída pneumóniu alebo pľúcny infarkt.</p>
+
+  <figure class="fig keep" id="fig-4-9" style="--fw:513px">
+    <img src="../assets/images/fibrinous-pericarditis.jpg" width="513" height="410" alt="Fibrinózna perikarditída (H&amp;E). Fibrínový povlak na povrchu perikardu so zápalovým infiltrátom pod ním." loading="lazy">
+    <figcaption><b>Obr. 4.9 — Fibrinózna perikarditída (H&amp;E).</b> Fibrínový povlak na povrchu perikardu so zápalovým infiltrátom pod ním. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Pericarditis_fibrinosa.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>K. Bielnik a kol. · Wikimedia Commons · CC BY-SA 3.0</a></figcaption>
+  </figure>
+
+  <div class="box k-klin aside keep">
+    <div class="label">Klinika</div>
+    <div class="body">
+      <p>Zdrsnené listy sa pri každom údere srdca alebo pri nádychu o seba trú. Lekár to počuje fonendoskopom ako <b>perikardiálny trecí šelest</b> alebo pleurálne trenie a pacient to cíti ako ostrú bolesť, ktorá sa mení s dýchaním alebo polohou tela.</p>
+    </div>
+  </div>
+
+  <div class="box k-mech keep">
+    <div class="label">MECHANIZMUS – ČO SA STANE S FIBRÍNOM</div>
+    <div class="body">
+      <p>Fibrín sa odstraňuje plazmínom, ktorý aktivujú bunky mezotelu a makrofágy. Malé množstvo sa rozpustí za niekoľko dní a blana sa vráti do normy. Veľké množstvo fibrinolýza nestihne; do zvyšku prerastú z oboch listov kapiláry a fibroblasty (<a class="xref" href="05_hojenie.html#sec-5-7">→ 5.7 Organizácia: čo telo samo nevstrebe</a>), fibrín sa nahradí kolagénom a z dočasného lepidla sa stane trvalý väzivový most – <b>zrast (adhézia, synechia)</b>. Zrasty môžu dutinu úplne uzavrieť (obliterácia), obaliť orgán tuhým puzdrom alebo pritiahnuť a zalomiť črevnú kľučku.</p>
+    </div>
+  </div>
+
+  <p>Čerstvý nález na perikarde je „chlpaté srdce“ (<i>cor villosum</i>) – lepkavé listy sa pri každom údere odtrhnú a fibrín ostane ťahaný do vlákien. Zrastený, zhrubnutý perikard (<b>konstriktívna perikarditída</b>) nedovolí komorám naplniť sa v diastole → žilové mestnanie, ascites, opuchy. V bruchu sú zrasty najčastejšou príčinou mechanického ileu tenkého čreva.</p>
+
+  <h3 class="sub-h" id="sub-4-6-2"><span class="n">4.6.2</span>Na sliznici a koži – pablanový (pseudomembranózny) zápal</h3>
+  <p>Na sliznici a koži sa fibrín zráža spolu s odumretým epitelom a neutrofilmi do povlaku, ktorý pripomína blanu – <b>pablanu (pseudomembránu)</b>. Pravou membránou nie je; je to zrazenina na mieste nekrózy. Pre hojenie rozhoduje, <b>ako hlboko</b> siaha nekróza pod ňou, lebo od toho závisí, či prežila stróma a jej cievy (<a class="xref" href="03_zapal_vseobecne.html#sub-3-5-3">→ 3.5.3 Hranica reverzibility: kedy sa zápal zahojí bez jazvy</a>):</p>
+
+  <div class="box k-morf keep">
+    <div class="label">ČO UVIDÍŠ – 3 HĹBKY PABLANOVÉHO ZÁPALU</div>
+    <div class="body">
+      <table class="table keep" style="margin:6px 0">
+    <thead><tr><th>Typ</th><th>Kam siaha nekróza</th><th>Po odlúpnutí pablany</th><th>Hojenie</th><th>Príklad</th></tr></thead>
+    <tbody>
+      <tr><td><b><b>Krupózny</b></b></td><td>len epitel</td><td>hladká spodina, nekrváca</td><td>regenerácia epitelu bez jazvy</td><td>krupózna pneumónia – fibrín vo výstelke alveol</td></tr>
+      <tr><td><b><b>Difterický (difteroidný)</b></b></td><td>epitel aj povrchová stróma s cievami</td><td>plytký krvácajúci vred</td><td>jazva, obvykle malá</td><td>záškrt hltana; bacilová dyzentéria a pseudomembranózna kolitída v hrubom čreve</td></tr>
+      <tr><td><b><b>Príškvarový (escharotický)</b></b></td><td>väčšina alebo celá hrúbka steny</td><td>hlboký defekt</td><td>zužujúca, deformujúca jazva (striktúra)</td><td>poleptanie pažeráka žieravinou</td></tr>
+    </tbody>
+  </table>
+    </div>
+  </div>
+
+  <p>Pri <b>záškrte</b> toxín zabije epitel aj strómu, pablana preto pevne lipne a pri odtrhnutí krváca; uvoľnená môže upchať hrtan. Pri <b>poleptaní</b> preniká lúh hlbšie než kyselina: bielkoviny rozpúšťa, kým kyselina ich zráža do bariéry (<a class="xref" href="01_atrofia_nekroza_apoptoza.html#sec-1-6">→ 1.6 Druhy nekrózy</a>).</p>
+
+  <div class="box k-klin aside keep">
+    <div class="label">Klinika</div>
+    <div class="body">
+      <p><b>Krupózna (lobárna) pneumónia</b> ukazuje osud fibrínu v čase (časy orientačné, liečba ich skracuje): <b>kongescia</b> (1. deň – prekrvenie, serózny exsudát s baktériami) → <b>červená hepatizácia</b> (≈ 2.–4. deň – erytrocyty, neutrofily a fibrín vyplnia alveoly, lalok je tuhý ako pečeň) → <b>sivá hepatizácia</b> (≈ 4.–8. deň – erytrocyty sa rozpadnú) → <b>rezolúcia</b> (fibrín sa rozpustí, alveolárne steny sú celé → bez jazvy). Nerozpustený fibrín prerastie väzivo = <b>karnifikácia</b>.</p>
+    </div>
+  </div>
+
+  <p>Dnes sa pablany najčastejšie vidia pri <b>pseudomembranóznej kolitíde</b>: po antibiotikách, ktoré potlačia bežnú črevnú flóru, sa premnoží <i>Clostridioides difficile</i>, jeho toxíny A a B rozrušia cytoskelet enterocytov a z drobných nekróz vystupuje fibrín s neutrofilmi ako z malej sopky.</p>
+
+  <figure class="fig keep" id="fig-4-10" style="--fw:720px">
+    <img src="../assets/images/pseudomembranous-colitis.jpg" width="1280" height="853" alt="Pseudomembranózna kolitída. Žltozelené povlaky (pablany) pokrývajúce sliznicu hrubého čreva." loading="lazy">
+    <figcaption><b>Obr. 4.10 — Pseudomembranózna kolitída.</b> Žltozelené povlaky (pablany) pokrývajúce sliznicu hrubého čreva. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Clostridioides_(pseudomembranous)_colitis.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Narraburra · Wikimedia Commons · CC0</a></figcaption>
+  </figure>
+
+  <div class="box k-pocut aside keep">
+    <div class="label">Môžeš počuť</div>
+    <div class="body">
+      <p><b>Príklady príškvarového zápalu.</b> Uvádza sa chrípková tracheitída, hemoragická cystitída a popáleniny. Doložené je len poleptanie žieravinami; tracheitída a cystitída sú v texte ako hemoragický zápal.</p>
+    </div>
+  </div>
+
+  <h3 class="sub-h" id="sub-4-6-3"><span class="n">4.6.3</span>V interstíciu – fibrinoidná nekróza</h3>
+  <p>V stróme orgánov sa fibrín zmieša s rozpadnutými vláknami a imunokomplexmi do jasne ružovej, homogénnej hmoty – <b>fibrinoidu</b> (<a class="xref" href="02_dystrofie.html#sub-2-4-4">→ 2.4.4 Fibrinoidná dystrofia</a>, <a class="xref" href="01_atrofia_nekroza_apoptoza.html#sub-1-6-5">→ 1.6.5 Fibrinoidná nekróza</a>); nájdeš ho pri vaskulitídach (napr. polyarteritis nodosa), v centre reumatoidného uzla a v Aschoffovom granulóme pri reumatickej horúčke (<a class="xref" href="07_granulomatozne_zapaly.html#sec-7-9">→ 7.9 Granulóm na poškodenej cieve a väzive</a>).</p>
+</div>
+
+<!-- ══ 4.7 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-4-7"><span class="n">4.7</span><span>Hemoragický zápal</span></h2>
+<div class="sec-body">
+  <p>Pri <b>hemoragickom zápale</b> je v exsudáte toľko erytrocytov, že tkanivo aj výpotok sú červené až tmavočervené. Stena ciev tu nie je len netesná, ale rozrušená – vírusom, toxínom, alebo odumrie za mikrotrombom pri diseminovanej intravaskulárnej koagulácii (<a class="xref" href="03_zapal_vseobecne.html#sub-3-6-2">→ 3.6.2 SIRS a sepsa – keď sa obrana obráti proti telu</a>). Je to preto znak ťažkého poškodenia a často ide spolu s nekrózou (<b>hemoragicko-nekrotický zápal</b>). Podľa toho, čo cievu rozrušilo, sú tri typické situácie:</p>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>SIRS</b> syndróm systémovej zápalovej odpovede</span></div>
+  </div>
+
+  <div class="box k-jadro aside keep">
+    <div class="label">Jadro</div>
+    <div class="body">
+      <p><b>Hemoragický</b>: stena ciev je rozrušená (vírus, toxín, mikrotromby) → v exsudáte erytrocyty. Znak ťažkého poškodenia, často s nekrózou.</p>
+    </div>
+  </div>
+
+  <table class="table keep" id="tab-4-5" style="margin:6px 0">
+    <thead><tr><th>Čo rozruší cievu</th><th>Príklad</th><th>Čo nájde patológ</th><th>Čo z toho plynie</th></tr></thead>
+    <tbody>
+      <tr><td><b><b>vírus</b> zničí epitel a steny kapilár</b></td><td><b>chrípka</b></td><td>nekróza riasinkového epitelu, hemoragická tracheitída a bronchitída; pri vírusovej pneumónii edém a krv v alveolách a hyalínne membrány</td><td>epitel sa začne obnovovať okolo 5. dňa; na obnažený povrch sadajú baktérie (pneumokok, <i>S. aureus</i>, <i>H. influenzae</i>) → hnisavá pneumónia</td></tr>
+      <tr><td><b><b>toxín a mikrotromby</b> pri sepse</b></td><td><b>meningokoková sepsa</b></td><td>bodkovité krvácania a purpura kože; obojstranná hemoragická nekróza nadobličiek (<b>Waterhouseov–Friderichsenov syndróm</b>, asi pri 15 % meningokokových sepsí)</td><td>akútne zlyhanie nadobličiek a šok, veľmi vysoká úmrtnosť</td></tr>
+      <tr><td><b><b>chemikália</b> zničí sliznicu</b></td><td><b>hemoragická cystitída</b> po cyklofosfamide</td><td>akroleín (metabolit lieku vylučovaný močom) zničí urotel, obnažené cievy krvácajú</td><td>prevencia je dôkazom mechanizmu: mesna akroleín v moči viaže, veľa tekutín ho riedi</td></tr>
+    </tbody>
+  </table>
+
+  <div class="box k-pozor aside keep">
+    <div class="label">Pozor</div>
+    <div class="body">
+      <p>Hemoragická cystitída u pacienta po transplantácii krvotvorných buniek má dve príčiny v rôznom čase: v prvých dňoch akroleín, o týždne neskôr vírusy (BK polyomavírus, adenovírus), ktoré sa pri oslabenej imunite množia v uroteli.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 4.8 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-4-8"><span class="n">4.8</span><span>Gangrenózny (hnilobný, putrídny) zápal</span></h2>
+<div class="sec-body">
+  <p>Gangrenózny zápal nie je ďalší typ exsudátu: vzniká, keď do odumretého alebo nedokrveného tkaniva vniknú <b>hnilobné baktérie</b> (najmä anaeróby), ktorým mŕtve tkanivo bez kyslíka a bez obrany nič nekladie do cesty. Rozkladajú bielkoviny na zapáchajúce produkty a plyn; sírovodík s hemoglobínom sfarbí tkanivo do špinavozelena až čierna (<a class="xref" href="01_atrofia_nekroza_apoptoza.html#sec-1-8">→ 1.8 Gangréna</a>). Rozklad postupuje celou hrúbkou steny a vzniká vred (<b>ulcerogangrenózny zápal</b>).</p>
+
+  <div class="box k-jadro aside keep">
+    <div class="label">Jadro</div>
+    <div class="body">
+      <p><b>Gangrenózny</b>: do mŕtveho alebo nedokrveného tkaniva vniknú hnilobné baktérie → rozklad, zápach, plyn. Nie je to ďalší typ exsudátu.</p>
+    </div>
+  </div>
+
+  <div class="box k-morf keep">
+    <div class="label">ČO UVIDÍŠ – ODKIAĽ PRÍDU HNILOBNÉ BAKTÉRIE</div>
+    <div class="body">
+      <p>Hnilobné anaeróby sa do nekrózy dostanú jednou z troch ciest:</p>
+      <ul>
+    <li><b>z čreva</b> – po perforácii sa črevný obsah vyleje do brušnej dutiny → sterkorálna (kalová) peritonitída; gangrenózna apendicitída (<a class="xref" href="#sub-4-5-2">→ 4.5.2 Hnis v uzavretej dutine – empyém</a>),</li>
+    <li><b>z úst a z vdýchnutého materiálu</b> – aspirácia zvratkov alebo cudzieho telesa → gangrenózna pneumónia; u ťažko podvyživených detí noma (rýchlo postupujúca gangréna tváre), gangrenózna angína na mandliach,</li>
+    <li><b>z kože do zle prekrveného tkaniva</b> – diabetická noha (mikro- aj makroangiopatia plus oslabená obrana), vredy predkolenia pri chronickej žilovej nedostatočnosti, preležaniny, rozpadávajúce sa nádory.</li>
+  </ul>
+    </div>
+  </div>
+
+  <figure class="fig keep" id="fig-4-11" style="--fw:720px">
+    <img src="../assets/images/gangrene-foot.jpg" width="1280" height="672" alt="Gangréna nohy pri diabete. Čierne, vyschnuté tkanivo s ulceráciou a ostrým prechodom do vitálnej kože." loading="lazy">
+    <figcaption><b>Obr. 4.11 — Gangréna nohy pri diabete.</b> Čierne, vyschnuté tkanivo s ulceráciou a ostrým prechodom do vitálnej kože. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Gangrene_Foot_01.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>آرمین · Wikimedia Commons · CC0</a></figcaption>
+  </figure>
+</div>
+
+<!-- ══ 4.9 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-4-9"><span class="n">4.9</span><span>Súhrn a rýchle rozlíšenie</span></h2>
+<div class="sec-body">
+  <p>Súhrn sleduje mapu z Obr. 4.1 – čo v ložisku prevláda, prečo a ako sa to zahojí:</p>
+
+  <table class="table keep" id="tab-4-6" style="margin:6px 0">
+    <thead><tr><th>Typ</th><th>Čo je v tkanive</th><th>Kľúčový mechanizmus</th><th>Typický príklad</th><th>Hojenie</th></tr></thead>
+    <tbody>
+      <tr><td><b><b>Alteratívny</b></b></td><td>nekrózy parenchýmu, riedky infiltrát</td><td>toxín alebo vírus zabije bunky skôr, než príde obrana</td><td>difterická myokarditída, poliomyelitída, vírusová hepatitída</td><td>pečeň ad integrum; neuróny a kardiomyocyty sa nenahradia</td></tr>
+      <tr><td><b>Exsudatívny · serózny</b></td><td>voda, málo bielkovín a buniek</td><td>slabý podnet → len drobné medzery v stene ciev</td><td>nádcha, opar, žihľavka</td><td>bez defektu, resorpcia</td></tr>
+      <tr><td><b>Exsudatívny · lymfocytárny</b></td><td>voda + lymfocyty, plazmocyty</td><td>pomalá cielená imunita proti vírusu, autoantigénu alebo štepu</td><td>vírusová myokarditída, lymfocytárna meningitída, Hashimotova tyreoiditída</td><td>bez defektu (pri chronicite fibróza)</td></tr>
+      <tr><td><b>Exsudatívny · hnisavý</b></td><td>neutrofily, detritus, baktérie – hnis</td><td>pyogénna baktéria: koaguláza → absces, streptokináza a hyaluronidáza → flegmóna</td><td>absces, flegmóna, empyém, apendicitída</td><td>s defektom (jazva)</td></tr>
+      <tr><td><b>Exsudatívny · fibrinózny</b></td><td>fibrín (zrazený fibrinogén)</td><td>ťažké poškodenie ciev → únik veľkej molekuly fibrinogénu</td><td>fibrinózna perikarditída, krupózna pneumónia, záškrt</td><td>bez defektu (málo fibrínu) až jazva/karnifikácia (veľa fibrínu)</td></tr>
+      <tr><td><b>Exsudatívny · hemoragický</b></td><td>exsudát s erytrocytmi, často nekróza</td><td>stena ciev rozrušená vírusom, toxínom alebo mikrotrombami</td><td>chrípková tracheitída, meningokoková sepsa, hemoragická cystitída</td><td>podľa rozsahu nekrózy</td></tr>
+      <tr><td><b>Gangrenózny</b></td><td>nekrotický rozklad + hnilobné baktérie (plyn, zápach)</td><td>ischémia/nekróza + druhotná hnilobná superinfekcia</td><td>diabetická noha, sterkorálna peritonitída, noma</td><td>s defektom (rozsiahla strata tkaniva)</td></tr>
+      <tr><td><b><b>Proliferatívny</b></b></td><td>makrofágy, nové kapiláry, fibroblasty; príp. granulómy</td><td>pretrvávajúci podnet → rastové faktory makrofágov</td><td>chronický zápal, organizácia fibrínu; tuberkulóza</td><td>jazva, fibróza orgánu (kapitoly 5 a 6)</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ══ 4.10 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-4-10"><span class="n">4.10</span><span>Otázky na zopakovanie</span></h2>
+<div class="sec-body">
+  <ol class="quiz">
+    <li><details><summary>Prečo pri difterickej myokarditíde zanikajú kardiomyocyty, hoci v srdci nie je baktéria ani masa neutrofilov?</summary><div class="ans">Toxín <i>C. diphtheriae</i> sa krvou dostane do kardiomyocytov a zablokuje elongačný faktor 2 (bielkovinu, ktorá posúva ribozóm po mRNA od kodónu ku kodónu) → ribozómy ostanú stáť, zastaví sa proteosyntéza → bunky degenerujú a odumierajú. Agens nie je v tkanive, nič nepriťahuje neutrofily – prevláda alterácia nad exsudáciou a infiltráciou (alteratívny zápal). <a class="xref" href="#sec-4-2">→ 4.2 Alteratívny zápal</a></div></details></li>
+    <li><details><summary>Prípad: pacient s horúčkou a stuhnutou šijou má zakalený likvor s 3 000 bunkami/µl, prevažne neutrofilmi, a nízkou glukózou. O aký typ zápalu ide a prečo je glukóza nízka?</summary><div class="ans">O hnisavý (bakteriálny) zápal mozgových plien: baktérie privolali neutrofily a spolu s nimi glukózu v likvore spotrebúvajú; priepustné cievy plien zároveň prepustia bielkoviny. Pri vírusovej meningitíde by prevládali lymfocyty a glukóza by bola normálna. <a class="xref" href="#sec-4-4">→ 4.4 Lymfocytárny (nehnisavý) zápal</a></div></details></li>
+    <li><details><summary>Prečo je hnis žltozelený a prečo rozpúšťa tkanivo, v ktorom leží?</summary><div class="ans">Farbu dávajú lipidy membrán neutrofilov a myeloperoxidáza z ich granúl – ten istý enzým, ktorým fagocyt vyrába kyselinu chlórnu. Proteázy a radikály, ktoré uniknú z rozpadnutých neutrofilov, nerozlišujú baktériu od vlastného tkaniva → kolikvácia. <a class="xref" href="#sec-4-5">→ 4.5 Hnisavý (purulentný) zápal</a> · <a class="xref" href="03_zapal_vseobecne.html#sub-3-4-3">→ 3.4.3 Fagocytóza a zabíjanie</a></div></details></li>
+    <li><details><summary>Prečo upchatý apendix nakoniec praskne?</summary><div class="ans">V uzavretom lúmene rastie tlak; keď prevýši tlak v kapilárach steny, zastaví sa žilový odtok a stena je ischemická. Baktérie do nej prenikajú, cievy trombotizujú, stena odumrie v celej hrúbke (gangréna) a praskne. <a class="xref" href="#sub-4-5-2">→ 4.5.2 Hnis v uzavretej dutine – empyém</a></div></details></li>
+    <li><details><summary>Prečo stafylokok vytvára absces a streptokok flegmónu?</summary><div class="ans">Stafylokok tvorí <b>koagulázu</b>, ktorá zráža fibrín a okolo ložiska vznikne bariéra. Streptokok tvorí <b>streptokinázu (fibrinolyzín) a hyaluronidázu</b>, ktoré rozkladajú fibrín a medzibunkovú hmotu, takže sa šíri difúzne. <a class="xref" href="#sub-4-5-3">→ 4.5.3 Hnis v tkanive – flegmóna a absces</a></div></details></li>
+    <li><details><summary>Prečo absces často nevyhasne ani po antibiotikách a čo je bod zvratu?</summary><div class="ans">Rozpad tkaniva a neutrofilov uvoľňuje chemoatraktanty (C5a, IL-8), ktoré privolávajú ďalšie neutrofily ⟳; dutina bez ciev je pre antibiotiká ťažko dostupná. Bod zvratu je <b>odstránenie hnisu</b> (drenáž) – <i>ubi pus, ibi evacua</i>. <a class="xref" href="#sub-4-5-3">→ 4.5.3 Hnis v tkanive – flegmóna a absces</a></div></details></li>
+    <li><details><summary>Prečo sa krupózna pneumónia hojí bez jazvy, ale záškrtová pablana zanechá jazvu?</summary><div class="ans">Pri krupóznom zápale pablana nahrádza len povrchový epitel a stróma ostáva celá → regenerácia. Pri difterickom zápale siaha pablana do podslizničnej strómy a ciev, po jej odlúčení ostáva vred, ktorý sa hojí fibrotizáciou. <a class="xref" href="#sub-4-6-2">→ 4.6.2 Na sliznici a koži – pablanový (pseudomembranózny) zápal</a></div></details></li>
+    <li><details><summary>Prečo fibrinózna perikarditída niekedy zmizne bez stopy a inokedy skončí zrastom?</summary><div class="ans">Rozhoduje množstvo fibrínu oproti výkonu fibrinolýzy: málo fibrínu plazmín rozpustí za dni; veľa fibrínu prerastú kapiláry a fibroblasty, nahradí ho kolagén a vznikne zrast, v krajnom prípade konstriktívna perikarditída. <a class="xref" href="#sub-4-6-1">→ 4.6.1 Na seróznych blanách</a> · <a class="xref" href="05_hojenie.html#sec-5-7">→ 5.7 Organizácia: čo telo samo nevstrebe</a></div></details></li>
+    <li><details><summary>Prečo mesna zabráni hemoragickej cystitíde po cyklofosfamide?</summary><div class="ans">Sliznicu mechúra neničí liek sám, ale jeho metabolit akroleín, ktorý sa vylučuje močom a zabíja urotel; obnažené cievy potom krvácajú. Mesna akroleín v moči viaže, takže sa k urotelu nedostane. <a class="xref" href="#sec-4-7">→ 4.7 Hemoragický zápal</a></div></details></li>
+  </ol>
+</div>
+
+<!-- ══ 4.11 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-4-11"><span class="n">4.11</span><span>Zdroje</span></h2>
+<div class="sec-body src">
+  <div class="micro" style="margin-top:8px">Učebnice (kontrola faktov)</div>
+
+  <ul>
+    <li>Zámečník J. a kol.: <i>Patologie</i>, 2. vyd., Praha: LD Prager Publishing, 2024 (kap. 4 Zánět). ISBN 978-80-11-04919-5.</li>
+  </ul>
+
+  <div class="micro" style="margin-top:8px">Klasifikácie, konsenzy a prehľady</div>
+
+  <ul>
+    <li>Di Saverio S., Podda M., De Simone B. et al.: Diagnosis and treatment of acute appendicitis: 2020 update of the WSES Jerusalem guidelines. <i>World J Emerg Surg</i> 2020;15:27. <a href="https://doi.org/10.1186/s13017-020-00306-3" target="_blank" rel="noopener noreferrer">doi:10.1186/s13017-020-00306-3</a></li>
+    <li>Tiwari A., Sapkota P., Shrestha D.: Incidental neoplasm and histopathological spectrum of suspected acute appendicitis in appendectomy specimen: an observational study. <i>JNMA J Nepal Med Assoc</i> 2025;63(283):165–169. <a href="https://doi.org/10.31729/jnma.8914" target="_blank" rel="noopener noreferrer">doi:10.31729/jnma.8914</a></li>
+    <li>Gomes H. R.: Cerebrospinal fluid analysis: current diagnostic methods in central nervous system infectious diseases. <i>Arq Neuropsiquiatr</i> 2022;80(5 Suppl 1):290–295. <a href="https://doi.org/10.1590/0004-282X-ANP-2022-S114" target="_blank" rel="noopener noreferrer">doi:10.1590/0004-282X-ANP-2022-S114</a></li>
+    <li>Singh N.: Inside the brain: cerebrospinal fluid insights in meningitis. <i>Cureus</i> 2024;16(8):e67008. <a href="https://doi.org/10.7759/cureus.67008" target="_blank" rel="noopener noreferrer">doi:10.7759/cureus.67008</a></li>
+    <li>Taubenberger J. K., Morens D. M.: The pathology of influenza virus infections. <i>Annu Rev Pathol</i> 2008;3:499–522. <a href="https://doi.org/10.1146/annurev.pathmechdis.3.121806.154316" target="_blank" rel="noopener noreferrer">doi:10.1146/annurev.pathmechdis.3.121806.154316</a></li>
+    <li>Harsch I. A.: Fast clinical, but long-term, biochemical remission after Waterhouse–Friderichsen syndrome. <i>Case Rep Endocrinol</i> 2021;2021:8885348. <a href="https://doi.org/10.1155/2021/8885348" target="_blank" rel="noopener noreferrer">doi:10.1155/2021/8885348</a></li>
+    <li>Chili Y. Z. et al.: Aetiology of haemorrhagic cystitis: BK polyomavirus and adenovirus detection. <i>S Afr J Infect Dis</i> 2025;40(1):685. <a href="https://doi.org/10.4102/sajid.v40i1.685" target="_blank" rel="noopener noreferrer">doi:10.4102/sajid.v40i1.685</a></li>
+    <li>StatPearls (NCBI Bookshelf): <a href="https://www.ncbi.nlm.nih.gov/books/NBK534820/" target="_blank" rel="noopener noreferrer">Pathology, Inflammation</a></li>
+  </ul>
+
+  <div class="micro" style="margin-top:8px">Obrázky</div>
+
+  <p>Autor, licencia a odkaz na zdroj sú pri každom obrázku; súhrn je v registri <code>ZDROJE-OBRAZKOV.md</code>.</p>
+</div>
+
+<p class="next"><b>Pokračuje v:</b>
+  <a class="xref" href="05_hojenie.html">→ 5 Proliferatívny zápal, hojenie a reparácia</a>
+</p>
+
+<div class="running-foot">
+  <span>PATOLA — poznámky z patológie · Kapitola 4</span>
+  <span class="tnum">§ 4.1–4.11</span>
+</div>
+
+</main>
+  </div>
+  <div class="site-spacer" aria-hidden="true"></div>
+</div>
+
+<script src="../assets/js/site.js" defer></script>
+<script src="../assets/js/peek.js" defer></script>
+<script>
+/* PATOLA: tlač kapitoly otvorenej v ráme hlavnej stránky (index.html).
+   Rodič pošle "pf:print"; Ctrl/Cmd+P vo vnútri rámu tlačí rám, nie obsah knihy. */
+(function(){
+  var imgs = function(){ return Array.prototype.slice.call(document.querySelectorAll('img[loading="lazy"]')); };
+  // lenivé obrázky sa po načítaní stránky dotiahnu na pozadí, aby v tlači neboli prázdne
+  window.addEventListener("load", function(){ setTimeout(function(){ imgs().forEach(function(i){ i.loading = "eager"; }); }, 800); });
+  // v tlači sú odpovede na otázky vidieť (zatvorený <details> by sa vytlačil bez nich)
+  var shut = [];
+  // predvolený názov súboru pri tlači = kapitola („Kapitola 3 – Zápal …“); title sa po tlači vráti
+  // (po maximalizovanom náhľade je v document.title už iná kapitola, preto sa číta až teraz)
+  var keep = null;
+  function printTitle(){ return document.title.replace(/^(\d+) · /, "Kapitola $1 – "); }
+  function titleOn(){ if (keep === null) { keep = document.title; document.title = printTitle(); } }
+  function titleOff(){ if (keep !== null) { document.title = keep; keep = null; } }
+  window.addEventListener("beforeprint", function(){ titleOn(); shut = Array.prototype.filter.call(document.querySelectorAll("ol.quiz details"), function(d){ return !d.open; }); shut.forEach(function(d){ d.open = true; }); });
+  window.addEventListener("afterprint", function(){ titleOff(); shut.forEach(function(d){ d.open = false; }); shut = []; });
+  if (window.top === window.self) return;
+  // v ráme berie prehliadač názov súboru z hlavnej stránky → pošli jej názov kapitoly
+  window.addEventListener("afterprint", function(){ try { window.parent.postMessage({ pf: "title", title: null }, "*"); } catch (e) {} });
+  function printMe(){
+    var all = Array.prototype.slice.call(document.images);
+    all.forEach(function(i){ i.loading = "eager"; });
+    try { window.parent.postMessage({ pf: "title", title: printTitle() }, "*"); } catch (e) {}
+    var t0 = Date.now();
+    (function wait(){
+      if (Date.now() - t0 > 150 && (all.every(function(i){ return i.complete; }) || Date.now() - t0 > 4000)) { try { window.focus(); window.print(); } catch (e) {} }
+      else setTimeout(wait, 100);
+    })();
+  }
+  window.addEventListener("message", function(e){ if (e.data === "pf:print") printMe(); });
+  document.addEventListener("keydown", function(e){
+    if ((e.ctrlKey || e.metaKey) && !e.altKey && (e.key === "p" || e.key === "P")) { e.preventDefault(); printMe(); }
+  });
+})();
+</script>
+<script src="../assets/glossary/01-adaptacia-a-bunkova-smrt.js" defer></script>
+<script src="../assets/glossary/02-nekroza-a-gangrena.js" defer></script>
+<script src="../assets/glossary/03-dystrofie-a-amyloid.js" defer></script>
+<script src="../assets/glossary/04-zapal-a-exsudat.js" defer></script>
+<script src="../assets/glossary/05-mechanizmy-a-skratky.js" defer></script>
+<script src="../assets/glossary/06-obeh-a-hemostaza.js" defer></script>
+<script src="../assets/glossary/07-celkovy-obeh.js" defer></script>
+<script src="../assets/js/glossary.js" defer></script>
+</body>
+</html>

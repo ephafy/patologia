@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 360" role="img" aria-labelledby="t17">
+<title id="t17">Patogenéza nekrózy: od výpadku energie alebo poškodenia membrány po natrávenie bunky a zápal</title>
+<defs><marker id="a17" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker></defs>
+
+<rect class="bx-k" x="30" y="8" width="300" height="44" rx="3"/>
+<text class="lblb" x="180" y="26" text-anchor="middle">Výpadok energie</text>
+<text class="sub" x="180" y="42" text-anchor="middle">hypoxia, ischémia: ↓ O₂ → ↓ ATP</text>
+<rect class="bx-k" x="370" y="8" width="300" height="44" rx="3"/>
+<text class="lblb" x="520" y="26" text-anchor="middle">Priame poškodenie membrány</text>
+<text class="sub" x="520" y="42" text-anchor="middle">toxíny, komplement, teplo, voľné radikály</text>
+
+<path class="arw" d="M200,54 L320,82" marker-end="url(#a17)"/>
+<path class="arw" d="M500,54 L380,82" marker-end="url(#a17)"/>
+
+<rect class="bx-m" x="180" y="84" width="340" height="44" rx="3" stroke="var(--color-accent-2-500)"/>
+<text class="lblb" x="350" y="102" text-anchor="middle">Zlyhajú iónové pumpy</text>
+<text class="sub" x="350" y="118" text-anchor="middle">Na⁺ a voda dnu → opuch · ↓ proteosyntéza · laktát → ↓ pH</text>
+
+<path class="arw" d="M350,130 L350,150" marker-end="url(#a17)"/>
+<rect class="bx-m" x="180" y="152" width="340" height="44" rx="3" stroke="var(--color-accent-2-500)"/>
+<text class="lblb" x="350" y="170" text-anchor="middle">↑ Ca²⁺ v cytosole</text>
+<text class="sub" x="350" y="186" text-anchor="middle">fosfolipázy · proteázy · endonukleázy · pór MPT</text>
+
+<path class="arw" d="M300,198 L190,224" marker-end="url(#a17)"/>
+<path class="arw" d="M400,198 L510,224" marker-end="url(#a17)"/>
+
+<rect class="bx-m" x="30" y="226" width="300" height="44" rx="3" stroke="var(--color-accent-2-500)"/>
+<text class="lblb" x="180" y="244" text-anchor="middle">Prasknú membrány a lyzozómy</text>
+<text class="sub" x="180" y="260" text-anchor="middle">hydrolázy natrávia bunku</text>
+<rect class="bx-c" x="370" y="226" width="300" height="44" rx="3" stroke="var(--color-accent-500)"/>
+<text class="lblb" x="520" y="244" text-anchor="middle">Denaturácia bielkovín</text>
+<text class="sub" x="520" y="260" text-anchor="middle">↓ pH, strata štruktúry</text>
+
+<path class="arw" d="M190,272 L310,296" marker-end="url(#a17)"/>
+<path class="arw" d="M510,272 L390,296" marker-end="url(#a17)"/>
+
+<rect class="bx-m" x="180" y="298" width="340" height="50" rx="3" stroke="var(--color-accent-2-500)"/>
+<text class="lblb" x="350" y="318" text-anchor="middle">NEKRÓZA</text>
+<text class="sub" x="350" y="336" text-anchor="middle">obsah bunky (DAMP, enzýmy) unikne → zápalová reakcia okolia</text>
+</svg>
