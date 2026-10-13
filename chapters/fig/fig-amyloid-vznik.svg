@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 340" role="img" aria-labelledby="t219">
+<title id="t219">Vznik amyloidu: štyri príčiny zlého skladania prekurzora, samoudržiavaný rast fibríl, ochrana pred rozkladom, depozit a zlyhanie orgánu</title>
+<defs><marker id="a219" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker></defs>
+
+<!-- príčiny -->
+<text class="lblb" x="10" y="14">Prečo sa prekurzor zle skladá</text>
+<rect class="bx-k" x="10" y="22" width="180" height="36" rx="3"/>
+<text class="lblb" x="100" y="37" text-anchor="middle">Je ho priveľa</text>
+<text class="sub" x="100" y="51" text-anchor="middle">SAA, ľahké reťazce Ig</text>
+<rect class="bx-k" x="10" y="64" width="180" height="36" rx="3"/>
+<text class="lblb" x="100" y="79" text-anchor="middle">Je mutovaný</text>
+<text class="sub" x="100" y="93" text-anchor="middle">transtyretín (familiárna forma)</text>
+<rect class="bx-k" x="10" y="106" width="180" height="36" rx="3"/>
+<text class="lblb" x="100" y="121" text-anchor="middle">Neúplne sa odbúra</text>
+<text class="sub" x="100" y="135" text-anchor="middle">SAA → fragment AA</text>
+<rect class="bx-k" x="10" y="148" width="180" height="36" rx="3"/>
+<text class="lblb" x="100" y="163" text-anchor="middle">Nevylučuje sa</text>
+<text class="sub" x="100" y="177" text-anchor="middle">β₂-mikroglobulín pri dialýze</text>
+
+<path class="arw" d="M192,40 L212,40 M192,82 L212,82 M192,124 L212,124 M192,166 L212,166 M212,40 L212,166"/>
+<path class="arw" d="M212,103 L228,103" marker-end="url(#a219)"/>
+
+<!-- skladanie -->
+<rect class="bx-m" x="230" y="80" width="130" height="46" rx="3" stroke="var(--color-accent-2-500)"/>
+<text class="lblb" x="295" y="99" text-anchor="middle">Zlé zloženie</text>
+<text class="sub" x="295" y="115" text-anchor="middle">stratí natívny tvar</text>
+<path class="arw" d="M362,103 L394,103" marker-end="url(#a219)"/>
+<rect class="bx-m" x="396" y="80" width="120" height="46" rx="3" stroke="var(--color-accent-2-500)"/>
+<text class="lblb" x="456" y="99" text-anchor="middle">Oligoméry</text>
+<text class="sub" x="456" y="115" text-anchor="middle">toxické pre bunky</text>
+<path class="arw" d="M518,103 L550,103" marker-end="url(#a219)"/>
+<rect class="bx-m" x="552" y="80" width="138" height="46" rx="3" stroke="var(--color-accent-2-500)"/>
+<text class="lblb" x="621" y="99" text-anchor="middle">Fibrily</text>
+<text class="sub" x="621" y="115" text-anchor="middle">β-skladaný list</text>
+
+<!-- slučka nukleácie -->
+<path class="arwd" d="M621,78 C621,40 295,40 295,76" marker-end="url(#a219)"/>
+<text class="sub" x="458" y="40" text-anchor="middle">⟳ fibrila je zárodok, na ktorý sa pripájajú ďalšie molekuly</text>
+
+<!-- ochrana a depozit -->
+<path class="arw" d="M621,128 L621,154" marker-end="url(#a219)"/>
+<rect class="bx-k" x="420" y="156" width="270" height="44" rx="3"/>
+<text class="lblb" x="555" y="174" text-anchor="middle">Proteázy ich nerozložia</text>
+<text class="sub" x="555" y="190" text-anchor="middle">odolná štruktúra + ochrana SAP, GAG, apoE</text>
+<path class="arw" d="M555,202 L555,224" marker-end="url(#a219)"/>
+<rect class="bx-c" x="230" y="226" width="460" height="40" rx="3" stroke="var(--color-accent-500)"/>
+<text class="lblb" x="460" y="242" text-anchor="middle">Depozit v extracelulárnej matrix</text>
+<text class="sub" x="460" y="257" text-anchor="middle">steny ciev a sínusov, bazálne membrány, glomeruly</text>
+
+<path class="arw" d="M340,268 L340,288" marker-end="url(#a219)"/>
+<rect class="bx-m" x="230" y="290" width="220" height="44" rx="3" stroke="var(--color-accent-2-500)"/>
+<text class="lblb" x="340" y="308" text-anchor="middle">Atrofia a ischémia</text>
+<text class="sub" x="340" y="324" text-anchor="middle">↑ difúzna vzdialenosť, zúžené cievy</text>
+<path class="arw" d="M452,312 L468,312" marker-end="url(#a219)"/>
+<rect class="bx-m" x="470" y="290" width="220" height="44" rx="3" stroke="var(--color-accent-2-500)"/>
+<text class="lblb" x="580" y="308" text-anchor="middle">Zlyhanie orgánu</text>
+<text class="sub" x="580" y="324" text-anchor="middle">oblička, srdce, pečeň, nervy</text>
+
+<text class="lblb" x="10" y="226">Kde zasiahnuť</text>
+<text class="sub" x="10" y="242">rast trvá, kým prichádza</text>
+<text class="sub" x="10" y="255">prekurzor → liečba znižuje</text>
+<text class="sub" x="10" y="268">jeho tvorbu (AL, AA)</text>
+<text class="sub" x="10" y="281">alebo ho stabilizuje (ATTR)</text>
+</svg>

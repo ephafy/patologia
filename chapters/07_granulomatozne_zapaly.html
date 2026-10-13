@@ -1,0 +1,1990 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>7 · Granulomatózne a špecifické zápaly</title>
+<script>/* stránka v náhľade (assets/js/peek.js) — skryť hlavičku skôr, než sa vykreslí */if(/[?&]embed=/.test(location.search))document.documentElement.classList.add("pk-embed")</script>
+<script>/* pri F5/Späť ukázať stránku až na obnovenej pozícii (peek.js odkryje; poistka 2 s) */(function(){try{var h=document.documentElement,n=performance.getEntriesByType("navigation")[0],t=n&&n.type,s=location.search;if(/[?&]y=[1-9]/.test(s)||(!/[?&]embed=/.test(s)&&(t==="reload"||t==="back_forward")&&parseInt(sessionStorage.getItem("pk-y:"+location.pathname),10)>0)){h.classList.add("pk-restoring");setTimeout(function(){h.classList.remove("pk-restoring")},2000)}}catch(e){}})()</script>
+<script>/* úvodné načítanie (assets/js/peek.js): pf-intro vždy (okrem náhľadu, maximalizácie z náhľadu ?ni=1 a zníženého pohybu); pf-mid, keď sa kapitola otvára uprostred (F5/Späť na uloženej pozícii, ?y=, odkaz na sekciu) */(function(){try{var h=document.documentElement,s=location.search,n=performance.getEntriesByType("navigation")[0],t=n&&n.type;if(/[?&](embed|ni)=/.test(s)||(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches))return;h.classList.add("pf-intro");if(/[?&]y=[1-9]/.test(s)||location.hash.length>1||((t==="reload"||t==="back_forward")&&parseInt(sessionStorage.getItem("pk-y:"+location.pathname),10)>0))h.classList.add("pf-mid");setTimeout(function(){h.classList.remove("pf-intro","pf-hero","pf-go","pf-mid")},8000)}catch(e){}})()</script>
+<script>/* skrytý bočný obsah (assets/js/toc-collapse.js) — zapnúť pred vykreslením, nech stránka neblikne */try{if(localStorage.getItem("pf-toc-collapsed")==="1")document.documentElement.classList.add("toc-collapsed")}catch(e){}</script>
+<script src="../assets/js/view-early.js"></script>
+<link rel="stylesheet" href="../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../assets/styles/site.css">
+<link rel="stylesheet" href="../assets/styles/glossary.css">
+<link rel="stylesheet" href="../assets/styles/view-toggle.css">
+<style>
+/* ══ Broadsheet — design-system tokens ══════════════════════════════════ */
+:root{
+  --color-bg:#f3f2f2;
+  --color-surface:#eae9e9;
+  --color-text:#201e1d;
+  --color-accent:#0088b0;
+  --color-accent-2:#d6006c;
+  --color-divider:color-mix(in srgb,#201e1d 16%,transparent);
+
+  --color-neutral-100:#f8f4f4; --color-neutral-200:#eae7e7; --color-neutral-300:#d7d3d3;
+  --color-neutral-400:#bab6b6; --color-neutral-500:#9b9797; --color-neutral-600:#7d7979;
+  --color-neutral-700:#605d5d; --color-neutral-800:#444141; --color-neutral-900:#2d2b2b;
+
+  --color-accent-100:#e9f8ff; --color-accent-200:#cbeeff; --color-accent-300:#99e0ff;
+  --color-accent-400:#62c5ee; --color-accent-500:#38a6cf; --color-accent-600:#1186ac;
+  --color-accent-700:#006786; --color-accent-800:#004961; --color-accent-900:#0a303e;
+
+  --color-accent-2-100:#fff1f4; --color-accent-2-200:#ffdee6; --color-accent-2-300:#ffc0d0;
+  --color-accent-2-400:#ff90b1; --color-accent-2-500:#ff458e; --color-accent-2-600:#d82071;
+  --color-accent-2-700:#aa0b56; --color-accent-2-800:#790e3d; --color-accent-2-900:#4b1528;
+
+  --color-process-yellow:#edbb00;
+
+  --font-heading:"Source Serif 4",system-ui,serif;
+  --font-heading-weight:600;
+  --font-body:"Source Serif 4",system-ui,serif;
+  --font-mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+
+  --space-1:5px; --space-2:10px; --space-3:15px; --space-4:20px; --space-6:30px; --space-8:40px;
+  --radius-sm:1px; --radius-md:2px; --radius-lg:4px;
+
+  --shadow-sm:0 1px 2px color-mix(in srgb,#2d2b2b 14%,transparent);
+  --shadow-md:0 3px 10px color-mix(in srgb,#2d2b2b 16%,transparent);
+  --shadow-lg:0 12px 32px color-mix(in srgb,#2d2b2b 22%,transparent);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:var(--color-text);font-family:var(--font-body);
+  font-size:calc(15px*var(--z,1));line-height:1.55;font-weight:400;padding:0}
+h1,h2,h3,h4,h5,h6{font-family:var(--font-heading);font-weight:var(--font-heading-weight);
+  line-height:1.12;letter-spacing:-0.015em;margin:0 0 var(--space-2)}
+p{margin:0 0 var(--space-3)}
+a{color:var(--color-accent);text-underline-offset:3px}
+img{display:block;max-width:100%}
+figure{margin:0}
+figcaption{font-size:calc(11px*var(--z,1));margin-top:var(--space-1);
+  color:color-mix(in srgb,var(--color-text) 55%,transparent)}
+.text-muted{color:color-mix(in srgb,var(--color-text) 55%,transparent)}
+:focus{outline:none}
+:focus-visible{outline:2px solid var(--color-accent);outline-offset:2px}
+::selection{background:color-mix(in srgb,var(--color-accent) 30%,transparent)}
+.hr{height:1px;border:0;margin:var(--space-4) 0;background:var(--color-divider)}
+
+/* — tables — */
+.table{width:100%;border-collapse:collapse;font-size:calc(14px*var(--z,1))}
+.table th{text-align:left;font-size:calc(11px*var(--z,1));letter-spacing:0.08em;text-transform:uppercase;
+  color:color-mix(in srgb,var(--color-text) 60%,transparent);
+  padding:var(--space-2);border-bottom:1px solid var(--color-divider)}
+.table td{padding:var(--space-2);
+  border-bottom:1px solid color-mix(in srgb,var(--color-text) 8%,transparent)}
+.table tbody tr:hover{background:color-mix(in srgb,var(--color-text) 4%,transparent)}
+
+/* — tags — */
+.tag{display:inline-flex;align-items:center;font-size:calc(11px*var(--z,1));letter-spacing:0.02em;
+  padding:3px 10px;border-radius:calc(var(--radius-md)*0.75)}
+.tag-accent{background:var(--color-accent-100);color:var(--color-accent-800)}
+.tag-accent-2{background:var(--color-accent-2-100);color:var(--color-accent-2-800)}
+.tag-neutral{background:var(--color-neutral-100);color:var(--color-neutral-800)}
+
+/* — the plate numeral: three process inks, no black plate — */
+.cmyk-num{--cmyk-num-ground:var(--color-bg);position:relative;width:fit-content;
+  line-height:0.9;font-feature-settings:"pnum" 1;
+  padding:0.12em;margin:-0.12em}
+.cmyk-num .paper{color:var(--color-bg);
+  text-shadow:0.036em 0.025em 0 var(--color-bg),-0.031em -0.023em 0 var(--color-bg)}
+.cmyk-num .plate{position:absolute;inset:0.12em;mix-blend-mode:multiply}
+.cmyk-num .plate-c{color:var(--color-accent)}
+.cmyk-num .plate-m{color:var(--color-accent-2);translate:0.036em 0.025em}
+.cmyk-num .plate-y{color:var(--color-process-yellow);translate:-0.031em -0.023em}
+
+/* ══ doc-page — the printed sheet ═══════════════════════════════════════ */
+.page{--color-bg:#fff;margin:0 auto;background:#fff;
+  padding:50px;box-shadow:none;border:0;
+  font-size:calc(13.5px*var(--z,1));line-height:1.42;text-wrap:pretty}
+.page p{margin:0 0 6px;orphans:3;widows:3}
+.page ul,.page ol{margin:0 0 6px;padding-left:15px}
+.page li{margin:0 0 2px;orphans:3;widows:3}
+.page table.table{font-size:calc(12px*var(--z,1));line-height:1.3}
+.page table.table th,.page table.table td{padding:3px 8px 3px 0;vertical-align:top}
+.keep{break-inside:avoid}
+.page sup{font-size:calc(9px*var(--z,1));line-height:0}
+
+.running-head{display:flex;justify-content:space-between;align-items:baseline;
+  font-size:calc(10px*var(--z,1));letter-spacing:0.1em;text-transform:uppercase;color:var(--color-neutral-600);
+  padding-bottom:4px;border-bottom:1px solid var(--color-neutral-300);margin-bottom:14px}
+.running-foot{display:flex;justify-content:space-between;align-items:baseline;
+  font-size:calc(10px*var(--z,1));color:var(--color-neutral-600);
+  padding-top:4px;border-top:1px solid var(--color-neutral-300);margin-top:22px}
+
+/* — chapter opener — */
+.opener{display:flex;align-items:flex-start;gap:18px;margin-bottom:10px}
+.opener .num{font-family:var(--font-heading);font-size:calc(64px*var(--z,1));font-weight:600;
+  letter-spacing:-0.03em;--cmyk-num-ground:#fff}
+.eyebrow{font-size:calc(10px*var(--z,1));letter-spacing:0.14em;text-transform:uppercase;
+  color:var(--color-accent-2);margin-bottom:4px}
+.opener h1{font-size:calc(29px*var(--z,1));line-height:1.05;font-weight:600;letter-spacing:-0.015em}
+.standfirst{margin:6px 0 0;font-size:calc(13px*var(--z,1));font-style:italic;
+  color:var(--color-neutral-700);max-width:46em}
+
+/* — contents block — */
+.contents{column-count:3;column-gap:22px;font-size:calc(11.5px*var(--z,1));line-height:1.35;padding:8px 0;
+  border-top:2px solid var(--color-text);border-bottom:1px solid var(--color-neutral-300);
+  margin-bottom:16px}
+.contents .label{column-span:all;font-size:calc(10px*var(--z,1));letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--color-neutral-600);margin-bottom:5px}
+.contents .row{display:flex;gap:6px;break-inside:avoid}
+.contents .row span:first-child{color:var(--color-accent);font-variant-numeric:tabular-nums}
+
+/* — numbered sections — */
+.sec-h{display:flex;gap:10px;font-size:calc(16px*var(--z,1));font-weight:600;margin:0 0 5px}
+.sec-h .n{color:var(--color-accent);font-variant-numeric:tabular-nums}
+.sec-body{padding-left:calc(2.6em + 10px);margin-bottom:14px}
+.sub-h{font-size:calc(15.5px*var(--z,1));font-weight:600;margin:16px 0 5px -1.7em}
+.sub-h .n{color:var(--color-accent-700);font-variant-numeric:tabular-nums;margin-right:8px}
+.micro{font-size:calc(11px*var(--z,1));letter-spacing:0.1em;text-transform:uppercase;
+  color:var(--color-neutral-600);margin-bottom:4px}
+
+/* — callouts — */
+.flag{margin:10px 0;padding:8px 10px;background:var(--color-accent-2-100);
+  border-left:3px solid var(--color-accent-2)}
+.flag .label{font-size:calc(10px*var(--z,1));letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--color-accent-2-800);margin-bottom:3px}
+.flag .body{font-size:calc(12px*var(--z,1));line-height:1.38;color:var(--color-accent-2-900)}
+.flag .body p{margin:0 0 5px}.flag .body p:last-child{margin:0}
+
+.note{margin:10px 0;padding:8px 10px;background:var(--color-accent-100);
+  border-left:3px solid var(--color-accent)}
+.note .label{font-size:calc(10px*var(--z,1));letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--color-accent-800);margin-bottom:3px}
+.note .body{font-size:calc(12px*var(--z,1));line-height:1.38;color:var(--color-accent-900)}
+.note .body p{margin:0 0 5px}.note .body p:last-child{margin:0}
+
+.plain{margin:10px 0;padding:8px 10px;background:var(--color-neutral-100);
+  border-left:3px solid var(--color-neutral-400)}
+.plain .label{font-size:calc(10px*var(--z,1));letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--color-neutral-700);margin-bottom:3px}
+.plain .body{font-size:calc(12px*var(--z,1));line-height:1.38;color:var(--color-neutral-900)}
+.plain .body p{margin:0 0 5px}.plain .body p:last-child{margin:0}
+
+/* — REVÍZIA block (CLAUDE.md §1.3, značka [R]) ————————————————————————
+   Zámerne NIE .note/.flag/.plain: site.js tie tri triedy vyplaví do
+   bočného stĺpca ako poznámky na okraji, a revízia patrí do hlavného
+   toku textu — je to obsah, nie komentár. Preto vlastná trieda.        */
+.rev{margin:11px 0;padding:9px 12px;break-inside:avoid;
+  background:linear-gradient(180deg,#fffaf0,#fff);
+  border:1px solid color-mix(in srgb,var(--color-process-yellow) 55%,transparent);
+  border-left:4px solid var(--color-process-yellow)}
+.rev .label{display:inline-flex;align-items:center;gap:6px;
+  font-size:calc(9.5px*var(--z,1));letter-spacing:0.12em;text-transform:uppercase;
+  color:#7a5c00;margin-bottom:4px;font-weight:600}
+.rev .label .r{display:inline-flex;align-items:center;justify-content:center;
+  width:15px;height:15px;border-radius:50%;background:var(--color-process-yellow);
+  color:#3d2e00;font-size:calc(9px*var(--z,1));font-weight:700;letter-spacing:0}
+.rev .body{font-size:calc(12px*var(--z,1));line-height:1.4}
+.rev .body p{margin:0 0 5px}.rev .body p:last-child{margin:0}
+.rev table.table{margin:6px 0 5px}
+
+/* — mechanism diagram in the press's own monospace — */
+.diagram{font-family:var(--font-mono);font-size:calc(10px*var(--z,1));line-height:1.35;
+  background:var(--color-surface);border-left:2px solid var(--color-neutral-400);
+  padding:9px 11px;margin:9px 0;overflow-x:auto;white-space:pre;
+  color:var(--color-neutral-900);border-radius:var(--radius-sm)}
+
+/* — kaskáda v riadku a rozvetvenie (CLAUDE.md §2.5) — */
+.chain{font-size:calc(12.5px*var(--z,1));line-height:1.5;margin:8px 0;padding:7px 10px;
+  background:var(--color-accent-100);border-left:3px solid var(--color-accent-400)}
+.chain b{color:var(--color-accent-800)}
+.fork{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;
+  margin:9px 0;font-size:calc(12px*var(--z,1));line-height:1.38}
+.fork>div{padding:7px 9px;background:var(--color-neutral-100);
+  border-top:2px solid var(--color-neutral-400)}
+.fork>div b{display:block;margin-bottom:2px;color:var(--color-neutral-900)}
+
+/* — charts — */
+.chart{margin:12px 0;break-inside:avoid;max-width:700px}
+.chart svg{width:100%;height:auto;display:block;font-family:var(--font-body)}
+.chart figcaption{font-size:calc(10.5px*var(--z,1));line-height:1.35;margin-top:4px;color:var(--color-neutral-700)}
+.chart figcaption b{color:var(--color-text)}
+.chart .ax{stroke:var(--color-neutral-400);stroke-width:1}
+.chart .grid{stroke:var(--color-neutral-300);stroke-width:1;stroke-dasharray:2 3}
+.chart .ser{fill:none;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+.chart .s-c{stroke:var(--color-accent)}
+.chart .s-m{stroke:var(--color-accent-2)}
+.chart .s-k{stroke:var(--color-neutral-700)}
+.chart .f-c{fill:var(--color-accent);opacity:.13}
+.chart .f-m{fill:var(--color-accent-2);opacity:.13}
+.chart .band-c{fill:var(--color-accent-100)}
+.chart .band-m{fill:var(--color-accent-2-100)}
+.chart .tick{font-size:9.5px;fill:var(--color-neutral-600);font-variant-numeric:tabular-nums}
+.chart .lbl{font-size:10.5px;fill:var(--color-neutral-800)}
+.chart .lbl-c{font-size:10.5px;fill:var(--color-accent-700)}
+.chart .lbl-m{font-size:10.5px;fill:var(--color-accent-2-700)}
+.chart .cap{font-size:9.5px;fill:var(--color-neutral-600);letter-spacing:.08em;text-transform:uppercase}
+.chart .mark{stroke:var(--color-neutral-800);stroke-width:1;stroke-dasharray:3 3}
+.chart .bar-c{fill:var(--color-accent-500)}
+.chart .bar-m{fill:var(--color-accent-2-500)}
+
+/* — krížové odkazy (CLAUDE.md §3.1) ————————————————————————————————————
+   a.xref  = odkaz na kapitolu, ktorá už existuje. Ostáva skutočným
+             <a href>, takže funguje aj bez JS a bez shellu; keď pribudne
+             split.js, otvorí sa vedľa v druhom paneli.
+   .xref-soon = tá istá informácia pre kapitolu, ktorá ešte nie je
+             napísaná. Zámerne NIE <a>: mŕtvy odkaz je horší než žiadny.
+             Text nesie číslo aj názov, takže dáva zmysel aj v tlači.   */
+.xref{color:var(--color-accent-700);text-decoration:none;
+  border-bottom:1px solid color-mix(in srgb,var(--color-accent) 45%,transparent);
+  white-space:nowrap}
+.xref:hover{background:var(--color-accent-100);border-bottom-color:var(--color-accent)}
+.xref-soon{color:var(--color-neutral-600);
+  border-bottom:1px dotted var(--color-neutral-400);white-space:nowrap;cursor:help}
+
+.deps,.next{font-size:calc(11.5px*var(--z,1));line-height:1.5;margin:0 0 10px;padding:7px 10px;
+  background:var(--color-neutral-100);border-top:2px solid var(--color-neutral-400)}
+.deps b,.next b{font-size:calc(10px*var(--z,1));letter-spacing:.1em;text-transform:uppercase;
+  color:var(--color-neutral-700);margin-right:6px}
+.next{border-top-color:var(--color-accent);background:var(--color-accent-100);margin:16px 0 0}
+.next b{color:var(--color-accent-800)}
+
+/* — two/three column content blocks — */
+.cols-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;
+  font-size:calc(12.5px*var(--z,1));line-height:1.35}
+.cols-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;
+  font-size:calc(12.5px*var(--z,1));line-height:1.35}
+.flow-2{column-count:2;column-gap:22px;font-size:calc(12.5px*var(--z,1));line-height:1.38}
+
+.lede{font-size:calc(12.5px*var(--z,1));color:var(--color-neutral-700)}
+b,strong{font-weight:600}
+.tnum{font-variant-numeric:tabular-nums}
+
+@media screen and (min-width:981px){
+  .sec-h,.sub-h,.micro,.hr,.diagram,.chart,.table,.running-foot,
+  .cols-2,.cols-3,.flow-2,.note,.flag,.plain,.rev,.fork,.chain{clear:both}
+  .sec-body::after{content:"";display:block;clear:both}
+}
+
+@media (max-width:820px){
+  body{padding:0}
+  .page{padding:20px 16px}
+  .contents{column-count:2}
+  .cols-3,.cols-2,.flow-2{grid-template-columns:1fr;column-count:1;display:block}
+  .cols-3>div,.cols-2>div{margin-bottom:12px}
+  .sec-body{padding-left:0}
+  .sub-h{margin-left:0}
+  .opener{gap:12px}
+  .opener .num{font-size:calc(46px*var(--z,1))}
+  .table{display:block;overflow-x:auto}
+  .chart{overflow-x:auto}
+  .chart svg{max-width:none;min-width:100%}
+  .xref,.xref-soon{white-space:normal}
+}
+@media print{
+  body{background:#fff;padding:0}
+  .page{max-width:none;padding:0.7in}
+  .diagram{overflow:visible}
+  .cols-2,.cols-3{display:block}
+  .cols-2>div,.cols-3>div{margin-bottom:8px}
+  .flow-2{column-count:1}
+  .contents{column-count:1}
+  .xref{color:#000;border-bottom:0}
+  .xref-soon{color:#444;border-bottom:0}
+  .rev{background:#fff;border:1px solid #999;border-left:4px solid #999}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+/* — doplnky pre generované kapitoly (tools/build.js) — */
+.src p,.src li{font-size:calc(11.5px*var(--z,1));line-height:1.4}
+.src ul{padding-left:16px}
+.src .micro{font-size:calc(10px*var(--z,1))}
+figure.keep>.diagram{margin:9px 0 3px}
+figure.keep>figcaption{font-size:calc(10.5px*var(--z,1));line-height:1.35;color:var(--color-neutral-700);margin:0 0 9px}
+figure.keep>figcaption b{color:var(--color-text)}
+.page code{font-family:var(--font-mono);font-size:.92em}
+.chart .bx{fill:var(--color-neutral-200)}
+.chart .bx-c{fill:var(--color-accent-200)}
+.chart .bx-m{fill:var(--color-accent-2-200)}
+.chart .bx-k{fill:var(--color-neutral-100);stroke:var(--color-neutral-400)}
+
+/* ══ farebné boxy = vrstvy výkladu (CLAUDE.md §1.1, §5.1); každá kniha používa svoju podmnožinu (book.json → boxes) ══
+   Vlastné triedy (.box), NIE .note/.flag/.plain — tie site.js vyplavuje do
+   okraja ako poznámky, kým boxy sú jadro textu.  --c = farba pásika,
+   --cl = tmavší odtieň pre štítok (kontrast na tónovanom pozadí).        */
+.box{--c:var(--color-neutral-500);--cl:var(--color-neutral-800);
+  margin:10px 0;padding:8px 10px;break-inside:avoid;
+  background:color-mix(in srgb,var(--c) 8%,#fff);border-left:3px solid var(--c)}
+.box .label{font-size:calc(10px*var(--z,1));letter-spacing:.12em;text-transform:uppercase;font-weight:600;
+  color:var(--cl);margin-bottom:3px}
+.box .body{font-size:calc(12px*var(--z,1));line-height:1.38}
+.box .body>*:last-child{margin-bottom:0}
+.box .body p{margin:0 0 5px}
+.box .body ul,.box .body ol{margin:0 0 5px}
+.box .body table.table{margin:5px 0}
+.k-mech{--c:var(--color-accent);--cl:var(--color-accent-800)}
+.k-morf,.k-reg{--c:var(--color-accent-2);--cl:var(--color-accent-2-800)}
+.k-detek,.k-lab,.k-kvant{--c:var(--color-neutral-500);--cl:var(--color-neutral-800)}
+.k-klin{--c:var(--color-accent-800);--cl:var(--color-accent-900)}
+.k-pozor{--c:#d9601a;--cl:#8a3b08}
+.k-zap{--c:#1f8a8a;--cl:#0f5555}
+.k-fyz,.k-chem{--c:#3f8a55;--cl:#24582f}
+/* „Môžeš počuť“ – pojem alebo údaj z osnovy, ktorý sa nepodarilo doložiť: bez farebnej plochy, prerušovaný pásik */
+.k-pocut{--c:var(--color-neutral-500);--cl:var(--color-neutral-700);background:none;border-left:2px dashed var(--color-neutral-500)}
+.box.k-pocut .body{color:var(--color-neutral-800)}
+
+/* ══ okraj stránky (CLAUDE.md §5.3) ═══════════════════════════════
+   Jadro (hlavná myšlienka sekcie) a Skratky nie sú vrstva výkladu → bez farebnej
+   plochy a bez ľavého pásika. Šírka pásika 0 zároveň znamená, že site.js k nim
+   nekreslí čiaru cez text (čiara má hrúbku ľavého okraja poznámky).           */
+.k-jadro{--cl:var(--color-neutral-900);background:none;border-left:0;
+  border-top:2px solid var(--color-neutral-900);padding:5px 0 1px}
+.k-jadro .body{line-height:1.42}
+.k-skr{background:var(--color-neutral-100);border-left:0;padding:4px 8px;margin:3px 0 9px}
+.box.k-skr .body{font-size:calc(10.5px*var(--z,1));line-height:1.4;color:var(--color-neutral-700)}
+.k-skr .sk b{font-weight:600;color:var(--color-text)}
+.k-skr .sk+.sk::before{content:"· "}
+@media screen and (min-width:981px){
+  /* na okraji jedna skratka na riadok; v texte (mobil, tlač) idú za sebou */
+  .k-skr.side-note .sk{display:block;margin:0 0 2px}
+  .k-skr.side-note .sk+.sk::before{content:none}
+}
+/* mobil: skratky rastú s ostatným písmom (blok na konci súboru ich pre vyššiu špecifickosť nezachytí) */
+@media screen and (max-width:820px){.box.k-skr .body{font-size:calc(11.5px*var(--z,1))}}
+
+/* ══ obrázky (rovnaké pravidlá vo všetkých knihách) ═
+   --fw = najväčšia rozumná šírka zobrazenia; malý obrázok sa nerozmaže.   */
+.fig{margin:11px auto;break-inside:avoid;max-width:min(100%,var(--fw,100%))}
+.fig img{display:block;width:100%;height:auto;background:transparent;border:0;cursor:zoom-in}
+.fig figcaption{font-size:calc(10.5px*var(--z,1));line-height:1.35;margin-top:4px;color:var(--color-neutral-700)}
+.fig figcaption b{color:var(--color-text)}
+.fig figcaption .src-link{display:inline-flex;align-items:center;gap:3px;
+  color:var(--color-neutral-500);text-decoration:none}
+.fig figcaption .src-link:hover{color:var(--color-accent);text-decoration:underline}
+.fig figcaption .src-link svg{width:10px;height:10px;flex:none;
+  fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.fig-row{display:flex;flex-wrap:wrap;align-items:flex-start;gap:14px;margin:11px 0}
+.fig-row .fig{flex:var(--ar,1) 1 0;min-width:0;margin:0;max-width:none}
+@media screen and (min-width:981px){
+  .box,.fig,.fig-row{clear:both}
+  .fig-row .fig{clear:none}
+  /* obrázok obtekaný textom (md: titulok obrázka … | side [right] fw=340): vľavo alebo vpravo vedľa odseku;
+     tabuľky, schémy, nadpisy a boxy ho neobtekajú */
+  .fig.side{float:left;clear:both;width:min(38%,var(--fw,340px));margin:2px 22px 10px 0}
+  .fig.side.right{float:right;margin:2px 0 10px 22px}
+  .sec-h,.sub-h,.micro,.diagram,.chart,.table,.cols,.fork,.chain,.flow-2,.quiz,.contents{clear:both}
+  .sec-body::after{content:"";display:block;clear:both}
+}
+@media (max-width:820px){
+  .fig-row{display:block}
+  .fig-row .fig{margin-bottom:12px;max-width:min(100%,var(--fw,100%))}
+}
+@media print{
+  .box{background:#fff;border:1px solid #999;border-left:4px solid var(--c)}
+  .box.k-jadro{border:0;border-top:1.5px solid #000}
+  .box.k-skr{border:0}
+  .fig figcaption .src-link{display:inline;color:#555}
+  .fig figcaption .src-link svg{display:none}
+  .fig figcaption .src-link[href]::after{content:" (" attr(href) ")";font-size:calc(8px*var(--z,1));word-break:break-all}
+  .fig-row{display:block;overflow:hidden}
+  .fig-row .fig{float:left;width:calc(50% - 8px);margin:0 0 10px}
+  .fig-row .fig+.fig{float:right}
+  /* tlačová strana je užšia než 981 px, obtekanie sa preto zapína zvlášť */
+  .fig.side{float:left;clear:both;width:38%;margin:0 16px 8px 0}
+  .fig.side.right{float:right;margin:0 0 8px 16px}
+  .sec-body::after{content:"";display:block;clear:both}
+}
+
+/* ══ náhľad inej kapitoly (assets/js/peek.js) ═════════════════════
+   Panel prekryje stred a pravý stĺpec; hlavička a ľavý obsah ostávajú.
+   --pk-left / --pk-top dopočíta skript z polohy bočného panela a hlavičky.
+   Maximalizácia = --pk-m → 0 (prechod na left/top/right/bottom, 0,5 s).   */
+.pk-backdrop{position:fixed;z-index:44;left:var(--pk-left,0px);top:var(--pk-top,52px);right:0;bottom:0;
+  background:rgba(32,28,40,.30);-webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px);
+  opacity:0;transition:opacity .22s ease}
+.pk-backdrop.pk-in{opacity:1}
+.pk-backdrop.pk-max-on{opacity:0;transition:opacity .5s ease}
+.pk{--pk-m:16px;--pk-ease:cubic-bezier(.4,0,.2,1);
+  position:fixed;z-index:45;
+  left:calc(var(--pk-left,0px) + var(--pk-m));top:calc(var(--pk-top,52px) + var(--pk-m));
+  right:var(--pk-m);bottom:var(--pk-m);
+  display:flex;flex-direction:column;overflow:hidden;
+  background:#fff;border:1px solid var(--color-neutral-300);border-radius:12px;
+  box-shadow:0 22px 56px rgba(20,16,32,.30),0 2px 8px rgba(20,16,32,.12);
+  opacity:0;transform:translateY(12px) scale(.985);
+  transition:opacity .22s ease,transform .28s cubic-bezier(.2,.7,.2,1)}
+.pk.pk-in{opacity:1;transform:none}
+.pk.pk-max-on{--pk-m:0px;border-radius:0;border-color:transparent;box-shadow:0 0 0 rgba(0,0,0,0);
+  transition:left .5s var(--pk-ease),top .5s var(--pk-ease),right .5s var(--pk-ease),bottom .5s var(--pk-ease),
+    border-radius .5s var(--pk-ease),box-shadow .5s ease,border-color .5s ease}
+.pk-bar{flex:none;display:flex;align-items:center;gap:4px;height:44px;padding:0 8px 0 14px;overflow:hidden;
+  border-bottom:1px solid var(--color-neutral-200);background:var(--color-neutral-50,#faf9fb);
+  font-family:var(--site-font,system-ui,sans-serif);font-size:calc(12.5px*var(--z,1));color:var(--color-text);
+  transition:height .5s var(--pk-ease),opacity .3s ease,border-color .5s ease}
+.pk.pk-max-on .pk-bar{height:0;opacity:0;border-color:transparent}
+.pk-kind{flex:none;font-size:calc(10px*var(--z,1));letter-spacing:.12em;text-transform:uppercase;font-weight:600;
+  color:var(--color-accent-700);padding:3px 7px;border-radius:4px;
+  background:color-mix(in srgb,var(--color-accent) 10%,transparent);margin-right:6px}
+.pk-title{flex:1;min-width:0;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pk-btn{flex:none;display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;
+  border:0;border-radius:7px;background:transparent;color:var(--color-neutral-600);cursor:pointer;
+  transition:background .15s ease,color .15s ease}
+.pk-btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.pk-btn-max:hover{background:color-mix(in srgb,var(--color-accent) 12%,transparent);color:var(--color-accent-700)}
+.pk-btn-close:hover{background:color-mix(in srgb,var(--color-accent-2) 14%,transparent);color:var(--color-accent-2-700)}
+.pk-btn:focus-visible{outline:2px solid var(--color-accent);outline-offset:1px}
+.pk-btn:active{transform:scale(.94)}
+.pk-frame{flex:1;display:block;width:100%;min-height:0;border:0;background:#fff}
+.pk-load{position:relative;flex:none;height:0;overflow:visible;pointer-events:none}
+.pk-load i{position:absolute;left:0;top:0;height:3px;width:40%;opacity:0;
+  background:linear-gradient(90deg,var(--color-accent),var(--color-accent-2))}
+.pk-load.on i{opacity:1;animation:pk-slide 1.1s ease-in-out infinite}
+@keyframes pk-slide{0%{left:-40%}100%{left:100%}}
+@media (max-width:980px){.pk{--pk-m:8px}}
+
+/* kým je náhľad otvorený: stránka pod ním stojí, posuvník nahradí odsadenie */
+html.pk-lock{overflow:hidden}
+html.pk-lock body{padding-right:var(--pk-sbw,0px)}
+
+/* bočný obsah pri maximalizácii (skript presunie body a animuje posun) */
+.pk-nav-gap{height:18px;margin:6px 8px 0;border-bottom:1px dashed var(--color-neutral-300)}
+.site-header .crumb{transition:opacity .25s ease}
+.site-header .crumb.pk-fade{opacity:0}
+
+/* ── úvodné načítanie kapitoly (assets/js/peek.js, skorá trieda v tools/build.js) ──────────────
+   Pri otvorení od začiatku (pf-intro): 
+   biela plocha s kolieskom → hlavička kapitoly (po načítaní písma) sa zjaví za .2 s →
+   po načítaní všetkého zvyšok „odmaskuje“ zhora nadol (prvá obrazovka 1 s, ostatok ďalších 0,5 s; popri tom sa obsah zo zmenšenia a rozmazania zaostrí).
+   Pri otvorení uprostred (F5/Späť, odkaz na sekciu; pf-mid) sa hlavička nezjavuje zvlášť: po obnovení pozície sa odmaskuje viditeľná časť zhora nadol a zväčšuje sa od stredu obrazovky. Horná lišta ostáva stále. Všetko je pod html.pf-intro, ktorú skript po animácii (alebo po 8 s) zloží. */
+@property --pf-p{syntax:"<length>";inherits:false;initial-value:0px}
+@property --pf-t{syntax:"<number>";inherits:true;initial-value:0}
+@property --pf-hb{syntax:"<length>";inherits:false;initial-value:0px}
+@keyframes pf-spin{to{transform:rotate(360deg)}}
+@media screen{
+  html.pf-intro{background:#fff}
+  html.pf-intro::after{opacity:1;transition:opacity .2s ease;
+    content:"";position:fixed;z-index:5;left:50%;top:50%;width:34px;height:34px;margin:-17px 0 0 -17px;
+    box-sizing:border-box;border:3px solid color-mix(in srgb,var(--color-accent) 18%,transparent);
+    border-top-color:var(--color-accent);border-radius:50%;animation:pf-spin .8s linear infinite;pointer-events:none}
+  html.pf-intro.pf-hero::after{opacity:0}
+  html.pf-intro .site-shell{
+    --pf-edge:240px;
+    -webkit-mask-image:linear-gradient(180deg,#000 calc(var(--pf-p) - var(--pf-edge)),transparent var(--pf-p)),linear-gradient(180deg,#000 var(--pf-hb),transparent var(--pf-hb));
+    mask-image:linear-gradient(180deg,#000 calc(var(--pf-p) - var(--pf-edge)),transparent var(--pf-p)),linear-gradient(180deg,#000 var(--pf-hb),transparent var(--pf-hb))}
+  .pf-veil{position:fixed;left:0;right:0;bottom:0;top:var(--site-header-h,52px);z-index:30;pointer-events:none;
+    -webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px)}
+  /* zväčšenie celej stránky (vrátane okrajových poznámok a ich čiar); hlavička sa vyrovná opačným pohybom */
+  html.pf-intro.pf-go .page{transform:translateY(calc((1 - var(--pf-t))*36px)) scale(calc(.93 + .07*var(--pf-t)))}
+  html.pf-intro.pf-go:not(.pf-mid) .chapter-hero{transform:translateY(calc(-36px*(1 - var(--pf-t))/(.93 + .07*var(--pf-t)))) scale(calc(1/(.93 + .07*var(--pf-t))))}
+  html.pf-intro:not(.pf-mid) .chapter-hero{opacity:0}
+  html.pf-intro.pf-hero .chapter-hero{opacity:1;transition:opacity .2s ease}
+  html.pf-intro .site-sidebar,html.pf-intro .toc-expand{opacity:0}
+  html.pf-intro.pf-go .site-sidebar,html.pf-intro.pf-go .toc-expand{opacity:1;transition:opacity .5s ease}
+}
+@media (prefers-reduced-motion:reduce){html.pf-intro::after{animation:none}}
+
+/* stránka vnútri náhľadu: len obsah, bez hlavičky a bočného panela */
+html.pk-restoring body{visibility:hidden}
+/* fork: na samostatnom riadku je len nadpis stĺpca; tučné slová v texte ostávajú vo vete */
+.fork>div>b:not(:first-child){display:inline;margin:0}
+.pk-embed .site-header,.pk-embed .site-sidebar,.pk-embed .reading-progress,
+.pk-embed .reading-pct,.pk-embed .skip-link{display:none!important}
+
+/* návrat tlačidlom Späť */
+.pk-back-in .site-main{animation:pk-back .35s cubic-bezier(.2,.7,.2,1)}
+.pk-back-in .site-sidebar nav{animation:pk-fadein .35s ease}
+@keyframes pk-back{from{opacity:0;transform:translateX(-32px)}to{opacity:1;transform:none}}
+@keyframes pk-fadein{from{opacity:0}to{opacity:1}}
+@media (prefers-reduced-motion:reduce){
+  .pk,.pk.pk-max-on,.pk-bar,.pk-backdrop{transition:none}
+  .pk-back-in .site-main,.pk-back-in .site-sidebar nav{animation:none}
+}
+@media print{.pk,.pk-backdrop{display:none!important}}
+
+/* ══ tlač ═════════════════════════════════════════════════════════
+   Strana A4 má ~700 px, takže sa v tlači zapínajú mobilné pravidlá
+   z chapter.css (@media max-width:820px): graf s posuvníkom, tabuľka ako blok.
+   Tu ich vraciame a riešime zlom strán.                                    */
+@page{size:A4;margin:14mm 15mm 16mm}
+@media print{
+  .page{padding:0!important}
+  .chart{overflow:visible!important;max-width:100%}
+  .chart svg{min-width:0!important;max-width:100%!important}
+  .table{display:table!important;overflow:visible!important;width:100%}
+  .diagram{white-space:pre-wrap}
+  /* fotografia nezaberie celú stranu – inak ostávajú polovičné prázdne strany */
+  .fig{max-width:100%!important}
+  .fig img{width:auto;max-width:100%;max-height:6.5cm;margin:0 auto}
+  .fig-row .fig img{max-height:5.2cm}
+  .chart svg{max-height:9.5cm}
+  /* úspornejšia tlač (4. 10. 2026): obsah kapitoly v dvoch stĺpcoch, zdroje drobnejším písmom v dvoch stĺpcoch */
+  .contents{column-count:2;column-gap:24px}
+  .sec-body.src{font-size:calc(9.5px*var(--z,1));line-height:1.35}
+  .sec-body.src ul{column-count:2;column-gap:22px;margin-top:3px}
+  .sec-body.src li{break-inside:avoid;margin-bottom:2px}
+  /* nadpis nikdy sám na spodku strany */
+  .sec-h,.sub-h,h2,h3,.box .label{break-after:avoid;page-break-after:avoid}
+  /* dlhé boxy sa smú zlomiť (inak nechajú prázdnu pol stranu); tabuľky a riadky nie */
+  .box.keep{break-inside:auto}
+  tr,.fig,.chart,figure.keep{break-inside:avoid}
+  p,li{orphans:3;widows:3}
+  .reader-ctl,#pt-zoom{display:none!important}
+}
+
+/* lupa (assets/js/zoom.js) */
+#pt-zoom{position:fixed;inset:0;z-index:90;display:none;align-items:center;justify-content:center;
+  padding:24px;background:rgba(20,18,26,.82);-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);cursor:zoom-out}
+#pt-zoom.on{display:flex}
+#pt-zoom img{max-width:100%;max-height:100%;background:#fff;box-shadow:var(--shadow-lg)}
+
+/* okrajové poznámky (site.js): na pôvodnom mieste v texte ostane čiara vo farbe a hrúbke
+   ľavého okraja poznámky, ktorá vedie až k nej; poznámka na čiare sedí spodkom.
+   Dlhé odkazy sa musia zalamovať, inak presiahnu úzky stĺpec (204–254 px, --side-w v site.css) a stránka dostane vodorovný posuv */
+.side-anchor{display:block;height:0;margin:10px 0;padding:0;position:relative;z-index:4;pointer-events:none}
+/* zalomenie čiary k poznámke, ktorú iná odtlačila nižšie (zvislý + vodorovný úsek, site.js) */
+.side-anchor i{display:none;position:absolute;background-color:inherit}
+@media (max-width:980px){.side-anchor{display:none}}
+@media (min-width:981px){.box.side-note{margin:0}}
+@media print{.side-anchor{display:none}}
+@media screen and (min-width:981px){.side-note{transform:none!important;overflow-wrap:anywhere}}
+.xref,.xref-soon{white-space:normal}
+
+/* ══ vlastné schémy (chapters/fig/*.svg) ═════════════════════════ */
+.chart .mk{fill:var(--color-neutral-700)}
+.chart .arw{fill:none;stroke:var(--color-neutral-700);stroke-width:1.5}
+.chart .arwd{fill:none;stroke:var(--color-neutral-600);stroke-width:1.3;stroke-dasharray:5 4}
+.chart .cell{fill:var(--color-accent-100);stroke:var(--color-accent-600);stroke-width:1.5}
+.chart .nuc{fill:var(--color-accent-400);stroke:var(--color-accent-800);stroke-width:1}
+.chart .cellm{fill:var(--color-accent-2-100);stroke:var(--color-accent-2-600);stroke-width:1.5}
+.chart .nucm{fill:var(--color-accent-2-500);stroke:var(--color-accent-2-800);stroke-width:1}
+.chart .dot{fill:var(--color-neutral-700)}
+.chart .dotm{fill:var(--color-accent-2-600)}
+.chart .lblb{font-size:11px;font-weight:600;fill:var(--color-neutral-900)}
+.chart .sub{font-size:9.5px;fill:var(--color-neutral-700)}
+.chart .zone-r{fill:var(--color-accent-2-100)}
+.chart .zone-i{fill:var(--color-accent-100)}
+.chart .s-d{stroke:var(--color-neutral-700);stroke-dasharray:6 4}
+.chart .s-t{stroke:var(--color-neutral-700);stroke-dasharray:2 4}
+.chart .fill-acc{fill:var(--color-accent-500)}
+.chart .fill-acc2{fill:var(--color-accent-2-500)}
+.chart .stk-acc{fill:none;stroke:var(--color-accent-600);stroke-width:2}
+.chart .stk-acc2{fill:none;stroke:var(--color-accent-2-600);stroke-width:2}
+.chart .stk-n{fill:none;stroke:var(--color-neutral-600);stroke-width:1.3}
+
+/* ══ štruktúrne vzorce a schémy dráh (CLAUDE.md §5.2) ═════════════
+   Vzorce kreslí tools/vzorce.js z opisov v chapters/fig/mol/, schémy skladá
+   tools/schema.js. Farebný kód je v celej knihe rovnaký:
+     žltá     = koenzým, kosubstrát          modrá (akcent) = enzým a skupina, o ktorú v reakcii ide
+     zelená ↑ = aktivuje                     červená ↓      = inhibuje (čiara končí priečkou)
+     plná čiara = premena látky              prerušovaná    = vplyv (regulácia, signál)
+     hrubá šípka = nevratný (riadiaci) krok
+   Veľkosti písma .at/.ix/.nm musia sedieť s konštantami FS/IX/NUM v tools/vzorce.js. */
+.chart{--sch-koe:#fae28c;--sch-koe-s:#c2940a;--sch-akt:#1f7d38;--sch-inh:#cd2b26}
+/* vzorec */
+.chart .bd{fill:none;stroke:var(--color-neutral-900);stroke-width:1.25;stroke-linecap:round}
+.chart .bd.bb{stroke-width:3.6;stroke-linecap:butt}
+.chart .wg{fill:var(--color-neutral-900);stroke:var(--color-neutral-900);stroke-width:.5;stroke-linejoin:round}
+.chart .at{font-size:10.5px;fill:var(--color-neutral-900)}
+.chart .at .ix{font-size:7.4px}
+.chart .pc{fill:#fff;stroke:var(--color-neutral-900);stroke-width:1.1}
+.chart .at.pt{font-size:9px;font-weight:600}
+.chart .nm{font-size:7px;fill:var(--color-neutral-600)}
+.chart .bd.hl{stroke:var(--color-accent-600);stroke-width:1.7}
+.chart .bd.bb.hl{stroke-width:3.6}
+.chart .wg.hl{fill:var(--color-accent-600);stroke:var(--color-accent-600)}
+.chart .at.hl{fill:var(--color-accent-700);font-weight:600}
+.chart .pc.hl{fill:var(--color-accent-100);stroke:var(--color-accent-600);stroke-width:1.5}
+/* druhá sledovaná skupina (zv2) – karmínová; len v schéme, ktorá sleduje dve skupiny naraz a nemá reguláciu */
+.chart .bd.hl2{stroke:var(--color-accent-2-600);stroke-width:1.7}
+.chart .bd.bb.hl2{stroke-width:3.6}
+.chart .wg.hl2{fill:var(--color-accent-2-600);stroke:var(--color-accent-2-600)}
+.chart .at.hl2{fill:var(--color-accent-2-700);font-weight:600}
+.chart .pc.hl2{fill:var(--color-accent-2-100);stroke:var(--color-accent-2-600);stroke-width:1.5}
+.chart .t-zv{font-size:10.5px;font-weight:700;fill:var(--color-accent-700)}
+.chart .t-zv2{font-size:10.5px;font-weight:700;fill:var(--color-accent-2-700)}
+.chart .mk-zv{fill:var(--color-accent-500)}
+/* prenos sledovanej skupiny: tenká farebná čiara POD čiernymi šípkami reakcie; .halo = podklad čiernej šípky
+   vo farbe pozadia, aby ju farebná čiara neprerušila (kreslí sa: farebné → .halo → .rx) */
+.chart .zv-s{fill:none;stroke:var(--color-accent-500);stroke-width:1.2}
+.chart .zv2-s{fill:none;stroke:var(--color-accent-2-500);stroke-width:1.2}
+.chart .halo{fill:none;stroke:#fff;stroke-width:5.5;stroke-linecap:butt}
+.chart .br-zv{fill:none;stroke:var(--color-accent-600);stroke-width:1.3}
+.chart .br-zv2{fill:none;stroke:var(--color-accent-2-600);stroke-width:1.3}
+.chart .mk-zv2{fill:var(--color-accent-2-500)}
+.chart .mn{font-size:10.5px;font-weight:600;fill:var(--color-neutral-900)}
+.chart .ms{font-size:9px;fill:var(--color-neutral-700)}
+/* reakcia: šípka, enzým, koenzýmy */
+.chart .rx{fill:none;stroke:var(--color-neutral-800);stroke-width:1.5}
+.chart .rx.nv{stroke:var(--color-neutral-900);stroke-width:2.8}
+.chart .enz{font-size:10px;font-style:italic;fill:var(--color-accent-700)}
+.chart .enz .kr{font-style:normal;font-weight:600;fill:var(--color-neutral-900)}
+.chart .koe{fill:var(--sch-koe);stroke:var(--sch-koe-s);stroke-width:.8}
+.chart .koet{font-size:9.5px;font-weight:600;fill:#3a2d00}
+.chart .koa{fill:none;stroke:var(--sch-koe-s);stroke-width:1.3}
+/* regulácia a iné vzťahy */
+.chart .akt{fill:none;stroke:var(--sch-akt);stroke-width:1.4;stroke-dasharray:5 3.5}
+.chart .inh{fill:none;stroke:var(--sch-inh);stroke-width:1.4;stroke-dasharray:5 3.5}
+.chart .vz{fill:none;stroke:var(--color-neutral-600);stroke-width:1.3;stroke-dasharray:5 3.5}
+.chart .akt.plna,.chart .inh.plna,.chart .vz.plna{stroke-dasharray:none}
+.chart .t-akt{font-size:10px;font-weight:600;fill:var(--sch-akt)}
+.chart .t-inh{font-size:10px;font-weight:600;fill:var(--sch-inh)}
+/* hroty */
+.chart .mk-nv{fill:var(--color-neutral-900)}
+.chart .mk-n{fill:var(--color-neutral-600)}
+.chart .mk-akt{fill:var(--sch-akt)}
+.chart .mk-koe{fill:var(--sch-koe-s)}
+.chart .mk-inh{fill:none;stroke:var(--sch-inh);stroke-width:2.2}
+/* kompartment (cytosol, mitochondria…) a jeho popis */
+.chart .komp{fill:var(--color-neutral-100);stroke:var(--color-neutral-400);stroke-width:1;stroke-dasharray:2 3}
+.chart .komp-m{fill:var(--color-accent-100);stroke:var(--color-accent-400);stroke-width:1.2}
+@media print{.chart .koe,.chart .pc,.chart .komp,.chart .komp-m{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+/* rozkliknutie (CLAUDE.md §5.2, bod 7): krúžok ⊕ rozbalí výrez pod schémou, krúžok → skočí na podrobnú
+   schému. Správanie: assets/js/schema.js; značky rk=, href=, <vyrez>: tools/schema.js. */
+.chart .rk,.chart .rk-a{cursor:pointer;outline:none}
+.chart .rk-hit{fill:transparent;stroke:transparent;stroke-width:14;pointer-events:all}
+.chart .rk-b circle{fill:var(--color-accent-600);stroke:#fff;stroke-width:1.3}
+.chart .rk-b path{fill:none;stroke:#fff;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.chart .rk-b.rk-l circle{fill:var(--color-neutral-700)}
+.chart .rk.is-open>.rk-b .rk-v{display:none}
+.chart .rk.is-open>.rk-b circle{fill:var(--color-accent-800)}
+.chart .rk:hover>.rk-b circle,.chart .rk:focus-visible>.rk-b circle{fill:var(--color-accent-800)}
+.chart .rk-a:hover>.rk-b circle,.chart .rk-a:focus-visible>.rk-b circle{fill:var(--color-neutral-900)}
+.chart .rk:hover>rect:not(.rk-hit),.chart .rk-a:hover>rect:not(.rk-hit),
+.chart .rk:focus-visible>rect:not(.rk-hit),.chart .rk-a:focus-visible>rect:not(.rk-hit),
+.chart .rk.is-open>rect:not(.rk-hit){stroke:var(--color-accent-600);stroke-width:1.4}
+.chart .rk:hover>.rk-hit,.chart .rk-a:hover>.rk-hit,.chart .rk:focus-visible>.rk-hit,.chart .rk-a:focus-visible>.rk-hit{fill:var(--color-accent-100)}
+.chart .rk-panel{display:none}
+.chart .rk-panel.is-open{display:inline}
+.chart .rk-bg{fill:var(--color-neutral-100)}
+.chart .rk-line{fill:none;stroke:var(--color-accent-600);stroke-width:1.5}
+.chart .rk-t{font-size:10.5px;font-weight:600;letter-spacing:.02em;fill:var(--color-accent-800)}
+.chart .rk-x circle{fill:#fff;stroke:var(--color-neutral-400);stroke-width:1}
+.chart .rk-x path{fill:none;stroke:var(--color-neutral-700);stroke-width:1.5;stroke-linecap:round}
+.chart .rk-x:hover circle,.chart .rk-x:focus-visible circle{stroke:var(--color-accent-600);fill:var(--color-accent-100)}
+.chart .rk-n{font-size:9.5px;fill:var(--color-neutral-800)}
+.chart .rk-n b,.chart .rk-n .b{font-weight:600}
+.rk-bar{display:flex;flex-wrap:wrap;align-items:center;gap:4px 10px;margin:3px 0 2px;font-size:10.5px;line-height:1.3;color:var(--color-neutral-600)}
+.rk-bar button{font:inherit;font-weight:600;color:var(--color-accent-800);background:var(--color-accent-100);border:1px solid var(--color-accent-400);border-radius:2px;padding:2px 8px;cursor:pointer}
+.rk-bar button:hover,.rk-bar button:focus-visible{background:var(--color-accent-200);border-color:var(--color-accent-600)}
+.rk-bar i{font-style:normal;display:inline-block;width:12px;height:12px;line-height:12px;text-align:center;border-radius:50%;background:var(--color-accent-600);color:#fff;font-weight:600;font-size:10px;vertical-align:1px}
+.rk-bar i.l{background:var(--color-neutral-700)}
+@media print{
+  .rk-bar,.chart .rk-b,.chart .rk-x{display:none}
+  .chart .rk-bg{fill:none;stroke:var(--color-neutral-400);stroke-width:1}
+  figure.chart.has-rk-open svg{max-height:none}
+}
+/* ══ Odborná kontrola a otázky na zopakovanie (CLAUDE.md §1.3, §2.2) ═══════
+   Rovnaké vo všetkých knihách (KNIHY-CORE). */
+.reviewed{font-size:calc(10.5px*var(--z,1));line-height:1.4;margin:-4px 0 12px;padding:0 10px;color:var(--color-neutral-700)}
+.reviewed b{font-size:calc(9.5px*var(--z,1));letter-spacing:.1em;text-transform:uppercase;font-weight:600}
+.reviewed a{color:var(--color-accent-800)}
+ol.quiz{margin:8px 0 4px;padding-left:26px}
+ol.quiz li{margin:0 0 6px}
+ol.quiz li::marker{color:var(--color-accent-800);font-weight:600}
+/* vlastná šípka za číslom — natívny trojuholník <summary> by sa prekrýval s číslom otázky */
+ol.quiz summary{display:block;list-style:none;cursor:pointer;font-weight:600;line-height:1.45;padding-left:14px;position:relative}
+ol.quiz summary::-webkit-details-marker{display:none}
+ol.quiz summary::before{content:"▸";position:absolute;left:0;top:0;color:var(--color-accent);transition:transform .15s ease}
+ol.quiz details[open]>summary::before{transform:rotate(90deg)}
+ol.quiz summary:hover{color:var(--color-accent-800)}
+ol.quiz .ans{margin:4px 0 2px 14px;padding:6px 10px;font-size:calc(12.5px*var(--z,1));line-height:1.45;
+  background:var(--color-accent-100);border-left:3px solid var(--color-accent)}
+@media print{
+  ol.quiz summary::before{content:none}
+  ol.quiz summary{padding-left:0}
+  ol.quiz .ans{margin-left:0}
+  ol.quiz .ans{background:none;border-left:1px solid var(--color-neutral-400);font-size:calc(10px*var(--z,1))}
+}
+
+/* stĺpce vedľa seba (blok ```cols) – vodorovné členenie rovnocenných vetiev */
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px 14px;margin:9px 0 11px}
+.cols.n4{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.cols>div{padding:7px 11px 5px;background:var(--color-neutral-100);border-top:2px solid var(--color-accent-400);break-inside:avoid}
+.cols>div>p{margin:0 0 4px}
+.cols>div>ul,.cols>div>ol{margin:0 0 3px}
+@media print{.cols>div{background:none;border:1px solid var(--color-neutral-400);border-top-width:2px}}
+
+/* otázky na zopakovanie: reflektor pojmov okolo kurzora by napovedal a klik na pojem by namiesto
+   odpovede otvoril vysvetlivku → pojmy tu svietia a dajú sa otvoriť len pri zapnutom prepínači „Pojmy“ */
+html:not(.pf-terms-always) ol.quiz .pf-term{pointer-events:none;cursor:inherit}
+html:not(.pf-terms-always) ol.quiz .pf-term.is-lit{background-color:transparent;box-shadow:0 0 0 1.5px transparent}
+/* text otázky sa pri rýchlom otváraní a zatváraní (dvojklik) nemá označovať */
+ol.quiz summary{-webkit-user-select:none;user-select:none}
+
+/* ══ mobil — o stupeň väčšie písmo (≈ +7 %) ══════════════════════
+   Veľkosti v chapter.css sú v px (sadzba na tlačenú stranu), takže sa na
+   úzkej obrazovke zväčšujú po jednej, každá o rovnaký krok. `screen`, lebo
+   strana A4 je užšia než 820 px a tlač by pravidlo chytila tiež.
+   Musí ostať na konci súboru — prebíja pravidlá vyššie.
+   Od 8. 10. 2026 sa každá veľkosť ešte násobí mierkou --z (site.css): nová veľkosť = calc(Npx*var(--z,1)).                    */
+@media screen and (max-width:820px){
+  .page{font-size:calc(14.5px*var(--z,1))}
+  .sec-h{font-size:calc(17px*var(--z,1))}
+  .sub-h{font-size:calc(16.5px*var(--z,1))}
+  .standfirst{font-size:calc(14px*var(--z,1))}
+  .chain,.cols-2,.cols-3,.flow-2,.lede,ol.quiz .ans{font-size:calc(13.5px*var(--z,1))}
+  .page table.table,.box .body,.rev .body,.note .body,.flag .body,.plain .body,.fork{font-size:calc(13px*var(--z,1))}
+  .contents,.deps,.next,.src p,.src li{font-size:calc(12.5px*var(--z,1))}
+  .micro{font-size:calc(12px*var(--z,1))}
+  .fig figcaption,.chart figcaption,figure.keep>figcaption,.reviewed{font-size:calc(11.5px*var(--z,1))}
+  .box .label,.rev .label,.note .label,.flag .label,.plain .label,
+  .contents .label,.deps b,.next b,.eyebrow,.src .micro{font-size:calc(10.5px*var(--z,1))}
+  /* vysvetlivky a popis v lupe (glossary.css je zdieľaný, preto tu) */
+  .pf-tip{font-size:calc(14px*var(--z,1))}
+  .pf-tip h4{font-size:calc(19px*var(--z,1))}
+  .pf-tip .kicker{font-size:calc(15px*var(--z,1))}
+  .pf-tip-body .fork > div{font-size:calc(13px*var(--z,1))}
+  .pf-tip-body .chain,.pf-tip-body .why,.pf-lb-cap{font-size:calc(13.5px*var(--z,1))}
+  .pf-tip figcaption{font-size:calc(12px*var(--z,1))}
+}
+
+/* „V tejto kapitole“: riadky sú odkazy na sekcie; vzhľad sa nemení, podčiarknutie až pri prejdení myšou */
+.contents a.row,.contents a.row:visited{color:inherit;text-decoration:none;border:0;background:none}
+.contents a.row:hover span:last-child,.contents a.row:focus-visible span:last-child{text-decoration:underline}
+
+/* okraj stránky (.page) sa odvíja od šírky okna: na užšom okne menej prázdneho miesta, na širokom viac
+   (chapter.css má pevných 50 px; mobil ≤ 820 px a tlač majú vlastné pravidlá) */
+@media screen and (min-width:821px){
+  .page{--pg-x:clamp(20px,3.6vw,84px);padding:clamp(22px,3.4vw,72px) var(--pg-x)}
+  /* hlavička kapitoly presahuje text do strán o 40 px (site.css) – najviac však o okraj stránky, inak na
+     tablete (821–980 px, kde vedľa stránky nie je stĺpec na poznámky) vytŕča z okna a stránka sa posúva do strán */
+  .chapter-hero{margin-left:calc(-1*min(40px,var(--pg-x)));margin-right:calc(-1*min(40px,var(--pg-x)))}
+}
+
+/* farebné stĺpce tabuľky (hlavička v .md končí {zel} | {fial} | {ruz} | {tyrk}) – keď sú stĺpce
+   rovnocenné kategórie, ktoré si má čitateľ zapamätať ako trojicu.
+   {fial} = akcent knihy, {ruz} = akcent-2 knihy */
+.c-zel{--tc:#3f8a55}.c-fial{--tc:var(--color-accent)}.c-ruz{--tc:var(--color-accent-2)}.c-tyrk{--tc:#1f8a8a}
+.page table.table th[class^="c-"]{color:var(--tc);font-weight:700;border-top:3px solid var(--tc);
+  background:color-mix(in srgb,var(--tc) 13%,#fff);padding:4px 8px}
+.page table.table td[class^="c-"]{background:color-mix(in srgb,var(--tc) 5%,#fff);padding-left:8px}
+@media print{.page table.table th[class^="c-"],.page table.table td[class^="c-"]{background:none}}
+
+/* vlastné schémy (SVG) idú na celú šírku textu, ale nikdy nie väčšie, než aby hlavné písmo schémy
+   (10,5 jednotky z viewBoxu 700) prerástlo písmo odseku: 700 / 10,5 = 66,67 em, kde em je písmo
+   odseku (.page). Písmo v schéme sa nemení – mení sa len šírka schémy; užšia schéma je vycentrovaná. */
+figure.chart{max-width:min(100%,66.667em);margin-left:auto;margin-right:auto}
+
+/* ══ skrytie bočného obsahu (assets/js/toc-collapse.js) ═════════════
+   ← v paneli obsah skryje, → pod hornou lištou ho vráti; len počítač (≥ 981 px), tablet a mobile majú šuplík. */
+.site-sidebar .toc-title{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.toc-collapse,.toc-expand{
+  display:none;align-items:center;justify-content:center;flex:none;
+  width:calc(30px*var(--z,1));height:calc(30px*var(--z,1));padding:0;
+  border:1px solid var(--site-border);border-radius:6px;
+  background:var(--site-bg);color:var(--site-text);
+  font:inherit;font-size:calc(15px*var(--z,1));line-height:1;text-transform:none;letter-spacing:0;cursor:pointer;
+}
+.toc-collapse:hover,.toc-expand:hover{background:color-mix(in srgb,var(--site-text) 10%,var(--site-bg))}
+.toc-expand{position:fixed;top:calc(var(--site-header-h) + 12px);left:12px;z-index:37}
+@media (min-width:981px){
+  .toc-collapse{display:inline-flex}
+  html.toc-collapsed .site-sidebar{display:none}
+  html.toc-collapsed .toc-expand{display:inline-flex}
+}
+@media print{.toc-collapse,.toc-expand{display:none!important}}
+.pk-embed .toc-expand{display:none!important}
+
+/* ══ odhad času na kapitolu (tools/build.js, timeHtml) ═════════════
+   „Prejsť“ = prvé prečítanie, „Naučiť sa“ = naučiť sa na skúšku; rozklikne sa na predpoklady výpočtu.
+   Nová veľkosť písma = aj riadok v bloku @media max-width:820 nižšie.                                */
+.cas{margin:12px 0 0;font-family:var(--site-font,system-ui,sans-serif);font-size:calc(12px*var(--z,1));
+  color:color-mix(in srgb,var(--color-text) 78%,transparent)}
+.cas summary{display:inline-flex;flex-wrap:wrap;align-items:center;gap:4px 8px;cursor:pointer;list-style:none;
+  padding:5px 10px;border:1px solid var(--color-divider);border-radius:var(--radius-lg);background:#fff}
+.cas summary::-webkit-details-marker{display:none}
+.cas summary:hover,.cas[open] summary{border-color:var(--color-accent)}
+.cas summary svg{width:14px;height:14px;flex:none;fill:none;stroke:var(--color-accent);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.cas summary b{font-weight:600;color:var(--color-text)}
+.cas summary i{font-style:normal;opacity:.45}
+.cas summary em{font-style:normal;font-size:calc(10px*var(--z,1));letter-spacing:.08em;text-transform:uppercase;opacity:.6}
+.cas p{margin:6px 0 0;max-width:46em;line-height:1.45;font-size:calc(11.5px*var(--z,1))}
+@media screen and (max-width:820px){.cas{font-size:calc(12.5px*var(--z,1))}.cas p{font-size:calc(12px*var(--z,1))}.cas summary em{font-size:calc(10.5px*var(--z,1))}}
+@media print{.cas summary{border:0;padding:0}}
+
+/* glosár: riadky „Patrí do skupiny“ / „Ďalší v skupine“ na konci okna vysvetlivky (assets/glossary/99-skupiny.js) */
+.pf-tip-body .sib{margin:10px 0 0;padding:7px 0 0;border-top:1px solid color-mix(in srgb,currentColor 18%,transparent);font-size:calc(12.5px*var(--z,1));line-height:1.7}
+.pf-tip-body .sib p{margin:0 0 3px}
+.pf-tip-body .sib p:last-child{margin-bottom:0}
+.pf-tip-body .sib b{font-weight:650;opacity:.7}
+/* zástupcovia skupiny pod sebou; .sib-h = jednovýrazový doplnok za názvom (neoznačuje sa ako pojem) */
+.pf-tip-body .sib-l{list-style:none;margin:0;padding:0}
+.pf-tip-body .sib-l li{margin:0;padding:1px 0}
+.pf-tip-body .sib-h{opacity:.65;font-size:.92em}
+.pf-tip-body .sib-h::before{content:"— "}
+
+/* ── odkaz na obrázok v texte („Obr. 7.4“) a jeho rozbalenie pod odsekom ── */
+a.figref{
+  color:inherit;text-decoration:underline dotted;text-decoration-thickness:1.5px;text-underline-offset:3px;
+  text-decoration-color:var(--color-accent,#5f42a8);cursor:zoom-in;white-space:nowrap;
+}
+a.figref:hover,a.figref[aria-expanded="true"]{color:var(--color-accent,#5f42a8)}
+a.figref[aria-expanded="true"]{cursor:pointer}
+.figref-peek{
+  position:relative;margin:10px 0 14px;overflow:hidden;
+  border:1px solid var(--color-neutral-300,#d8d6d4);background:var(--color-bg,#fff);padding:8px 10px 6px;
+  transition:height .2s ease,opacity .2s ease;
+}
+.figref-peek > figure{margin:0}
+.figref-peek img,.figref-peek svg{max-width:100%;height:auto;cursor:zoom-in}
+.figref-peek img{display:block;margin:0 auto;max-height:70vh;width:auto}
+.figref-peek .figref-close{
+  position:absolute;top:4px;right:4px;z-index:2;width:26px;height:26px;padding:0;
+  display:inline-flex;align-items:center;justify-content:center;
+  border:0;border-radius:50%;background:color-mix(in srgb,var(--color-text,#201e1d) 8%,transparent);
+  color:inherit;font:inherit;line-height:1;cursor:pointer;
+}
+.figref-peek .figref-close:hover{background:color-mix(in srgb,var(--color-text,#201e1d) 16%,transparent)}
+@media (prefers-reduced-motion:reduce){.figref-peek{transition:none}}
+@media print{.figref-peek,.figref-close{display:none!important}a.figref{text-decoration:none}}
+</style>
+<link rel="stylesheet" href="../assets/styles/palette.css">
+<link rel="manifest" href="../manifest.json">
+<meta name="theme-color" content="#5f42a8">
+<meta name="pf-book" content="patola">
+<meta name="pf-subject" content="patologickej anatómie">
+<meta name="pf-admin-port" content="8787">
+<link rel="icon" href="../assets/img/icon-32.png">
+<link rel="apple-touch-icon" href="../assets/img/icon-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="PATOLA">
+<script src="../assets/js/pwa.js" defer></script>
+</head>
+<body>
+<!-- Súbor je GENEROVANÝ z 07_granulomatozne_zapaly.md nástrojom tools/build.js — uprav .md, nie tento súbor. -->
+<a class="skip-link" href="#sec-7-1">Preskočiť na obsah</a>
+<header class="site-header">
+  <a class="brand" href="../index.html"><span class="mark" aria-hidden="true"></span>PATOLA</a>
+  <span class="crumb">Patologická anatómia — <b>Granulomatózne zápaly</b></span>
+  <span class="spacer"></span>
+  <button class="site-toc-toggle" type="button" aria-label="Obsah kapitoly" aria-expanded="false">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+  </button>
+</header>
+
+<div class="reading-progress" role="progressbar" aria-label="Priebeh čítania kapitoly" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="bar"></div></div>
+<div class="reading-pct" aria-hidden="true">0 %</div>
+
+<button class="toc-expand" type="button" aria-label="Zobraziť obsah kapitoly" title="Zobraziť obsah">→</button>
+<div class="site-shell">
+  <aside class="site-sidebar">
+    <div class="toc-title"><span>Obsah kapitoly</span><button class="toc-collapse" type="button" aria-label="Skryť obsah kapitoly" title="Skryť obsah">←</button></div>
+    <nav></nav>
+  </aside>
+
+  <div class="site-main">
+<main class="page">
+
+<div class="chapter-hero">
+<div class="running-head">
+  <span>7 · Granulomatózne a špecifické zápaly</span>
+  <span style="color:var(--color-accent-700)">Patologická anatómia</span>
+</div>
+
+<div class="opener">
+  <div class="cmyk-num num">
+    <span class="paper">7</span>
+    <span class="plate plate-c" aria-hidden="true">7</span>
+    <span class="plate plate-m" aria-hidden="true">7</span>
+    <span class="plate plate-y" aria-hidden="true">7</span>
+  </div>
+  <div style="padding-top:2px">
+    <div class="eyebrow">Zápaly</div>
+    <h1>Granulomatózne a špecifické zápaly</h1>
+    <p class="standfirst">Prečo makrofág niekedy nevie zničiť, čo pohltil, a ako sa z neho stane epiteloidná bunka a granulóm; čo rozhoduje, či bude granulóm bez nekrózy, s kazeifikáciou, s hnisom, alebo nevznikne vôbec; a ako to vyzerá pri cudzom telese, sarkoidóze, tuberkulóze, lepre, chorobe z mačacieho škrabnutia, reumatickej horúčke a syfilise.</p>
+    <details class="cas"><summary><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span><b>Prejsť</b> ≈ 1 h 10 min</span><i aria-hidden="true">·</i><span><b>Naučiť sa</b> ≈ 3 h 50 min</span><em>odhad</em></summary><p>Orientačný odhad z rozsahu kapitoly (6 823 slov, 2 schém, 10 otázok), nie meranie. <b>Prejsť</b> = prvé prečítanie s porozumením (≈ 100 slov za minútu, schéma ≈ 1,5 min). <b>Naučiť sa</b> = prvé čítanie ×2,5 (druhé čítanie s poznámkami, kreslenie dráh z pamäti) plus 5 min na každú otázku na zopakovanie. Platí pre študenta, ktorý látku ešte nepozná; rozlož to na viac dní, Anki karty sú navyše.</p></details>
+  </div>
+</div>
+</div>
+
+<p class="deps"><b>Predpoklady:</b>
+  <a class="xref" href="03_zapal_vseobecne.html#sub-3-4-1">→ 3.4.1 Leukocytová kaskáda – ako leukocyt opustí cievu</a> ·
+  <a class="xref" href="05_hojenie.html#sec-5-7">→ 5.7 Organizácia: čo telo samo nevstrebe</a> ·
+  <a class="xref" href="05_hojenie.html#sec-5-9">→ 5.9 Chronický zápal – keď poškodenie a oprava bežia naraz</a>
+</p>
+<p class="reviewed"><b>Odborná kontrola:</b> zatiaľ neprebehla — fakty sú overené len podľa zdrojov uvedených na konci kapitoly · <a href="https://github.com/ephafy/patologia/issues/new?title=Kap.%207%3A%20" target="_blank" rel="noopener noreferrer">Nahlásiť chybu</a></p>
+
+<div class="contents keep">
+  <div class="label">V tejto kapitole</div>
+  <a class="row" href="#sec-7-1"><span>7.1</span><span>Granulóm – keď makrofág nevie stráviť, čo pohltil</span></a>
+  <a class="row" href="#sec-7-2"><span>7.2</span><span>Mechanizmus: z makrofágu epiteloidná bunka</span></a>
+  <a class="row" href="#sec-7-3"><span>7.3</span><span>Dve osi, ktoré určia podobu granulómu</span></a>
+  <a class="row" href="#sec-7-4"><span>7.4</span><span>Sarkoidóza – granulóm bez nekrózy</span></a>
+  <a class="row" href="#sec-7-5"><span>7.5</span><span>Tuberkulóza – granulóm s kazeifikáciou</span></a>
+  <a class="row" href="#sec-7-6"><span>7.6</span><span>Keď imunita nestačí na granulóm: lepra a histiocytové reakcie</span></a>
+  <a class="row" href="#sec-7-7"><span>7.7</span><span>Granulóm bez T-lymfocytov: cudzie teleso a kryštály</span></a>
+  <a class="row" href="#sec-7-8"><span>7.8</span><span>Granulóm s hnisom</span></a>
+  <a class="row" href="#sec-7-9"><span>7.9</span><span>Granulóm na poškodenej cieve a väzive</span></a>
+  <a class="row" href="#sec-7-10"><span>7.10</span><span>Súhrn a rýchle rozlíšenie</span></a>
+  <a class="row" href="#sec-7-11"><span>7.11</span><span>Otázky na zopakovanie</span></a>
+  <a class="row" href="#sec-7-12"><span>7.12</span><span>Zdroje</span></a>
+</div>
+
+<!-- ══ 7.1 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-7-1"><span class="n">7.1</span><span>Granulóm – keď makrofág nevie stráviť, čo pohltil</span></h2>
+<div class="sec-body">
+  <div class="box k-fyz keep">
+    <div class="label">Normálne</div>
+    <div class="body">
+      <p>Makrofág pohltí časticu do <b>fagozómu</b>, ten splynie s <b>lyzozómom</b> a kyslé hydrolázy spolu s kyslíkovými a dusíkovými radikálmi obsah rozložia. Väčšina baktérií a úlomkov tak zmizne za hodiny až dni a zápal sa skončí (<a class="xref" href="03_zapal_vseobecne.html#sub-3-4-1">→ 3.4.1 Leukocytová kaskáda – ako leukocyt opustí cievu</a>).</p>
+    </div>
+  </div>
+
+  <p>Granulomatózny zápal vzniká tam, kde táto cesta zlyhá: materiál je <b>nestráviteľný</b> (mastenec, keratín, kryštály), alebo pôvodca <b>prežije vo fagozóme</b> (mykobaktérie, bartonely, huby – histoplazma, kryptokok, kokcidioidy, blastomycéty –, z prvokov toxoplazma a leishmánie), alebo imunitný systém reaguje na antigén, ktorý nevie odstrániť (sarkoidóza; vdychovaný organický prach pri exogénnej alergickej alveolitíde). Rovnako dopadne vrodená chyba zabíjania vo fagocytoch – chronická granulomatózna choroba (<a class="xref" href="03_zapal_vseobecne.html#sub-3-4-3">→ 3.4.3 Fagocytóza a zabíjanie</a>). Telo vtedy zmení stratégiu – keď cudzorodú látku nevie zničiť, aspoň ju <b>obkolesí a izoluje</b>.</p>
+
+  <div class="box k-jadro aside keep">
+    <div class="label">Jadro</div>
+    <div class="body">
+      <p><b>Granulóm</b> vzniká, keď makrofág nevie stráviť, čo pohltil: čo sa nedá zničiť, telo obkolesí a izoluje. Tvar granulómu pôvodcu neurčí – treba ho dokázať.</p>
+    </div>
+  </div>
+
+  <p>Podkladom je spravidla bunkami sprostredkovaná (oneskorená) precitlivenosť – IV. typ imunitnej reakcie, ktorú nesú T-lymfocyty (<a class="xref" href="#sec-7-2">→ 7.2 Mechanizmus: z makrofágu epiteloidná bunka</a>). Typický obraz má preto až plne rozvinutá choroba; jej začiatok aj hojenie vyzerajú ako bežný, nešpecifický zápal.</p>
+
+  <p><b>Granulóm</b> je ohraničený uzlík (spravidla 0,5–2 mm) z aktivovaných makrofágov, ktoré sa premenili na <b>epiteloidné bunky</b>, často s <b>obrovskými viacjadrovými bunkami</b>, obkolesený lemom lymfocytov (pri dlhšom trvaní aj plazmocytov) a neskôr väzivom. Vo vnútri nemá cievy – živí sa difúziou z okolia, a preto jeho stred ľahko odumiera. <b>Granulomatózny zápal</b> je chronický zápal (<a class="xref" href="05_hojenie.html#sec-5-9">→ 5.9 Chronický zápal – keď poškodenie a oprava bežia naraz</a>), v ktorom takéto uzlíky prevládajú.</p>
+
+  <div class="rev keep">
+    <div class="label"><span class="r">R</span>Revízia — „špecifický zápal“ sa dnes nahrádza pojmom „granulomatózny“</div>
+    <div class="body">
+      <p>Staršie názvoslovie hovorilo o <b>špecifických zápaloch</b>, lebo sa verilo, že tvar granulómu prezradí pôvodcu (tuberkulóza, syfilis, lepra). Dnes vieme, že rovnaký obraz vyvolávajú rôzne príčiny – kazeifikujúci granulóm okrem tuberkulózy aj histoplazmóza, nekazeifikujúci granulóm sarkoidóza aj atypické mykobaktérie či berýlium. Súčasné učebnice preto používajú <b>granulomatózny zápal</b> a morfológia je len <b>prvý krok</b>: pôvodcu musí potvrdiť farbenie, kultivácia, PCR alebo sérológia (<a class="xref" href="#sub-7-5-4">→ 7.5.4 Ako sa tuberkulóza dokazuje</a>).</p>
+    </div>
+  </div>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>PCR</b> polymerázová reťazová reakcia</span></div>
+  </div>
+
+  <div class="box k-pozor aside keep">
+    <div class="label">Pozor</div>
+    <div class="body">
+      <p><b>Granulóm ≠ granulačné tkanivo.</b> Granulačné tkanivo je nešpecifické mladé väzivo s množstvom kapilár, ktoré vzniká pri každom hojení (<a class="xref" href="05_hojenie.html#sec-5-3">→ 5.3 Granulačné tkanivo – motor reparácie</a>). Granulóm je naopak <b>bezcievny</b> uzlík z epiteloidných buniek. Hojaci sa granulóm však granulačné tkanivo na okraji mať môže – z neho vzniká väzivové puzdro.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 7.2 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-7-2"><span class="n">7.2</span><span>Mechanizmus: z makrofágu epiteloidná bunka</span></h2>
+<div class="sec-body">
+  <p class="chain">pretrvávajúci antigén v makrofágu → makrofág a dendritická bunka prezentujú antigén a tvoria <b>IL-12</b> → CD4⁺ T-lymfocyt sa mení na <b>Th1</b> (IL-2 udržiava jeho delenie) → <b>IFN-γ</b> aktivuje makrofágy a prepne ich z fagocytózy na epitelový program, <b>TNF</b> privoláva monocyty z krvi → aktivované makrofágy sa k sebe pripoja a premenia na <b>epiteloidné bunky</b>, časť splynie do obrovských buniek → TGF-β a PDGF aktivujú fibroblasty → <b>granulóm s lymfocytovým lemom a väzivovým puzdrom</b></p>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>IL</b> interleukín – cytokín, ktorým sa dorozumievajú bunky imunity; číslo označuje typ</span> <span class="sk"><b>CD4⁺, CD8⁺</b> T-lymfocyty pomocné (CD4⁺) a cytotoxické (CD8⁺)</span> <span class="sk"><b>CD + číslo</b> označenie povrchovej molekuly bunky (<i>cluster of differentiation</i>)</span> <span class="sk"><b>Th1, Th2, Th17</b> pomocné T-lymfocyty (<i>T helper</i>) typu 1, 2 a 17 – líšia sa cytokínmi, ktoré tvoria</span> <span class="sk"><b>IFN-γ</b> interferón gama</span> <span class="sk"><b>TNF, TNF-α</b> tumor nekrotizujúci faktor – cytokín makrofágov</span> <span class="sk"><b>TGF-β</b> transformujúci rastový faktor β</span> <span class="sk"><b>PDGF</b> rastový faktor z krvných doštičiek</span></div>
+  </div>
+
+  <div class="box k-jadro aside keep">
+    <div class="label">Jadro</div>
+    <div class="body">
+      <p>Pretrvávajúci antigén → Th1-lymfocyt → <b>IFN-γ</b> aktivuje makrofágy → epiteloidné a obrovské bunky. <b>TNF</b> drží granulóm pokope.</p>
+    </div>
+  </div>
+
+  <div class="box k-mech keep">
+    <div class="label">Mechanizmus – čo robí jednotlivé bunky granulómu</div>
+    <div class="body">
+      <ul>
+    <li><b>Epiteloidná bunka</b> je makrofág, ktorý prešiel na „epitelový“ program. <b>Prepína ho IFN-γ</b> z Th1-lymfocytov: makrofág, ktorý pôvodcu nevie zničiť, zostáva s antigénom, Th1-lymfocyty ho preto neprestajne aktivujú a makrofág sa z fagocytujúcej bunky mení na bunku, ktorá pôvodcu uzatvára. Tvorí medzi susedmi adherentné spoje (E-kadherín) a desmozómy, takže bunky ležia tesne pri sebe ako epitel – odtiaľ názov. Fagocytuje menej, zato viac <b>secernuje</b> (cytokíny, enzýmy, u niektorých chorôb aj angiotenzín konvertujúci enzým a aktívny vitamín D, <a class="xref" href="#sec-7-4">→ 7.4 Sarkoidóza – granulóm bez nekrózy</a>). Tesná stena z epiteloidných buniek fyzicky oddeľuje pôvodcu od okolia.</li>
+    <li><b>Obrovská viacjadrová bunka</b> vzniká splynutím makrofágov (v imunitnom granulóme na signál IFN-γ, pri cudzom telese na IL-4 a IL-13); zväčšená bunka dokáže obaliť časticu, ktorá je pre jeden makrofág priveľká.</li>
+    <li><b>CD4⁺ Th1-lymfocyty</b> sú pre granulóm pri infekcii nevyhnutné – bez IFN-γ sa makrofág neaktivuje a pôvodca sa v ňom voľne množí. <b>CD8⁺ lymfocyty</b> zabíjajú infikované makrofágy.</li>
+    <li><b>TNF</b> drží granulóm pokope: udržiava prísun monocytov a aktiváciu makrofágov. Príliš málo TNF vedie k premnoženiu baktérií, príliš veľa k odumieraniu makrofágov – oboje podporuje nekrózu.</li>
+    <li><b>Fibroblasty</b> na obvode tvoria kolagén; puzdro granulóm izoluje a pri hojení ho nahradí jazvou.</li>
+  </ul>
+    </div>
+  </div>
+
+  <figure class="fig keep" id="fig-7-1" style="--fw:720px">
+    <img src="../assets/images/granuloma-colon-crohn.jpg" width="1280" height="1147" alt="Granulóm bez nekrózy (H&amp;E, stredné zväčšenie). V strede zhluk svetlých epiteloidných buniek s bohatou cytoplazmou, okolo lymfocyty a eozinofily; medzi kryptami hrubého čreva pri Crohnovej chorobe." loading="lazy">
+    <figcaption><b>Obr. 7.1 — Granulóm bez nekrózy (H&amp;E, stredné zväčšenie).</b> V strede zhluk svetlých epiteloidných buniek s bohatou cytoplazmou, okolo lymfocyty a eozinofily; medzi kryptami hrubého čreva pri Crohnovej chorobe. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Histopathology_of_granuloma_of_colonic_mucosa.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Mikael Häggström, M.D. · Wikimedia Commons · CC0</a></figcaption>
+  </figure>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>HE, H&amp;E</b> hematoxylín–eozín, základné farbenie</span></div>
+  </div>
+
+  <p>Obrovské bunky sa líšia usporiadaním jadier. Samy o sebe diagnózu neurčujú, ale naznačujú smer:</p>
+
+  <table class="table keep" id="tab-7-1" style="margin:6px 0">
+    <thead><tr><th>Typ obrovskej bunky</th><th>Jadrá</th><th>Kde ju nájdeš</th></tr></thead>
+    <tbody>
+      <tr><td><b><b>Langhansova</b></b></td><td>desiatky, <b>na okraji</b> bunky do podkovy alebo venca</td><td>granulómy pri tuberkulóze, sarkoidóze a iných imunitných granulómoch</td></tr>
+      <tr><td><b><b>Z cudzích telies</b></b></td><td>rozhádzané po celej bunke alebo nahromadené v strede</td><td>okolo stehu, keratínu, kryštálov (<a class="xref" href="05_hojenie.html#sec-5-7">→ 5.7 Organizácia: čo telo samo nevstrebe</a>)</td></tr>
+      <tr><td><b><b>Toutonova</b></b></td><td><b>veniec v strede</b>, okraj bunky penovitý (pohltené lipidy)</td><td>xantómy, xantogranulómy – ložiská s nahromadeným cholesterolom</td></tr>
+    </tbody>
+  </table>
+
+  <p>Tvar bunky prezrádza <b>signál, ktorý makrofágy pohol k splynutiu</b>. V imunitnom granulóme je ním IFN-γ z Th1-lymfocytov: v kultúre z neho vznikajú menšie bunky s jadrami v kruhu (Langhansova bunka) a protilátka proti IFN-γ ich tvorbu zastaví. Pri cudzom telese T-lymfocyty chýbajú a splynutie vyvoláva IL-4 (podobne IL-13): vzniknú veľké bunky s jadrami rozhádzanými bez poriadku, v kultúre blokované len protilátkou proti IL-4; makrofágy sa na veľkom materiáli márne pokúšajú o fagocytózu a splynutím sa zväčšia. V Toutonovej bunke rozhoduje <b>obsah</b>: makrofág pohltil lipidy, ktoré zaplnia okraj a dajú mu penový vzhľad, a jadrá ležia vo vnútornej cytoplazme, kde lipid nie je. Prečo sa jadrá Langhansovej bunky usporiadajú práve na okraj, hodnoverné zdroje nevysvetľujú – dostupné je len pozorovanie, nie mechanizmus.</p>
+
+  <div class="fig-row">
+  <figure class="fig keep" id="fig-7-2" style="--ar:1.33;--fw:720px">
+    <img src="../assets/images/langhans-giant-cell.jpg" width="1000" height="750" alt="Langhansova obrovská bunka (H&amp;E). Jadrá sú zoradené do venca na okraji bunky; okolo nej epiteloidné bunky granulómu." loading="lazy">
+    <figcaption><b>Obr. 7.2 — Langhansova obrovská bunka (H&amp;E).</b> Jadrá sú zoradené do venca na okraji bunky; okolo nej epiteloidné bunky granulómu. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Langhans_Giant_Cell_(10189844503).jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Ed Uthman · Wikimedia Commons · CC BY 2.0</a></figcaption>
+  </figure>
+  <figure class="fig keep" id="fig-7-3" style="--ar:1.00;--fw:720px">
+    <img src="../assets/images/touton-giant-cell.jpg" width="800" height="800" alt="Toutonova obrovská bunka (H&amp;E). Veniec jadier v strede bunky a svetlá, penovitá cytoplazma okolo nich (pohltené lipidy); juvenilný xantogranulóm." loading="lazy">
+    <figcaption><b>Obr. 7.3 — Toutonova obrovská bunka (H&amp;E).</b> Veniec jadier v strede bunky a svetlá, penovitá cytoplazma okolo nich (pohltené lipidy); juvenilný xantogranulóm. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Touton_giant_cell.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Jacob Collie, DO (StatPearls Publishing / NCBI Bookshelf) · Wikimedia Commons · CC BY 4.0</a></figcaption>
+  </figure>
+  </div>
+
+  <div class="box k-detek keep">
+    <div class="label">Detekcia</div>
+    <div class="body">
+      <p>V každom granulóme patológ hľadá pôvodcu. <b>Ziehl–Neelsenovo farbenie</b> zafarbí acidorezistentné mykobaktérie červeno (<a class="xref" href="00_uvod_metody.html#sec-0-6">→ 0.6 Farbenia a histochémia</a>); <b>PAS</b> a <b>striebrenie podľa Grocotta</b> zvýraznia steny húb; <b>striebrenie podľa Warthina–Starryho</b> bartonely a treponémy; <b>polarizované svetlo</b> odhalí dvojlomný cudzí materiál. Pretože baktérií býva v granulóme málo, negatívne farbenie infekciu nevylučuje – z tkaniva sa robí kultivácia a PCR.</p>
+    </div>
+  </div>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>PAS</b> kyselina jodistá–Schiff (<i>periodic acid–Schiff</i>)</span></div>
+  </div>
+
+  <div class="box k-klin aside keep">
+    <div class="label">Klinika</div>
+    <div class="body">
+      <p><b>Dôkaz, že granulóm drží infekciu na uzde:</b> lieky proti TNF (infliximab, adalimumab), ktoré sa podávajú pri reumatoidnej artritíde a Crohnovej chorobe, rozvolnia granulómy a latentná tuberkulóza sa u časti pacientov znovu rozbehne – často mimopľúcne a rozsevom. Preto sa pred takou liečbou vždy vyšetruje latentná tuberkulóza (IGRA alebo tuberkulínový test). Podobne deti s vrodenou poruchou osi IL-12/IFN-γ ochorejú ťažko už po očkovaní BCG alebo na inak neškodné atypické mykobaktérie; pri <b>chronickej granulomatóznej chorobe</b> (porucha NADPH-oxidázy fagocytov) makrofág nevie baktérie a huby zabiť kyslíkovými radikálmi a tkanivá sú plné granulómov a abscesov.</p>
+    </div>
+  </div>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>IGRA</b> test uvoľnenia interferónu γ (<i>interferon-gamma release assay</i>)</span> <span class="sk"><b>BCG</b> bacil Calmetta a Guérina – oslabený kmeň <i>M. bovis</i></span> <span class="sk"><b>NADPH</b> redukovaný nikotínamidadeníndinukleotidfosfát – darca elektrónov</span></div>
+  </div>
+</div>
+
+<!-- ══ 7.3 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-7-3"><span class="n">7.3</span><span>Dve osi, ktoré určia podobu granulómu</span></h2>
+<div class="sec-body">
+  <p>Či bude granulóm veľký alebo malý, s nekrózou alebo bez nej, alebo či vôbec vznikne, závisí od dvoch vecí: <b>ako veľmi pôvodca odoláva makrofágu a škodí mu</b> a <b>ako silne odpovedajú T-lymfocyty</b>.</p>
+
+  <div class="box k-jadro aside keep">
+    <div class="label">Jadro</div>
+    <div class="body">
+      <p>Podobu granulómu určia dve osi: <b>odolnosť pôvodcu</b> a <b>sila T-lymfocytov</b>. Diagnosticky rozhoduje, čo je v strede; nekróza v strede = hojenie len jazvou.</p>
+    </div>
+  </div>
+
+  <figure class="chart keep" id="fig-granulom-mapa">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 414" role="img" aria-labelledby="t51">
+<title id="t51">Mapa granulomatóznych zápalov: vodorovne sila imunity T-lymfocytov, zvislo odolnosť a toxicita pôvodcu pre makrofág; každá choroba leží na inom mieste a tomu zodpovedá jej obraz</title>
+<defs><marker id="a51" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker></defs>
+
+<!-- osi -->
+<path class="arw" d="M90,350 L700,350" marker-end="url(#a51)"/>
+<path class="arw" d="M90,350 L90,24" marker-end="url(#a51)"/>
+<text class="lblb" x="700" y="374" text-anchor="end">imunita T-lymfocytov (Th1, IFN-γ) →</text>
+<text class="sub" x="96" y="374">žiadna / zlyhaná</text>
+<text class="lblb" x="78" y="30" text-anchor="end" transform="rotate(-90 78 30)">← odolnosť a toxicita agens pre makrofág</text>
+
+<!-- zóny -->
+<rect class="f-m" x="96" y="30" width="250" height="150"/>
+<rect class="f-c" x="366" y="30" width="330" height="150"/>
+<rect class="bx-k" x="96" y="200" width="250" height="144" rx="2"/>
+<rect class="bx-k" x="366" y="200" width="330" height="144" rx="2"/>
+
+<!-- vľavo hore: agens odolné, imunita slabá -->
+<text class="lblb" x="110" y="52">bez granulómu – plachty makrofágov</text>
+<text class="sub" x="110" y="70">baktérie sa množia v makrofágoch</text>
+<text class="sub" x="110" y="96">• lepromatózna lepra (Virchowove bunky)</text>
+<text class="sub" x="110" y="112">• atypické mykobaktérie pri AIDS</text>
+<text class="sub" x="110" y="128">• TBC pri ťažkej imunodeficiencii:</text>
+<text class="sub" x="122" y="142">exsudácia, miliárny rozsev, málo granulómov</text>
+<text class="sub" x="110" y="166">výsledok: rozsev, veľa baktérií</text>
+
+<!-- vpravo hore: agens odolné, imunita silná -->
+<text class="lblb" x="380" y="52">granulóm s NEKRÓZOU</text>
+<text class="sub" x="380" y="70">T-lymfocyty zabíjajú aj infikované tkanivo</text>
+<text class="sub" x="380" y="96">• tuberkulóza – kazeifikácia</text>
+<text class="sub" x="380" y="112">• tuberkuloidná lepra – ničí nervy</text>
+<text class="sub" x="380" y="128">• histoplazmóza, kokcidioidomykóza</text>
+<text class="sub" x="380" y="144">• + neutrofily: hnisavý granulóm (bartonela)</text>
+<text class="sub" x="380" y="166">výsledok: ohraničenie za cenu jazvy</text>
+
+<!-- vľavo dole: agens inertné, bez T-lymfocytov -->
+<text class="lblb" x="110" y="222">granulóm z CUDZÍCH TELIES</text>
+<text class="sub" x="110" y="240">makrofágy splývajú okolo materiálu</text>
+<text class="sub" x="110" y="266">• steh, mastenec, keratín</text>
+<text class="sub" x="110" y="282">• kryštály kyseliny močovej (dnavý tofus)</text>
+<text class="sub" x="110" y="298">• cholesterol, silikón</text>
+<text class="sub" x="110" y="324">výsledok: pomalý obrat, väzivové puzdro</text>
+
+<!-- vpravo dole: agens neškodné/neznáme, imunita prehnaná -->
+<text class="lblb" x="380" y="222">granulóm BEZ NEKRÓZY</text>
+<text class="sub" x="380" y="240">prehnaná Th1 odpoveď na slabý antigén</text>
+<text class="sub" x="380" y="266">• sarkoidóza</text>
+<text class="sub" x="380" y="282">• berýlióza, reakcia po očkovaní BCG</text>
+<text class="sub" x="380" y="298">• Crohnova choroba (čiastočne)</text>
+<text class="sub" x="380" y="324">výsledok: vstrebe sa, alebo fibróza</text>
+
+<text class="sub" x="96" y="394">Rovnaký pôvodca sa po mape posúva s imunitou pacienta:</text>
+<text class="sub" x="96" y="408">TBC u zdravého dospelého je vpravo hore, u pacienta s AIDS vľavo hore.</text>
+</svg>
+    <figcaption><b>Obr. 7.4 — Mapa granulomatóznych zápalov.</b> Podobu granulómu určuje sila imunity T-lymfocytov a odolnosť pôvodcu; ten istý pôvodca sa u oslabeného pacienta posunie doľava.</figcaption>
+  </figure>
+
+  <ul>
+    <li><b>Nízky obrat (inertný materiál, bez T-lymfocytov).</b> Materiál makrofágom neškodí, makrofágy žijú dlho, delia sa málo a granulóm má stálu veľkosť. Epiteloidných buniek a lymfocytov je málo, prevládajú obrovské bunky z cudzích telies (<a class="xref" href="#sec-7-7">→ 7.7 Granulóm bez T-lymfocytov: cudzie teleso a kryštály</a>).</li>
+    <li><b>Vysoký obrat (imunitný granulóm).</b> Pôvodca makrofágy zabíja alebo ich T-lymfocyty neustále aktivujú; makrofágy hynú a nahrádzajú sa novými z krvi, granulóm rastie a je plný epiteloidných buniek a lymfocytov. Imunosupresívna liečba jeho tvorbu tlmí.</li>
+  </ul>
+
+  <div class="box k-mech keep">
+    <div class="label">Hranica reverzibility – nekróza v strede granulómu</div>
+    <div class="body">
+      <p>Kým granulóm nemá nekrózu, môže sa po odstránení antigénu <b>úplne vstrebať</b> – epiteloidné bunky zaniknú apoptózou a tkanivo sa vráti do pôvodného stavu (napr. akútna sarkoidóza s Löfgrenovým syndrómom sa u približne 80 % chorých vylieči do 2 rokov). Keď v strede vznikne <b>nekróza</b> (kazeifikácia, guma, fibrinoid), zaniklo aj väzivo a cievy; také ložisko sa už nezahojí inak ako <b>jazvou</b>, ktorá často <b>kalcifikuje</b> (<a class="xref" href="02_dystrofie.html#sub-2-4-2">→ 2.4.2 Hyalínne dystrofie</a>). Rovnako nevratná je <b>fibróza</b> – keď kolagén nahradí epiteloidné bunky dlho trvajúceho granulómu (pokročilá sarkoidóza pľúc).</p>
+    </div>
+  </div>
+
+  <p>Rozlišovať tak treba predovšetkým, <b>čo je v strede granulómu</b>. Podľa toho sa diferenciálna diagnóza zúži: nič (nekazeifikujúci granulóm), kazeózna hmota, hnis, fibrinoid, alebo cudzí materiál. Nasledujúce časti obchádzajú mapu z <a class="figref" href="#fig-granulom-mapa" data-fig="fig-granulom-mapa">Obr. 7.4</a>: začínajú „čistým“ imunitným granulómom bez toxického pôvodcu (sarkoidóza), pridajú pôvodcu, ktorý makrofágom škodí (tuberkulóza), potom uberú imunitu (lepra), potom T-lymfocyty úplne (cudzie teleso) a nakoniec ukážu dve odbočky – granulóm s hnisom a granulóm okolo poškodenej cievy.</p>
+</div>
+
+<!-- ══ 7.4 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-7-4"><span class="n">7.4</span><span>Sarkoidóza – granulóm bez nekrózy</span></h2>
+<div class="sec-body">
+  <p><b>Sarkoidóza</b> je systémová choroba neznámej príčiny s <b>nekazeifikujúcimi granulómami</b> v mnohých orgánoch – najčastejšie v hilových a mediastinálnych lymfatických uzlinách a v pľúcach (na CT má postihnutie pľúc asi 90 % chorých), ďalej v koži, oku, srdci, pečeni a nervovom systéme. Prevalencia dosahuje v niektorých populáciách 1 : 10 000; častejšie postihuje ženy a dospelých pred 50. rokom.</p>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>CT</b> počítačová tomografia</span></div>
+  </div>
+
+  <div class="box k-jadro aside keep">
+    <div class="label">Jadro</div>
+    <div class="body">
+      <p><b>Sarkoidóza</b>: prehnaná odpoveď Th1 na slabý antigén → mnoho granulómov <b>bez nekrózy</b>. Diagnóza vylúčením – najprv vylúčiť tuberkulózu.</p>
+    </div>
+  </div>
+
+  <div class="box k-mech keep">
+    <div class="label">Mechanizmus – prehnaná Th1 odpoveď na slabý antigén</div>
+    <div class="body">
+      <p>U geneticky náchylného človeka (určité alely HLA-DRB1) vyvolá doteraz neznámy antigén – podozrievajú sa zložky mykobaktérií a propionibaktérií, anorganický prach – <b>nadmernú a pretrvávajúcu odpoveď CD4⁺ Th1 a Th17-lymfocytov</b>. Antigén je pre makrofág málo toxický, a tak granulóm <b>nenekrotizuje</b>. Granulómov je však veľa, sú husto vedľa seba a kde je ich priveľa, tkanivo postupne zjazví. Preto sarkoidóza dobre odpovedá na glukokortikoidy – na rozdiel od infekčného granulómu, ktorý by imunosupresia rozviala.</p>
+    </div>
+  </div>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>HLA</b> ľudské leukocytové antigény – molekuly, ktoré predkladajú antigén T-lymfocytom</span></div>
+  </div>
+
+  <div class="box k-morf keep">
+    <div class="label">Čo uvidíš</div>
+    <div class="body">
+      <ul>
+    <li><b>MI:</b> drobné, ostro ohraničené granulómy z epiteloidných buniek a Langhansových buniek, bez nekrózy, s <b>tenkým lemom lymfocytov</b> („nahé“ granulómy), často splývajúce a obalené hyalinizovaným väzivom. V obrovských bunkách môžu byť <b>asteroidné telieska</b> (hviezdicovité bielkovinové inklúzie) a <b>Schaumannove telieska</b> (vrstvené zvápenatené guľôčky) – nie sú špecifické, vyskytujú sa aj pri iných granulómoch. V pľúcach ležia granulómy pozdĺž <b>lymfatických ciev</b> – okolo priedušiek a ciev, v septách a pod pohrudnicou –, preto ich zachytí aj biopsia z priedušky.</li>
+    <li><b>MA:</b> zväčšené, na reze sivobiele, homogénne uzliny bez kazeóznych ložísk; v pľúcach drobné uzlíky, v pokročilom štádiu fibróza s voštinovitou prestavbou hornej časti pľúc.</li>
+  </ul>
+    </div>
+  </div>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>MI</b> mikroskopický nález – svetelný mikroskop</span> <span class="sk"><b>MA</b> makroskopický nález – voľným okom</span></div>
+  </div>
+
+  <div class="fig-row">
+  <figure class="fig keep" id="fig-7-5" style="--ar:1.49;--fw:720px">
+    <img src="../assets/images/sarcoid-granuloma.jpg" width="1000" height="673" alt="Sarkoidóza (H&amp;E). Nekazeifikujúci granulóm z epiteloidných buniek s riedkym lemom lymfocytov." loading="lazy">
+    <figcaption><b>Obr. 7.5 — Sarkoidóza (H&amp;E).</b> Nekazeifikujúci granulóm z epiteloidných buniek s riedkym lemom lymfocytov. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Sarcoidosis_-_Non-necrotizing_granuloma_(6201646890).jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Yale Rosen · Wikimedia Commons · CC BY-SA 2.0</a></figcaption>
+  </figure>
+  <figure class="fig keep" id="fig-7-6" style="--ar:1.46;--fw:720px">
+    <img src="../assets/images/asteroid-body.jpg" width="1000" height="683" alt="Asteroidné teliesko (H&amp;E). Hviezdicovitá inklúzia v cytoplazme obrovskej bunky; nájde sa pri sarkoidóze aj pri iných granulómoch." loading="lazy">
+    <figcaption><b>Obr. 7.6 — Asteroidné teliesko (H&amp;E).</b> Hviezdicovitá inklúzia v cytoplazme obrovskej bunky; nájde sa pri sarkoidóze aj pri iných granulómoch. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Sarcoidosis_-_Asteroid_body_(6152059052).jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Yale Rosen · Wikimedia Commons · CC BY-SA 2.0</a></figcaption>
+  </figure>
+  </div>
+
+  <figure class="fig keep" id="fig-7-7" style="--fw:720px">
+    <img src="../assets/images/schaumann-polarized.jpg" width="1280" height="853" alt="Kryštalická inklúzia v obrovskej bunke pri sarkoidóze (H&amp;E, polarizované svetlo). Dvojlomný kryštál je zárodkom Schaumannovho telieska, na ktorý sa vrství vápnik." loading="lazy">
+    <figcaption><b>Obr. 7.7 — Kryštalická inklúzia v obrovskej bunke pri sarkoidóze (H&amp;E, polarizované svetlo).</b> Dvojlomný kryštál je zárodkom Schaumannovho telieska, na ktorý sa vrství vápnik. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Sarcoidosis_-_Crystalline_inclusion_with_developing_Schaumann_body,_polarized.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Yale Rosen · Wikimedia Commons · CC BY-SA 2.0</a></figcaption>
+  </figure>
+
+  <div class="fig-row">
+  <figure class="fig keep" id="fig-7-8" style="--ar:1.33;--fw:720px">
+    <img src="../assets/images/sarcoid-lymph-node.jpg" width="1000" height="750" alt="Sarkoidóza v lymfatickej uzline (H&amp;E, malé zväčšenie). Uzlina je takmer celá nahradená početnými ostro ohraničenými, miestami splývajúcimi granulómami bez nekrózy; všetky majú podobný vek." loading="lazy">
+    <figcaption><b>Obr. 7.8 — Sarkoidóza v lymfatickej uzline (H&amp;E, malé zväčšenie).</b> Uzlina je takmer celá nahradená početnými ostro ohraničenými, miestami splývajúcimi granulómami bez nekrózy; všetky majú podobný vek. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Sarcoidosis_-_Lymph_node_-_non-necrotizing_granulomas_(6201135213).jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Yale Rosen · Wikimedia Commons · CC BY-SA 2.0</a></figcaption>
+  </figure>
+  <figure class="fig keep" id="fig-7-9" style="--ar:1.33;--fw:720px">
+    <img src="../assets/images/sarcoid-perilymphatic.jpg" width="1000" height="750" alt="Sarkoidóza v pľúcach (H&amp;E). Granulómy bez nekrózy ležia pozdĺž lymfatických ciev okolo bronchovaskulárneho zväzku; táto lymfatická distribúcia pomáha odlíšiť sarkoidózu od iných granulomatóznych chorôb pľúc." loading="lazy">
+    <figcaption><b>Obr. 7.9 — Sarkoidóza v pľúcach (H&amp;E).</b> Granulómy bez nekrózy ležia pozdĺž lymfatických ciev okolo bronchovaskulárneho zväzku; táto lymfatická distribúcia pomáha odlíšiť sarkoidózu od iných granulomatóznych chorôb pľúc. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Sarcoidosis-Lymphangitic_localization_of_granulomas_(52174352983).jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Atlas of Pulmonary Pathology · Wikimedia Commons · CC BY-SA 2.0</a></figcaption>
+  </figure>
+  </div>
+
+  <div class="box k-detek keep">
+    <div class="label">Detekcia</div>
+    <div class="body">
+      <p>Sarkoidóza je diagnóza <b>vylúčením</b>: histológia ukáže nekazeifikujúce granulómy, ale najprv treba vylúčiť tuberkulózu, huby (farbenia, kultivácia) a expozíciu berýliu. Podporné nálezy:</p>
+      <ul>
+    <li>v <b>bronchoalveolárnej laváži</b> pomer CD4⁺/CD8⁺ lymfocytov <b>&gt; 3,5</b> (špecificita ≈ 93–96 %; pri tuberkulóze býva pomer &lt; 1),</li>
+    <li>v sére <b>angiotenzín konvertujúci enzým (ACE)</b> – tvoria ho epiteloidné bunky, takže odráža celkovú masu granulómov; je málo citlivý, ale pomerne špecifický; aktivitu choroby lepšie sleduje <b>solubilný receptor IL-2</b> (odráža aktiváciu T-lymfocytov),</li>
+    <li><b>hyperkalciúria až hyperkalciémia</b> – makrofágy granulómu majú 1α-hydroxylázu, ktorá mení vitamín D na aktívny kalcitriol nezávisle od parathormónu → zvýšené vstrebávanie vápnika v čreve.</li>
+  </ul>
+    </div>
+  </div>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>ACE</b> enzým konvertujúci angiotenzín (<i>angiotensin-converting enzyme</i>)</span></div>
+  </div>
+
+  <div class="box k-klin aside keep">
+    <div class="label">Prečo granulóm zvyšuje ACE a kalcitriol</div>
+    <div class="body">
+      <p>Epiteloidná bunka je makrofág, ktorý prešiel na sekrečný program, a <b>ACE</b> patrí k tomu, čo takto vylučuje. Čo ho zapína, spoľahlivo vysvetlené nie je; doložené je len to, že hlavným zdrojom ACE sú epiteloidné a obrovské bunky, preto hladina v sére sleduje množstvo granulómov. <b>1α-hydroxylázu</b> v makrofágu zapína najmä IFN-γ z Th1-lymfocytov. V obličke ju riadi parathormón a kalcitriol ju brzdí; v granulóme to neplatí, takže kalcitriol vzniká podľa množstva aktívnych buniek → ↑ vstrebávanie Ca²⁺ v čreve → hyperkalciémia.</p>
+    </div>
+  </div>
+
+  <div class="box k-klin aside keep">
+    <div class="label">Klinika</div>
+    <div class="body">
+      <p><b>Löfgrenov syndróm</b> – horúčka, obojstranne zväčšené hilové uzliny, zápal členkov a <b>erythema nodosum</b> – je akútna forma s dobrou prognózou. Chronická sarkoidóza sa môže skončiť fibrózou pľúc s reštrikčnou poruchou. Najnebezpečnejšie je postihnutie <b>srdca</b> (granulómy v prevodovom systéme → blokády, komorové arytmie, náhla smrť) a <b>oka</b> (uveitída). Hyperkalciúria vedie k obličkovým kameňom a nefrokalcinóze.</p>
+    </div>
+  </div>
+
+  <p>Na snímke hrudníka sa pľúcna sarkoidóza zaraďuje do štyroch <b>rádiologických štádií</b>: <b>I</b> – obojstranne zväčšené hilové uzliny, <b>II</b> – uzliny a k tomu retikulárne zatienenie pľúc, <b>III</b> – zatienenie pľúc so zmenšujúcimi sa uzlinami, <b>IV</b> – fibróza s voštinovitou prestavbou.</p>
+
+  <div class="fig-row">
+  <figure class="fig keep" id="fig-7-10" style="--ar:1.43;--fw:720px">
+    <img src="../assets/images/sarcoid-hilar-nodes-gross.jpg" width="1000" height="700" alt="Sarkoidóza – obojstranne zväčšené hilové uzliny na reze pľúc (MA). Uzliny sú výrazne zväčšené, v pľúcnom tkanive nie sú viditeľné ložiská." loading="lazy">
+    <figcaption><b>Obr. 7.10 — Sarkoidóza – obojstranne zväčšené hilové uzliny na reze pľúc (MA).</b> Uzliny sú výrazne zväčšené, v pľúcnom tkanive nie sú viditeľné ložiská. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Sarcoidosis_-_Bilateral_hilar_lymphadenoathy_(6077534292).jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Yale Rosen · Wikimedia Commons · CC BY-SA 2.0</a></figcaption>
+  </figure>
+  <figure class="fig keep" id="fig-7-11" style="--ar:1.09;--fw:720px">
+    <img src="../assets/images/sarcoid-cxr.jpg" width="1000" height="920" alt="Sarkoidóza na RTG hrudníka (45-ročný muž s overenou diagnózou). Uzlíkovitá kresba, najmä v dolných poliach pľúc." loading="lazy">
+    <figcaption><b>Obr. 7.11 — Sarkoidóza na RTG hrudníka (45-ročný muž s overenou diagnózou).</b> Uzlíkovitá kresba, najmä v dolných poliach pľúc. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Chest_X-ray_of_sarcoidosis_nodules.png" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Mikael Häggström, M.D. · Wikimedia Commons · CC0</a></figcaption>
+  </figure>
+  <figure class="fig keep" id="fig-7-12" style="--ar:1.50;--fw:720px">
+    <img src="../assets/images/sarcoid-honeycomb.jpg" width="1000" height="666" alt="Sarkoidóza v konečnom štádiu – voštinovitá prestavba pľúc (MA). Cysticky rozšírené dýchacie cesty oddeľuje jazva; je to nešpecifický koniec mnohých intersticiálnych chorôb pľúc." loading="lazy">
+    <figcaption><b>Obr. 7.12 — Sarkoidóza v konečnom štádiu – voštinovitá prestavba pľúc (MA).</b> Cysticky rozšírené dýchacie cesty oddeľuje jazva; je to nešpecifický koniec mnohých intersticiálnych chorôb pľúc. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Sarcoidosis_-_Honeycombing_(6076192489).jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Yale Rosen · Wikimedia Commons · CC BY-SA 2.0</a></figcaption>
+  </figure>
+  </div>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>RTG</b> röntgen</span></div>
+  </div>
+
+  <p>Na koži sú pri sarkoidóze najčastejšie drobné tuhé uzlíky; osobitnou podobou je <b>lupus pernio</b> – červenofialové plaky a uzly na nose a lícach. <b>Erythema nodosum</b> (boľavé uzly na predkolení) nie je granulóm, ale panikulitída, teda zápal podkožného tuku; patrí k Löfgrenovmu syndrómu a sprevádza aj iné choroby.</p>
+
+  <div class="fig-row">
+  <figure class="fig keep" id="fig-7-13" style="--ar:1.52;--fw:720px">
+    <img src="../assets/images/lupus-pernio.jpg" width="1000" height="656" alt="Lupus pernio, kožná sarkoidóza. Červenofialové tuhé plaky a uzly na nose a lícach." loading="lazy">
+    <figcaption><b>Obr. 7.13 — Lupus pernio, kožná sarkoidóza.</b> Červenofialové tuhé plaky a uzly na nose a lícach. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Lupus_pernio_01.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>M. Sand, D. Sand, C. Thrandorf, V. Paech, P. Altmeyer, F. G. Bechara · Wikimedia Commons · CC BY 2.0</a></figcaption>
+  </figure>
+  <figure class="fig keep" id="fig-7-14" style="--ar:1.38;--fw:720px">
+    <img src="../assets/images/erythema-nodosum.jpg" width="1000" height="727" alt="Erythema nodosum – boľavé červené uzly na predkolení. Je to panikulitída (zápal podkožného tuku), ktorá patrí k Löfgrenovmu syndrómu a sprevádza aj iné choroby." loading="lazy">
+    <figcaption><b>Obr. 7.14 — Erythema nodosum – boľavé červené uzly na predkolení.</b> Je to panikulitída (zápal podkožného tuku), ktorá patrí k Löfgrenovmu syndrómu a sprevádza aj iné choroby. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Erythema_nodosum_on_hairy_legs.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>James Heilman, MD · Wikimedia Commons · CC BY-SA 3.0</a></figcaption>
+  </figure>
+  </div>
+
+  <p>Najčastejší a najzávažnejší omyl je zameniť sarkoidózu s tuberkulózou – imunosupresia, ktorá sarkoidózu lieči, by tuberkulózu rozšírila:</p>
+
+  <table class="table keep" id="tab-7-2" style="margin:6px 0">
+    <thead><tr><th></th><th>Tuberkulózny granulóm</th><th>Sarkoidový granulóm</th></tr></thead>
+    <tbody>
+      <tr><td><b>Príčina</b></td><td><i>M. tuberculosis</i> (toxické pre makrofág)</td><td>neznámy slabý antigén, dispozícia</td></tr>
+      <tr><td><b>Stred</b></td><td><b>kazeifikácia</b> (po rozvoji imunity)</td><td><b>bez nekrózy</b></td></tr>
+      <tr><td><b>Lem lymfocytov</b></td><td>hrubý</td><td>tenký („nahý“ granulóm)</td></tr>
+      <tr><td><b>Splývanie</b></td><td>ložiská splývajú okolo nekrózy</td><td>početné, oddelené, ale husto vedľa seba</td></tr>
+      <tr><td><b>Mykobaktérie (ZN, kultivácia, PCR)</b></td><td>áno, často málo</td><td>nie</td></tr>
+      <tr><td><b>BAL CD4⁺/CD8⁺</b></td><td>&lt; 1</td><td>&gt; 3,5</td></tr>
+      <tr><td><b>Glukokortikoidy</b></td><td>zhoršia (bez antituberkulotík)</td><td>liečia</td></tr>
+      <tr><td><b>Hojenie</b></td><td>jazva s kalcifikáciou, kaverna</td><td>vstrebanie alebo hyalinizovaná fibróza</td></tr>
+    </tbody>
+  </table>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>ZN</b> farbenie podľa Ziehla–Neelsena</span> <span class="sk"><b>BAL</b> bronchoalveolárna laváž</span></div>
+  </div>
+</div>
+
+<!-- ══ 7.5 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-7-5"><span class="n">7.5</span><span>Tuberkulóza – granulóm s kazeifikáciou</span></h2>
+<div class="sec-body">
+  <p>Tuberkulózu vyvolávajú baktérie komplexu <b><i>Mycobacterium tuberculosis</b></i> (u človeka takmer vždy <i>M. tuberculosis</i>, zriedka <i>M. bovis</i> z nepasterizovaného mlieka). Podľa WHO na ňu v roku 2024 ochorelo <b>10,7 milióna</b> ľudí a <b>1,23 milióna</b> zomrelo (z toho 150 000 ľudí s HIV, pre ktorých je tuberkulóza najčastejšou príčinou smrti); latentne infikovaná je približne <b>štvrtina</b> ľudstva. Na Slovensku je zriedkavá: v roku 2023 bolo hlásených 221 prípadov (196 pľúcnych) a v roku 2024 135; plošné očkovanie novorodencov vakcínou BCG sa preto k 1. 1. 2012 zrušilo (NCZI, 2025).</p>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>WHO</b> Svetová zdravotnícka organizácia</span> <span class="sk"><b>HIV</b> vírus ľudskej imunitnej nedostatočnosti</span></div>
+  </div>
+
+  <div class="box k-jadro aside keep">
+    <div class="label">Jadro</div>
+    <div class="body">
+      <p><b>Tuberkulóza</b>: mykobaktéria prežije v makrofágu; imunita ju ohraničí granulómom s <b>kazeifikáciou</b>. Latentné ložisko sa pri poklese imunity reaktivuje; kaverna je bod zvratu.</p>
+    </div>
+  </div>
+
+  <h3 class="sub-h" id="sub-7-5-1"><span class="n">7.5.1</span>Pôvodca a prvé stretnutie</h3>
+  <div class="box k-mech keep">
+    <div class="label">Prečo mykobaktéria prežije v makrofágu</div>
+    <div class="body">
+      <p>Stena mykobaktérie obsahuje dlhé <b>mykolové kyseliny</b> a glykolipidy – voskový obal, ktorý odolá kyselinám, zásadám aj lyzozomálnym enzýmom. Baktéria navyše <b>zabráni splynutiu fagozómu s lyzozómom</b> a v neokyslenom fagozóme sa pomaly delí (raz za ≈ 1 deň). Nakazí sa vdýchnutím kvapôčok z kašľa chorého s otvorenou kavernou; stačí niekoľko baktérií.</p>
+    </div>
+  </div>
+
+  <p><b>Primárna tuberkulóza</b> vzniká u človeka, ktorý sa s mykobaktériami ešte nestretol. Baktérie sa usadia v dobre vetranej časti pľúc pod pohrudnicou (spodná časť horného alebo horná časť dolného laloka) a počas prvých týždňov sa voľne množia v alveolárnych makrofágoch, ktoré ich zanesú do hilových uzlín. Až keď po niekoľkých týždňoch dozrie odpoveď Th1-lymfocytov, makrofágy sa aktivujú, vytvoria granulómy a stred ložísk kazeifikuje:</p>
+
+  <ul>
+    <li><b>Ghonovo ložisko</b> = sivobiele kazeózne ložisko v pľúcnom tkanive pod pohrudnicou,</li>
+    <li><b>Ghonov (primárny) komplex</b> = Ghonovo ložisko + zápal lymfatických ciev + kazeózne zväčšené hilové uzliny.</li>
+  </ul>
+
+  <p>U viac než 90 % nakazených sa komplex zahojí jazvou, ktorá kalcifikuje (<b>Rankeho komplex</b>), a infekcia prechádza do <b>latencie</b>: v zjazvených ložiskách môžu prežívať živé mykobaktérie. Človek má odvtedy pozitívny tuberkulínový test alebo IGRA. Pri nezrelej alebo oslabenej imunite (malé deti, HIV, podvýživa) sa primárna infekcia nezastaví – <b>progresívna primárna tuberkulóza</b> s kazeóznou pneumóniou, prevalením uzliny do priedušky, miliárnym rozsevom a meningitídou.</p>
+
+  <figure class="fig keep" id="fig-7-15" style="--fw:688px">
+    <img src="../assets/images/ranke-complex.jpg" width="688" height="1000" alt="Rankeho komplex. Zahojené a kalcifikované primárne ložisko pod pohrudnicou (šípka) a kalcifikované ložiská v uzlinách pod rozdvojením priedušnice." loading="lazy">
+    <figcaption><b>Obr. 7.15 — Rankeho komplex.</b> Zahojené a kalcifikované primárne ložisko pod pohrudnicou (šípka) a kalcifikované ložiská v uzlinách pod rozdvojením priedušnice. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Tuberculosis_-_Ranke_complex_(13449099823).jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Yale Rosen · Wikimedia Commons · CC BY-SA 2.0</a></figcaption>
+  </figure>
+
+  <div class="box k-morf keep">
+    <div class="label">Čo uvidíš v tuberkulóznom granulóme</div>
+    <div class="body">
+      <ul>
+    <li><b>MI:</b> v strede <b>kazeózna nekróza</b> – beztvará, jemne zrnitá eozinofilná hmota bez obrysov buniek a s bazofilným jadrovým prachom (<a class="xref" href="01_atrofia_nekroza_apoptoza.html#sub-1-6-3">→ 1.6.3 Kaseifikačná (kazeózna) nekróza</a>); okolo nej palisáda epiteloidných buniek s Langhansovými bunkami, na obvode hrubý lem lymfocytov a fibroblasty.</li>
+    <li><b>MA:</b> sivobiele až žlté, suché, drobivé ložisko ako tvaroh (lat. <i>caseus</i> = syr) – kazeózna hmota obsahuje veľa lipidov zo steny mykobaktérií a z odumretých makrofágov. Staré ložiská sú obalené väzivom a kalcifikujú.</li>
+  </ul>
+    </div>
+  </div>
+
+  <div class="fig-row">
+  <figure class="fig keep" id="fig-7-16" style="--ar:1.51;--fw:720px">
+    <img src="../assets/images/ghon-focus.jpg" width="1000" height="663" alt="Ghonovo ložisko (MA). Pod pohrudnicou leží ohraničené ložisko so žltobielou, drobivou kazeóznou hmotou; spolu so zapálenou spádovou uzlinou tvorí Ghonov komplex." loading="lazy">
+    <figcaption><b>Obr. 7.16 — Ghonovo ložisko (MA).</b> Pod pohrudnicou leží ohraničené ložisko so žltobielou, drobivou kazeóznou hmotou; spolu so zapálenou spádovou uzlinou tvorí Ghonov komplex. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Tuberculosis_-_Sub-pleural_primary_(Ghon)_focus_(6596011395).jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Yale Rosen · Wikimedia Commons · CC BY-SA 2.0</a></figcaption>
+  </figure>
+  <figure class="fig keep" id="fig-7-17" style="--ar:1.21;--fw:720px">
+    <img src="../assets/images/tb-lung-caseous-gross.jpg" width="897" height="744" alt="Tuberkulóza pľúc (MA). Krémovobiele kazeózne ložiská v pľúcnom tkanive." loading="lazy">
+    <figcaption><b>Obr. 7.17 — Tuberkulóza pľúc (MA).</b> Krémovobiele kazeózne ložiská v pľúcnom tkanive. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Tuberculosis_of_lung.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Department of Pathology, Calicut Medical College · Wikimedia Commons · CC BY-SA 4.0</a></figcaption>
+  </figure>
+  </div>
+
+  <p>Tuberkulózny granulóm však nemusí kazeifikovať: pri tuberkulóze sa nachádza nekrotizujúci aj nenekrotizujúci granulóm, takže granulóm bez kazea tuberkulózu nevylučuje – rozhoduje dôkaz pôvodcu.</p>
+
+  <div class="fig-row">
+  <figure class="fig keep" id="fig-7-18" style="--ar:1.52;--fw:720px">
+    <img src="../assets/images/tb-caseating-granuloma.jpg" width="1000" height="658" alt="Tuberkulózny granulóm s kazeifikáciou (H&amp;E). V strede bledá, beztvará kazeózna nekróza; okolo nej epiteloidné bunky a lem lymfocytov." loading="lazy">
+    <figcaption><b>Obr. 7.18 — Tuberkulózny granulóm s kazeifikáciou (H&amp;E).</b> V strede bledá, beztvará kazeózna nekróza; okolo nej epiteloidné bunky a lem lymfocytov. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Pulmonary_tuberculosis_-_Necrotizing_granuloma_(6545186957).jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Yale Rosen · Wikimedia Commons · CC BY-SA 2.0</a></figcaption>
+  </figure>
+  <figure class="fig keep" id="fig-7-19" style="--ar:1.54;--fw:720px">
+    <img src="../assets/images/tb-lymph-node-granuloma.jpg" width="1000" height="649" alt="Tuberkulózny granulóm v lymfatickej uzline (H&amp;E, veľké zväčšenie). Epiteloidné bunky a dve Langhansove obrovské bunky; tento granulóm nemá nekrózu." loading="lazy">
+    <figcaption><b>Obr. 7.19 — Tuberkulózny granulóm v lymfatickej uzline (H&amp;E, veľké zväčšenie).</b> Epiteloidné bunky a dve Langhansove obrovské bunky; tento granulóm nemá nekrózu. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Tuberculous_lymphadenitis_Wellcome_W0044757.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>SB Lucas, Wellcome Collection · Wikimedia Commons · CC0</a></figcaption>
+  </figure>
+  </div>
+
+  <h3 class="sub-h" id="sub-7-5-2"><span class="n">7.5.2</span>Latencia, reaktivácia a kaverna</h3>
+  <p><b>Postprimárna (sekundárna) tuberkulóza</b> vzniká u človeka, ktorý už je senzibilizovaný – <b>reaktiváciou</b> latentných ložísk (5–10 % infikovaných počas života, častejšie pri poklese imunity: vek, HIV, diabetes, glukokortikoidy, lieky proti TNF, alkoholizmus) alebo <b>reinfekciou</b>. Typicky postihne <b>vrcholy pľúc</b>, kde je pre aeróbnu mykobaktériu najvyšší parciálny tlak kyslíka. Pretože imunita už pozná antigén, odpoveď je rýchla a silná: ložisko sa lepšie ohraničí (uzliny sú postihnuté menej), ale nekróza je rozsiahlejšia a mení sa na dutinu.</p>
+
+  <p>Kaverna sa po vzniku živí sama (circulus vitiosus ⟳, <a class="figref" href="#fig-kruh-kaverna" data-fig="fig-kruh-kaverna">Obr. 7.20</a>):</p>
+
+  <figure class="chart keep" id="fig-kruh-kaverna">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" role="img" aria-labelledby="tmfigkruhkaverna">
+<title id="tmfigkruhkaverna">Bludný kruh tuberkulóznej kaverny: makrofágy skvapalnia kazeum, ložisko sa prevalí do priedušky, vzduch s kyslíkom umožní extracelulárne množenie baktérií, silná imunitná odpoveď na množstvo antigénu spôsobí ďalšiu nekrózu steny a kaverna rastie; kruh sa začína otvorením ložiska do priedušky</title>
+<defs><marker id="mfigkruhkaverna" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker></defs>
+<rect class="bx-k" x="10" y="30" width="180" height="56" rx="3"/>
+<text class="lblb" x="100" y="55" text-anchor="middle">kazeózne ložisko</text>
+<text class="lblb" x="100" y="70" text-anchor="middle">(pevné, málo O₂)</text>
+<rect class="bx-k" x="290" y="30" width="180" height="56" rx="3"/>
+<text class="lblb" x="380" y="55" text-anchor="middle">skvapalnenie kazea</text>
+<text class="lblb" x="380" y="70" text-anchor="middle">enzýmami makrofágov</text>
+<rect class="bx-m" x="570" y="30" width="180" height="56" rx="3" stroke="var(--color-accent-2-600)" stroke-width="1.5"/>
+<text class="lblb" x="660" y="55" text-anchor="middle">prevalenie do priedušky</text>
+<text class="lblb" x="660" y="70" text-anchor="middle">= vznik kaverny</text>
+<rect class="bx-k" x="570" y="200" width="180" height="56" rx="3"/>
+<text class="lblb" x="660" y="225" text-anchor="middle">vzduch (O₂) v dutine</text>
+<text class="lblb" x="660" y="240" text-anchor="middle">pri každom nádychu</text>
+<rect class="bx-k" x="290" y="200" width="180" height="56" rx="3"/>
+<text class="lblb" x="380" y="225" text-anchor="middle">baktérie sa množia</text>
+<text class="lblb" x="380" y="240" text-anchor="middle">mimo buniek</text>
+<rect class="bx-k" x="10" y="200" width="180" height="56" rx="3"/>
+<text class="lblb" x="100" y="225" text-anchor="middle">nová nekróza steny,</text>
+<text class="lblb" x="100" y="240" text-anchor="middle">kaverna rastie</text>
+<path class="arw" d="M192,58 L288,58" marker-end="url(#mfigkruhkaverna)"/>
+<path class="arw" d="M472,58 L568,58" marker-end="url(#mfigkruhkaverna)"/>
+<path class="arw" d="M660,88 L660,198" marker-end="url(#mfigkruhkaverna)"/>
+<path class="arw" d="M568,228 L472,228" marker-end="url(#mfigkruhkaverna)"/>
+<path class="arw" d="M288,228 L192,228" marker-end="url(#mfigkruhkaverna)"/>
+<path class="arw" d="M100,198 L100,88" marker-end="url(#mfigkruhkaverna)" style="stroke-width:2.2"/>
+<text class="sub" x="240" y="48" text-anchor="middle">hydrolázy</text>
+<text class="sub" x="520" y="48" text-anchor="middle">tlak, kašeľ</text>
+<text class="sub" x="652" y="148" text-anchor="end">počet baktérií stúpne</text>
+<text class="sub" x="652" y="161" text-anchor="end">o niekoľko rádov</text>
+<text class="sub" x="520" y="218" text-anchor="middle">aeróbny rast</text>
+<text class="sub" x="240" y="218" text-anchor="middle">viac antigénu</text>
+<text class="sub" x="108" y="148" text-anchor="start">silná imunitná odpoveď</text>
+<text class="sub" x="108" y="161" text-anchor="start">(Th1, TNF) poškodí stenu</text>
+<text x="380" y="146" text-anchor="middle" style="font-size:26px;fill:var(--color-accent-2-600)">⟳</text>
+<text class="cap" x="380" y="162" text-anchor="middle">circulus vitiosus</text>
+<text class="lbl-m" x="750" y="276" text-anchor="end">bod zvratu: spojenie ložiska s prieduškou</text>
+<text class="sub" x="750" y="292" text-anchor="end">(otvorená kavernózna tuberkulóza)</text>
+</svg>
+    <figcaption><b>Obr. 7.20 — Bludný kruh tuberkulóznej kaverny.</b></figcaption>
+  </figure>
+
+  <div class="box k-mech keep">
+    <div class="label">Circulus vitiosus – tuberkulózna kaverna</div>
+    <div class="body">
+      <p>V pevnom kazeóznom ložisku je málo kyslíka a mykobaktérie v ňom takmer nerastú. Keď sa skvapalnené kazeum vyprázdni do priedušky, vznikne <b>kaverna</b> prevzdušnená každým nádychom – baktérie sa v nej množia mimo buniek a ich počet stúpne o niekoľko rádov. Silná imunitná odpoveď na obrovské množstvo antigénu spôsobuje ďalšiu nekrózu steny kaverny, ktorá sa zväčšuje. <b>Bod zvratu =</b> spojenie kazeózneho ložiska s prieduškou (<b>otvorená kavernózna tuberkulóza</b>): od tej chvíle sa choroba živí sama a chorý vykašliava baktérie do okolia. <b>Kde prerušiť:</b> kombinácia antituberkulotík najmenej 6 mesiacov (jeden liek by vyselektoval rezistentné kmene) a izolácia chorého, kým spútum nie je negatívne.</p>
+    </div>
+  </div>
+
+  <figure class="fig keep" id="fig-7-21" style="--fw:687px">
+    <img src="../assets/images/tb-cavity.jpg" width="687" height="1000" alt="Kavernózna tuberkulóza. Rozsiahla kazeózna nekróza s dutinami v hornej časti pľúc." loading="lazy">
+    <figcaption><b>Obr. 7.21 — Kavernózna tuberkulóza.</b> Rozsiahla kazeózna nekróza s dutinami v hornej časti pľúc. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Cavitary_tuberculosis_(6572341159).jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Yale Rosen · Wikimedia Commons · CC BY-SA 2.0</a></figcaption>
+  </figure>
+
+  <p>Z kaverny hrozia ďalšie komplikácie: arozívne krvácanie z tepny v jej stene (vykašliavanie krvi – <b>hemoptýza</b>, až smrteľné krvácanie), empyém a pneumotorax pri prevalení do pohrudnice, kolonizácia starej kaverny plesňou (aspergilóm) a pri trvaní rokov <b>AA amyloidóza</b> (<a class="xref" href="02_dystrofie.html#sub-2-4-5">→ 2.4.5 Amyloidóza</a>).</p>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>AA</b> amyloid zo sérového amyloidu A</span></div>
+  </div>
+
+  <figure class="fig keep" id="fig-7-22" style="--fw:720px">
+    <img src="../assets/images/aspergilloma-tb.jpg" width="1000" height="880" alt="Aspergilóm v tuberkulóznej kaverne (MA). Hrčovitá hnedá hmota – kolónia plesne – vypĺňa dutinu, ktorá vznikla vykašlaním nekrotického tkaniva cez priedušku." loading="lazy">
+    <figcaption><b>Obr. 7.22 — Aspergilóm v tuberkulóznej kaverne (MA).</b> Hrčovitá hnedá hmota – kolónia plesne – vypĺňa dutinu, ktorá vznikla vykašlaním nekrotického tkaniva cez priedušku. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Aspergilloma_complicating_tuberculosis_2.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Yale Rosen · Wikimedia Commons · CC BY-SA 2.0</a></figcaption>
+  </figure>
+
+  <h3 class="sub-h" id="sub-7-5-3"><span class="n">7.5.3</span>Cesty šírenia a miliárna tuberkulóza</h3>
+  <p>Tuberkulóza sa šíri tromi cestami a každá zanecháva iný obraz:</p>
+
+  <div class="fork">
+    <div><b>Priedušky (kanalikulárne)</b>kazeum z kaverny sa vdýchne do iných lalokov → acinózno-nodózna tuberkulóza, kazeózna pneumónia; prehltnuté spútum → tuberkulóza hrtana a čreva (vredy kolmo na os čreva, lebo sledujú lymfatické cievy)</div>
+    <div><b>Lymfa</b>uzliny sa zväčšia a kazeifikujú; na krku splývajú a môžu sa prevaliť kožou (skrofulóza)</div>
+    <div><b>Krv (hematogénne)</b>kazeum preruší stenu žily → mykobakterémia → <b>miliárna tuberkulóza</b>: tisíce 1–2 mm sivobielych uzlíkov (lat. <i>milium</i> = proso) v pľúcach, pečeni, slezine, obličkách, na mozgových obaloch (bazilárna meningitída); jednotlivé zasiate ložiská môžu prežiť roky a neskôr vzplanúť mimo pľúc (obličky, kosti a stavce, nadobličky)</div>
+  </div>
+
+  <figure class="fig keep" id="fig-7-23" style="--fw:720px">
+    <img src="../assets/images/miliary-tb.jpg" width="1000" height="750" alt="Miliárna tuberkulóza pľúc (H&amp;E, malé zväčšenie). Početné drobné granulómy rozosiate po pľúcnom tkanive krvnou cestou." loading="lazy">
+    <figcaption><b>Obr. 7.23 — Miliárna tuberkulóza pľúc (H&amp;E, malé zväčšenie).</b> Početné drobné granulómy rozosiate po pľúcnom tkanive krvnou cestou. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Lung_-_Miliary_tuberculosis_(6545810825).jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Yale Rosen · Wikimedia Commons · CC BY-SA 2.0</a></figcaption>
+  </figure>
+
+  <div class="fig-row">
+  <figure class="fig keep" id="fig-7-24" style="--ar:1.11;--fw:720px">
+    <img src="../assets/images/miliary-tb-cxr.jpg" width="876" height="792" alt="Miliárna tuberkulóza na RTG hrudníka (82-ročná žena, 13. deň od začiatku horúčky). Obojstranné intersticiálne infiltráty." loading="lazy">
+    <figcaption><b>Obr. 7.24 — Miliárna tuberkulóza na RTG hrudníka (82-ročná žena, 13.</b> deň od začiatku horúčky). Obojstranné intersticiálne infiltráty. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Chest_radiograph_of_miliary_tuberculosis_1.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>B. Herreros, I. Plaza, R. García et al. · Wikimedia Commons · CC BY 4.0</a></figcaption>
+  </figure>
+  <figure class="fig keep" id="fig-7-25" style="--ar:1.38;--fw:720px">
+    <img src="../assets/images/miliary-tb-kidney.jpg" width="1000" height="723" alt="Miliárna tuberkulóza obličky (MA). Na reze v obličkovej kôre drobné uzlíky." loading="lazy">
+    <figcaption><b>Obr. 7.25 — Miliárna tuberkulóza obličky (MA).</b> Na reze v obličkovej kôre drobné uzlíky. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Miliary_tuberculosis_involving_kidney_(6539942623).jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Yale Rosen · Wikimedia Commons · CC BY-SA 2.0</a></figcaption>
+  </figure>
+  </div>
+
+  <p>Pri dobrej imunite prevláda <b>produktívna</b> reakcia (granulómy, ohraničenie); pri slabej <b>exsudatívna</b> – serofibrinózny výpotok, v ktorom jednotlivo plávajú makrofágy plné baktérií (Orthove bunky), málo granulómov a rozsiahla kazeifikácia (kazeózna pneumónia, tuberkulózna pleuritída a meningitída). Nejde o dve choroby, ale o dva konce tej istej škály v <a class="figref" href="#fig-granulom-mapa" data-fig="fig-granulom-mapa">Obr. 7.4</a>. Prudkú nekrotizujúcu reakciu už senzibilizovaného organizmu na mykobaktérie alebo ich antigény – podstatu kazeifikácie a vzniku kaverny – opísal už Koch (<b>Kochov fenomén</b>).</p>
+
+  <p>Mimo pľúc ukazuje tá istá kazeifikujúca reakcia <b>terén</b> orgánu (cievne zásobenie, kostra tkaniva), do ktorého sa mykobaktérie dostali lymfou alebo krvou:</p>
+
+  <table class="table keep" id="tab-7-3" style="margin:6px 0">
+    <thead><tr><th>Orgán</th><th>Čo sa stane</th><th>Prečo je obraz taký</th></tr></thead>
+    <tbody>
+      <tr><td><b><b>krčné lymfatické uzliny</b></b></td><td>skrofulóza, jedna z najčastejších mimopľúcnych foriem: uzliny sa zväčšia a kazeifikujú a môžu sa prevaliť kožou</td><td>spádové uzliny zachytia mykobaktérie z pľúc lymfou alebo krvou</td></tr>
+      <tr><td><b><b>chrbtica</b> (Pottova choroba)</b></td><td>najčastejšie hrudná a driekova chrbtica: infekcia zničí telá stavcov pri medzistavcovej platničke, predná časť sa zrúti a vznikne kyfóza (gibbus); okolo chrbtice sa tvoria abscesy</td><td>stavce majú bohaté cievne zásobenie, ktoré mykobaktériám otvára cestu; platnička je cievami chudobná</td></tr>
+      <tr><td><b><b>mozgové obaly</b></b></td><td>Richove ložiská prasknú do subarachnoidálneho priestoru; exsudát pri báze mozgu obalí hlavové nervy (obrny), uzavrie cievy (vaskulitída, drobné infarkty) a zablokuje tok likvoru (hydrocefalus)</td><td>silná zápalová odpoveď tesne pri nervoch, cievach a cestách likvoru</td></tr>
+      <tr><td><b><b>oblička</b></b></td><td>granulómy zničia tkanivo kazeifikáciou: papilárna nekróza, dutiny, kalcifikácie; v krajnom prípade zmenšená zvápenatená oblička (autonefrektómia)</td><td>ložiská rozsiate krvou počas primárnej infekcie sa po rokoch môžu znova rozbehnúť; zničené tkanivo hojí jazva so soľami vápnika (<a class="xref" href="#sec-7-3">→ 7.3 Dve osi, ktoré určia podobu granulómu</a>)</td></tr>
+    </tbody>
+  </table>
+
+  <p>Zľava doprava: zjazvené krčné uzliny, kyfóza po zrútení stavcov a obaly mozgu zhrubnuté exsudátom.</p>
+
+  <div class="fig-row">
+  <figure class="fig keep" id="fig-7-26" style="--ar:0.65;--fw:653px">
+    <img src="../assets/images/scrofula.jpg" width="653" height="1000" alt="Skrofulóza – tuberkulózna lymfadenitída na krku (historická fotografia z klinického atlasu z roku 1893). Zväčšené a prerazené krčné uzliny." loading="lazy">
+    <figcaption><b>Obr. 7.26 — Skrofulóza – tuberkulózna lymfadenitída na krku (historická fotografia z klinického atlasu z roku 1893).</b> Zväčšené a prerazené krčné uzliny. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Scrofula.jpeg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Bramwell B., Atlas of Clinical Medicine, 1893 · Wikimedia Commons · Public domain</a></figcaption>
+  </figure>
+  <figure class="fig keep" id="fig-7-27" style="--ar:1.33;--fw:720px">
+    <img src="../assets/images/pott-spine.jpg" width="1000" height="750" alt="Pottova choroba (kostný preparát). Hrudná chrbtica so skolabovanými stavcami po tuberkulóznej infekcii; predný kolaps stavcov vytvorí kyfózu." loading="lazy">
+    <figcaption><b>Obr. 7.27 — Pottova choroba (kostný preparát).</b> Hrudná chrbtica so skolabovanými stavcami po tuberkulóznej infekcii; predný kolaps stavcov vytvorí kyfózu. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Spine_-_Kyphosis_from_Tuberculosis.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Otis Historical Archives, National Museum of Health and Medicine, foto Brian Spatola · Wikimedia Commons · CC BY 2.0</a></figcaption>
+  </figure>
+  <figure class="fig keep" id="fig-7-28" style="--ar:0.76;--fw:720px">
+    <img src="../assets/images/tb-meningitis.jpg" width="759" height="1000" alt="Tuberkulózna leptomeningitída (MA). Mäkké mozgové obaly nad mozgovým kmeňom a mozočkom sú zhrubnuté zápalovým exsudátom; najviac pri báze mozgu, čo je pre ňu typické." loading="lazy">
+    <figcaption><b>Obr. 7.28 — Tuberkulózna leptomeningitída (MA).</b> Mäkké mozgové obaly nad mozgovým kmeňom a mozočkom sú zhrubnuté zápalovým exsudátom; najviac pri báze mozgu, čo je pre ňu typické. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Tuberculous_leptomeningitis.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Yale Rosen · Wikimedia Commons · CC BY-SA 2.0</a></figcaption>
+  </figure>
+  </div>
+
+  <h3 class="sub-h" id="sub-7-5-4"><span class="n">7.5.4</span>Ako sa tuberkulóza dokazuje</h3>
+  <div class="box k-detek keep">
+    <div class="label">Detekcia</div>
+    <div class="body">
+      <ul>
+    <li><b>Mikroskopia</b> spúta alebo tkaniva farbením podľa Ziehla–Neelsena (alebo fluorescenčne auramínom): acidorezistentné tyčinky si ponechajú červené farbivo aj po odfarbení kyslým alkoholom, lebo ho zadrží voskový obal. Metóda je rýchla, ale pozitívna až pri tisícoch baktérií v mililitri spúta.</li>
+    <li><b>Kultivácia</b> je zlatý štandard a určí citlivosť na lieky; pre pomalé delenie trvá <b>2–8 týždňov</b>.</li>
+    <li><b>Molekulové testy</b> (PCR, napr. Xpert MTB/RIF) dokážu DNA mykobaktérií za hodiny a zároveň mutáciu, ktorá spôsobuje rezistenciu na rifampicín.</li>
+    <li><b>Tuberkulínový test</b> (odčíta sa po 48–72 h ako tuhý opuch = reakcia oneskoreného typu) a <b>IGRA</b> (T-lymfocyty z krvi tvoria IFN-γ po stretnutí s antigénmi mykobaktérií) dokazujú <b>senzibilizáciu</b>, nie aktívnu chorobu – neodlíšia latentnú infekciu od tuberkulózy. IGRA používa antigény, ktoré očkovací kmeň BCG nemá, a preto ho očkovanie neskreslí.</li>
+  </ul>
+    </div>
+  </div>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>DNA</b> deoxyribonukleová kyselina</span></div>
+  </div>
+
+  <figure class="fig keep" id="fig-7-29" style="--fw:720px">
+    <img src="../assets/images/ziehl-neelsen.jpg" width="1000" height="645" alt="Mycobacterium tuberculosis vo farbení podľa Ziehla–Neelsena (zväčšenie 1000×). Tenké červené tyčinky na modrom pozadí." loading="lazy">
+    <figcaption><b>Obr. 7.29 — Mycobacterium tuberculosis vo farbení podľa Ziehla–Neelsena (zväčšenie 1000×).</b> Tenké červené tyčinky na modrom pozadí. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Mycobacterium_tuberculosis_Ziehl-Neelsen_stain_02.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>CDC / George P. Kubica · Wikimedia Commons · Public domain</a></figcaption>
+  </figure>
+
+  <div class="fig-row">
+  <figure class="fig keep" id="fig-7-30" style="--ar:1.55;--fw:720px">
+    <img src="../assets/images/mantoux-test.jpg" width="1000" height="645" alt="Odčítanie tuberkulínového testu po 48 hodinách. Meria sa priemer zatvrdnutia kože (indurácie)." loading="lazy">
+    <figcaption><b>Obr. 7.30 — Odčítanie tuberkulínového testu po 48 hodinách.</b> Meria sa priemer zatvrdnutia kože (indurácie). <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Mantoux_Test_48h.jpeg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>CDC · Wikimedia Commons · Public domain</a></figcaption>
+  </figure>
+  <figure class="fig keep" id="fig-7-31" style="--ar:1.67;--fw:720px">
+    <img src="../assets/images/tb-culture-lj.jpg" width="1000" height="598" alt="Kultúra Mycobacterium tuberculosis po 6 týždňoch pri 37 °C na Löwenstein–Jensenovom (A) a Ogawovom (B) médiu. Kolónie sú béžové, mladšie svetlejšie (D)." loading="lazy">
+    <figcaption><b>Obr. 7.31 — Kultúra Mycobacterium tuberculosis po 6 týždňoch pri 37 °C na Löwenstein–Jensenovom (A) a Ogawovom (B) médiu.</b> Kolónie sú béžové, mladšie svetlejšie (D). <a class="src-link" href="https://commons.wikimedia.org/wiki/File:M.tuberculosis.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>HansN. · Wikimedia Commons · CC BY-SA 4.0</a></figcaption>
+  </figure>
+  </div>
+
+  <div class="box k-klin aside keep">
+    <div class="label">Klinika</div>
+    <div class="body">
+      <p>Postprimárna pľúcna tuberkulóza sa hlási nenápadne: kašeľ trvajúci viac než 2–3 týždne, subfebrílie, nočné potenie, chudnutie (starý názov <i>ftíza</i>, úbytie), neskôr hemoptýza; na snímke infiltrát alebo kaverna v hrote pľúc. Každý kazeifikujúci granulóm v biopsii treba hlásiť ako podozrenie na tuberkulózu, kým sa nevylúči – vzorku preto patológ posiela aj na kultiváciu. Očkovanie BCG (oslabený kmeň <i>M. bovis</i>) chráni deti hlavne pred miliárnou tuberkulózou a meningitídou, pred pľúcnou tuberkulózou dospelých chráni málo.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 7.6 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-7-6"><span class="n">7.6</span><span>Keď imunita nestačí na granulóm: lepra a histiocytové reakcie</span></h2>
+<div class="sec-body">
+  <p>Ak T-lymfocyty makrofágy neaktivujú, granulóm nevznikne. Makrofágy pohltia baktérie, no nezničia ich – nahromadia sa v nich a tkanivo vyplnia <b>plachty penových makrofágov</b>. Najlepšie to ukazuje lepra, pri ktorej ten istý pôvodca vyvolá dva protichodné obrazy podľa imunity pacienta.</p>
+
+  <div class="box k-jadro aside keep">
+    <div class="label">Jadro</div>
+    <div class="body">
+      <p>Bez aktivácie T-lymfocytmi granulóm nevznikne: makrofágy sa len plnia baktériami. Lepra ukazuje oba konce škály podľa imunity pacienta.</p>
+    </div>
+  </div>
+
+  <div class="box k-mech keep">
+    <div class="label">Lepra – jeden pôvodca, dva konce škály</div>
+    <div class="body">
+      <p><i>Mycobacterium leprae</i> sa nedá kultivovať v živnom médiu, delí sa veľmi pomaly a najlepšie rastie pri teplote nižšej ako 37 °C – preto napáda <b>chladnejšie časti tela</b>: kožu, periférne nervy (žije v Schwannových bunkách), nosovú sliznicu, ušnice, prsty. Prenáša sa kvapôčkami z nosa pri dlhom tesnom kontakte; inkubácia trvá roky. WHO eviduje asi <b>200 000 nových prípadov ročne</b>, najviac v Indii, Brazílii a Indonézii.</p>
+      <ul>
+    <li><b>Tuberkuloidná lepra</b> (silná Th1 odpoveď): granulómy z epiteloidných buniek pozdĺž kožných nervov, baktérií je málo. Granulómy ničia nervy → ohraničené svetlé <b>necitlivé</b> škvrny; zranenia a popáleniny necitlivých prstov vedú k vredom a mutiláciám.</li>
+    <li><b>Lepromatózna lepra</b> (slabá Th1, prevaha Th2): dermis vyplnia penové makrofágy nabité baktériami (<b>Virchowove leprové bunky</b>), pod epidermou ostáva úzky nepostihnutý pruh. Kožu zhrubnú mnohopočetné uzly (tvár pripomína leví obličaj), baktérie sa šíria do nosa, očí, semenníkov a uzlín a chorý je vysoko infekčný.</li>
+  </ul>
+    </div>
+  </div>
+
+  <p>Medzi týmito pólmi leží plynulé spektrum, ktoré podľa <b>Ridleyho a Joplinga</b> delí lepru podľa sily bunkovej imunity a množstva baktérií v tkanive. Póly majú skratky <b>TT</b> (tuberkuloidná) a <b>LL</b> (lepromatózna); medzi nimi ležia tri <b>hraničné</b> (angl. <i>borderline</i>) formy: <b>BT</b> (hraničná tuberkuloidná, bližšie k TT), <b>BB</b> (stredná hraničná, presne medzi pólmi) a <b>BL</b> (hraničná lepromatózna, bližšie k LL). Čím bližšie k LL, tým slabšia Th1 odpoveď a viac baktérií:</p>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>TT</b> tuberkuloidná lepra (pól so silnou bunkovou imunitou, málo baktérií)</span> <span class="sk"><b>LL</b> lepromatózna lepra (pól so slabou bunkovou imunitou, veľa baktérií)</span> <span class="sk"><b>BT</b> hraničná tuberkuloidná lepra (<i>borderline tuberculoid</i>) – hraničná forma bližšie k TT</span> <span class="sk"><b>BB</b> stredná hraničná lepra (<i>mid-borderline</i>) – presne medzi TT a LL</span> <span class="sk"><b>BL</b> hraničná lepromatózna lepra (<i>borderline lepromatous</i>) – hraničná forma bližšie k LL</span></div>
+  </div>
+
+  <table class="table keep" id="tab-7-4" style="margin:6px 0">
+    <thead><tr><th>Forma</th><th>Bunková imunita (Th1)</th><th>Granulómy v koži</th><th>Baktérie</th><th>WHO</th></tr></thead>
+    <tbody>
+      <tr><td><b><b>tuberkuloidná (TT)</b></b></td><td>silná</td><td>zreteľné, s Langhansovými bunkami a lymfocytmi</td><td>málo</td><td>paucibacilárna</td></tr>
+      <tr><td><b><b>hraničné (BT → BB → BL)</b></b></td><td>postupne slabnúca</td><td>menej usporiadané; BT je bližšie k TT, BL k LL</td><td>postupne viac</td><td>BT paucibacilárna; BB a BL multibacilárne</td></tr>
+      <tr><td><b><b>lepromatózna (LL)</b></b></td><td>slabá</td><td>nie sú – plachty penových histiocytov, málo lymfocytov</td><td>obrovské množstvo</td><td>multibacilárna</td></tr>
+    </tbody>
+  </table>
+
+  <div class="fig-row">
+  <figure class="fig keep" id="fig-7-32" style="--ar:1.33;--fw:720px">
+    <img src="../assets/images/leprosy-tt-histology.jpg" width="1000" height="750" alt="Tuberkuloidná lepra (H&amp;E). Granulóm z epiteloidných buniek s Langhansovými obrovskými bunkami a výrazným lymfocytovým infiltrátom." loading="lazy">
+    <figcaption><b>Obr. 7.32 — Tuberkuloidná lepra (H&amp;E).</b> Granulóm z epiteloidných buniek s Langhansovými obrovskými bunkami a výrazným lymfocytovým infiltrátom. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Leprosy_-_Tuberculoid_(TT)_-_2.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Department of Pathology, Calicut Medical College · Wikimedia Commons · CC BY-SA 4.0</a></figcaption>
+  </figure>
+  <figure class="fig keep" id="fig-7-33" style="--ar:0.75;--fw:720px">
+    <img src="../assets/images/leprosy-ll-histology.jpg" width="750" height="1000" alt="Lepromatózna lepra (H&amp;E). Infiltrát z penových histiocytov (Virchowových buniek) takmer bez lymfocytov." loading="lazy">
+    <figcaption><b>Obr. 7.33 — Lepromatózna lepra (H&amp;E).</b> Infiltrát z penových histiocytov (Virchowových buniek) takmer bez lymfocytov. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Leprosy_-_Lepromatous_(LL)_40x.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Department of Pathology, Calicut Medical College · Wikimedia Commons · CC BY-SA 4.0</a></figcaption>
+  </figure>
+  </div>
+
+  <figure class="fig keep" id="fig-7-34" style="--fw:720px">
+    <img src="../assets/images/leprosy-skin-lesions.jpg" width="1000" height="659" alt="Multibacilárna (lepromatózna) lepra – plošné kožné ložiská na chrbte a boku." loading="lazy">
+    <figcaption><b>Obr. 7.34 — Multibacilárna (lepromatózna) lepra – plošné kožné ložiská na chrbte a boku.</b> <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Multibacillary_leprosy_lesion.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>CDC · Wikimedia Commons · CC0</a></figcaption>
+  </figure>
+
+  <div class="box k-detek keep">
+    <div class="label">Detekcia</div>
+    <div class="body">
+      <p>Rozdiel v bunkovej imunite ukazuje <b>lepromínový test</b> (usmrtené baktérie vpichnuté do kože, odčíta sa po 3 týždňoch): pri tuberkuloidnej lepre vznikne uzlík, pri lepromatóznej nie. Na diagnózu neslúži – hovorí len o schopnosti vytvoriť granulóm. Na liečbu WHO delí lepru prakticky: <b>paucibacilárna</b> (1–5 kožných ložísk, v stere bez baktérií) a <b>multibacilárna</b> (viac ložísk, postihnutie nervov alebo baktérie v stere). Baktérie sa v koži dokazujú <b>modifikovaným</b> acidorezistentným farbením (Fite–Faraco), lebo <i>M. leprae</i> je citlivejšie na odfarbenie než <i>M. tuberculosis</i>. Liečba kombináciou dapsónu, rifampicínu a klofazimínu trvá 6 alebo 12 mesiacov.</p>
+    </div>
+  </div>
+
+  <figure class="fig keep" id="fig-7-35" style="--fw:720px">
+    <img src="../assets/images/leprosy-afb-globi.jpg" width="1000" height="648" alt="Lepromatózna lepra, histoidná forma (Wade–Fite). Acidorezistentné tyčinky sú nahustené v makrofágoch ako snopy pšenice; plne zafarbené tyčinky sú živé." loading="lazy">
+    <figcaption><b>Obr. 7.35 — Lepromatózna lepra, histoidná forma (Wade–Fite).</b> Acidorezistentné tyčinky sú nahustené v makrofágoch ako snopy pšenice; plne zafarbené tyčinky sú živé. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Lepromatous_leprosy_histoid_leprosy_Wellcome_W0043388.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>SB Lucas, Wellcome Collection · Wikimedia Commons · CC0</a></figcaption>
+  </figure>
+
+  <div class="box k-klin aside keep">
+    <div class="label">Klinika</div>
+    <div class="body">
+      <p><b>Lepra reakcie.</b> Počas choroby aj po liečbe sa imunita môže vychýliť a vzniknú akútne reakcie, ktoré poškodia nervy rýchlejšie než baktérie. <b>Typ 1 (reverzná)</b> sa objaví pri hraničných formách: vzrastie bunková imunita a oneskorená precitlivenosť (IV. typ) zapáli kožné ložiská a nervy – opuch, bolesť, strata funkcie nervu. <b>Typ 2 (erythema nodosum leprosum)</b> vzniká pri hraničnej lepromatóznej a lepromatóznej lepre: ukladanie imunokomplexov (III. typ) spôsobí bolestivé červené uzly, horúčku a celkový zápal; postihuje takmer polovicu chorých pri lepromatóznom konci spektra.</p>
+    </div>
+  </div>
+
+  <p>Rovnaký princíp – baktéria prežíva v makrofágu, ktorý nedostane aktivačný signál – má niekoľko ďalších stavov: <b>atypické mykobaktérie</b> (<i>M. avium</i> komplex) u chorých s AIDS pri veľmi nízkom počte CD4⁺ lymfocytov (makrofágy plné baktérií v uzlinách, črevnej sliznici a dreni), <b>rinosklerom</b> (<i>Klebsiella rhinoscleromatis</i>; zhrubnutie nosa a dýchacích ciest, veľké penové <b>Mikuliczove bunky</b> s baktériami a plazmocyty) a <b>Whippleova choroba</b> (<i>Tropheryma whipplei</i>; PAS-pozitívne makrofágy v slizničnom väzive tenkého čreva, ktoré blokujú vstrebávanie a lymfu).</p>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>AIDS</b> syndróm získanej imunitnej nedostatočnosti</span></div>
+  </div>
+
+  <div class="fig-row">
+  <figure class="fig keep" id="fig-7-36" style="--ar:1.44;--fw:700px">
+    <img src="../assets/images/mac-lymph-node-afb.jpg" width="700" height="486" alt="Mycobacterium avium komplex u chorého s AIDS (lymfatická uzlina, Ziehl–Neelsen). Obrovské množstvo acidorezistentných tyčiniek vo veľkých histiocytoch." loading="lazy">
+    <figcaption><b>Obr. 7.36 — Mycobacterium avium komplex u chorého s AIDS (lymfatická uzlina, Ziehl–Neelsen).</b> Obrovské množstvo acidorezistentných tyčiniek vo veľkých histiocytoch. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Mycobacterium_avium-intracellulare.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>CDC / Dr. Edwin P. Ewing, Jr. · Wikimedia Commons · Public domain</a></figcaption>
+  </figure>
+  <figure class="fig keep" id="fig-7-37" style="--ar:1.50;--fw:720px">
+    <img src="../assets/images/rhinoscleroma.jpg" width="1000" height="666" alt="Rinosklerom (H&amp;E, veľké zväčšenie). Svetlé penovité Mikuliczove bunky a plazmocyty v podslizničnom väzive; v striebrení sa v nich našli baktérie." loading="lazy">
+    <figcaption><b>Obr. 7.37 — Rinosklerom (H&amp;E, veľké zväčšenie).</b> Svetlé penovité Mikuliczove bunky a plazmocyty v podslizničnom väzive; v striebrení sa v nich našli baktérie. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Rhinoscleroma_-_very_high_mag.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Nephron · Wikimedia Commons · CC BY-SA 3.0</a></figcaption>
+  </figure>
+  </div>
+
+  <div class="fig-row">
+  <figure class="fig keep" id="fig-7-38" style="--ar:1.50;--fw:720px">
+    <img src="../assets/images/whipple-he.jpg" width="1000" height="665" alt="Whippleova choroba (dvanástnik, H&amp;E). Klky sú roztiahnuté veľkými ružovými bunkami; hlboká časť sliznice je zachovaná." loading="lazy">
+    <figcaption><b>Obr. 7.38 — Whippleova choroba (dvanástnik, H&amp;E).</b> Klky sú roztiahnuté veľkými ružovými bunkami; hlboká časť sliznice je zachovaná. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Whipples_Disease_(6881505581).jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Ed Uthman · Wikimedia Commons · CC BY 2.0</a></figcaption>
+  </figure>
+  <figure class="fig keep" id="fig-7-39" style="--ar:0.67;--fw:666px">
+    <img src="../assets/images/whipple-pas.jpg" width="666" height="1000" alt="Whippleova choroba (PAS). Makrofágy v klku sú plné PAS-pozitívneho materiálu (purpurovo-ružový)." loading="lazy">
+    <figcaption><b>Obr. 7.39 — Whippleova choroba (PAS).</b> Makrofágy v klku sú plné PAS-pozitívneho materiálu (purpurovo-ružový). <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Whipples_Disease,_PAS_(6881958781).jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Ed Uthman · Wikimedia Commons · CC BY 2.0</a></figcaption>
+  </figure>
+  </div>
+</div>
+
+<!-- ══ 7.7 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-7-7"><span class="n">7.7</span><span>Granulóm bez T-lymfocytov: cudzie teleso a kryštály</span></h2>
+<div class="sec-body">
+  <p>Nestráviteľný materiál vyvolá granulóm bez účasti špecifickej imunity. Mechanizmus organizácie a obrovské bunky z cudzích telies sú opísané pri hojení (<a class="xref" href="05_hojenie.html#sec-5-7">→ 5.7 Organizácia: čo telo samo nevstrebe</a>); tu stačí, <b>odkiaľ materiál pochádza</b>:</p>
+
+  <ul>
+    <li><b>zvonku</b> – šijací materiál, trieska, mastenec a vlákna (u injekčných narkomanov v pľúcach), silikón, tetovacie farbivá,</li>
+    <li><b>z vlastného tela, ktoré sa dostalo na zlé miesto</b> – keratín z prasknutej epidermovej cysty alebo zo zrohovatených nádorových buniek, kryštály kyseliny močovej v dnavom <b>tofe</b>, kryštály cholesterolu, vlasy v sínuse (pilonidálny sínus), zvyšky žlče.</li>
+  </ul>
+
+  <div class="box k-jadro aside keep">
+    <div class="label">Jadro</div>
+    <div class="body">
+      <p>Nestráviteľný materiál – zvonku alebo vlastný na zlom mieste – vyvolá granulóm <b>bez T-lymfocytov</b>: obrovské bunky z cudzích telies a puzdro.</p>
+    </div>
+  </div>
+
+  <p>Väzivo, ktoré materiál obalí, ho niekedy postupne vytlačí na povrch kože či sliznice – teleso sa „vygranuluje“ (napr. steh, ktorý po týždňoch vyjde z jazvy). Kryštály kyseliny močovej rozpustí formalín; dnavé tofy sa preto dokazujú vo vzorke fixovanej v alkohole, kde ihlicovité kryštály v polarizovanom svetle svietia.</p>
+
+  <div class="fig-row">
+  <figure class="fig keep" id="fig-7-40" style="--ar:1.34;--fw:720px">
+    <img src="../assets/images/suture-micrograph.jpg" width="1000" height="747" alt="Šijací materiál s reakciou obrovských buniek z cudzích telies (H&amp;E)." loading="lazy">
+    <figcaption><b>Obr. 7.40 — Šijací materiál s reakciou obrovských buniek z cudzích telies (H&amp;E).</b> <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Suture_micrograph.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Nephron · Wikimedia Commons · CC BY-SA 3.0</a></figcaption>
+  </figure>
+  <figure class="fig keep" id="fig-7-41" style="--ar:1.33;--fw:720px">
+    <img src="../assets/images/keratin-granuloma.jpg" width="1000" height="750" alt="Granulóm z keratínu (H&amp;E). Okolo keratínových lamiel obrovské bunky z cudzích telies a chronický zápalový infiltrát." loading="lazy">
+    <figcaption><b>Obr. 7.41 — Granulóm z keratínu (H&amp;E).</b> Okolo keratínových lamiel obrovské bunky z cudzích telies a chronický zápalový infiltrát. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Foreign_body_granuloma_2.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Department of Pathology, Calicut Medical College · Wikimedia Commons · CC BY-SA 4.0</a></figcaption>
+  </figure>
+  </div>
+
+  <div class="fig-row">
+  <figure class="fig keep" id="fig-7-42" style="--ar:1.39;--fw:720px">
+    <img src="../assets/images/gout-tophus-gross.jpg" width="728" height="524" alt="Dnavý tofus (MA). Hmota z kryštálov urátu ukladaná v periartikulárnom tkanive." loading="lazy">
+    <figcaption><b>Obr. 7.42 — Dnavý tofus (MA).</b> Hmota z kryštálov urátu ukladaná v periartikulárnom tkanive. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Gout_-_Tophus.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Y. Rosen, MD · Wikimedia Commons · CC BY-SA 2.0</a></figcaption>
+  </figure>
+  <figure class="fig keep" id="fig-7-43" style="--ar:1.50;--fw:720px">
+    <img src="../assets/images/gout-tophus-histology.jpg" width="1000" height="666" alt="Dnavý tofus (H&amp;E, malé zväčšenie). Svetlé amorfné ložiská po rozpustených urátových kryštáloch, medzi nimi zápalové bunky." loading="lazy">
+    <figcaption><b>Obr. 7.43 — Dnavý tofus (H&amp;E, malé zväčšenie).</b> Svetlé amorfné ložiská po rozpustených urátových kryštáloch, medzi nimi zápalové bunky. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Gouty_tophus_-_low_mag.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Nephron · Wikimedia Commons · CC BY-SA 3.0</a></figcaption>
+  </figure>
+  <figure class="fig keep" id="fig-7-44" style="--ar:0.67;--fw:599px">
+    <img src="../assets/images/urate-crystals-polarized.jpg" width="599" height="900" alt="Kryštály urátu z dnavého tofu v kompenzovanom polarizovanom svetle (roztlačený náter z výtoku z rany na nohe). V bioptickej vzorke vo formalíne by sa rozpustili." loading="lazy">
+    <figcaption><b>Obr. 7.44 — Kryštály urátu z dnavého tofu v kompenzovanom polarizovanom svetle (roztlačený náter z výtoku z rany na nohe).</b> V bioptickej vzorke vo formalíne by sa rozpustili. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Monosodium_Urate_Crystals_in_Tophaceous_Gout_(4306256393).jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Ed Uthman · Wikimedia Commons · CC BY 2.0</a></figcaption>
+  </figure>
+  </div>
+
+  <figure class="fig keep" id="fig-7-45" style="--fw:720px">
+    <img src="../assets/images/pilonidal-hair.jpg" width="1000" height="750" alt="Zapálený pilonidálny sínus s vlasom (H&amp;E). Šípka ukazuje malý úlomok vlasu." loading="lazy">
+    <figcaption><b>Obr. 7.45 — Zapálený pilonidálny sínus s vlasom (H&amp;E).</b> Šípka ukazuje malý úlomok vlasu. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Hair_in_a_pilonidal_sinus_(51567239455).jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Atlas of Medical Foreign Bodies · Wikimedia Commons · CC BY-SA 2.0</a></figcaption>
+  </figure>
+</div>
+
+<!-- ══ 7.8 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-7-8"><span class="n">7.8</span><span>Granulóm s hnisom</span></h2>
+<div class="sec-body">
+  <p>Niektoré baktérie žijú v makrofágoch, a preto vyvolávajú granulóm, ale zároveň silno priťahujú neutrofily. V strede granulómu vznikne drobný <b>absces</b>, lemovaný palisádou epiteloidných buniek – <b>hnisavý (abscedujúci) granulóm</b>. V uzline takéto ložiská splývajú do hviezdicovitých abscesov. Podľa toho, kade baktéria vnikne, zapáli inú skupinu uzlín:</p>
+
+  <div class="box k-jadro aside keep">
+    <div class="label">Jadro</div>
+    <div class="body">
+      <p>Baktéria žije v makrofágu a zároveň priťahuje neutrofily → <b>granulóm s abscesom</b> v strede. Ktorá uzlina sa zapáli, určí vstupná brána.</p>
+    </div>
+  </div>
+
+  <ul>
+    <li><b>Choroba z mačacieho škrabnutia</b> (<i>Bartonella henselae</i>) – najčastejší hnisavý granulóm u nás. Asi 1–3 týždne po škrabnutí alebo uhryznutí mačkou (často mláďaťom) sa v mieste vstupu objaví papula a potom sa zväčší spádová uzlina v podpazuší alebo na krku. U zdravých ľudí sa zvyčajne zahojí sama.</li>
+    <li><b>Tularémia</b> (<i>Francisella tularensis</i>) – vstupuje tiež kožou, pri sťahovaní kože zajacov alebo po uhryznutí kliešťom; v mieste vstupu vred, v spádovej uzline hnisavý granulóm.</li>
+    <li><b>Mezenteriálna lymfadenitída</b> (<i>Yersinia enterocolitica</i> a <i>Y. pseudotuberculosis</i>) – po nakazení kontaminovanou potravou sa zapália uzliny pri terminálnom ileu; u detí a dospievajúcich napodobní zápal slepého čreva.</li>
+    <li><b>Listerióza</b> (<i>Listeria monocytogenes</i>) – u plodu a novorodenca nakazeného od matky drobné hnisavé granulómy vo viacerých orgánoch.</li>
+    <li><b>Venerický lymfogranulóm</b> (<i>lymphogranuloma venereum</i>; <i>Chlamydia trachomatis</i>, sérotypy L1–L3) – pohlavne prenosná infekcia, hnisavé zväčšenie slabinových uzlín s píšťalami; pri rektálnej infekcii proktitída a striktúry, jazvy po zápale zablokujú lymfu (elefantiáza genitálu).</li>
+  </ul>
+
+  <div class="fig-row">
+  <figure class="fig keep" id="fig-7-46" style="--ar:1.47;--fw:700px">
+    <img src="../assets/images/cat-scratch-papule.jpg" width="700" height="477" alt="Choroba z mačacieho škrabnutia – papula v mieste vstupu na koži ruky." loading="lazy">
+    <figcaption><b>Obr. 7.46 — Choroba z mačacieho škrabnutia – papula v mieste vstupu na koži ruky.</b> <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Cat-scratch_disease_lesion.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>CDC / Dr. Thomas F. Sellers, Emory University · Wikimedia Commons · Public domain</a></figcaption>
+  </figure>
+  <figure class="fig keep" id="fig-7-47" style="--ar:1.50;--fw:720px">
+    <img src="../assets/images/cat-scratch-histology.jpg" width="1000" height="666" alt="Choroba z mačacieho škrabnutia (uzlina, H&amp;E, veľmi veľké zväčšenie). Neutrofily v nekrotických ložiskách, hviezdicovité mikroabscesy a granulómy." loading="lazy">
+    <figcaption><b>Obr. 7.47 — Choroba z mačacieho škrabnutia (uzlina, H&amp;E, veľmi veľké zväčšenie).</b> Neutrofily v nekrotických ložiskách, hviezdicovité mikroabscesy a granulómy. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Cat_scratch_disease_-_very_high_mag.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Nephron · Wikimedia Commons · CC BY-SA 3.0</a></figcaption>
+  </figure>
+  <figure class="fig keep" id="fig-7-48" style="--ar:1.50;--fw:700px">
+    <img src="../assets/images/tularemia-ulcer.jpg" width="700" height="466" alt="Tularémia – kožný vred na chrbte ruky (ulceroglandulárna forma)." loading="lazy">
+    <figcaption><b>Obr. 7.48 — Tularémia – kožný vred na chrbte ruky (ulceroglandulárna forma).</b> <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Tularemia_lesion.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>CDC · Wikimedia Commons · Public domain</a></figcaption>
+  </figure>
+  </div>
+
+  <div class="box k-pozor aside keep">
+    <div class="label">Pozor</div>
+    <div class="body">
+      <p><b>Aktinomykóza</b> sa často uvádza pri granulomatóznych zápaloch, ale v podstate je to <b>chronický hnisavý zápal</b>. <i>Actinomyces israelii</i> je anaeróbna vláknitá baktéria bežne žijúca v ústach; po extrakcii zuba, úraze alebo pri vnútromaternicovom teliesku vnikne do tkaniva a tvorí abscesy s píšťalami, ktoré sa šíria naprieč fasciami a tkanivo okolo zatvrdne ako drevo. V hnise sú voľným okom viditeľné žlté zrnká („<b>sírové granuly</b>“) – kolónie vlákien s eozinofilným lemom z protilátok a antigénu (Splendoreho–Hoeppliho jav); na reze sa volajú <b>drúzy</b>. Podľa vstupnej brány má štyri formy: cervikofaciálnu (čeľusť a krk; najčastejšia, asi 60 % prípadov), hrudnú, brušnú (najmä slepé črevo a apendix) a panvovú (pri vnútromaternicovom teliesku).</p>
+    </div>
+  </div>
+
+  <figure class="fig keep" id="fig-7-49" style="--fw:720px">
+    <img src="../assets/images/actinomycosis.jpg" width="1000" height="750" alt="Aktinomykóza (H&amp;E). Kolónia Actinomyces (sírová granula) v abscese, obklopená neutrofilmi; na okraji eozinofilný lem." loading="lazy">
+    <figcaption><b>Obr. 7.49 — Aktinomykóza (H&amp;E).</b> Kolónia Actinomyces (sírová granula) v abscese, obklopená neutrofilmi; na okraji eozinofilný lem. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Actinomycosis_(5287905500).jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Yale Rosen · Wikimedia Commons · CC BY-SA 2.0</a></figcaption>
+  </figure>
+
+  <figure class="fig keep" id="fig-7-50" style="--fw:720px">
+    <img src="../assets/images/actinomyces-splendore-hoeppli.jpg" width="1000" height="750" alt="Aktinomykóza – hnisavá lymfadenitída na krku (H&amp;E). Bazofilné kolónie obklopuje ružový eozinofilný lem – fenomén Splendoreho–Hoeppliho." loading="lazy">
+    <figcaption><b>Obr. 7.50 — Aktinomykóza – hnisavá lymfadenitída na krku (H&amp;E).</b> Bazofilné kolónie obklopuje ružový eozinofilný lem – fenomén Splendoreho–Hoeppliho. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Actinomyces_with_Splendore-Hoeppli_phenomenon.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Mark ong · Wikimedia Commons · CC BY-SA 4.0</a></figcaption>
+  </figure>
+</div>
+
+<!-- ══ 7.9 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-7-9"><span class="n">7.9</span><span>Granulóm na poškodenej cieve a väzive</span></h2>
+<div class="sec-body">
+  <p>Pri tejto skupine sa ako prvé poškodí väzivo alebo cieva – protilátkami, imunokomplexmi či zúžením ciev – a granulóm vzniká až okolo odumretého tkaniva. V strede preto nie je kazeum, ale <b>fibrinoid</b> alebo <b>koagulačná nekróza</b> (<a class="xref" href="01_atrofia_nekroza_apoptoza.html#sub-1-6-5">→ 1.6.5 Fibrinoidná nekróza</a>).</p>
+
+  <div class="box k-jadro aside keep">
+    <div class="label">Jadro</div>
+    <div class="body">
+      <p>Najprv sa poškodí väzivo alebo cieva, granulóm vzniká až okolo odumretého tkaniva → v strede <b>fibrinoid</b> alebo koagulačná nekróza, nie kazeum.</p>
+    </div>
+  </div>
+
+  <p><b>Reumatická horúčka</b> vzniká 2–4 týždne po neliečenej angíne vyvolanej <b>streptokokom skupiny A</b>. Protilátky a T-lymfocyty namierené proti M-proteínu streptokoka skrížene reagujú s myozínom srdca a bielkovinami chlopní (molekulové mimikry) → zápal všetkých vrstiev srdca, kĺbov, kože a mozgu. V interstíciu myokardu pri cievach vznikajú <b>Aschoffove uzlíky</b>: v strede fibrinoidne zmenený kolagén, okolo makrofágy s chromatínom v pozdĺžnom pruhu (<b>Aničkovove bunky</b>, na priečnom reze ako „sovie oko“, pozdĺžne ako húsenica), viacjadrové Aschoffove bunky a lymfocyty. Uzlík sa zahojí vretenovitou jazvičkou; opakované ataky zjazvia chlopne.</p>
+
+  <figure class="fig keep" id="fig-7-51" style="--fw:720px">
+    <img src="../assets/images/aschoff-body.jpg" width="1000" height="667" alt="Aschoffov uzlík pri reumatickej myokarditíde (H&amp;E). Ložisko makrofágov a lymfocytov v interstíciu medzi kardiomyocytmi." loading="lazy">
+    <figcaption><b>Obr. 7.51 — Aschoffov uzlík pri reumatickej myokarditíde (H&amp;E).</b> Ložisko makrofágov a lymfocytov v interstíciu medzi kardiomyocytmi. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Aschoff_Body_in_Rheumatic_Myocarditis.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Ed Uthman · Wikimedia Commons · CC BY-SA 2.0</a></figcaption>
+  </figure>
+
+  <figure class="fig keep" id="fig-7-52" style="--fw:720px">
+    <img src="../assets/images/anitschkow-cells.jpg" width="1000" height="667" alt="Aničkovove bunky v Aschoffovom uzlíku (H&amp;E, veľké zväčšenie). Chromatín jadra tvorí pozdĺžny pruh ako húsenica." loading="lazy">
+    <figcaption><b>Obr. 7.52 — Aničkovove bunky v Aschoffovom uzlíku (H&amp;E, veľké zväčšenie).</b> Chromatín jadra tvorí pozdĺžny pruh ako húsenica. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Anitschkow_Myocytes_in_an_Aschoff_Body,_Rheumatic_Myocarditis.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Ed Uthman · Wikimedia Commons · CC BY-SA 2.0</a></figcaption>
+  </figure>
+
+  <div class="box k-klin aside keep">
+    <div class="label">Klinika</div>
+    <div class="body">
+      <p>Diagnóza akútnej reumatickej horúčky sa opiera o <b>Jonesove kritériá</b> (revízia AHA 2015 pridala echokardiografický dôkaz karditídy aj bez šelestu). Chronická reumatická choroba srdca – zrastené a zjazvené cípy mitrálnej chlopne so zúženým ústím („rybia papuľa“) – je vo svete stále najčastejšou získanou chlopňovou chybou mladých ľudí. Najlepšou prevenciou je liečba streptokokovej angíny penicilínom – ruší antigénny podnet skôr, než vznikne skrížená reakcia.</p>
+    </div>
+  </div>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>AHA</b> Americká kardiologická asociácia (<i>American Heart Association</i>)</span></div>
+  </div>
+
+  <p><b>Reumatoidný uzol</b> vzniká v podkoží nad tlakovými miestami (lakeť, predlaktie) pri reumatoidnej artritíde: v strede fibrinoidná nekróza, okolo ktorej sú makrofágy zoradené kolmo na jej okraj ako <b>palisáda</b>, na obvode granulačné tkanivo s lymfocytmi.</p>
+
+  <figure class="fig keep" id="fig-7-53" style="--fw:720px">
+    <img src="../assets/images/rheumatoid-nodule.jpg" width="1000" height="748" alt="Reumatoidný uzol (H&amp;E, anotované). V strede fibrinoidná nekróza, okolo nej palisáda epiteloidných histiocytov." loading="lazy">
+    <figcaption><b>Obr. 7.53 — Reumatoidný uzol (H&amp;E, anotované).</b> V strede fibrinoidná nekróza, okolo nej palisáda epiteloidných histiocytov. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Histopathology_of_a_rheumatoid_nodule.png" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Mikael Häggström, M.D. · Wikimedia Commons · CC0</a></figcaption>
+  </figure>
+
+  <p><b>Granulomatóza s polyangiitídou</b> je nekrotizujúca vaskulitída malých ciev s nekrotizujúcimi granulómami v dýchacích cestách (nos, prinosové dutiny, pľúca) a glomerulonefritídou. Protilátky ANCA proti proteináze 3 (c-ANCA) aktivujú neutrofily, ktoré poškodia stenu ciev; nekrotické ložiská majú nepravidelný, „mapovitý“ tvar a bazofilný detritus. Rozpad nosovej prepážky vedie k sedlovitému nosu.</p>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>ANCA</b> protilátky proti cytoplazme neutrofilov</span></div>
+  </div>
+
+  <div class="fig-row">
+  <figure class="fig keep" id="fig-7-54" style="--ar:1.50;--fw:720px">
+    <img src="../assets/images/gpa-histology.jpg" width="1000" height="666" alt="Granulomatóza s polyangiitídou (pľúcna biopsia, H&amp;E, stredné zväčšenie). Granulomatózny zápal pri vaskulitíde súvisiacej s ANCA." loading="lazy">
+    <figcaption><b>Obr. 7.54 — Granulomatóza s polyangiitídou (pľúcna biopsia, H&amp;E, stredné zväčšenie).</b> Granulomatózny zápal pri vaskulitíde súvisiacej s ANCA. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Wegener's_granulomatosis_-b-_intermed_mag.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Nephron · Wikimedia Commons · CC BY-SA 3.0</a></figcaption>
+  </figure>
+  <figure class="fig keep" id="fig-7-55" style="--ar:1.34;--fw:709px">
+    <img src="../assets/images/gpa-saddle-nose.jpg" width="709" height="531" alt="Sedlovitý nos pri granulomatóze s polyangiitídou: po zničení nosovej prepážky sa nos prepadne." loading="lazy">
+    <figcaption><b>Obr. 7.55 — Sedlovitý nos pri granulomatóze s polyangiitídou: po zničení nosovej prepážky sa nos prepadne.</b> <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Jmc2028e-g001.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>S. C. Kawabata, P. T. Hirono Hotta, R. Brito e Dias et al. · Wikimedia Commons · CC BY 3.0</a></figcaption>
+  </figure>
+  </div>
+
+  <div class="rev keep">
+    <div class="label"><span class="r">R</span>Revízia — Wegenerova granulomatóza sa dnes volá granulomatóza s polyangiitídou</div>
+    <div class="body">
+      <p>Medzinárodná konsenzuálna konferencia v Chapel Hill (revízia 2012) nahradila mená osôb v názvoch vaskulitíd opisom podstaty choroby: <b>Wegenerova granulomatóza → granulomatóza s polyangiitídou (GPA)</b>, Churgov–Straussovej syndróm → eozinofilná granulomatóza s polyangiitídou. Starý názov sa ešte stretne v starších textoch a v ústnom podaní.</p>
+    </div>
+  </div>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>GPA</b> granulomatóza s polyangiitídou</span></div>
+  </div>
+
+  <p><b>Syfilis</b> (<i>Treponema pallidum</i>) prebieha v štádiách a vo všetkých sa opakujú dva nálezy: infiltrát bohatý na <b>plazmocyty</b> a <b>obliteratívna endarteritída</b> – zhrubnutý endotel a sústredná fibróza intimy malých tepien, ktorá zužuje ich priesvit. Primárne štádium (≈ 3 týždne po nákaze) tvorí nebolestivý tvrdý vred (<i>ulcus durum</i>) s nebolestivo zväčšenými uzlinami; sekundárne štádium je hematogénny rozsev s vyrážkou a vysoko infekčnými plochými kondylómami. Po rokoch latencie môže nasledovať terciárne štádium – <b>guma</b>: ischémia z endarteritídy vyvolá <b>koagulačnú nekrózu</b>, v ktorej na rozdiel od kazea ostávajú obrysy pôvodného tkaniva, obkolesenú palisádou makrofágov, plazmocytmi a väzivom. Konzistencia je gumovitá, jazvy sa sťahujú a deformujú orgán (lalokovitá pečeň). Endarteritída vasa vasorum oslabí stenu hrudnej aorty → <b>syfilitická aortitída</b> s aneuryzmou.</p>
+
+  <div class="fig-row">
+  <figure class="fig keep" id="fig-7-56" style="--ar:1.45;--fw:720px">
+    <img src="../assets/images/syphilis-chancre.jpg" width="1000" height="692" alt="Primárny syfilis – tvrdý vred (ulcus durum) na tele penisu. Vred je tuhý, okrúhly, malý a bezbolestný; trvá 3–6 týždňov a zahojí sa sám." loading="lazy">
+    <figcaption><b>Obr. 7.56 — Primárny syfilis – tvrdý vred (ulcus durum) na tele penisu.</b> Vred je tuhý, okrúhly, malý a bezbolestný; trvá 3–6 týždňov a zahojí sa sám. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Chancres_on_the_penile_shaft_due_to_a_primary_syphilitic_infection_caused_by_Treponema_pallidum_6803_lores.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>CDC / M. Rein · Wikimedia Commons · Public domain</a></figcaption>
+  </figure>
+  <figure class="fig keep" id="fig-7-57" style="--ar:1.37;--fw:563px">
+    <img src="../assets/images/syphilis-palmar-rash.jpg" width="563" height="412" alt="Sekundárny syfilis – vyrážka na dlaniach oboch rúk." loading="lazy">
+    <figcaption><b>Obr. 7.57 — Sekundárny syfilis – vyrážka na dlaniach oboch rúk.</b> <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Secondary_syphilis-palmar_rash.PNG" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>CDC · Wikimedia Commons · Public domain</a></figcaption>
+  </figure>
+  </div>
+
+  <figure class="fig keep" id="fig-7-58" style="--fw:720px">
+    <img src="../assets/images/gumma-nose.jpg" width="1000" height="656" alt="Guma nosa pri terciárnom syfilise. Rozpadajúce sa granulomatózne ložisko po rokoch neliečenej infekcie." loading="lazy">
+    <figcaption><b>Obr. 7.58 — Guma nosa pri terciárnom syfilise.</b> Rozpadajúce sa granulomatózne ložisko po rokoch neliečenej infekcie. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Gumma_of_nose_due_to_a_long_standing_tertiary_syphilitic_Treponema_pallidum_infection_5330_lores.jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>CDC / J. Pledger · Wikimedia Commons · Public domain</a></figcaption>
+  </figure>
+
+  <div class="fig-row">
+  <figure class="fig keep" id="fig-7-59" style="--ar:1.44;--fw:608px">
+    <img src="../assets/images/syphilis-gumma-gross.jpg" width="608" height="422" alt="Syfilitická guma na reze (MA). Sivobiele nekrotické ložisko obklopené väzivom." loading="lazy">
+    <figcaption><b>Obr. 7.59 — Syfilitická guma na reze (MA).</b> Sivobiele nekrotické ložisko obklopené väzivom. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Syphilitic_gumma_(3679095981).jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Yale Rosen · Wikimedia Commons · CC BY-SA 2.0</a></figcaption>
+  </figure>
+  <figure class="fig keep" id="fig-7-60" style="--ar:1.33;--fw:720px">
+    <img src="../assets/images/syphilis-gumma-histology.jpg" width="1000" height="750" alt="Syfilitická guma (H&amp;E). V strede koagulačná nekróza, ostro ohraničená od okrajovej zóny fibrózy s chronickým zápalovým infiltrátom; treponémy sa v nej zvyčajne nenájdu." loading="lazy">
+    <figcaption><b>Obr. 7.60 — Syfilitická guma (H&amp;E).</b> V strede koagulačná nekróza, ostro ohraničená od okrajovej zóny fibrózy s chronickým zápalovým infiltrátom; treponémy sa v nej zvyčajne nenájdu. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Syphilitic_gumma_Case_278_(9727666764).jpg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>Yale Rosen · Wikimedia Commons · CC BY-SA 2.0</a></figcaption>
+  </figure>
+  </div>
+
+  <p><b>Syfilitická aortitída</b> je najčastejšou podobou kardiovaskulárneho syfilisu: po rokoch zápal okolo vasa vasorum zničí stenu hrudnej aorty, intima sa zhrubne v bielych lesklých ložiskách, ktoré pripomínajú kôru stromu, a najčastejším klinickým nálezom je aneuryzma vzostupnej aorty; na RTG býva kalcifikácia vzostupnej aorty a oblúka, aká pri ateroskleróze nebýva.</p>
+
+  <div class="box k-detek aside keep">
+    <div class="label">Detekcia</div>
+    <div class="body">
+      <p>Treponémy sa v tkanive dokazujú striebrením alebo presnejšie imunohistochémiou. V praxi sa syfilis potvrdzuje sérologicky: <b>netreponémové testy</b> (RPR, VDRL) merajú protilátky proti lipidom poškodených buniek a slúžia na sledovanie aktivity a liečby, <b>treponémové testy</b> (TPHA, TPPA) dokazujú protilátky priamo proti treponéme a ostávajú pozitívne celý život.</p>
+    </div>
+  </div>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>RPR, VDRL</b> netreponémové testy na syfilis (<i>rapid plasma reagin</i>, <i>Venereal Disease Research Laboratory</i>)</span> <span class="sk"><b>TPHA, TPPA</b> treponémové testy na syfilis (hemaglutinačný a časticový aglutinačný test)</span></div>
+  </div>
+
+  <figure class="fig keep" id="fig-7-61" style="--fw:720px">
+    <img src="../assets/images/treponema-silver.jpg" width="734" height="497" alt="Treponema pallidum v tkanive, modifikované striebrenie podľa Steinera. Tenké tmavé špirálovité vlákna na žltom pozadí." loading="lazy">
+    <figcaption><b>Obr. 7.61 — Treponema pallidum v tkanive, modifikované striebrenie podľa Steinera.</b> Tenké tmavé špirálovité vlákna na žltom pozadí. <a class="src-link" href="https://commons.wikimedia.org/wiki/File:Treponema_pallidum_01.png" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7"></path><path d="M21 3l-9 9"></path><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"></path></svg>CDC / Dr. Edwin P. Ewing, Jr. · Wikimedia Commons · Public domain</a></figcaption>
+  </figure>
+</div>
+
+<!-- ══ 7.10 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-7-10"><span class="n">7.10</span><span>Súhrn a rýchle rozlíšenie</span></h2>
+<div class="sec-body">
+  <table class="table keep" id="tab-7-5" style="margin:6px 0">
+    <thead><tr><th>Stred granulómu</th><th>Mechanizmus</th><th>Typické nálezy</th><th>Príklady</th><th>Potvrdenie</th></tr></thead>
+    <tbody>
+      <tr><td><b>cudzí materiál</b></td><td>inertný materiál, bez T-lymfocytov, nízky obrat</td><td>obrovské bunky z cudzích telies, puzdro</td><td>steh, keratín, dnavý tofus, mastenec</td><td>polarizácia, fixácia v alkohole (kryštály kyseliny močovej)</td></tr>
+      <tr><td><b>nič (bez nekrózy)</b></td><td>prehnaná Th1 odpoveď na slabý antigén</td><td>„nahé“ splývajúce granulómy, asteroidné a Schaumannove telieska</td><td>sarkoidóza, berýlióza</td><td>vylúčenie infekcie; BAL CD4⁺/CD8⁺ &gt; 3,5, ACE, Ca</td></tr>
+      <tr><td><b>kazeum</b></td><td>toxický pôvodca + silná Th1 imunita</td><td>palisáda epiteloidných a Langhansových buniek, hrubý lem lymfocytov</td><td>tuberkulóza, histoplazmóza</td><td>ZN, kultivácia (2–8 týž.), PCR</td></tr>
+      <tr><td><b>kaverna ⟳</b></td><td>kazeum prevalené do priedušky → kyslík → množenie baktérií</td><td>dutina s nekrotickou stenou v hrote pľúc</td><td>postprimárna TBC</td><td>spútum ZN, kultivácia</td></tr>
+      <tr><td><b>granulóm chýba, plachty penových makrofágov</b></td><td>slabá Th1 odpoveď</td><td>makrofágy plné baktérií</td><td>lepromatózna lepra, MAC pri AIDS, rinosklerom, Whipple</td><td>acidorezistentné farbenie (Fite), PAS</td></tr>
+      <tr><td><b>hnis</b></td><td>intracelulárna baktéria + príťažlivá pre neutrofily</td><td>hviezdicovité mikroabscesy s palisádou</td><td>mačacie škrabnutie, yersinióza, venerický lymfogranulóm, tularémia</td><td>sérológia, PCR, striebrenie</td></tr>
+      <tr><td><b>fibrinoid</b></td><td>imunitné poškodenie väziva a ciev</td><td>Aschoffov uzlík, palisáda okolo fibrinoidu, mapovitá nekróza</td><td>reumatická horúčka, reumatoidný uzol, GPA</td><td>ASLO, reumatoidný faktor, ANCA</td></tr>
+      <tr><td><b>koagulačná nekróza s obrysmi tkaniva</b></td><td>obliteratívna endarteritída → ischémia</td><td>plazmocyty, palisáda makrofágov</td><td>syfilitická guma</td><td>sérológia RPR/VDRL a TPHA/TPPA</td></tr>
+    </tbody>
+  </table>
+
+  <div class="box k-skr aside keep">
+    <div class="body"><span class="sk"><b>TBC</b> tuberkulóza</span> <span class="sk"><b>MAC</b> komplex <i>Mycobacterium avium</i></span> <span class="sk"><b>ASLO</b> antistreptolyzín O – protilátky po streptokokovej infekcii</span></div>
+  </div>
+</div>
+
+<!-- ══ 7.11 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-7-11"><span class="n">7.11</span><span>Otázky na zopakovanie</span></h2>
+<div class="sec-body">
+  <ol class="quiz">
+    <li><details><summary>Prečo epiteloidná bunka fagocytuje menej než bežný makrofág, a prečo je to pre telo výhodné?</summary><div class="ans">Epiteloidná bunka je makrofág aktivovaný IFN-γ, ktorý prešiel na „epitelový“ program: spojí sa so susedmi adherentnými spojmi a viac secernuje. Tesná stena z epiteloidných buniek izoluje pôvodcu, ktorého makrofágy nedokázali zničiť, od okolitého tkaniva. <a class="xref" href="#sec-7-2">→ 7.2 Mechanizmus: z makrofágu epiteloidná bunka</a></div></details></li>
+    <li><details><summary>Prečo sa pred liečbou reumatoidnej artritídy liekmi proti TNF vyšetruje latentná tuberkulóza?</summary><div class="ans">TNF udržiava granulóm – privoláva monocyty a aktivuje makrofágy. Jeho zablokovanie granulómy rozvoľní a mykobaktérie, ktoré v nich roky prežívali, sa začnú množiť a šíriť (často mimopľúcne). <a class="xref" href="#sec-7-2">→ 7.2 Mechanizmus: z makrofágu epiteloidná bunka</a></div></details></li>
+    <li><details><summary>Prečo sa granulóm bez nekrózy môže úplne vstrebať, ale kazeifikujúci granulóm zanechá jazvu?</summary><div class="ans">Bez nekrózy ostane väzivo aj cievy tkaniva; po odstránení antigénu epiteloidné bunky zaniknú apoptózou a stavba sa obnoví. Nekróza zničí aj kostru tkaniva, takže ložisko nahradí jazva, ktorá často kalcifikuje. <a class="xref" href="#sec-7-3">→ 7.3 Dve osi, ktoré určia podobu granulómu</a></div></details></li>
+    <li><details><summary>Ako odlíšiš sarkoidózu od tuberkulózy a prečo na tom záleží?</summary><div class="ans">Sarkoidový granulóm je bez nekrózy, s tenkým lemom lymfocytov, bez mykobaktérií, v BAL býva CD4⁺/CD8⁺ &gt; 3,5; tuberkulózny má kazeifikáciu, hrubý lem, mykobaktérie v ZN, kultivácii alebo PCR. Sarkoidóza sa lieči glukokortikoidmi, ktoré by tuberkulózu rozšírili. <a class="xref" href="#sec-7-4">→ 7.4 Sarkoidóza – granulóm bez nekrózy</a></div></details></li>
+    <li><details><summary>Prečo môže mať pacient so sarkoidózou obličkové kamene?</summary><div class="ans">Makrofágy granulómov majú 1α-hydroxylázu a menia vitamín D na kalcitriol nezávisle od parathormónu → čreva vstrebávajú viac vápnika → hyperkalciúria až hyperkalciémia. <a class="xref" href="#sec-7-4">→ 7.4 Sarkoidóza – granulóm bez nekrózy</a></div></details></li>
+    <li><details><summary>Prečo sa kazeózne ložisko prevalené do priedušky mení na zväčšujúcu sa kavernu a čo je bod zvratu?</summary><div class="ans">Do dutiny sa dostane vzduch s kyslíkom, aeróbne mykobaktérie sa v nej množia mimo buniek a ich počet stúpne o rády; imunitná odpoveď na množstvo antigénu spôsobuje ďalšiu nekrózu steny ⟳. Bod zvratu je spojenie ložiska s prieduškou (otvorená kavernózna TBC); prerušiť ho treba kombináciou antituberkulotík. <a class="xref" href="#sub-7-5-2">→ 7.5.2 Latencia, reaktivácia a kaverna</a></div></details></li>
+    <li><details><summary>Prečo pozitívny test IGRA neznamená, že pacient má tuberkulózu?</summary><div class="ans">IGRA meria, či T-lymfocyty pacienta tvoria IFN-γ po stretnutí s antigénmi mykobaktérií – dokazuje senzibilizáciu. Tú má aj latentne infikovaný človek, ktorý nie je chorý ani infekčný; aktívnu chorobu potvrdí až mikroskopia, kultivácia alebo PCR. <a class="xref" href="#sub-7-5-4">→ 7.5.4 Ako sa tuberkulóza dokazuje</a></div></details></li>
+    <li><details><summary>Prečo tuberkuloidná lepra spôsobuje necitlivosť, ale lepromatózna je infekčnejšia?</summary><div class="ans">Pri tuberkuloidnej forme silná Th1 odpoveď tvorí granulómy pozdĺž nervov a ničí ich, baktérií je málo. Pri lepromatóznej slabá Th1 odpoveď nevytvorí granulómy, makrofágy baktérie nezničia a nahromadia ich obrovské množstvo, ktoré sa šíri do nosa a okolia. <a class="xref" href="#sec-7-6">→ 7.6 Keď imunita nestačí na granulóm: lepra a histiocytové reakcie</a></div></details></li>
+    <li><details><summary>Prečo sa srdce pri reumatickej horúčke zapáli, hoci v ňom streptokok nie je?</summary><div class="ans">Protilátky a T-lymfocyty proti M-proteínu streptokoka skrížene reagujú s myozínom srdca a bielkovinami chlopní (molekulové mimikry); vznikajú Aschoffove uzlíky s fibrinoidom a opakované ataky zjazvia chlopne. <a class="xref" href="#sec-7-9">→ 7.9 Granulóm na poškodenej cieve a väzive</a></div></details></li>
+    <li><details><summary>Čím sa syfilitická guma líši od kazeifikácie a prečo?</summary><div class="ans">Guma vzniká z ischémie pri obliteratívnej endarteritíde – je to koagulačná nekróza, v ktorej ostávajú obrysy tkaniva, s množstvom plazmocytov. Kazeum je beztvará lipidová hmota vzniknutá rozpadom makrofágov a tkaniva pod útokom Th1 imunity proti mykobaktériám. <a class="xref" href="#sec-7-9">→ 7.9 Granulóm na poškodenej cieve a väzive</a></div></details></li>
+  </ol>
+</div>
+
+<!-- ══ 7.12 ════════════════════════════════════════════════════════════ -->
+<h2 class="sec-h" id="sec-7-12"><span class="n">7.12</span><span>Zdroje</span></h2>
+<div class="sec-body src">
+  <div class="micro" style="margin-top:8px">Učebnice (kontrola faktov)</div>
+
+  <ul>
+    <li>Zámečník J. a kol.: <i>Patologie</i>, 2. vyd., Praha: LD Prager Publishing, 2024 (kap. 4 Zánět – granulomatózní zánět). ISBN 978-80-11-04919-5.</li>
+  </ul>
+
+  <div class="micro" style="margin-top:8px">Klasifikácie, konsenzy a prehľady</div>
+
+  <ul>
+    <li>World Health Organization: <a href="https://www.who.int/news-room/fact-sheets/detail/tuberculosis" target="_blank" rel="noopener noreferrer">Tuberculosis – fact sheet</a> (aktualizované 24. 3. 2026).</li>
+    <li>McNally A. K., Anderson J. M.: Interleukin-4 induces foreign body giant cells from human monocytes/macrophages. Differential lymphokine regulation of macrophage fusion leads to morphological variants of multinucleated giant cells. <i>Am J Pathol</i> 1995;147(5):1487–1499. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC1869534/" target="_blank" rel="noopener noreferrer">PMC1869534</a> (abstrakt)</li>
+    <li>Burke R. R., Rybicki B. A., Rao D. S.: Calcium and Vitamin D in Sarcoidosis: How to Assess and Manage. <i>Semin Respir Crit Care Med</i> 2010;31(4):474–484. <a href="https://doi.org/10.1055/s-0030-1262215" target="_blank" rel="noopener noreferrer">doi:10.1055/s-0030-1262215</a></li>
+    <li>Harada S., Abe M., Ono Y., Ishida K., Tojo A.: Renal Sarcoidosis With Increased 1,25(OH)2D3 Production via CYP27B1-Expressing Epithelioid Granuloma: A Case Report and Review. <i>Cureus</i> 2025;17(10):e95419. <a href="https://doi.org/10.7759/cureus.95419" target="_blank" rel="noopener noreferrer">doi:10.7759/cureus.95419</a></li>
+    <li>Hunter R. L.: The Pathogenesis of Tuberculosis – The Koch Phenomenon Reinstated. <i>Pathogens</i> 2020;9(10):813. <a href="https://doi.org/10.3390/pathogens9100813" target="_blank" rel="noopener noreferrer">doi:10.3390/pathogens9100813</a></li>
+    <li>Valour F., Sénéchal A., Dupieux C. et al.: Actinomycosis: etiology, clinical features, diagnosis, treatment, and management. <i>Infect Drug Resist</i> 2014;7:183–197. <a href="https://doi.org/10.2147/IDR.S39601" target="_blank" rel="noopener noreferrer">doi:10.2147/IDR.S39601</a></li>
+    <li>Chen K. H., Lin C. Y., Su S. B., Chen K. T.: Leprosy: A Review of Epidemiology, Clinical Diagnosis, and Management. <i>J Trop Med</i> 2022;2022:8652062. <a href="https://doi.org/10.1155/2022/8652062" target="_blank" rel="noopener noreferrer">doi:10.1155/2022/8652062</a></li>
+    <li>Národné centrum zdravotníckych informácií: <a href="https://www.nczisk.sk/Documents/aktuality/tlacove_spravy/2025/TS_Tuberkuloza_05092025.pdf" target="_blank" rel="noopener noreferrer">Tuberkulóza na Slovensku: najviac prípadov je u detí a seniorov</a>, tlačová správa 5. 9. 2025; <a href="https://www.nczisk.sk/Documents/aktuality/tlacove_spravy/2025/TS_TBC_04032025.pdf" target="_blank" rel="noopener noreferrer">Pribúdajú deti s tuberkulózou</a>, 4. 3. 2025.</li>
+    <li>World Health Organization: <a href="https://www.who.int/news-room/fact-sheets/detail/leprosy" target="_blank" rel="noopener noreferrer">Leprosy – fact sheet</a> (aktualizované 23. 1. 2026).</li>
+    <li>Weeratunga P., Moller D. R., Ho L. P.: Immune mechanisms of granuloma formation in sarcoidosis and tuberculosis. <i>J Clin Invest</i> 2024;134(1):e175264. <a href="https://doi.org/10.1172/JCI175264" target="_blank" rel="noopener noreferrer">doi:10.1172/JCI175264</a></li>
+    <li>Cronan M. R.: In the Thick of It: Formation of the Tuberculous Granuloma and Its Effects on Host and Therapeutic Responses. <i>Front Immunol</i> 2022;13:820134. <a href="https://doi.org/10.3389/fimmu.2022.820134" target="_blank" rel="noopener noreferrer">doi:10.3389/fimmu.2022.820134</a></li>
+    <li>Zhao J., Ma L., Luan J.: Diagnosis and treatment of sarcoidosis based on immunological etiology and mechanisms. <i>Front Med (Lausanne)</i> 2026;13:1754491. <a href="https://doi.org/10.3389/fmed.2026.1754491" target="_blank" rel="noopener noreferrer">doi:10.3389/fmed.2026.1754491</a></li>
+    <li>Gewitz M. H., Baltimore R. S., Tani L. Y. et al.: Revision of the Jones Criteria for the diagnosis of acute rheumatic fever in the era of Doppler echocardiography. <i>Circulation</i> 2015;131(20):1806–1818. <a href="https://doi.org/10.1161/CIR.0000000000000205" target="_blank" rel="noopener noreferrer">doi:10.1161/CIR.0000000000000205</a> (abstrakt)</li>
+    <li>Sargin G.: The Evaluation of Changing the Eponym Churg–Strauss Syndrome Due to the 2012 Revised International Chapel Hill Consensus Conference Nomenclature of Vasculitides. <i>J Clin Med</i> 2024;13(12):3424. <a href="https://doi.org/10.3390/jcm13123424" target="_blank" rel="noopener noreferrer">doi:10.3390/jcm13123424</a></li>
+    <li>StatPearls (NCBI Bookshelf; kapitoly čítané cez Europe PMC, stav 13. 10. 2026): <a href="https://www.ncbi.nlm.nih.gov/books/NBK430687/" target="_blank" rel="noopener noreferrer">Sarcoidosis</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK441916/" target="_blank" rel="noopener noreferrer">Tuberculosis Overview</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK538331/" target="_blank" rel="noopener noreferrer">Tuberculous Spondylitis (Pott Disease)</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK541015/" target="_blank" rel="noopener noreferrer">Tuberculous Meningitis</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK557700/" target="_blank" rel="noopener noreferrer">Scrofula</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK557558/" target="_blank" rel="noopener noreferrer">Genitourinary Tuberculosis</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK559307/" target="_blank" rel="noopener noreferrer">Leprosy</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK534780/" target="_blank" rel="noopener noreferrer">Syphilis</a></li>
+  </ul>
+
+  <div class="micro" style="margin-top:8px">Obrázky</div>
+
+  <p>Autor, licencia a odkaz na zdroj sú pri každom obrázku; súhrn je v registri <code>ZDROJE-OBRAZKOV.md</code>. Fotografie a mikrofotografie pochádzajú z Wikimedia Commons (vrátane zbierok CDC PHIL a Wellcome Collection) s licenciou CC0, public domain, CC BY alebo CC BY-SA; výber obrázkov nie je prevzatý z žiadnej učebnice. <a class="figref" href="#fig-granulom-mapa" data-fig="fig-granulom-mapa">Obr. 7.4</a> a <a class="figref" href="#fig-kruh-kaverna" data-fig="fig-kruh-kaverna">7.20</a> sú vlastné schémy (CC BY-NC-SA 4.0).</p>
+</div>
+
+<p class="next"><b>Pokračuje v:</b>
+  <a class="xref" href="08_miestne_poruchy_obehu.html">→ 8 Miestne poruchy krvného obehu</a>
+</p>
+
+<div class="running-foot">
+  <span>PATOLA — poznámky z patológie · Kapitola 7</span>
+  <span class="tnum">§ 7.1–7.12</span>
+</div>
+
+</main>
+  </div>
+  <div class="site-spacer" aria-hidden="true"></div>
+</div>
+
+<script src="../assets/js/site.js" defer></script>
+<script src="../assets/js/peek.js" defer></script>
+<script src="../assets/js/toc-collapse.js" defer></script>
+<script>
+/* tlač kapitoly otvorenej v ráme hlavnej stránky (index.html).
+   Rodič pošle "pf:print"; Ctrl/Cmd+P vo vnútri rámu tlačí rám, nie obsah knihy. */
+(function(){
+  var imgs = function(){ return Array.prototype.slice.call(document.querySelectorAll('img[loading="lazy"]')); };
+  // lenivé obrázky sa po načítaní stránky dotiahnu na pozadí, aby v tlači neboli prázdne
+  window.addEventListener("load", function(){ setTimeout(function(){ imgs().forEach(function(i){ i.loading = "eager"; }); }, 800); });
+  // v tlači sú odpovede na otázky vidieť (zatvorený <details> by sa vytlačil bez nich)
+  var shut = [];
+  // predvolený názov súboru pri tlači = kapitola („Kapitola 3 – Zápal …“); title sa po tlači vráti
+  // (po maximalizovanom náhľade je v document.title už iná kapitola, preto sa číta až teraz)
+  var keep = null;
+  function printTitle(){ return document.title.replace(/^(\d+) · /, "Kapitola $1 – "); }
+  function titleOn(){ if (keep === null) { keep = document.title; document.title = printTitle(); } }
+  function titleOff(){ if (keep !== null) { document.title = keep; keep = null; } }
+  window.addEventListener("beforeprint", function(){ titleOn(); shut = Array.prototype.filter.call(document.querySelectorAll("ol.quiz details"), function(d){ return !d.open; }); shut.forEach(function(d){ d.open = true; }); });
+  window.addEventListener("afterprint", function(){ titleOff(); shut.forEach(function(d){ d.open = false; }); shut = []; });
+  if (window.top === window.self) return;
+  // v ráme berie prehliadač názov súboru z hlavnej stránky → pošli jej názov kapitoly
+  window.addEventListener("afterprint", function(){ try { window.parent.postMessage({ pf: "title", title: null }, "*"); } catch (e) {} });
+  function printMe(){
+    var all = Array.prototype.slice.call(document.images);
+    all.forEach(function(i){ i.loading = "eager"; });
+    try { window.parent.postMessage({ pf: "title", title: printTitle() }, "*"); } catch (e) {}
+    var t0 = Date.now();
+    (function wait(){
+      if (Date.now() - t0 > 150 && (all.every(function(i){ return i.complete; }) || Date.now() - t0 > 4000)) { try { window.focus(); window.print(); } catch (e) {} }
+      else setTimeout(wait, 100);
+    })();
+  }
+  window.addEventListener("message", function(e){ if (e.data === "pf:print") printMe(); });
+  document.addEventListener("keydown", function(e){
+    if ((e.ctrlKey || e.metaKey) && !e.altKey && (e.key === "p" || e.key === "P")) { e.preventDefault(); printMe(); }
+  });
+})();
+</script>
+<script src="../assets/glossary/01-adaptacia-a-bunkova-smrt.js" defer></script>
+<script src="../assets/glossary/02-nekroza-a-gangrena.js" defer></script>
+<script src="../assets/glossary/03-dystrofie-a-amyloid.js" defer></script>
+<script src="../assets/glossary/04-zapal-a-exsudat.js" defer></script>
+<script src="../assets/glossary/05-mechanizmy-a-skratky.js" defer></script>
+<script src="../assets/glossary/06-obeh-a-hemostaza.js" defer></script>
+<script src="../assets/glossary/07-celkovy-obeh.js" defer></script>
+<script src="../assets/glossary/08-granulomy-a-infekcie.js" defer></script>
+<script src="../assets/glossary/09-zakladne-pojmy.js" defer></script>
+<script src="../assets/glossary/10-bunka-tkanivo-hormony.js" defer></script>
+<script src="../assets/glossary/11-choroby-a-mikroby.js" defer></script>
+<script src="../assets/glossary/12-metody-a-vysetrenia.js" defer></script>
+<script src="../assets/glossary/13-zapal-imunita-krv.js" defer></script>
+<script src="../assets/glossary/14-skupiny-a-zastupcovia.js" defer></script>
+<script src="../assets/glossary/15-rozdelene-hesla.js" defer></script>
+<script src="../assets/glossary/99-skupiny.js" defer></script>
+<script src="../assets/js/glossary.js" defer></script>
+<script src="../assets/js/view-toggle.js" defer></script>
+</body>
+</html>

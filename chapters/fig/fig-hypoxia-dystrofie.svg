@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 356" role="img" aria-labelledby="t201">
+<title id="t201">Hypoxia a dystrofie: z jedného deficitu ATP tri reverzibilné obrazy; ak noxa trvá, vstup vápnika vedie cez bod nezvratnosti k nekróze</title>
+<defs><marker id="a201" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker></defs>
+
+<rect class="bx-k" x="200" y="6" width="300" height="44" rx="3"/>
+<text class="lblb" x="350" y="24" text-anchor="middle">↓ O₂ → ↓ ATP</text>
+<text class="sub" x="350" y="40" text-anchor="middle">mitochondrie zastavia oxidatívnu fosforyláciu</text>
+
+<path class="arw" d="M290,52 L130,80" marker-end="url(#a201)"/>
+<path class="arw" d="M350,52 L350,80" marker-end="url(#a201)"/>
+<path class="arw" d="M410,52 L570,80" marker-end="url(#a201)"/>
+
+<rect class="bx-k" x="20" y="82" width="210" height="44" rx="3"/>
+<text class="lblb" x="125" y="100" text-anchor="middle">Zlyhá Na⁺/K⁺-ATPáza</text>
+<text class="sub" x="125" y="116" text-anchor="middle">Na⁺ a za ním voda vstupujú do bunky</text>
+<rect class="bx-k" x="245" y="82" width="210" height="44" rx="3"/>
+<text class="lblb" x="350" y="100" text-anchor="middle">Anaeróbna glykolýza</text>
+<text class="sub" x="350" y="116" text-anchor="middle">↓ glykogén · ↑ laktát · ↓ pH</text>
+<rect class="bx-k" x="470" y="82" width="210" height="44" rx="3"/>
+<text class="lblb" x="575" y="100" text-anchor="middle">Ribozómy sa odlúpnu z ER</text>
+<text class="sub" x="575" y="116" text-anchor="middle">↓ tvorba bielkovín aj apoproteínov</text>
+
+<path class="arw" d="M125,128 L125,146" marker-end="url(#a201)"/>
+<path class="arw" d="M350,128 L350,146" marker-end="url(#a201)"/>
+<path class="arw" d="M575,128 L575,146" marker-end="url(#a201)"/>
+
+<rect class="bx-c" x="20" y="148" width="210" height="44" rx="3" stroke="var(--color-accent-500)"/>
+<text class="lblb" x="125" y="166" text-anchor="middle">Kalné zdurenie → hydropická d.</text>
+<text class="sub" x="125" y="182" text-anchor="middle">napučí bunka, ER aj mitochondrie</text>
+<rect class="bx-c" x="245" y="148" width="210" height="44" rx="3" stroke="var(--color-accent-500)"/>
+<text class="lblb" x="350" y="166" text-anchor="middle">Zhrudkovaný chromatín</text>
+<text class="sub" x="350" y="182" text-anchor="middle">kyslé prostredie zráža bielkoviny</text>
+<rect class="bx-c" x="470" y="148" width="210" height="44" rx="3" stroke="var(--color-accent-500)"/>
+<text class="lblb" x="575" y="166" text-anchor="middle">Steatóza</text>
+<text class="sub" x="575" y="182" text-anchor="middle">bez apoproteínov sa lipidy nevyvezú</text>
+
+<path class="arw" d="M125,194 L125,208 M350,194 L350,208 M575,194 L575,208 M125,208 L575,208"/>
+<path class="arw" d="M200,208 L200,226" marker-end="url(#a201)"/>
+<path class="arw" d="M500,208 L500,226" marker-end="url(#a201)"/>
+
+<rect class="bx-k" x="60" y="228" width="280" height="44" rx="3"/>
+<text class="lblb" x="200" y="246" text-anchor="middle">Noxa zmizne</text>
+<text class="sub" x="200" y="262" text-anchor="middle">ATP sa obnoví → bunka sa vráti k norme</text>
+<rect class="bx-m" x="360" y="228" width="280" height="44" rx="3" stroke="var(--color-accent-2-500)"/>
+<text class="lblb" x="500" y="246" text-anchor="middle">Noxa trvá: ↑ Ca²⁺ v cytosole</text>
+<text class="sub" x="500" y="262" text-anchor="middle">fosfolipázy · proteázy · endonukleázy</text>
+
+<path class="arwd" d="M20,288 L680,288"/>
+<text class="sub" x="20" y="282">nad čiarou reverzibilné (dystrofie)</text>
+<text class="lblb" x="680" y="282" text-anchor="end" style="fill:var(--color-accent-2-700)">bod nezvratnosti</text>
+
+<path class="arw" d="M500,274 L500,304" marker-end="url(#a201)"/>
+<rect class="bx-m" x="360" y="306" width="280" height="44" rx="3" stroke="var(--color-accent-2-500)"/>
+<text class="lblb" x="500" y="324" text-anchor="middle">NEKRÓZA</text>
+<text class="sub" x="500" y="340" text-anchor="middle">membrány a DNA sa rozpadnú</text>
+</svg>

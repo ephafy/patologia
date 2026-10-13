@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 316" role="img" aria-labelledby="tfigkruhsok">
+<title id="tfigkruhsok">Bludný kruh šoku: pokles tlaku vyvolá stiahnutie periférnych ciev, tkanivá bez kyslíka tvoria laktát a acidóza cievy znova rozšíri a zvýši ich priepustnosť, krv stojí v mikrocirkulácii a tekutina uniká do tkanív, k srdcu sa vracia menej krvi a výdaj ďalej klesá; bod zvratu nastáva, keď tlak nestačí ani na prekrvenie srdca a mozgu</title>
+<defs><marker id="mfigkruhsok" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker></defs>
+<rect class="bx-c" x="20" y="0" width="190" height="26" rx="3" stroke="var(--color-accent-600)"/>
+<text class="lblb" x="115" y="17" text-anchor="middle">príčina šoku · 9.6.2</text>
+<path class="arw" d="M115,26 L115,42" marker-end="url(#mfigkruhsok)"/>
+<rect class="bx-k" x="20" y="44" width="190" height="50" rx="3"/>
+<text class="lblb" x="115" y="66" text-anchor="middle">↓ srdcový výdaj,</text>
+<text class="lblb" x="115" y="80" text-anchor="middle">↓ tlak</text>
+<rect class="bx-k" x="490" y="44" width="190" height="50" rx="3"/>
+<text class="lblb" x="585" y="66" text-anchor="middle">periférne cievy sa stiahnu</text>
+<text class="lblb" x="585" y="80" text-anchor="middle">(centralizácia obehu)</text>
+<rect class="bx-k" x="490" y="194" width="190" height="50" rx="3"/>
+<text class="lblb" x="585" y="216" text-anchor="middle">tkanivá bez kyslíka:</text>
+<text class="lblb" x="585" y="230" text-anchor="middle">laktát, acidóza</text>
+<rect class="bx-k" x="20" y="194" width="190" height="50" rx="3"/>
+<text class="lblb" x="115" y="216" text-anchor="middle">cievy sa rozšíria a prepúšťajú,</text>
+<text class="lblb" x="115" y="230" text-anchor="middle">krv stojí v mikrocirkulácii</text>
+<path class="arw" d="M212,69 L488,69" marker-end="url(#mfigkruhsok)"/>
+<path class="arw" d="M585,96 L585,192" marker-end="url(#mfigkruhsok)"/>
+<path class="arw" d="M488,219 L212,219" marker-end="url(#mfigkruhsok)"/>
+<path class="arw" d="M115,192 L115,96" marker-end="url(#mfigkruhsok)" style="stroke-width:2.2"/>
+<text class="sub" x="350" y="63" text-anchor="middle">sympatikus, katecholamíny</text>
+<text class="sub" x="577" y="141" text-anchor="end">koža, svaly, črevo,</text>
+<text class="sub" x="577" y="154" text-anchor="end">obličky bez prietoku</text>
+<text class="sub" x="350" y="213" text-anchor="middle">kyslé prostredie a mediátory</text>
+<text class="sub" x="123" y="141" text-anchor="start">menší návrat k srdcu,</text>
+<text class="sub" x="123" y="154" text-anchor="start">slabne aj myokard</text>
+<text x="350" y="140" text-anchor="middle" style="font-size:26px;fill:var(--color-accent-2-600)">⟳</text>
+<text class="cap" x="350" y="156" text-anchor="middle">circulus vitiosus</text>
+<path class="arw" d="M585,244 L585,266" marker-end="url(#mfigkruhsok)"/>
+<rect class="bx-m" x="400" y="268" width="290" height="44" rx="3" stroke="var(--color-accent-2-600)" stroke-width="1.5"/>
+<text class="lblb" x="545" y="286" text-anchor="middle">nekróza buniek: obličky, pečeň, črevo, pľúca</text>
+<text class="lblb" x="545" y="302" text-anchor="middle">→ MULTIORGÁNOVÉ ZLYHANIE</text>
+<text class="lbl-m" x="115" y="270" text-anchor="middle">bod zvratu: tlak nestačí srdcu a mozgu</text>
+<text class="sub" x="115" y="286" text-anchor="middle">(tekutiny už tlak nezdvihnú –</text>
+<text class="sub" x="115" y="299" text-anchor="middle">ireverzibilné štádium)</text>
+</svg>

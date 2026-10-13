@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 306" role="img" aria-labelledby="tfigadaptaciamapa">
+<title id="tfigadaptaciamapa">Mapa kapitoly: trvalá záťaž, ktorú bunka prežije, vedie podľa toho, čo od tkaniva žiada, k hypertrofii alebo hyperplázii (viac práce), k metaplázii (zmenené prostredie) alebo k atrofii (menej práce); keď podnet zmizne, zmena ustúpi, keď trvá, rezerva sa vyčerpá</title>
+<defs><marker id="mfigadaptaciamapa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker></defs>
+
+<rect class="bx-c" x="226" y="4" width="268" height="30" rx="3" stroke="var(--color-accent-600)"/>
+<text class="lblb" x="360" y="24" text-anchor="middle">trvalá záťaž, ktorú bunka prežije</text>
+
+<path class="arw" d="M300,34 L160,58" marker-end="url(#mfigadaptaciamapa)"/>
+<path class="arw" d="M410,34 L410,58" marker-end="url(#mfigadaptaciamapa)"/>
+<path class="arw" d="M470,34 L612,58" marker-end="url(#mfigadaptaciamapa)"/>
+
+<!-- čo záťaž žiada -->
+<rect class="bx-k" x="8" y="60" width="292" height="46" rx="3"/>
+<text class="lblb" x="154" y="79" text-anchor="middle">žiada VIAC PRÁCE alebo dáva viac signálu</text>
+<text class="sub" x="154" y="96" text-anchor="middle">tlak, objem, hormón, rastový faktor</text>
+
+<rect class="bx-k" x="316" y="60" width="188" height="46" rx="3"/>
+<text class="lblb" x="410" y="79" text-anchor="middle">mení PROSTREDIE</text>
+<text class="sub" x="410" y="96" text-anchor="middle">dym, kyselina, kameň, zápal</text>
+
+<rect class="bx-k" x="520" y="60" width="192" height="46" rx="3"/>
+<text class="lblb" x="616" y="79" text-anchor="middle">žiada MENEJ</text>
+<text class="sub" x="616" y="96" text-anchor="middle">nečinnosť, hlad, málo krvi</text>
+
+<path class="arw" d="M78,106 L78,132" marker-end="url(#mfigadaptaciamapa)"/>
+<path class="arw" d="M230,106 L230,132" marker-end="url(#mfigadaptaciamapa)"/>
+<path class="arw" d="M410,106 L410,132" marker-end="url(#mfigadaptaciamapa)"/>
+<path class="arw" d="M616,106 L616,132" marker-end="url(#mfigadaptaciamapa)"/>
+<text class="sub" x="84" y="123" text-anchor="start">bunky sa nedelia</text>
+<text class="sub" x="236" y="123" text-anchor="start">delia sa</text>
+
+<!-- odpoveď -->
+<rect class="bx-c" x="8" y="134" width="140" height="84" rx="3"/>
+<text class="lblb" x="78" y="153" text-anchor="middle">HYPERTROFIA · 6.2</text>
+<text class="sub" x="78" y="171" text-anchor="middle">väčšie bunky</text>
+<text class="sub" x="78" y="191" text-anchor="middle">myokard,</text>
+<text class="sub" x="78" y="205" text-anchor="middle">kostrový sval</text>
+
+<rect class="bx-c" x="160" y="134" width="140" height="84" rx="3"/>
+<text class="lblb" x="230" y="153" text-anchor="middle">HYPERPLÁZIA · 6.3</text>
+<text class="sub" x="230" y="171" text-anchor="middle">viac buniek</text>
+<text class="sub" x="230" y="191" text-anchor="middle">endometrium, prostata,</text>
+<text class="sub" x="230" y="205" text-anchor="middle">štítna žľaza</text>
+
+<rect class="bx-c" x="316" y="134" width="188" height="84" rx="3"/>
+<text class="lblb" x="410" y="153" text-anchor="middle">METAPLÁZIA · 6.4</text>
+<text class="sub" x="410" y="171" text-anchor="middle">iný, odolnejší typ buniek</text>
+<text class="sub" x="410" y="191" text-anchor="middle">priedušky fajčiara,</text>
+<text class="sub" x="410" y="205" text-anchor="middle">pažerák pri refluxe, žalúdok</text>
+
+<rect class="bx-k" x="520" y="134" width="192" height="84" rx="3"/>
+<text class="lblb" x="616" y="153" text-anchor="middle">ATROFIA · kap. 1.2</text>
+<text class="sub" x="616" y="171" text-anchor="middle">menšie alebo menej buniek</text>
+<text class="sub" x="616" y="191" text-anchor="middle">sval v sadre,</text>
+<text class="sub" x="616" y="205" text-anchor="middle">oblička za zúženou tepnou</text>
+
+<text class="sub" x="88" y="234" text-anchor="start">často spolu (maternica v gravidite)</text>
+
+<!-- osud -->
+<path class="stk-n" d="M78,218 L78,246 L616,246 L616,218"/>
+<path class="stk-n" d="M410,218 L410,246"/>
+<path class="stk-n" d="M230,218 L230,224"/>
+<path class="arw" d="M200,246 L200,262" marker-end="url(#mfigadaptaciamapa)"/>
+<path class="arw" d="M520,246 L520,262" marker-end="url(#mfigadaptaciamapa)"/>
+
+<rect class="bx-k" x="60" y="264" width="280" height="38" rx="3"/>
+<text class="lblb" x="200" y="280" text-anchor="middle">podnet zmizne</text>
+<text class="sub" x="200" y="295" text-anchor="middle">→ tkanivo sa vráti k pôvodnému stavu</text>
+
+<rect class="bx-m" x="372" y="264" width="296" height="38" rx="3" stroke="var(--color-accent-2-600)" stroke-width="1.5"/>
+<text class="lblb" x="520" y="280" text-anchor="middle">podnet trvá · 6.6</text>
+<text class="sub" x="520" y="295" text-anchor="middle">→ zlyhanie orgánu alebo dysplázia a nádor</text>
+</svg>

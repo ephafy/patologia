@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 244" role="img" aria-labelledby="tmfigkruhmpt">
+<title id="tmfigkruhmpt">Bludný kruh pri bode nezvratnosti bunky: málo ATP, vzostup vápnika, mitochondria ho nasáva a tvorí kyslíkové radikály, otvorí sa pór MPT, zrúti sa membránový potenciál a ATP ešte klesne</title>
+<defs><marker id="mfigkruhmpt" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker></defs>
+<rect class="bx-k" x="20" y="14" width="190" height="50" rx="3"/>
+<text class="lblb" x="115" y="43" text-anchor="middle">↓ ATP</text>
+<rect class="bx-k" x="255" y="14" width="190" height="50" rx="3"/>
+<text class="lblb" x="350" y="43" text-anchor="middle">zlyhá Ca²⁺-pumpa</text>
+<rect class="bx-k" x="490" y="14" width="190" height="50" rx="3"/>
+<text class="lblb" x="585" y="43" text-anchor="middle">↑ Ca²⁺ v cytosole</text>
+<rect class="bx-k" x="490" y="164" width="190" height="50" rx="3"/>
+<text class="lblb" x="585" y="186" text-anchor="middle">mitochondria nasáva</text>
+<text class="lblb" x="585" y="200" text-anchor="middle">Ca²⁺, ↑ ROS</text>
+<rect class="bx-m" x="255" y="164" width="190" height="50" rx="3" stroke="var(--color-accent-2-600)" stroke-width="1.5"/>
+<text class="lblb" x="350" y="193" text-anchor="middle">otvorí sa pór MPT</text>
+<rect class="bx-k" x="20" y="164" width="190" height="50" rx="3"/>
+<text class="lblb" x="115" y="186" text-anchor="middle">↓ membránový potenciál</text>
+<text class="lblb" x="115" y="200" text-anchor="middle">mitochondrie</text>
+<path class="arw" d="M212,39 L253,39" marker-end="url(#mfigkruhmpt)"/>
+<path class="arw" d="M447,39 L488,39" marker-end="url(#mfigkruhmpt)"/>
+<path class="arw" d="M585,66 L585,162" marker-end="url(#mfigkruhmpt)"/>
+<path class="arw" d="M488,189 L447,189" marker-end="url(#mfigkruhmpt)"/>
+<path class="arw" d="M253,189 L212,189" marker-end="url(#mfigkruhmpt)"/>
+<path class="arw" d="M115,162 L115,66" marker-end="url(#mfigkruhmpt)" style="stroke-width:2.2"/>
+<text class="sub" x="123" y="118" text-anchor="start">ATP-syntáza stojí</text>
+<text x="350" y="122" text-anchor="middle" style="font-size:26px;fill:var(--color-accent-2-600)">⟳</text>
+<text class="cap" x="350" y="138" text-anchor="middle">circulus vitiosus</text>
+<text class="lbl-m" x="350" y="228" text-anchor="middle">bod zvratu: pór ostane otvorený</text>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 274" role="img" aria-labelledby="tmfigkruhsepsa">
+<title id="tmfigkruhsepsa">Bludný kruh sepsy: cytokíny rozšíria a uvoľnia cievy v celom tele, klesne tlak, orgány sú zle prekrvené a upchaté mikrotrombami, rozpadnuté bunky uvoľnia DAMP a tie vyplavia ďalšie cytokíny</title>
+<defs><marker id="mfigkruhsepsa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker></defs>
+<rect class="bx-c" x="55" y="0" width="120" height="26" rx="3" stroke="var(--color-accent-600)"/>
+<text class="lblb" x="115" y="17" text-anchor="middle">infekcia</text>
+<path class="arw" d="M115,26 L115,42" marker-end="url(#mfigkruhsepsa)"/>
+<rect class="bx-k" x="20" y="44" width="190" height="50" rx="3"/>
+<text class="lblb" x="115" y="73" text-anchor="middle">TNF-α, IL-1, IL-6</text>
+<rect class="bx-k" x="255" y="44" width="190" height="50" rx="3"/>
+<text class="lblb" x="350" y="66" text-anchor="middle">celková vazodilatácia,</text>
+<text class="lblb" x="350" y="80" text-anchor="middle">↑ priepustnosť ciev</text>
+<rect class="bx-m" x="490" y="44" width="190" height="50" rx="3" stroke="var(--color-accent-2-600)" stroke-width="1.5"/>
+<text class="lblb" x="585" y="73" text-anchor="middle">↓ tlak, únik tekutiny</text>
+<rect class="bx-k" x="490" y="194" width="190" height="50" rx="3"/>
+<text class="lblb" x="585" y="216" text-anchor="middle">hypoperfúzia orgánov,</text>
+<text class="lblb" x="585" y="230" text-anchor="middle">mikrotromby (DIC)</text>
+<rect class="bx-k" x="20" y="194" width="190" height="50" rx="3"/>
+<text class="lblb" x="115" y="216" text-anchor="middle">nekróza a rozpad</text>
+<text class="lblb" x="115" y="230" text-anchor="middle">buniek</text>
+<path class="arw" d="M212,69 L253,69" marker-end="url(#mfigkruhsepsa)"/>
+<path class="arw" d="M447,69 L488,69" marker-end="url(#mfigkruhsepsa)"/>
+<path class="arw" d="M585,96 L585,192" marker-end="url(#mfigkruhsepsa)"/>
+<path class="arw" d="M488,219 L212,219" marker-end="url(#mfigkruhsepsa)"/>
+<path class="arw" d="M115,192 L115,96" marker-end="url(#mfigkruhsepsa)" style="stroke-width:2.2"/>
+<text class="sub" x="577" y="148" text-anchor="end">↓ prietok orgánmi</text>
+<text class="sub" x="123" y="148" text-anchor="start">DAMP → ďalšie cytokíny</text>
+<text class="sub" x="350" y="213" text-anchor="middle">bunky bez O₂ odumierajú</text>
+<text x="350" y="152" text-anchor="middle" style="font-size:26px;fill:var(--color-accent-2-600)">⟳</text>
+<text class="cap" x="350" y="168" text-anchor="middle">circulus vitiosus</text>
+<text class="lbl-m" x="585" y="38" text-anchor="middle">bod zvratu: septický šok</text>
+</svg>

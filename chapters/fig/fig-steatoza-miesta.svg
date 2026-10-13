@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 330" role="img" aria-labelledby="t205">
+<title id="t205">Hepatocyt a štyri miesta, kde vzniká steatóza: prísun a tvorba mastných kyselín oproti ich spaľovaniu a exportu</title>
+<defs><marker id="a205" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker></defs>
+
+<rect class="cell" x="180" y="66" width="360" height="206" rx="30"/>
+<text class="lbl-c" x="522" y="88" text-anchor="end">hepatocyt</text>
+<circle class="nuc" cx="490" cy="232" r="15"/>
+
+<!-- ② tvorba -->
+<rect class="bx-k" x="186" y="4" width="160" height="40" rx="3"/>
+<text class="lblb" x="266" y="20" text-anchor="middle">② Tvorba MK</text>
+<text class="sub" x="266" y="35" text-anchor="middle">nadbytok sacharidov, alkohol</text>
+<path class="arw" d="M261,46 L261,118" marker-end="url(#a205)"/>
+
+<!-- ① prísun -->
+<rect class="bx-k" x="6" y="118" width="160" height="44" rx="3"/>
+<text class="lblb" x="86" y="136" text-anchor="middle">① Prísun MK</text>
+<text class="sub" x="86" y="152" text-anchor="middle">lipolýza v tuku, strava</text>
+<path class="arw" d="M168,140 L224,140" marker-end="url(#a205)"/>
+
+<!-- MK a TAG -->
+<rect class="bx-k" x="226" y="120" width="70" height="40" rx="3"/>
+<text class="lblb" x="261" y="144" text-anchor="middle">voľné MK</text>
+<path class="arw" d="M298,140 L360,140" marker-end="url(#a205)"/>
+<text class="sub" x="329" y="130" text-anchor="middle">esterifikácia</text>
+<circle class="cellm" cx="396" cy="140" r="34"/>
+<text class="lblb" x="396" y="138" text-anchor="middle">TAG</text>
+<text class="sub" x="396" y="152" text-anchor="middle">kvapka</text>
+
+<!-- ③ spaľovanie -->
+<path class="arw" d="M261,162 L261,204" marker-end="url(#a205)"/>
+<rect class="bx-c" x="200" y="206" width="170" height="44" rx="3" stroke="var(--color-accent-500)"/>
+<text class="lblb" x="285" y="224" text-anchor="middle">③ β-oxidácia</text>
+<text class="sub" x="285" y="240" text-anchor="middle">v mitochondrii, potrebuje O₂</text>
+
+<!-- ④ export -->
+<path class="arw" d="M432,140 L556,140" marker-end="url(#a205)"/>
+<text class="sub" x="494" y="132" text-anchor="middle">+ apoB100</text>
+<rect class="bx-k" x="558" y="116" width="136" height="48" rx="3"/>
+<text class="lblb" x="626" y="135" text-anchor="middle">④ Export VLDL</text>
+<text class="sub" x="626" y="151" text-anchor="middle">do krvi</text>
+
+<text class="lblb" x="350" y="298" text-anchor="middle">① + ② &gt; ③ + ④ → TAG ostávajú v kvapkách = steatóza</text>
+<text class="sub" x="350" y="316" text-anchor="middle">veľká kvapka odtlačí jadro na okraj bunky (veľkokvapková steatóza)</text>
+</svg>

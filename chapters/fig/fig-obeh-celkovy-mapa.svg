@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" role="img" aria-labelledby="tfigobehcelkovymapa">
+<title id="tfigobehcelkovymapa">Mapa kapitoly: obeh tvoria pumpa (srdce), potrubie (cievy) a náplň (krv); keď niektorá zložka zlyháva pomaly, srdce sa prispôsobí a potom zlyháva s venostázou, edémom a induráciou orgánov; keď zlyhá náhle, vzniká kolaps alebo šok</title>
+<defs><marker id="mfigobehcelkovymapa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker></defs>
+
+<text class="cap" x="360" y="12" text-anchor="middle">ČO OBEH ROZVRÁTI · 9.2</text>
+
+<rect class="bx-c" x="8" y="20" width="226" height="66" rx="3"/>
+<text class="lblb" x="121" y="38" text-anchor="middle">PUMPA – srdce</text>
+<text class="sub" x="121" y="54" text-anchor="middle">sval, chlopne, perikard, rytmus,</text>
+<text class="sub" x="121" y="67" text-anchor="middle">vrodené chyby</text>
+<text class="sub" x="121" y="80" text-anchor="middle">9.2.1</text>
+
+<rect class="bx-c" x="247" y="20" width="226" height="66" rx="3"/>
+<text class="lblb" x="360" y="38" text-anchor="middle">POTRUBIE – cievy a tlak</text>
+<text class="sub" x="360" y="54" text-anchor="middle">pľúcna hypertenzia → pravá komora</text>
+<text class="sub" x="360" y="67" text-anchor="middle">systémová hypertenzia → ľavá komora</text>
+<text class="sub" x="360" y="80" text-anchor="middle">9.2.2 · 9.2.3</text>
+
+<rect class="bx-c" x="486" y="20" width="226" height="66" rx="3"/>
+<text class="lblb" x="599" y="38" text-anchor="middle">NÁPLŇ – krv</text>
+<text class="sub" x="599" y="54" text-anchor="middle">objem: pletora, strata krvi a vody</text>
+<text class="sub" x="599" y="67" text-anchor="middle">zloženie: anémia, bielkoviny</text>
+<text class="sub" x="599" y="80" text-anchor="middle">9.2.4</text>
+
+<path class="arw" d="M121,86 L200,116" marker-end="url(#mfigobehcelkovymapa)"/>
+<path class="arw" d="M330,86 L250,116" marker-end="url(#mfigobehcelkovymapa)"/>
+<path class="arw" d="M390,86 L470,116" marker-end="url(#mfigobehcelkovymapa)"/>
+<path class="arw" d="M599,86 L520,116" marker-end="url(#mfigobehcelkovymapa)"/>
+
+<rect class="bx-k" x="60" y="118" width="290" height="34" rx="3"/>
+<text class="lblb" x="205" y="139" text-anchor="middle">zlyháva POMALY – telo sa stihne prispôsobiť</text>
+<rect class="bx-k" x="370" y="118" width="290" height="34" rx="3"/>
+<text class="lblb" x="515" y="139" text-anchor="middle">zlyhá NÁHLE – tlak padne</text>
+
+<path class="arw" d="M205,152 L205,170" marker-end="url(#mfigobehcelkovymapa)"/>
+<path class="arw" d="M515,152 L515,170" marker-end="url(#mfigobehcelkovymapa)"/>
+
+<rect class="bx-c" x="60" y="172" width="290" height="40" rx="3"/>
+<text class="lblb" x="205" y="189" text-anchor="middle">srdce pod záťažou · 9.3</text>
+<text class="sub" x="205" y="204" text-anchor="middle">dilatácia · koncentrická a excentrická hypertrofia</text>
+
+<rect class="bx-c" x="370" y="172" width="290" height="40" rx="3"/>
+<text class="lblb" x="515" y="189" text-anchor="middle">KOLAPS · 9.6.1</text>
+<text class="sub" x="515" y="204" text-anchor="middle">sekundy až minúty, upraví sa sám, bez následkov</text>
+
+<path class="arw" d="M205,212 L205,230" marker-end="url(#mfigobehcelkovymapa)"/>
+<path class="arwd" d="M515,212 L515,230" marker-end="url(#mfigobehcelkovymapa)"/>
+<text class="sub" x="523" y="225" text-anchor="start">ak sa obeh nevráti</text>
+
+<rect class="bx-m" x="8" y="232" width="342" height="62" rx="3" stroke="var(--color-accent-2-600)" stroke-width="1.5"/>
+<text class="lblb" x="179" y="250" text-anchor="middle">ZLYHANIE SRDCA · 9.4</text>
+<text class="sub" x="179" y="266" text-anchor="middle">ľavé → krv stojí v pľúcach · pravé → vo veľkom obehu</text>
+<text class="sub" x="179" y="282" text-anchor="middle">venostáza → EDÉM (9.5) → cyanóza a indurácia orgánov</text>
+
+<rect class="bx-m" x="370" y="232" width="342" height="62" rx="3" stroke="var(--color-accent-2-600)" stroke-width="1.5"/>
+<text class="lblb" x="541" y="250" text-anchor="middle">ŠOK ⟳ · 9.6.2 – 9.6.4</text>
+<text class="sub" x="541" y="266" text-anchor="middle">málo krvi · slabá pumpa · prekážka · široké cievy</text>
+<text class="sub" x="541" y="282" text-anchor="middle">hypoperfúzia → ischémia orgánov → multiorgánové zlyhanie</text>
+</svg>

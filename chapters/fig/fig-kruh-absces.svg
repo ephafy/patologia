@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 290" role="img" aria-labelledby="tmfigkruhabsces">
+<title id="tmfigkruhabsces">Bludný kruh abscesu: neutrofily ničia baktérie proteázami a radikálmi, tie rozpúšťajú aj okolité tkanivo, rozpad tkaniva a neutrofilov uvoľní chemoatraktanty a tie privolajú ďalšie neutrofily; kruh preruší až odstránenie hnisu</title>
+<defs><marker id="mfigkruhabsces" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker></defs>
+<rect class="bx-c" x="55" y="0" width="120" height="26" rx="3" stroke="var(--color-accent-600)"/>
+<text class="lblb" x="115" y="17" text-anchor="middle">pyogénne baktérie</text>
+<path class="arw" d="M115,26 L115,42" marker-end="url(#mfigkruhabsces)"/>
+<rect class="bx-k" x="20" y="44" width="190" height="50" rx="3"/>
+<text class="lblb" x="115" y="66" text-anchor="middle">neutrofily prichádzajú</text>
+<text class="lblb" x="115" y="80" text-anchor="middle">do ložiska</text>
+<rect class="bx-k" x="490" y="44" width="190" height="50" rx="3"/>
+<text class="lblb" x="585" y="66" text-anchor="middle">proteázy a kyslíkové</text>
+<text class="lblb" x="585" y="80" text-anchor="middle">radikály mimo fagozómu</text>
+<rect class="bx-k" x="490" y="194" width="190" height="50" rx="3"/>
+<text class="lblb" x="585" y="216" text-anchor="middle">kolikvačná nekróza</text>
+<text class="lblb" x="585" y="230" text-anchor="middle">okolia</text>
+<rect class="bx-m" x="20" y="194" width="190" height="50" rx="3" stroke="var(--color-accent-2-600)" stroke-width="1.5"/>
+<text class="lblb" x="115" y="216" text-anchor="middle">rozpad tkaniva a neutrofilov:</text>
+<text class="lblb" x="115" y="230" text-anchor="middle">C5a, IL-8, peptidy baktérií</text>
+<path class="arw" d="M212,69 L488,69" marker-end="url(#mfigkruhabsces)"/>
+<path class="arw" d="M585,96 L585,192" marker-end="url(#mfigkruhabsces)"/>
+<path class="arw" d="M488,219 L212,219" marker-end="url(#mfigkruhabsces)"/>
+<path class="arw" d="M115,192 L115,96" marker-end="url(#mfigkruhabsces)" style="stroke-width:2.2"/>
+<text class="sub" x="350" y="63" text-anchor="middle">ničia baktérie aj vlastné tkanivo</text>
+<text class="sub" x="577" y="148" text-anchor="end">dutina bez ciev – antibiotiká</text>
+<text class="sub" x="577" y="161" text-anchor="end">sa dostanú len slabo</text>
+<text class="sub" x="350" y="213" text-anchor="middle">hnis = neutrofily + detritus + baktérie</text>
+<text class="sub" x="123" y="148" text-anchor="start">chemotaxia → ďalšie</text>
+<text class="sub" x="123" y="161" text-anchor="start">neutrofily</text>
+<text x="350" y="146" text-anchor="middle" style="font-size:26px;fill:var(--color-accent-2-600)">⟳</text>
+<text class="cap" x="350" y="162" text-anchor="middle">circulus vitiosus</text>
+<text class="lbl-m" x="115" y="262" text-anchor="middle">bod zvratu: odstránenie hnisu</text>
+<text class="sub" x="115" y="278" text-anchor="middle">(drenáž, samovoľná perforácia)</text>
+</svg>
