@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" role="img" aria-labelledby="tmfigkruhkaverna">
+<title id="tmfigkruhkaverna">Bludný kruh tuberkulóznej kaverny: makrofágy skvapalnia kazeum, ložisko sa prevalí do priedušky, vzduch s kyslíkom umožní extracelulárne množenie baktérií, silná imunitná odpoveď na množstvo antigénu spôsobí ďalšiu nekrózu steny a kaverna rastie; kruh sa začína otvorením ložiska do priedušky</title>
+<defs><marker id="mfigkruhkaverna" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker></defs>
+<rect class="bx-k" x="10" y="30" width="180" height="56" rx="3"/>
+<text class="lblb" x="100" y="55" text-anchor="middle">kazeózne ložisko</text>
+<text class="lblb" x="100" y="70" text-anchor="middle">(pevné, málo O₂)</text>
+<rect class="bx-k" x="290" y="30" width="180" height="56" rx="3"/>
+<text class="lblb" x="380" y="55" text-anchor="middle">skvapalnenie kazea</text>
+<text class="lblb" x="380" y="70" text-anchor="middle">enzýmami makrofágov</text>
+<rect class="bx-m" x="570" y="30" width="180" height="56" rx="3" stroke="var(--color-accent-2-600)" stroke-width="1.5"/>
+<text class="lblb" x="660" y="55" text-anchor="middle">prevalenie do priedušky</text>
+<text class="lblb" x="660" y="70" text-anchor="middle">= vznik kaverny</text>
+<rect class="bx-k" x="570" y="200" width="180" height="56" rx="3"/>
+<text class="lblb" x="660" y="225" text-anchor="middle">vzduch (O₂) v dutine</text>
+<text class="lblb" x="660" y="240" text-anchor="middle">pri každom nádychu</text>
+<rect class="bx-k" x="290" y="200" width="180" height="56" rx="3"/>
+<text class="lblb" x="380" y="225" text-anchor="middle">baktérie sa množia</text>
+<text class="lblb" x="380" y="240" text-anchor="middle">mimo buniek</text>
+<rect class="bx-k" x="10" y="200" width="180" height="56" rx="3"/>
+<text class="lblb" x="100" y="225" text-anchor="middle">nová nekróza steny,</text>
+<text class="lblb" x="100" y="240" text-anchor="middle">kaverna rastie</text>
+<path class="arw" d="M192,58 L288,58" marker-end="url(#mfigkruhkaverna)"/>
+<path class="arw" d="M472,58 L568,58" marker-end="url(#mfigkruhkaverna)"/>
+<path class="arw" d="M660,88 L660,198" marker-end="url(#mfigkruhkaverna)"/>
+<path class="arw" d="M568,228 L472,228" marker-end="url(#mfigkruhkaverna)"/>
+<path class="arw" d="M288,228 L192,228" marker-end="url(#mfigkruhkaverna)"/>
+<path class="arw" d="M100,198 L100,88" marker-end="url(#mfigkruhkaverna)" style="stroke-width:2.2"/>
+<text class="sub" x="240" y="48" text-anchor="middle">hydrolázy</text>
+<text class="sub" x="520" y="48" text-anchor="middle">tlak, kašeľ</text>
+<text class="sub" x="652" y="148" text-anchor="end">počet baktérií stúpne</text>
+<text class="sub" x="652" y="161" text-anchor="end">o niekoľko rádov</text>
+<text class="sub" x="520" y="218" text-anchor="middle">aeróbny rast</text>
+<text class="sub" x="240" y="218" text-anchor="middle">viac antigénu</text>
+<text class="sub" x="108" y="148" text-anchor="start">silná imunitná odpoveď</text>
+<text class="sub" x="108" y="161" text-anchor="start">(Th1, TNF) poškodí stenu</text>
+<text x="380" y="146" text-anchor="middle" style="font-size:26px;fill:var(--color-accent-2-600)">⟳</text>
+<text class="cap" x="380" y="162" text-anchor="middle">circulus vitiosus</text>
+<text class="lbl-m" x="750" y="276" text-anchor="end">bod zvratu: spojenie ložiska s prieduškou</text>
+<text class="sub" x="750" y="292" text-anchor="end">(otvorená kavernózna tuberkulóza)</text>
+</svg>

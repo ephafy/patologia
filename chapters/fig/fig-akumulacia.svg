@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 260" role="img" aria-labelledby="t21">
+<title id="t21">Bilancia látky v bunke: dystrofia vzniká, keď prísun prevýši premenu a odvoz (P > M + E); tri miesta poruchy</title>
+<defs><marker id="a21" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker></defs>
+
+<!-- bunka -->
+<rect x="200" y="30" width="300" height="140" rx="40" class="bx-c" stroke="var(--color-accent-500)" stroke-width="1.5"/>
+<text class="lbl-c" x="350" y="50" text-anchor="middle">bunka</text>
+<circle cx="350" cy="118" r="18" fill="var(--color-accent-400)"/>
+<!-- hromadiaca sa látka -->
+<g fill="var(--color-accent-2-400)"><circle cx="258" cy="95" r="7"/><circle cx="278" cy="128" r="9"/><circle cx="252" cy="142" r="6"/><circle cx="420" cy="92" r="6"/><circle cx="440" cy="130" r="8"/></g>
+<text class="sub" x="350" y="160" text-anchor="middle">nahromadená látka = dystrofia</text>
+
+<!-- P -->
+<path class="arw" stroke-width="4" d="M40,100 L196,100" marker-end="url(#a21)"/>
+<text class="lblb" x="40" y="88">P · prísun a tvorba</text>
+<!-- M -->
+<rect class="bx-k" x="300" y="64" width="100" height="26" rx="3"/>
+<text class="lblb" x="350" y="81" text-anchor="middle">M · premena</text>
+<!-- E -->
+<path class="arw" stroke-width="1.5" d="M504,100 L660,100" marker-end="url(#a21)"/>
+<text class="lblb" x="660" y="88" text-anchor="end">E · odvoz</text>
+<text class="sub" x="660" y="116" text-anchor="end">export, spálenie, lyzozómy</text>
+
+<!-- tri poruchy -->
+<g class="sub">
+<text class="lbl-m" x="40" y="198">① prísun je priveľký</text>
+<text x="40" y="213">tučná strava, lipolýza → steatóza</text>
+<text x="40" y="227">↑ SAA, ↑ ľahké reťazce → amyloid</text>
+
+<text class="lbl-m" x="260" y="198">② premena zlyhá</text>
+<text x="260" y="213">chýba enzým → glykogenózy, lipidózy</text>
+<text x="260" y="227">↓ ATP a O₂, zlé skladanie bielkoviny</text>
+
+<text class="lbl-m" x="480" y="198">③ odvoz zlyhá</text>
+<text x="480" y="213">↓ apoproteíny → tuk sa nevyvezie</text>
+<text x="480" y="227">oblička nevylúči β₂-mikroglobulín</text>
+</g>
+<text class="sub" x="350" y="252" text-anchor="middle">Do bunky sa môže dostať aj látka, ktorú nevie spracovať vôbec (uhoľný prach vo fagocytoch).</text>
+</svg>

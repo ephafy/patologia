@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 308" role="img" aria-labelledby="tfigedemsily">
+<title id="tfigedemsily">Štyri sily na stene kapiláry a štyri druhy edému: hydrostatický tlak vytláča tekutinu von (zvýšený pri venostáze – kardiálny edém), onkotický tlak albumínu ju drží v cieve (znížený pri hypoproteinémii), lymfa odvádza prefiltrovanú tekutinu (upchatá – lymfedém), stena má byť tesná (priepustná pri zápale – exsudát); oblička zadržiavaním soli a vody edém zosilňuje</title>
+<defs><marker id="mfigedemsily" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker></defs>
+
+<!-- kapilára -->
+<rect class="zone-r" x="150" y="112" width="420" height="52" rx="26"/>
+<rect class="stk-acc2" x="150" y="112" width="420" height="52" rx="26"/>
+<text class="lblb" x="360" y="134" text-anchor="middle">KAPILÁRA</text>
+<text class="sub" x="360" y="150" text-anchor="middle">krv: voda, soli, albumín</text>
+<text class="cap" x="360" y="194" text-anchor="middle">INTERSTÍCIUM</text>
+
+<!-- 1 hydrostatický tlak -->
+<path class="arw" d="M215,112 L215,84" marker-end="url(#mfigedemsily)" style="stroke-width:2.2"/>
+<rect class="bx-c" x="8" y="6" width="330" height="74" rx="3"/>
+<text class="lblb" x="173" y="24" text-anchor="middle">1 · HYDROSTATICKÝ TLAK vytláča tekutinu von</text>
+<text class="sub" x="173" y="40" text-anchor="middle">stúpne, keď krv neodteká: uzáver žily, zlyhanie srdca</text>
+<text class="lblb" x="173" y="58" text-anchor="middle">→ venostatický (kardiálny) edém</text>
+<text class="sub" x="173" y="72" text-anchor="middle">transsudát · podľa gravitácie</text>
+
+<!-- 2 onkotický tlak -->
+<path class="arw" d="M505,84 L505,112" marker-end="url(#mfigedemsily)" style="stroke-width:2.2"/>
+<rect class="bx-c" x="382" y="6" width="330" height="74" rx="3"/>
+<text class="lblb" x="547" y="24" text-anchor="middle">2 · ONKOTICKÝ TLAK (albumín) drží vodu v cieve</text>
+<text class="sub" x="547" y="40" text-anchor="middle">klesne, keď albumín chýba: nefrotický syndróm, cirhóza</text>
+<text class="lblb" x="547" y="58" text-anchor="middle">→ hypoproteinemický edém</text>
+<text class="sub" x="547" y="72" text-anchor="middle">transsudát · najprv okolo očí</text>
+
+<!-- 3 lymfa -->
+<path class="arw" d="M505,164 L505,208" marker-end="url(#mfigedemsily)" style="stroke-width:2.2"/>
+<rect class="bx-c" x="382" y="210" width="330" height="74" rx="3"/>
+<text class="lblb" x="547" y="228" text-anchor="middle">3 · LYMFA odvádza, čo sa prefiltrovalo</text>
+<text class="sub" x="547" y="244" text-anchor="middle">viazne: odstránené uzliny, nádor, jazvy, filarióza</text>
+<text class="lblb" x="547" y="262" text-anchor="middle">→ lymfedém</text>
+<text class="sub" x="547" y="276" text-anchor="middle">bohatý na bielkoviny · časom tuhý (fibróza)</text>
+
+<!-- 4 stena -->
+<path class="arwd" d="M215,164 L215,208" marker-end="url(#mfigedemsily)"/>
+<rect class="bx-c" x="8" y="210" width="330" height="74" rx="3"/>
+<text class="lblb" x="173" y="228" text-anchor="middle">4 · STENA má byť tesná</text>
+<text class="sub" x="173" y="244" text-anchor="middle">mediátory zápalu otvoria štrbiny v endoteli</text>
+<text class="lblb" x="173" y="262" text-anchor="middle">→ zápalový edém</text>
+<text class="sub" x="173" y="276" text-anchor="middle">exsudát s bielkovinami · teplý, červený</text>
+
+<!-- zosilňovač -->
+<text class="lbl-m" x="360" y="302" text-anchor="middle">zosilňovač: nedokrvená oblička → aldosterón → zadržaná soľ a voda</text>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 330" role="img" aria-labelledby="tfigtma">
+<title id="tfigtma">Trombotická mikroangiopatia: tri spúšťače – chýbajúci enzým ADAMTS13 (TTP), Shiga toxín (typický HUS) a nebrzdený komplement (atypický HUS) – vedú k tej istej spoločnej dráhe: doštičkové mikrotromby v drobných cievach, z ktorých plynie trombocytopénia, mikroangiopatická hemolytická anémia so schistocytmi a ischémia obličiek a mozgu; koagulačné faktory sa nespotrebúvajú, preto sú PT a aPTT v norme</title>
+<defs><marker id="mfigtma" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker></defs>
+<rect class="bx-c" x="10" y="0" width="210" height="58" rx="3" stroke="var(--color-accent-600)"/>
+<text class="lblb" x="115" y="18" text-anchor="middle">TTP</text>
+<text class="sub" x="115" y="34" text-anchor="middle">chýba ADAMTS13 → ostanú</text>
+<text class="sub" x="115" y="48" text-anchor="middle">obrovské „lepkavé“ multiméry vWF</text>
+<rect class="bx-c" x="245" y="0" width="210" height="58" rx="3" stroke="var(--color-accent-600)"/>
+<text class="lblb" x="350" y="18" text-anchor="middle">typický HUS</text>
+<text class="sub" x="350" y="34" text-anchor="middle">Shiga toxín → receptor Gb3</text>
+<text class="sub" x="350" y="48" text-anchor="middle">→ endotel klbiek odumiera</text>
+<rect class="bx-c" x="480" y="0" width="210" height="58" rx="3" stroke="var(--color-accent-600)"/>
+<text class="lblb" x="585" y="18" text-anchor="middle">atypický HUS</text>
+<text class="sub" x="585" y="34" text-anchor="middle">nebrzdený komplement</text>
+<text class="sub" x="585" y="48" text-anchor="middle">poškodzuje vlastný endotel</text>
+<path class="arw" d="M115,60 L300,104" marker-end="url(#mfigtma)"/>
+<path class="arw" d="M350,60 L350,102" marker-end="url(#mfigtma)"/>
+<path class="arw" d="M585,60 L400,104" marker-end="url(#mfigtma)"/>
+<rect class="bx-k" x="185" y="106" width="330" height="54" rx="3"/>
+<text class="lblb" x="350" y="128" text-anchor="middle">doštičkové mikrotromby v drobných cievach</text>
+<text class="sub" x="350" y="146" text-anchor="middle">doštičky sa lepia na vWF a odkrytú stenu (primárna hemostáza)</text>
+<path class="arw" d="M260,162 L115,206" marker-end="url(#mfigtma)"/>
+<path class="arw" d="M350,162 L350,204" marker-end="url(#mfigtma)"/>
+<path class="arw" d="M440,162 L585,206" marker-end="url(#mfigtma)"/>
+<rect class="bx-m" x="10" y="208" width="210" height="64" rx="3"/>
+<text class="lblb" x="115" y="228" text-anchor="middle">trombocytopénia</text>
+<text class="sub" x="115" y="244" text-anchor="middle">doštičky sa spotrebujú</text>
+<text class="sub" x="115" y="258" text-anchor="middle">→ petechie, purpura</text>
+<rect class="bx-m" x="245" y="208" width="210" height="64" rx="3"/>
+<text class="lblb" x="350" y="228" text-anchor="middle">hemolytická anémia</text>
+<text class="sub" x="350" y="244" text-anchor="middle">erytrocyty sa trieštia → schistocyty,</text>
+<text class="sub" x="350" y="258" text-anchor="middle">↓ haptoglobín, ↑ LDH</text>
+<rect class="bx-m" x="480" y="208" width="210" height="64" rx="3"/>
+<text class="lblb" x="585" y="228" text-anchor="middle">ischémia orgánov</text>
+<text class="sub" x="585" y="244" text-anchor="middle">obličky (najmä HUS),</text>
+<text class="sub" x="585" y="258" text-anchor="middle">mozog (najmä TTP)</text>
+<text class="cap" x="350" y="300" text-anchor="middle">PT a aPTT v norme: koagulácia sa tkanivovým faktorom nespúšťa, faktory sa nespotrebúvajú – na rozdiel od DIC</text>
+</svg>

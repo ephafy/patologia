@@ -1,0 +1,24 @@
+{
+  "slug": "patola",
+  "brand": "PATOLA",
+  "title": "PATOLA — poznámky z patológie",
+  "footer": "poznámky z patológie",
+  "subject": "patologickej anatómie",
+  "description": "Poznámky z patologickej anatómie pre študentov medicíny. Funguje aj offline.",
+  "themeColor": "#5f42a8",
+  "backgroundColor": "#f3f2f2",
+  "monogram": "P",
+  "adminPort": 8787,
+  "issuesUrl": "https://github.com/ephafy/patologia/issues/new",
+  "repos": { "private": "ephafy/PATOLA", "public": "ephafy/patologia" },
+  "pagesUrl": "https://ephafy.github.io/patologia/",
+  "boxes": ["MECH", "MORF", "DETEK", "KLINIKA", "POZOR", "ZAPAMATAJ", "FYZ", "POCUT", "JADRO"],
+  "asideShort": ["DETEK"],
+  "policy": {
+    "circulus": "chýba circulus vitiosus (⟳) s bodom zvratu (§2.2)",
+    "requireFigs": false,
+    "requireJadro": true,
+    "minXref": 8
+  },
+  "publishWith": ["../PATFYZ"]
+}

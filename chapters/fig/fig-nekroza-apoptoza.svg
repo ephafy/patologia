@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 330" role="img" aria-labelledby="t16">
+<title id="t16">Nekróza a apoptóza: rozdiel v tom, čo sa stane s bunkou a s okolím</title>
+<defs><marker id="a16" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker></defs>
+
+<!-- NEKRÓZA -->
+<text class="cap" x="12" y="24" style="fill:var(--color-accent-2-700)">NEKRÓZA</text>
+<circle class="cell" cx="80" cy="86" r="34"/><circle class="nuc" cx="80" cy="86" r="12"/>
+<path class="arw" d="M120,86 L156,86" marker-end="url(#a16)"/>
+<circle class="cellm" cx="230" cy="86" r="48"/><circle class="nucm" cx="230" cy="86" r="14"/>
+<circle class="dotm" cx="205" cy="66" r="5"/><circle class="dotm" cx="255" cy="70" r="5"/><circle class="dotm" cx="250" cy="108" r="5"/><circle class="dotm" cx="208" cy="106" r="5"/>
+<path class="arw" d="M286,86 L322,86" marker-end="url(#a16)"/>
+<path class="cellm" d="M372,54 C392,46 420,52 428,72 C440,88 432,116 412,124 C392,134 360,128 350,108 C338,90 350,64 372,54 Z" stroke-dasharray="6 4"/>
+<circle class="dotm" cx="440" cy="60" r="4"/><circle class="dotm" cx="452" cy="86" r="4"/><circle class="dotm" cx="440" cy="118" r="4"/><circle class="dotm" cx="330" cy="70" r="4"/><circle class="dotm" cx="336" cy="128" r="4"/>
+<path class="arw" d="M462,86 L498,86" marker-end="url(#a16)"/>
+<g><circle class="dotm" cx="540" cy="60" r="7"/><circle class="dotm" cx="570" cy="76" r="7"/><circle class="dotm" cx="548" cy="96" r="7"/><circle class="dotm" cx="590" cy="100" r="7"/><circle class="dotm" cx="562" cy="122" r="7"/><circle class="dotm" cx="610" cy="70" r="7"/></g>
+<text class="lblb" x="80" y="140" text-anchor="middle">normálna</text>
+<text class="lblb" x="230" y="152" text-anchor="middle">opuch</text>
+<text class="sub" x="230" y="165" text-anchor="middle">membrána stráca celistvosť</text>
+<text class="lblb" x="392" y="152" text-anchor="middle">prasknutie</text>
+<text class="sub" x="392" y="165" text-anchor="middle">únik obsahu (DAMP, enzýmy)</text>
+<text class="lblb" x="575" y="152" text-anchor="middle">zápal</text>
+<text class="sub" x="575" y="165" text-anchor="middle">prítok neutrofilov a makrofágov</text>
+
+<path class="s-t" stroke-width="1" d="M12,180 L708,180"/>
+
+<!-- APOPTÓZA -->
+<text class="cap" x="12" y="204" style="fill:var(--color-accent-700)">APOPTÓZA</text>
+<circle class="cell" cx="80" cy="262" r="34"/><circle class="nuc" cx="80" cy="262" r="12"/>
+<path class="arw" d="M120,262 L156,262" marker-end="url(#a16)"/>
+<circle class="cell" cx="230" cy="262" r="24"/><circle class="nuc" cx="230" cy="262" r="12" style="fill:var(--color-accent-800)"/>
+<path class="arw" d="M270,262 L306,262" marker-end="url(#a16)"/>
+<g><circle class="cell" cx="360" cy="240" r="13"/><circle class="nuc" cx="360" cy="240" r="5"/>
+<circle class="cell" cx="392" cy="268" r="13"/><circle class="nuc" cx="392" cy="268" r="5"/>
+<circle class="cell" cx="356" cy="284" r="11"/><circle class="cell" cx="410" cy="238" r="10"/></g>
+<path class="arw" d="M436,262 L472,262" marker-end="url(#a16)"/>
+<circle class="cell" cx="540" cy="262" r="42" style="fill:var(--color-accent-200)"/><circle class="nuc" cx="524" cy="256" r="11" style="fill:var(--color-accent-300)"/>
+<circle class="cell" cx="550" cy="270" r="9"/><circle class="cell" cx="562" cy="248" r="7"/>
+<text class="lblb" x="80" y="316" text-anchor="middle">normálna</text>
+<text class="lblb" x="230" y="316" text-anchor="middle">zmrštenie</text>
+<text class="sub" x="230" y="329" text-anchor="middle">kondenzácia jadra</text>
+<text class="lblb" x="386" y="316" text-anchor="middle">apoptotické telieska</text>
+<text class="sub" x="386" y="329" text-anchor="middle">membrána ostáva celá</text>
+<text class="lblb" x="580" y="316" text-anchor="middle">fagocytóza</text>
+<text class="sub" x="580" y="329" text-anchor="middle">bez zápalu</text>
+</svg>

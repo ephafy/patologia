@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 300" role="img" aria-labelledby="t19">
+<title id="t19">Koagulačná a kolikvačná nekróza: či prevládne denaturácia bielkovín, alebo enzymatické natrávenie</title>
+<defs><marker id="a19" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker></defs>
+
+<rect class="bx-k" x="230" y="8" width="240" height="42" rx="3"/>
+<text class="lblb" x="350" y="27" text-anchor="middle">Smrť buniek (ischémia, infekcia)</text>
+<text class="sub" x="350" y="42" text-anchor="middle">uvoľnenie enzýmov, zmena pH</text>
+
+<path class="arw" d="M300,52 L180,92" marker-end="url(#a19)"/>
+<path class="arw" d="M400,52 L520,92" marker-end="url(#a19)"/>
+<text class="lbl" x="230" y="74" text-anchor="end">↓ pH → enzýmy sa denaturujú</text>
+<text class="lbl" x="472" y="74">enzýmy ostávajú aktívne</text>
+
+<rect class="bx-c" x="40" y="94" width="280" height="56" rx="3" stroke="var(--color-accent-500)"/>
+<text class="lblb" x="180" y="116" text-anchor="middle">Prevláda denaturácia bielkovín</text>
+<text class="sub" x="180" y="134" text-anchor="middle">bielkoviny sa zrazia (ako uvarený bielok)</text>
+<rect class="bx-m" x="380" y="94" width="280" height="56" rx="3" stroke="var(--color-accent-2-500)"/>
+<text class="lblb" x="520" y="116" text-anchor="middle">Prevláda enzymatické natrávenie</text>
+<text class="sub" x="520" y="134" text-anchor="middle">hydrolázy (neutrofily, lyzozómy) rozložia tkanivo</text>
+
+<path class="arw" d="M180,152 L180,178" marker-end="url(#a19)"/>
+<path class="arw" d="M520,152 L520,178" marker-end="url(#a19)"/>
+<rect class="bx-c" x="40" y="180" width="280" height="50" rx="3" stroke="var(--color-accent-500)"/>
+<text class="lblb" x="180" y="200" text-anchor="middle">KOAGULAČNÁ NEKRÓZA</text>
+<text class="sub" x="180" y="216" text-anchor="middle">tkanivo stuhne, obrys ostáva zachovaný</text>
+<rect class="bx-m" x="380" y="180" width="280" height="50" rx="3" stroke="var(--color-accent-2-500)"/>
+<text class="lblb" x="520" y="200" text-anchor="middle">KOLIKVAČNÁ NEKRÓZA</text>
+<text class="sub" x="520" y="216" text-anchor="middle">tkanivo skvapalnie, vzniká hnis alebo dutina</text>
+
+<text class="sub" x="180" y="252" text-anchor="middle">infarkt myokardu, obličky, sleziny</text>
+<text class="sub" x="520" y="252" text-anchor="middle">absces · ischémia mozgu</text>
+<text class="sub" x="350" y="284" text-anchor="middle">kazeózna nekróza (TBC) je kombináciou oboch — pozri 1.6.3</text>
+</svg>

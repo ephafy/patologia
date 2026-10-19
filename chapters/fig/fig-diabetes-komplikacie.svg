@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 764 316" role="img" aria-labelledby="t223">
+<title id="t223">Diabetes mellitus: od nedostatku inzulínu cez hyperglykémiu a tri poškodzujúce dráhy k mikro- a makroangiopatii a ich orgánovým následkom</title>
+<defs><marker id="a223" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker></defs>
+
+<!-- príčina -->
+<rect class="bx-k" x="6" y="44" width="126" height="54" rx="3"/>
+<text class="lblb" x="69" y="62" text-anchor="middle">T1DM</text>
+<text class="sub" x="69" y="77" text-anchor="middle">autoimunitný zánik</text>
+<text class="sub" x="69" y="89" text-anchor="middle">β-buniek</text>
+<rect class="bx-k" x="6" y="130" width="126" height="54" rx="3"/>
+<text class="lblb" x="69" y="148" text-anchor="middle">T2DM</text>
+<text class="sub" x="69" y="163" text-anchor="middle">rezistencia na inzulín</text>
+<text class="sub" x="69" y="175" text-anchor="middle">+ vyčerpanie β-buniek</text>
+<path class="arw" d="M134,71 L154,104" marker-end="url(#a223)"/>
+<path class="arw" d="M134,157 L154,126" marker-end="url(#a223)"/>
+
+<rect class="bx-m" x="156" y="90" width="104" height="50" rx="3" stroke="var(--color-accent-2-500)"/>
+<text class="lblb" x="208" y="111" text-anchor="middle">Chronická</text>
+<text class="lblb" x="208" y="126" text-anchor="middle">hyperglykémia</text>
+<path class="arw" d="M262,106 L282,45" marker-end="url(#a223)"/>
+<path class="arw" d="M262,115 L282,115" marker-end="url(#a223)"/>
+<path class="arw" d="M262,124 L282,185" marker-end="url(#a223)"/>
+
+<!-- dráhy poškodenia -->
+<rect class="bx-k" x="284" y="22" width="150" height="44" rx="3"/>
+<text class="lblb" x="359" y="40" text-anchor="middle">AGE</text>
+<text class="sub" x="359" y="56" text-anchor="middle">glukóza zosieťuje kolagén</text>
+<rect class="bx-k" x="284" y="93" width="150" height="44" rx="3"/>
+<text class="lblb" x="359" y="111" text-anchor="middle">Polyolová dráha</text>
+<text class="sub" x="359" y="127" text-anchor="middle">sorbitol → osmotický stres</text>
+<rect class="bx-k" x="284" y="164" width="150" height="44" rx="3"/>
+<text class="lblb" x="359" y="182" text-anchor="middle">↑ ROS</text>
+<text class="sub" x="359" y="198" text-anchor="middle">oxidačné poškodenie endotelu</text>
+<path class="arw" d="M436,44 L452,44 M436,115 L452,115 M436,186 L452,186 M452,44 L452,186"/>
+<path class="arw" d="M452,72 L466,72" marker-end="url(#a223)"/>
+<path class="arw" d="M452,172 L466,172" marker-end="url(#a223)"/>
+
+<!-- cievy -->
+<rect class="bx-m" x="468" y="40" width="118" height="66" rx="3" stroke="var(--color-accent-2-500)"/>
+<text class="lblb" x="527" y="57" text-anchor="middle">Mikroangiopatia</text>
+<text class="sub" x="527" y="72" text-anchor="middle">zhrubnuté bazálne</text>
+<text class="sub" x="527" y="84" text-anchor="middle">membrány, hyalínne</text><text class="sub" x="527" y="96" text-anchor="middle">arterioly</text>
+<rect class="bx-m" x="468" y="148" width="118" height="48" rx="3" stroke="var(--color-accent-2-500)"/>
+<text class="lblb" x="527" y="166" text-anchor="middle">Makroangiopatia</text>
+<text class="sub" x="527" y="182" text-anchor="middle">urýchlená ateroskleróza</text>
+
+<!-- následky -->
+<path class="arw" d="M588,62 L606,24" marker-end="url(#a223)"/>
+<path class="arw" d="M588,73 L606,73" marker-end="url(#a223)"/>
+<path class="arw" d="M588,84 L606,122" marker-end="url(#a223)"/>
+<rect class="bx-k" x="608" y="4" width="124" height="38" rx="3"/>
+<text class="lblb" x="670" y="20" text-anchor="middle">Retinopatia</text>
+<text class="sub" x="670" y="34" text-anchor="middle">→ strata zraku</text>
+<rect class="bx-k" x="608" y="54" width="124" height="38" rx="3"/>
+<text class="lblb" x="670" y="70" text-anchor="middle">Nefropatia</text>
+<text class="sub" x="670" y="84" text-anchor="middle">K–W uzly → ↓ GFR</text>
+<rect class="bx-k" x="608" y="104" width="124" height="38" rx="3"/>
+<text class="lblb" x="670" y="120" text-anchor="middle">Neuropatia</text>
+<text class="sub" x="670" y="134" text-anchor="middle">senzitívna, autonómna</text>
+<path class="arw" d="M588,172 L606,172" marker-end="url(#a223)"/>
+<rect class="bx-k" x="608" y="150" width="124" height="44" rx="3"/>
+<text class="lblb" x="670" y="168" text-anchor="middle">IM, CMP, ICHDK</text>
+<text class="sub" x="670" y="184" text-anchor="middle">srdce, mozog, nohy</text>
+
+<!-- diabetická noha -->
+<path class="arw" d="M734,123 C758,130 758,236 710,256" marker-end="url(#a223)"/>
+<path class="arw" d="M620,196 L600,256" marker-end="url(#a223)"/>
+<rect class="bx-m" x="380" y="258" width="352" height="50" rx="3" stroke="var(--color-accent-2-500)"/>
+<text class="lblb" x="556" y="277" text-anchor="middle">Diabetická noha</text>
+<text class="sub" x="556" y="294" text-anchor="middle">necíti poranenie (neuropatia) + zle sa hojí (ischémia) + infekcia</text>
+</svg>

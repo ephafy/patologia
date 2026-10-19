@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 540" role="img" aria-labelledby="tcf">
+<title id="tcf">Epitel dýchacích ciest. Hore zdravý: NKCC1 nabije bunku chloridom, CFTR ho vypustí do lúmenu, sodík ide za ním medzi bunkami, voda za soľou a mucín z pohárikovej bunky napučí na riedky hlien. Dole cystická fibróza: CFTR nefunguje, ENaC bez brzdy vstrebáva sodík, chlorid a voda idú za ním, tekutina zmizne a mucín bez vody a bikarbonátu vytvorí hustý prilepený hlien.</title>
+<defs>
+<marker id="acf" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker>
+<marker id="acfs" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker>
+</defs>
+
+<!-- ═════════════════════ A. ZDRAVÝ EPITEL ═════════════════════ -->
+<g>
+<text class="lblb" x="10" y="14">A · Zdravý epitel dýchacích ciest</text>
+
+<!-- lúmen -->
+<rect class="bx-m" x="10" y="22" width="560" height="22"/>
+<text class="sub" x="164" y="37">riedky hlien = mucín napučaný vodou; kĺže po špičkách riasiniek k hrtanu</text>
+<rect class="bx-k" x="10" y="44" width="560" height="42"/>
+<text class="cap" x="16" y="58">lúmen</text>
+<path class="stk-n" d="M170,86 V48 M184,86 V48 M198,86 V48 M300,86 V48 M314,86 V48 M328,86 V48 M404,86 V48 M418,86 V48 M432,86 V48 M446,86 V48 M512,86 V48 M526,86 V48 M540,86 V48 M554,86 V48"/>
+
+<!-- pohárikovitá bunka -->
+<rect class="cellm" x="20" y="86" width="128" height="122" rx="8"/>
+<circle class="dotm" cx="50" cy="106" r="7"/><circle class="dotm" cx="68" cy="100" r="7"/><circle class="dotm" cx="86" cy="104" r="7"/><circle class="dotm" cx="104" cy="100" r="7"/><circle class="dotm" cx="122" cy="106" r="7"/>
+<circle class="dotm" cx="59" cy="120" r="7"/><circle class="dotm" cx="77" cy="118" r="7"/><circle class="dotm" cx="95" cy="120" r="7"/><circle class="dotm" cx="113" cy="120" r="7"/>
+<circle class="nucm" cx="84" cy="182" r="12"/>
+<text class="lbl-m" x="84" y="150" text-anchor="middle">pohárikovitá</text>
+<text class="lbl-m" x="84" y="162" text-anchor="middle">bunka</text>
+<path class="arw" d="M86,92 L86,42" marker-end="url(#acf)"/>
+<text class="lblb" x="80" y="76" text-anchor="end">⑤ mucín</text>
+
+<!-- medzi bunkami (tesný spoj) -->
+<path class="arw" d="M154,200 L154,50" marker-end="url(#acf)"/>
+<text class="lblb" x="148" y="60" text-anchor="end">③ Na⁺</text>
+
+<!-- riasinková bunka -->
+<rect class="cell" x="160" y="86" width="410" height="122" rx="8"/>
+<text class="lbl-c" x="562" y="200" text-anchor="end">riasinková bunka</text>
+<circle class="nuc" cx="412" cy="160" r="13"/>
+
+<!-- CFTR -->
+<rect class="bx-c" x="212" y="79" width="26" height="14" rx="3" stroke="var(--color-accent-600)"/>
+<path class="arw" d="M225,150 L225,50" marker-end="url(#acf)"/>
+<text class="lblb" x="232" y="62">② Cl⁻, HCO₃⁻</text>
+<text class="lblb" x="218" y="108" text-anchor="end">CFTR</text>
+
+<!-- ENaC -->
+<rect class="bx-k" x="347" y="79" width="26" height="14" rx="3"/>
+<path class="arw" d="M360,50 L360,120" marker-end="url(#acf)"/>
+<text class="lblb" x="366" y="62">Na⁺</text>
+<text class="lblb" x="354" y="108" text-anchor="end">ENaC</text>
+<path class="arw" d="M232,126 L352,126"/>
+<path class="arw" d="M353,119 L353,133"/>
+<text class="sub" x="292" y="121" text-anchor="middle">CFTR brzdí ENaC</text>
+
+<!-- akvaporín -->
+<rect class="bx-k" x="467" y="79" width="26" height="14" rx="3"/>
+<path class="arw" d="M480,150 L480,50" marker-end="url(#acf)"/>
+<text class="lblb" x="486" y="62">④ H₂O</text>
+<text class="lblb" x="474" y="108" text-anchor="end">akvaporín</text>
+
+<!-- bazolaterálna membrána -->
+<rect class="bx-k" x="212" y="201" width="26" height="14" rx="3"/>
+<path class="arw" d="M225,236 L225,166" marker-end="url(#acf)"/>
+<text class="lblb" x="218" y="180" text-anchor="end">① NKCC1</text>
+<text class="sub" x="231" y="234">Na⁺, K⁺, 2 Cl⁻</text>
+
+<circle class="bx-c" cx="360" cy="208" r="9" stroke="var(--color-accent-600)"/>
+<path class="arw" d="M354,186 L354,234" marker-end="url(#acfs)"/>
+<path class="arw" d="M366,234 L366,186" marker-end="url(#acfs)"/>
+<text class="sub" x="348" y="232" text-anchor="end">3 Na⁺</text>
+<text class="sub" x="372" y="232">2 K⁺</text>
+<text class="sub" x="360" y="180" text-anchor="middle">Na⁺/K⁺-ATPáza</text>
+
+<rect class="bx-k" x="467" y="201" width="26" height="14" rx="3"/>
+<path class="arw" d="M480,186 L480,234" marker-end="url(#acfs)"/>
+<text class="sub" x="486" y="232">K⁺</text>
+<text class="sub" x="480" y="180" text-anchor="middle">K⁺ kanál</text>
+
+<text class="cap" x="16" y="250">interstícium · krv</text>
+
+<!-- kroky -->
+<text class="lblb" x="582" y="36">Ako vzniká hlien</text>
+<text class="sub" x="582" y="54">① NKCC1 nabije bunku Cl⁻</text>
+<text class="sub" x="582" y="70">② CFTR ho pustí do</text>
+<text class="sub" x="594" y="82">lúmenu (+ HCO₃⁻)</text>
+<text class="sub" x="582" y="98">③ Na⁺ ide za záporným</text>
+<text class="sub" x="594" y="110">Cl⁻ medzi bunkami</text>
+<text class="sub" x="582" y="126">④ voda ide za soľou</text>
+<text class="sub" x="594" y="138">(osmóza)</text>
+<text class="sub" x="582" y="154">⑤ mucín z pohárikovej</text>
+<text class="sub" x="594" y="166">bunky v nej napučí</text>
+<text class="sub" x="594" y="178">na riedky hlien</text>
+<text class="sub" x="582" y="200">ATPáza a K⁺ kanál</text>
+<text class="sub" x="582" y="212">držia gradient, ktorý</text>
+<text class="sub" x="582" y="224">NKCC1 poháňa</text>
+</g>
+
+<line class="grid" x1="0" y1="266" x2="700" y2="266"/>
+
+<!-- ═════════════════════ B. CYSTICKÁ FIBRÓZA ═════════════════════ -->
+<g transform="translate(0,276)">
+<text class="lblb" x="10" y="14">B · Cystická fibróza (CFTR nefunkčný)</text>
+
+<rect class="bx-m" x="10" y="22" width="560" height="50"/>
+<text class="sub" x="164" y="40">hustý hlien: mucín bez vody a HCO₃⁻ sa nerozvinie a prilepí sa k epitelu</text>
+<text class="sub" x="164" y="54">→ riasinky ho neodsunú → baktérie, neutrofily</text>
+<rect class="bx-k" x="10" y="72" width="560" height="14"/>
+<text class="cap" x="16" y="66">lúmen</text>
+<path class="stk-n" d="M170,86 q2,-8 10,-10 M184,86 q2,-8 10,-10 M198,86 q2,-8 10,-10 M290,86 q2,-8 10,-10 M304,86 q2,-8 10,-10 M318,86 q2,-8 10,-10 M394,86 q2,-8 10,-10 M408,86 q2,-8 10,-10 M422,86 q2,-8 10,-10 M506,86 q2,-8 10,-10 M520,86 q2,-8 10,-10 M534,86 q2,-8 10,-10 M548,86 q2,-8 10,-10"/>
+
+<rect class="cellm" x="20" y="86" width="128" height="122" rx="8"/>
+<circle class="dotm" cx="50" cy="106" r="7"/><circle class="dotm" cx="68" cy="100" r="7"/><circle class="dotm" cx="86" cy="104" r="7"/><circle class="dotm" cx="104" cy="100" r="7"/><circle class="dotm" cx="122" cy="106" r="7"/>
+<circle class="dotm" cx="59" cy="120" r="7"/><circle class="dotm" cx="77" cy="118" r="7"/><circle class="dotm" cx="95" cy="120" r="7"/><circle class="dotm" cx="113" cy="120" r="7"/>
+<circle class="nucm" cx="84" cy="182" r="12"/>
+<text class="lbl-m" x="84" y="150" text-anchor="middle">pohárikovitá</text>
+<text class="lbl-m" x="84" y="162" text-anchor="middle">bunka</text>
+<path class="arw" d="M86,92 L86,62" marker-end="url(#acf)"/>
+<text class="lblb" x="80" y="84" text-anchor="end">⑤</text>
+
+<!-- medzi bunkami: opačne -->
+<path class="arw" d="M154,76 L154,200" marker-end="url(#acf)"/>
+<text class="lblb" x="148" y="66" text-anchor="end">③ Cl⁻</text>
+
+<rect class="cell" x="160" y="86" width="410" height="122" rx="8"/>
+<text class="lbl-c" x="562" y="200" text-anchor="end">riasinková bunka</text>
+<circle class="nuc" cx="412" cy="160" r="13"/>
+
+<!-- CFTR nefunkčný -->
+<rect class="bx-m" x="212" y="79" width="26" height="14" rx="3" stroke="var(--color-accent-2-600)"/>
+<path class="stk-acc2" d="M213,74 L237,98 M237,74 L213,98"/>
+<text class="lblb" x="218" y="108" text-anchor="end">CFTR</text>
+<text class="sub" x="232" y="108">① mutácia:</text>
+<text class="sub" x="232" y="120">Cl⁻ ani HCO₃⁻ nevyjdú</text>
+
+<!-- ENaC bez brzdy -->
+<rect class="bx-k" x="347" y="79" width="26" height="14" rx="3"/>
+<path class="arw" d="M360,58 L360,150" marker-end="url(#acfs)" style="stroke-width:3.5"/>
+<text class="lblb" x="366" y="68" style="paint-order:stroke;stroke:var(--color-neutral-100);stroke-width:4px">② ↑ Na⁺</text>
+<text class="lblb" x="354" y="108" text-anchor="end">ENaC</text>
+<path class="arwd" d="M232,134 L352,134"/>
+<text class="sub" x="292" y="146" text-anchor="middle">brzda chýba</text>
+
+<!-- akvaporín: voda dnu -->
+<rect class="bx-k" x="467" y="79" width="26" height="14" rx="3"/>
+<path class="arw" d="M480,58 L480,150" marker-end="url(#acf)"/>
+<text class="lblb" x="486" y="68" style="paint-order:stroke;stroke:var(--color-neutral-100);stroke-width:4px">④ H₂O</text>
+<text class="lblb" x="474" y="108" text-anchor="end">akvaporín</text>
+
+<!-- bazolaterálna membrána -->
+<rect class="bx-k" x="212" y="201" width="26" height="14" rx="3"/>
+<path class="arwd" d="M225,236 L225,166" marker-end="url(#acf)"/>
+<text class="lblb" x="218" y="180" text-anchor="end">NKCC1</text>
+<text class="sub" x="231" y="234">Cl⁻ nemá kam ísť</text>
+
+<circle class="bx-c" cx="360" cy="208" r="9" stroke="var(--color-accent-600)"/>
+<path class="arw" d="M354,186 L354,234" marker-end="url(#acfs)"/>
+<path class="arw" d="M366,234 L366,186" marker-end="url(#acfs)"/>
+<text class="sub" x="348" y="232" text-anchor="end">3 Na⁺</text>
+<text class="sub" x="372" y="232">2 K⁺</text>
+<text class="sub" x="360" y="180" text-anchor="middle">Na⁺ odchádza do krvi</text>
+
+<rect class="bx-k" x="467" y="201" width="26" height="14" rx="3"/>
+<path class="arw" d="M480,186 L480,234" marker-end="url(#acfs)"/>
+<text class="sub" x="486" y="232">K⁺</text>
+<text class="sub" x="480" y="180" text-anchor="middle">K⁺ kanál</text>
+
+<text class="cap" x="16" y="250">interstícium · krv</text>
+
+<text class="lblb" x="582" y="36">Čo sa pokazí</text>
+<text class="sub" x="582" y="54">① CFTR nepustí Cl⁻</text>
+<text class="sub" x="594" y="66">ani HCO₃⁻ (najčastejšie</text>
+<text class="sub" x="594" y="78">mutácia F508del)</text>
+<text class="sub" x="582" y="94">② ENaC bez brzdy</text>
+<text class="sub" x="594" y="106">vstrebáva Na⁺</text>
+<text class="sub" x="582" y="120">③ Cl⁻ ide za Na⁺ dnu</text>
+<text class="sub" x="582" y="134">④ voda ide za soľou</text>
+<text class="sub" x="594" y="146">→ tekutina zmizne,</text>
+<text class="sub" x="594" y="158">riasinky sa sklopia</text>
+<text class="sub" x="582" y="172">⑤ mucín bez vody</text>
+<text class="sub" x="594" y="184">a HCO₃⁻ sa nerozvinie</text>
+<text class="sub" x="582" y="200">→ hlien sa prilepí →</text>
+<text class="sub" x="582" y="212">infekcia → zápal →</text>
+<text class="sub" x="582" y="224">ešte hustejší hlien ⟳</text>
+</g>
+</svg>

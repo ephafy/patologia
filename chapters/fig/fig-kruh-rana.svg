@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 290" role="img" aria-labelledby="tmfigkruhrana">
+<title id="tmfigkruhrana">Bludný kruh chronickej rany: neutrofily a baktérie v biofilme tvoria proteázy, tie rozkladajú rastové faktory, medzibunkovú hmotu a nové cievy, rana ostáva otvorená a znova sa infikuje; bod zvratu nastáva, keď proteázy prevážia nad tvorbou nového tkaniva</title>
+<defs><marker id="mfigkruhrana" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker></defs>
+<rect class="bx-c" x="20" y="0" width="190" height="26" rx="3" stroke="var(--color-accent-600)"/>
+<text class="lblb" x="115" y="17" text-anchor="middle">hypoxia, hyperglykémia, tlak</text>
+<path class="arw" d="M115,26 L115,42" marker-end="url(#mfigkruhrana)"/>
+<rect class="bx-k" x="20" y="44" width="190" height="50" rx="3"/>
+<text class="lblb" x="115" y="66" text-anchor="middle">neutrofily a baktérie</text>
+<text class="lblb" x="115" y="80" text-anchor="middle">v biofilme</text>
+<rect class="bx-k" x="490" y="44" width="190" height="50" rx="3"/>
+<text class="lblb" x="585" y="66" text-anchor="middle">proteázy ↑</text>
+<text class="lblb" x="585" y="80" text-anchor="middle">(elastáza, metaloproteinázy)</text>
+<rect class="bx-k" x="490" y="194" width="190" height="50" rx="3"/>
+<text class="lblb" x="585" y="216" text-anchor="middle">rozklad rastových faktorov,</text>
+<text class="lblb" x="585" y="230" text-anchor="middle">matrix a nových ciev</text>
+<rect class="bx-m" x="20" y="194" width="190" height="50" rx="3" stroke="var(--color-accent-2-600)" stroke-width="1.5"/>
+<text class="lblb" x="115" y="216" text-anchor="middle">rana ostáva otvorená</text>
+<text class="lblb" x="115" y="230" text-anchor="middle">a vlhká</text>
+<path class="arw" d="M212,69 L488,69" marker-end="url(#mfigkruhrana)"/>
+<path class="arw" d="M585,96 L585,192" marker-end="url(#mfigkruhrana)"/>
+<path class="arw" d="M488,219 L212,219" marker-end="url(#mfigkruhrana)"/>
+<path class="arw" d="M115,192 L115,96" marker-end="url(#mfigkruhrana)" style="stroke-width:2.2"/>
+<text class="sub" x="350" y="63" text-anchor="middle">zápalová fáza neskončí</text>
+<text class="sub" x="577" y="148" text-anchor="end">rozkladajú rýchlejšie,</text>
+<text class="sub" x="577" y="161" text-anchor="end">než sa stihne stavať</text>
+<text class="sub" x="350" y="213" text-anchor="middle">granulačné tkanivo nevznikne</text>
+<text class="sub" x="123" y="148" text-anchor="start">brána pre ďalšiu</text>
+<text class="sub" x="123" y="161" text-anchor="start">infekciu</text>
+<text x="350" y="146" text-anchor="middle" style="font-size:26px;fill:var(--color-accent-2-600)">⟳</text>
+<text class="cap" x="350" y="162" text-anchor="middle">circulus vitiosus</text>
+<text class="lbl-m" x="585" y="262" text-anchor="middle">bod zvratu: proteázy &gt; syntéza</text>
+<text class="sub" x="585" y="278" text-anchor="middle">(rana sa už sama nezahojí)</text>
+</svg>
