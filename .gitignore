@@ -1,0 +1,29 @@
+# Chránené diela tretích strán — nikdy sa nezverejňujú: podkladové materiály a dokumenty
+zdroje/
+*.pdf
+*.pptx
+*.ppt
+*.docx
+*.doc
+*.zip
+*.xlsx
+
+# Archív starších pracovných verzií — nezverejňuje sa
+archiv/
+
+# lokálne nastavenia a systémové súbory
+.claude/
+# lokálne nástroje autora (Ctrl+R → opravy.docx) — nikdy na web
+admin/
+node_modules/
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Interné pracovné dokumenty autora — nezverejňujú sa
+CLAUDE.md
+PLAN_OBSAHU.md
+NÁVOD.md
+# Pracovné poznámky ku kapitolám (heslá, fakty s odkazmi) — nezverejňujú sa
+pracovne/
+__pycache__/
