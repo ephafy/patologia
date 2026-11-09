@@ -1,0 +1,31 @@
+# Obrázky k heslám glosára, ktoré nie sú v hesle samom (tools/build.js → assets/glossary/96-obrazky.js).
+# Riadok: id → súbor | popis – čo na obrázku hľadať. Súbor musí mať riadok v ZDROJE-OBRAZKOV.md (autor, licencia, odkaz).
+# Obrázok sa pridá k vlastnému obrázku hesla (napr. klinický obraz + mikroskopia).
+# ── kap. 11, pripomienky autora 9. 11. 2026 ─────────────────────────────
+virchowova-uzlina → virchow-node-ct.jpg | Virchowova uzlina na CT krku: zväčšená uzlina vľavo nad kľúčnou kosťou (šípka; na CT je ľavá strana pacienta vpravo).
+dfsp → dfsp-storiform.jpg | Dermatofibrosarcoma protuberans (H&E): vretenovité bunky vychádzajú lúčovito zo stredu ako špice kolesa – storiformná stavba (vpravo vyznačená).
+bazocelularny-karcinom → bcc-clinical.jpg | Bazocelulárny karcinóm na nose: lesklý ružový uzol s rozšírenými cievkami a vredom v strede.
+lokalne-agresivny-nador → bcc-clinical.jpg | Bazocelulárny karcinóm – rozrušuje okolie, ale takmer nemetastázuje.
+folikulovy-lymfom → follicular-lymphoma.jpg | Folikulový lymfóm (H&E, malé zväčšenie): uzlinu vyplnili tesne naložené nádorové folikuly, normálna stavba uzliny zmizla.
+lobularny-karcinom → ilc-ecadherin.jpg | E-kadherín v invazívnom lobulárnom karcinóme: rad nádorových buniek (šípka) je bez hnedej farby – E-kadherín stratil; normálne vývody dole ho majú.
+izolovane-nadorove-bunky → itc-lymph-node.jpg | Izolované nádorové bunky v uzline: v H&E pri malom zväčšení ich nevidno, cytokeratín (v strede) ich zafarbí hnedo, vpravo skupinka pri veľkom zväčšení.
+osteolyticka-metastaza → bone-metastasis-pelvis-xray.jpg | RTG panvy: veľké vyjasnenie v pravej bedrovej kosti pri krížovobedrovom kĺbe (šípky) – kosť rozpustila metastáza.
+nodularna-fasciitida → nodular-fasciitis.jpg | Nodulárna fasciitída (H&E): neusporiadané vretenovité bunky ako v bunkovej kultúre, medzi nimi erytrocyty a lymfocyty – vyzerá zhubne, je benígna.
+borderline → serous-borderline.jpg | Hraničný serózny nádor vaječníka (H&E): rozvetvené papily, odlúpené zhluky buniek, najviac stredná atypia – bez invázie do strómy.
+tymom → thymoma-b1.jpg | Tymóm typu B1 (H&E, malé zväčšenie).
+transcelomove-sirenie → peritoneal-carcinomatosis.jpg | Karcinóza pobrušnice pri karcinóme žalúdka: seróza čriev posiata drobnými uzlíkmi.
+makrometastaza → ln-metastasis-crc.jpg | Makrometastáza adenokarcinómu hrubého čreva v uzline: nádorové žľazky vytláčajú lymfoidné tkanivo.
+selektivne-metastazovanie → osteoblastic-metastasis-prostate.jpg | Metastázy karcinómu prostaty v kostiach panvy a chrbtice – kosť je pre tento nádor obľúbená „pôda“.
+semeno-a-poda → osteoblastic-metastasis-prostate.jpg | Karcinóm prostaty si za „pôdu“ vyberá kosť: osteoblastové metastázy v panve a chrbtici.
+dignita → fig-dignita-mapa.svg | Mapa kap. 11: diferenciácia, rast voči okoliu a metastázy vedú k rozhodnutiu o dignite.
+staging → fig-tnm-stena.svg | Kategória T podľa hĺbky prerastania stenou čreva; N – uzliny, M – vzdialené metastázy.
+exofyticky-rast → crc-fungating-gross.jpg | Exofytický karcinóm hrubého čreva (MA): karfiolovitý nádor rastie do priesvitu.
+ulcerovany-rast → crc-ulcerated-gross.jpg | Vredový karcinóm hrubého čreva (MA): kráter s navalitými okrajmi.
+difuzne-infiltrujuci-rast → linitis-plastica-gross.jpg | Linitis plastica (MA): stena žalúdka je zhrubnutá, belavá a tuhá bez ohraničenej hrčky.
+stenotizujuci-rast → crc-napkin-ring.jpg | Prstencový karcinóm hrubého čreva (MA): nádor obrástol celý obvod a zúžil priesvit.
+pagetova-choroba-bradavky → paget-nipple-clinical.jpg | Pagetova choroba bradavky: začervenaná, šupinatá, zhrubnutá koža bradavky a dvorca – pripomína ekzém.
+folikulovy-karcinom → ftc-histo.jpg | Folikulový karcinóm štítnej žľazy (H&E): pravidelné folikuly s rovnakými jadrami – z buniek sa malignita nepozná, rozhodne až prerastanie puzdra alebo ciev.
+# ── kap. 13, dorovnanie 9. 11. 2026 (obrázky, ktoré už v knihe sú) ─────────
+liposarkom → alt-histo.jpg | Dobre diferencovaný liposarkóm (H&E): pri malom zväčšení pripomína lipóm, medzi tukovými bunkami sú však väzivové septá s väčšími tmavými atypickými jadrami.
+liposarkom → myxoid-liposarcoma-histo.jpg | Myxoidný liposarkóm (H&E): hlienovité pozadie s jemnou sieťou kapilár a drobné lipoblasty s vakuolou, ktorá vtláča jadro.
+osteomyelitida → sequestra-osteomyelitis.jpg | Sekvestre pri osteomyelitíde: odumreté kúsky kosti, ktoré sa oddelili od živej kosti (historická fotografia preparátov).

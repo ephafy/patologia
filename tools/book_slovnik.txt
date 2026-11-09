@@ -1,0 +1,13 @@
+liver>pecen hepatic>pecen muscle>sval muscles>sval kidney>oblic renal>oblic brain>mozog heart>srdce
+cardiac>srdco blood>krv vessel>cieva vessels>cievy lung>pluca lungs>pluca skin>koza bone>kost
+wound>rana healing>hojen scar>jazva injury>posko cell>bunka cells>bunky death>smrt tissue>tkani
+inflammation>zapal inflammatory>zapal acute>akutn chronic>chron swelling>opuch necrosis>nekro
+apoptosis>apopt atrophy>atrof hypertrophy>hyper hyperplasia>hyper metaplasia>metap granuloma>granu
+granulomas>granu giant>obrov foreign>cudzi body>teles fibrosis>fibro collagen>kolag fibroblast>fibro
+fibroblasts>fibro macrophage>makro macrophages>makro neutrophil>neutr neutrophils>neutr
+lymphocyte>lymfo lymphocytes>lymfo leukocyte>leuko endothelium>endot endothelial>endot membrane>membr
+nucleus>jadro cytoplasm>cytop amyloid>amylo fatty>tukov steatosis>steat iron>zelez calcium>vapni
+calcification>kalci pigment>pigme bile>zlc stone>kamen fever>horuc pain>boles redness>scerv
+heat>teplo pus>hnis abscess>absce ulcer>vred edema>edem oedema>edem exudate>exsud transudate>trans
+deficiency>defic inhibition>inhib activation>aktiv synthesis>synte degradation>rozkl oxygen>kysli
+water>voda energy>energ enzyme>enzym enzymes>enzym growth>rast factor>fakto

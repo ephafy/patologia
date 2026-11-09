@@ -1,0 +1,43 @@
+{
+  "titul": "Mapa kapitoly: o dignite nádoru rozhodujú tri roviny – bunka (diferenciácia a atypia), tkanivo (expanzia alebo invázia) a telo (metastázy); z nich patológ určí, či je nádor benígny, intermediárny alebo malígny. Pri zhubnom nádore určí stupeň malignity (grade) a rozsah (stage); nádor pôsobí na hostiteľa miestne aj celkovo a všetko spolu sa premietne do prognózy a do voľby liečby",
+  "nadpis": "Tri roviny: od bunky k telu",
+  "rady": [
+    [
+      { "id": "bunka", "trieda": "bx-c", "odkaz": "#sec-11-2", "nazov": "BUNKA · 11.2",
+        "text": ["diferenciácia → anaplázia", "atypia, mitózy, strata funkcie"] },
+      { "id": "tkanivo", "trieda": "bx-c", "odkaz": "#sec-11-3", "nazov": "TKANIVO · 11.3",
+        "text": ["odtláča (expanzia) × prerastá (invázia)", "bazálna membrána, cievy, nervy"] },
+      { "id": "telo", "trieda": "bx-c", "odkaz": "#sec-11-4", "nazov": "TELO · 11.4",
+        "text": ["metastatická kaskáda", "lymfa, krv, dutiny; semeno a pôda"] }
+    ],
+    { "plne": false, "uzly": [
+      { "id": "dignita", "trieda": "bx-m", "odkaz": "#sec-11-5", "nazov": "DIGNITA · 11.5", "sirka": 320,
+        "text": ["benígny · intermediárny (riziko) · malígny", "rozhodne invázia a metastáza"] }
+    ] },
+    [
+      { "id": "grade", "trieda": "bx-k", "obrys": "var(--color-accent-600)", "odkaz": "#sec-11-6", "nazov": "GRADE · 11.6",
+        "text": ["aký zlý: G1–G3, Gleason, Nottingham", "diferenciácia, atypia, mitózy, nekróza"] },
+      { "id": "hostitel", "trieda": "bx-k", "obrys": "var(--color-accent-2-600)", "odkaz": "#sec-11-8", "nazov": "HOSTITEĽ · 11.8",
+        "text": ["miestne: tlak, upchatie, vred", "celkovo: kachexia ⟳, paraneoplastické"] },
+      { "id": "stage", "trieda": "bx-k", "obrys": "var(--color-accent-600)", "odkaz": "#sec-11-7", "nazov": "STAGE · 11.7",
+        "text": ["kam až: T, N, M → štádium 0–IV", "predpony c, p, y, r; okraje R0–R2"] }
+    ],
+    { "plne": false, "uzly": [
+      { "id": "prognoza", "trieda": "bx-c", "odkaz": "#sec-11-9", "nazov": "PROGNÓZA A PREDIKCIA · 11.9", "sirka": 320,
+        "text": ["ako dopadne choroba (prognostické)", "čo zaberie (prediktívne: HER2, KIT…)"] }
+    ] }
+  ],
+  "sipky": [
+    { "od": "bunka", "do": "tkanivo" },
+    { "od": "tkanivo", "do": "telo" },
+    { "od": "bunka", "do": "dignita" },
+    { "od": "tkanivo", "do": "dignita" },
+    { "od": "telo", "do": "dignita" },
+    { "od": "dignita", "do": "grade", "popis": "len pri zhubnom" },
+    { "od": "dignita", "do": "hostitel", "styl": "arwd" },
+    { "od": "dignita", "do": "stage", "popis": "len pri zhubnom" },
+    { "od": "grade", "do": "prognoza" },
+    { "od": "hostitel", "do": "prognoza" },
+    { "od": "stage", "do": "prognoza" }
+  ]
+}
