@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Flows – {{BRAND}}</title>
+<script>/* vnútri vrstvy Flows (assets/js/karty-flow.js) vyplní celý rám */if(/[?&]embed=/.test(location.search))document.documentElement.classList.add("kt-embed")</script>
+<script src="assets/js/view-early.js" data-perf-only></script>
+<meta name="theme-color" content="#0f0c15">
+<meta name="pf-book" content="{{SLUG}}">
+<meta name="description" content="Flows: kartičky na opakovanie v odstupoch. Funguje aj offline.">
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<link rel="stylesheet" href="assets/styles/palette.css">
+<link rel="stylesheet" href="assets/styles/karty.css">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="assets/img/icon-32.png">
+<link rel="apple-touch-icon" href="assets/img/icon-180.png">
+</head>
+<body>
+<div id="kt" class="kt">
+  <div class="kt-pager" id="ktPager">
+    <section class="kt-pane kt-pane-feed" aria-label="Flow">
+      <main class="kt-feed" id="ktFeed" aria-label="Karty" tabindex="-1"></main>
+      <header class="kt-top">
+        <a class="kt-ico" id="ktBack" href="index.html" aria-label="Späť do knihy"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></a>
+        <div class="kt-title"><div class="kt-mode" id="ktMode" role="group" aria-label="Flows – režim"><button type="button" data-mode="uc" title="Učiť sa: kostra kapitoly a jej pojmy v poradí výkladu">Učiť</button><button type="button" data-mode="sk" title="Skúšať sa: opakovanie ako v Anki">Skúšať</button></div><span id="ktCount" aria-live="polite"></span></div>
+        <div class="kt-top-r">
+          <button type="button" class="kt-only" id="ktOnly" aria-label="Zrušiť filter kapitoly" hidden><span id="ktOnlyT"></span><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+          <button type="button" class="kt-ico" id="ktFilter" aria-label="Výber tém"><svg viewBox="0 0 24 24"><path d="M4 6h16l-6.2 7.2V19l-3.6-1.8v-4z"/></svg></button>
+        </div>
+        <div class="kt-prog" aria-hidden="true"><i id="ktProg"></i></div>
+      </header>
+    </section>
+    <section class="kt-pane" aria-label="Témy"><div class="kt-pane-h"><b>Témy</b></div><div class="kt-pane-b" id="ktPaneTemy"></div></section>
+    <section class="kt-pane" aria-label="Prehľad"><div class="kt-pane-h"><b>Prehľad</b></div><div class="kt-pane-b" id="ktPaneStat"></div></section>
+    <section class="kt-pane" aria-label="Nastavenia"><div class="kt-pane-h"><b>Nastavenia</b></div><div class="kt-pane-b" id="ktPaneNast"></div></section>
+  </div>
+
+  <nav class="kt-nav" aria-label="Sekcie">
+    <i class="kt-nav-ind" id="ktInd" aria-hidden="true"></i>
+    <button type="button" data-tab="feed" class="on" aria-label="Flow"><svg viewBox="0 0 24 24"><path d="M13 3L5 14h6l-1 7 8-11h-6z"/></svg><span>Flow</span></button>
+    <button type="button" data-tab="temy" aria-label="Témy"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg><span>Témy</span></button>
+    <button type="button" data-tab="stat" aria-label="Prehľad"><svg viewBox="0 0 24 24"><path d="M5 20v-7M12 20V5M19 20v-11"/></svg><span>Prehľad</span></button>
+    <button type="button" data-tab="nast" aria-label="Nastavenia"><svg viewBox="0 0 24 24"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/></svg><span>Nastavenia</span></button>
+  </nav>
+
+  <section class="kt-sheet" id="ktSheet" role="dialog" aria-modal="true" aria-label="Podrobnosti" hidden>
+    <div class="kt-sheet-h"><b id="ktSheetT"></b><button type="button" class="kt-ico" id="ktSheetX" aria-label="Zavrieť"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+    <div class="kt-sheet-b" id="ktSheetB"></div>
+  </section>
+  <div class="kt-toast" id="ktToast" role="status"></div>
+</div>
+<noscript><p style="color:#fff;padding:24px">Flows potrebuje JavaScript.</p></noscript>
+<script src="assets/karty/karty-data.js"></script>
+<script src="assets/js/karty-fsrs.js"></script>
+<script src="assets/js/karty-sm2.js"></script>
+<script src="assets/js/karty-art.js"></script>
+<script src="assets/js/karty-app.js"></script>
+<script src="assets/js/pwa.js"></script>
+</body>
+</html>

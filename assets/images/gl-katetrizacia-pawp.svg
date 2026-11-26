@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title>Katetrizácia pravého srdca: katéter s balónikom sa zaklinuje vo vetve pľúcnice a zmeria tlak v ľavej predsieni (PAWP)</title>
+  <defs>
+    <marker id="kb" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#6b6764"/></marker>
+  </defs>
+  <rect width="800" height="420" fill="#fff"/>
+  <text x="400" y="24" font-size="13" fill="#6b6764" text-anchor="middle">cesta krvi pravým srdcom do pľúc a späť do ľavého srdca</text>
+
+  <!-- šesť úsekov cesty krvi -->
+  <g font-size="12.5" font-weight="700" text-anchor="middle">
+    <rect x="20"  y="150" width="104" height="62" rx="10" fill="#dfe6f7" stroke="#3a5fb0" stroke-width="1.6"/><text x="72"  y="176" fill="#2c4a8f">pravá</text><text x="72"  y="194" fill="#2c4a8f">predsieň</text>
+    <rect x="148" y="150" width="104" height="62" rx="10" fill="#dfe6f7" stroke="#3a5fb0" stroke-width="1.6"/><text x="200" y="176" fill="#2c4a8f">pravá</text><text x="200" y="194" fill="#2c4a8f">komora</text>
+    <rect x="276" y="150" width="104" height="62" rx="10" fill="#dfe6f7" stroke="#3a5fb0" stroke-width="1.6"/><text x="328" y="176" fill="#2c4a8f">pľúcnica</text><text x="328" y="194" fill="#2c4a8f">a jej vetvy</text>
+    <rect x="404" y="150" width="104" height="62" rx="10" fill="#efeaf8" stroke="#7a62c4" stroke-width="1.6"/><text x="456" y="176" fill="#3d2a7a">pľúcne</text><text x="456" y="194" fill="#3d2a7a">kapiláry</text>
+    <rect x="532" y="150" width="104" height="62" rx="10" fill="#fde3e5" stroke="#c2333f" stroke-width="1.6"/><text x="584" y="176" fill="#a02430">pľúcne</text><text x="584" y="194" fill="#a02430">žily</text>
+    <rect x="660" y="150" width="120" height="62" rx="10" fill="#fde3e5" stroke="#c2333f" stroke-width="1.6"/><text x="720" y="176" fill="#a02430">ľavá</text><text x="720" y="194" fill="#a02430">predsieň</text>
+  </g>
+  <g stroke="#6b6764" stroke-width="1.8" fill="none" marker-end="url(#kb)">
+    <path d="M125 181h20"/><path d="M253 181h20"/><path d="M381 181h20"/><path d="M509 181h20"/><path d="M637 181h20"/>
+  </g>
+  <text x="400" y="236" font-size="11.5" fill="#8a8580" text-anchor="middle">smer prúdenia krvi</text>
+
+  <!-- katéter: zo žily cez pravé srdce do vetvy pľúcnice -->
+  <path d="M14 108 H72 C100 108 110 130 130 140 C150 150 170 150 200 146 H300 C330 146 336 150 352 150" fill="none" stroke="#201e1d" stroke-width="3.4" stroke-linecap="round"/>
+  <circle cx="366" cy="150" r="13" fill="#fff3a8" stroke="#a88a00" stroke-width="1.6"/>
+  <circle cx="352" cy="150" r="3.6" fill="#201e1d"/>
+  <text x="20" y="62" font-size="12.5" font-weight="700" fill="#201e1d">katéter s balónikom</text>
+  <text x="20" y="80" font-size="11.5" fill="#55505a">zavedený žilou (krčnou, stehennou, v lakti)</text>
+  <path d="M366 136 V112" stroke="#a88a00" stroke-width="1.4" fill="none"/>
+  <text x="372" y="104" font-size="12" font-weight="700" fill="#7a6600">nafúknutý balónik uzavrie vetvu</text>
+
+  <!-- stĺpec krvi bez prúdenia -->
+  <path d="M380 258 H720" stroke="#7a62c4" stroke-width="2" fill="none"/>
+  <path d="M380 252 V264 M720 252 V264" stroke="#7a62c4" stroke-width="2"/>
+  <text x="550" y="282" font-size="12.5" font-weight="700" fill="#3d2a7a" text-anchor="middle">za balónikom krv netečie – je to stĺpec krvi bez prúdenia</text>
+  <text x="550" y="300" font-size="12" fill="#55505a" text-anchor="middle">bez prúdu nie je pokles tlaku, takže hrot katétra „cíti“ tlak ľavej predsiene</text>
+
+  <!-- význam výsledku -->
+  <rect x="20" y="322" width="370" height="84" rx="8" fill="#eef5fb" stroke="#2f7fb8" stroke-width="1.4"/>
+  <text x="34" y="344" font-size="13" font-weight="700" fill="#1d5a86">PAWP ≤ 15 mmHg</text>
+  <text x="34" y="362" font-size="12" fill="#201e1d">tlak za kapilárami je v norme (4–12 mmHg);</text>
+  <text x="34" y="378" font-size="12" fill="#201e1d">vysoký tlak v pľúcnici zostáva nevysvetlený srdcom →</text>
+  <text x="34" y="394" font-size="12" font-weight="700" fill="#201e1d">prekážka je v pľúcnych cievach (pre-kapilárna)</text>
+
+  <rect x="410" y="322" width="370" height="84" rx="8" fill="#fdecee" stroke="#c2333f" stroke-width="1.4"/>
+  <text x="424" y="344" font-size="13" font-weight="700" fill="#a02430">PAWP &gt; 15 mmHg</text>
+  <text x="424" y="362" font-size="12" fill="#201e1d">tlak v ľavej predsieni je zvýšený a prenáša sa</text>
+  <text x="424" y="378" font-size="12" fill="#201e1d">spätne cez žily a kapiláry do pľúcnice →</text>
+  <text x="424" y="394" font-size="12" font-weight="700" fill="#201e1d">príčina je v ľavom srdci (post-kapilárna)</text>
+</svg>

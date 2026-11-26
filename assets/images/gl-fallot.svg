@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title>Fallotova tetralógia: defekt komorovej priehradky, zúžený výtok z pravej komory, jazdiaca aorta, hypertrofia pravej komory</title>
+  <defs>
+    <marker id="fb" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#3a5fb0"/></marker>
+    <marker id="fr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#c2333f"/></marker>
+  </defs>
+  <rect width="800" height="400" fill="#fff"/>
+  <text x="400" y="24" font-size="13" fill="#6b6764" text-anchor="middle">pohľad spredu na rez srdcom – pravá komora vľavo, ľavá komora vpravo</text>
+
+  <g transform="translate(120 0)">
+  <!-- pľúcnica (zúžený výtok) -->
+  <path d="M168 205 C168 175 182 160 182 140 V70 H232 V140 C232 160 246 175 246 205 Z" fill="#dfe6f7" stroke="#3a5fb0" stroke-width="2"/>
+  <!-- zúženie: dve vypuklé "pery" v hrdle výtoku -->
+  <path d="M168 176 C196 178 200 190 200 205 H168 Z" fill="#8a97c4" stroke="#3a5fb0" stroke-width="2"/>
+  <path d="M246 176 C218 178 214 190 214 205 H246 Z" fill="#8a97c4" stroke="#3a5fb0" stroke-width="2"/>
+  <text x="207" y="62" font-size="12" font-weight="700" fill="#2c4a8f" text-anchor="middle">pľúcnica</text>
+
+  <!-- aorta (jazdí nad defektom) -->
+  <path d="M290 205 V120 C290 70 330 58 372 58 H400 V96 H372 C352 96 340 106 340 126 V205 Z" fill="#fde3e5" stroke="#c2333f" stroke-width="2"/>
+  <text x="372" y="50" font-size="12" font-weight="700" fill="#a02430" text-anchor="middle">aorta</text>
+
+  <!-- pravá komora (hrubá stena = hypertrofia) -->
+  <path d="M120 215 H300 V340 C300 358 286 368 268 368 H152 C132 368 120 354 120 336 Z" fill="#dfe6f7" stroke="#b5738a" stroke-width="14" stroke-linejoin="round"/>
+  <!-- ľavá komora -->
+  <path d="M300 215 H430 V340 C430 358 416 368 398 368 H332 C312 368 300 354 300 336 Z" fill="#fde3e5" stroke="#d9a1ad" stroke-width="6" stroke-linejoin="round"/>
+  <!-- priehradka s defektom -->
+  <rect x="294" y="236" width="12" height="130" fill="#d9a1ad"/>
+  <path d="M293 215 H307 V236 H293 Z" fill="#fff"/>
+  <path d="M290 205 H340 V216 H290 Z" fill="#fff" opacity="0"/>
+  <text x="212" y="320" font-size="12" font-weight="700" fill="#2c4a8f" text-anchor="middle">pravá komora</text>
+  <text x="365" y="320" font-size="12" font-weight="700" fill="#a02430" text-anchor="middle">ľavá komora</text>
+
+  <!-- tok krvi: odkysličená krv z pravej komory cez defekt do aorty; málo ide do pľúc; okysličená z ľavej komory -->
+  <path d="M232 280 C262 270 288 250 306 214 C312 200 314 150 316 120" fill="none" stroke="#3a5fb0" stroke-width="4" marker-end="url(#fb)"/>
+  <path d="M180 270 C176 240 184 214 190 196" fill="none" stroke="#3a5fb0" stroke-width="2" stroke-dasharray="4 4" marker-end="url(#fb)"/>
+  <path d="M388 290 C388 250 366 220 336 180 C324 160 322 140 322 128" fill="none" stroke="#c2333f" stroke-width="4" marker-end="url(#fr)"/>
+
+  </g>
+
+  <!-- popisky 1–4 -->
+  <g font-size="12.5" fill="#201e1d">
+    <circle cx="28" cy="132" r="10" fill="#5f42a8"/><text x="28" y="136" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">2</text>
+    <text x="46" y="130" font-weight="700">zúžený výtok</text>
+    <text x="46" y="146" font-weight="700">z pravej komory</text>
+    <text x="46" y="162" fill="#55505a">pod chlopňou aj na chlopni</text>
+    <path d="M200 150 L286 178" stroke="#5f42a8" stroke-width="1.2" stroke-dasharray="3 3" fill="none"/>
+
+    <circle cx="28" cy="296" r="10" fill="#5f42a8"/><text x="28" y="300" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">4</text>
+    <text x="46" y="294" font-weight="700">hypertrofia</text>
+    <text x="46" y="310" font-weight="700">pravej komory</text>
+    <text x="46" y="326" fill="#55505a">následok – sval pracuje</text>
+    <text x="46" y="342" fill="#55505a">proti zúženiu</text>
+    <path d="M196 300 L236 300" stroke="#5f42a8" stroke-width="1.2" stroke-dasharray="3 3" fill="none"/>
+
+    <circle cx="590" cy="92" r="10" fill="#5f42a8"/><text x="590" y="96" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">3</text>
+    <text x="608" y="90" font-weight="700">jazdiaca aorta</text>
+    <text x="608" y="106" fill="#55505a">vyúsťuje nad defektom</text>
+    <text x="608" y="122" fill="#55505a">z oboch komôr</text>
+    <path d="M580 98 L476 112" stroke="#5f42a8" stroke-width="1.2" stroke-dasharray="3 3" fill="none"/>
+
+    <circle cx="590" cy="186" r="10" fill="#5f42a8"/><text x="590" y="190" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">1</text>
+    <text x="608" y="184" font-weight="700">defekt komorovej</text>
+    <text x="608" y="200" font-weight="700">priehradky</text>
+    <text x="608" y="216" fill="#55505a">veľký, pod aortou –</text>
+    <text x="608" y="232" fill="#55505a">spája obe komory</text>
+    <path d="M580 190 L434 226" stroke="#5f42a8" stroke-width="1.2" stroke-dasharray="3 3" fill="none"/>
+  </g>
+
+  <!-- legenda a súhrn -->
+  <g font-size="12" fill="#55505a">
+    <rect x="608" y="290" width="14" height="8" fill="#3a5fb0"/><text x="628" y="298">odkysličená krv</text>
+    <rect x="608" y="310" width="14" height="8" fill="#c2333f"/><text x="628" y="318">okysličená krv</text>
+  </g>
+  <text x="400" y="392" font-size="12.5" fill="#201e1d" text-anchor="middle" font-weight="700">odkysličená krv obíde pľúca cez defekt do aorty → pravo-ľavý skrat → cyanóza</text>
+</svg>

@@ -1,0 +1,149 @@
+# Obrázky k heslám glosára, ktoré nie sú v hesle samom (tools/build.js → assets/glossary/96-obrazky.js).
+# Riadok: id → súbor | popis – čo na obrázku hľadať. Súbor musí mať riadok v ZDROJE-OBRAZKOV.md (autor, licencia, odkaz).
+# Obrázok sa pridá k vlastnému obrázku hesla (napr. klinický obraz + mikroskopia).
+# ── kap. 11, pripomienky autora 9. 11. 2026 ─────────────────────────────
+virchowova-uzlina → virchow-node-ct.jpg | Virchowova uzlina na CT krku: zväčšená uzlina vľavo nad kľúčnou kosťou (šípka; na CT je ľavá strana pacienta vpravo).
+dfsp → dfsp-storiform.jpg | Dermatofibrosarcoma protuberans (H&E): vretenovité bunky vychádzajú lúčovito zo stredu ako špice kolesa – storiformná stavba (vpravo vyznačená).
+bazocelularny-karcinom → bcc-clinical.jpg | Bazocelulárny karcinóm na nose: lesklý ružový uzol s rozšírenými cievkami a vredom v strede.
+lokalne-agresivny-nador → bcc-clinical.jpg | Bazocelulárny karcinóm – rozrušuje okolie, ale takmer nemetastázuje.
+folikulovy-lymfom → follicular-lymphoma.jpg | Folikulový lymfóm (H&E, malé zväčšenie): uzlinu vyplnili tesne naložené nádorové folikuly, normálna stavba uzliny zmizla.
+lobularny-karcinom → ilc-ecadherin.jpg | E-kadherín v invazívnom lobulárnom karcinóme: rad nádorových buniek (šípka) je bez hnedej farby – E-kadherín stratil; normálne vývody dole ho majú.
+izolovane-nadorove-bunky → itc-lymph-node.jpg | Izolované nádorové bunky v uzline: v H&E pri malom zväčšení ich nevidno, cytokeratín (v strede) ich zafarbí hnedo, vpravo skupinka pri veľkom zväčšení.
+osteolyticka-metastaza → bone-metastasis-pelvis-xray.jpg | RTG panvy: veľké vyjasnenie v pravej bedrovej kosti pri krížovobedrovom kĺbe (šípky) – kosť rozpustila metastáza.
+nodularna-fasciitida → nodular-fasciitis.jpg | Nodulárna fasciitída (H&E): neusporiadané vretenovité bunky ako v bunkovej kultúre, medzi nimi erytrocyty a lymfocyty – vyzerá zhubne, je benígna.
+borderline → serous-borderline.jpg | Hraničný serózny nádor vaječníka (H&E): rozvetvené papily, odlúpené zhluky buniek, najviac stredná atypia – bez invázie do strómy.
+tymom → thymoma-b1.jpg | Tymóm typu B1 (H&E, malé zväčšenie).
+transcelomove-sirenie → peritoneal-carcinomatosis.jpg | Karcinóza pobrušnice pri karcinóme žalúdka: seróza čriev posiata drobnými uzlíkmi.
+makrometastaza → ln-metastasis-crc.jpg | Makrometastáza adenokarcinómu hrubého čreva v uzline: nádorové žľazky vytláčajú lymfoidné tkanivo.
+selektivne-metastazovanie → osteoblastic-metastasis-prostate.jpg | Metastázy karcinómu prostaty v kostiach panvy a chrbtice – kosť je pre tento nádor obľúbená „pôda“.
+semeno-a-poda → osteoblastic-metastasis-prostate.jpg | Karcinóm prostaty si za „pôdu“ vyberá kosť: osteoblastové metastázy v panve a chrbtici.
+dignita → fig-dignita-mapa.svg | Mapa kap. 11: diferenciácia, rast voči okoliu a metastázy vedú k rozhodnutiu o dignite.
+staging → fig-tnm-stena.svg | Kategória T podľa hĺbky prerastania stenou čreva; N – uzliny, M – vzdialené metastázy.
+exofyticky-rast → crc-fungating-gross.jpg | Exofytický karcinóm hrubého čreva (MA): karfiolovitý nádor rastie do priesvitu.
+ulcerovany-rast → crc-ulcerated-gross.jpg | Vredový karcinóm hrubého čreva (MA): kráter s navalitými okrajmi.
+difuzne-infiltrujuci-rast → linitis-plastica-gross.jpg | Linitis plastica (MA): stena žalúdka je zhrubnutá, belavá a tuhá bez ohraničenej hrčky.
+stenotizujuci-rast → crc-napkin-ring.jpg | Prstencový karcinóm hrubého čreva (MA): nádor obrástol celý obvod a zúžil priesvit.
+pagetova-choroba-bradavky → paget-nipple-clinical.jpg | Pagetova choroba bradavky: začervenaná, šupinatá, zhrubnutá koža bradavky a dvorca – pripomína ekzém.
+folikulovy-karcinom → ftc-histo.jpg | Folikulový karcinóm štítnej žľazy (H&E): pravidelné folikuly s rovnakými jadrami – z buniek sa malignita nepozná, rozhodne až prerastanie puzdra alebo ciev.
+# ── kap. 13, dorovnanie 9. 11. 2026 (obrázky, ktoré už v knihe sú) ─────────
+liposarkom → alt-histo.jpg | Dobre diferencovaný liposarkóm (H&E): pri malom zväčšení pripomína lipóm, medzi tukovými bunkami sú však väzivové septá s väčšími tmavými atypickými jadrami.
+liposarkom → myxoid-liposarcoma-histo.jpg | Myxoidný liposarkóm (H&E): hlienovité pozadie s jemnou sieťou kapilár a drobné lipoblasty s vakuolou, ktorá vtláča jadro.
+osteomyelitida → sequestra-osteomyelitis.jpg | Sekvestre pri osteomyelitíde: odumreté kúsky kosti, ktoré sa oddelili od živej kosti (historická fotografia preparátov).
+# ── kap. 11, pripomienky autora 10. 11. 2026 (kategórie TNM, NET, NEC) ──
+tnm-t → fig-tnm-stena.svg | Kategória T v hrubom čreve podľa hĺbky prerastania stenou: Tis v sliznici až T4 cez serózu.
+tnm-n → fig-tnm-stena.svg | Kategória N podľa počtu postihnutých regionálnych uzlín (vpravo hore).
+tnm-m → fig-tnm-stena.svg | Kategória M: vzdialené metastázy áno (M1) alebo nie (M0).
+net-nador → net-pankreas-histo.jpg | Dobre diferencovaný neuroendokrinný nádor pankreasu (H&E): rovnaké okrúhle až oválne jadrá s jemne zrnitým chromatínom („soľ a korenie“).
+nec → malobunkovy-karcinom-histo.jpg | Malobunkový karcinóm (H&E): husto natlačené bunky s minimom cytoplazmy, jadrá sa navzájom tlačia a vyhladzujú; metastáza karcinómu pľúc do hrudnej steny.
+# ── kap. 11, pripomienka autora 10. 11. 2026 („obrázky do tooltipov… aj tu aj inde“) ─────────
+paraneoplasticky-syndrom → acanthosis-nigricans-axilla.jpg | Acanthosis nigricans – kožný paraneoplastický prejav (najmä pri karcinóme žalúdka): stmavnutá, zhrubnutá koža v pazuche.
+choriokarcinom → choriocarcinoma-histo.jpg | Choriokarcinóm (H&E): rozsiahle krvácania a medzi nimi atypické bunky trofoblastu – svetlé cytotrofoblasty a tmavšie viacjadrové syncytiotrofoblasty.
+ulceroznakolitida → uc-histo.jpg | Ťažká ulcerózna kolitída (H&E): krypty zmizli, sliznicu nahradilo granulačné tkanivo s hustým zápalovým infiltrátom, povrch je vredovitý; dole svalovina.
+karcinomova-lymfangiopatia → lymphangitic-carcinomatosis.jpg | Karcinómová lymfangiopatia v pľúcach (H&E): hniezda nádorových buniek vyplnili lymfatické cievy okolo vetvy pľúcnice (v strede).
+zapalovy-myofibroblastovy-nador → imt-histo.jpg | Zápalový myofibroblastový nádor (H&E): vretenovité a hviezdicovité bunky v riedkej stróme, medzi nimi veľa zápalových buniek – lymfocytov a plazmatických buniek.
+dediferencovany-liposarkom → dedif-liposarcoma-histo.jpg | Dediferencovaný liposarkóm: A – ostrý prechod z dobre diferencovaného liposarkómu (hore, tuk) do bunkového sarkómu bez tuku (dole); B – lipoblast; C – atypické a obrovské bunky v dediferencovanej časti; D – jadrá pozitívne na MDM2 (imunohistochémia).
+pitnet → pitnet-histo.jpg | Nefunkčný PitNET (H&E): rovnaké bunky s okrúhlymi jadrami sa radia okolo cievnych kanálikov (pseudorozety).
+atypicka-mitoza → atypical-mitosis.jpg | Mitózy v nádorových bunkách (H&E): A – normálna; B–H atypické – chromatínový mostík, viacpólová, prstencová, rozptýlená, asymetrická, s oneskorenými chromozómami a mikrojadrá.
+sentinelova-uzlina → sentinel-node-blue.jpg | Sentinelová uzlina v pazuche pri operácii: farbivo vstreknuté k nádoru zafarbilo modro prvú uzlinu, do ktorej z nádoru tečie lymfa.
+hcc → hcc-histo.jpg | Hepatocelulárny karcinóm (H&E, ihlová biopsia): nádorové hepatocyty tvoria hrubé trámce a okrúhle pseudožliazky; portálne polia chýbajú.
+melanom → melanoma-nodular.jpg | Nodulárny melanóm na líci: tmavý, vyvýšený, ostro ohraničený uzlík.
+melanom → melanoma-histo.jpg | Lentigo maligna melanóm (H&E): hniezda atypických melanocytov s veľkými jadrami a jadierkami, miestami hnedý pigment melanín; okolo lymfocyty.
+hemangiom → infantile-hemangioma.jpg | Infantilný hemangióm na bruchu dojčaťa: vyvýšený, laločnatý, jasnočervený útvar („jahodové znamienko“).
+hemangiom → cavernous-hemangioma-liver.jpg | Kavernózny hemangióm pečene (H&E): široké cievne priestory vystlané endotelom a vyplnené krvou, medzi nimi väzivové priehradky.
+sarkom → leiomyosarcoma-uterus-gross.jpg | Leiomyosarkóm maternice (MA): pestrá rezná plocha s nekrózami a krvácaniami – typický vzhľad zhubného mezenchýmového nádoru.
+sarkom → leiomyosarcoma-histo.jpg | Leiomyosarkóm (H&E): zväzky vretenovitých buniek s atypickými, zväčšenými jadrami.
+lymfom → follicular-lymphoma.jpg | Folikulový lymfóm (H&E, malé zväčšenie): nádorové folikuly vyplnili uzlinu a zotreli jej stavbu.
+lymfom → burkitt-he.jpg | Burkittov lymfóm (H&E): pole rovnakých lymfoidných buniek a medzi nimi svetlé makrofágy – obraz „hviezdnej oblohy“.
+embolus → pulmonary-embolus-gross.jpg | Embolus v pľúcnici pri pitve: tmavočervená drobivá zrazenina – odtrhnutý trombus z hlbokých žíl.
+intravazacia → tumor-embolus.jpg | Nádorový embolus (H&E): bunky adenokarcinómu prostaty v priesvite pľúcnej arterioly – po vniknutí do ciev ich krv zaniesla do pľúc.
+expanzivny-rast → fibroadenoma-gross.jpg | Fibroadenóm prsníka (MA): ostro ohraničený guľatý uzol – benígny nádor okolie len odtláča.
+anizonukleoza → idc-pleomorphism-3.jpg | Invazívny karcinóm prsníka (H&E): jadrá rôznej veľkosti a tvaru s nápadnými jadierkami.
+dediferenciacia → anaplasia-urothelial.jpg | Anaplázia v uroteliálnom karcinóme (H&E): bizarné jadrá rôznej veľkosti – z buniek sa už nedá poznať, z akého epitelu nádor vznikol.
+pomer-jadro-cytoplazma → anaplasia-urothelial.jpg | Uroteliálny karcinóm (H&E): obrovské jadrá zaberajú väčšinu bunky – pomer jadro/cytoplazma je posunutý v prospech jadra.
+adipocyt → lipoma-histo.jpg | Zrelé adipocyty (lipóm, H&E): jedna veľká svetlá tuková vakuola a jadro stlačené na okraj bunky.
+atypia → ak-histo.jpg | Atypia v epiderme (aktinická keratóza, H&E): vľavo normálne keratinocyty, vpravo zväčšené, tmavé a nepravidelné jadrá v bazálnej vrstve.
+proliferacny-index → ki67-breast.jpg | Ki-67 v karcinóme prsníka (imunohistochémia): hnedé jadrá patria bunkám, ktoré nie sú v pokoji – ich podiel je proliferačný index.
+grading → gleason-3-4-5.jpg | Grading karcinómu prostaty: vzorec 3 (samostatné žliazky) → 4 (splývajúce, kribriformné) → 5 (bez žliazok) – čím menej sa podobá normálnej žľaze, tým vyšší stupeň.
+siadh → malobunkovy-karcinom-histo.jpg | Malobunkový karcinóm pľúc (H&E) – typický zdroj ADH: malé bunky s tmavým jemne zrnitým jadrom a takmer bez cytoplazmy, jadrá sa navzájom tlačia.
+lambert-eaton → malobunkovy-karcinom-histo.jpg | Malobunkový karcinóm pľúc (H&E) – typický nádor pri tomto syndróme: malé bunky s tmavým jadrom a takmer bez cytoplazmy.
+adenosarkom → adenosarcoma-uterus.jpg | Adenosarkóm maternice (H&E) – nezhubné žliazky s priesvitom obkolesuje hustá bunková stróma; zhubná je stróma, nie žľazy.
+# ── kap. 12, pripomienky autora 10.–11. 11. 2026 (obrázky do vysvetliviek; hľadanie v pracovne/12_obrazky.md) ─────────
+polyp → polyp-pedunculated.jpg | Stopkatý polyp hrubého čreva (endoskopia): hlavička visí do priesvitu na svetlej stopke, ktorá vychádza zo sliznice hore.
+polyp → polyp-sessile-sigmoid.jpg | Prisadnutý polyp esovitej slučky (endoskopia): 6–7 mm tubulárny adenóm sedí na sliznici celou bázou, stopku nemá.
+polyp → villous-adenoma-gross.jpg | Vilózny adenóm (MA): široko prisadnutý polyp so zamatovým klkovitým povrchom.
+polypektomia → polypectomy-snare.jpg | Polypektómia pri kolonoskopii: stopkatý polyp (vľavo), slučka nasadená na stopku (v strede) a miesto po odstránení (vpravo).
+akticka-keratoza → ak-scalp.jpg | Aktinické keratózy na plešine (klinický obraz): drsné, žltkasté šupinaté ložiská na začervenanej koži poškodenej slnkom.
+marjolin → marjolin-arm.jpg | Marjolinov vred na predlaktí: hrboľatý, rozpadávajúci sa nádor (dlaždicový karcinóm) v starej jazve po popálenine – lesklá jazva je nad ním.
+leukoplakia → leukoplakia-oral.jpg | Leukoplakia na podnebí: belavé, ostro ohraničené ložisko, ktoré sa nedá zotrieť; malignitu tu biopsia vylúčila.
+erytroplakia → erythroleukoplakia.jpg | Erytroleukoplakia v kútiku úst a na sliznici líca: červené ložisko s bielymi plochami; biopsia tu ukázala ľahkú dyspláziu.
+dysplazia → ak-histo.jpg | Dysplázia dlaždicového epitelu – aktinická keratóza (H&E): atypické keratinocyty v bazálnej vrstve (vpravo), vľavo normálna epiderma.
+dysplazia → hgd-tva.jpg | Dysplázia vysokého stupňa v tubulovilóznom adenóme (H&E): medzi šípkami jadrá stratili polaritu – sú okrúhle a ležia v celej výške bunky, nielen pri báze.
+cystadenom → mucinous-cystadenoma-gross.jpg | Mucinózny cystadenóm vaječníka (MA): mnohokomorová cysta s tenkými hladkými priehradkami.
+cystadenom → serous-cystadenoma-histo.jpg | Serózny cystadenóm vaječníka (H&E): stenu cysty vystiela jedna vrstva kubických buniek bez atypie.
+papilomatoza → squamous-papilloma-histo.jpg | Dlaždicový papilóm jazyka (H&E): prstovité výbežky zrelého dlaždicového epitelu, v strede každého pruh väziva s cievou.
+hyperkeratoza → hyperkeratosis.jpg | Hyperkeratóza (H&E): hrubá ružová vrstva rohoviny bez jadier nad inak normálnou epidermou.
+parakeratoza → parakeratosis.jpg | Parakeratóza (H&E): v rohovej vrstve ostali drobné tmavé jadrá – bunky dozreli príliš rýchlo.
+invertovany-papilom → inverted-papilloma.jpg | Invertovaný papilóm močového mechúra (H&E): pruhy a hniezda urotelu rastú dolu do strómy, sú hladko ohraničené a bez atypie.
+dyskeratoza → bowen-histo.jpg | Bowenova choroba (H&E): jednotlivé predčasne zrohovatené, ružové bunky (dyskeratóza) uprostred atypickej epidermy.
+medzibunkove-mostiky → scc-bridges.jpg | Medzibunkové mostíky v dlaždicovom karcinóme (H&E, veľké zväčšenie): jemné priečne čiarky medzi susednými bunkami – desmozómy s tonofilamentmi.
+akantolyticky-karcinom → scc-acantholytic.jpg | Akantolytický dlaždicový karcinóm (H&E): bunky sa v strede hniezd od seba oddelili, takže vznikli štrbiny pripomínajúce žľazy.
+verukozny-karcinom → verrucous-carcinoma.jpg | Verukózny karcinóm (H&E, malé zväčšenie): mohutná akantóza a papilomatóza, nádor sa tlačí do hĺbky širokým frontom bez jednotlivých buniek.
+morfeaformny-bcc → bcc-morpheaform.jpg | Infiltratívny (morfeaformný) bazocelulárny karcinóm (H&E): tenké pruhy tmavých buniek v hustom väzive – okraje voľným okom nevidno.
+cystitis-cystica → cystitis-cystica.jpg | Cystitis cystica (H&E): hniezda urotelu pod povrchom sliznice s rozšíreným priesvitom – reaktívna zmena, nie nádor.
+punlmp → punlmp.jpg | Papilárny uroteliálny nádor s nízkym malígnym potenciálom (H&E): jemné, oddelené papily vystlané zhrubnutým urotelom bez atypie.
+tubulovilozny-adenom → tva-histo.jpg | Tubulovilózny adenóm hrubého čreva (H&E, malé zväčšenie): vedľa seba rúrkovité žliazky a dlhé prstovité klky.
+hyperplasticky-polyp → hyperplastic-polyp.jpg | Hyperplastický polyp (H&E): žliazky s pílovitým (zúbkovaným) okrajom priesvitu v hornej časti, bez dysplázie.
+zapalovy-polyp → uc-pseudopolyps.jpg | Pseudopolypy pri ulceróznej kolitíde (MA): ostrovčeky zachovanej, zdurenej sliznice medzi vredmi pôsobia ako polypy.
+hamartomovy-polyp → peutz-jeghers-polyp.jpg | Hamartómový polyp pri Peutzovom–Jeghersovom syndróme (H&E): rozvetvené pruhy hladkej svaloviny, na nich normálna sliznica.
+juvenilna-polypoza → juvenile-polyp.jpg | Juvenilný polyp (H&E): rozšírené, hlienom vyplnené žľazy v bohatej zápalovej stróme.
+onkocyt → hurthle-adenoma.jpg | Onkocyty v adenóme štítnej žľazy (H&E): veľké bunky s hojnou, jemne zrnitou ružovou cytoplazmou plnou mitochondrií.
+onkocyt → renal-oncocytoma-gross.jpg | Onkocytóm obličky (MA): hnedý ohraničený nádor z onkocytov s belavou jazvou v strede.
+papilarny-adenom-oblicky → renal-papillary-adenoma.jpg | Papilárny adenóm obličky (H&E): drobné ohraničené ložisko papíl vystlaných malými pravidelnými bunkami.
+scirozny → linitis-plastica-gross.jpg | Scirózny (difúzny) karcinóm žalúdka – linitis plastica (MA): stena je zhrubnutá, belavá a tuhá od hojného väziva.
+medularny-karcinom → medullary-colon.jpg | Medulárny karcinóm hrubého čreva (H&E): polia polygonálnych buniek bez žliaz, medzi nimi lymfocyty.
+laurenova-klasifikacia → signet-ring-stomach.jpg | Difúzny typ podľa Laurena (H&E): jednotlivé prstencové bunky bez žliaz – na rozdiel od intestinálneho typu, ktorý stavia žľazy.
+slabo-kohezny-karcinom → signet-ring-stomach.jpg | Slabo kohézny karcinóm žalúdka (H&E): jednotlivé bunky s vakuolou hlienu, ktorá odtlačila jadro k okraju.
+slabo-kohezny-karcinom → linitis-plastica-gross.jpg | Ten istý typ voľným okom – linitis plastica: celá stena žalúdka je zhrubnutá a tuhá bez ohraničenej hrčky.
+svetlobunkovy-karcinom-oblicky → rcc-gross.jpg | Karcinóm obličky (MA): zlatožltý laločnatý nádor dolného pólu s ložiskami krvácania – žltú farbu dávajú lipidy v nádorových bunkách.
+svetlobunkovy-karcinom-oblicky → ccrcc-histo.jpg | Svetlobunkový karcinóm obličky (H&E): bunky so svetlou cytoplazmou (glykogén a lipidy) medzi jemnou sieťou kapilár.
+adenoidne-cysticky-karcinom → adenoid-cystic.jpg | Adenoidne cystický karcinóm (H&E): drobné tmavé bunky tvoria rúrky a hniezda s priestormi vyplnenými ružovým sekrétom.
+cystadenokarcinom → mucinous-cystadenocarcinoma.jpg | Mucinózny cystadenokarcinóm vaječníka (MA): veľký cystický nádor s hlienom a s pevnými, pestrými plochami.
+cholangiokarcinom → cholangiocarcinoma-gross.jpg | Cholangiokarcinóm pečene (MA): belavožltý tuhý nádor s nepravidelným, cípatým okrajom v tmavohnedej pečeni – belavú farbu a tuhosť mu dáva hojné väzivo.
+cholangiokarcinom → cholangiocarcinoma-histo.jpg | Cholangiokarcinóm (H&E): nepravidelné žliazky z atypických buniek žlčovodov v hustom väzive.
+adenoskvamozny-karcinom → adenosquamous-p40.jpg | Adenoskvamózny karcinóm pľúc (imunohistochémia p40): hnedé sú jadrá dlaždicovej zložky, žľazové štruktúry (šípky) ostali nezafarbené.
+velkobunkovy-karcinom → large-cell-lung.jpg | Veľkobunkový karcinóm pľúc (H&E): polia veľkých buniek s nápadnými jadierkami, bez žliaz aj bez rohovatenia.
+# ── kap. 12, úpravy autora v editore 12. 11. 2026 ─────────────────────
+akantoza → glykogenova-akantoza.jpg | Akantóza v pažeráku (H&E): dlaždicový epitel je zhrubnutý a lišty siahajú hlboko do podložia.
+papilomatoza → papilom-dlazdicovy-prehlad.jpg | Papilomatóza v dlaždicovom papilóme (H&E): epitel vybieha do prstov, v strede každého je pruh väziva s cievami.
+parakeratoza → parakeratoza-ak.jpg | Parakeratóza (H&E): v rohovej vrstve ostali jadrá (šípky).
+epiderma → epiderma-vrstvy.jpg | Vrstvy epidermy (H&E): odspodu bazálna, ostnatá, zrnitá, jasná a rohová vrstva.
+# ── kap. 12, opravy.docx 13. 11. 2026 ─────────────────────────────
+kondylom-acuminatum → condyloma-clinical.jpg | Špicaté kondylómy na predkožke: drobné ružovobelavé bradavičnaté hrbolčeky, miestami splývajú do karfiolovitých ložísk.
+kondylom-acuminatum → condyloma-histo.jpg | Špicatý kondylóm (H&E, stredné zväčšenie): prstovité výbežky zhrubnutého dlaždicového epitelu, prerezané naprieč, v strede každého väzivová os s cievkou.
+bazaloidne-bunky → sk-histo.jpg | Seboroická keratóza (H&E): epidermu zhrubnutú nad úroveň okolia tvoria bazaloidné bunky, medzi nimi ležia okrúhle ostrovčeky rohoviny.
+# ── kap. 14, 26. 11. 2026 ─────────────────────────────
+glioma-zrakovej-drahy → optic-glioma-mri.jpg | Glióm zrakového nervu (MR, axiálny rez): vretenovité zhrubnutie nervu za okom vľavo na obrázku.
+astrocytom → diffuse-astrocytoma-histo.jpg | Difúzny astrocytóm (H&E): mierne zmnožené atypické jadrá astrocytov rozptýlené vo vláknitom pozadí mozgu.
+ganglioglioma → ganglioglioma-histo.jpg | Ganglioglióm (H&E): nepravidelné nádorové neuróny a tmavé kalcifikácie medzi gliovými bunkami.
+neurocytom → central-neurocytoma-histo.jpg | Centrálny neurocytóm (H&E): polia rovnakých okrúhlych buniek a cievy s krvou.
+perineuriom → perineurioma-histo.jpg | Perineurióm (H&E): tenké vretenovité bunky stočené do drobných vírov.
+schwannova-bunka → nerve-sheaths-histo.jpg | Priečny rez periférnym nervom (H&E, popisy v španielčine): epineurium (Epineuro) obaľuje nerv, perineurium (Perineuro) zväzok, endoneurium (Endoneuro) jednotlivé vlákna so Schwannovými bunkami.
+perineuralna-bunka → nerve-sheaths-histo.jpg | Priečny rez periférnym nervom (H&E, popisy v španielčine): epineurium (Epineuro) obaľuje nerv, perineurium (Perineuro) zväzok, endoneurium (Endoneuro) jednotlivé vlákna so Schwannovými bunkami.
+endoneurium → nerve-sheaths-histo.jpg | Priečny rez periférnym nervom (H&E, popisy v španielčine): epineurium (Epineuro) obaľuje nerv, perineurium (Perineuro) zväzok, endoneurium (Endoneuro) jednotlivé vlákna so Schwannovými bunkami.
+perineurium → nerve-sheaths-histo.jpg | Priečny rez periférnym nervom (H&E, popisy v španielčine): epineurium (Epineuro) obaľuje nerv, perineurium (Perineuro) zväzok, endoneurium (Endoneuro) jednotlivé vlákna so Schwannovými bunkami.
+epineurium → nerve-sheaths-histo.jpg | Priečny rez periférnym nervom (H&E, popisy v španielčine): epineurium (Epineuro) obaľuje nerv, perineurium (Perineuro) zväzok, endoneurium (Endoneuro) jednotlivé vlákna so Schwannovými bunkami.
+melanoticky-schwannom → melanotic-schwannoma-histo.jpg | Melanotický schwannóm (H&E): vretenovité a epiteloidné bunky s hnedým pigmentom melanínu.
+akralny-lentiginozny-melanom → alm-clinical.jpg | Akrálny lentiginózny melanóm na chodidle: veľká nepravidelná, nerovnomerne tmavá škvrna.
+lentigo-maligna-melanom → lmm-histo.jpg | Lentigo maligna melanóm (H&E): atypické melanocyty pozdĺž bazálnej vrstvy stenčenej epidermis a ich hniezdo v dermis.
+lcnec → lcnec-histo.jpg | Veľkobunkový neuroendokrinný karcinóm pľúc (H&E): veľké bunky s hrubým chromatínom a výrazným jadierkom.
+gastrinom → gastrinoma-histo.jpg | Gastrinóm pankreasu (H&E): trámce a hniezda pravidelných buniek dobre diferencovaného NET.
+zollinger-ellison → zes-duodenal-ulcers.jpg | Zollingerov-Ellisonov syndróm (endoskopia): mnohopočetné drobné vredy v distálnom duodéne.
+glukagonom → necrolytic-migratory-erythema.jpg | Migrujúci nekrolytický erytém pri glukagonóme: ostro ohraničené červené plaky s chrastami.
+neuroendokrinna-bunka → ecl-chromogranin.jpg | Chromogranín A v sliznici žalúdka (IHC): hnedé neuroendokrinné bunky na dne žliazok – tu zmnožené pri autoimunitnej gastritíde.
+mastocyt → mast-cell.jpg | Mastocyt (šípka) vo väzive: bunka s granulami v cytoplazme.
+gangliova-bunka → ganglioneuroblastoma-histo.jpg | Zrelé gangliové bunky v ganglioneuroblastóme: veľké bunky s hojnou cytoplazmou, okrúhlym jadrom a jadierkom.
+gliom → glioblastoma-gross.jpg | Glióm – glioblastóm v hemisfére: pestrý nádor s krvácaním a nekrózou bez ostrej hranice.
+chemodektom → carotid-body-zellballen.jpg | Chemodektóm (paraganglióm karotického telieska): hniezda buniek Zellballen medzi tenkými cievami.
+radialna-faza → ssm-histo.jpg | Radiálna fáza: atypické melanocyty sa šíria do strán pozdĺž epidermis.
+vertikalna-faza → melanoma-nodular.jpg | Vertikálna fáza: nodulárny melanóm rastie do hĺbky ako uzol.
+nador-obalov-nervov → schwannoma-gross.jpg | Príklad nádoru obalov nervu – schwannóm: opuzdrený uzol, z ktorého na oboch koncoch vychádza nerv.

@@ -1,0 +1,27 @@
+/* ══════════════════════════════════════════════════════════════════════
+   PALETA PATOLY — jediné miesto, kde sa PATOLA líši od Patofyziológie.
+   Všetko ostatné (site.css, site.js, tools/chapter.css) je zdieľané a
+   ostáva bajt po bajte rovnaké; načítava sa POSLEDNÉ, takže prepíše
+   tokeny z <style> kapitoly aj zo site.css.
+
+   Farby sú z farbenia preparátu H&E:
+     akcent   = hematoxylín (jadrá)       — fialovo-modrá
+     akcent-2 = eozín (cytoplazma, kolagén) — ružová
+   Zmena farby knihy = zmena týchto dvoch stupníc (9 hodnôt každá).
+   ══════════════════════════════════════════════════════════════════════ */
+:root{
+  --color-accent:#5f42a8;
+  --color-accent-2:#cf4a72;
+
+  --color-accent-100:#f4f0fc; --color-accent-200:#e5dcf6; --color-accent-300:#cdbdec;
+  --color-accent-400:#ae95df; --color-accent-500:#8c6dcd; --color-accent-600:#7350b8;
+  --color-accent-700:#5a3d9a; --color-accent-800:#412b70; --color-accent-900:#291b47;
+
+  --color-accent-2-100:#fdf0f3; --color-accent-2-200:#fadde5; --color-accent-2-300:#f5bccb;
+  --color-accent-2-400:#ee92ab; --color-accent-2-500:#e3698b; --color-accent-2-600:#cf4a72;
+  --color-accent-2-700:#a93659; --color-accent-2-800:#7c2842; --color-accent-2-900:#4a1727;
+
+  /* shell (site.css) */
+  --site-accent:#5f42a8;
+  --site-accent-2:#cf4a72;
+}

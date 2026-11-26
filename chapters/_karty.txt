@@ -1,0 +1,822 @@
+# Ručné úpravy výberu kartičiek (tools/karty.js). Riadok:  + id  ·  - id  ·  ! Slovo  ·  @ Názov | id  ·  ~ tvar | Názov
+# Nič z toho nepridáva text: určuje len, ktoré heslá glosára idú do jadra.
+
+# nie sú eponymá
+! Nobelovu
+! Nobelova
+
+# eponymá bez vlastného hesla: názov v 1. páde
+~ Tamm–Horsfallovým proteínom | Tamm–Horsfallov proteín
+~ Büngnerových pásov | Büngnerove pásy
+~ Woodových jednotkách | Woodove jednotky
+~ Hürthleho buniek | Hürthleho bunky
+/ Armaniho zóna
+
+# základy anatómie, histológie a bunky: študent ich pozná, ostávajú vo „Všetky karty“ a ako vysvetlivky
+- pecen
+- oblicka
+- slezina
+- myokard
+- pankreas
+- zaludok
+- prostata
+- hrube-crevo
+- priedusky
+- peritoneum
+- serozne-blany
+- chlopne
+- komory
+- kapilara
+- lymfa
+- lymfaticka-uzlina
+- sliznica
+- epitel
+- dlazdicovy-epitel
+- prechodny-epitel
+- endotel
+- endometrium
+- parenchym
+- intersticium
+- bazalna-membrana
+- pruhovana-svalovina
+- poharikova-bunka
+- osteocyt
+- jadro
+- mitochondria
+- lyzozom
+- atp
+- enzym
+- hormon
+- receptor
+- antigen
+- protilatky
+- proteazy
+- kolagen
+- glykogen
+- bilirubin
+- fibroblast
+- erytrocyty
+- leukocyty
+- lymfocyt
+- neutrofil
+- trombocyt
+- t-lymfocyt
+- plazmocyt
+- makrofag-patola
+- kmenova-bunka
+- mezenchym
+- estrogeny
+- progesteron
+# všeobecné pojmy a slová bez patologického obsahu
+- homeostaza
+- histologia
+- diagnoza
+- etiologia
+- patogeneza
+- komplikacia
+- prognoza
+- dispozicia
+- mikroskopicky
+- mutacia
+- karyotyp
+- translokacia
+- hypoxia
+- horucka
+- uzol
+- klon
+- kultivacia
+- pcr
+- denaturacia
+- organizacia
+- diferenciacia
+- regeneracia
+- ionizujuce-ziarenie
+- rastovy-faktor
+- cytokiny-zapal
+# ďalšie ľahké pojmy: anatómia, bežné lekárske slová, metódy, skratky, zápaly orgánov bez vlastného obsahu
+- biopsia
+- pitva
+- fixacia
+- zmrazeny-rez
+- cytologia
+- parafin
+- fixativum
+- formalin
+- formaldehyd
+- kryostat
+- mikrotom
+- grossing
+- digitalna-patologia
+- sudne-lekarstvo
+- toxikologia
+- mri
+- amylaza
+- cytostatika
+- biomarker
+- imunoonkologia
+- peroperacne-vysetrenie
+- artefakt
+- virtopsia
+- angiotenzin-ii
+- glutaraldehyd
+- peroxidaza
+- dab
+- hybridizacia
+- core-cut
+- imprint-cytologia
+- elektronova-mikroskopia
+- difuzia
+- reabsorpcia
+- lipazy
+- als
+- neurodegenerativne-choroby
+- osteoporoza
+- amputacia
+- artritida
+- rastovy-hormon
+- adipocyt
+- glycerol
+- chromatin
+- cytoskelet
+- kastracia
+- ultrazvuk
+- angiografia
+- ck
+- subendokard
+- igf-1
+- oxidativna-fosforylacia
+- myoglobin
+- astrocyt
+- scintigrafia
+- ekg
+- fosfataza
+- pci
+- omrzliny
+- anaerobne-bakterie
+- mastne-kyseliny
+- tag
+- inzulin
+- dialyza
+- morfologia
+- git
+- hem
+- zlc
+- obezita
+- hyperglykemia
+- hypoglykemia
+- glykemia
+- hepatomegalia
+- hemolyza
+- lipolyza
+- vitamin-d
+- er
+- lipoproteiny
+- filtracia
+- kortizol
+- glukagon
+- cholesterol
+- ast
+- transfuzia
+- acth
+- intracelularne
+- extracelularne
+- lipogeneza
+- glykogenolyza
+- glukoneogeneza
+- gfr
+- kataláza
+- vldl
+- hdl
+- beta-oxidacia
+- proteinuria
+- svrbenie
+- he-farbenie
+- kardiomyocyt
+- ganglion
+- hypotyreoza
+- prediabetes
+- hypercholesterolemia
+- cmv
+- rcc
+- kmp
+- monocyty
+- eozinofil
+- bazofil
+- mastocyt
+- tachykardia
+- adrenalin
+- hypotalamus
+- alergia
+- zihlavka
+- rinitida
+- pleuritida
+- hypertyreoza
+- antihistaminika
+- nsaid
+- staphylococcus
+- venula
+- mikrocirkulacia
+- fosfolipidy
+- polytrauma
+- autoimunita
+- hypoperfuzia
+- vazopresory
+- lymfadenitida
+- antiagreganty
+- fagocytoza
+- zapal
+- hnis
+- meningokok
+- poliovirus
+- apendix
+- antibiotika
+- bronchitida
+- tracheitida
+- sinusitida
+- parotitida
+- sialoadenitida
+- laryngotracheitida
+- cystitida
+- uretritida
+- cholecystitida
+- cholangitida
+- folikulitida
+- lymfangitida
+- meningitida
+- myokarditida
+- pneumonia
+- prinosove-dutiny
+- uremia
+- zlcove-cesty
+- vajickovod
+- riasinkovy-epitel
+- neisseria
+- enterovirusy
+- coxsackie
+- adenovirus
+- impetigo
+- detritus
+- flebitida
+- hepatitida
+- zrasty
+- periferny-nerv
+- mocovod
+- kozny-step
+- dermis
+- aponeuroza
+- pohlavne-hormony
+- silikon
+- popaleniny
+- malnutricia
+- kompresia
+- endomyzium
+- jazva
+- gravidita
+- viacvrstvovy-epitel
+- cylindricky-epitel
+- jednovrstvovy-epitel
+- noradrenalin
+- testosteron
+- nefron
+- tsh
+- apokrinne
+- stagnacia
+- gastritida
+- endokard
+- aorta
+- keratin
+- hilus
+- mediastinum
+- intima
+- sputum
+- serologia
+- kyselina-mocova
+- oblickove-kamene
+- aerobne-bakterie
+- nocne-potenie
+- papula
+- imunosupresia
+- bradavice
+- hiv
+- aids
+- inkubacia
+- stavec
+- sept
+- penicilin
+- echokardiografia
+- pneumotorax
+- hla
+- specificita
+- diferencialna-diagnoza
+- terminalny-ileum
+- uveitida
+- proktitida
+- parathormon
+- kalcitriol
+- systemova-choroba
+- glykolipidy
+- serotyp
+- mykozy
+- hematuria
+- hemoptyza
+- hemoptoe
+- melena
+- hematemeza
+- epistaxa
+- menoragia
+- metroragia
+- menstruacia
+- extravazacia
+- vratnica
+- dvanastnik
+- koronarne-cievy
+- anastomoza
+- turbulencia
+- agregacia
+- hemotorax
+- hemocefalus
+- gastroragia
+- enteroragia
+- hemoperikard
+- hemoperitoneum
+- angina-pectoris
+- splenomegalia
+- hemoroidy
+- fibrilacia
+- torzia
+- varix
+- warfarin
+- heparin
+- ld
+- hematom
+- hyperemia
+- podkozie
+- hypotenzia
+- dehydratacia
+- nadobličky
+- hypertenzia
+- predsiene
+- mitralna-chlopna
+- hemoglobin
+- arytmia
+- albumin
+- aldosteron
+- media
+- bludny-nerv
+- katecholaminy
+- osrdcovnik
+- bradykardia
+- glykolyza
+- ortopnoe
+- nykturia
+- ortostaticka-hypotenzia
+- autoregulacia
+- baroreceptory
+- sinusoidy
+- katetrizacia
+- ejekcna-frakcia
+- cyanoza
+- kolaps
+- dilatacia
+- kostna-dren
+- recesivny
+- cysta
+- mocovy-mechur
+- alela
+- stitna-zlaza
+- leukemia
+- rakovina
+- onkologia
+- pohrudnica
+- prevalencia
+- incidencia
+- mortalita
+- b-lymfocyt
+- hrtan
+- semennik
+- trofoblast
+- expozicia
+- bodova-mutacia
+- delecia
+- gtp
+- typizacia
+- mezotel
+- zarodocne-bunky
+- karcinom
+- sarkom
+- adenom
+- tumor
+- benigny-nador
+- maligny-nador
+- metastaza
+- osteoblast
+- anorexia
+- vajecnik
+- who
+- bmi
+- adh
+- os-prezivanie
+- pfs
+- sarkopenia
+- nos
+- hpf
+- uicc
+- ajcc
+- ulceracia
+- epiderma
+- pazerak
+- konecnik
+- hypofyza
+- interleukiny
+- acinus
+- globocan
+- portalne-pole
+- fascia
+- epifyza
+- diafyza
+- tenke-crevo
+- rtg
+- ct
+- mr
+- usg
+- radioterapia
+- chemoterapia
+- hladka-svalovina
+- sekvenovanie
+- propranolol
+
+# vysvetlenia „prečo“: text kapitoly ich nepomenúva, ale patria do jadra
++ i-venostaza-opuch
++ i-itp-mechanizmus
++ i-akromegalia-hypertenzia
++ i-hypertrofia-oboch-komor
+
+# Karty bez reťaze mechanizmu – zámerne (generuje gen_mechanizmy.py; musí byť na konci súboru)
+= mikrobiom  # pomenovanie spoločenstva
+= tunel  # princíp metódy je v definícii
+= livores-mortis  # mechanizmus je v definícii
+= proteosynteza  # fyziologický pojem
+= makroskopicky  # pomenovanie
+= cytoplazma  # fyziologický pojem
+= lipidy  # skupina látok
+= hepatocyt  # bunka, nie dej
+= nefropatia  # všeobecný názov
+= inkluzia  # všeobecný názov
+= bitotove-skvrny  # mechanizmus je v definícii
+= papanicolaou  # farbenie
+= light  # rozhodovacie kritériá
+= eponym-negr-tel  # patognomický nález, veta z knihy
+= eponym-henl-kľu  # anatomický názov
+= eponym-tamm-horsfall-pro  # veta z knihy
+= eponym-arman-zón  # veta z knihy
+= eponym-mönckeberg-med  # veta z knihy
+= eponym-fenton-rea  # reakcia je vo vete z knihy
+= dendriticka-bunka  # mechanizmus je v definícii
+= neuropeptid  # pomenovanie skupiny
+= subfebrilie  # klinický pojem
+= infekcnost  # pojem
+= anafylatoxiny  # mechanizmus je v definícii
+= leukogram  # vyšetrenie
+= sofa  # skóre
+= nbt-test  # princíp testu je v hesle
+= toll-like  # mechanizmus je v definícii
+= pyemia  # mechanizmus je v definícii
+= gvhd  # mechanizmus je v definícii
+= npwt  # mechanizmus je v definícii
+= pericyty  # bunka, funkcia je v definícii
+= organela  # pomenovanie
+= retikulin  # štruktúra
+= atypia  # morfologický opis
+= dekompenzacia  # všeobecný pojem
+= regresivne-zmeny  # historické pomenovanie
+= eponym-splendor-hoeppl-jav  # veta z knihy
+= eponym-fernandez-rea  # veta z knihy
+= eponym-rasmussen-ane  # mechanizmus je vo vete z knihy
+= eponym-mantoux-met  # postup testu
+= eponym-wegener-gra  # zmena názvu
+= lofgren  # klinický syndróm
+= alveolarny-makrofag  # funkcia je v definícii
+= heerfordt  # klinický syndróm
+= skrofuloderma  # mechanizmus je v definícii
+= uzlik  # pomenovanie
+= lepra-reakcie  # mechanizmus je v definícii
+= igra  # princíp testu je v definícii
+= adherentne-spoje  # štruktúra, funkcia je v definícii
+= asteroidne-teliesko  # morfologický nález
+= erythema-marginatum  # klinické kritérium
+= mykobakteremia  # mechanizmus je v definícii
+= ftiza  # historický názov
+= bal  # metóda
+= mykolove-kyseliny  # účinok je v definícii
+= jones  # kritériá
+= acinozno-nodozna-tbc  # mechanizmus je v definícii
+= orthove-bunky  # mechanizmus je v definícii
+= cudzie-teleso  # mechanizmus je v definícii
+= anickov  # morfologický opis
+= obrovska-bunka  # mechanizmus je v definícii
+= specificky-zapal  # historický pojem
+= paucibacilarna-lepra  # praktické delenie
+= multibacilarna-lepra  # praktické delenie
+= argyll-robertson  # mechanizmus je v hesle
+= molekulove-mimikry  # mechanizmus je v definícii
+= skrofuloza  # mechanizmus je v definícii
+= reinfekcia  # pojem
+= mapovita-nekroza  # morfologický opis
+= lupus-pernio  # klinická podoba
+= nater-ster  # metóda
+= chapel-hill  # názvoslovie
+= eponym-willebrand-jürgens-syn  # starší názov
+= purpura  # pomenovanie nálezu
+= sufuzia  # pomenovanie nálezu
+= apoplexia  # pomenovanie
+= citlivost-tkaniva  # pojem, príklady sú v hesle
+= eponym-kasabach-merritt-fen  # veta z knihy, mechanizmus je v ⓘ
+= aptt  # princíp testu je v definícii
+= protrombinovy-cas  # princíp testu je v definícii
+= hydroxylacia-kolagenu  # mechanizmus je v definícii
+= steal  # mechanizmus je v definícii
+= puriformne-zmaknutie  # mechanizmus je v definícii
+= itp  # mechanizmus je v definícii
+= dekompresna-choroba  # mechanizmus je v definícii
+= leidenska-mutacia  # mechanizmus je v definícii
+= eponym-wood-jed  # výpočet, veta z knihy
+= excentricka-hypertrofia  # mechanizmus je v definícii
+= eponym-curling-vre  # veta z knihy
+= dyspnoe  # príznak
+= glykokalyx  # štruktúra, funkcia je v definícii
+= skrat  # následky sú v definícii
+= vazovagalna-synkopa  # mechanizmus je v definícii
+= sympatikus  # fyziologický pojem
+= hydremia  # pomenovanie
+= paroxyzmalna-dyspnoe  # mechanizmus je v definícii
+= stresovy-vred  # mechanizmus je v definícii
+= petov-paradox  # mechanizmus je v hesle
+= hamarcia  # pomenovanie
+= choristia  # pomenovanie
+= chromozomove-aberacie  # pomenovanie skupiny
+= vysokomaligna-transformacia  # mechanizmus je v definícii
+= abl1  # gén, funkcia je v definícii
+= nanizmus  # pomenovanie, príčiny sú v hesle
+= pseudotumor  # pomenovanie
+= genotoxicky  # mechanizmus je v definícii
+= blastom  # pomenovanie skupiny
+= neuroektoderm  # embryologický pojem
+= cytochrom-p450  # mechanizmus je v definícii
+= fuzny-gen  # mechanizmus je v definícii
+= pyrimidinove-dimery  # mechanizmus je v definícii
+= hamartom  # pomenovanie, príčina je v definícii
+= ner  # mechanizmus je v definícii
+= inzercia  # mechanizmus je v definícii
+= prokancerogen  # mechanizmus je v definícii
+= histogeneza  # pojem
+= loh  # mechanizmus je v definícii
+= pdgf-b  # gén
+= sporadicky-nador  # pojem
+= filadelfsky-chromozom  # mechanizmus je v definícii, dej v CML
+= aspergillus-flavus  # pôvodca
+= nf2  # gén, funkcia je v definícii
+= choristom  # pomenovanie
+= pet  # princíp je v definícii
+= pvc  # príklad expozície
+= autonomny-rast  # mechanizmus je v hesle
+= driver-mutacia  # pojem
+= autokrinna-slucka  # mechanizmus je v definícii
+= znaky-nadoru  # prehľad
+= fos-jun  # funkcia je v definícii
+= tumor-opuch  # pomenovanie
+= passenger-mutacia  # pojem
+= bcr-gen  # gén, dej v CML
+= zmiesany-nador  # pomenovanie skupiny
+= primarna-prevencia  # pojem
+= progresia-nadoru  # mechanizmus je v definícii
+= male-modre-bunky  # opis vzhľadu
+= ganglioneuroblastom  # prechodná forma
+= intermediarny-nador  # kategória
+= met  # gén, funkcia je v definícii
+= mikrorna  # funkcia je v definícii
+= supresorovy-gen  # mechanizmus je v definícii
+= ovulum-nabothi  # mechanizmus je v definícii
+= mmr  # mechanizmus je v definícii
+= medialna-krcna-cysta  # mechanizmus je v definícii
+= organoidny-nador  # opis stavby
+= mrd  # pojem
+= gatekeeper  # funkcia je v definícii
+= adenoakantom  # starší názov
+= zarodocna-mutacia  # pojem
+= promotor  # pojem
+= histoidny-nador  # opis stavby
+= parazitarna-cysta  # mechanizmus je v definícii
+= caretaker  # funkcia je v definícii
+= tnm-m  # kategória zápisu
+= tnm-n  # kategória zápisu
+= tnm-t  # kategória zápisu
+= tnm  # systém zápisu
+= grading  # systém hodnotenia
+= staging  # systém hodnotenia
+= breslow  # meranie
+= rezidualny-nador  # kategória zápisu
+= eponym-broders-sys  # historický systém
+= lokalne-agresivny-nador  # kategória
+= synchronna-metastaza  # časové zaradenie
+= dignita  # kategória
+= stadium-0-iv  # kategória
+= nadorovy-marker  # pojem
+= prognosticky-marker  # pojem
+= figo  # systém štádií
+= ann-arbor  # systém štádií
+= nottingham  # systém hodnotenia
+= tekuta-biopsia  # metóda
+= lymfaticke-cievy  # anatomický pojem
+= precizna-medicina  # pojem
+= neoadjuvantna-liecba  # pojem
+= strata-polarity  # morfologický opis, príčina je v hesle
+= anizonukleoza  # morfologický opis
+= pomer-jadro-cytoplazma  # morfologický opis
+= izolovane-nadorove-bunky  # kategória zápisu
+= mikrometastaza  # kategória zápisu
+= net-nador  # kategória
+= borderline  # kategória
+= aberantny-fenotyp  # pojem
+= ki-67  # marker, princíp je v definícii
+= puzdro  # mechanizmus je v definícii
+= dediferenciacia  # pojem, zmena názoru je v hesle
+= pseudopuzdro  # mechanizmus je v definícii
+= vaskularna-invazia  # mechanizmus je v hesle
+= hematogenna-metastaza  # mechanizmus je v definícii
+= fenotypova-plasticita  # pojem
+= anaplazia  # morfologický opis
+= eponym-grawitz-nád  # zmena názvu
+= cystadenokarcinom  # pomenovanie
+= scirozny  # opis konzistencie, príčina je v hesle desmoplázia
+= koilocyt  # mechanizmus je v hesle
+= cea  # marker
+= minen  # kategória
+= hlienove-jazera  # morfologický opis
+= kribriformna-stavba  # morfologický opis
+= p63  # marker
+= p40  # marker
+= linie-hypofyzy  # markery
+= mib-1  # protilátka
+= cd10  # marker
+= keratoakantom  # príčina nie je objasnená, priebeh je v hesle
+= afp  # marker
+= cdh1  # mechanizmus je v definícii
+= karcinom-neznameho-povodu  # pojem
+= rakovinove-pole  # mechanizmus je v definícii
+= retrakcny-artefakt  # mechanizmus je v definícii
+= mucin  # pojem
+= velkobunkovy-karcinom  # diagnóza vylúčením
+= punlmp  # kategória
+= pitnet  # názvoslovie
+= verukozny-karcinom  # morfologický typ
+= bazoskvamozny-karcinom  # morfologický typ
+= adenoskvamozny-karcinom  # morfologický typ
+= lymfoidny-polyp  # pomenovanie
+= von-brunnove-hniezda  # morfologický opis
+= medularny-karcinom  # pomenovanie
+= fgfr3  # gén, účinok je v hesle
+= ttf-1  # marker
+= leser-trelat  # klinický príznak
+= cystadenom  # mechanizmus je v definícii
+= sarkomatoidny-karcinom  # mechanizmus je v definícii
+= palisada  # morfologický opis
+= parakeratoza  # mechanizmus je v definícii
+= dyskeratoza  # morfologický opis
+= akantolyticky-karcinom  # morfologický typ
+= carcinoma-simplex  # pomenovanie
+= polypektomia  # výkon
+= ulcus-rodens  # morfologický opis
+= adenosarkom  # pomenovanie
+= cdx2  # marker
+= morfeaformny-bcc  # morfologický typ
+= mohsova-chirurgia  # výkon
+= stenoza  # pomenovanie
+= ck7  # marker
+= napsin-a  # marker
+= hamartomovy-polyp  # príčina je v definícii
+= bazaloidne-bunky  # morfologický opis
+= vilozny-adenom  # morfologický typ
+= ck5-6  # marker
+= papilarny-adenom-oblicky  # morfologický typ
+= folikulovy-adenom  # morfologický typ
+= medzibunkove-mostiky  # morfologický opis
+= gata3  # marker
+= tubulovilozny-adenom  # morfologický typ
+= histogeneticka-klasifikacia  # pojem
+= ck20  # marker
+= zapalovy-polyp  # mechanizmus je v definícii
+= angiogeneza  # mechanizmus je v definícii (hypoxia → HIF → VEGF)
+= rankl  # mechanizmus je v definícii
+= nse  # marker
+= lipoblastom  # morfologický typ, príčina sa v knihe nerozoberá
+= codmanov-trojuholnik  # mechanizmus je v definícii
+= somaticka-mutacia  # pojem
+= osteoblastom  # morfologický typ
+= osteoid  # pojem
+= cd99  # marker
+= pecoma  # kategória
+= mikrogist  # kategória
+= cd117-ihc  # marker
+= ctnnb1  # mechanizmus je v definícii
+= ups  # diagnóza vylúčením
+= myxom  # morfologický typ
+= lipoblast  # morfologický opis
+= dermatofibrom  # morfologický typ
+= glut1  # marker
+= ss18-ssx  # mechanizmus je v definícii
+= pdgfra  # gén, účinok je v definícii
+= storiformny-rast  # morfologický opis
+= enchondromatoza  # pomenovanie, dej v hesle enchondróm
+= nekrektomia  # výkon
+= lca  # marker
+= maternica  # anatomický pojem
+= atypicky-chrupavkovy-nador  # kategória
+= myxofibrosarkom  # morfologický typ
+= hemangiopericytom  # zrušený názov
+= nkx2-2  # marker
+= mdm2  # mechanizmus je v definícii
+= myolipom  # morfologický typ
+= neosifikujuci-fibrom  # morfologický typ
+= kit  # gén, účinok je v definícii
+= cysticky-hygrom  # morfologický typ
+= involucia  # pojem
+= naevus-flammeus  # morfologický typ
+= erg  # marker
+= ema  # marker
+= metafyza  # anatomický pojem
+= hibernom  # morfologický typ
+= fibromatozy  # skupina, dej v hesle desmoid
+= denosumab  # mechanizmus je v definícii
+= osteom  # morfologický typ
+= myod1  # marker
+= proliferativna-fasciitida  # reaktívna lézia, príčina nie je objasnená
+= pax-foxo1  # gén, dej v hesle alveolárny rabdomyosarkóm
+= chondrom  # morfologický typ
+= cd31  # marker
+= hmb45  # marker
+= cd34  # marker
+= osteoklast  # mechanizmus je v definícii
+= glomus-tumor  # morfologický typ
+= rabdomyoblast  # morfologický opis
+= rabdomyom  # morfologický typ
+= dezmin  # marker
+= lymfangiom  # morfologický typ
+= cajalove-bunky  # funkcia je v definícii
+= adamantinom  # morfologický typ
+= chondroblastom  # morfologický typ
+= fibrosarkom  # diagnóza vylúčením
+= kavernozny-hemangiom  # morfologický typ
+= rt-pcr  # metóda
+= fibrom  # morfologický typ
+= fgf  # funkcia je v definícii
+= botryoidny-rabdomyosarkom  # morfologický variant
+= h-kaldesmon  # marker
+= vzor-rybej-kosti  # morfologický opis
+= malformacia-ciev  # vývojová chyba, rozdiel je v hesle
+= myelolipom  # morfologický typ
+= mfh  # zrušená diagnóza
+= pnet  # zrušený názov
+= myogenin  # marker
+= sma  # marker
+= angiolipom  # morfologický typ
+= dog1  # marker
+= fibrolipom  # morfologický typ
+= solitarna-kostna-cysta  # príčina nie je objasnená
+
+# kap. 14 (26. 11. 2026) – pojmy bez vlastného mechanizmu (marker, gén, anatómia, kategória, systém skóre)
+- priedusnica
+- parasympatikus
+- autonomny-nerv
+- sietnica
+- neurohypofyza
+= eponym-langerhans-bun  # anatómia, funkcia je v definícii
+= eponym-recklinghausen-cho  # synonymum NF1, mechanizmus je v hesle NF1
+= nador-obalov-nervov  # názov skupiny
+= inrg  # systém rizikových skupín
+= gapp-skore  # skórovací systém
+= pass-skore  # skórovací systém
+= atrx  # gén, mechanizmus je v hesle DAXX
+= wnt  # signálna dráha – pomenovanie skupiny meduloblastómu
+= shh  # signálna dráha – pomenovanie skupiny meduloblastómu
+= insm1  # marker
+= gfap  # marker
+= mostovo-mozockovy-uhol  # anatómia
+= difuzny-ne-system  # pomenovanie súboru buniek
+= rosenthalove-vlakna  # morfologický opis
+= paraganglion  # anatómia, funkcia je v definícii
+= povrchovy-ektoderm  # embryológia – pomenovanie
+= nervovy-zliabok  # embryológia – pomenovanie
+= predne-crevo  # embryológia – pomenovanie
+= zadne-crevo  # embryológia – pomenovanie
+= gep-nen  # názov skupiny
+= kodelecia-1p19q  # genetický nález, význam je v hesle oligodendrogliómu
+= sustentakularna-bunka  # histológia – pomenovanie
+= junkcny-nevus  # morfologický typ
+= perineuralna-bunka  # histológia – pomenovanie
+= gangliova-bunka  # histológia – pomenovanie
+= apud  # historický pojem
+= historicke-nazvy-net-pankreasu  # zrušené názvy
+= neuropil  # morfologický opis, „prečo“ je v definícii
+= epineurium  # anatómia
+= perineurium  # anatómia
+= langerhansove-ostrovceky  # anatómia

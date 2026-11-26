@@ -1,0 +1,10 @@
+# Obrázky z kapitol, ktoré build NEMÁ dať do vysvetlivky (assets/glossary/96-obrazky.js, tools/build.js).
+# Riadok: „id“ (heslo nikdy nedostane obrázok z kapitol) alebo „id → súbor“ (len tento obrázok nie).  # dôvod
+# Posúdené 9. 11. 2026.
+lymfocyt → lymphocytic-myocarditis.jpg      # titulok „Lymfocytárna myokarditída“ – choroba, nie bunka
+oblicka                                     # orgán – chorobný nález by vysvetlivku orgánu skreslil
+pecen                                       # orgán
+priedusky                                   # orgán
+neuropatia → diabetic-heel-ulcer.jpg        # vred je následok, neuropatiu neukazuje
+estrogeny → er-ihc-lobular.jpg              # ukazuje receptor v nádore, nie hormón
+patogeneza                                  # všeobecný pojem; schéma je jeden príklad (nekróza)

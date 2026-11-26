@@ -1,0 +1,160 @@
+{
+  "titul": "Mapa kapitoly: z neuroektodermu vzniká nervová trubica a nervová lišta. Z lišty pochádzajú Schwannove bunky (schwannóm, neurofibróm, MPNST), sympatikové neuroblasty (neuroblastóm až ganglioneuróm), chromafinné bunky (feochromocytóm, paraganglióm) a melanocyty (névus, melanóm); z trubice glia a neuróny CNS (gliómy, meduloblastóm; meningióm z obalov). Neuroendokrinné bunky epitelu sú z endodermu, ale majú rovnaký neuroendokrinný program – z nich vznikajú NET, NEC a MiNEN",
+  "sirka": 960,
+  "nadpis": "Kde sa bunka v zárodku usadila, tam vzniká jej nádor",
+  "rady": [
+    {
+      "plne": false,
+      "uzly": [
+        {
+          "id": "ne",
+          "trieda": "bx-c",
+          "odkaz": "#sec-14-1",
+          "nazov": "NEUROEKTODERM · 14.1",
+          "sirka": 330,
+          "text": [
+            "nervová platnička → žliabok → trubica a lišta",
+            "spoločné črty nádorov: línia, zrelosť, funkcia · 14.2"
+          ]
+        }
+      ]
+    },
+    {
+      "plne": false,
+      "uzly": [
+        {
+          "id": "lista",
+          "trieda": "bx-k",
+          "obrys": "var(--color-accent-600)",
+          "nazov": "NERVOVÁ LIŠTA",
+          "sirka": 560,
+          "text": [
+            "bunky putujú telom a usadia sa v nervoch, gangliách, nadobličke, koži"
+          ]
+        },
+        {
+          "id": "trubica",
+          "trieda": "bx-k",
+          "obrys": "var(--color-accent-600)",
+          "nazov": "NERVOVÁ TRUBICA",
+          "sirka": 160,
+          "text": [
+            "mozog a miecha",
+            "ostáva v lebke"
+          ]
+        },
+        {
+          "id": "endo",
+          "trieda": "bx-k",
+          "obrys": "var(--color-accent-2-600)",
+          "nazov": "ENDODERM",
+          "sirka": 170,
+          "text": [
+            "NE bunky epitelu",
+            "rovnaký program"
+          ]
+        }
+      ]
+    },
+    [
+      {
+        "id": "nb",
+        "trieda": "bx-m",
+        "odkaz": "#sec-14-3",
+        "nazov": "NEUROBLAST · 14.3",
+        "text": [
+          "neuroblastóm",
+          "→ ganglioneuróm"
+        ]
+      },
+      {
+        "id": "chrom",
+        "trieda": "bx-m",
+        "odkaz": "#sec-14-4",
+        "nazov": "CHROMAFINNÁ · 14.4",
+        "text": [
+          "feochromocytóm",
+          "paraganglióm"
+        ]
+      },
+      {
+        "id": "schw",
+        "trieda": "bx-m",
+        "odkaz": "#sec-14-5",
+        "nazov": "SCHWANNOVA B. · 14.5",
+        "text": [
+          "schwannóm",
+          "neurofibróm, MPNST",
+          "syndrómy NF · 14.6"
+        ]
+      },
+      {
+        "id": "mel",
+        "trieda": "bx-m",
+        "odkaz": "#sec-14-8",
+        "nazov": "MELANOCYT · 14.8",
+        "text": [
+          "névus",
+          "melanóm"
+        ]
+      },
+      {
+        "id": "cns",
+        "trieda": "bx-m",
+        "odkaz": "#sec-14-7",
+        "nazov": "GLIA, NEURÓN · 14.7",
+        "text": [
+          "gliómy",
+          "meduloblastóm",
+          "(meningióm z obalov)"
+        ]
+      },
+      {
+        "id": "nen",
+        "trieda": "bx-m",
+        "odkaz": "#sec-14-9",
+        "nazov": "NE BUNKA · 14.9",
+        "text": [
+          "NET × NEC",
+          "MiNEN",
+          "funkčné syndrómy"
+        ]
+      }
+    ]
+  ],
+  "sipky": [
+    {
+      "od": "ne",
+      "do": "lista"
+    },
+    {
+      "od": "ne",
+      "do": "trubica"
+    },
+    {
+      "od": "lista",
+      "do": "schw"
+    },
+    {
+      "od": "lista",
+      "do": "nb"
+    },
+    {
+      "od": "lista",
+      "do": "chrom"
+    },
+    {
+      "od": "lista",
+      "do": "mel"
+    },
+    {
+      "od": "trubica",
+      "do": "cns"
+    },
+    {
+      "od": "endo",
+      "do": "nen"
+    }
+  ],
+  "pata": "Rámček otvorí sekciu. Endoderm nie je časť neuroektodermu – NE nádory sa sem radia podľa programu bunky, nie podľa pôvodu."
+}

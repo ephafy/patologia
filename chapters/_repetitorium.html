@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Repetitórium kapitol 0–13 · PATOLA</title>
+<meta name="description" content="Prehľad kapitol 0–13 knihy PATOLA na zopakovanie: hlavná myšlienka, nosné body, tabuľky, pasce a otázky s odpoveďami.">
+<meta name="theme-color" content="#5f42a8">
+<link rel="icon" href="../assets/img/icon.svg">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../assets/fonts/SourceSerif4Variable-Roman.ttf.woff2">
+<link rel="stylesheet" href="../assets/fonts/fonts.css">
+<style>
+/* Vzhľad knihy (broadsheet): sivý podklad, biela „stránka“, tenké čiary, ostré rohy, číslo v akcente.
+   Tokeny ako v kapitolách; farby knihy prepíše palette.css (načítaný posledný). */
+:root{
+  --color-bg:#f3f2f2; --color-page:#ffffff; --color-text:#201e1d; --color-muted:#605d5d;
+  --color-divider:color-mix(in srgb,#201e1d 16%,transparent);
+  --color-accent:#5f42a8; --color-accent-2:#cf4a72;
+  --color-accent-100:#f4f0fc; --color-accent-700:#5a3d9a; --color-accent-2-100:#fdf0f3;
+  --pozor:#c25e00; --pozor-bg:#fff4e8; --ok:#1f7a6b;
+  --serif:"Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans:system-ui, "Segoe UI", Roboto, sans-serif;
+  --z:1.2;
+}
+@media print{:root{--z:1}}
+*{box-sizing:border-box}
+html{scroll-padding-top:calc(56px*var(--z,1))}
+body{margin:0;background:var(--color-bg);color:var(--color-text);font-family:var(--serif);font-size:calc(15px*var(--z,1));line-height:1.55}
+a{color:var(--color-accent)}
+header.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px max(16px,env(safe-area-inset-left,0px));background:var(--color-page);border-bottom:1px solid var(--color-divider)}
+header.bar .brand{font-weight:700;letter-spacing:.04em;text-decoration:none;color:var(--color-text);display:flex;align-items:center;gap:8px;font-size:calc(15px*var(--z,1))}
+header.bar .mark{width:14px;height:14px;background:var(--color-accent);display:inline-block;border-radius:1px}
+header.bar .back{font-size:calc(13px*var(--z,1));text-decoration:none}
+.wrap{max-width:calc(760px*var(--z,1));margin:20px auto 60px;background:var(--color-page);border:1px solid var(--color-divider);
+  padding:8px max(16px,4vw) 32px}
+header.top{padding:24px 0 12px}
+.eyebrow{font-size:calc(11px*var(--z,1));letter-spacing:.14em;text-transform:uppercase;color:var(--color-accent-2);font-weight:600}
+h1{font-size:calc(34px*var(--z,1));line-height:1.12;font-weight:600;margin:.2em 0 .3em;text-wrap:balance}
+h1 span{color:var(--color-accent)}
+.lead{font-size:calc(17px*var(--z,1));color:var(--color-muted);margin:0;max-width:62ch}
+.how{font-size:calc(13px*var(--z,1));color:var(--color-muted);margin-top:12px;display:flex;flex-wrap:wrap;gap:4px 18px}
+.how b{color:var(--color-accent)}
+nav.chips{position:sticky;top:0;z-index:5;background:var(--color-page);border-bottom:1px solid var(--color-divider);padding:8px 0;margin:0;display:flex;gap:4px;overflow-x:auto;scrollbar-width:thin}
+nav.chips a{flex:none;text-decoration:none;color:var(--color-text);font-size:calc(13px*var(--z,1));padding:3px 9px;border:1px solid var(--color-divider);border-radius:2px;font-variant-numeric:tabular-nums}
+nav.chips a:hover,nav.chips a:focus-visible{border-color:var(--color-accent);color:var(--color-accent);outline:none}
+nav.chips a.x{color:var(--color-accent-2)}
+.tools{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 0}
+.tools button{font:inherit;font-size:calc(13px*var(--z,1));padding:5px 11px;border:1px solid var(--color-accent);background:var(--color-page);color:var(--color-accent);border-radius:2px;cursor:pointer}
+.tools button[aria-pressed="true"]{background:var(--color-accent);color:#fff}
+.tools button:focus-visible{outline:2px solid var(--color-accent-2);outline-offset:2px}
+.tools .hint{flex-basis:100%;font-size:calc(12.5px*var(--z,1));color:var(--color-muted)}
+.part{font-size:calc(11px*var(--z,1));letter-spacing:.16em;text-transform:uppercase;color:var(--color-muted);font-weight:600;margin:40px 0 4px;display:flex;align-items:center;gap:10px}
+.part::after{content:"";flex:1;height:1px;background:var(--color-divider)}
+section.ch{border-top:2px solid var(--color-text);padding:14px 0 10px;margin:8px 0 22px}
+.ch-h{display:flex;gap:12px;align-items:baseline}
+.ch-n{font-size:calc(24px*var(--z,1));font-weight:600;color:var(--color-accent);min-width:1.6em;font-variant-numeric:tabular-nums}
+h2{font-size:calc(24px*var(--z,1));line-height:1.2;margin:0;font-weight:600;text-wrap:balance}
+h2 a{color:inherit;text-decoration:none}
+h2 a:hover{color:var(--color-accent);text-decoration:underline;text-decoration-thickness:1px}
+.thesis{border-left:3px solid var(--color-accent-2);background:var(--color-accent-2-100);padding:9px 14px;margin:12px 0}
+h3{font-size:calc(11.5px*var(--z,1));letter-spacing:.1em;text-transform:uppercase;color:var(--color-accent);margin:18px 0 6px;font-weight:600}
+ul.pts{margin:0;padding-left:1.15em}
+ul.pts li{margin:4px 0}
+ul.pts li::marker{color:var(--color-accent)}
+.sec{font-size:calc(12px*var(--z,1));white-space:nowrap;color:var(--color-muted)}
+.sec a,td.ref a{text-decoration:none;border-bottom:1px solid var(--color-accent-100)}
+.sec a:hover,td.ref a:hover{border-bottom-color:var(--color-accent)}
+.tbl{overflow-x:auto;margin:6px 0 4px}
+table{border-collapse:collapse;width:100%;font-size:calc(13.5px*var(--z,1));line-height:1.4}
+th,td{padding:6px 9px;text-align:left;vertical-align:top;border-bottom:1px solid var(--color-divider)}
+thead th{font-size:calc(11px*var(--z,1));letter-spacing:.06em;text-transform:uppercase;font-weight:600;background:var(--color-accent-100);border-bottom:2px solid var(--color-accent)}
+td:first-child{font-weight:600}
+td.ref{white-space:nowrap;font-weight:400}
+.pasce{background:var(--pozor-bg);border-left:3px solid var(--pozor);padding:6px 14px 8px;margin:14px 0 6px}
+.pasce h3{color:var(--pozor);margin-top:6px}
+.pasce ul{margin:0;padding-left:1.1em}
+details.q{border-top:1px dashed var(--color-divider);padding:6px 0}
+details.q summary{cursor:pointer;font-weight:600;list-style:none;position:relative;padding-left:24px}
+details.q summary::-webkit-details-marker{display:none}
+details.q summary::before{content:"?";position:absolute;left:0;top:.2em;font-family:var(--sans);font-size:11px;width:16px;height:16px;line-height:16px;text-align:center;border-radius:50%;background:var(--color-accent);color:#fff}
+details.q[open] summary::before{content:"✓";background:var(--ok)}
+details.q .a{padding:4px 0 2px 24px}
+.arrow{color:var(--color-accent-2);font-weight:600}
+body.quiz .tbl td:not(:first-child){filter:blur(6px);cursor:pointer;user-select:none;transition:filter .15s}
+body.quiz .tbl td.shown{filter:none;user-select:auto}
+@media (prefers-reduced-motion:reduce){body.quiz .tbl td{transition:none}}
+footer{font-size:calc(12.5px*var(--z,1));color:var(--color-muted);margin-top:30px;border-top:1px solid var(--color-divider);padding-top:12px}
+@media (max-width:820px){.wrap{margin:0;border:0}h1{font-size:calc(28px*var(--z,1))}}
+@media print{
+  @page{size:A4;margin:16mm 15mm 16mm}
+  body{background:#fff;font-size:10.5pt}
+  header.bar,nav.chips,.tools{display:none}
+  .wrap{max-width:none;margin:0;border:0;padding:0}
+  section.ch{break-before:page;border-top:2px solid #000}
+  #os{break-before:auto}
+  .part{display:none}
+  .tbl{overflow:visible}
+  table,.pasce,details.q,.thesis{break-inside:avoid}
+  h3{break-after:avoid}
+  body.quiz .tbl td{filter:none!important}
+  .sec a,td.ref a,h2 a{color:inherit;border:0}
+  .thesis{background:none;border-left:3px solid var(--color-accent-2)}
+  thead th{background:none}
+  .pasce{background:none;border:1px solid var(--pozor);border-left-width:3px}
+  details.q summary::before{content:"?"!important;background:none;color:#000;border:1px solid #000}
+}
+</style>
+<link rel="stylesheet" href="../assets/styles/palette.css">
+</head>
+
+<body>
+<header class="bar"><a class="brand" href="../index.html"><span class="mark" aria-hidden="true"></span>PATOLA</a><a class="back" href="../index.html">← Obsah knihy</a></header>
+<div class="wrap">
+<header class="top">
+  <div class="eyebrow">PATOLA · všeobecná patológia</div>
+  <h1>Repetitórium <span>kapitol 0–13</span></h1>
+  <p class="lead">Od metód patológa po mezenchýmové nádory na jednom mieste: pri každej kapitole jej hlavná myšlienka, body, ktoré nesú zvyšok, jedna tabuľka na rýchle rozlíšenie, časté chyby a otázky na overenie.</p>
+  <div class="how"><span><b>1.</b> Prečítaj rámček s hlavnou myšlienkou</span><span><b>2.</b> Zapni režim skúšania a vybav si tabuľku</span><span><b>3.</b> Odpovedz na otázky skôr, než ich rozbalíš</span></div>
+</header>
+
+<nav class="chips" aria-label="Kapitoly">
+  <a href="#os" class="x">Os</a><a href="#k0">0</a><a href="#k1">1</a><a href="#k2">2</a><a href="#k3">3</a><a href="#k4">4</a><a href="#k5">5</a><a href="#k6">6</a><a href="#k7">7</a><a href="#k8">8</a><a href="#k9">9</a><a href="#k10">10</a><a href="#k11">11</a><a href="#k12">12</a><a href="#k13">13</a><a href="#napriec" class="x">Naprieč</a>
+</nav>
+
+<div class="tools">
+  <button type="button" id="printBtn">Tlačiť / uložiť ako PDF</button>
+  <button type="button" id="quizBtn" aria-pressed="false">Režim skúšania</button>
+  <button type="button" id="openBtn">Rozbaliť všetky odpovede</button>
+  <span class="hint">Čísla sekcií a názvy kapitol sú odkazy do knihy. V režime skúšania sú tabuľky zakryté okrem prvého stĺpca – ťuknutím odkryješ bunku.</span>
+</div>
+
+<!-- ============ OS ============ -->
+<div class="part">Os celej knihy</div>
+<section class="ch" id="os">
+  <div class="ch-h"><span class="ch-n">★</span><h2>Sedem reakcií tkaniva</h2></div>
+  <p class="thesis">Orgánov je veľa, ale tkanivo vie na poškodenie odpovedať len niekoľkými spôsobmi. Kto pozná tieto reakcie, ich mechanizmus a čas, rozpozná ich v každom orgáne.</p>
+  <p><b>noxa</b> <span class="arrow">→</span> adaptácia <span class="arrow">→</span> vratné poškodenie <span class="arrow">→</span> smrť bunky <span class="arrow">→</span> zápal <span class="arrow">→</span> oprava <span class="arrow">→</span> (pri opakovaní) metaplázia <span class="arrow">→</span> dysplázia <span class="arrow">→</span> nádor. Poruchy obehu do osi vstupujú zboku: ischémia <span class="arrow">→</span> nekróza <span class="arrow">→</span> zápal <span class="arrow">→</span> jazva.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Reakcia</th><th>Čo tkanivo robí</th><th>Kapitoly</th></tr></thead>
+    <tbody>
+      <tr><td>1 Adaptácia</td><td>prežije záťaž v novom ustálenom stave: atrofia, hypertrofia, hyperplázia, metaplázia</td><td class="ref"><a href="01_atrofia_nekroza_apoptoza.html#sec-1-2">1.2</a>, <a href="06_progresivne_zmeny.html">6</a></td></tr>
+      <tr><td>2 Vratné poškodenie, hromadenie látok</td><td>↓ ATP → opuch; prísun &gt; premena + odvoz → dystrofia</td><td class="ref"><a href="02_dystrofie.html">2</a></td></tr>
+      <tr><td>3 Smrť bunky</td><td>apoptóza (riadená, bez zápalu) × nekróza (z nedostatku ATP, so zápalom)</td><td class="ref"><a href="01_atrofia_nekroza_apoptoza.html">1</a></td></tr>
+      <tr><td>4 Zápal</td><td>exsudatívny, alteratívny, proliferatívny; granulomatózny</td><td class="ref"><a href="03_zapal_vseobecne.html">3</a>, <a href="04_typy_zapalu.html">4</a>, <a href="07_granulomatozne_zapaly.html">7</a></td></tr>
+      <tr><td>5 Oprava</td><td>regenerácia × reparácia (granulačné tkanivo → jazva)</td><td class="ref"><a href="05_hojenie.html">5</a></td></tr>
+      <tr><td>6 Poruchy obehu</td><td>miestne (trombóza, embólia, infarkt, krvácanie) a celkové (zlyhanie srdca, edém, šok)</td><td class="ref"><a href="08_miestne_poruchy_obehu.html">8</a>, <a href="09_celkove_poruchy_obehu.html">9</a></td></tr>
+      <tr><td>7 Poruchy rastu</td><td>dysplázia, nádor: názvoslovie, gény, dignita, epitelové a mezenchýmové nádory</td><td class="ref"><a href="10_nadory_uvod.html">10</a>–<a href="13_mezenchymove_nadory.html">13</a></td></tr>
+    </tbody>
+  </table></div>
+  <h3>Šesť otázok na každý dej</h3>
+  <ul class="pts">
+    <li>Čo ho spúšťa? · Akým mechanizmom prebieha (šípka vždy s činiteľom)? · Ako vyzerá a <b>prečo práve tak</b>?</li>
+    <li>Ako sa mení v čase? · Čím sa potvrdí a od čoho odlíši? · Čo z toho má pacient a čo napíše patológ?</li>
+    <li>Keď výsledok závisí od orgánu, rozhoduje <b>terén</b>: schopnosť buniek deliť sa · zachovaná kostra tkaniva · krvné zásobenie · imunita.</li>
+  </ul>
+</section>
+
+<!-- ============ ČASŤ I ============ -->
+<div class="part">Metódy</div>
+
+<section class="ch" id="k0">
+  <div class="ch-h"><span class="ch-n">0</span><h2><a href="00_uvod_metody.html">Úvod do patológie a jej metódy</a></h2></div>
+  <p class="thesis">Etiológia hovorí, <b>čo</b> chorobu vyvolalo, patogenéza, <b>ako</b> z príčiny vznikne nález. Každá metóda odpovedá len na svoju otázku; diagnóza vzniká ich kombináciou s klinikou.</p>
+  <h3>Nosné body</h3>
+  <ul class="pts">
+    <li><b>Kompenzácia</b> drží funkciu, kým sama nezačne zvyšovať záťaž – vtedy choroba dekompenzuje a udržiava sa sama. <span class="sec">→ <a href="00_uvod_metody.html#sec-0-2">0.2</a></span></li>
+    <li><b>Biopsia</b> = tkanivo s architektúrou, ukáže inváziu. <b>Cytológia</b> = jednotlivé bunky, šetrná a rýchla, inváziu neukáže. <span class="sec">→ <a href="00_uvod_metody.html#sec-0-3">0.3</a></span></li>
+    <li>Bez krvi tkanivo autolyzuje <span class="arrow">→</span> <b>formol</b> zosieťuje bielkoviny <span class="arrow">→</span> parafín <span class="arrow">→</span> rez ≈ 5 µm. Čo sa pokazí pred fixáciou, už sa nedá vrátiť. <span class="sec">→ <a href="00_uvod_metody.html#sec-0-4">0.4</a></span></li>
+    <li><b>Zmrazený rez</b>: odpoveď do ≈ 20 min, len keď zmení postup operácie (zhubné? okraje?). Parafínový rez nenahrádza. <span class="sec">→ <a href="00_uvod_metody.html#sec-0-5">0.5</a></span></li>
+    <li><b>HE</b>: nukleové kyseliny modré (hematoxylín), bielkoviny ružové (eozín). Čo je v HE rovnako ružové, rozlíšia špeciálne farbenia. <span class="sec">→ <a href="00_uvod_metody.html#sec-0-6">0.6</a></span></li>
+    <li><b>Imunohistochémia</b> = protilátka nájde bielkovinu na reze: čím bunka je (diagnóza), ako rýchlo rastie (prognóza), či zaberie liek (predikcia). Platí len s kontrolou. <span class="sec">→ <a href="00_uvod_metody.html#sec-0-7">0.7</a></span></li>
+    <li><b>Molekulová patológia</b> (FISH, PCR, NGS, tekutá biopsia): čo sa stalo s génom. <b>Prognostický</b> faktor = priebeh choroby, <b>prediktívny</b> = odpoveď na liek. <span class="sec">→ <a href="00_uvod_metody.html#sec-0-8">0.8</a></span></li>
+    <li><b>Pitva</b>: záver v poradí základné ochorenie <span class="arrow">→</span> komplikácie <span class="arrow">→</span> príčina smrti; posmrtné zmeny od zmien za života odlíši vitálna reakcia. <span class="sec">→ <a href="00_uvod_metody.html#sec-0-9">0.9</a></span></li>
+  </ul>
+  <h3>Rýchle rozlíšenie metód</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Metóda</th><th>Odpovedá na</th><th>Kedy výsledok</th><th>Obmedzenie</th></tr></thead>
+    <tbody>
+      <tr><td>Histológia (HE)</td><td>čo je to za proces či nádor</td><td>≥ 1 deň</td><td>mnohé látky sú rovnako ružové</td></tr>
+      <tr><td>Zmrazený rez</td><td>zhubné? okraje čisté?</td><td>≈ 20 min</td><td>artefakty, tuk, kosť; len orientačne</td></tr>
+      <tr><td>Cytológia</td><td>sú tam atypické bunky?</td><td>hodiny–dni</td><td>nevidí architektúru ani inváziu</td></tr>
+      <tr><td>Histochémia</td><td>z čoho je depozit, pigment, mikrób</td><td>dni</td><td>niektoré farbenia potrebujú zmrazený rez</td></tr>
+      <tr><td>Imunohistochémia</td><td>línia a pôvod bunky; predikcia liečby</td><td>dni</td><td>fixácia, kontroly, interpretácia</td></tr>
+      <tr><td>Molekulová patológia</td><td>čo sa stalo s génom</td><td>dni–týždne</td><td>fragmentovaná DNA z parafínu, málo ctDNA</td></tr>
+      <tr><td>Pitva</td><td>prečo pacient zomrel, sedela diagnóza?</td><td>dni</td><td>posmrtné zmeny</td></tr>
+    </tbody>
+  </table></div>
+  <div class="pasce"><h3>Pasce</h3><ul>
+    <li>Atypické bunky v cytológii ešte nie sú invazívny karcinóm – inváziu dokáže len tkanivo s architektúrou.</li>
+    <li>Prognostický ≠ prediktívny: stage hovorí o priebehu, HER2 o tom, či zaberie anti-HER2 liečba.</li>
+  </ul></div>
+  <h3>Over sa</h3>
+  <details class="q"><summary>Prečo sa zmrazený rez nerobí „pre istotu“ pri každej operácii?</summary><div class="a">Je menej presný (artefakty z mrazenia, tuk a kosť sa krájajú zle) a spotrebuje tkanivo. Má zmysel len vtedy, keď odpoveď zmení postup operácie – napr. rozsah resekcie podľa okrajov. Definitívnu diagnózu dá vždy parafínový rez.</div></details>
+  <details class="q"><summary>Vzorka ležala 6 hodín na stole bez formolu. Čo sa stalo a dá sa to napraviť?</summary><div class="a">Vlastné enzýmy začali tkanivo autolyzovať a bielkoviny (antigény) sa rozkladajú – zhorší sa morfológia aj imunohistochémia. Fixácia rozklad len zastaví, späť ho nevráti.</div></details>
+</section>
+
+<!-- ============ ČASŤ II ============ -->
+<div class="part">Poškodenie a smrť bunky</div>
+
+<section class="ch" id="k1">
+  <div class="ch-h"><span class="ch-n">1</span><h2><a href="01_atrofia_nekroza_apoptoza.html">Atrofia, nekróza, apoptóza</a></h2></div>
+  <p class="thesis">Osud bunky určuje <b>sila a dĺžka noxy</b>: adaptácia <span class="arrow">→</span> vratné poškodenie <span class="arrow">→</span> za bodom nezvratnosti smrť. Pri každej zmene sa pýtaj, či je ešte vratná.</p>
+  <h3>Nosné body</h3>
+  <ul class="pts">
+    <li><b>Atrofia</b>: bunky žijú, sú menšie alebo ich je menej; chýba signál na rast alebo prísun. Vratná, kým ich miesto neobsadilo väzivo. <span class="sec">→ <a href="01_atrofia_nekroza_apoptoza.html#sec-1-2">1.2</a></span></li>
+    <li><b>Dve cesty smrti</b>: apoptóza – riadená, spotrebúva ATP, bez zápalu; nekróza – z nedostatku ATP, membrána praskne, vždy zápal. <span class="sec">→ <a href="01_atrofia_nekroza_apoptoza.html#sec-1-3">1.3</a></span></li>
+    <li><b>Apoptóza</b>: kaspázy rozložia bunku na uzavreté telieska, fagocyty ich pohltia. Vnútorná dráha (mitochondria) a vonkajšia (receptor smrti). <span class="sec">→ <a href="01_atrofia_nekroza_apoptoza.html#sec-1-4">1.4</a></span></li>
+    <li><b>Nekróza</b>: ↓ ATP <span class="arrow">→</span> zlyhajú pumpy <span class="arrow">→</span> ↑ Ca²⁺ <span class="arrow">→</span> prasknú membrány <span class="arrow">→</span> obsah unikne <span class="arrow">→</span> zápal okolia. Obraz na reze mešká za smrťou o hodiny. <span class="sec">→ <a href="01_atrofia_nekroza_apoptoza.html#sec-1-5">1.5</a></span></li>
+    <li><b>Druh nekrózy</b> určí, čo prevládne: denaturácia bielkovín (koagulačná, tkanivo drží tvar) × enzymatické natrávenie (kolikvačná, skvapalní sa). <span class="sec">→ <a href="01_atrofia_nekroza_apoptoza.html#sec-1-6">1.6</a></span></li>
+    <li><b>Osud</b>: vstrebe a zjazví, oddelí (sekvester, vred), ostane dutina alebo vápnik; infekcia ju zmení na hnis alebo gangrénu. <span class="sec">→ <a href="01_atrofia_nekroza_apoptoza.html#sec-1-7">1.7</a></span></li>
+    <li><b>Gangréna</b> nie je druh smrti buniek, ale osud mŕtveho tkaniva v styku s okolím: suchá (vyschne), vlhká a plynová (baktérie). <span class="sec">→ <a href="01_atrofia_nekroza_apoptoza.html#sec-1-8">1.8</a></span></li>
+    <li><b>Autofágia</b> = recyklácia vlastných organel na prežitie; zabíja až pri nadmernom trvaní. <b>Starnutie</b> = poškodení pribúda rýchlejšie, než ich bunka opraví (teloméry, chyby DNA). <span class="sec">→ <a href="01_atrofia_nekroza_apoptoza.html#sec-1-9">1.9</a>–<a href="01_atrofia_nekroza_apoptoza.html#sec-1-10">1.10</a></span></li>
+  </ul>
+  <h3>Apoptóza × nekróza</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Otázka</th><th>Apoptóza</th><th>Nekróza</th></tr></thead>
+    <tbody>
+      <tr><td>Energia</td><td>áno – program spotrebúva ATP</td><td>nie – vzniká z nedostatku ATP</td></tr>
+      <tr><td>Bunka</td><td>zmrští sa, rozpadne na telieska</td><td>napučí a praskne</td></tr>
+      <tr><td>DNA</td><td>strihaná pravidelne („rebrík“)</td><td>rozpadá sa náhodne</td></tr>
+      <tr><td>Rozsah</td><td>jednotlivé bunky</td><td>súvislé ložisko</td></tr>
+      <tr><td>Okolie</td><td>bez zápalu</td><td>zápal (vitálna reakcia)</td></tr>
+    </tbody>
+  </table></div>
+  <h3>Druhy nekrózy</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Typ</th><th>Mechanizmus</th><th>Príklad</th></tr></thead>
+    <tbody>
+      <tr><td>Koagulačná</td><td>veľa bielkovín, denaturácia &gt; enzýmy → tkanivo stuhne</td><td>infarkt myokardu, obličky, sleziny</td></tr>
+      <tr><td>Kolikvačná</td><td>veľa proteáz (neutrofily) alebo ischémia mozgu</td><td>infarkt mozgu, absces</td></tr>
+      <tr><td>Kazeózna</td><td>granulomatózna reakcia na mykobaktérie; medzi koagulačnou a kolikvačnou</td><td>tuberkulóza</td></tr>
+      <tr><td>Tuková (Balserova)</td><td>lipáza → mastné kyseliny + vápnik (zmydelnenie); alebo trauma</td><td>akútna pankreatitída, trauma prsníka</td></tr>
+      <tr><td>Fibrinoidná</td><td>imunokomplexy alebo poškodený endotel + plazma v stene cievy</td><td>vaskulitídy, malígna hypertenzia</td></tr>
+      <tr><td>Hemoragická</td><td>erytrocyty presiaknu do mŕtveho tkaniva</td><td>pľúcny infarkt, torzia semenníka</td></tr>
+      <tr><td>Zenkerova, guma</td><td>zrazenie kontraktilných bielkovín; ischémia z endarteritídy</td><td>brušný týfus; terciárny syfilis</td></tr>
+    </tbody>
+  </table></div>
+  <h3>Posmrtné zmeny v čase</h3>
+  <ul class="pts">
+    <li><b>Chladnutie</b> ≈ 0,8 °C/h (závisí od prostredia). <b>Posmrtné škvrny</b> o niekoľko hodín – prezradia polohu tela.</li>
+    <li><b>Stuhnutie</b>: chýba ATP na <i>uvoľnenie</i> väzby aktín–myozín. Nástup 1–4 h, plné do ≈ 12 h, ústup za 1–4 dni; zhora nadol (Nystenovo pravidlo).</li>
+    <li><b>Autolýza</b> vyzerá ako nekróza, ale <b>bez zápalu</b>; potom hniloba (baktérie z čreva). <span class="sec">→ <a href="01_atrofia_nekroza_apoptoza.html#sec-1-11">1.11</a></span></li>
+  </ul>
+  <div class="pasce"><h3>Pasce</h3><ul>
+    <li>Posmrtná zrazenina je lesklá, na stenu nenasadá a dá sa vybrať vcelku; trombus drží na stene a láme sa.</li>
+    <li>Pár hodín po infarkte nevidno na reze nič – bunky sú mŕtve, ale obraz nekrózy ešte nestihol vzniknúť.</li>
+  </ul></div>
+  <h3>Over sa</h3>
+  <details class="q"><summary>Prečo apoptóza nevyvolá zápal a nekróza áno?</summary><div class="a">Pri apoptóze ostáva membrána celá až do pohltenia teliesok fagocytom, takže obsah bunky (DAMP) neunikne. Pri nekróze membrána praskne a uniknuté molekuly spustia zápal.</div></details>
+  <details class="q"><summary>Prečo je infarkt srdca koagulačný a infarkt mozgu kolikvačný?</summary><div class="a">Myokard je bohatý na bielkoviny, ktoré sa po smrti denaturujú skôr, než ich enzýmy rozložia – tkanivo stuhne a drží tvar. Mozog má veľa lipidov a málo väziva, enzýmy ho skvapalnia a ostane pseudocysta.</div></details>
+  <details class="q"><summary>Prečo mŕtvola stuhne, keď sval na stiahnutie potrebuje energiu?</summary><div class="a">ATP netreba na vznik väzby aktín–myozín, ale na jej uvoľnenie. Po vyčerpaní ATP väzby ostanú – sval ostane stiahnutý, kým ho autolýza nerozvoľní.</div></details>
+</section>
+
+<section class="ch" id="k2">
+  <div class="ch-h"><span class="ch-n">2</span><h2><a href="02_dystrofie.html">Dystrofie, pigmenty a zvápenatenie</a></h2></div>
+  <p class="thesis">Dystrofia vzniká, keď <b>prísun prevýši premenu a odvoz</b> (P &gt; M + E). Je vratná, kým nahromadená látka nepoškodí aparát, ktorý ju má odstrániť.</p>
+  <h3>Nosné body</h3>
+  <ul class="pts">
+    <li>Väčšina nox sa zbieha do <b>↓ ATP</b>: zlyhajú pumpy <span class="arrow">→</span> opuch; ↓ tvorba bielkovín <span class="arrow">→</span> hromadí sa tuk; trvá ďalej <span class="arrow">→</span> ↑ Ca²⁺ <span class="arrow">→</span> nekróza. Funkcia klesne skôr, než zmenu vidno. <span class="sec">→ <a href="02_dystrofie.html#sec-2-1">2.1</a></span></li>
+    <li><b>Steatóza</b> = tuk v bunke (↑ mastné kyseliny, ↓ oxidácia, ↓ export VLDL). <b>Lipomatóza</b> = tukové tkanivo v interstíciu namiesto parenchýmu. <span class="sec">→ <a href="02_dystrofie.html#sec-2-3">2.3</a></span></li>
+    <li><b>Proteínové dystrofie podľa miesta</b>: v bunke (kalné zdurenie, hydropická), mimo bunky (fibrinoid, amyloid), na oboch miestach (hyalín, hlien). <span class="sec">→ <a href="02_dystrofie.html#sec-2-4">2.4</a></span></li>
+    <li><b>Amyloid</b>: zle zbalená bielkovina → β-skladané fibrily; Congo red + polarizácia = jablkovo-zelená dvojlomnosť. Typy AL, AA, ATTR, Aβ2M. Výnimka z vratnosti. <span class="sec">→ <a href="02_dystrofie.html#sub-2-4-5">2.4.5</a></span></li>
+    <li><b>Glykogén</b> sa hromadí pri chýbajúcom enzýme (glykogenózy); PAS+, natrávi ho diastáza. Pri diabete škodí najviac <b>hyperglykémia v cievach a nervoch</b>. <span class="sec">→ <a href="02_dystrofie.html#sec-2-5">2.5</a></span></li>
+    <li><b>Pigmenty</b> podľa pôvodu: z tyrozínu (melanín), z hemu (hemosiderín – Perls modrý; bilirubín), z membrán (lipofuscín), zvonka (uhlík, kovy). <span class="sec">→ <a href="02_dystrofie.html#sec-2-6">2.6</a></span></li>
+    <li><b>Zvápenatenie</b>: dystrofické = mŕtve tkanivo pri normálnom Ca; metastatické = zdravé tkanivo pri hyperkalcémii (žalúdok, obličky, pľúca). <span class="sec">→ <a href="02_dystrofie.html#sub-2-6-5">2.6.5</a></span></li>
+  </ul>
+  <h3>Amyloid podľa prekurzora</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Typ</th><th>Z čoho</th><th>Čo postihuje</th></tr></thead>
+    <tbody>
+      <tr><td>AL</td><td>ľahké reťazce imunoglobulínov z klonu plazmocytov (myelóm, MGUS)</td><td>oblička a srdce; makroglosia, nervy</td></tr>
+      <tr><td>AA</td><td>sérový amyloid A pri roky trvajúcom zápale</td><td>oblička (proteinúria), slezina, pečeň</td></tr>
+      <tr><td>ATTR</td><td>transtyretín (divoký typ u starých, mutovaný dedične)</td><td>srdce (reštriktívna kardiomyopatia), nervy</td></tr>
+      <tr><td>Aβ2M</td><td>β₂-mikroglobulín pri dlhodobej dialýze</td><td>karpálny tunel, kĺby</td></tr>
+    </tbody>
+  </table></div>
+  <h3>Štyri ružové homogénne látky v HE</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Krok</th><th>Výsledok</th><th>Prečo</th></tr></thead>
+    <tbody>
+      <tr><td>Congo red + polarizácia</td><td>jablkovo-zelená = amyloid</td><td>farbivo sa uloží pozdĺž β-listov fibríl</td></tr>
+      <tr><td>Van Gieson</td><td>červený = hyalín; fibrinoid a fibrín žlté</td><td>hyalín je väčšinou zhustený kolagén</td></tr>
+      <tr><td>Trypsín</td><td>natrávi fibrinoid a fibrín, hyalín nie</td><td>fibrinoid a fibrín sú bielkoviny z plazmy</td></tr>
+    </tbody>
+  </table></div>
+  <div class="pasce"><h3>Pasce</h3><ul>
+    <li>Tuk v parafínovom reze nevidno – je to prázdna vakuola. Sudan alebo Oil Red O potrebujú zmrazený rez.</li>
+    <li>Metastatické zvápenatenie nesúvisí s metastázou nádoru – je to vápnik v zdravom tkanive pri hyperkalcémii.</li>
+  </ul></div>
+  <h3>Over sa</h3>
+  <details class="q"><summary>Pacient s reumatoidnou artritídou 15 rokov má proteinúriu. Čo hľadáš v biopsii obličky a ako to potvrdíš?</summary><div class="a">AA amyloid – sérový amyloid A tvorí pečeň pod vplyvom IL-1 a IL-6 pri dlhom zápale. Congo red s jablkovo-zelenou dvojlomnosťou v polarizovanom svetle, typ určí imunohistochémia.</div></details>
+  <details class="q"><summary>Prečo je amyloidóza výnimkou z vratnosti dystrofií?</summary><div class="a">Fibrily sú stabilné a telo ich takmer nevie rozložiť; ukladajú sa v stenách ciev a v orgánoch a poškodzujú práve štruktúry, ktoré by mali látku odstrániť (napr. glomeruly).</div></details>
+  <details class="q"><summary>Zvápenatený ateróm pri normálnom vápniku – aké zvápenatenie a prečo?</summary><div class="a">Dystrofické: vápnik sa ukladá do poškodeného alebo mŕtveho tkaniva, hladina v krvi je normálna.</div></details>
+</section>
+
+<!-- ============ ČASŤ III ============ -->
+<div class="part">Zápal a oprava</div>
+
+<section class="ch" id="k3">
+  <div class="ch-h"><span class="ch-n">3</span><h2><a href="03_zapal_vseobecne.html">Zápal – všeobecné zákonitosti</a></h2></div>
+  <p class="thesis">Zápal je stereotypná odpoveď živého prekrveného tkaniva: <b>alterácia → exsudácia → infiltrácia → proliferácia</b>. Spúšťa ho signál nebezpečenstva (PAMP, DAMP) a vždy trochu poškodí aj to, čo bráni.</p>
+  <h3>Nosné body</h3>
+  <ul class="pts">
+    <li><b>Spúšťač</b>: makrofágy a mastocyty rozpoznajú PAMP mikróbov alebo DAMP z mŕtvych buniek (Toll-like receptory, inflamazóm). Mŕtve tkanivo zápalom neodpovie. <span class="sec">→ <a href="03_zapal_vseobecne.html#sec-3-1">3.1</a></span></li>
+    <li><b>Mediátory</b> z buniek (histamín, prostaglandíny, leukotriény, cytokíny) a z plazmy (komplement, kiníny, koagulácia, fibrinolýza). Čo mediátor riadi, to liek proti nemu stlmí. <span class="sec">→ <a href="03_zapal_vseobecne.html#sec-3-2">3.2</a></span></li>
+    <li><b>Cievna fáza</b>: rozšírené arterioly zvýšia tlak, netesné venuly prepustia bielkoviny <span class="arrow">→</span> exsudát. <span class="sec">→ <a href="03_zapal_vseobecne.html#sec-3-3">3.3</a></span></li>
+    <li><b>Leukocytová kaskáda</b>: zachytenie (selektíny) <span class="arrow">→</span> pevné prilnutie (integríny) <span class="arrow">→</span> prechod stenou <span class="arrow">→</span> chemotaxia (C5a, IL-8, LTB₄). Prvé neutrofily, potom makrofágy. <span class="sec">→ <a href="03_zapal_vseobecne.html#sec-3-4">3.4</a></span></li>
+    <li><b>Ukončenie je aktívny program</b>: apoptóza neutrofilov, eferocytóza, makrofágy M2, lipoxíny a rezolvíny. <span class="sec">→ <a href="03_zapal_vseobecne.html#sub-3-5-2">3.5.2</a></span></li>
+    <li><b>Hranica reverzibility</b>: bez jazvy sa tkanivo zahojí, len ak prežila jeho kostra a exsudát sa odstránil. <span class="sec">→ <a href="03_zapal_vseobecne.html#sub-3-5-3">3.5.3</a></span></li>
+    <li><b>Celková odpoveď</b>: TNF-α, IL-1, IL-6 <span class="arrow">→</span> horúčka, CRP, leukocytóza; v nadbytku <b>SIRS a sepsa</b>. <span class="sec">→ <a href="03_zapal_vseobecne.html#sec-3-6">3.6</a></span></li>
+  </ul>
+  <h3>Transsudát × exsudát</h3>
+  <div class="tbl"><table>
+    <thead><tr><th></th><th>Transsudát</th><th>Exsudát</th></tr></thead>
+    <tbody>
+      <tr><td>Príčina</td><td>↑ hydrostatický alebo ↓ onkotický tlak</td><td>↑ priepustnosť poškodenej steny</td></tr>
+      <tr><td>Bielkoviny</td><td>&lt; 30 g/l</td><td>&gt; 30 g/l, zráža sa (fibrinogén)</td></tr>
+      <tr><td>Hustota</td><td>&lt; 1,012</td><td>&gt; 1,020</td></tr>
+      <tr><td>Bunky, vzhľad</td><td>málo, vodojasný</td><td>veľa leukocytov, zakalený</td></tr>
+      <tr><td>Príklad</td><td>hydrotorax pri zlyhaní srdca, ascites pri cirhóze</td><td>pleuritída, peritonitída</td></tr>
+    </tbody>
+  </table></div>
+  <h3>Akútny zápal v čase</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Čas</th><th>Čo sa deje</th><th>Čo to riadi</th></tr></thead>
+    <tbody>
+      <tr><td>sekundy–minúty</td><td>rozšírenie arteriol, začervenanie</td><td>histamín, oxid dusnatý</td></tr>
+      <tr><td>do 15–30 min</td><td>netesné venuly, opuch</td><td>histamín, bradykinín</td></tr>
+      <tr><td>6–24 h</td><td>prevládajú neutrofily</td><td>selektíny, integríny, C5a, IL-8</td></tr>
+      <tr><td>24–48 h</td><td>nastupujú monocyty a makrofágy</td><td>chemokíny</td></tr>
+      <tr><td>dni</td><td>lymfocyty, plazmocyty; od 2.–3. dňa proliferácia</td><td>cielená imunita, rastové faktory</td></tr>
+    </tbody>
+  </table></div>
+  <p>Akútny zápal trvá do ≈ 3 týždňov, subakútny ≈ 3–6 týždňov, chronický dlhšie – vedie získaná imunita a súčasne beží deštrukcia aj jazvenie.</p>
+  <div class="pasce"><h3>Keď krok zlyhá</h3><ul>
+    <li><b>Hereditárny angioedém</b> – opuch z bradykinínu, nie z histamínu. <b>Chýbajúce C5–C9</b> – opakované meningokokové infekcie.</li>
+    <li><b>LAD</b> – leukocyty sa neprilepia, preto nevzniká hnis. <b>CGD</b> – fagocyt baktériu pohltí, ale nezabije.</li>
+  </ul></div>
+  <h3>Over sa</h3>
+  <details class="q"><summary>Dieťa má opakované bakteriálne infekcie bez hnisu a vysoké leukocyty v krvi. Kde je chyba?</summary><div class="a">V adhézii leukocytov (LAD): neutrofily sa nevedia zachytiť na endotel a opustiť cievu, ostávajú v krvi, a v ložisku chýbajú – hnis nevznikne.</div></details>
+  <details class="q"><summary>Prečo pri opuchu pri hereditárnom angioedéme nezaberajú antihistaminiká?</summary><div class="a">Chýba inhibítor C1, nadbytok bradykinínu robí cievy priepustnými. Histamín tu nie je hlavný mediátor, preto ho blokovať nepomôže.</div></details>
+  <details class="q"><summary>Kedy sa zápal zahojí bez jazvy?</summary><div class="a">Keď prežila kostra tkaniva (bazálna membrána, retikulín) a exsudát sa stihol odstrániť (napr. fibrín sa rozpustil). Inak nastupuje organizácia a jazva.</div></details>
+</section>
+
+<section class="ch" id="k4">
+  <div class="ch-h"><span class="ch-n">4</span><h2><a href="04_typy_zapalu.html">Typy zápalu</a></h2></div>
+  <p class="thesis">Všetky zápaly majú tie isté kroky, ale v každom prevládne iný: <b>zánik buniek</b> (alteratívny), <b>tekutina a bunky z ciev</b> (exsudatívny) alebo <b>bunky deliace sa v ložisku</b> (proliferatívny).</p>
+  <h3>Nosné body</h3>
+  <ul class="pts">
+    <li>Exsudatívne zápaly sa rozlíšia tromi otázkami: <b>čo prešlo stenou</b>, <b>ktoré bunky prišli</b>, <b>kde exsudát leží</b>. Čím ťažšie je cieva poškodená, tým viac z nej unikne: serózny <span class="arrow">→</span> fibrinózny <span class="arrow">→</span> hemoragický. <span class="sec">→ <a href="04_typy_zapalu.html#sec-4-1">4.1</a></span></li>
+    <li><b>Alteratívny</b>: toxín alebo vírus zabije bunky skôr, než príde obrana – nebezpečný tam, kde sa bunky nenahradia. <span class="sec">→ <a href="04_typy_zapalu.html#sec-4-2">4.2</a></span></li>
+    <li><b>Fibrinózny</b>: fibrín unikne len z ťažko poškodenej cievy; nerozpustený sa mení na väzivo – zrasty, jazva pod hlbokou pablanou. <span class="sec">→ <a href="04_typy_zapalu.html#sec-4-4">4.4</a></span></li>
+    <li><b>Hnisavý</b>: hnis = neutrofily + baktérie + natrávené tkanivo. Rozhoduje, kam sa dostane: odtečie, empyém, absces, flegmóna, šírenie. <span class="sec">→ <a href="04_typy_zapalu.html#sec-4-6">4.6</a></span></li>
+    <li><b>Lymfocytárny</b>: cielená imunita proti vírusu, autoantigénu alebo štepu; pri dlhom trvaní fibróza. <span class="sec">→ <a href="04_typy_zapalu.html#sec-4-7">4.7</a></span></li>
+    <li><b>Gangrenózny</b> nie je ďalší exsudát: do mŕtveho tkaniva vniknú hnilobné baktérie – rozklad, zápach, plyn. <span class="sec">→ <a href="04_typy_zapalu.html#sec-4-8">4.8</a></span></li>
+  </ul>
+  <h3>Typy na jeden pohľad</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Typ</th><th>V tkanive</th><th>Príklad</th><th>Hojenie</th></tr></thead>
+    <tbody>
+      <tr><td>Alteratívny</td><td>nekrózy parenchýmu, riedky infiltrát</td><td>difterická myokarditída, poliomyelitída, vírusová hepatitída</td><td>pečeň ad integrum; neuróny a kardiomyocyty nie</td></tr>
+      <tr><td>Serózny</td><td>voda, málo bielkovín a buniek</td><td>nádcha, opar, žihľavka</td><td>bez defektu</td></tr>
+      <tr><td>Fibrinózny</td><td>fibrín</td><td>fibrinózna perikarditída, krupózna pneumónia, záškrt</td><td>od úplného po jazvu, karnifikáciu</td></tr>
+      <tr><td>Hemoragický</td><td>erytrocyty, často nekróza</td><td>chrípková tracheitída, meningokoková sepsa</td><td>podľa nekrózy</td></tr>
+      <tr><td>Hnisavý</td><td>neutrofily, baktérie, detritus</td><td>absces, flegmóna, empyém, apendicitída</td><td>jazva</td></tr>
+      <tr><td>Lymfocytárny</td><td>lymfocyty, plazmocyty</td><td>vírusová myokarditída, Hashimotova tyreoiditída</td><td>bez defektu, chronicky fibróza</td></tr>
+      <tr><td>Gangrenózny</td><td>rozklad + hnilobné baktérie</td><td>diabetická noha, noma</td><td>rozsiahla strata tkaniva</td></tr>
+    </tbody>
+  </table></div>
+  <div class="pasce"><h3>Pasce</h3><ul>
+    <li>Absces × flegmóna: koaguláza stafylokoka ložisko ohraničí fibrínom (absces), streptokináza a hyaluronidáza streptokoka ho rozpúšťajú a infekcia sa rozlieva (flegmóna).</li>
+    <li>Empyém je hnis v predformovanej dutine (pleura, žlčník), absces je dutina, ktorú si hnis vytvoril v tkanive.</li>
+  </ul></div>
+  <h3>Over sa</h3>
+  <details class="q"><summary>Prečo môže po fibrinóznej pleuritíde ostať zrast pľúc s hrudnou stenou?</summary><div class="a">Ak sa fibrín nerozpustí, vrastie doň granulačné tkanivo a zorganizuje ho na väzivo, ktoré spojí obe blany.</div></details>
+  <details class="q"><summary>Ten istý alteratívny zápal postihne pečeň a myokard. Kde bude dlhodobý následok horší?</summary><div class="a">V myokarde: kardiomyocyty sú permanentné bunky, stratené sa nahradia jazvou. Hepatocyty sú stabilné, pri zachovanej kostre sa pečeň obnoví.</div></details>
+</section>
+
+<section class="ch" id="k5">
+  <div class="ch-h"><span class="ch-n">5</span><h2><a href="05_hojenie.html">Proliferatívny zápal, hojenie a reparácia</a></h2></div>
+  <p class="thesis">Škodu opravujú deliace sa bunky. O výsledku rozhodnú dve otázky: <b>vie sa bunka deliť</b> a <b>prežila kostra tkaniva</b>. Ak áno, regenerácia; ak nie, granulačné tkanivo a jazva.</p>
+  <h3>Nosné body</h3>
+  <ul class="pts">
+    <li>Bunky <b>labilné</b> (stále sa delia), <b>stabilné</b> (delia sa na podnet: pečeň, oblička, pankreas), <b>permanentné</b> (neuróny, kardiomyocyty). Keď kostra padne, je jazva aj v pečeni. <span class="sec">→ <a href="05_hojenie.html#sec-5-2">5.2</a></span></li>
+    <li><b>Granulačné tkanivo</b> = nové kapiláry + fibroblasty + makrofágy. Makrofág sa prepne M1 → M2, cievy volá hypoxia (VEGF), kolagén zapína TGF-β; kolagén III sa mení na I. <span class="sec">→ <a href="05_hojenie.html#sec-5-3">5.3</a></span></li>
+    <li><b>Rana</b> rieši štyri úlohy: uzavrieť, vyčistiť, vyplniť, spevniť. Jazva dosiahne najviac 75–80 % pevnosti kože. <span class="sec">→ <a href="05_hojenie.html#sec-5-4">5.4</a></span></li>
+    <li><b>Hojenie brzdí</b> nedostatok kyslíka, materiálu, signálov, čistého poľa a pokoja; rana uviazne v zápalovej fáze ⟳ – chronická rana (nehojí sa &gt; 12 týždňov). <span class="sec">→ <a href="05_hojenie.html#sec-5-5">5.5</a></span></li>
+    <li><b>Jazva zlyhá</b>: málo (dehiscencia, prietrž), veľa (hypertrofická jazva, keloid), zlá kontrakcia (kontraktúra, striktúra). <span class="sec">→ <a href="05_hojenie.html#sec-5-6">5.6</a></span></li>
+    <li><b>Organizácia</b>: čo sa nedá rozpustiť (trombus, hematóm, fibrín, cudzie teleso), makrofágy rozkladajú z okraja a za nimi vrastá granulačné tkanivo. <span class="sec">→ <a href="05_hojenie.html#sec-5-7">5.7</a></span></li>
+    <li><b>Nerv</b> obnoví axón ≈ 1 mm/deň, ak prežilo telo neurónu; srdce sa hojí jazvou, mozog gliózou. <span class="sec">→ <a href="05_hojenie.html#sec-5-8">5.8</a></span></li>
+    <li><b>Chronický zápal</b>: poškodenie, obrana a hojenie bežia naraz → fibróza orgánu. Časť „idiopatických“ fibróz sú fibromatózy, časť choroba asociovaná s IgG4. <span class="sec">→ <a href="05_hojenie.html#sec-5-9">5.9</a>–<a href="05_hojenie.html#sec-5-10">5.10</a></span></li>
+  </ul>
+  <h3>Per primam × per secundam</h3>
+  <div class="tbl"><table>
+    <thead><tr><th></th><th>Per primam</th><th>Per secundam</th></tr></thead>
+    <tbody>
+      <tr><td>Rana</td><td>čistý rez, okraje priložené</td><td>široká, infikovaná, s nekrózou</td></tr>
+      <tr><td>Granulačné tkanivo</td><td>tenký pruh</td><td>vyplní celú dutinu zdola nahor</td></tr>
+      <tr><td>Kontrakcia</td><td>minimálna</td><td>výrazná, deformuje okolie</td></tr>
+      <tr><td>Epitel</td><td>preklenie štrbinu za 1–2 dni</td><td>prerastá pomaly, niekedy vôbec</td></tr>
+      <tr><td>Výsledok</td><td>tenká lineárna jazva</td><td>široká, vtiahnutá alebo hypertrofická</td></tr>
+    </tbody>
+  </table></div>
+  <div class="pasce"><h3>Pasce</h3><ul>
+    <li>Keloid prerastá <b>za okraj</b> pôvodnej rany a po vyrezaní recidivuje; hypertrofická jazva ostáva v hraniciach rany.</li>
+    <li>Prerušený nerv bez vedenia pre výrastky axónov vytvorí traumatický neuróm.</li>
+  </ul></div>
+  <h3>Over sa</h3>
+  <details class="q"><summary>Prečo sa pečeň po otrave paracetamolom môže obnoviť úplne, ale pri cirhóze nie?</summary><div class="a">Pri akútnej nekróze často ostane retikulínová kostra a hepatocyty sa po nej znova usporiadajú. Pri opakovanom poškodení kostra zanikne, nastúpi fibróza a regenerácia vytvorí uzly bez normálnej stavby.</div></details>
+  <details class="q"><summary>Prečo sa rana diabetika s ischémiou nehojí?</summary><div class="a">Chýba kyslík a prísun buniek a signálov; proteázy a biofilm prevážia nad syntézou ⟳ a rana uviazne v zápalovej fáze.</div></details>
+</section>
+
+<section class="ch" id="k6">
+  <div class="ch-h"><span class="ch-n">6</span><h2><a href="06_progresivne_zmeny.html">Progresívne zmeny a adaptácia</a></h2></div>
+  <p class="thesis">Bunka záťaž prežije v novom ustálenom stave. <b>Viac práce</b> → hypertrofia (bunky sa nedelia) alebo hyperplázia (delia sa); <b>zmenené prostredie</b> → metaplázia; <b>menej práce</b> → atrofia. Podnet zmizne, zmena ustúpi.</p>
+  <h3>Nosné body</h3>
+  <ul class="pts">
+    <li><b>Hypertrofia</b>: napätie a rastové signály → viac kontraktilných bielkovín → väčšie bunky. Tlak = koncentrická (hrubá stena), objem = excentrická (široká dutina). Pomáha, kým kapiláry stačia. <span class="sec">→ <a href="06_progresivne_zmeny.html#sec-6-2">6.2</a></span></li>
+    <li><b>Hyperplázia</b>: hormón či rastový faktor vráti bunky z G₀ do cyklu. Endometrium (estrogén bez progesterónu), prostata (DHT, uzly okolo močovej rúry). Čím viac delení, tým väčšia šanca na mutáciu. <span class="sec">→ <a href="06_progresivne_zmeny.html#sec-6-3">6.3</a></span></li>
+    <li><b>Hyperplázia × nádor</b>: hyperplázia poslúcha podnet a skončí s ním; atypie a autonómny rast znamenajú nádor. <span class="sec">→ <a href="06_progresivne_zmeny.html#sub-6-3-4">6.3.4</a></span></li>
+    <li><b>Metaplázia</b>: kmeňová bunka dozrieva iným smerom → odolnejší, ale funkčne horší epitel. Ak podnet trvá → dysplázia → karcinóm typu, ktorý do orgánu „nepatrí“. <span class="sec">→ <a href="06_progresivne_zmeny.html#sec-6-4">6.4</a></span></li>
+    <li><b>Barrettov pažerák</b>: intestinálna metaplázia s pohárikovými bunkami ako odpoveď na reflux. <span class="sec">→ <a href="06_progresivne_zmeny.html#sub-6-4-3">6.4.3</a></span></li>
+    <li><b>Kosť</b> sa stavia tam, kde je zaťažená; záťaž snímajú osteocyty. <span class="sec">→ <a href="06_progresivne_zmeny.html#sec-6-5">6.5</a></span></li>
+    <li><b>Nevratné</b>, keď pribudne zánik buniek a fibróza (hypertrofia → zlyhanie), mutácia (hyperplázia, metaplázia → dysplázia) alebo tkanivo, ktoré sa nedá odbúrať (kosť). <span class="sec">→ <a href="06_progresivne_zmeny.html#sec-6-6">6.6</a></span></li>
+  </ul>
+  <h3>Adaptácie a ich hranica</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Adaptácia</th><th>Prototyp a nález</th><th>Hranica</th></tr></thead>
+    <tbody>
+      <tr><td>Hypertrofia</td><td>ľavá komora pri hypertenzii: stena &gt; 14 mm, kardiomyocyty &gt; 15 µm, veľké jadrá</td><td>kapiláry nestačia → fibróza, dilatácia ⟳</td></tr>
+      <tr><td>Hyperplázia</td><td>endometrium; uzlovitá hyperplázia prostaty</td><td>atypie → autonómny rast</td></tr>
+      <tr><td>Metaplázia</td><td>dlaždicový epitel v prieduške (dym), krčok maternice, mechúr pri schistosomóze</td><td>dysplázia</td></tr>
+      <tr><td>Atrofia</td><td>menšie alebo menej buniek</td><td>zánik buniek</td></tr>
+    </tbody>
+  </table></div>
+  <div class="pasce"><h3>Pasce</h3><ul>
+    <li>Metaplázia nie je prekanceróza sama osebe, ale je pôda, na ktorej dysplázia vzniká.</li>
+    <li>Dlaždicová metaplázia v prieduške stratí riasinky a hlien – samočistenie sa zhorší.</li>
+  </ul></div>
+  <h3>Over sa</h3>
+  <details class="q"><summary>Prečo hypertrofované srdce nakoniec zlyhá, hoci vzniklo ako pomoc?</summary><div class="a">Kardiomyocyty rastú, ale kapiláry nepribúdajú rovnako rýchlo – sval je relatívne ischemický, bunky zanikajú, pribúda fibróza a komora sa rozšíri. Dilatácia zvyšuje napätie steny a záťaž ⟳.</div></details>
+  <details class="q"><summary>Žena po menopauze s obezitou krváca z maternice. Aká adaptácia a prečo obezita?</summary><div class="a">Hyperplázia endometria: estrogény z tukového tkaniva pôsobia bez protiváhy progesterónu. Pri atypiách hrozí karcinóm endometria.</div></details>
+</section>
+
+<section class="ch" id="k7">
+  <div class="ch-h"><span class="ch-n">7</span><h2><a href="07_granulomatozne_zapaly.html">Granulomatózne a špecifické zápaly</a></h2></div>
+  <p class="thesis">Granulóm vzniká, keď makrofág <b>nevie stráviť, čo pohltil</b> – čo sa nedá zničiť, telo obkolesí. Podobu granulómu určia <b>odolnosť pôvodcu</b> a <b>sila T-lymfocytov</b>; pôvodcu však tvar neurčí, treba ho dokázať.</p>
+  <h3>Nosné body</h3>
+  <ul class="pts">
+    <li>Pretrvávajúci antigén <span class="arrow">→</span> Th1-lymfocyt <span class="arrow">→</span> <b>IFN-γ</b> aktivuje makrofágy <span class="arrow">→</span> epiteloidné a obrovské bunky; <b>TNF</b> drží granulóm pokope. <span class="sec">→ <a href="07_granulomatozne_zapaly.html#sec-7-2">7.2</a></span></li>
+    <li>Diagnosticky rozhoduje, <b>čo je v strede</b>. Nekróza v strede = hojenie len jazvou. <span class="sec">→ <a href="07_granulomatozne_zapaly.html#sec-7-3">7.3</a></span></li>
+    <li><b>Sarkoidóza</b>: prehnaná Th1 odpoveď na slabý antigén, granulómy <b>bez nekrózy</b>; diagnóza vylúčením (najprv tuberkulóza). <span class="sec">→ <a href="07_granulomatozne_zapaly.html#sec-7-4">7.4</a></span></li>
+    <li><b>Tuberkulóza</b>: voskový obal (mykolové kyseliny) a blokáda splynutia fagozómu s lyzozómom → baktéria prežije v makrofágu. Ghonov komplex = ložisko + lymfatiká + kazeózne hilové uzliny. Latencia → reaktivácia pri poklese imunity; <b>kaverna</b> je bod zvratu. <span class="sec">→ <a href="07_granulomatozne_zapaly.html#sec-7-5">7.5</a></span></li>
+    <li><b>Bez T-lymfocytov</b> granulóm nevznikne: lepromatózna lepra, MAC pri AIDS – makrofágy plné baktérií. <span class="sec">→ <a href="07_granulomatozne_zapaly.html#sec-7-6">7.6</a></span></li>
+    <li><b>Cudzie teleso, kryštály</b>: granulóm bez T-lymfocytov, obrovské bunky z cudzích telies. <span class="sec">→ <a href="07_granulomatozne_zapaly.html#sec-7-7">7.7</a></span></li>
+    <li><b>Hnisavý granulóm</b>: mačacie škrabnutie, yersinióza, tularémia – uzlinu určí vstupná brána. <span class="sec">→ <a href="07_granulomatozne_zapaly.html#sec-7-8">7.8</a></span></li>
+  </ul>
+  <h3>Čo je v strede granulómu</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Stred</th><th>Mechanizmus</th><th>Príklady</th><th>Potvrdenie</th></tr></thead>
+    <tbody>
+      <tr><td>cudzí materiál</td><td>inertný, bez T-lymfocytov</td><td>steh, keratín, dnavý tofus</td><td>polarizácia</td></tr>
+      <tr><td>nič (bez nekrózy)</td><td>prehnaná Th1 na slabý antigén</td><td>sarkoidóza, berýlióza</td><td>vylúčiť infekciu; BAL CD4/CD8 &gt; 3,5, ACE</td></tr>
+      <tr><td>kazeum</td><td>toxický pôvodca + silná Th1</td><td>tuberkulóza, histoplazmóza</td><td>Ziehl–Neelsen, kultivácia 2–8 týž., PCR</td></tr>
+      <tr><td>kaverna ⟳</td><td>kazeum v prieduške → kyslík → množenie</td><td>postprimárna TBC v hrote pľúc</td><td>spútum ZN</td></tr>
+      <tr><td>granulóm chýba</td><td>slabá Th1 odpoveď</td><td>lepromatózna lepra, MAC pri AIDS, Whipple</td><td>Fite, PAS</td></tr>
+      <tr><td>hnis</td><td>intracelulárna baktéria láka neutrofily</td><td>mačacie škrabnutie, tularémia</td><td>sérológia, PCR</td></tr>
+      <tr><td>fibrinoid</td><td>imunitné poškodenie väziva a ciev</td><td>reumatická horúčka (Aschoff), reumatoidný uzol, GPA</td><td>ASLO, RF, ANCA</td></tr>
+      <tr><td>koagulačná nekróza</td><td>obliteratívna endarteritída</td><td>syfilitická guma</td><td>RPR/VDRL, TPHA</td></tr>
+    </tbody>
+  </table></div>
+  <div class="pasce"><h3>Pasce</h3><ul>
+    <li>Granulóm bez nekrózy ešte nie je sarkoidóza – tuberkulóza a huby sa musia vylúčiť.</li>
+    <li>Kaverna je bod zvratu: kazeum sa vyprázdni do priedušky, dostane kyslík, baktérie sa množia a pacient je infekčný.</li>
+  </ul></div>
+  <h3>Over sa</h3>
+  <details class="q"><summary>Prečo pacient s AIDS a tuberkulózou často nemá typické granulómy?</summary><div class="a">Chýbajú CD4 Th1-lymfocyty, ktoré cez IFN-γ premieňajú makrofágy na epiteloidné bunky. Makrofágy sa len plnia baktériami a infekcia sa šíri.</div></details>
+  <details class="q"><summary>Uzlina pri lakti po škrabnutí mačkou – aký granulóm čakáš?</summary><div class="a">Granulóm s hnisom: hviezdicovité mikroabscesy s palisádou epiteloidných buniek. Zapáli sa uzlina, do ktorej odteká lymfa zo vstupnej brány.</div></details>
+</section>
+
+<!-- ============ ČASŤ IV ============ -->
+<div class="part">Poruchy obehu</div>
+
+<section class="ch" id="k8">
+  <div class="ch-h"><span class="ch-n">8</span><h2><a href="08_miestne_poruchy_obehu.html">Miestne poruchy krvného obehu</a></h2></div>
+  <p class="thesis">V povodí jednej cievy je krvi <b>primálo</b> (uzáver → ischémia → infarkt), <b>priveľa</b> (hyperémia) alebo je <b>mimo cievy</b> (krvácanie). Trombóza a krvácanie sú dve strany jednej rovnováhy – hemostázy.</p>
+  <h3>Nosné body</h3>
+  <ul class="pts">
+    <li><b>Hemostáza</b>: doštičky sa cez vWF prilepia na kolagén a zhluknú <span class="arrow">→</span> tkanivový faktor spustí tvorbu trombínu <span class="arrow">→</span> fibrín zátku spevní <span class="arrow">→</span> brzdy (antitrombín, proteín C, plazmín) ju ohraničia. <span class="sec">→ <a href="08_miestne_poruchy_obehu.html#sec-8-2">8.2</a></span></li>
+    <li><b>Trombóza – Virchowova trias</b>: poškodený endotel, porušené prúdenie, zvýšená zrážanlivosť. Tepna = biely trombus → infarkt; žila = červený → embólia do pľúc. <span class="sec">→ <a href="08_miestne_poruchy_obehu.html#sec-8-3">8.3</a></span></li>
+    <li><b>Embólia</b>: zo žíl do pľúc, zo srdca a tepien do orgánov veľkého obehu; najčastejšie odtrhnutý trombus. Ďalej tuk, vzduch, plodová voda, nádor. <span class="sec">→ <a href="08_miestne_poruchy_obehu.html#sec-8-4">8.4</a></span></li>
+    <li><b>Infarkt</b> = ischemická nekróza; rozhodne náhradný prívod, rýchlosť uzáveru, citlivosť tkaniva a stav obehu. Hustý orgán s koncovou tepnou = biely; dvojitý prívod, žilový uzáver, reperfúzia = červený. <span class="sec">→ <a href="08_miestne_poruchy_obehu.html#sec-8-6">8.6</a></span></li>
+    <li><b>Hyperémia</b>: aktívna (červené, teplé) × pasívna – venostáza (modročervené, studené, opuchnuté); krajnosť venostázy = hemoragická infarzácia. <span class="sec">→ <a href="08_miestne_poruchy_obehu.html#sec-8-7">8.7</a></span></li>
+    <li><b>Krvácanie</b>: roztrhnutie, nahlodanie, presakovanie; závažnosť = množstvo × rýchlosť × miesto. <span class="sec">→ <a href="08_miestne_poruchy_obehu.html#sec-8-8">8.8</a></span></li>
+    <li><b>DIC</b> = trombóza v mikrocirkulácii, ktorá spotrebuje doštičky aj faktory → krvácanie ⟳; ↓ doštičky, ↓ fibrinogén, ↑ D-diméry. <span class="sec">→ <a href="08_miestne_poruchy_obehu.html#sub-8-9-5">8.9.5</a></span></li>
+  </ul>
+  <h3>Infarkt v čase (myokard)</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Čas</th><th>Mikroskop</th><th>Čo z toho plynie</th></tr></thead>
+    <tbody>
+      <tr><td>do ≈ 12 h</td><td>spočiatku nič; zvlnené vlákna, sýtejšia cytoplazma</td><td>klinik je rýchlejší: EKG za minúty, troponín do 2–3 h</td></tr>
+      <tr><td>≈ 12 h – 2 dni</td><td>koagulačná nekróza, z okraja neutrofily</td><td>zápal na rozpadnuté bunky</td></tr>
+      <tr><td>1. týždeň</td><td>makrofágy upratujú; ložisko žltosivé, mäkké</td><td>stena najslabšia – hrozí ruptúra</td></tr>
+      <tr><td>od 1. týždňa</td><td>granulačné tkanivo, siderofágy</td><td>organizácia</td></tr>
+      <tr><td>týždne–mesiace</td><td>hustý kolagén</td><td>jazva nepumpuje; v mozgu pseudocysta</td></tr>
+    </tbody>
+  </table></div>
+  <h3>Krvácavé stavy podľa zložky</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Chyba</th><th>Obraz</th><th>Testy</th></tr></thead>
+    <tbody>
+      <tr><td>doštičky</td><td>petechie, krvácanie zo slizníc hneď</td><td>↓ počet alebo porucha funkcie</td></tr>
+      <tr><td>koagulačné faktory</td><td>hlboké hematómy, krv v kĺboch s odstupom</td><td>predĺžené PT alebo aPTT</td></tr>
+      <tr><td>stena cievy</td><td>purpura</td><td>testy normálne</td></tr>
+    </tbody>
+  </table></div>
+  <div class="pasce"><h3>Pasce</h3><ul>
+    <li>Pľúcny infarkt je červený, lebo pľúca majú dvojitý prívod (pľúcnica a bronchiálne tepny) – a vznikne najmä pri venostáze.</li>
+    <li>Po začatí organizácie sa trombus už nerozpustí – trombolýza má zmysel len pri čerstvom fibríne.</li>
+  </ul></div>
+  <h3>Over sa</h3>
+  <details class="q"><summary>Pacient zomrie 5. deň po infarkte náhle s tamponádou srdca. Prečo práve vtedy?</summary><div class="a">V prvom týždni makrofágy rozkladajú mŕtvy sval, ale granulačné tkanivo ešte nedodalo kolagén – stena je najslabšia a praskne.</div></details>
+  <details class="q"><summary>Kde skončí trombus z hlbokej žily lýtka a kde trombus z ľavej predsiene?</summary><div class="a">Zo žíl cez pravé srdce v pľúcnici (pľúcna trombembólia). Z ľavej predsiene v tepnách veľkého obehu – mozog, slezina, obličky, končatiny.</div></details>
+  <details class="q"><summary>Hemofilik × pacient s trombocytopéniou: čím sa líši obraz krvácania?</summary><div class="a">Hemofília (faktory): hlboké hematómy a hemartrózy, často s odstupom, lebo primárna zátka vznikne, ale nespevní sa. Trombocytopénia: petechie a krvácanie zo slizníc hneď.</div></details>
+</section>
+
+<section class="ch" id="k9">
+  <div class="ch-h"><span class="ch-n">9</span><h2><a href="09_celkove_poruchy_obehu.html">Celkové poruchy krvného obehu</a></h2></div>
+  <p class="thesis">Obeh = <b>pumpa + potrubie + náplň</b>. Zlyhá pomaly → krv sa hromadí pred zlyhávajúcou komorou (venostáza, edém, indurácia). Zlyhá náhle → tlak padne a orgány ostanú bez krvi (kolaps, šok).</p>
+  <h3>Nosné body</h3>
+  <ul class="pts">
+    <li><b>Príčiny</b>: srdce (sval, chlopňa, perikard, rytmus), cievy (pľúcna hypertenzia → pravá komora, systémová → ľavá), krv (objem, zloženie). Pľúcna hypertenzia = stredný tlak v pľúcnici &gt; 20 mmHg v pokoji. <span class="sec">→ <a href="09_celkove_poruchy_obehu.html#sec-9-2">9.2</a></span></li>
+    <li><b>Srdce pod záťažou</b>: náhla záťaž → dilatácia; trvalá tlaková → koncentrická, objemová → excentrická hypertrofia. <span class="sec">→ <a href="09_celkove_poruchy_obehu.html#sec-9-3">9.3</a></span></li>
+    <li><b>Ľavé zlyhanie</b> → krv stojí v pľúcach: edém, dýchavica, siderofágy, hnedá (hrdzavá) indurácia. <b>Pravé</b> → veľký obeh: muškátová pečeň, slezina, opuchy, výpotky. Ľavé časom strhne pravé. <span class="sec">→ <a href="09_celkove_poruchy_obehu.html#sec-9-4">9.4</a></span></li>
+    <li><b>Edém</b>: tekutinu vytláča hydrostatický tlak, drží albumín, odvádza lymfa, stena má byť tesná – porucha jednej zo štyroch vecí; oblička ho zosilní zadržiavaním soli a vody. <span class="sec">→ <a href="09_celkove_poruchy_obehu.html#sec-9-5">9.5</a></span></li>
+    <li><b>Šok</b> = prietok nestačí bunkám na kyslík. Najprv kompenzácia (centralizácia), potom acidóza cievy otvorí a kruh sa uzavrie ⟳. <span class="sec">→ <a href="09_celkove_poruchy_obehu.html#sec-9-6">9.6</a></span></li>
+    <li><b>Šokové orgány</b>: akútna tubulárna nekróza, hyalínne membrány v pľúcach, nekrózy v strede pečeňových lalôčikov, stresové vredy. Tubuly a pečeň regenerujú, mozog a srdce nie. <span class="sec">→ <a href="09_celkove_poruchy_obehu.html#sub-9-6-4">9.6.4</a></span></li>
+  </ul>
+  <h3>Štyri typy šoku</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Typ</th><th>Čo zlyhalo</th><th>Príčiny</th><th>Prezradí ho</th></tr></thead>
+    <tbody>
+      <tr><td>hypovolemický</td><td>náplň</td><td>krvácanie, popáleniny, hnačky</td><td>studená bledá koža, prázdne žily</td></tr>
+      <tr><td>kardiogénny</td><td>pumpa</td><td>rozsiahly infarkt, ruptúra, arytmia</td><td>preplnené krčné žily, edém pľúc</td></tr>
+      <tr><td>obštrukčný</td><td>krv cez srdce neprejde</td><td>masívna pľúcna embólia, tamponáda, pretlakový pneumotorax</td><td>preplnené krčné žily, náhly začiatok</td></tr>
+      <tr><td>distribučný</td><td>potrubie príliš široké</td><td>septický, anafylaktický, neurogénny</td><td>spočiatku teplá, červená koža</td></tr>
+    </tbody>
+  </table></div>
+  <div class="pasce"><h3>Pasce</h3><ul>
+    <li>Kolaps je krátky výpadok regulácie, ktorý sa upraví sám; šok je porucha zásobenia tkanív, ktorá bez zásahu postupuje.</li>
+    <li>Hypotenzia je neskorý znak šoku – kompenzácia tlak dlho drží, laktát stúpa skôr.</li>
+  </ul></div>
+  <h3>Over sa</h3>
+  <details class="q"><summary>Prečo pri dlhodobom zlyhaní ľavej komory nájdeš v spúte hnedé makrofágy?</summary><div class="a">Venostáza v pľúcach vytlačí erytrocyty do alveol, makrofágy ich pohltia a hemoglobín premenia na hemosiderín – siderofágy (bunky srdcových chýb).</div></details>
+  <details class="q"><summary>Prečo má pacient so septickým šokom spočiatku teplú kožu?</summary><div class="a">Cytokíny a oxid dusnatý rozšíria cievy – krv sa rozleje do periférie, hoci tkanivá dostávajú kyslíka málo. Je to distribučný šok.</div></details>
+</section>
+
+<!-- ============ ČASŤ V ============ -->
+<div class="part">Nádory</div>
+
+<section class="ch" id="k10">
+  <div class="ch-h"><span class="ch-n">10</span><h2><a href="10_nadory_uvod.html">Nádory I – názvoslovie, histogenéza, onkogenéza</a></h2></div>
+  <p class="thesis">Nádor je <b>rast, ktorý stratil reguláciu</b> – nadmerný, nekoordinovaný a nezávislý od podnetu. Podstatou je nahromadenie zmien DNA v jednej bunke a jej potomkoch; meno dáva tkanivo, z ktorého vyrástol.</p>
+  <h3>Nosné body</h3>
+  <ul class="pts">
+    <li><b>Hyperplázia × nádor</b>: hyperplázia poslúcha podnet, nádor rastie aj bez neho. Nádor je <b>monoklonálny</b>, jeho potomkovia sa však rozrôznia (heterogenita). <span class="sec">→ <a href="10_nadory_uvod.html#sec-10-2">10.2</a></span></li>
+    <li><b>Nepravé nádory</b> = hmota bez autonómneho rastu: zápal, hyperplázia, cysta, depozit, <b>hamartóm</b> (zlé usporiadanie na správnom mieste), <b>choristóm</b> (správne tkanivo na zlom mieste). <span class="sec">→ <a href="10_nadory_uvod.html#sec-10-3">10.3</a></span></li>
+    <li><b>Názvoslovie</b>: epitel – papilóm, adenóm × karcinóm, adenokarcinóm; mezenchým – -óm × -sarkóm; embryonálne – -blastóm. Názov určuje parenchým, stróma je lešenie. <span class="sec">→ <a href="10_nadory_uvod.html#sec-10-4">10.4</a></span></li>
+    <li><b>Klamlivé názvy</b>: lymfóm, melanóm, seminóm, mezotelióm sú zhubné; karcinoid = neuroendokrinný nádor. <span class="sec">→ <a href="10_nadory_uvod.html#sub-10-4-3">10.4.3</a></span></li>
+    <li><b>Gény</b>: zapnuté onkogény (stačí jedna alela) + vypnuté supresory (obe alely – dva zásahy) + vypnuté opravy DNA (nestabilita genómu ⟳, bod zvratu strata p53). <span class="sec">→ <a href="10_nadory_uvod.html#sec-10-5">10.5</a></span></li>
+    <li><b>Onkogenéza v čase</b>: iniciácia (mutácia, nevratná) → promócia (delenie, kým pôsobí promótor – vratná) → progresia (autonómia); na konci znaky nádoru. <span class="sec">→ <a href="10_nadory_uvod.html#sec-10-6">10.6</a></span></li>
+    <li><b>Kancerogény</b>: chemické, fyzikálne (UV, ionizujúce žiarenie), biologické (vírusy, <i>H. pylori</i>, motolice); vnútorné faktory: vek, hormóny, dedičnosť, imunita. <span class="sec">→ <a href="10_nadory_uvod.html#sec-10-7">10.7</a></span></li>
+    <li><b>Prevencia</b> zabráni iniciácii a promócii (nefajčiť, očkovanie proti HPV a HBV, liečba <i>H. pylori</i>); <b>skríning</b> hľadá prekancerózu u ľudí bez príznakov. <span class="sec">→ <a href="10_nadory_uvod.html#sec-10-8">10.8</a></span></li>
+  </ul>
+  <h3>Onkogén × supresorový gén</h3>
+  <div class="tbl"><table>
+    <thead><tr><th></th><th>Onkogén</th><th>Supresorový gén</th></tr></thead>
+    <tbody>
+      <tr><td>Normálne</td><td>spúšťa delenie a prežitie</td><td>delenie zastaví, poškodenú bunku zabije</td></tr>
+      <tr><td>V nádore</td><td>zisk funkcie</td><td>strata funkcie</td></tr>
+      <tr><td>Koľko alel</td><td>jednu – dominantne</td><td>obe – dva zásahy</td></tr>
+      <tr><td>Príklady</td><td><i>HER2</i>, <i>EGFR</i>, <i>KIT</i>, <i>KRAS</i>, <i>BRAF</i>, <i>BCR::ABL1</i>, <i>MYC</i></td><td><i>TP53</i>, <i>RB1</i>, <i>APC</i>, <i>NF1</i>, <i>PTEN</i>, <i>BRCA1/2</i></td></tr>
+      <tr><td>Dedičné syndrómy</td><td>zriedkavé (<i>RET</i> – MEN 2)</td><td>časté (Li-Fraumeni, retinoblastóm, FAP)</td></tr>
+      <tr><td>Cielená liečba</td><td>dá sa zablokovať (inhibítor kinázy, protilátka)</td><td>stratenú funkciu nevrátiš</td></tr>
+    </tbody>
+  </table></div>
+  <h3>Biologické kancerogény</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Pôvodca</th><th>Nádor</th></tr></thead>
+    <tbody>
+      <tr><td>HPV</td><td>karcinóm krčka maternice a ďalšie dlaždicové karcinómy (E6 ruší p53, E7 RB)</td></tr>
+      <tr><td>EBV</td><td>Burkittov a Hodgkinov lymfóm, karcinóm nosohltana</td></tr>
+      <tr><td>HBV, HCV</td><td>hepatocelulárny karcinóm (zápal a cirhóza)</td></tr>
+      <tr><td>HHV-8</td><td>Kaposiho sarkóm</td></tr>
+      <tr><td>HTLV-1</td><td>T-bunková leukémia/lymfóm dospelých</td></tr>
+      <tr><td><i>H. pylori</i></td><td>adenokarcinóm žalúdka, MALT lymfóm</td></tr>
+      <tr><td><i>S. haematobium</i>; <i>Opisthorchis</i>, <i>Clonorchis</i></td><td>dlaždicový karcinóm mechúra; cholangiokarcinóm</td></tr>
+    </tbody>
+  </table></div>
+  <div class="pasce"><h3>Pasce</h3><ul>
+    <li>Hamartóm (napr. v pľúcach) je chyba usporiadania, nie pravý nádor; choristóm je tkanivo na zlom mieste.</li>
+    <li>Iniciovaná bunka bez promótora nádor nevytvorí – promócia je posledná vratná etapa.</li>
+  </ul></div>
+  <h3>Over sa</h3>
+  <details class="q"><summary>Prečo sú dedičné nádorové syndrómy takmer vždy spôsobené supresorovými génmi?</summary><div class="a">Zdedená chybná alela supresora je v každej bunke, no nevadí, kým druhá funguje. Stačí jeden zásah do druhej alely – preto nádory vznikajú mladšie a mnohopočetne. Zdedený aktivovaný onkogén by vo všetkých bunkách vývin zvyčajne nedovolil.</div></details>
+  <details class="q"><summary>Prečo je strata p53 bod zvratu nestability genómu?</summary><div class="a">p53 bunku s poškodenou DNA zastaví alebo zabije. Bez neho sa poškodená bunka delí ďalej, mutácie pribúdajú rýchlejšie a ďalej poškodzujú opravy DNA ⟳.</div></details>
+</section>
+
+<section class="ch" id="k11">
+  <div class="ch-h"><span class="ch-n">11</span><h2><a href="11_nadory_dignita.html">Nádory II – dignita, grading, staging</a></h2></div>
+  <p class="thesis">Diagnóza = <b>typ + dignita + grade + stage</b>. Dignitu prezradí bunka (diferenciácia), tkanivo (invázia) a telo (metastázy); grade hovorí, aký zlý je zhubný nádor, stage, kam až sa dostal.</p>
+  <h3>Nosné body</h3>
+  <ul class="pts">
+    <li><b>Diferenciácia</b>: benígny nádor sa na vzor podobá takmer dokonale, zhubný čím ďalej menej – až po <b>anapláziu</b>. <b>Atypia</b>: pleomorfia, veľké tmavé jadrá s jadierkami, ↑ pomer jadro/cytoplazma, strata polarity, atypické mitózy. <span class="sec">→ <a href="11_nadory_dignita.html#sec-11-2">11.2</a></span></li>
+    <li><b>Expanzia × invázia</b>: benígny okolie odtláča (pseudopuzdro), malígny prerastá – ↓ E-kadherín, metaloproteinázy, pohyb (často EMT). Prerazenie <b>bazálnej membrány</b> delí in situ od invazívneho karcinómu. <span class="sec">→ <a href="11_nadory_dignita.html#sec-11-3">11.3</a></span></li>
+    <li><b>Metastatická kaskáda</b>: invázia → intravazácia → prežitie v krvi → zachytenie → extravazácia → kolonizácia; obstojí nepatrný zlomok buniek, môžu roky spať. <span class="sec">→ <a href="11_nadory_dignita.html#sec-11-4">11.4</a></span></li>
+    <li><b>Kam</b>: odtok lymfy a krvi + „pôda“ orgánu (semeno a pôda). <span class="sec">→ <a href="11_nadory_dignita.html#sub-11-4-3">11.4.3</a></span></li>
+    <li><b>Dignita</b>: metastáza je jediný spoľahlivý znak malignity. Medzi benígnym a malígnym: lokálne agresívne, zriedka metastázujúce, nádory s udaným rizikom (GIST). <span class="sec">→ <a href="11_nadory_dignita.html#sec-11-5">11.5</a></span></li>
+    <li><b>Grade</b> zo mikroskopu (diferenciácia, atypia, mitózy, Ki-67, nekróza); <b>stage</b> = TNM → štádium 0–IV, váži viac ako grade. Predpony c, p, y, r; R0–R2. <span class="sec">→ <a href="11_nadory_dignita.html#sec-11-6">11.6</a>–<a href="11_nadory_dignita.html#sec-11-7">11.7</a></span></li>
+    <li><b>Hostiteľ</b>: miestne (tlak, upchatie, vred, krvácanie), kachexia z cytokínov ⟳, paraneoplastické syndrómy, syndróm z rozpadu nádoru. <span class="sec">→ <a href="11_nadory_dignita.html#sec-11-8">11.8</a></span></li>
+  </ul>
+  <h3>Cesty metastáz</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Cesta</th><th>Kto ju volí</th><th>Typický nález</th></tr></thead>
+    <tbody>
+      <tr><td>lymfogénna</td><td>karcinómy</td><td>tuhá belavá uzlina (pazucha, ľavá nadkľúčová jamka)</td></tr>
+      <tr><td>hematogénna</td><td>sarkómy; karcinómy vrastajúce do žíl (oblička, pečeň, folikulový štítnej žľazy)</td><td>guľaté uzly: z povodia <i>v. cava</i> pľúca, <i>v. portae</i> pečeň</td></tr>
+      <tr><td>transcelómová</td><td>vaječník, žalúdok, pankreas, hrubé črevo</td><td>karcinóza, krvavý výpotok</td></tr>
+      <tr><td>likvorová</td><td>nádory CNS</td><td>ložiská v komorách a plenách</td></tr>
+      <tr><td>implantačná</td><td>akýkoľvek pri operácii či punkcii</td><td>uzol v jazve alebo kanáli ihly</td></tr>
+    </tbody>
+  </table></div>
+  <h3>Systémy gradingu</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Nádor</th><th>Systém</th><th>Stupne</th></tr></thead>
+    <tbody>
+      <tr><td>väčšina karcinómov</td><td>podľa diferenciácie</td><td>G1–G3 (G4 nediferencovaný)</td></tr>
+      <tr><td>prsník</td><td>Nottinghamský: tubuly + pleomorfia + mitózy, každé 1–3 b.</td><td>3–5 = G1, 6–7 = G2, 8–9 = G3</td></tr>
+      <tr><td>prostata</td><td>Gleason (dva najčastejšie vzorce) → skupiny ISUP</td><td>1 (≤ 6) až 5 (9–10)</td></tr>
+      <tr><td>sarkómy</td><td>FNCLCC: diferenciácia + mitózy + nekróza</td><td>G1–G3</td></tr>
+      <tr><td>neuroendokrinné</td><td>mitózy a Ki-67</td><td>NET G1–G3; NEC vždy vysoký</td></tr>
+    </tbody>
+  </table></div>
+  <div class="pasce"><h3>Pasce</h3><ul>
+    <li>Grade ≠ stage: malý G3 nádor bez metastáz môže mať lepšiu prognózu ako G1 v štádiu IV.</li>
+    <li>Prognostický faktor predpovedá priebeh, prediktívny odpoveď na konkrétny liek (HER2, EGFR, KIT).</li>
+  </ul></div>
+  <h3>Over sa</h3>
+  <details class="q"><summary>Prečo karcinóm metastázuje najprv do uzlín a sarkóm do pľúc?</summary><div class="a">Pod bazálnou membránou epitelu je hustá sieť tenkostenných lymfatických kapilár. Sarkóm rastie v mezenchýme medzi krvnými cievami a vniká do žíl; prvé kapiláry po prúde sú v pľúcach.</div></details>
+  <details class="q"><summary>Čo znamená ypT2 N1 M0 R0?</summary><div class="a">y = hodnotené po predoperačnej liečbe, p = z patologického vyšetrenia; T2 primárny nádor, N1 postihnuté regionálne uzliny, M0 bez vzdialených metastáz, R0 = okraje bez nádoru.</div></details>
+</section>
+
+<section class="ch" id="k12">
+  <div class="ch-h"><span class="ch-n">12</span><h2><a href="12_epitelove_nadory.html">Epitelové nádory</a></h2></div>
+  <p class="thesis">Epitelový nádor <b>napodobňuje, čo robí jeho epitel</b>: krycí tvorí vrstvy (papilóm, dlaždicový, bazocelulárny, uroteliálny karcinóm), žľazový žľazy a sekrét (adenóm, adenokarcinóm).</p>
+  <h3>Nosné body</h3>
+  <ul class="pts">
+    <li>Nádor zdedí <b>súdržnosť, polaritu, bazálnu membránu a produkt</b>; karcinóm ich stráca v poradí polarita → priesvit → súdržnosť. <span class="sec">→ <a href="12_epitelove_nadory.html#sub-12-2-1">12.2.1</a></span></li>
+    <li>Na povrchu <b>polyp</b> (benígny) × <b>vred s navalitým okrajom</b> (karcinóm); v orgáne opuzdrený uzol × nepravidelný výbežkatý nádor. <span class="sec">→ <a href="12_epitelove_nadory.html#sub-12-2-2">12.2.2</a></span></li>
+    <li><b>Cesta ku karcinómu</b>: poškodenie → regenerácia → mutácie ⟳ (roky) → dysplázia low → high grade → karcinóm in situ → invázia. Hranica reverzibility = bazálna membrána. <span class="sec">→ <a href="12_epitelove_nadory.html#sec-12-3">12.3</a></span></li>
+    <li><b>Dlaždicový epitel – dozrieva × prerastá</b>: papilóm a seboroická keratóza dozrievajú a neprerastajú; dlaždicový karcinóm dozrieva aj prerastá; bazocelulárny nedozrieva, prerastá, takmer nemetastázuje. <span class="sec">→ <a href="12_epitelove_nadory.html#sec-12-4">12.4</a></span></li>
+    <li><b>Urotel</b>: celá močová cesta v tom istom moči → nádory mnohopočetné a recidivujúce; prognózu určí invázia do svaloviny. <span class="sec">→ <a href="12_epitelove_nadory.html#sec-12-5">12.5</a></span></li>
+    <li><b>Adenóm</b> stavia žľazu a tvorí produkt (aj hormón). Polyp hrubého čreva: najväčšie riziko má veľký, vilózny, s dyspláziou vysokého stupňa. <span class="sec">→ <a href="12_epitelove_nadory.html#sec-12-6">12.6</a></span></li>
+    <li><b>Adenokarcinóm</b>: stavba → grade (žľazy &gt; 95 % G1, 50–95 % G2, &lt; 50 % G3); stróma → konzistencia (medulárny mäkký, skirhus tvrdý); hlien → typ. <span class="sec">→ <a href="12_epitelove_nadory.html#sec-12-7">12.7</a></span></li>
+    <li><b>Patológ</b>: cytokeratín (je to karcinóm?) → CK7/CK20 a markery orgánu (TTF-1, CDX2, GATA3, PSA) → grade → pTNM, okraje, invázia do ciev a nervov. <span class="sec">→ <a href="12_epitelove_nadory.html#sec-12-9">12.9</a></span></li>
+  </ul>
+  <h3>Dlaždicový × bazocelulárny karcinóm</h3>
+  <div class="tbl"><table>
+    <thead><tr><th></th><th>Dlaždicový</th><th>Bazocelulárny</th></tr></thead>
+    <tbody>
+      <tr><td>Dozrievanie</td><td>áno: rohové perly, medzibunkové mostíky</td><td>nie: bunky ako bazálna vrstva</td></tr>
+      <tr><td>Typický znak</td><td>rohovatenie</td><td>palisáda na okraji, retrakčná štrbina</td></tr>
+      <tr><td>Metastázy</td><td>lymfou do uzlín</td><td>takmer nikdy; ničí miestne</td></tr>
+    </tbody>
+  </table></div>
+  <h3>Hlien v adenokarcinóme</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Kde je hlien</th><th>Typ</th><th>Obraz</th></tr></thead>
+    <tbody>
+      <tr><td>v stróme</td><td>mucinózny karcinóm</td><td>jazerá hlienu s plávajúcimi bunkami</td></tr>
+      <tr><td>v bunke</td><td>karcinóm z prstencových buniek</td><td>jadro odtlačené na okraj (pečatný prsteň)</td></tr>
+    </tbody>
+  </table></div>
+  <div class="pasce"><h3>Pasce</h3><ul>
+    <li>Sarkomatoidný karcinóm vyzerá ako sarkóm, ale cytokeratín ho prezradí ako epitelový.</li>
+    <li>Dysplázia a karcinóm in situ sa odstránením vyliečia – nemetastázujú, kým neprerazia bazálnu membránu.</li>
+  </ul></div>
+  <h3>Over sa</h3>
+  <details class="q"><summary>Prečo uroteliálny karcinóm po resekcii často recidivuje inde v mechúri?</summary><div class="a">Celý urotel je vystavený tým istým kancerogénom v moči (rakovinové pole), takže nádor vzniká na viacerých miestach nezávisle.</div></details>
+  <details class="q"><summary>Metastáza adenokarcinómu v pečeni, primárny nádor neznámy. Ako postupuje patológ?</summary><div class="a">Cytokeratín potvrdí epitel; kombinácia CK7/CK20 zúži orgán (napr. CK7− CK20+ hrubé črevo) a markery orgánu (CDX2, TTF-1, GATA3, PSA) ho spresnia.</div></details>
+</section>
+
+<section class="ch" id="k13">
+  <div class="ch-h"><span class="ch-n">13</span><h2><a href="13_mezenchymove_nadory.html">Mezenchýmové nádory</a></h2></div>
+  <p class="thesis">Mezenchýmový nádor sa pomenuje podľa <b>tkaniva, ktorému sa podobá</b>, nie podľa miesta. Benígne sú stokrát častejšie ako sarkómy; sarkóm býva <b>hlboko a veľký</b>, šíri sa <b>krvou do pľúc</b> a typ určí až IHC a genetika.</p>
+  <h3>Nosné body</h3>
+  <ul class="pts">
+    <li><b>Vznik</b>: sarkóm vzniká väčšinou de novo, bez dlhej postupnosti; asi tretina má <b>fúzny gén</b>, zvyšok <b>komplexný karyotyp</b>. <span class="sec">→ <a href="13_mezenchymove_nadory.html#sub-13-2-2">13.2.2</a></span></li>
+    <li><b>Varovanie</b>: hmota &gt; 5 cm, pod fasciou, rastúca, recidivujúca, fixovaná → najprv MR, potom biopsia <b>hrubou ihlou</b>; kanál sa vyreže s nádorom, „vylúpnutie“ nie. <span class="sec">→ <a href="13_mezenchymove_nadory.html#sub-13-2-3">13.2.3</a>, <a href="13_mezenchymove_nadory.html#sub-13-3-1">13.3.1</a></span></li>
+    <li><b>Typ</b> = miesto a vek + tvar buniek (vretenovité, okrúhle, epiteloidné, pleomorfné, myxoidné) + IHC + génová zmena. <span class="sec">→ <a href="13_mezenchymove_nadory.html#sec-13-3">13.3</a></span></li>
+    <li><b>Pseudosarkóm</b>: rýchly rast a veľa typických mitóz bez atypie – nodulárna fasciitída (<i>USP6</i>) je nezhubná. <span class="sec">→ <a href="13_mezenchymove_nadory.html#sub-13-3-5">13.3.5</a></span></li>
+    <li><b>Správanie</b>: typ určí kategóriu, grade FNCLCC predpovedá metastázy, okraj resekcie lokálnu recidívu. <span class="sec">→ <a href="13_mezenchymove_nadory.html#sec-13-4">13.4</a></span></li>
+    <li><b>GIST</b>: z Cajalových buniek; mutácia <i>KIT</i> alebo <i>PDGFRA</i>; CD117, DOG1; riziko z veľkosti, mitóz, miesta a ruptúry; imatinib. <span class="sec">→ <a href="13_mezenchymove_nadory.html#sec-13-6">13.6</a></span></li>
+    <li><b>Kosť</b>: častejšia je metastáza karcinómu. Diagnóza = vek + miesto v kosti + RTG + histológia; meno podľa hmoty (osteoid × chrupka). Sarkóm ničí kortiku a dvíha periost. <span class="sec">→ <a href="13_mezenchymove_nadory.html#sec-13-7">13.7</a></span></li>
+  </ul>
+  <h3>Mäkké tkanivá podľa línie</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Línia</th><th>Čo si zapamätať</th></tr></thead>
+    <tbody>
+      <tr><td>Tuk</td><td>lipóm najčastejší a na liposarkóm sa nemení; liposarkóm dobre diferencovaný (<i>MDM2</i>), dediferencovaný, myxoidný (<i>FUS::DDIT3</i>), pleomorfný</td></tr>
+      <tr><td>Väzivo</td><td>desmoid (β-katenín) recidivuje, nemetastázuje; DFSP (<i>COL1A1::PDGFB</i>); MFH zrušený</td></tr>
+      <tr><td>Sval</td><td>leiomyóm častý, leiomyosarkóm de novo; rabdomyosarkóm – sarkóm detí, myogenín</td></tr>
+      <tr><td>Cievy</td><td>infantilný hemangióm (GLUT1) sám ustúpi; Kaposiho sarkóm (HHV-8); angiosarkóm po ožiarení, pri lymfedéme</td></tr>
+      <tr><td>Neistá línia</td><td>synoviálny (<i>SS18::SSX</i>, CK+), Ewingov (<i>EWSR1::FLI1</i>, CD99), nediferencovaný pleomorfný (vylúčením)</td></tr>
+    </tbody>
+  </table></div>
+  <h3>Kosť: miesto a vek</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Miesto</th><th>Nádor</th><th>Vek</th></tr></thead>
+    <tbody>
+      <tr><td>epifýza</td><td>obrovskobunkový nádor; chondroblastóm</td><td>20–40 r.; adolescenti</td></tr>
+      <tr><td>metafýza</td><td>osteosarkóm, osteochondróm</td><td>deti a adolescenti</td></tr>
+      <tr><td>diafýza</td><td>Ewingov sarkóm</td><td>deti a adolescenti</td></tr>
+      <tr><td>malé kosti ruky a nohy</td><td>enchondróm</td><td>každý vek</td></tr>
+      <tr><td>panva, rebrá, lopatka</td><td>chondrosarkóm</td><td>nad 50 rokov</td></tr>
+    </tbody>
+  </table></div>
+  <div class="pasce"><h3>Pasce</h3><ul>
+    <li>Rýchly rast a veľa mitóz ešte nie sú sarkóm – rozhoduje atypia a typ (nodulárna fasciitída).</li>
+    <li>Ložisko v kosti dospelého je najprv podozrivé z metastázy karcinómu, nie zo sarkómu.</li>
+  </ul></div>
+  <h3>Over sa</h3>
+  <details class="q"><summary>Prečo sa podozrivá hlboká hmota stehna nemá jednoducho „vylúpnuť“?</summary><div class="a">Sarkóm má len pseudopuzdro, za ktorým sú nádorové bunky; vylúpnutie ich nechá v tkanive a rozseje po operačnom poli. Najprv MR a biopsia hrubou ihlou, potom plánovaná resekcia s okrajom vrátane kanála ihly.</div></details>
+  <details class="q"><summary>15-ročný chlapec, bolesť pri kolene, RTG: deštrukcia metafýzy a nadvihnutý periost. Čo myslíš a čo potvrdí diagnózu?</summary><div class="a">Osteosarkóm (metafýza dlhej kosti, adolescent). Rozhodne histológia: nádorové bunky tvoria osteoid.</div></details>
+</section>
+
+<!-- ============ NAPRIEČ ============ -->
+<div class="part">Naprieč kapitolami</div>
+
+<section class="ch" id="napriec">
+  <div class="ch-h"><span class="ch-n">↔</span><h2>Čo sa opakuje v celej knihe</h2></div>
+  <p class="thesis">Na skúške sa často pýtajú súvislosti. Tieto tri prehľady spájajú kapitoly: kde sa zmena stáva nevratnou, ktoré bludné kruhy chorobu udržiavajú a ktoré farbenia čo rozlíšia.</p>
+  <h3>Hranica reverzibility</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Dej</th><th>Kedy už nie je cesty späť</th><th>Kap.</th></tr></thead>
+    <tbody>
+      <tr><td>poškodenie bunky</td><td>membrány a mitochondrie prasknú, ↑ Ca²⁺ → nekróza</td><td class="ref"><a href="01_atrofia_nekroza_apoptoza.html#sub-1-5-3">1.5.3</a></td></tr>
+      <tr><td>dystrofia</td><td>látka poškodí aparát, ktorý ju má odstrániť (amyloid)</td><td class="ref"><a href="02_dystrofie.html#sec-2-2">2.2</a></td></tr>
+      <tr><td>zápal</td><td>zanikla kostra tkaniva alebo sa exsudát neodstránil</td><td class="ref"><a href="03_zapal_vseobecne.html#sub-3-5-3">3.5.3</a></td></tr>
+      <tr><td>oprava</td><td>kostra padla → jazva namiesto regenerácie</td><td class="ref"><a href="05_hojenie.html#sec-5-2">5.2</a></td></tr>
+      <tr><td>adaptácia</td><td>zánik buniek a fibróza, mutácia, kosť</td><td class="ref"><a href="06_progresivne_zmeny.html#sec-6-6">6.6</a></td></tr>
+      <tr><td>trombus</td><td>začala organizácia – už sa nerozpustí</td><td class="ref"><a href="08_miestne_poruchy_obehu.html#sub-8-3-4">8.3.4</a></td></tr>
+      <tr><td>šok</td><td>acidóza otvorí cievy, orgány zlyhajú</td><td class="ref"><a href="09_celkove_poruchy_obehu.html#sub-9-6-3">9.6.3</a></td></tr>
+      <tr><td>onkogenéza</td><td>promócia je vratná, progresia nie</td><td class="ref"><a href="10_nadory_uvod.html#sub-10-6-2">10.6.2</a></td></tr>
+      <tr><td>karcinóm</td><td>prerazená bazálna membrána</td><td class="ref"><a href="11_nadory_dignita.html#sec-11-3">11.3</a>, <a href="12_epitelove_nadory.html#sec-12-3">12.3</a></td></tr>
+    </tbody>
+  </table></div>
+  <h3>Bludné kruhy ⟳</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Kruh</th><th>Ako sa uzavrie</th><th>Kap.</th></tr></thead>
+    <tbody>
+      <tr><td>chronická rana</td><td>proteázy a biofilm → ďalšie poškodenie → ďalší zápal</td><td class="ref"><a href="05_hojenie.html#sec-5-5">5.5</a></td></tr>
+      <tr><td>hypertrofia srdca</td><td>kapiláry nestačia → fibróza → dilatácia → väčšie napätie steny</td><td class="ref"><a href="06_progresivne_zmeny.html#sec-6-2">6.2</a></td></tr>
+      <tr><td>tuberkulózna kaverna</td><td>kazeum v prieduške → kyslík → množenie → väčšia kaverna</td><td class="ref"><a href="07_granulomatozne_zapaly.html#sub-7-5-2">7.5.2</a></td></tr>
+      <tr><td>hemoragická infarzácia</td><td>uzáver žily → opuch → stlačenie prívodu</td><td class="ref"><a href="08_miestne_poruchy_obehu.html#sec-8-7">8.7</a></td></tr>
+      <tr><td>DIC</td><td>mikrotromby spotrebujú faktory → krvácanie → ďalšie poškodenie</td><td class="ref"><a href="08_miestne_poruchy_obehu.html#sub-8-9-5">8.9.5</a></td></tr>
+      <tr><td>zlyhanie srdca, šok</td><td>kompenzácia zvyšuje záťaž; acidóza otvára cievy</td><td class="ref"><a href="09_celkove_poruchy_obehu.html#sec-9-4">9.4</a>, <a href="09_celkove_poruchy_obehu.html#sec-9-6">9.6</a></td></tr>
+      <tr><td>nestabilita genómu</td><td>mutácie vypínajú opravy → viac mutácií</td><td class="ref"><a href="10_nadory_uvod.html#sub-10-5-4">10.5.4</a></td></tr>
+      <tr><td>kachexia</td><td>cytokíny → strata svalu a chuti do jedla → ďalší úbytok</td><td class="ref"><a href="11_nadory_dignita.html#sub-11-8-2">11.8.2</a></td></tr>
+      <tr><td>epitel ku karcinómu</td><td>poškodenie → regenerácia → mutácie → zmenený epitel</td><td class="ref"><a href="12_epitelove_nadory.html#sec-12-3">12.3</a></td></tr>
+    </tbody>
+  </table></div>
+  <h3>Farbenia a čo ukážu</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Farbenie</th><th>Ukáže</th></tr></thead>
+    <tbody>
+      <tr><td>HE</td><td>jadrá modré, bielkoviny ružové – základ každej diagnózy</td></tr>
+      <tr><td>Congo red + polarizácia</td><td>amyloid (jablkovo-zelená dvojlomnosť)</td></tr>
+      <tr><td>Van Gieson</td><td>kolagén a hyalín červené, fibrín a fibrinoid žlté</td></tr>
+      <tr><td>Sudan, Oil Red O</td><td>tuk (zmrazený rez)</td></tr>
+      <tr><td>PAS (± diastáza)</td><td>glykogén (diastáza ho natrávi), hlien, huby</td></tr>
+      <tr><td>Alciánová modrá</td><td>kyslý hlien</td></tr>
+      <tr><td>Perls</td><td>hemosiderín (berlínska modrá)</td></tr>
+      <tr><td>von Kossa</td><td>vápnik (čierny)</td></tr>
+      <tr><td>Ziehl–Neelsen, Fite</td><td>acidorezistentné mykobaktérie (TBC, lepra)</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<footer>Zhrnutie vychádza výhradne z textu kapitol 0–13 knihy PATOLA (stav 21. 11. 2026). Čísla sekcií vedú späť do kapitoly, kde je mechanizmus vysvetlený celý. Študijný materiál, nie podklad na klinické rozhodovanie.</footer>
+</div>
+
+<script>
+(function(){
+  var b=document.body, q=document.getElementById('quizBtn'), o=document.getElementById('openBtn');
+  function setQuiz(on){
+    b.classList.toggle('quiz',on); q.setAttribute('aria-pressed',on?'true':'false');
+    if(!on) document.querySelectorAll('td.shown').forEach(function(t){t.classList.remove('shown')});
+    try{localStorage.setItem('rep-quiz',on?'1':'0')}catch(e){}
+  }
+  var saved=false; try{saved=localStorage.getItem('rep-quiz')==='1'}catch(e){}
+  setQuiz(saved);
+  q.addEventListener('click',function(){setQuiz(!b.classList.contains('quiz'))});
+  document.addEventListener('click',function(e){
+    if(!b.classList.contains('quiz'))return;
+    var td=e.target.closest('.tbl td'); if(td && td.cellIndex>0) td.classList.toggle('shown');
+  });
+  var allOpen=false;
+  o.addEventListener('click',function(){
+    allOpen=!allOpen;
+    document.querySelectorAll('details.q').forEach(function(d){d.open=allOpen});
+    o.textContent=allOpen?'Zbaliť všetky odpovede':'Rozbaliť všetky odpovede';
+  });
+  document.getElementById('printBtn').addEventListener('click',function(){window.print()});
+  var was=[];window.addEventListener('beforeprint',function(){was=[];document.querySelectorAll('details.q').forEach(function(d){was.push(d.open);d.open=true})});
+  window.addEventListener('afterprint',function(){document.querySelectorAll('details.q').forEach(function(d,i){d.open=!!was[i]})});
+})();
+</script>
+
+</body>
+</html>

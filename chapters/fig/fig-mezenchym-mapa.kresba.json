@@ -1,0 +1,35 @@
+{
+  "titul": "Mapa kapitoly: mezenchýmové nádory vychádzajú zo spoločnej mezenchýmovej kmeňovej bunky a pomenúvajú sa podľa tkaniva, ktorému sa podobajú. Delia sa na nádory mäkkých tkanív (tuk, väzivo, sval, cievy, neistá diferenciácia), GIST v stene tráviacej rúry a nádory kostí a chrupky. Typ určí biopsia, mikroskop, imunohistochémia a genetika; z typu, gradu FNCLCC a rozsahu TNM vyplýva správanie a liečba",
+  "nadpis": "Čomu sa nádor podobá, to je jeho meno",
+  "rady": [
+    { "plne": false, "uzly": [
+      { "id": "kmen", "trieda": "bx-c", "odkaz": "#sec-13-2", "nazov": "MEZENCHÝMOVÁ KMEŇOVÁ BUNKA · 13.2", "sirka": 360,
+        "text": ["nádor vznikne kdekoľvek, meno podľa podobnosti", "väčšinou de novo; fúzny gén × komplexný karyotyp"] }
+    ] },
+    [
+      { "id": "makke", "trieda": "bx-k", "obrys": "var(--color-accent-600)", "odkaz": "#sec-13-5", "nazov": "MÄKKÉ TKANIVÁ · 13.5",
+        "text": ["tuk · väzivo · sval · cievy", "neistá línia: synoviálny, Ewing"] },
+      { "id": "gist", "trieda": "bx-k", "obrys": "var(--color-accent-600)", "odkaz": "#sec-13-6", "nazov": "GIST · 13.6",
+        "text": ["stena tráviacej rúry", "mutácia KIT/PDGFRA → imatinib"] },
+      { "id": "kost", "trieda": "bx-k", "obrys": "var(--color-accent-600)", "odkaz": "#sec-13-7", "nazov": "KOSŤ A CHRUPKA · 13.7",
+        "text": ["tvorí chrupku · tvorí kosť", "miesto v kosti a vek"] }
+    ],
+    { "plne": false, "uzly": [
+      { "id": "dg", "trieda": "bx-m", "odkaz": "#sec-13-3", "nazov": "AKO SA URČÍ TYP · 13.3", "sirka": 360,
+        "text": ["biopsia ihlou → tvar buniek → IHC → fúzny gén"] }
+    ] },
+    { "plne": false, "uzly": [
+      { "id": "spravanie", "trieda": "bx-c", "odkaz": "#sec-13-4", "nazov": "SPRÁVANIE A LIEČBA · 13.4", "sirka": 360,
+        "text": ["benígny · intermediárny · sarkóm", "grade FNCLCC + TNM → resekcia, ožiarenie"] }
+    ] }
+  ],
+  "sipky": [
+    { "od": "kmen", "do": "makke" },
+    { "od": "kmen", "do": "gist" },
+    { "od": "kmen", "do": "kost" },
+    { "od": "makke", "do": "dg" },
+    { "od": "gist", "do": "dg" },
+    { "od": "kost", "do": "dg" },
+    { "od": "dg", "do": "spravanie" }
+  ]
+}
